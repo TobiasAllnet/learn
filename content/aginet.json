@@ -14,6 +14,10 @@
     {
       "l": "TP-Link XGS-PON Wi-Fi 7 announcement",
       "u": "https://service-provider.tp-link.com/events/694/"
+    },
+    {
+      "l": "Customer-premises equipment (Wikipedia)",
+      "u": "https://en.wikipedia.org/wiki/Customer-premises_equipment"
     }
   ],
   "lessons": [
@@ -29,12 +33,16 @@
         {
           "l": "TP-Link service provider site",
           "u": "https://service-provider.tp-link.com/"
+        },
+        {
+          "l": "TP-Link NX510v 5G router (provider site)",
+          "u": "https://service-provider.tp-link.com/es/lte-router/nx510v/"
         }
       ],
       "pages": [
         {
           "h": "A name inside TP-Link",
-          "t": "<b>Aginet is not a separate company.</b> It is the name TP-Link uses for its offer to internet providers. TP-Link's own service provider site shows Aginet next to its router, mesh, PON and LTE categories.",
+          "t": "<b>Aginet is not a separate company.</b> It is the name TP-Link uses for its offer to internet providers. TP-Link's own service provider site lists Aginet Solutions alongside its router, mesh, PON and LTE product categories.",
           "g": [
             [
               "ISP",
@@ -54,7 +62,7 @@
         },
         {
           "h": "Easy to mix up",
-          "t": "Many people think Aginet means fibre boxes only. It does not. The line also covers <b>routers, mesh units and 5G routers</b>. In our own material, even models like HX510 are Wi-Fi units, not fibre terminals.",
+          "t": "Many people think Aginet means fibre boxes only. It does not. The line also covers <b>routers, mesh units and 5G routers</b>. On TP-Link's provider site, models like HX510 are Wi-Fi mesh units and NX510v is a 5G router, not fibre terminals.",
           "g": [
             [
               "Mesh",
@@ -113,7 +121,7 @@
       "pages": [
         {
           "h": "The end customer is a provider",
-          "t": "Aginet is aimed at <b>ISPs and service providers</b>, including smaller wireless ISPs. They give or rent a box to every subscriber, so they care about cost per home, support calls and easy rollout.",
+          "t": "Aginet is aimed at <b>ISPs and service providers</b>, including smaller wireless ISPs. They often give or rent a box to every subscriber, so they usually care about cost per home, support calls and easy rollout.",
           "g": [
             [
               "WISP",
@@ -123,7 +131,7 @@
         },
         {
           "h": "What CPE means",
-          "t": "Equipment placed at the customer's home is called <b>CPE</b>. It can be bought by the subscriber or supplied by the provider. Aginet is about the second case: boxes the provider chooses and looks after.",
+          "t": "Equipment placed at the customer's home is called <b>CPE</b>. It can be bought by the subscriber or supplied by the provider. Aginet is aimed mainly at the second case: boxes the provider chooses and manages remotely.",
           "g": [
             [
               "CPE",
@@ -192,7 +200,7 @@
       "pages": [
         {
           "h": "One fibre, many homes",
-          "t": "In a <b>PON</b> the fibre in the street is passive: no powered boxes in between. A splitter divides one fibre from the provider so it can serve many homes, which keeps the network cheap to run.",
+          "t": "In a <b>PON</b> the fibre in the street is passive: no powered equipment in between. A splitter divides one fibre from the provider so it can serve many homes, which means fewer powered parts to run and maintain.",
           "g": [
             [
               "PON",
@@ -238,7 +246,7 @@
             "No powered equipment in the fibre path between provider and home"
           ],
           "a": 2,
-          "w": "Splitters in the field need no power, which makes the network cheap to maintain."
+          "w": "Splitters in the field need no power, so there is no powered equipment between provider and home."
         },
         {
           "q": "Which box sits in the customer's home and receives the fibre?",
@@ -282,6 +290,10 @@
           "u": "https://service-provider.tp-link.com/events/694/"
         },
         {
+          "l": "EX520v Wi-Fi 6 VoIP router (provider site)",
+          "u": "https://service-provider.tp-link.com/wifi-router/ex520v/"
+        },
+        {
           "l": "Passive optical network (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Passive_optical_network"
         }
@@ -303,7 +315,7 @@
         },
         {
           "h": "What Aginet offers",
-          "t": "TP-Link's 2023 announcement showed an <b>XGS-PON Wi-Fi 7 router</b> and a plug-in <b>XGS-PON module</b>. Our local Wi-Fi 6 routers such as EX520v are described as suited to FTTH, using an Ethernet WAN port.",
+          "t": "TP-Link announced an <b>XGS-PON Wi-Fi 7 router</b> and a plug-in <b>XGS-PON module</b> in October 2023. Routers such as EX520v and NX220v have an Ethernet WAN port, so they can sit behind an ONT or other modem.",
           "g": [
             [
               "WAN port",
@@ -343,10 +355,10 @@
           "o": [
             "Every Aginet model has a fibre port built in",
             "Aginet has no fibre options",
-            "Some Aginet devices have XGS-PON built in, while others rely on Ethernet from an ONT"
+            "TP-Link has announced Aginet devices with XGS-PON built in, while others use Ethernet from an ONT"
           ],
           "a": 2,
-          "w": "The range mixes integrated XGS-PON devices with routers that connect to an ONT via Ethernet."
+          "w": "The range mixes announced XGS-PON devices with routers that connect to an ONT via an Ethernet WAN port."
         }
       ]
     },
@@ -362,12 +374,16 @@
         {
           "l": "Wi-Fi Alliance: EasyMesh",
           "u": "https://www.wi-fi.org/discover-wi-fi/wi-fi-easymesh"
+        },
+        {
+          "l": "HX710 mesh system (provider site)",
+          "u": "https://service-provider.tp-link.com/home-wifi-system/hx710/"
         }
       ],
       "pages": [
         {
           "h": "Wi-Fi generations",
-          "t": "<b>Wi-Fi 6</b> uses the 2.4 and 5 GHz bands. <b>Wi-Fi 6E</b> adds the 6 GHz band. <b>Wi-Fi 7</b> uses all three and adds wider channels and multi-link operation. Newer is not always needed.",
+          "t": "<b>Wi-Fi 6</b> was designed for the 2.4 and 5 GHz bands. <b>Wi-Fi 6E</b> is Wi-Fi 6 that also uses the 6 GHz band. <b>Wi-Fi 7</b> uses all three and adds wider channels and multi-link operation. Newer is not always needed.",
           "g": [
             [
               "GHz band",
@@ -387,7 +403,7 @@
         },
         {
           "h": "In the Aginet range",
-          "t": "Our local datasheets list the <b>HX510 and HX710</b> as Wi-Fi 6 mesh access points using EasyMesh. The NX and EX models also list EasyMesh support, so units in one provider's range can work together.",
+          "t": "TP-Link's provider pages list <b>HX510 and HX710</b> as Wi-Fi 6 mesh systems that are EasyMesh compatible. EX520v and NX220v also list EasyMesh, so units in one provider's range can work together. Check details per model.",
           "g": []
         }
       ],
@@ -434,14 +450,18 @@
           "u": "https://service-provider.tp-link.com/"
         },
         {
-          "l": "TP-Link XGS-PON Wi-Fi 7 announcement",
-          "u": "https://service-provider.tp-link.com/events/694/"
+          "l": "NX220v 5G router (provider site)",
+          "u": "https://service-provider.tp-link.com/lte-router/nx220v/"
+        },
+        {
+          "l": "HX510 mesh system (TP-Link)",
+          "u": "https://www.tp-link.com/hk/products/details/hx510.html"
         }
       ],
       "pages": [
         {
           "h": "Categories on the site",
-          "t": "TP-Link's provider site lists <b>Wi-Fi routers, home Wi-Fi systems (mesh), VDSL, PON and LTE</b>. Together they cover copper lines, fibre and mobile networks, so one vendor can serve a provider with mixed technologies.",
+          "t": "TP-Link's provider site lists <b>Wi-Fi routers, home Wi-Fi systems (mesh), VDSL, PON and LTE</b>, with 4G/5G routers under LTE. Together they cover copper lines, fibre and mobile networks, so one vendor can serve a provider with mixed technologies.",
           "g": [
             [
               "VDSL",
@@ -455,7 +475,7 @@
         },
         {
           "h": "Models you will see",
-          "t": "In our local material: <b>EX520v</b> is a Wi-Fi 6 router with a phone port, <b>HX510 and HX710</b> are mesh units, and <b>NX220v and NX510v</b> are 5G routers with a phone port.",
+          "t": "On TP-Link's provider site: <b>EX520v</b> is a Wi-Fi 6 router with a phone port, <b>HX510 and HX710</b> are mesh units, and <b>NX220v and NX510v</b> are 5G routers with a voice port for a normal phone.",
           "g": [
             [
               "FXS / phone port",
@@ -493,7 +513,7 @@
             "A fibre OLT"
           ],
           "a": 1,
-          "w": "Our datasheet describes HX510 as a whole-home mesh Wi-Fi access point."
+          "w": "TP-Link describes HX510 as a Wi-Fi 6 whole-home mesh system with EasyMesh."
         },
         {
           "q": "What is the first question when picking an Aginet device?",
@@ -529,6 +549,10 @@
         {
           "l": "TR-069 (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/TR-069"
+        },
+        {
+          "l": "NX510v 5G router (provider site)",
+          "u": "https://service-provider.tp-link.com/es/lte-router/nx510v/"
         }
       ],
       "pages": [
@@ -616,7 +640,7 @@
       "pages": [
         {
           "h": "Aginet Config",
-          "t": "<b>Aginet Config</b> lets a provider set its own default settings for all devices, including a logo and favicon. The settings come back when a customer presses reset, which reduces repeat support calls.",
+          "t": "<b>Aginet Config</b> lets a provider set its own default settings for all devices, including a logo and favicon. The settings come back when a customer presses reset, which can reduce repeat support calls.",
           "g": [
             [
               "Favicon",
@@ -640,7 +664,7 @@
         },
         {
           "h": "Why it sells",
-          "t": "A provider wants the box to feel like <b>its own service</b>. Branding and a ready-made app save them building these tools themselves. Ask how much customisation they need before promising specifics.",
+          "t": "A provider wants the box to feel like <b>its own service</b>. Branding and a ready-made app can save them building these tools themselves. Ask how much customisation they need before promising specifics.",
           "g": [
             [
               "White-label",
@@ -761,8 +785,12 @@
           "u": "https://www.tp-link.com/us/landing/aginet-solution"
         },
         {
-          "l": "TP-Link XGS-PON Wi-Fi 7 announcement",
-          "u": "https://service-provider.tp-link.com/events/694/"
+          "l": "NX510v 5G router (provider site)",
+          "u": "https://service-provider.tp-link.com/es/lte-router/nx510v/"
+        },
+        {
+          "l": "HX510 mesh system (TP-Link)",
+          "u": "https://www.tp-link.com/hk/products/details/hx510.html"
         }
       ],
       "pages": [
@@ -773,7 +801,7 @@
         },
         {
           "h": "Scenario: mixed network",
-          "t": "A provider has fibre in towns and 5G in rural areas. One vendor with <b>routers, mesh and 5G models managed in one platform</b> is the selling point TP-Link itself stresses for Aginet.",
+          "t": "A provider has fibre in towns and 5G in rural areas. TP-Link's pages list <b>routers, mesh and 5G models</b> that all support TAUC cloud management, so one platform can cover them. Confirm the exact setup with a technical contact.",
           "g": []
         },
         {
@@ -801,7 +829,7 @@
             "Fixed, mobile and mesh devices can sit under one management platform"
           ],
           "a": 2,
-          "w": "TP-Link positions Aginet as a platform covering several device types."
+          "w": "TP-Link product pages list TAUC support across router, mesh and 5G models."
         },
         {
           "q": "A customer says TP-Link is only a consumer brand. What is a good reply?",

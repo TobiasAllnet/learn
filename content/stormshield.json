@@ -34,7 +34,7 @@
    "pages": [
     {
      "h": "A European security vendor",
-     "t": "Stormshield makes <b>cyber security products</b> and is a wholly-owned subsidiary of <b>Airbus Defence and Space Cyber Programmes</b>. Think of it as the European alternative to the big US and Asian security brands, built with defence-grade customers in mind.",
+     "t": "Stormshield makes <b>cyber security products</b> and is a wholly-owned subsidiary of <b>Airbus Defence and Space Cyber Programmes</b>. It positions itself as a European security vendor for sensitive and critical infrastructures.",
      "g": [
       [
        "VENDOR",
@@ -100,7 +100,7 @@
       "A public body that cares about European origin and certification"
      ],
      "a": 2,
-     "w": "Public administration, defence and other sensitive sectors are named Stormshield sectors.",
+     "w": "Stormshield lists public administration, defence and other sensitive sectors as its markets.",
      "g": [
       [
        "ENCRYPTION",
@@ -118,10 +118,6 @@
     {
      "l": "SNS product range",
      "u": "https://www.stormshield.com/products-services/products/network-security/product-range-sns/"
-    },
-    {
-     "l": "Network security (SNS)",
-     "u": "https://www.stormshield.com/products-services/products/network-security/"
     }
    ],
    "pages": [
@@ -145,7 +141,7 @@
     },
     {
      "h": "Small, medium, large",
-     "t": "Models are named by size. <b>SN-S</b> (and the small SN-XS-Series-170) fit small businesses and remote sites. <b>SN-M and SN1100</b> fit medium companies and large agencies. <b>SN-L and SN-XL</b> fit head offices and big VPN hubs.",
+     "t": "Models are named by size. Entry models such as the <b>SN170</b> and the <b>SN-S series</b> are a usual starting point for small sites. <b>SN-M</b> targets growing businesses, <b>SN1100</b> multi-site companies, and <b>SN-L and SN-XL</b> larger, high-performance setups.",
      "g": [
       [
        "REMOTE SITE",
@@ -159,7 +155,7 @@
     },
     {
      "h": "One firmware for all",
-     "t": "All SNS firewalls run the <b>same firmware</b>. A customer who grows from a small box to a big one keeps the same features and the same way of working. That makes it easy for resellers to learn once and sell across sizes.",
+     "t": "All SNS firewalls run the <b>same firmware</b>. A customer who grows from a small box to a big one keeps the same software base. That should make it easier for resellers to learn once and sell across sizes.",
      "g": [
       [
        "FIRMWARE",
@@ -187,7 +183,7 @@
       "SN-S Series"
      ],
      "a": 2,
-     "w": "SN-S (and the small XS) target small businesses and remote sites.",
+     "w": "The SN-S series is a usual starting point for small businesses. Always check the exact model with Stormshield.",
      "g": [
       [
        "SN-S",
@@ -198,22 +194,22 @@
     {
      "q": "What is the benefit of the single firmware across all SNS models?",
      "o": [
-      "Same features and way of working at every size",
+      "Same firmware at every size",
       "All models cost the same",
       "No updates are ever needed"
      ],
      "a": 0,
-     "w": "One firmware means the same features and way of working from small to large boxes."
+     "w": "All SNS firewalls are based on the same firmware, from small to large boxes."
     },
     {
-     "q": "Where would you place an SN-L or SN-XL?",
+     "q": "Which fits an SN-L or SN-XL best?",
      "o": [
       "A small kiosk",
-      "A head office or VPN hub",
+      "A large head office or busy hub",
       "A tractor"
      ],
      "a": 1,
-     "w": "Large models suit head offices and VPN concentrators."
+     "w": "SN-L and SN-XL are the larger, higher-performance models, so they suit big sites rather than a small kiosk."
     }
    ]
   },
@@ -256,7 +252,7 @@
     },
     {
      "h": "Keeps production running",
-     "t": "Industrial boxes offer <b>high availability</b> and a <b>safety mode</b> so production continues if the firewall fails. They also check industrial messages and protect <b>PLCs</b>. The SNi40 is off sale and the <b>SNi50</b> is its successor.",
+     "t": "Industrial boxes offer <b>high availability</b> and a <b>safety mode</b> so production continues if the firewall fails. They also check industrial messages and protect <b>PLCs</b>. The SNi40 is off sale and Stormshield points customers to the <b>SNi50</b>.",
      "g": [
       [
        "PLC",
@@ -270,7 +266,7 @@
     },
     {
      "h": "SNxr1200: the rugged one",
-     "t": "<b>SNxr1200</b> is the most ruggedized model, made for critical environments such as <b>military vehicles</b>. It is a different job from a factory box: not a cabinet in a plant, but equipment built for harsh field conditions.",
+     "t": "<b>SNxr1200</b> is an extra-ruggedized model, designed to be embedded in <b>vehicles</b> operating in critical environments. It is a different job from a factory box: not a cabinet in a plant, but equipment built for harsh field conditions.",
      "g": [
       [
        "RUGGEDIZED",
@@ -301,24 +297,24 @@
      "w": "SNi is the industrial range built for operational networks and cabinets."
     },
     {
-     "q": "Which SNi model replaced the off-sale SNi40?",
+     "q": "Which SNi model does Stormshield point to now that the SNi40 is off sale?",
      "o": [
       "SNi10",
       "SNi50",
       "SNxr1200"
      ],
      "a": 1,
-     "w": "Stormshield points to the SNi50 as the successor."
+     "w": "The SNi40 page says it is off sale and points to the SNi50."
     },
     {
-     "q": "Which model is aimed at military vehicles and harsh conditions?",
+     "q": "Which model is built to be embedded in vehicles in critical environments?",
      "o": [
       "SN-M-Series-520",
       "SNi10",
       "SNxr1200"
      ],
      "a": 2,
-     "w": "The SNxr1200 is the most ruggedized option for critical environments."
+     "w": "The SNxr1200 is the extra-ruggedized model for vehicles in critical environments."
     }
    ]
   },
@@ -662,7 +658,7 @@
     },
     {
      "h": "Why choose it",
-     "t": "Pick EVA when the workload is <b>in the cloud or virtualised</b> and a hardware box makes no sense. It also appeals to customers who want a <b>French-developed, sovereign</b> option, for example in European sovereign clouds.",
+     "t": "Pick EVA when the workload is <b>in the cloud or virtualised</b> and a hardware box makes no sense. Stormshield describes it as <b>developed entirely in France</b>, which can appeal to customers who care about trusted, sovereign options.",
      "g": [
       [
        "SOVEREIGN",
@@ -735,7 +731,7 @@
    "pages": [
     {
      "h": "Why certifications matter",
-     "t": "A <b>certification</b> means an independent body tested the product. Governments and defence buyers often <b>require</b> it. Stormshield lists Common Criteria <b>EAL4+</b> and <b>ANSSI Standard qualification</b>, the French agency's approval level.",
+     "t": "A <b>certification</b> means an independent body tested the product. Governments and defence buyers often <b>ask for</b> it. Stormshield lists Common Criteria <b>EAL4+</b> and <b>ANSSI Standard qualification</b>, the French agency's approval level.",
      "g": [
       [
        "COMMON CRITERIA",
@@ -819,16 +815,12 @@
     {
      "l": "Maintenance and security packs",
      "u": "https://stormshield.com/our-support/services/maintenance/"
-    },
-    {
-     "l": "Network security (SNS)",
-     "u": "https://www.stormshield.com/products-services/products/network-security/"
     }
    ],
    "pages": [
     {
      "h": "Hardware plus a pack",
-     "t": "A firewall is bought with a <b>security pack</b>, an ongoing maintenance package. It keeps the box updated and supported. Without a pack, a firewall slowly falls out of date, so renewals matter for resellers.",
+     "t": "Stormshield sells <b>security packs</b>, ongoing maintenance packages that include technical support, patches and updates. Security protection needs to stay current, so renewals matter for resellers.",
      "g": [
       [
        "SUBSCRIPTION",
@@ -860,7 +852,7 @@
     },
     {
      "h": "Industrial and add-ons",
-     "t": "<b>Industrial</b> and <b>Industrial Plus</b> packs exist for industrial sites. Maintenance includes hardware exchange, support and updates. Extra services can be <b>added à la carte</b>. Check current pack details with Stormshield.",
+     "t": "<b>Industrial</b> and <b>Industrial Plus</b> packs exist for industrial sites. Maintenance covers support, updates and hardware exchange of a failed unit. Extra services can be <b>added à la carte</b>. Check current pack details with Stormshield.",
      "g": [
       [
        "A LA CARTE",
@@ -878,7 +870,7 @@
       "A one-time discount"
      ],
      "a": 1,
-     "w": "Packs are ongoing maintenance and update services."
+     "w": "Packs include support, patches and updates."
     },
     {
      "q": "Which pack adds sandboxing and advanced antimalware?",
@@ -922,18 +914,18 @@
      "u": "https://www.stormshield.com/about-us/"
     },
     {
-     "l": "SNS product range",
-     "u": "https://www.stormshield.com/products-services/products/network-security/product-range-sns/"
-    },
-    {
      "l": "Network security (SNS)",
      "u": "https://www.stormshield.com/products-services/products/network-security/"
+    },
+    {
+     "l": "Forum thread comparing Fortinet, Sophos, Stormshield",
+     "u": "https://administrator.de/forum/fortigate-vs-sophos-stormshield-319427.html"
     }
    ],
    "pages": [
     {
      "h": "The usual rivals",
-     "t": "In firewalls the customer often compares with <b>Fortinet, Check Point, Palo Alto, Sophos and WatchGuard</b>. These are large international brands. Stormshield competes on <b>origin, certification and fit</b>, not on being the biggest.",
+     "t": "In firewalls a customer may compare with international brands such as <b>Fortinet or Sophos</b>. Stormshield's own pitch is <b>European origin, certification and fit</b>, not being the biggest.",
      "g": [
       [
        "COMPETITOR",
@@ -943,7 +935,7 @@
     },
     {
      "h": "The plain-words difference",
-     "t": "Stormshield is <b>European</b>, owned by Airbus, with <b>EU and NATO RESTRICTED</b> labels and <b>ANSSI qualification</b>. It covers <b>IT and OT on one firmware</b>, and adds endpoint and data products from the same vendor."
+     "t": "Stormshield is <b>European</b>, owned by Airbus, with <b>EU and NATO RESTRICTED</b> labels and <b>ANSSI qualification</b>. SNS suits <b>both IT and OT</b> environments, and Stormshield adds endpoint and data products from the same vendor."
     },
     {
      "h": "Be honest on performance",
@@ -965,17 +957,17 @@
       "Cheapest in all cases"
      ],
      "a": 1,
-     "w": "The main angle is origin, certifications and fit."
+     "w": "Stormshield's own pitch is European origin, certifications and fit. Avoid blanket speed claims."
     },
     {
-     "q": "Which is true about SNS firmware?",
+     "q": "Which is true about SNS firewalls?",
      "o": [
-      "IT and OT run on one firmware",
-      "OT needs another vendor",
+      "Suited to both IT and OT environments",
+      "OT always needs another vendor",
       "Only IT works"
      ],
      "a": 0,
-     "w": "SNS covers IT and OT on one firmware."
+     "w": "Stormshield says SNS firewalls are equally suited to IT and OT environments."
     },
     {
      "q": "A customer asks if Stormshield is faster than a rival. Best reply?",
@@ -988,14 +980,14 @@
      "w": "Do not over-claim performance."
     },
     {
-     "q": "Which of these is named as a typical firewall competitor?",
+     "q": "Which of these is a firewall brand a customer might compare with Stormshield?",
      "o": [
       "Shelly",
-      "Cudy",
-      "Palo Alto"
+      "Shokz",
+      "Fortinet"
      ],
      "a": 2,
-     "w": "Palo Alto is one of the usual rivals, along with Fortinet, Check Point, Sophos and WatchGuard."
+     "w": "Fortinet is a large international firewall vendor. Shelly and Shokz sell other kinds of products."
     }
    ]
   },

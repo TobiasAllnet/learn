@@ -123,7 +123,7 @@
     },
     {
      "h": "Smart: a few settings",
-     "t": "A <b>smart</b> (web-managed) switch offers a web page with basic options such as <b>VLANs</b>, port speed settings and monitoring, usually without a command line. A good middle step for small businesses.",
+     "t": "A <b>smart</b> (web-managed) switch offers a web page with basic options such as <b>VLANs</b> and other basic settings, usually without a command line. A good middle step for small businesses.",
      "g": [
       [
        "VLAN",
@@ -137,7 +137,7 @@
     },
     {
      "h": "Managed: full control",
-     "t": "<b>Managed</b> switches add a full feature set: command line, SNMP monitoring, backup of settings and central management. They suit larger networks where an IT team wants tight control. They normally cost more.",
+     "t": "<b>Managed</b> switches add a full feature set: command line, SNMP monitoring and central management. They suit larger networks where an IT team wants tight control. They normally cost more.",
      "g": [
       [
        "SNMP",
@@ -191,6 +191,10 @@
     {
      "l": "Wikipedia: Virtual LAN",
      "u": "https://en.wikipedia.org/wiki/Virtual_LAN"
+    },
+    {
+     "l": "Network Academy: inter-VLAN routing",
+     "u": "https://www.networkacademy.io/index.php/ccna/ethernet/intervlan-routing"
     }
    ],
    "pages": [
@@ -364,6 +368,10 @@
     {
      "l": "Wikipedia: Network switch",
      "u": "https://en.wikipedia.org/wiki/Network_switch"
+    },
+    {
+     "l": "UVM: PoE information",
+     "u": "https://www.uvm.edu/network/poe-information"
     }
    ],
    "pages": [
@@ -393,7 +401,7 @@
     },
     {
      "h": "A bonus: backup power",
-     "t": "Because power comes from the switch, connecting the switch to a <b>UPS</b> keeps phones and access points running during a power cut. A nice selling point for shops and offices that must stay reachable.",
+     "t": "Because power comes from the switch, connecting the switch to a <b>UPS</b> keeps phones and access points running during a power cut, for as long as the battery lasts. A nice selling point for shops and offices that must stay reachable.",
      "g": [
       [
        "UPS",
@@ -623,6 +631,10 @@
     {
      "l": "Wikipedia: Power over Ethernet",
      "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+    },
+    {
+     "l": "TP-Link Omada: PoE switch guide",
+     "u": "https://www.omadanetworks.com/ph/blog/2627/poe-switch-guide-standards-power-budget-and-planning-for-business/"
     }
    ],
    "pages": [
@@ -697,12 +709,16 @@
     {
      "l": "Wikipedia: Power over Ethernet",
      "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+    },
+    {
+     "l": "Wikipedia: Ethernet over twisted pair",
+     "u": "https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair"
     }
    ],
    "pages": [
     {
      "h": "Small shop",
-     "t": "Six PCs, one printer, two cameras, one access point. A <b>8 to 16-port</b> switch, <b>PoE</b> for the cameras and AP, smart if guests need Wi-Fi apart. Unmanaged works when nothing needs separating.",
+     "t": "Six PCs, one printer, two cameras, one access point. An <b>8 to 16-port</b> switch, <b>PoE</b> for the cameras and AP, smart if guests need Wi-Fi apart. Unmanaged works when nothing needs separating.",
      "g": []
     },
     {

@@ -38,7 +38,7 @@
         },
         {
           "h": "UniFi is the famous part",
-          "t": "<b>UniFi</b> is the best-known line. It targets home, prosumer and business customers with network gear, <b>IP cameras</b>, door access and phones. Other lines such as airMAX and UISP serve internet providers.",
+          "t": "<b>UniFi</b> is the best-known line. It targets home, prosumer and business customers with network gear, <b>IP cameras</b>, door access and phones. Other lines such as airMAX, airFiber and UFiber serve internet providers and are managed in UISP.",
           "g": [
             [
               "Prosumer",
@@ -52,7 +52,7 @@
         },
         {
           "h": "One brand, many sectors",
-          "t": "The pitch on ui.com is <b>networking, physical security and more, unified</b>. For a distributor, that means one vendor can cover the network, cameras and door control for the same customer."
+          "t": "The ui.com home page pitches <b>unified networking, physical security and more</b>, under the tagline \"License Free\". For a distributor, that means one vendor can cover the network, cameras and door control for the same customer."
         }
       ],
       "quiz": [
@@ -64,7 +64,7 @@
             "UFiber"
           ],
           "a": 1,
-          "w": "UniFi is the company's best-known line. EdgeMax is only wired routers and switches, and UFiber is for fibre ISPs."
+          "w": "UniFi is the company's best-known line. EdgeMax is an older wired routing and switching line, and UFiber is the fibre line for internet providers."
         },
         {
           "q": "What does Ubiquiti's own site describe as its idea?",
@@ -74,7 +74,7 @@
             "Cloud software with no hardware"
           ],
           "a": 1,
-          "w": "The home page says networking, physical security and more are unified in one offering."
+          "w": "The home page presents networking, physical security and more as one unified offering."
         },
         {
           "q": "Which term describes a buyer who wants business-grade gear but often sets it up themselves?",
@@ -100,12 +100,12 @@
       "title": "The UniFi idea: one system",
       "src": [
         {
-          "l": "UniFi consoles and gateways",
+          "l": "UniFi consoles",
           "u": "https://ui.com/consoles"
         },
         {
-          "l": "Ubiquiti on Wikipedia",
-          "u": "https://en.wikipedia.org/wiki/Ubiquiti"
+          "l": "UniFi Protect",
+          "u": "https://ui.com/camera-security"
         }
       ],
       "pages": [
@@ -189,12 +189,16 @@
         {
           "l": "UniFi consoles",
           "u": "https://ui.com/consoles"
+        },
+        {
+          "l": "UniFi Express 7 tech specs",
+          "u": "https://techspecs.ui.com/unifi/cloud-gateways/ux7"
         }
       ],
       "pages": [
         {
           "h": "The brain of the site",
-          "t": "A <b>gateway</b> connects the site to the internet. UniFi gateways add a <b>firewall</b>, intrusion prevention, VPN and handling of more than one internet line. Many models double as the console that runs the apps.",
+          "t": "A <b>gateway</b> connects the site to the internet. UniFi gateways add a <b>firewall</b>, intrusion prevention, VPN and support for more than one internet line. Many models double as the console that runs the apps.",
           "g": [
             [
               "VPN",
@@ -208,7 +212,7 @@
         },
         {
           "h": "Sizes",
-          "t": "Ubiquiti positions <b>Cloud Gateway Ultra and Max</b> for small to medium sites, <b>Dream Machine Pro</b> and Pro Max for large sites, and <b>Enterprise Firewall</b> models at the top. Some, like <b>Dream Router 7</b>, add Wi-Fi and a PoE switch."
+          "t": "Ubiquiti positions <b>Cloud Gateway Ultra and Max</b> for small-to-medium sites, <b>Dream Machine Pro</b> and Pro Max for large-scale sites, and <b>Enterprise Firewall</b> models for the most demanding networks. <b>Dream Router 7</b> adds Wi-Fi 7 and a PoE switch."
         },
         {
           "h": "The compact option",
@@ -250,7 +254,7 @@
             "Dream Wall"
           ],
           "a": 0,
-          "w": "Enterprise Firewall models are the top-end options."
+          "w": "Enterprise Firewall models are described as built for the most demanding networks."
         },
         {
           "q": "What is PoE used for?",
@@ -297,7 +301,7 @@
         },
         {
           "h": "Wi-Fi access points",
-          "t": "Access points come as <b>ceiling</b> models (U7 and U6), <b>enterprise</b> models for crowded places such as stadiums, <b>in-wall</b> units, and weatherproof <b>outdoor</b> units. Most are powered over PoE from a UniFi switch.",
+          "t": "Access points include <b>ceiling</b> models, <b>enterprise</b> models for crowded places such as stadiums, <b>in-wall</b> units and weatherproof <b>outdoor</b> units. Names starting U7 are Wi-Fi 7 and U6 are Wi-Fi 6. Most are powered over PoE from a switch.",
           "g": [
             [
               "Access point (AP)",
@@ -307,7 +311,7 @@
         },
         {
           "h": "Plan before you sell",
-          "t": "APs need a UniFi console to be managed, and <b>mesh</b> needs one too. Ubiquiti offers a <b>Design Center</b> for planning coverage. Good habit: let the reseller plan where APs go before quoting.",
+          "t": "APs can run standalone, but <b>wireless mesh</b> needs a UniFi console, and Ubiquiti recommends a UniFi gateway for the smoothest setup. The free <b>Design Center</b> helps plan coverage. Good habit: plan where APs go before quoting.",
           "g": [
             [
               "Mesh",
@@ -328,14 +332,20 @@
           "w": "The Enterprise category is for critical, high-density sites, including arenas."
         },
         {
-          "q": "What do UniFi APs need to be managed?",
+          "q": "What do UniFi APs need if you want wireless mesh between them?",
           "o": [
             "A UniFi console",
             "A Windows PC permanently on",
             "A monthly subscription"
           ],
           "a": 0,
-          "w": "APs are adopted into a UniFi console, which also enables mesh."
+          "w": "Ubiquiti says wireless meshing requires a UniFi console and is not available for standalone AP setups.",
+          "g": [
+            [
+              "Mesh",
+              "Access points linking to each other wirelessly."
+            ]
+          ]
         },
         {
           "q": "Which tool helps plan AP coverage?",
@@ -345,7 +355,7 @@
             "Talk Relay"
           ],
           "a": 1,
-          "w": "UniFi Design Center is for planning coverage."
+          "w": "The free UniFi Design Center is for planning Wi-Fi coverage on a floor plan."
         }
       ]
     },
@@ -366,7 +376,7 @@
       "pages": [
         {
           "h": "Protect: cameras",
-          "t": "<b>UniFi Protect</b> runs on a UniFi console and records to <b>local storage</b>. Cameras come in bullet, dome, turret, PTZ and 360 styles. Detections for motion, people and vehicles are built in. Ubiquiti states no licence fees.",
+          "t": "<b>UniFi Protect</b> runs on a UniFi console and records to <b>local storage</b>. Cameras come in bullet, dome, turret, compact and PTZ styles. Motion, person and vehicle detection are built in. Ubiquiti states no licence fees.",
           "g": [
             [
               "PTZ",
@@ -390,7 +400,7 @@
         },
         {
           "h": "Better together",
-          "t": "Access integrates with Protect, so a door event can be linked to its video. Both are managed from the same system. That is a strong angle for sites that already run UniFi networking."
+          "t": "Access and Protect work together, so door control and camera video can be handled in one UniFi system. Both are managed from the same platform. That is a strong angle for sites that already run UniFi networking."
         }
       ],
       "quiz": [
@@ -402,7 +412,7 @@
             "Local storage on the console or recorder"
           ],
           "a": 2,
-          "w": "Protect records to local storage; cloud archiving is optional."
+          "w": "Protect records to local storage on your console. Cloud connection is optional, mainly for remote access."
         },
         {
           "q": "A customer wants door control linked with video of who entered. What do you suggest?",
@@ -412,7 +422,7 @@
             "Talk with Connect"
           ],
           "a": 0,
-          "w": "Access integrates with Protect to link door events and video."
+          "w": "Access and Protect work together, so door control and camera video sit in one system."
         },
         {
           "q": "What connects the lock and reader in UniFi Access?",
@@ -453,7 +463,7 @@
       "pages": [
         {
           "h": "Talk: business phones",
-          "t": "<b>UniFi Talk</b> is a business <b>VoIP</b> phone system with touchscreen desk and wall phones. It can run on a UniFi console or work with a third-party phone system. Hardware and the Talk phone service are separate costs.",
+          "t": "<b>UniFi Talk</b> is a business <b>VoIP</b> phone system with touchscreen desk and wall phones. It can run on a UniFi console or work with a third-party PBX or SIP provider. Outbound calling needs a Talk service subscription or your own SIP provider.",
           "g": [
             [
               "VoIP",
@@ -467,7 +477,7 @@
         },
         {
           "h": "Connect: signage and more",
-          "t": "<b>UniFi Connect</b> covers digital signage, lighting and <b>EV charging</b> management on the same console. It is the add-on line: handy for hotels and shops that want more than networking.",
+          "t": "<b>UniFi Connect</b> covers digital signage, lighting and <b>EV charging</b> on the UniFi platform. It is the add-on line, a possible fit for hotels and shops that want more than networking.",
           "g": [
             [
               "Digital signage",
@@ -477,7 +487,7 @@
         },
         {
           "h": "Mobile internet",
-          "t": "Some UniFi devices add <b>5G</b>: for example <b>Dream Router 5G Max</b>, and the Cloud Gateway Industrial with remote SIM support. They suit sites where fixed internet is slow to install or needs a backup line.",
+          "t": "Some UniFi gateways add mobile internet: <b>Dream Router 5G Max</b> has built-in <b>5G</b>, and Cloud Gateway Industrial is a multi-WAN gateway with remote SIM support. Mobile links suit sites where fixed internet is slow to install or needs a backup line.",
           "g": [
             [
               "5G backup",
@@ -511,11 +521,11 @@
           "q": "What is a cost to remember when selling UniFi Talk?",
           "o": [
             "A yearly Network licence",
-            "There is a phone service subscription besides the hardware",
+            "Calling service (a subscription or your own SIP provider) is separate from the phones",
             "A per-camera fee"
           ],
           "a": 1,
-          "w": "Ubiquiti says there are no extra licence fees, but hardware and Talk service subscriptions are separate."
+          "w": "Ubiquiti says it charges no extra licence fees, but outbound calling needs a Talk service subscription or your own SIP provider."
         }
       ]
     },
@@ -536,7 +546,7 @@
       "pages": [
         {
           "h": "Local first",
-          "t": "A UniFi site is run by a console <b>on site</b>. Traffic handling, security rules and camera recording happen locally. If the internet drops, the local network and recordings keep working as designed.",
+          "t": "A UniFi site is run by a console <b>on site</b>. Security rules are applied locally and Protect records locally. If the internet drops, the local network should keep running and recordings stay on the console.",
           "g": [
             [
               "On-premises",
@@ -556,7 +566,7 @@
         },
         {
           "h": "No licence fees",
-          "t": "Ubiquiti states <b>no licence fees</b> for managing network gear and for Protect cameras, whether 4 or 4,000. This is a key difference from vendors that charge per device or per year. Always confirm exceptions, such as Talk service."
+          "t": "Ubiquiti states <b>no licence fees</b> for the network apps and for Protect cameras, whether 4 or 4,000. It contrasts itself with vendors that charge per device or per year. Always confirm exceptions, such as Talk calling service."
         }
       ],
       "quiz": [
@@ -614,18 +624,22 @@
       "title": "ISP wireless and fibre lines",
       "src": [
         {
-          "l": "Ubiquiti on Wikipedia",
-          "u": "https://en.wikipedia.org/wiki/Ubiquiti"
+          "l": "Ubiquiti airMAX devices (store)",
+          "u": "https://store.ui.com/collections/operator-airmax-devices"
         },
         {
-          "l": "UniFi consoles",
-          "u": "https://ui.com/consoles"
+          "l": "Ubiquiti airFiber PtP (store)",
+          "u": "https://store.ui.com/us/pt/category/wireless-airfiber-ptp"
+        },
+        {
+          "l": "Ubiquiti on Wikipedia",
+          "u": "https://en.wikipedia.org/wiki/Ubiquiti"
         }
       ],
       "pages": [
         {
           "h": "Not the same as UniFi",
-          "t": "Besides UniFi, Ubiquiti has lines built for internet providers: <b>airMAX</b> for point-to-point and point-to-multipoint radio links, <b>airFiber</b> for wireless ISPs, and <b>UFiber</b> for fibre ISPs. Those are sold to carriers, not to offices.",
+          "t": "Besides UniFi, Ubiquiti has lines built for internet providers: <b>airMAX</b> for point-to-multipoint and point-to-point radio links, <b>airFiber</b> for high-capacity point-to-point links, and <b>UFiber</b> for fibre (GPON) networks. They are aimed at carriers, not offices.",
           "g": [
             [
               "WISP",
@@ -639,7 +653,7 @@
         },
         {
           "h": "Managed with UISP",
-          "t": "These carrier-type products are managed in <b>UISP</b>, a separate system from UniFi. Customers are <b>WISPs</b>, local fibre operators and installers building links between sites. It is a different conversation from an office Wi-Fi quote.",
+          "t": "These ISP products are managed in <b>UISP</b>, a separate system from UniFi. Typical customers are <b>WISPs</b> and installers building links between sites. It is a different conversation from an office Wi-Fi quote.",
           "g": [
             [
               "Point-to-multipoint",
@@ -661,7 +675,7 @@
             "UniFi Protect"
           ],
           "a": 0,
-          "w": "airMAX and the UISP management system are aimed at wireless ISPs."
+          "w": "airMAX radios and the UISP management system are aimed at wireless ISPs."
         },
         {
           "q": "Which line is aimed at fibre ISPs?",
@@ -671,7 +685,7 @@
             "EdgeMax"
           ],
           "a": 1,
-          "w": "UFiber serves fibre ISPs, per the company overview."
+          "w": "UFiber is Ubiquiti's fibre (GPON) line, managed in UISP. UniFi Access is door control and EdgeMax is wired routing."
         },
         {
           "q": "What is a WISP?",
@@ -716,7 +730,7 @@
         },
         {
           "h": "Typical buyers",
-          "t": "<b>SMB offices and shops</b>: gateway, PoE switch, APs, a few cameras. <b>Hospitality</b>: many APs, guest Wi-Fi, door access, phones. <b>Prosumers</b>: a Dream Router and cameras. <b>ISPs</b>: airMAX, UISP, fibre.",
+          "t": "Common buyers: <b>SMB offices and shops</b> want gateway, PoE switch, APs, a few cameras. <b>Hospitality</b> often needs many APs, guest Wi-Fi, door access, phones. <b>Prosumers</b> may want a Dream Router and cameras. <b>ISPs</b>: airMAX, UISP, fibre.",
           "g": [
             [
               "SMB",
@@ -738,7 +752,7 @@
             "Only a Dream Router 5G"
           ],
           "a": 0,
-          "w": "A hotel needs network, many APs and door access, all fitting into UniFi."
+          "w": "A hotel needs network, many APs and door access, which UniFi can cover in one system."
         },
         {
           "q": "A small shop with four cameras and simple Wi-Fi. Best match?",
@@ -799,7 +813,7 @@
       "pages": [
         {
           "h": "Where UniFi shines",
-          "t": "<b>One system</b> for network, cameras, doors and phones; no licence fees on management; easy rollout for installers; a wide range from small to large. For SMB and hospitality, that unified story is hard to match.",
+          "t": "<b>One system</b> for network, cameras, doors and phones; no licence fees on management; easy rollout for installers; a wide range from small to large. For SMB and hospitality, that unified story is a strong selling point.",
           "g": [
             [
               "Unified",
@@ -809,11 +823,11 @@
         },
         {
           "h": "Where to be careful",
-          "t": "UniFi is a <b>single-vendor ecosystem</b>: its strongest features need UniFi devices together. Big regulated organisations may have specific <b>certification, support or compliance</b> demands, so check their requirements before you promise."
+          "t": "UniFi is a <b>single-vendor ecosystem</b>: its strongest features usually need UniFi devices together. Big regulated organisations may have specific <b>certification, support or compliance</b> demands, so check their requirements before you promise."
         },
         {
           "h": "Honest framing",
-          "t": "UniFi targets home, prosumer and business users, and it has had public security criticism in the past. Do not claim it replaces every <b>enterprise</b> platform. Present it as a strong fit for SMB, and let the customer's needs decide.",
+          "t": "UniFi targets home, prosumer and business users, and Ubiquiti has faced public security criticism in the past. Do not claim it replaces every <b>enterprise</b> platform. Present it as a strong fit for SMB, and let the customer's needs decide.",
           "g": [
             [
               "Enterprise vendor",

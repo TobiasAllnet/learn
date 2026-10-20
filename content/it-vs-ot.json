@@ -18,6 +18,14 @@
     {
       "l": "EU NIS2 Directive",
       "u": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive"
+    },
+    {
+      "l": "NIST SP 800-82r3 Guide to OT security",
+      "u": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+    },
+    {
+      "l": "NCSC Ireland NIS2 quick reference guide",
+      "u": "https://www.ncsc.gov.ie/pdfs/NCSC_NIS2_Guide.pdf"
     }
   ],
   "lessons": [
@@ -124,6 +132,14 @@
         {
           "l": "SCADA (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/SCADA"
+        },
+        {
+          "l": "GE Vernova: PLC, HMI and SCADA",
+          "u": "https://gevernova.com/software/blog/plc-hmi-scada"
+        },
+        {
+          "l": "NIST SP 800-82r3 Guide to OT security",
+          "u": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
         }
       ],
       "pages": [
@@ -157,7 +173,7 @@
         },
         {
           "h": "SCADA is the overview",
-          "t": "<b>SCADA</b> supervises many PLCs and remote units, often across sites far apart. It collects data, shows overview screens and records alarms. PLCs keep controlling even if the link to SCADA goes down.",
+          "t": "<b>SCADA</b> supervises many PLCs and remote units, often across sites far apart. It collects data, shows overview screens and records alarms. PLCs usually keep controlling even if the link to SCADA goes down.",
           "g": [
             [
               "RTU",
@@ -199,7 +215,7 @@
             "They can keep controlling their process on their own"
           ],
           "a": 2,
-          "w": "PLCs and RTUs can keep controlling autonomously if communications fail."
+          "w": "PLCs and RTUs can usually keep controlling on their own if communications fail."
         }
       ]
     },
@@ -215,12 +231,16 @@
         {
           "l": "Operational technology (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Operational_technology"
+        },
+        {
+          "l": "NIST SP 800-82r3 Guide to OT security",
+          "u": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
         }
       ],
       "pages": [
         {
           "h": "Different priorities",
-          "t": "IT security usually puts <b>confidentiality</b> first: keep data secret. OT puts <b>safety, reliability and availability</b> first, because a failure can cause physical harm, damage or a stopped plant.",
+          "t": "IT security traditionally centres on confidentiality, integrity and availability, often with <b>confidentiality</b> first: keep data secret. OT puts <b>safety, reliability and availability</b> first, because a failure can cause physical harm, damage or a stopped plant.",
           "g": [
             [
               "Confidentiality",
@@ -234,7 +254,7 @@
         },
         {
           "h": "What that changes",
-          "t": "In IT you can reboot a server at night and patch it weekly. In OT, machines may run <b>continuously for years</b>, and an update or restart can halt production or cause danger. So changes are planned carefully and often rare.",
+          "t": "In IT you can reboot a server at night and patch it weekly. In OT, machines often run <b>continuously</b>, and an update or restart can halt production or cause danger. Outages must often be planned days or weeks ahead, so changes are careful and often rare.",
           "g": [
             [
               "Patch",
@@ -306,6 +326,18 @@
         {
           "l": "OPC UA (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/OPC_Unified_Architecture"
+        },
+        {
+          "l": "OPC Foundation: OPC UA",
+          "u": "https://opcfoundation.org/about/opc-technologies/opc-ua/"
+        },
+        {
+          "l": "PI: PROFINET",
+          "u": "https://www.profibus.com/technologies/profinet"
+        },
+        {
+          "l": "NIST SP 800-82r3 Guide to OT security",
+          "u": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
         }
       ],
       "pages": [
@@ -325,7 +357,7 @@
         },
         {
           "h": "Three names",
-          "t": "<b>Modbus</b>: simple, old (1979) and still everywhere, but with <b>no built-in security</b>. <b>PROFINET</b>: Ethernet-based, fast and time-critical, common in factories. <b>OPC UA</b>: a modern standard for exchanging data from machines up to software and the cloud, with security built in.",
+          "t": "<b>Modbus</b>: simple, old (1979) and still widely used, but with <b>no built-in security</b>. <b>PROFINET</b>: Ethernet-based, fast and time-critical, common in factories. <b>OPC UA</b>: a modern standard for exchanging data from machines up to software and the cloud, with security built in.",
           "g": [
             [
               "Ethernet",
@@ -387,14 +419,18 @@
           "u": "https://en.wikipedia.org/wiki/Purdue_Enterprise_Reference_Architecture"
         },
         {
-          "l": "SCADA levels (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/SCADA"
+          "l": "Palo Alto Networks: Purdue model",
+          "u": "https://www.paloaltonetworks.com/cyberpedia/what-is-the-purdue-model-for-ics-security"
+        },
+        {
+          "l": "NIST SP 800-82r3 Guide to OT security",
+          "u": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
         }
       ],
       "pages": [
         {
           "h": "A layer cake",
-          "t": "The <b>Purdue model</b> arranges an industrial site in levels. Level 0 is the physical process, level 1 the controllers and sensors, level 2 control and HMI/SCADA, level 3 production operations, and level 4 business systems like ERP.",
+          "t": "The <b>Purdue model</b> arranges an industrial site in levels. Level 0 is the physical process, level 1 the controllers and field devices, level 2 control and HMI/SCADA, level 3 production operations, and level 4 business systems like ERP.",
           "g": [
             [
               "Purdue model",
@@ -446,7 +482,7 @@
             "None"
           ],
           "a": 1,
-          "w": "Level 0 is the process itself, level 1 the controllers and sensors."
+          "w": "Level 0 is the process itself, level 1 the controlling devices."
         },
         {
           "q": "Why group systems into zones?",
@@ -476,6 +512,14 @@
         {
           "l": "PLC (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Programmable_logic_controller"
+        },
+        {
+          "l": "Media Redundancy Protocol (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Media_Redundancy_Protocol"
+        },
+        {
+          "l": "Cisco ISA 3000 data sheet (DIN rail industrial firewall)",
+          "u": "https://www.cisco.com/c/en/us/products/collateral/security/industrial-security-appliance-3000/data-sheet-c78-735839.html"
         }
       ],
       "pages": [
@@ -509,7 +553,7 @@
         },
         {
           "h": "Redundancy",
-          "t": "Interruptions are costly, so industrial networks use <b>redundancy</b>: ring layouts, doubled power inputs and sometimes paired devices, so one failure does not stop production. Ask whether the customer needs a spare path or power.",
+          "t": "Interruptions are costly, so industrial networks use <b>redundancy</b>: ring layouts, dual power inputs and spare paths, so one failure does not stop production. Ask whether the customer needs a spare path or power.",
           "g": [
             [
               "Redundancy",
@@ -567,6 +611,14 @@
         {
           "l": "NCSC operational technology",
           "u": "https://www.ncsc.gov.uk/collection/operational-technology"
+        },
+        {
+          "l": "NIST SP 800-82r3 Guide to OT security",
+          "u": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
+        },
+        {
+          "l": "Cisco ISA 3000 data sheet (DIN rail industrial firewall)",
+          "u": "https://www.cisco.com/c/en/us/products/collateral/security/industrial-security-appliance-3000/data-sheet-c78-735839.html"
         }
       ],
       "pages": [
@@ -586,7 +638,7 @@
         },
         {
           "h": "Why OT needs it most",
-          "t": "Many OT devices are old, hard to patch and trust anyone who talks to them. Connecting office and plant opens risk. A <b>firewall between IT and OT</b> lets only the traffic you allow through and hides weak devices.",
+          "t": "Many OT systems are long-lived, hard to patch and use protocols with no authentication. Connecting office and plant opens risk. A <b>firewall between IT and OT</b> lets only the traffic you allow through and shields weak devices.",
           "g": [
             [
               "Firewall",
@@ -624,7 +676,7 @@
             "To stop updates"
           ],
           "a": 1,
-          "w": "Old OT devices are hard to patch, so controlled access in front of them matters."
+          "w": "Many OT devices are hard to patch, so controlled access in front of them matters."
         },
         {
           "q": "A customer has one flat network with the office and the production line. Best first suggestion?",
@@ -634,7 +686,7 @@
             "Separate them with a firewall and zones"
           ],
           "a": 2,
-          "w": "Segmentation with a firewall between IT and OT is the typical first step."
+          "w": "A firewall between IT and OT is a common first step, and NIST names firewalls as the main way to protect OT devices."
         }
       ]
     },
@@ -650,6 +702,10 @@
         {
           "l": "EU NIS2 Directive",
           "u": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive"
+        },
+        {
+          "l": "NCSC Ireland NIS2 quick reference guide",
+          "u": "https://www.ncsc.gov.ie/pdfs/NCSC_NIS2_Guide.pdf"
         }
       ],
       "pages": [
@@ -669,7 +725,7 @@
         },
         {
           "h": "NIS2: the EU law",
-          "t": "<b>NIS2</b> is an EU directive on cybersecurity in 18 critical sectors, such as energy, transport, health and water, plus more areas like manufacturing of critical products. Medium and large companies in these sectors must manage risk and <b>report serious incidents</b>.",
+          "t": "<b>NIS2</b> is an EU directive on cybersecurity covering 18 sectors. Highly critical ones include energy, transport, health and water. Others include manufacturing of certain products. Medium and large companies in these sectors must manage cyber risk and <b>report significant incidents</b>.",
           "g": [
             [
               "Directive",
@@ -683,7 +739,7 @@
         },
         {
           "h": "What to say in a sales talk",
-          "t": "NIS2 is the reason many customers now ask about OT security, and 62443 is a common yardstick for products and projects. You are not a lawyer: say it is a topic, and ask whether they know if they are <b>covered</b>.",
+          "t": "NIS2 is one reason many customers now ask about OT security, and 62443 is a recognised yardstick for products and projects. You are not a lawyer: say it is a topic, and ask whether they know if they are <b>covered</b>.",
           "g": [
             [
               "Covered entity",
@@ -737,12 +793,16 @@
         {
           "l": "SCADA (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/SCADA"
+        },
+        {
+          "l": "NIST SP 800-82r3 Guide to OT security",
+          "u": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
         }
       ],
       "pages": [
         {
           "h": "Industry and infrastructure",
-          "t": "Typical OT sites: <b>manufacturing</b>, power and utilities, water and wastewater, oil and gas, mining, and transport. Facilities such as buildings and airports also run OT for HVAC, access control and energy management.",
+          "t": "Typical OT sites: <b>manufacturing</b>, power and utilities, water and wastewater, oil and gas, mining, and transport. Buildings also run OT, for example for HVAC and access control.",
           "g": [
             [
               "HVAC",
@@ -766,7 +826,7 @@
         },
         {
           "h": "Remote and small sites",
-          "t": "Many OT sites are small and remote, such as pumping stations or wind turbines. They need <b>rugged routers</b>, remote access and monitoring. Cellular routers and small industrial firewalls are a natural fit.",
+          "t": "Many OT sites are small and remote, such as pumping stations. They need <b>rugged routers</b>, remote access and monitoring. Cellular routers and small industrial firewalls are often a good fit.",
           "g": [
             [
               "Remote access",
@@ -820,6 +880,10 @@
         {
           "l": "ISA/IEC 62443 series",
           "u": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards"
+        },
+        {
+          "l": "NIST SP 800-82r3 Guide to OT security",
+          "u": "https://csrc.nist.gov/pubs/sp/800/82/r3/final"
         }
       ],
       "pages": [

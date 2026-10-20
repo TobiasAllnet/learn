@@ -14,6 +14,14 @@
     {
       "l": "End-of-sale and end-of-life terms (Cisco)",
       "u": "https://www.cisco.com/c/en/us/products/eos-eol-policy.html"
+    },
+    {
+      "l": "Meraki per-device licensing overview",
+      "u": "https://documentation.meraki.com/Platform_Management/Product_Information/Licensing/Meraki_Per-Device_Licensing_Overview"
+    },
+    {
+      "l": "HPE Networking end of life information",
+      "u": "https://support.hpe.com/docs/display/public/hpe-networking-eos/information.html"
     }
   ],
   "lessons": [
@@ -29,6 +37,10 @@
         {
           "l": "Software as a service (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Software_as_a_service"
+        },
+        {
+          "l": "Meraki per-device licensing overview",
+          "u": "https://documentation.meraki.com/Platform_Management/Product_Information/Licensing/Meraki_Per-Device_Licensing_Overview"
         }
       ],
       "pages": [
@@ -62,7 +74,7 @@
         },
         {
           "h": "What to tell a reseller",
-          "t": "Always ask: is this <b>hardware only</b>, a <b>one-off licence</b>, or a <b>subscription</b>? Many products mix them: you buy the box once and subscribe to security updates or cloud features. Make the customer understand what stops when a subscription ends.",
+          "t": "Always ask: is this <b>hardware only</b>, a <b>one-off licence</b>, or a <b>subscription</b>? Many products mix them: you buy the box once and subscribe to security updates or cloud features. What stops when a subscription ends differs by vendor: sometimes only updates and features, sometimes the device itself.",
           "g": [
             [
               "Hardware only",
@@ -93,14 +105,14 @@
           "w": "Temporary licences lower the initial cost, at the price of ongoing payments."
         },
         {
-          "q": "A customer buys a firewall box and a security subscription. What happens when the subscription ends?",
+          "q": "A customer's subscription is about to end. What should you check?",
           "o": [
-            "Nothing at all changes",
-            "The box is returned",
-            "The box still works but the subscription features stop"
+            "Nothing, the device always keeps working as before",
+            "What stops: it differs by vendor, from updates and features to the device itself",
+            "Whether the box can be returned"
           ],
-          "a": 2,
-          "w": "Hardware remains, but subscribed services and updates end with the subscription."
+          "a": 1,
+          "w": "Some vendors stop only updates and cloud features, while others shut the device down after a grace period."
         }
       ]
     },
@@ -120,6 +132,14 @@
         {
           "l": "Managed services (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Managed_services"
+        },
+        {
+          "l": "System integrator (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/System_integrator"
+        },
+        {
+          "l": "Wholesaling (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Wholesaling"
         }
       ],
       "pages": [
@@ -139,7 +159,7 @@
         },
         {
           "h": "Resellers with extra",
-          "t": "A <b>value-added reseller (VAR)</b> adds something to the product: installation, consulting, training or a tailored solution. A <b>system integrator</b> combines products from many vendors into one working solution for a customer.",
+          "t": "A <b>value-added reseller (VAR)</b> adds something to the product: integration, consulting, training or a tailored solution. A <b>system integrator</b> combines products from many vendors into one working solution for a customer.",
           "g": [
             [
               "VAR",
@@ -211,12 +231,20 @@
         {
           "l": "Software as a service (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Software_as_a_service"
+        },
+        {
+          "l": "Per-seat license (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Per-seat_license"
+        },
+        {
+          "l": "RWTH IT Center: basics of licensing",
+          "u": "https://help.itc.rwth-aachen.de/en/service/u7okrwv9h0s2/article/e1874f1e95b04264bf9221b3fa010d52/"
         }
       ],
       "pages": [
         {
           "h": "What is being counted?",
-          "t": "A licence counts something. <b>Per device</b>: each firewall, camera or access point. <b>Per user</b>: each person using the service. <b>Per feature</b>: you pay to unlock extras such as advanced security or analytics. Usage can also be counted by users, storage or transactions.",
+          "t": "A licence counts something. <b>Per device</b>: each firewall, camera or access point. <b>Per user</b>: each person using the service. <b>Per feature</b>: some vendors charge extra to unlock extras such as advanced security. Some licences count simultaneous users instead of named people.",
           "g": [
             [
               "Metric",
@@ -226,7 +254,7 @@
         },
         {
           "h": "Why it matters",
-          "t": "The metric decides how a customer's cost <b>grows</b>. A per-device licence grows with every new box. A per-user one grows with staff. A customer with few users but many devices will prefer a per-user model, and the other way round.",
+          "t": "The metric decides how a customer's cost <b>grows</b>. A per-device licence grows with every new box. A per-user one grows with staff. A customer with few users but many devices may find per-user cheaper, and the other way round, so compare the actual terms.",
           "g": [
             [
               "Scale",
@@ -257,14 +285,14 @@
           "w": "Per-user licences scale with the number of users."
         },
         {
-          "q": "A customer has 3 staff but 20 cameras. Which metric is likely cheaper for them?",
+          "q": "A customer with 3 staff adds 10 more cameras. Which kind of licence cost grows?",
           "o": [
-            "Per device",
             "Per user",
-            "They are always equal"
+            "Per device",
+            "Neither, both stay the same"
           ],
           "a": 1,
-          "w": "Few users and many devices favour per-user counting."
+          "w": "A per-device licence grows with every new device, while a per-user one follows the number of people."
         },
         {
           "q": "What should you do before quoting a licence?",
@@ -323,7 +351,7 @@
         },
         {
           "h": "What to ask",
-          "t": "Ask what the <b>base warranty</b> is, what tiers exist, and when the support clock starts. Higher tiers add faster hardware replacement and 24x7 help. Customers with critical systems should consider them, while others may not need more than the standard.",
+          "t": "Ask what the <b>base warranty</b> is, what tiers exist, and when the support clock starts. Higher tiers often add faster hardware replacement and longer or 24x7 help. Customers with critical systems should consider them, while others may not need more than the standard.",
           "g": [
             [
               "24x7",
@@ -351,7 +379,7 @@
             "The user's age"
           ],
           "a": 1,
-          "w": "Higher tiers add faster response and replacement."
+          "w": "Higher tiers often add faster response and replacement."
         },
         {
           "q": "A hospital cannot tolerate a long outage. What do you suggest?",
@@ -392,7 +420,7 @@
         },
         {
           "h": "A step for diagnosis",
-          "t": "The RMA gives the vendor a chance to <b>diagnose</b> the problem first. Many 'faulty' products are really installation or configuration issues. So expect questions and tests before an RMA is approved.",
+          "t": "The RMA gives the vendor a chance to <b>diagnose</b> the problem first. Some 'faulty' products turn out to be setup or configuration issues. So expect questions and tests before an RMA is approved.",
           "g": [
             [
               "Diagnose",
@@ -437,10 +465,10 @@
           "o": [
             "Vendors dislike customers",
             "RMAs are never approved",
-            "Many faults are really configuration issues, so the vendor diagnoses first"
+            "The vendor wants a chance to diagnose and possibly fix the issue first"
           ],
           "a": 2,
-          "w": "The RMA is a chance to fix or diagnose the issue before a return."
+          "w": "The RMA is a gatekeeping step that lets the vendor diagnose and possibly fix the issue before a return."
         }
       ]
     },
@@ -456,6 +484,10 @@
         {
           "l": "Software license (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Software_license"
+        },
+        {
+          "l": "Insight: Microsoft co-terminosity guide",
+          "u": "https://uk.insight.com/en_GB/content-and-resources/cloud-care-hub/resources/cloud-commerce-platform-ccx/ccx-microsoft-how-to-use-coterminosity.html"
         }
       ],
       "pages": [
@@ -539,6 +571,10 @@
         {
           "l": "Managed services (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Managed_services"
+        },
+        {
+          "l": "Meraki per-device licensing overview",
+          "u": "https://documentation.meraki.com/Platform_Management/Product_Information/Licensing/Meraki_Per-Device_Licensing_Overview"
         }
       ],
       "pages": [
@@ -558,7 +594,7 @@
         },
         {
           "h": "How it is sold",
-          "t": "Cloud management is usually a <b>subscription</b>, sometimes included free with the hardware and sometimes sold per device or per feature. Check what is free, what needs a subscription and what happens to the device if it ends.",
+          "t": "Cloud management is often a <b>subscription</b>, sold per device or per feature, and terms differ by vendor. Check what is free, what needs a subscription and what happens to the device if it ends. In some products the device stops working after a grace period.",
           "g": [
             [
               "Per feature",
@@ -631,7 +667,7 @@
       "pages": [
         {
           "h": "SKU and part number",
-          "t": "A <b>SKU</b> identifies one exact item for sale, such as a model in a certain colour, region or bundle. Codes are not standardised, so a vendor's part number and a distributor's SKU can differ. Always quote the exact code to avoid mistakes.",
+          "t": "A <b>SKU</b> identifies one exact item for sale, such as a model in a certain colour or pack size. Codes are not standardised, so a vendor's part number and a distributor's SKU can differ. Always quote the exact code to avoid mistakes.",
           "g": [
             [
               "SKU",
@@ -717,6 +753,10 @@
         {
           "l": "Distribution (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Distribution_(marketing)"
+        },
+        {
+          "l": "Gross margin (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Gross_margin"
         }
       ],
       "pages": [
@@ -736,7 +776,7 @@
         },
         {
           "h": "Deal registration",
-          "t": "In <b>deal registration</b> a partner tells the vendor about a specific opportunity. If approved, the partner gets protection for a set period, so another partner or the vendor's own team does not step in. It also keeps pipelines visible.",
+          "t": "In <b>deal registration</b> a partner tells the vendor about a specific opportunity. If approved, the partner gets protection for a set period, so another partner or the vendor's own team does not step in. Vendors differ on the rules and how long protection lasts.",
           "g": [
             [
               "Opportunity",
@@ -750,7 +790,7 @@
         },
         {
           "h": "Margin vocabulary",
-          "t": "<b>List price</b> is the vendor's published price. <b>Discount</b> is the reduction from list. <b>Margin</b> is what the seller keeps after the cost of goods. Vendors may offer better terms for registered deals. Never share partner terms with others.",
+          "t": "<b>List price</b> is the vendor's published price. <b>Discount</b> is the reduction from list. <b>Margin</b> is what the seller keeps after the cost of goods. Vendors may offer better terms for registered deals. Partner terms are usually confidential, so never share them.",
           "g": [
             [
               "Margin",
@@ -802,7 +842,7 @@
             "Post it publicly"
           ],
           "a": 0,
-          "w": "Terms are confidential between vendor and partner."
+          "w": "Partner terms are normally confidential between vendor and partner."
         }
       ]
     },
@@ -814,6 +854,10 @@
         {
           "l": "End-of-sale and end-of-life terms (Cisco)",
           "u": "https://www.cisco.com/c/en/us/products/eos-eol-policy.html"
+        },
+        {
+          "l": "HPE Networking end of life information",
+          "u": "https://support.hpe.com/docs/display/public/hpe-networking-eos/information.html"
         }
       ],
       "pages": [
@@ -837,7 +881,7 @@
         },
         {
           "h": "The timeline",
-          "t": "Vendors usually <b>announce</b> end of sale in advance, then keep supporting active contracts for a period afterwards. Subscriptions and support that would run past the last support date stop being sold. Each vendor sets its own periods.",
+          "t": "Vendors such as Cisco and HPE <b>announce</b> end of sale in advance, then keep supporting active contracts for a period afterwards. Some, like Cisco, stop selling support or subscriptions that would run past the last support date. Each vendor sets its own periods and names.",
           "g": [
             [
               "Announcement",
@@ -879,7 +923,7 @@
             "Support under active contracts"
           ],
           "a": 2,
-          "w": "Vendors keep supporting active contracts until the last date of support."
+          "w": "Vendors such as Cisco and HPE keep supporting active contracts for a limited time after end of sale."
         },
         {
           "q": "You are quoting a 5 year project. What should you check?",

@@ -52,7 +52,7 @@
     },
     {
      "h": "What they make",
-     "t": "Shelly makes small <b>smart relays and switches</b>, dimmers, plugs, sensors, thermostats, <b>energy meters</b>, smart bulbs and more. There is also a <b>professional line</b> and a Bluetooth sensor line. The idea is one family of devices for lights, heating, shutters and energy.",
+     "t": "Shelly makes small <b>smart relays and switches</b>, dimmers, plugs, sensors, thermostats, <b>energy meters</b> and more. There is also a <b>professional line</b> and a Bluetooth sensor line. The idea is one family of devices for lights, heating, shutters and energy.",
      "g": [
       [
        "Relay",
@@ -133,7 +133,7 @@
    "pages": [
     {
      "h": "It fits behind the wall switch",
-     "t": "Many Shelly relays are tiny. The <b>Plus 1PM</b> is about 37 x 42 x 16 mm and fits in a <b>standard wall box</b>, behind an existing switch or socket. So you can make an old house smart without new wall panels or new cables.",
+     "t": "Many Shelly relays are tiny. The <b>Plus 1PM</b> is about 37 x 42 x 16 mm and is small enough for many <b>wall boxes</b>, behind an existing switch or socket. So you can make an old house smart without new wall panels or new cables.",
      "g": [
       [
        "Retrofit",
@@ -161,7 +161,7 @@
     },
     {
      "h": "Works with other systems",
-     "t": "Shelly lists support for <b>Alexa, Google Home, Apple Home, Matter and Home Assistant</b>. Home Assistant states that its Shelly integration talks <b>directly to the device and needs no cloud</b>. That means little vendor lock-in for the installer.",
+     "t": "Shelly lists support for <b>Alexa, Google Home, Apple HomeKit, Matter and Home Assistant</b>. Home Assistant states that its Shelly integration talks <b>directly to the device and needs no cloud</b>. That means little vendor lock-in for the installer.",
      "g": [
       [
        "Home Assistant",
@@ -187,7 +187,7 @@
       "It needs no electricity"
      ],
      "a": 0,
-     "w": "The Plus 1PM is only about 37 x 42 x 16 mm, so it fits a standard wall box."
+     "w": "The Plus 1PM is only about 37 x 42 x 16 mm, so it often fits a wall box."
     },
     {
      "q": "What does 'no hub required' mean for the installer?",
@@ -343,7 +343,7 @@
     },
     {
      "h": "H&T: temperature and humidity",
-     "t": "The <b>Plus H&T</b> is a battery sensor with a screen that reports <b>temperature and humidity</b>. It runs on 4 AA batteries, about a year according to the manual. Its readings can be used in rules, for example to switch a heater.",
+     "t": "The <b>Plus H&T</b> is a battery sensor with a screen that reports <b>temperature and humidity</b>. It runs on 4 AA batteries, about a year according to the manual. Its readings can be sent to other systems, for example via webhooks or MQTT.",
      "g": [
       [
        "Sensor",
@@ -420,7 +420,7 @@
    "pages": [
     {
      "h": "DIN rail and wired network",
-     "t": "The <b>Pro</b> line is made for the <b>DIN rail</b> inside the fuse cabinet. Models include Pro 1, 1PM, 2, 2PM, 3 and <b>4PM</b>, plus dimmers and energy meters. Pro devices offer <b>LAN (Ethernet), Wi-Fi and Bluetooth</b>.",
+     "t": "The <b>Pro</b> line is made for the <b>DIN rail</b> inside the fuse cabinet. Models include Pro 1, 1PM, 2, 2PM, 3 and <b>4PM</b>, plus dimmers and energy meters. Pro devices such as the 4PM and 3EM offer <b>LAN (Ethernet), Wi-Fi and Bluetooth</b>.",
      "g": [
       [
        "DIN rail",
@@ -472,7 +472,7 @@
       "LAN (Ethernet)"
      ],
      "a": 2,
-     "w": "Pro devices offer wired LAN as well as Wi-Fi and Bluetooth."
+     "w": "Pro devices such as the 4PM offer wired LAN as well as Wi-Fi and Bluetooth."
     },
     {
      "q": "Customer: an old house, only a wall box behind the switch, no cabinet space. Which line?",
@@ -504,8 +504,12 @@
      "u": "https://kb.shelly.cloud/knowledge-base/setting-up-gen3-devices-via-matter"
     },
     {
-     "l": "Shelly: multiprotocol connectivity at CES 2025",
-     "u": "https://www.shelly.com/blogs/media-kit/shelly-group-introduces-multiprotocol-connectivity-at-ces-2025"
+     "l": "Shelly Gen4 press release (Jan 2025)",
+     "u": "https://www.securityinfowatch.com/home/press-release/55252718/shelly-group-shelly-to-unveil-next-gen-smart-home-devices-featuring-multi-protocol-connectivity-at-ces-2025"
+    },
+    {
+     "l": "Shelly 1PM Gen4",
+     "u": "https://kb.shelly.cloud/knowledge-base/shelly-1pm-gen4"
     }
    ],
    "pages": [
@@ -539,7 +543,7 @@
     },
     {
      "h": "Gen4 and Mini",
-     "t": "<b>Gen4</b> was presented in 2025 with <b>multi-protocol</b> connectivity: Wi-Fi, Bluetooth, Matter and Zigbee. <b>Mini</b> models are extra small relays for tight wall boxes. In short: pick the newest generation that fits the job.",
+     "t": "<b>Gen4</b> was presented in 2025 with <b>multi-protocol</b> connectivity: Wi-Fi, Bluetooth, and Matter or Zigbee, switchable per device. <b>Mini</b> models are extra small relays for tight wall boxes. In short: pick the newest generation that fits the job.",
      "g": [
       [
        "Zigbee",
@@ -601,6 +605,10 @@
     {
      "l": "Shelly knowledge base: devices",
      "u": "https://kb.shelly.cloud/knowledge-base/devices"
+    },
+    {
+     "l": "Shelly BLU TRV",
+     "u": "https://kb.shelly.cloud/knowledge-base/shelly-blu-trv"
     }
    ],
    "pages": [
@@ -620,7 +628,7 @@
     },
     {
      "h": "The bridge: gateway",
-     "t": "BLU devices talk Bluetooth, not Wi-Fi, so they need a <b>gateway</b> to reach the network. The <b>BLU Gateway Gen3</b> is a Bluetooth-to-Wi-Fi unit with a USB-A connector. It supports up to <b>five BLU TRVs</b>, with a range of up to 10 m indoors.",
+     "t": "BLU devices talk Bluetooth, not Wi-Fi, so they need a <b>gateway</b> to reach the Wi-Fi network. The <b>BLU Gateway Gen3</b> is a Bluetooth-to-Wi-Fi unit with a USB-A connector. It supports up to <b>five BLU TRVs</b>, with a range of up to 10 m indoors.",
      "g": [
       [
        "Gateway",
@@ -630,7 +638,7 @@
     },
     {
      "h": "Battery life and gateways",
-     "t": "The <b>BLU Motion</b> sensor runs on one coin battery, which Shelly estimates at up to <b>5 years</b>. Its setup needs a powered Shelly Wi-Fi and Bluetooth device, Gen2 or newer, acting as the gateway. So an existing Shelly relay can sometimes do that job.",
+     "t": "The <b>BLU Motion</b> sensor runs on one coin battery, which Shelly estimates at up to <b>5 years</b>. In the Shelly app it needs a powered Shelly Wi-Fi and Bluetooth device, Gen2 or newer, acting as the gateway. So an existing Shelly relay can sometimes do that job.",
      "g": [
       [
        "Coin cell",
@@ -661,7 +669,7 @@
      "w": "The BLU TRV is the radiator valve, and it reaches the network through a gateway."
     },
     {
-     "q": "Why does a BLU sensor need a gateway?",
+     "q": "Why does a BLU sensor need a gateway to reach your network?",
      "o": [
       "It speaks Bluetooth, not Wi-Fi",
       "It has no battery",
@@ -696,8 +704,8 @@
      "u": "https://www.home-assistant.io/integrations/shelly/"
     },
     {
-     "l": "Shelly API docs (older devices)",
-     "u": "https://shelly-api-docs.shelly.cloud/gen1/"
+     "l": "Shelly Premium announcement",
+     "u": "https://corporate.shelly.com/en/news/shelly-group-plc-taps-recurring-revenue-potential-with-premium-subscription-feature-for-shelly-smart-control-app"
     }
    ],
    "pages": [
@@ -790,7 +798,7 @@
    "pages": [
     {
      "h": "Meter the whole house",
-     "t": "The <b>Pro 3EM</b> is a DIN-rail <b>three-phase meter</b>. Clip-on current sensors go on the incoming cables, so no load needs to be switched off. It shows voltage, current and power per phase, and stores data at <b>one-minute intervals</b> for at least 45 days.",
+     "t": "The <b>Pro 3EM</b> is a DIN-rail <b>three-phase meter</b>. Current clamps (CTs) go on the incoming cables. It shows voltage, current and power per phase, and stores data at <b>one-minute intervals</b> for at least 45 days.",
      "g": [
       [
        "Three-phase meter",
@@ -814,7 +822,7 @@
     },
     {
      "h": "A service for installers",
-     "t": "Shelly suggests a <b>home energy profiling service</b>: leave a Pro 3EM at the main board for two to four weeks, then show the customer their usage to help size a solar system. It is a monitoring tool, so tell customers to check local rules for billing use.",
+     "t": "Shelly suggests a <b>home energy profiling service</b>: leave a Pro 3EM at the main board for two to four weeks, then show the customer their usage to help size a solar system. Do not promise it replaces the grid company's official meter.",
      "g": [
       [
        "Profiling",
@@ -866,7 +874,7 @@
       "No, check local rules"
      ],
      "a": 2,
-     "w": "Shelly's pages describe monitoring, not utility billing, so customers should check local rules."
+     "w": "Shelly presents it as a monitoring and profiling tool, so never promise it replaces the official meter, and check local rules."
     }
    ]
   },

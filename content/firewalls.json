@@ -54,7 +54,7 @@
     },
     {
      "h": "Where you find them",
-     "t": "Firewalls can be <b>network-based</b> (a box at the edge) or <b>host-based</b> (software on a PC). Customers of every size need one at the internet connection. A plain home router has only basic protection.",
+     "t": "Firewalls can be <b>network-based</b> (a box at the edge) or <b>host-based</b> (software on a PC). Customers of every size usually want one at the internet connection.",
      "g": [
       [
        "Host-based",
@@ -286,7 +286,7 @@
    "pages": [
     {
      "h": "UTM: many tools in one box",
-     "t": "<b>UTM</b> bundles firewall, intrusion prevention, antivirus, <b>VPN</b> and web filtering into a single device with one console. That means fewer boxes and simpler management for teams with little IT staff.",
+     "t": "<b>UTM</b> bundles firewall, intrusion prevention, antivirus, <b>VPN</b> and web filtering into a single device with one console. That means fewer boxes and one place to manage them, which often suits teams with little IT staff.",
      "g": [
       [
        "UTM",
@@ -352,7 +352,7 @@
       "A hub"
      ],
      "a": 1,
-     "w": "UTM consolidates functions in one device with central management."
+     "w": "UTM combines functions in one device with one console, which usually suits small teams."
     }
    ]
   },
@@ -393,7 +393,7 @@
     },
     {
      "h": "Remote access",
-     "t": "<b>Remote access</b> VPNs let one person at a time connect to the company network from home or on the road. Each laptop opens its own tunnel, usually through client software. That is the home office case.",
+     "t": "<b>Remote access</b> VPNs let individual users connect to the company network from home or on the road. Each laptop opens its own tunnel, usually through client software. That is the home office case.",
      "g": [
       [
        "Client",
@@ -443,6 +443,10 @@
     {
      "l": "Wikipedia: Virtual private network",
      "u": "https://en.wikipedia.org/wiki/Virtual_private_network"
+    },
+    {
+     "l": "NordLayer: SSL VPN vs IPsec",
+     "u": "https://nordlayer.com/learn/vpn/ssl-vpn-vs-ipsec/"
     }
    ],
    "pages": [
@@ -462,7 +466,7 @@
     },
     {
      "h": "SSL/TLS",
-     "t": "<b>SSL/TLS</b> VPNs run over the same protocol as secure websites. Because of that they often work from networks that only allow web traffic, with little extra configuration. Many remote-access setups use them.",
+     "t": "<b>SSL/TLS</b> VPNs run over the same protocol as secure websites. Because it looks like ordinary web traffic, it tends to get through networks that only allow web traffic. Many remote-access setups use them.",
      "g": [
       [
        "TLS/SSL",
@@ -540,13 +544,13 @@
       ],
       [
        "MPLS",
-       "A costly carrier-managed private WAN service."
+       "A carrier-managed private WAN service."
       ]
      ]
     },
     {
      "h": "Central management",
-     "t": "Settings are pushed from <b>one central place</b>, cloud or on-site, to every branch. Chains with many shops or offices like this, and firewalls often include SD-WAN features. Not every small customer needs it.",
+     "t": "Settings are pushed from <b>one central place</b>, cloud or on-site, to every branch. Chains with many shops or offices like this, and some firewalls include SD-WAN features. Not every small customer needs it.",
      "g": []
     }
    ],
@@ -599,14 +603,14 @@
      "u": "https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html"
     },
     {
-     "l": "Fortinet: Unified threat management",
-     "u": "https://www.fortinet.com/resources/cyberglossary/unified-threat-management"
+     "l": "Tufin: firewall throughput",
+     "u": "https://www.tufin.com/blog/understanding-firewall-throughput-analysis"
     }
    ],
    "pages": [
     {
      "h": "Forms of firewall",
-     "t": "<b>Hardware</b> appliances are the usual box at the office. <b>Virtual</b> firewalls run on hypervisors on-site or in public clouds. <b>Cloud-native</b> ones scale automatically for cloud workloads. Pick by where the protected systems live.",
+     "t": "<b>Hardware</b> appliances are the usual box at the office. <b>Virtual</b> firewalls run on hypervisors on-site or in public clouds. <b>Cloud-native</b> ones are built to secure cloud workloads at scale. Pick by where the protected systems live.",
      "g": [
       [
        "Appliance",
@@ -620,7 +624,7 @@
     },
     {
      "h": "Managed where?",
-     "t": "Firewalls can be managed <b>on-premises</b> (a console or the box itself) or from a <b>cloud portal</b>, which many UTM products offer. Cloud management helps resellers handle many small customers from one view.",
+     "t": "Firewalls can be managed <b>on-premises</b> (a console or the box itself) or from a <b>cloud portal</b>, which some vendors offer. Cloud management helps resellers handle many small customers from one view.",
      "g": [
       [
        "On-prem",

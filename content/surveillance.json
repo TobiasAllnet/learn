@@ -8,12 +8,20 @@
       "u": "https://www.onvif.org/about/mission/"
     },
     {
+      "l": "ONVIF profiles",
+      "u": "https://www.onvif.org/profiles/"
+    },
+    {
       "l": "IP camera (Wikipedia)",
       "u": "https://en.wikipedia.org/wiki/IP_camera"
     },
     {
       "l": "Power over Ethernet (Wikipedia)",
       "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+    },
+    {
+      "l": "EDPB guidelines on video devices",
+      "u": "https://www.edpb.europa.eu/sites/default/files/files/file1/edpb_guidelines_201903_video_devices_en_0.pdf"
     }
   ],
   "lessons": [
@@ -29,6 +37,10 @@
         {
           "l": "CCTV (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Closed-circuit_television"
+        },
+        {
+          "l": "DVR vs NVR (CCTV Camera World)",
+          "u": "https://www.cctvcameraworld.com/guides/dvr-vs-nvr"
         }
       ],
       "pages": [
@@ -48,7 +60,7 @@
         },
         {
           "h": "What IP adds",
-          "t": "An IP camera needs only a network, not a special video cable. It can be viewed from a computer or phone, can run <b>analytics</b> on board, and typically gives about <b>four times</b> the resolution of an analog camera.",
+          "t": "An IP camera needs only a network, not a special video cable. It can be viewed from a computer or phone, can run <b>analytics</b> on board, and typically gives about <b>four times</b> the resolution of a traditional analog camera.",
           "g": [
             [
               "Analytics",
@@ -124,8 +136,8 @@
       "title": "Resolution and megapixels",
       "src": [
         {
-          "l": "Display resolution (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/Display_resolution"
+          "l": "4K resolution (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/4K_resolution"
         },
         {
           "l": "Storage and retention maths (Forasoft)",
@@ -217,8 +229,12 @@
           "u": "https://netxl.com/blog/cctv/ip-cctv-camera-lenses"
         },
         {
-          "l": "Night-vision device (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/Night-vision_device"
+          "l": "Varifocal vs fixed lens (Optics Lens)",
+          "u": "https://www.opticslens.com/news/what-is-the-difference-between-varifocal-cctv-lenses-and-fixed-cctv-lenses/"
+        },
+        {
+          "l": "Infrared vs thermal cameras (Avigilon)",
+          "u": "https://www.avigilon.com/blog/infrared-vs-thermal-cameras"
         }
       ],
       "pages": [
@@ -242,7 +258,7 @@
         },
         {
           "h": "Dark scenes",
-          "t": "Many cameras have <b>infrared (IR) LEDs</b> that light the scene with light we cannot see, giving a black and white night picture. They only reach so far. <b>Thermal</b> cameras detect heat instead and need no light at all.",
+          "t": "Many cameras have <b>infrared (IR) LEDs</b> that light the scene with light we cannot see, so the camera can still make a picture. They only reach so far. <b>Thermal</b> cameras detect heat instead and need no light at all.",
           "g": [
             [
               "IR",
@@ -318,8 +334,12 @@
           "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
         },
         {
-          "l": "IP camera (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/IP_camera"
+          "l": "Ethernet over twisted pair (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Ethernet_over_twisted_pair"
+        },
+        {
+          "l": "DVR vs NVR (CCTV Camera World)",
+          "u": "https://www.cctvcameraworld.com/guides/dvr-vs-nvr"
         }
       ],
       "pages": [
@@ -353,7 +373,7 @@
         },
         {
           "h": "What to check",
-          "t": "Add up the power of all cameras and compare it with the <b>PoE budget</b> of the switch. Also check cable length: standard Ethernet reaches about 100 m. Longer runs need extenders or a fibre link.",
+          "t": "Add up the power of all cameras and compare it with the <b>PoE budget</b> of the switch. Also check cable length: standard Ethernet reaches about 100 m. Longer runs need a switch or extender along the way, or a fibre link.",
           "g": [
             [
               "PoE budget",
@@ -440,7 +460,7 @@
         },
         {
           "h": "Strengths of each",
-          "t": "<b>NVR:</b> lots of storage, full control, no monthly fee for storage. <b>Edge:</b> cheapest and simple for one or two cameras. <b>Cloud:</b> no box to maintain and easy remote access, but needs good upload speed and an ongoing subscription.",
+          "t": "<b>NVR:</b> lots of storage, full control, no monthly fee for storage. <b>Edge:</b> usually the cheapest and simplest for one or two cameras. <b>Cloud:</b> no box to maintain and easy remote access, but needs good upload speed and an ongoing subscription.",
           "g": [
             [
               "Upload speed",
@@ -500,6 +520,14 @@
         {
           "l": "Storage and retention maths (Forasoft)",
           "u": "https://www.forasoft.com/learn/video-surveillance/articles-vms/surveillance-storage-retention-math"
+        },
+        {
+          "l": "HEVC (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/High_Efficiency_Video_Coding"
+        },
+        {
+          "l": "Seagate SkyHawk surveillance drives",
+          "u": "https://www.seagate.com/products/video-analytics/skyhawk-hard-drive/"
         }
       ],
       "pages": [
@@ -519,7 +547,7 @@
         },
         {
           "h": "Ways to save space",
-          "t": "<b>H.265</b> compression needs roughly half the data of H.264 at similar quality. Lowering the frame rate helps, and <b>motion recording</b> on a quiet scene can save a lot. The trade-off is a risk of missing the start of an event.",
+          "t": "<b>H.265</b> compression can cut the data by roughly 25 to 50 percent compared with H.264 at similar quality. Lowering the frame rate helps, and <b>motion recording</b> on a quiet scene can save a lot. The trade-off is a risk of missing the start of an event.",
           "g": [
             [
               "H.264 / H.265",
@@ -533,7 +561,7 @@
         },
         {
           "h": "Buy more than the maths says",
-          "t": "Disks in a recorder need extra room for redundancy and for staying not completely full, so plan for roughly <b>1.5 times</b> the raw figure. Use disks made for recording around the clock, not ordinary desktop ones.",
+          "t": "Disks in a recorder need extra room for redundancy and for staying not completely full, so a common rule of thumb is roughly <b>1.5 times</b> the raw figure. Use disks made for recording around the clock, not ordinary desktop ones.",
           "g": [
             [
               "RAID",
@@ -561,7 +589,7 @@
             "Longer cables"
           ],
           "a": 0,
-          "w": "H.265 needs roughly half the data of H.264 at similar quality."
+          "w": "H.265 can cut the data needed by roughly a quarter to a half compared with H.264 at similar quality."
         },
         {
           "q": "A customer's calculation says 20 TB. What should you quote?",
@@ -593,6 +621,10 @@
         {
           "l": "CCTV (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Closed-circuit_television"
+        },
+        {
+          "l": "About video analytics (Senstar)",
+          "u": "https://xnet.senstar.com/webhelp/Symphony/6.14/en/About_Video_Analytics.htm"
         }
       ],
       "pages": [
@@ -612,7 +644,7 @@
         },
         {
           "h": "Why customers want it",
-          "t": "Plain motion detection fires for shadows, rain and insects. AI detection that looks for <b>people or vehicles</b> gives fewer false alarms, so staff only look at what matters. It also helps search recordings fast.",
+          "t": "Plain motion detection can fire for shadows, rain and insects. AI detection that looks for <b>people or vehicles</b> usually gives fewer false alarms, so staff only look at what matters. It also helps search recordings fast.",
           "g": [
             [
               "False alarm",
@@ -640,7 +672,7 @@
             "Longer cable runs"
           ],
           "a": 0,
-          "w": "Classifying objects ignores harmless movement like shadows and rain."
+          "w": "Classifying objects usually ignores harmless movement like shadows and rain."
         },
         {
           "q": "Where can analytics run?",
@@ -753,6 +785,10 @@
           "u": "https://gdpr-info.eu/art-5-gdpr/"
         },
         {
+          "l": "EDPB guidelines on video devices",
+          "u": "https://www.edpb.europa.eu/sites/default/files/files/file1/edpb_guidelines_201903_video_devices_en_0.pdf"
+        },
+        {
           "l": "CCTV (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Closed-circuit_television"
         }
@@ -760,7 +796,7 @@
       "pages": [
         {
           "h": "Video is personal data",
-          "t": "If a person can be recognised, the footage is <b>personal data</b>, so GDPR rules apply to the customer who runs the cameras. This is awareness, not legal advice: customers should check local rules and ask their own legal adviser.",
+          "t": "If a person can be recognised, the footage is <b>personal data</b>, so GDPR rules generally apply to the customer who runs the cameras. This is awareness, not legal advice: customers should check local rules and ask their own legal adviser.",
           "g": [
             [
               "GDPR",
@@ -852,6 +888,10 @@
         {
           "l": "ONVIF profiles",
           "u": "https://www.onvif.org/profiles/"
+        },
+        {
+          "l": "ONVIF Profile M",
+          "u": "https://www.onvif.org/profiles/profile-m/"
         }
       ],
       "pages": [
@@ -871,7 +911,7 @@
         },
         {
           "h": "Profiles",
-          "t": "Products support <b>profiles</b>. <b>S</b> is basic video streaming, <b>T</b> advanced streaming, <b>G</b> edge storage and retrieval, <b>M</b> analytics metadata, and <b>A</b> and <b>C</b> are for access control.",
+          "t": "Products support <b>profiles</b>. <b>S</b> is basic video streaming (ONVIF is phasing it out), <b>T</b> advanced streaming, <b>G</b> edge storage and retrieval, <b>M</b> analytics metadata, and <b>A</b> and <b>C</b> are for access control.",
           "g": [
             [
               "Profile",

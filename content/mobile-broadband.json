@@ -14,6 +14,10 @@
     {
       "l": "eSIM (Wikipedia)",
       "u": "https://en.wikipedia.org/wiki/ESIM"
+    },
+    {
+      "l": "5G SA and NSA (Ericsson)",
+      "u": "https://www.ericsson.com/en/blog/europe/2022/5/5g-sa-5g-nsa-what-are-the-differences"
     }
   ],
   "lessons": [
@@ -29,6 +33,10 @@
         {
           "l": "Teltonika RUT901",
           "u": "https://teltonika-networks.com/products/routers/RUT901"
+        },
+        {
+          "l": "3G sunset in Europe (TeleGeography)",
+          "u": "https://resources.telegeography.com/3gs-sun-is-setting-in-europe"
         }
       ],
       "pages": [
@@ -48,7 +56,7 @@
         },
         {
           "h": "Generations",
-          "t": "Mobile networks come in generations. <b>4G</b> (also called <b>LTE</b>) is what most people use today. <b>5G</b> is the newer generation. Older <b>3G and 2G</b> exist as a fallback in many routers.",
+          "t": "Mobile networks come in generations. <b>4G</b> (also called <b>LTE</b>) is what most people use today. <b>5G</b> is the newer generation. Older <b>3G and 2G</b> are fading: many European operators, including Nordic ones, have switched off or announced the end of 3G.",
           "g": [
             [
               "LTE",
@@ -56,7 +64,7 @@
             ],
             [
               "3G / 2G",
-              "Older generations, slower, used as a fallback."
+              "Older, slower generations. Many European operators have switched off 3G."
             ]
           ]
         },
@@ -151,7 +159,7 @@
         },
         {
           "h": "Why it matters in sales",
-          "t": "eSIM suits devices that are <b>sealed</b> or hard to reach, and large IoT roll-outs, since nobody needs to swap cards. A normal SIM slot is still more flexible for small projects. Always check whether the product supports the type the customer wants.",
+          "t": "eSIM suits devices that are <b>sealed</b> or hard to reach, and large IoT roll-outs, since nobody needs to swap cards. A normal SIM slot is often simpler for small projects. Always check whether the product supports the type the customer wants.",
           "g": [
             [
               "IoT",
@@ -234,7 +242,7 @@
         },
         {
           "h": "Does the customer need 5G?",
-          "t": "Not always. If 4G coverage is good, 4G is cheaper and plenty for cameras, POS and backup. Choose <b>5G</b> when the site needs more speed, when the area has good 5G coverage, or when the project must last for years.",
+          "t": "Not always. If 4G coverage is good, 4G is often cheaper and usually plenty for cameras, POS and backup. Choose <b>5G</b> when the site needs more speed, when the area has good 5G coverage, or when the project must last for years.",
           "g": [
             [
               "POS",
@@ -272,7 +280,7 @@
             "A 4G router, if 4G coverage is good"
           ],
           "a": 2,
-          "w": "A card terminal uses little data, so 4G is usually enough and cheaper."
+          "w": "A card terminal uses little data, so 4G is usually enough, and often cheaper."
         }
       ]
     },
@@ -288,6 +296,10 @@
         {
           "l": "5G (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/5G"
+        },
+        {
+          "l": "5G SA and NSA (Ericsson)",
+          "u": "https://www.ericsson.com/en/blog/europe/2022/5/5g-sa-5g-nsa-what-are-the-differences"
         }
       ],
       "pages": [
@@ -311,7 +323,7 @@
         },
         {
           "h": "What changes",
-          "t": "With NSA, users get 5G radio benefits such as lower delay, but only 4G services. Only <b>SA</b> supports the full set of 5G services, such as <b>network slicing</b>, separate virtual networks for different needs.",
+          "t": "With NSA, users get 5G radio benefits such as higher speeds, but only 4G services. Only <b>SA</b> supports the full set of 5G services, such as <b>network slicing</b>, separate virtual networks for different needs.",
           "g": [
             [
               "Network slicing",
@@ -321,7 +333,7 @@
         },
         {
           "h": "What to check",
-          "t": "A router must support the mode the operator uses. A 5G router that supports <b>NSA only</b> may miss out on SA features, and the other way round. Ask which operator, and whether it offers SA in the area.",
+          "t": "A router must support the mode the operator uses. A 5G router that supports <b>NSA only</b> cannot use SA features. Ask which operator, and whether it offers SA in the area.",
           "g": [
             [
               "Operator",
@@ -373,8 +385,8 @@
           "u": "https://en.wikipedia.org/wiki/Carrier_aggregation"
         },
         {
-          "l": "LTE (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/LTE_(telecommunication)"
+          "l": "LTE frequency bands (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/LTE_frequency_bands"
         }
       ],
       "pages": [
@@ -452,6 +464,10 @@
           "u": "https://en.wikipedia.org/wiki/LTE_(telecommunication)"
         },
         {
+          "l": "LTE UE categories (Electronics Notes)",
+          "u": "https://www.electronics-notes.com/articles/connectivity/4g-lte-long-term-evolution/ue-categories-classes.php"
+        },
+        {
           "l": "Teltonika RUT901",
           "u": "https://teltonika-networks.com/products/routers/RUT901"
         }
@@ -483,7 +499,7 @@
         },
         {
           "h": "Picking one",
-          "t": "Cat 4 is a sensible choice for cameras, backup lines and IoT. For many users or heavy use, look at <b>higher categories</b> or 5G. Match the category to the workload, not to the biggest number on the box.",
+          "t": "Cat 4 is often enough for a few cameras, backup lines and IoT. For many users or heavy use, look at <b>higher categories</b> or 5G. Match the category to the workload, not to the biggest number on the box.",
           "g": [
             [
               "Workload",
@@ -535,8 +551,8 @@
           "u": "https://en.wikipedia.org/wiki/Antenna_diversity"
         },
         {
-          "l": "Fixed wireless (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/Fixed_wireless"
+          "l": "Improving LTE reception (Keenetic)",
+          "u": "https://support.keenetic.com/titan/kn-1811/en/33395.html"
         }
       ],
       "pages": [
@@ -556,7 +572,7 @@
         },
         {
           "h": "Why external",
-          "t": "External antennas can be <b>moved or replaced</b>. A better or outdoor antenna on a cable can sit near a window or on a roof, where the signal is stronger, while the router stays indoors. This often fixes a weak-signal site cheaply.",
+          "t": "External antennas can be <b>moved or replaced</b>. A better or outdoor antenna on a cable can sit near a window or on a roof, where the signal is usually stronger, while the router stays indoors. This can often help a weak-signal site.",
           "g": [
             [
               "Window",
@@ -566,7 +582,7 @@
         },
         {
           "h": "Placement tips",
-          "t": "Place the router or antenna <b>high</b> and near a window, away from metal and thick walls. If the signal is weak inside a building, an <b>external antenna</b> or an outdoor unit is the first thing to suggest, before blaming the router.",
+          "t": "Place the router or antenna near a <b>window</b>, away from other electronics and thick walls. If the signal is weak inside a building, an <b>external antenna</b> or an outdoor unit is a good next step to suggest, before blaming the router.",
           "g": [
             [
               "Signal strength",
@@ -601,10 +617,10 @@
           "o": [
             "Switch to a cable",
             "Buy a bigger SIM",
-            "Move the antenna higher or outdoors, or use external antennas"
+            "Move the antenna to a window or outdoors, or use an external antenna"
           ],
           "a": 2,
-          "w": "Better antenna placement often fixes weak signal cheaply."
+          "w": "Better antenna placement often helps with weak signal and is a sensible first step."
         }
       ]
     },
@@ -614,18 +630,22 @@
       "title": "Indoor vs outdoor units and FWA",
       "src": [
         {
-          "l": "Fixed wireless (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/Fixed_wireless"
+          "l": "Teltonika OTD500 outdoor router",
+          "u": "https://teltonika-networks.com/products/routers/OTD500"
         },
         {
-          "l": "5G (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/5G"
+          "l": "Fixed wireless access (Ericsson)",
+          "u": "https://www.ericsson.com/en/reports-and-papers/ericsson-technology-review/articles/fixed-wireless-access-on-a-massive-scale-with-5g"
+        },
+        {
+          "l": "Fixed wireless (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Fixed_wireless"
         }
       ],
       "pages": [
         {
           "h": "Indoor units",
-          "t": "<b>Indoor</b> routers sit in a room, powered from a socket, and are the simple choice where signal is good. They are cheap and easy, but walls cost signal, so reception depends on the building.",
+          "t": "<b>Indoor</b> routers sit in a room, powered from a socket, and are the simple choice where signal is good. They are usually cheaper and simpler, but walls cost signal, so reception depends on the building.",
           "g": [
             [
               "Indoor unit",
@@ -697,12 +717,16 @@
       "title": "Failover and dual SIM",
       "src": [
         {
-          "l": "Teltonika RUT901",
-          "u": "https://teltonika-networks.com/products/routers/RUT901"
+          "l": "Teltonika SIM switch rules",
+          "u": "https://wiki.teltonika-networks.com/view/RUT901_Mobile"
         },
         {
-          "l": "Fixed wireless (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/Fixed_wireless"
+          "l": "Teltonika dual-SIM support",
+          "u": "https://wiki.teltonika-networks.com/view/Dual-SIM_Support"
+        },
+        {
+          "l": "Teltonika RUT901",
+          "u": "https://teltonika-networks.com/products/routers/RUT901"
         }
       ],
       "pages": [
@@ -722,7 +746,7 @@
         },
         {
           "h": "What triggers a switch",
-          "t": "Typical triggers on a dual SIM router include <b>weak signal</b>, no network, a failed data connection, a data limit reached, or roaming. The router checks and swaps to the other SIM or the other WAN.",
+          "t": "Typical triggers on a dual SIM router, which the installer sets up as rules, include <b>weak signal</b>, no network, a failed data connection, a data limit reached, or roaming. The router checks and swaps to the other SIM or the other WAN.",
           "g": [
             [
               "Roaming",
@@ -732,7 +756,7 @@
         },
         {
           "h": "Backup for offices",
-          "t": "A common office setup: the <b>fixed line</b> is primary, <b>cellular</b> is the backup. When the line drops, the router moves to 4G or 5G in seconds. Shops, clinics and anything with card payments love this.",
+          "t": "A common office setup: the <b>fixed line</b> is primary, <b>cellular</b> is the backup. When the line drops, the router moves to 4G or 5G automatically. Shops, clinics and anything with card payments love this.",
           "g": [
             [
               "Primary / backup",
@@ -790,22 +814,22 @@
       "title": "Use cases",
       "src": [
         {
-          "l": "Teltonika RUT901",
-          "u": "https://teltonika-networks.com/products/routers/RUT901"
+          "l": "Teltonika Remote Management System",
+          "u": "https://teltonika-networks.com/products/rms"
         },
         {
-          "l": "Fixed wireless (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/Fixed_wireless"
+          "l": "Teltonika OTD500 outdoor router",
+          "u": "https://teltonika-networks.com/products/routers/OTD500"
         },
         {
-          "l": "eSIM (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/ESIM"
+          "l": "Fixed wireless access (Ericsson)",
+          "u": "https://www.ericsson.com/en/reports-and-papers/ericsson-technology-review/articles/fixed-wireless-access-on-a-massive-scale-with-5g"
         }
       ],
       "pages": [
         {
           "h": "Places with no cable",
-          "t": "<b>Cottages and remote buildings</b> often have no fixed line, so an outdoor 4G or 5G unit is the main internet. <b>Building sites</b> are temporary: a rugged cellular router can be set up in an hour and moved later.",
+          "t": "<b>Cottages and remote buildings</b> often have no fixed line, so an outdoor 4G or 5G unit is the main internet. <b>Building sites</b> are temporary: a rugged cellular router can be set up quickly and moved later.",
           "g": [
             [
               "Rugged",
@@ -853,7 +877,7 @@
             "They move, so a cable is impossible"
           ],
           "a": 2,
-          "w": "Moving vehicles can only connect over mobile networks."
+          "w": "A moving vehicle cannot trail a cable, so mobile networks are the practical way to connect."
         },
         {
           "q": "What is a benefit of remote management for a reseller?",
@@ -873,16 +897,16 @@
       "title": "What to ask a customer",
       "src": [
         {
-          "l": "5G (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/5G"
+          "l": "Teltonika SIM switch rules",
+          "u": "https://wiki.teltonika-networks.com/view/RUT901_Mobile"
+        },
+        {
+          "l": "Teltonika OTD500 outdoor router",
+          "u": "https://teltonika-networks.com/products/routers/OTD500"
         },
         {
           "l": "PoE (Wikipedia)",
           "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
-        },
-        {
-          "l": "SIM (Wikipedia)",
-          "u": "https://en.wikipedia.org/wiki/Subscriber_identity_module"
         }
       ],
       "pages": [

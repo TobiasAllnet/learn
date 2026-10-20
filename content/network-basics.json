@@ -120,6 +120,10 @@
     {
      "l": "Wikipedia: Network address translation",
      "u": "https://en.wikipedia.org/wiki/Network_address_translation"
+    },
+    {
+     "l": "RFC 1918: Private address ranges",
+     "u": "https://datatracker.ietf.org/doc/html/rfc1918"
     }
    ],
    "pages": [
@@ -135,7 +139,7 @@
     },
     {
      "h": "Public and private",
-     "t": "A <b>public</b> address is reachable on the internet, and the ISP usually gives the router one. Inside the LAN, devices use <b>private</b> addresses that are not usable directly on the internet. Many different LANs can reuse the same private ranges.",
+     "t": "A <b>public</b> address is reachable on the internet, and the router often gets one from the ISP. Inside the LAN, devices use <b>private</b> addresses that are not usable directly on the internet. Many different LANs can reuse the same private ranges.",
      "g": [
       [
        "Private address",
@@ -145,7 +149,7 @@
     },
     {
      "h": "IPv4 and IPv6",
-     "t": "<b>IPv4</b> has about 4.3 billion addresses, which ran out. <b>IPv6</b> uses much longer addresses (128 bits instead of 32), giving a huge supply. They are not directly compatible, so many networks run both side by side.",
+     "t": "<b>IPv4</b> has about 4.3 billion addresses, and the free supply has run out. <b>IPv6</b> uses much longer addresses (128 bits instead of 32), giving a huge supply. They are not directly compatible, so many networks run both side by side.",
      "g": [
       [
        "IPv6",
@@ -234,7 +238,7 @@
     },
     {
      "h": "DNS is the phone book",
-     "t": "People type names like a website address, computers need IP numbers. <b>DNS</b> translates one into the other, like a phone book. When customers say the internet is down but pings work, a DNS problem is a common suspect.",
+     "t": "People type names like a website address, computers need IP numbers. <b>DNS</b> translates one into the other, like a phone book. When websites fail but pinging a raw IP number still works, a DNS problem is a common suspect.",
      "g": [
       [
        "DNS",
@@ -393,6 +397,10 @@
     {
      "l": "Wikipedia: Port (computer networking)",
      "u": "https://en.wikipedia.org/wiki/Port_(computer_networking)"
+    },
+    {
+     "l": "Wikipedia: List of TCP and UDP port numbers",
+     "u": "https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers"
     }
    ],
    "pages": [
@@ -418,7 +426,7 @@
     },
     {
      "h": "Ports and protocols",
-     "t": "A <b>protocol</b> is an agreed way of talking. A <b>port</b> is a numbered door for a service. Web pages use port <b>443</b> (HTTPS), plain web 80, email sending 25, and DNS 53. Firewalls often allow or block by port.",
+     "t": "A <b>protocol</b> is an agreed way of talking. A <b>port</b> is a numbered door for a service. Web pages use port <b>443</b> (HTTPS), plain web 80, email between servers 25, and DNS 53. Firewalls often allow or block by port.",
      "g": [
       [
        "Protocol",
@@ -470,7 +478,7 @@
       "53"
      ],
      "a": 0,
-     "w": "HTTPS uses port 443; 53 is DNS and 25 is email sending."
+     "w": "HTTPS uses port 443; 53 is DNS and 25 is email between servers."
     }
    ]
   },
@@ -694,7 +702,7 @@
     },
     {
      "h": "Why customers use them",
-     "t": "VLANs cut unnecessary broadcast traffic and limit who can reach what. A guest on the Wi-Fi should not see the finance server. Careful setup matters: VLANs can be defeated if configured badly.",
+     "t": "VLANs cut unnecessary broadcast traffic and limit who can reach what. A guest on the Wi-Fi should not see the finance server. Careful setup matters: VLANs are not a complete security solution and can be defeated if badly set up.",
      "g": [
       [
        "Segmentation",
@@ -704,7 +712,7 @@
     },
     {
      "h": "Crossing between VLANs",
-     "t": "Switches do not pass traffic between VLANs by themselves. A <b>router</b> (a Layer 3 device) moves it, and that is also where rules can allow or block. VLAN-capable gear means <b>managed or smart switches</b>.",
+     "t": "Switches do not pass traffic between VLANs by themselves. A <b>router</b> or Layer 3 switch moves it, and that is also where rules can allow or block. VLAN-capable gear means <b>managed or smart switches</b>.",
      "g": [
       [
        "Layer 3",
@@ -813,7 +821,7 @@
      "w": "A switch connects the wired devices and access points inside the LAN."
     },
     {
-     "q": "Which question matters most for choosing the switch?",
+     "q": "Which of these is a key question when choosing the switch?",
      "o": [
       "Which devices need PoE?",
       "What colour is the rack?",

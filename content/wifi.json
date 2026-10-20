@@ -58,7 +58,7 @@
     },
     {
      "h": "Both sides must support it",
-     "t": "A new access point does not make an old phone faster. <b>Devices and access points</b> both need the generation. Newer gear still works with older devices, they just connect the older way. So selling Wi-Fi 6 or 7 is future-proofing.",
+     "t": "A new access point does not make an old phone faster. <b>Devices and access points</b> both need the generation. Newer gear still works with older devices, they just connect the older way. So selling Wi-Fi 6 or 7 is a common way to future-proof.",
      "g": []
     }
    ],
@@ -188,16 +188,16 @@
    "title": "2.4, 5 and 6 GHz",
    "src": [
     {
-     "l": "Wikipedia: Wireless LAN",
-     "u": "https://en.wikipedia.org/wiki/Wireless_LAN"
-    },
-    {
      "l": "Wikipedia: Wi-Fi",
      "u": "https://en.wikipedia.org/wiki/Wi-Fi"
     },
     {
      "l": "Wikipedia: Wi-Fi 6E",
      "u": "https://en.wikipedia.org/wiki/Wi-Fi_6E"
+    },
+    {
+     "l": "Wi-Fi NOW: EU releases 480 MHz of 6 GHz",
+     "u": "https://wifinowglobal.com/news-blog/its-official-eu-releases-480-mhz-of-6-ghz-spectrum-to-wi-fi-finally"
     }
    ],
    "pages": [
@@ -213,7 +213,7 @@
     },
     {
      "h": "5 GHz: more room",
-     "t": "<b>5 GHz</b> has more channels, so more devices can share the air. Higher frequencies generally have shorter range. It is the main band for most modern business Wi-Fi.",
+     "t": "<b>5 GHz</b> has more channels, so more devices can share the air. Higher frequencies generally have shorter range. It is a main band for modern business Wi-Fi, together with 6 GHz where supported.",
      "g": [
       [
        "Channel",
@@ -223,7 +223,7 @@
     },
     {
      "h": "6 GHz: a fresh lane",
-     "t": "The <b>6 GHz</b> band is about 1200 MHz wide, much bigger than 5 GHz. It enables very wide channels and starts out uncrowded. It is used by Wi-Fi 6E and Wi-Fi 7, so devices need to support it.",
+     "t": "The <b>6 GHz</b> band adds a lot of new spectrum: up to 1200 MHz in the US, but Europe has so far opened about 480 MHz. It allows very wide channels and starts out uncrowded. Wi-Fi 6E and Wi-Fi 7 use it, so devices need to support it.",
      "g": []
     }
    ],
@@ -272,6 +272,10 @@
     {
      "l": "Wikipedia: Wi-Fi 6E",
      "u": "https://en.wikipedia.org/wiki/Wi-Fi_6E"
+    },
+    {
+     "l": "Wikipedia: Wi-Fi",
+     "u": "https://en.wikipedia.org/wiki/Wi-Fi"
     }
    ],
    "pages": [
@@ -297,7 +301,7 @@
     },
     {
      "h": "Who needs Wi-Fi 7?",
-     "t": "It targets demanding uses like AR/VR, 3D training and ultra-high-definition video, and dense venues. Most small offices run fine on Wi-Fi 6. Fast access points also need <b>multigig ports</b> on the switch.",
+     "t": "It targets demanding uses like AR/VR, 3D training and ultra-high-definition video, and dense venues. Most small offices run fine on Wi-Fi 6. Fast access points often benefit from <b>multigig ports</b> on the switch.",
      "g": [
       [
        "Multigig port",
@@ -347,10 +351,6 @@
     {
      "l": "Wikipedia: Wireless LAN controller",
      "u": "https://en.wikipedia.org/wiki/Wireless_LAN_controller"
-    },
-    {
-     "l": "Wikipedia: Wireless LAN",
-     "u": "https://en.wikipedia.org/wiki/Wireless_LAN"
     }
    ],
    "pages": [
@@ -366,7 +366,7 @@
     },
     {
      "h": "Controller-based",
-     "t": "A <b>wireless LAN controller</b> manages many APs centrally: settings, security, and smooth hand-over of clients. It can be a box, software or <b>cloud-based</b>. One place to configure replaces touching each AP.",
+     "t": "A <b>wireless LAN controller</b> manages many APs centrally: settings, security, and smooth hand-over of clients. It can be a central unit, built into APs, or <b>cloud-based</b>. One place to configure replaces touching each AP.",
      "g": [
       [
        "Controller",
@@ -445,7 +445,7 @@
     },
     {
      "h": "Why walls matter",
-     "t": "Walls, floors, metal shelves and water absorb or reflect signal, and an AP typically reaches about 20 m indoors. Other Wi-Fi, microwaves and cordless phones add <b>interference</b>. So a floor plan alone can mislead.",
+     "t": "Walls, floors, metal shelves and water absorb or reflect signal, and an AP often reaches roughly 20 m indoors. Other Wi-Fi, microwaves and cordless phones add <b>interference</b>. So a floor plan alone can mislead.",
      "g": [
       [
        "Interference",
@@ -514,7 +514,7 @@
    "pages": [
     {
      "h": "WPA2 and WPA3",
-     "t": "<b>WPA2</b> (2004) is still common. <b>WPA3</b> (announced 2018) is stronger, with better protection against password guessing, and is mandatory for newly certified Wi-Fi devices. Choose WPA3 where all devices support it.",
+     "t": "<b>WPA2</b> (2004) is still common. <b>WPA3</b> (announced 2018) is stronger, with better protection against password guessing, and has been required for Wi-Fi CERTIFIED devices since 2020. Choose WPA3 where all devices support it.",
      "g": [
       [
        "WPA2/WPA3",
