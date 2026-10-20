@@ -1,0 +1,891 @@
+{
+  "title": "IT vs OT",
+  "emoji": "🏭",
+  "desc": "Office networks versus industrial control systems",
+  "src": [
+    {
+      "l": "Operational technology (Wikipedia)",
+      "u": "https://en.wikipedia.org/wiki/Operational_technology"
+    },
+    {
+      "l": "NCSC operational technology",
+      "u": "https://www.ncsc.gov.uk/collection/operational-technology"
+    },
+    {
+      "l": "ISA/IEC 62443 series",
+      "u": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards"
+    },
+    {
+      "l": "EU NIS2 Directive",
+      "u": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ot-1-1",
+      "lvl": 1,
+      "title": "IT vs OT in one minute",
+      "src": [
+        {
+          "l": "Operational technology (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Operational_technology"
+        },
+        {
+          "l": "NCSC operational technology",
+          "u": "https://www.ncsc.gov.uk/collection/operational-technology"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Two worlds",
+          "t": "<b>IT</b> is the office world: laptops, servers, email, Wi-Fi. <b>OT</b> is the machine world: hardware and software that monitors or controls physical equipment such as pumps, production lines and building systems.",
+          "g": [
+            [
+              "IT",
+              "Information technology: computers, networks and data for running a business."
+            ],
+            [
+              "OT",
+              "Operational technology: systems that control physical processes."
+            ]
+          ]
+        },
+        {
+          "h": "Where OT lives",
+          "t": "Think factories, power and water plants, oil and gas, mining, transport and building management. It was jokingly called 'IT in the non-carpeted areas'. A PLC or a SCADA system is typical OT.",
+          "g": [
+            [
+              "PLC",
+              "A rugged industrial computer that controls a machine or process."
+            ],
+            [
+              "SCADA",
+              "Software that supervises many machines and sites from one control room."
+            ]
+          ]
+        },
+        {
+          "h": "Now they meet",
+          "t": "OT used to be isolated from the office network. Today OT is increasingly <b>connected</b> to IT for monitoring and management. This is called <b>IT/OT convergence</b>, and it is why OT security became a big topic.",
+          "g": [
+            [
+              "Convergence",
+              "IT and OT coming together on connected networks."
+            ],
+            [
+              "Air gap",
+              "Total physical separation of a network from others."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is OT?",
+          "o": [
+            "Systems that monitor or control physical equipment",
+            "Office email systems",
+            "Only cloud storage"
+          ],
+          "a": 0,
+          "w": "OT detects or causes change through direct monitoring and control of equipment and processes."
+        },
+        {
+          "q": "Which is typical OT?",
+          "o": [
+            "A shared calendar",
+            "A PLC controlling a production line",
+            "A laptop"
+          ],
+          "a": 1,
+          "w": "PLCs and SCADA are classic OT components."
+        },
+        {
+          "q": "Why did OT security become a big topic?",
+          "o": [
+            "Factories closed",
+            "OT became cheaper",
+            "OT got connected to IT networks, ending its isolation"
+          ],
+          "a": 2,
+          "w": "Convergence removed the protection that isolation once gave."
+        }
+      ]
+    },
+    {
+      "id": "ot-1-2",
+      "lvl": 1,
+      "title": "PLC, SCADA and HMI in plain words",
+      "src": [
+        {
+          "l": "PLC (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Programmable_logic_controller"
+        },
+        {
+          "l": "SCADA (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/SCADA"
+        }
+      ],
+      "pages": [
+        {
+          "h": "The PLC is the worker",
+          "t": "A <b>PLC</b> is an industrial computer built for reliability in dust, heat and vibration. It reads <b>inputs</b> such as sensors, runs its program, and switches <b>outputs</b> such as motors and valves, over and over, many times per second.",
+          "g": [
+            [
+              "Input / output (I/O)",
+              "Signals coming into a controller from sensors, and going out to equipment."
+            ],
+            [
+              "Sensor",
+              "A device that measures something, like temperature or pressure."
+            ]
+          ]
+        },
+        {
+          "h": "HMI is the window",
+          "t": "An <b>HMI</b> is the screen where an operator sees status, alarms and trends, and can give commands such as switching off a pump. It can be a panel on the machine or a PC in a control room.",
+          "g": [
+            [
+              "HMI",
+              "Human-machine interface: the operator's screen and buttons."
+            ],
+            [
+              "Alarm",
+              "A warning that something needs attention."
+            ]
+          ]
+        },
+        {
+          "h": "SCADA is the overview",
+          "t": "<b>SCADA</b> supervises many PLCs and remote units, often across sites far apart. It collects data, shows overview screens and records alarms. PLCs keep controlling even if the link to SCADA goes down.",
+          "g": [
+            [
+              "RTU",
+              "Remote terminal unit: a field unit for remote sites, often using radio or mobile links."
+            ],
+            [
+              "Supervise",
+              "Watch and adjust from above, rather than do the control directly."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does a PLC do?",
+          "o": [
+            "Controls a machine or process by reading inputs and driving outputs",
+            "Stores office documents",
+            "Prints invoices"
+          ],
+          "a": 0,
+          "w": "It runs a program in a cycle: read inputs, run logic, set outputs."
+        },
+        {
+          "q": "What is an HMI?",
+          "o": [
+            "A cable type",
+            "The operator's screen and controls",
+            "A kind of sensor"
+          ],
+          "a": 1,
+          "w": "HMI means human-machine interface."
+        },
+        {
+          "q": "If the link to the SCADA centre fails, what happens to the PLCs?",
+          "o": [
+            "They delete their programs",
+            "Everything stops at once",
+            "They can keep controlling their process on their own"
+          ],
+          "a": 2,
+          "w": "PLCs and RTUs can keep controlling autonomously if communications fail."
+        }
+      ]
+    },
+    {
+      "id": "ot-2-1",
+      "lvl": 2,
+      "title": "Why OT puts uptime and safety first",
+      "src": [
+        {
+          "l": "NCSC operational technology",
+          "u": "https://www.ncsc.gov.uk/collection/operational-technology"
+        },
+        {
+          "l": "Operational technology (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Operational_technology"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Different priorities",
+          "t": "IT security usually puts <b>confidentiality</b> first: keep data secret. OT puts <b>safety, reliability and availability</b> first, because a failure can cause physical harm, damage or a stopped plant.",
+          "g": [
+            [
+              "Confidentiality",
+              "Keeping information secret from those who should not see it."
+            ],
+            [
+              "Availability",
+              "The system works when needed."
+            ]
+          ]
+        },
+        {
+          "h": "What that changes",
+          "t": "In IT you can reboot a server at night and patch it weekly. In OT, machines may run <b>continuously for years</b>, and an update or restart can halt production or cause danger. So changes are planned carefully and often rare.",
+          "g": [
+            [
+              "Patch",
+              "A software update that fixes a bug or security hole."
+            ],
+            [
+              "Downtime",
+              "A period when a system is not working."
+            ]
+          ]
+        },
+        {
+          "h": "What to remember in sales",
+          "t": "Do not pitch OT customers like an office. Their words are <b>uptime</b>, <b>safety</b> and <b>production</b>. A security product must not disturb the process. Stability and predictability sell better than features.",
+          "g": [
+            [
+              "Production",
+              "The actual making of goods, which a plant must not interrupt."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does OT typically prioritise?",
+          "o": [
+            "Safety, reliability and availability",
+            "Looks of the user interface",
+            "Cheap licences"
+          ],
+          "a": 0,
+          "w": "OT failure can cause physical danger and downtime, so these come first."
+        },
+        {
+          "q": "Why is patching harder in OT?",
+          "o": [
+            "OT has no software",
+            "Systems run continuously and a restart can stop production",
+            "Patches cost money"
+          ],
+          "a": 1,
+          "w": "Continuous operation makes restarts and updates risky."
+        },
+        {
+          "q": "A plant manager hears your pitch about advanced features. What lands better?",
+          "o": [
+            "It updates itself every day",
+            "It has the newest design",
+            "It will not disturb production and keeps the line running"
+          ],
+          "a": 2,
+          "w": "OT buyers value stability and predictability."
+        }
+      ]
+    },
+    {
+      "id": "ot-2-2",
+      "lvl": 2,
+      "title": "Industrial protocols by name and purpose",
+      "src": [
+        {
+          "l": "Modbus (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Modbus"
+        },
+        {
+          "l": "PROFINET (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Profinet"
+        },
+        {
+          "l": "OPC UA (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/OPC_Unified_Architecture"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Protocols are languages",
+          "t": "A <b>protocol</b> is the language devices use to talk. Industrial equipment has its own. You do not need the details, just the names and what each is for, so you understand what a customer's network carries.",
+          "g": [
+            [
+              "Protocol",
+              "A set of rules for how devices exchange data."
+            ],
+            [
+              "Fieldbus",
+              "An older name for networks that connect controllers and field devices."
+            ]
+          ]
+        },
+        {
+          "h": "Three names",
+          "t": "<b>Modbus</b>: simple, old (1979) and still everywhere, but with <b>no built-in security</b>. <b>PROFINET</b>: Ethernet-based, fast and time-critical, common in factories. <b>OPC UA</b>: a modern standard for exchanging data from machines up to software and the cloud, with security built in.",
+          "g": [
+            [
+              "Ethernet",
+              "The standard cable network technology."
+            ]
+          ]
+        },
+        {
+          "h": "Why sales cares",
+          "t": "Protocols decide whether equipment can talk to each other and what a security device must <b>understand</b>. Some firewalls and gateways support industrial protocols. Ask the customer which protocols they use before recommending hardware.",
+          "g": [
+            [
+              "Gateway",
+              "A device that translates between two networks or protocols."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which protocol is known as simple, old and without built-in security?",
+          "o": [
+            "Modbus",
+            "OPC UA",
+            "HTTPS"
+          ],
+          "a": 0,
+          "w": "Modbus is simple and widespread but provides no security against unauthorised commands."
+        },
+        {
+          "q": "What is OPC UA mainly for?",
+          "o": [
+            "Powering cameras",
+            "Standardised data exchange from machines to software and cloud",
+            "Wi-Fi roaming"
+          ],
+          "a": 1,
+          "w": "It is a platform-independent data exchange standard with security profiles."
+        },
+        {
+          "q": "A factory uses PROFINET. What does this tell you?",
+          "o": [
+            "They use only mobile networks",
+            "They have no PLCs",
+            "Their machines talk over time-critical industrial Ethernet"
+          ],
+          "a": 2,
+          "w": "PROFINET is an Ethernet-based standard strong at tight timing."
+        }
+      ]
+    },
+    {
+      "id": "ot-3-1",
+      "lvl": 3,
+      "title": "The Purdue model and zones",
+      "src": [
+        {
+          "l": "Purdue Enterprise Reference Architecture (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Purdue_Enterprise_Reference_Architecture"
+        },
+        {
+          "l": "SCADA levels (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/SCADA"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A layer cake",
+          "t": "The <b>Purdue model</b> arranges an industrial site in levels. Level 0 is the physical process, level 1 the controllers and sensors, level 2 control and HMI/SCADA, level 3 production operations, and level 4 business systems like ERP.",
+          "g": [
+            [
+              "Purdue model",
+              "A reference model that splits industrial IT and OT into levels."
+            ],
+            [
+              "ERP",
+              "Enterprise resource planning: the company's main business software."
+            ]
+          ]
+        },
+        {
+          "h": "Zones",
+          "t": "Lower levels are close to the machines and must stay safe and stable. Upper levels are the business network. Grouping levels into <b>zones</b> lets you control what talks between them, rather than letting everything reach everything.",
+          "g": [
+            [
+              "Zone",
+              "A group of systems with similar security needs."
+            ]
+          ]
+        },
+        {
+          "h": "Why it helps in a talk",
+          "t": "It gives you and the customer a simple <b>map</b>. 'Where does your SCADA sit, and what connects it to the office?' Real sites are messier than the model, so treat it as a concept for discussion, not a rule.",
+          "g": [
+            [
+              "Reference model",
+              "A simplified picture used to discuss real systems."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Where do ERP and business systems sit in the Purdue model?",
+          "o": [
+            "Level 4",
+            "Level 0",
+            "Level 1"
+          ],
+          "a": 0,
+          "w": "Business logistics systems like ERP sit at the top, level 4."
+        },
+        {
+          "q": "Which levels are closest to the physical process?",
+          "o": [
+            "Level 4",
+            "Levels 0 and 1",
+            "None"
+          ],
+          "a": 1,
+          "w": "Level 0 is the process itself, level 1 the controllers and sensors."
+        },
+        {
+          "q": "Why group systems into zones?",
+          "o": [
+            "To save electricity",
+            "To make cables shorter",
+            "To control what traffic passes between groups"
+          ],
+          "a": 2,
+          "w": "Zones with controlled links limit what can reach sensitive systems."
+        }
+      ]
+    },
+    {
+      "id": "ot-3-2",
+      "lvl": 3,
+      "title": "Industrial hardware: DIN rail, wide temperature, redundancy",
+      "src": [
+        {
+          "l": "DIN rail (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/DIN_rail"
+        },
+        {
+          "l": "Industrial Ethernet (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Industrial_Ethernet"
+        },
+        {
+          "l": "PLC (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Programmable_logic_controller"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Built for the cabinet",
+          "t": "Industrial gear is mounted on a <b>DIN rail</b>, a standard 35 mm metal rail inside control cabinets. Switches, routers and firewalls for factories often clip onto it, instead of sitting on a desk or in a 19 inch rack.",
+          "g": [
+            [
+              "DIN rail",
+              "A standard metal rail for mounting devices in cabinets."
+            ],
+            [
+              "Cabinet",
+              "A metal enclosure holding the electrical and control equipment."
+            ]
+          ]
+        },
+        {
+          "h": "Tough conditions",
+          "t": "Factory equipment must cope with <b>temperature extremes</b>, humidity, dust and vibration, so industrial devices are made rugged, with wide temperature ratings and robust connectors. Fibre links also avoid electrical noise.",
+          "g": [
+            [
+              "Wide temperature",
+              "A rating for working in both very cold and very hot places."
+            ],
+            [
+              "Fibre",
+              "Optical cable that carries light and is not affected by electrical noise."
+            ]
+          ]
+        },
+        {
+          "h": "Redundancy",
+          "t": "Interruptions are costly, so industrial networks use <b>redundancy</b>: ring layouts, doubled power inputs and sometimes paired devices, so one failure does not stop production. Ask whether the customer needs a spare path or power.",
+          "g": [
+            [
+              "Redundancy",
+              "Having a spare path, power input or device ready to take over."
+            ],
+            [
+              "Ring",
+              "A cable loop where traffic can go either way round if one link breaks."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is a DIN rail?",
+          "o": [
+            "A standard rail inside cabinets to mount devices",
+            "A kind of fibre",
+            "A router brand"
+          ],
+          "a": 0,
+          "w": "It is a standardised metal mounting rail in control cabinets."
+        },
+        {
+          "q": "Why do industrial devices have wide temperature ratings?",
+          "o": [
+            "To look better",
+            "Factories and outdoor cabinets can be very hot or cold",
+            "To save power only"
+          ],
+          "a": 1,
+          "w": "Industrial sites include temperature extremes, humidity and vibration."
+        },
+        {
+          "q": "A customer says one failed switch must never stop production. What do you discuss?",
+          "o": [
+            "A longer warranty only",
+            "A bigger monitor",
+            "Redundancy such as a ring or dual power"
+          ],
+          "a": 2,
+          "w": "Spare paths and power prevent a single failure from stopping production."
+        }
+      ]
+    },
+    {
+      "id": "ot-3-3",
+      "lvl": 3,
+      "title": "Segmentation and the firewall between IT and OT",
+      "src": [
+        {
+          "l": "Network segmentation (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Network_segmentation"
+        },
+        {
+          "l": "NCSC operational technology",
+          "u": "https://www.ncsc.gov.uk/collection/operational-technology"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Splitting a network",
+          "t": "<b>Segmentation</b> splits a network into smaller parts. If an intruder gets into one part, it is harder to move on to the rest, and a local fault stays local. Firewalls and VLANs are the usual tools.",
+          "g": [
+            [
+              "Segmentation",
+              "Dividing a network into separate parts with controlled links."
+            ],
+            [
+              "VLAN",
+              "A virtual separate network on shared hardware."
+            ]
+          ]
+        },
+        {
+          "h": "Why OT needs it most",
+          "t": "Many OT devices are old, hard to patch and trust anyone who talks to them. Connecting office and plant opens risk. A <b>firewall between IT and OT</b> lets only the traffic you allow through and hides weak devices.",
+          "g": [
+            [
+              "Firewall",
+              "A device that allows or blocks network traffic by rules."
+            ]
+          ]
+        },
+        {
+          "h": "Inside the plant too",
+          "t": "Good designs also split OT into <b>zones</b>, such as one production line per zone, so a problem cannot spread across the plant. Industrial firewalls often mount on a DIN rail and some understand industrial protocols.",
+          "g": [
+            [
+              "Industrial firewall",
+              "A firewall built for plant conditions and OT protocols."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the main benefit of segmentation?",
+          "o": [
+            "It limits how far an intruder or fault can spread",
+            "It increases Wi-Fi speed",
+            "It removes the need for passwords"
+          ],
+          "a": 0,
+          "w": "Splitting the network contains breaches and local failures."
+        },
+        {
+          "q": "Why put a firewall between IT and OT?",
+          "o": [
+            "To speed up email",
+            "Allow only needed traffic and protect fragile OT devices",
+            "To stop updates"
+          ],
+          "a": 1,
+          "w": "Old OT devices are hard to patch, so controlled access in front of them matters."
+        },
+        {
+          "q": "A customer has one flat network with the office and the production line. Best first suggestion?",
+          "o": [
+            "Replace all PLCs",
+            "Add more Wi-Fi",
+            "Separate them with a firewall and zones"
+          ],
+          "a": 2,
+          "w": "Segmentation with a firewall between IT and OT is the typical first step."
+        }
+      ]
+    },
+    {
+      "id": "ot-4-1",
+      "lvl": 4,
+      "title": "IEC 62443 and NIS2 at a glance",
+      "src": [
+        {
+          "l": "ISA/IEC 62443 series",
+          "u": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards"
+        },
+        {
+          "l": "EU NIS2 Directive",
+          "u": "https://digital-strategy.ec.europa.eu/en/policies/nis2-directive"
+        }
+      ],
+      "pages": [
+        {
+          "h": "IEC 62443: the standard",
+          "t": "<b>ISA/IEC 62443</b> is a series of standards for securing <b>industrial automation and control systems</b>. It covers asset owners, product suppliers, system integrators and service providers, and builds on shared responsibility between them.",
+          "g": [
+            [
+              "IACS",
+              "Industrial automation and control systems."
+            ],
+            [
+              "Integrator",
+              "A company that designs and builds a solution from many products for a customer."
+            ]
+          ]
+        },
+        {
+          "h": "NIS2: the EU law",
+          "t": "<b>NIS2</b> is an EU directive on cybersecurity in 18 critical sectors, such as energy, transport, health and water, plus more areas like manufacturing of critical products. Medium and large companies in these sectors must manage risk and <b>report serious incidents</b>.",
+          "g": [
+            [
+              "Directive",
+              "An EU law that each country turns into national law."
+            ],
+            [
+              "Incident",
+              "A security event that disrupts or threatens operations."
+            ]
+          ]
+        },
+        {
+          "h": "What to say in a sales talk",
+          "t": "NIS2 is the reason many customers now ask about OT security, and 62443 is a common yardstick for products and projects. You are not a lawyer: say it is a topic, and ask whether they know if they are <b>covered</b>.",
+          "g": [
+            [
+              "Covered entity",
+              "A company that falls under the rules of a law."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Who does IEC 62443 address?",
+          "o": [
+            "Asset owners, suppliers, integrators and service providers",
+            "Only consumers",
+            "Only governments"
+          ],
+          "a": 0,
+          "w": "The series defines requirements for these four stakeholder groups."
+        },
+        {
+          "q": "What does NIS2 require of covered companies at a high level?",
+          "o": [
+            "Use only one vendor",
+            "Manage cybersecurity risk and report significant incidents",
+            "Stop using networks"
+          ],
+          "a": 1,
+          "w": "Risk-management measures and incident reporting are core obligations."
+        },
+        {
+          "q": "A customer asks 'Does NIS2 apply to us?' What is a good answer?",
+          "o": [
+            "No, never",
+            "Yes, always",
+            "It depends on sector and size, so check with your adviser or authority"
+          ],
+          "a": 2,
+          "w": "Coverage depends on sector and size, and legal advice is not our role."
+        }
+      ]
+    },
+    {
+      "id": "ot-4-2",
+      "lvl": 4,
+      "title": "Typical OT customers",
+      "src": [
+        {
+          "l": "Operational technology (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Operational_technology"
+        },
+        {
+          "l": "SCADA (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/SCADA"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Industry and infrastructure",
+          "t": "Typical OT sites: <b>manufacturing</b>, power and utilities, water and wastewater, oil and gas, mining, and transport. Facilities such as buildings and airports also run OT for HVAC, access control and energy management.",
+          "g": [
+            [
+              "HVAC",
+              "Heating, ventilation and air conditioning."
+            ],
+            [
+              "Utility",
+              "A company supplying power, water or similar services."
+            ]
+          ]
+        },
+        {
+          "h": "Who actually buys",
+          "t": "Resellers in OT are often <b>system integrators</b>, machine builders and electrical contractors. They think in projects and cabinets, and value products that fit their standards. The end user, such as a plant, often sets the rules.",
+          "g": [
+            [
+              "Machine builder",
+              "A company that makes industrial machines and often installs the control system."
+            ]
+          ]
+        },
+        {
+          "h": "Remote and small sites",
+          "t": "Many OT sites are small and remote, such as pumping stations or wind turbines. They need <b>rugged routers</b>, remote access and monitoring. Cellular routers and small industrial firewalls are a natural fit.",
+          "g": [
+            [
+              "Remote access",
+              "Securely connecting to a site from far away to monitor or fix it."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which is a typical OT environment?",
+          "o": [
+            "A water treatment plant",
+            "A coffee shop",
+            "A call centre"
+          ],
+          "a": 0,
+          "w": "Water, power, oil and gas and manufacturing are classic OT sectors."
+        },
+        {
+          "q": "Who is the typical reseller in OT?",
+          "o": [
+            "Consumer electronics shops",
+            "System integrators and machine builders",
+            "Travel agents"
+          ],
+          "a": 1,
+          "w": "Integrators and machine builders deliver OT projects."
+        },
+        {
+          "q": "A remote pumping station needs monitoring. Which hardware kind fits?",
+          "o": [
+            "A desktop PC",
+            "A consumer Wi-Fi extender",
+            "A rugged cellular router"
+          ],
+          "a": 2,
+          "w": "Remote sites call for rugged, remote-manageable connectivity."
+        }
+      ]
+    },
+    {
+      "id": "ot-5-1",
+      "lvl": 5,
+      "title": "How selling to OT differs",
+      "src": [
+        {
+          "l": "NCSC operational technology",
+          "u": "https://www.ncsc.gov.uk/collection/operational-technology"
+        },
+        {
+          "l": "ISA/IEC 62443 series",
+          "u": "https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Slower and more careful",
+          "t": "OT projects are slower: design, testing, a planned stop for installation. Customers often prefer products that are proven. <b>Lifecycle</b> matters: equipment may stay for ten years or more, so long availability and support count.",
+          "g": [
+            [
+              "Lifecycle",
+              "The time a product is on sale and supported."
+            ]
+          ]
+        },
+        {
+          "h": "Language and questions",
+          "t": "Speak about <b>uptime</b>, safety and production, not 'threats'. Good questions: What must never stop? Which protocols and PLCs do you use? Who owns OT, IT or the plant? Is remote access needed?",
+          "g": [
+            [
+              "Stakeholder",
+              "A person or team with an interest in or say over a project."
+            ]
+          ]
+        },
+        {
+          "h": "Two buyers in one company",
+          "t": "IT and OT teams often disagree: IT wants patching and control, OT wants nothing to change. A successful pitch respects both: protects the plant without disturbing production, and gives IT <b>visibility</b>.",
+          "g": [
+            [
+              "Visibility",
+              "Being able to see what is on the network and what it does."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Why does lifecycle matter more in OT?",
+          "o": [
+            "Equipment may stay in place for many years",
+            "OT buys new equipment weekly",
+            "OT avoids support"
+          ],
+          "a": 0,
+          "w": "Long service life makes long availability and support important."
+        },
+        {
+          "q": "Which opening question suits an OT customer?",
+          "o": [
+            "Do you like our brochure?",
+            "What must never stop?",
+            "How many laptops do you have?"
+          ],
+          "a": 1,
+          "w": "It speaks their language of uptime and production."
+        },
+        {
+          "q": "IT wants frequent updates, OT wants nothing to change. What do you do?",
+          "o": [
+            "Avoid both teams",
+            "Side with IT",
+            "Offer protection that does not disturb production and gives IT visibility"
+          ],
+          "a": 2,
+          "w": "Respecting both concerns builds trust."
+        }
+      ]
+    }
+  ]
+}

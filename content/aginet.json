@@ -1,0 +1,829 @@
+{
+  "title": "Aginet",
+  "emoji": "📡",
+  "desc": "TP-Link's line for internet providers",
+  "src": [
+    {
+      "l": "TP-Link Aginet Solution",
+      "u": "https://www.tp-link.com/us/landing/aginet-solution"
+    },
+    {
+      "l": "TP-Link service provider site",
+      "u": "https://service-provider.tp-link.com/"
+    },
+    {
+      "l": "TP-Link XGS-PON Wi-Fi 7 announcement",
+      "u": "https://service-provider.tp-link.com/events/694/"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ag-1-1",
+      "lvl": 1,
+      "title": "What is Aginet?",
+      "src": [
+        {
+          "l": "TP-Link Aginet Solution",
+          "u": "https://www.tp-link.com/us/landing/aginet-solution"
+        },
+        {
+          "l": "TP-Link service provider site",
+          "u": "https://service-provider.tp-link.com/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A name inside TP-Link",
+          "t": "<b>Aginet is not a separate company.</b> It is the name TP-Link uses for its offer to internet providers. TP-Link's own service provider site shows Aginet next to its router, mesh, PON and LTE categories.",
+          "g": [
+            [
+              "ISP",
+              "Internet Service Provider, the company that sells internet subscriptions to homes and businesses."
+            ]
+          ]
+        },
+        {
+          "h": "Devices plus management",
+          "t": "TP-Link describes Aginet Solution as an <b>end-to-end Wi-Fi management solution for ISPs</b>. It is a mix: devices the provider hands to its customers, and cloud tools the provider uses to set up and look after them.",
+          "g": [
+            [
+              "End-to-end",
+              "Covers the whole chain, from the box in the home to the tools the provider uses."
+            ]
+          ]
+        },
+        {
+          "h": "Easy to mix up",
+          "t": "Many people think Aginet means fibre boxes only. It does not. The line also covers <b>routers, mesh units and 5G routers</b>. In our own material, even models like HX510 are Wi-Fi units, not fibre terminals.",
+          "g": [
+            [
+              "Mesh",
+              "Several Wi-Fi units that work together as one network in a home."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is Aginet?",
+          "o": [
+            "An independent fibre equipment maker",
+            "TP-Link's name for its offer to internet providers",
+            "A Wi-Fi standard"
+          ],
+          "a": 1,
+          "w": "Aginet is the brand TP-Link uses on its service provider site for devices and management tools aimed at ISPs."
+        },
+        {
+          "q": "Which description of Aginet Solution matches TP-Link's own wording?",
+          "o": [
+            "A consumer shop for routers",
+            "A firewall product for companies",
+            "An end-to-end Wi-Fi management solution for ISPs"
+          ],
+          "a": 2,
+          "w": "TP-Link calls it an end-to-end Wi-Fi management solution for ISPs."
+        },
+        {
+          "q": "A colleague says Aginet is only fibre terminals. What is the best correction?",
+          "o": [
+            "It also includes routers, mesh and 5G routers",
+            "It is only 5G routers",
+            "It is only software"
+          ],
+          "a": 0,
+          "w": "The line includes several device types plus the management tools around them."
+        }
+      ]
+    },
+    {
+      "id": "ag-1-2",
+      "lvl": 1,
+      "title": "Who buys Aginet?",
+      "src": [
+        {
+          "l": "TP-Link Aginet Solution",
+          "u": "https://www.tp-link.com/us/landing/aginet-solution"
+        },
+        {
+          "l": "Customer-premises equipment (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Customer-premises_equipment"
+        }
+      ],
+      "pages": [
+        {
+          "h": "The end customer is a provider",
+          "t": "Aginet is aimed at <b>ISPs and service providers</b>, including smaller wireless ISPs. They give or rent a box to every subscriber, so they care about cost per home, support calls and easy rollout.",
+          "g": [
+            [
+              "WISP",
+              "Wireless ISP, a provider that delivers internet over radio instead of cable or fibre."
+            ]
+          ]
+        },
+        {
+          "h": "What CPE means",
+          "t": "Equipment placed at the customer's home is called <b>CPE</b>. It can be bought by the subscriber or supplied by the provider. Aginet is about the second case: boxes the provider chooses and looks after.",
+          "g": [
+            [
+              "CPE",
+              "Customer-premises equipment: router, gateway, set-top box or similar at the customer's site."
+            ]
+          ]
+        },
+        {
+          "h": "Where Allnet fits",
+          "t": "Allnet is a distributor, so we sell to <b>resellers and integrators</b> who serve providers and network owners, not to households. The question to ask: who in the chain picks the box for the subscribers?",
+          "g": [
+            [
+              "Distributor",
+              "A company that buys from the vendor and sells to resellers, who sell to end customers."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Who makes the buying decision for an Aginet deployment?",
+          "o": [
+            "The household using the Wi-Fi",
+            "The provider that supplies the box to its subscribers",
+            "A random shop customer"
+          ],
+          "a": 1,
+          "w": "Aginet is for providers who supply and manage devices for many subscribers."
+        },
+        {
+          "q": "What does CPE mean?",
+          "o": [
+            "Cloud Power Engine",
+            "Central Provider Exchange",
+            "Customer-premises equipment"
+          ],
+          "a": 2,
+          "w": "CPE is equipment at the customer's site, such as a router or gateway."
+        },
+        {
+          "q": "Which cost concern is most typical for a provider buying CPE?",
+          "o": [
+            "Support calls and rollout effort per subscriber",
+            "Gaming performance reviews",
+            "Colour of the box"
+          ],
+          "a": 0,
+          "w": "Providers multiply every box by thousands of homes, so support and rollout effort matter a lot."
+        }
+      ]
+    },
+    {
+      "id": "ag-2-1",
+      "lvl": 2,
+      "title": "Fibre to the home and PON",
+      "src": [
+        {
+          "l": "Passive optical network (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Passive_optical_network"
+        },
+        {
+          "l": "TP-Link XGS-PON Wi-Fi 7 announcement",
+          "u": "https://service-provider.tp-link.com/events/694/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "One fibre, many homes",
+          "t": "In a <b>PON</b> the fibre in the street is passive: no powered boxes in between. A splitter divides one fibre from the provider so it can serve many homes, which keeps the network cheap to run.",
+          "g": [
+            [
+              "PON",
+              "Passive Optical Network, fibre network shared by many homes through passive splitters."
+            ],
+            [
+              "FTTH",
+              "Fibre to the home."
+            ]
+          ]
+        },
+        {
+          "h": "OLT and ONT",
+          "t": "The <b>OLT</b> sits at the provider and sends the light out. The <b>ONT</b> sits at the customer and turns light into normal network ports. Think of the ONT as the fibre's front door.",
+          "g": [
+            [
+              "OLT",
+              "Optical line terminal, the provider's end of a PON."
+            ],
+            [
+              "ONT",
+              "Optical network terminal, the single-customer box that receives the fibre."
+            ]
+          ]
+        },
+        {
+          "h": "GPON and XGS-PON",
+          "t": "<b>GPON</b> is the long-standing mainstream generation. <b>XGS-PON</b> is the newer 10 gigabit symmetrical generation, meaning the same speed up and down. A seller only needs to know which one the customer's network uses.",
+          "g": [
+            [
+              "Symmetrical",
+              "Same speed for download and upload."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What makes a PON 'passive'?",
+          "o": [
+            "It has no customers",
+            "It never carries voice",
+            "No powered equipment in the fibre path between provider and home"
+          ],
+          "a": 2,
+          "w": "Splitters in the field need no power, which makes the network cheap to maintain."
+        },
+        {
+          "q": "Which box sits in the customer's home and receives the fibre?",
+          "o": [
+            "ONT",
+            "OLT",
+            "Splitter"
+          ],
+          "a": 0,
+          "w": "ONT is the customer-side terminal. OLT is the provider side."
+        },
+        {
+          "q": "A provider is moving to XGS-PON. What does that mainly tell you?",
+          "o": [
+            "Their network is wireless",
+            "They are moving to a 10 gigabit symmetrical fibre generation",
+            "They no longer need routers"
+          ],
+          "a": 1,
+          "w": "XGS-PON is the 10 gigabit symmetrical PON generation."
+        },
+        {
+          "q": "Why must a seller ask which PON type a customer uses?",
+          "o": [
+            "Because Wi-Fi depends on it",
+            "Because it decides the colour of cables",
+            "Because the fibre device must match the provider's network generation"
+          ],
+          "a": 2,
+          "w": "A fibre terminal must match the network it connects to, GPON or XGS-PON."
+        }
+      ]
+    },
+    {
+      "id": "ag-2-2",
+      "lvl": 2,
+      "title": "ONT, router or gateway?",
+      "src": [
+        {
+          "l": "TP-Link XGS-PON Wi-Fi 7 announcement",
+          "u": "https://service-provider.tp-link.com/events/694/"
+        },
+        {
+          "l": "Passive optical network (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Passive_optical_network"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Three common setups",
+          "t": "Setup 1: a separate <b>ONT</b> plus a normal router behind it. Setup 2: one <b>gateway</b> with the fibre part and Wi-Fi built in. Setup 3: a small fibre <b>module</b> that plugs into a device with a matching socket.",
+          "g": [
+            [
+              "Gateway",
+              "One box that combines the line connection and the router."
+            ],
+            [
+              "SFP",
+              "A small pluggable module slot used for fibre connections."
+            ]
+          ]
+        },
+        {
+          "h": "What Aginet offers",
+          "t": "TP-Link's 2023 announcement showed an <b>XGS-PON Wi-Fi 7 router</b> and a plug-in <b>XGS-PON module</b>. Our local Wi-Fi 6 routers such as EX520v are described as suited to FTTH, using an Ethernet WAN port.",
+          "g": [
+            [
+              "WAN port",
+              "The port that connects the router to the provider's network."
+            ]
+          ]
+        },
+        {
+          "h": "A good question",
+          "t": "Ask: <b>does your fibre arrive in an ONT already, or do you want one box?</b> If an ONT is in place, a router with an Ethernet WAN port may be all they need. If not, the integrated model matters.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A provider already puts an ONT in every home. What does the subscriber still need?",
+          "o": [
+            "Only a router with an Ethernet WAN port",
+            "A second ONT",
+            "A 5G modem"
+          ],
+          "a": 0,
+          "w": "With an ONT in place, a router with an Ethernet WAN port can handle the home network."
+        },
+        {
+          "q": "What is an SFP module in this context?",
+          "o": [
+            "A Wi-Fi antenna",
+            "A small pluggable fibre connection module",
+            "A cloud licence"
+          ],
+          "a": 1,
+          "w": "SFP modules plug into a matching socket and carry the fibre connection."
+        },
+        {
+          "q": "Which statement about Aginet is safest?",
+          "o": [
+            "Every Aginet model has a fibre port built in",
+            "Aginet has no fibre options",
+            "Some Aginet devices have XGS-PON built in, while others rely on Ethernet from an ONT"
+          ],
+          "a": 2,
+          "w": "The range mixes integrated XGS-PON devices with routers that connect to an ONT via Ethernet."
+        }
+      ]
+    },
+    {
+      "id": "ag-2-3",
+      "lvl": 2,
+      "title": "Wi-Fi 6, 6E, 7 and EasyMesh",
+      "src": [
+        {
+          "l": "Wi-Fi 7 (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Wi-Fi_7"
+        },
+        {
+          "l": "Wi-Fi Alliance: EasyMesh",
+          "u": "https://www.wi-fi.org/discover-wi-fi/wi-fi-easymesh"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Wi-Fi generations",
+          "t": "<b>Wi-Fi 6</b> uses the 2.4 and 5 GHz bands. <b>Wi-Fi 6E</b> adds the 6 GHz band. <b>Wi-Fi 7</b> uses all three and adds wider channels and multi-link operation. Newer is not always needed.",
+          "g": [
+            [
+              "GHz band",
+              "A radio frequency range Wi-Fi uses. More bands give devices more room."
+            ]
+          ]
+        },
+        {
+          "h": "Mesh without lock-in",
+          "t": "<b>EasyMesh</b> is a Wi-Fi Alliance standard for several access points to act as one network. It also allows access points from different vendors to be added, so a provider can extend coverage later.",
+          "g": [
+            [
+              "Access point",
+              "A device that provides Wi-Fi."
+            ]
+          ]
+        },
+        {
+          "h": "In the Aginet range",
+          "t": "Our local datasheets list the <b>HX510 and HX710</b> as Wi-Fi 6 mesh access points using EasyMesh. The NX and EX models also list EasyMesh support, so units in one provider's range can work together.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does Wi-Fi 6E add compared with Wi-Fi 6?",
+          "o": [
+            "The 6 GHz band",
+            "Fibre support",
+            "Cloud management"
+          ],
+          "a": 0,
+          "w": "6E extends Wi-Fi 6 with the 6 GHz band."
+        },
+        {
+          "q": "What is EasyMesh?",
+          "o": [
+            "A fibre standard",
+            "A Wi-Fi Alliance standard for access points working as one network",
+            "A TP-Link cloud app"
+          ],
+          "a": 1,
+          "w": "EasyMesh lets multiple access points form one unified Wi-Fi network."
+        },
+        {
+          "q": "A provider asks how its subscribers can get Wi-Fi coverage in larger homes. What fits?",
+          "o": [
+            "Replace the fibre",
+            "Nothing, Wi-Fi cannot be extended",
+            "Add EasyMesh access points such as HX510 where coverage is weak"
+          ],
+          "a": 2,
+          "w": "EasyMesh units can be added to extend coverage where needed."
+        }
+      ]
+    },
+    {
+      "id": "ag-2-4",
+      "lvl": 2,
+      "title": "The product families",
+      "src": [
+        {
+          "l": "TP-Link service provider site",
+          "u": "https://service-provider.tp-link.com/"
+        },
+        {
+          "l": "TP-Link XGS-PON Wi-Fi 7 announcement",
+          "u": "https://service-provider.tp-link.com/events/694/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Categories on the site",
+          "t": "TP-Link's provider site lists <b>Wi-Fi routers, home Wi-Fi systems (mesh), VDSL, PON and LTE</b>. Together they cover copper lines, fibre and mobile networks, so one vendor can serve a provider with mixed technologies.",
+          "g": [
+            [
+              "VDSL",
+              "Broadband over old copper phone lines."
+            ],
+            [
+              "LTE",
+              "4G mobile network technology."
+            ]
+          ]
+        },
+        {
+          "h": "Models you will see",
+          "t": "In our local material: <b>EX520v</b> is a Wi-Fi 6 router with a phone port, <b>HX510 and HX710</b> are mesh units, and <b>NX220v and NX510v</b> are 5G routers with a phone port.",
+          "g": [
+            [
+              "FXS / phone port",
+              "A port for a normal landline phone, used for voice over internet."
+            ]
+          ]
+        },
+        {
+          "h": "Match line to network",
+          "t": "Think in three steps. <b>Fixed line</b>: fibre or copper router. <b>Mobile network</b>: 5G router. <b>Bigger home</b>: add mesh units. Ask which access network the provider has first.",
+          "g": [
+            [
+              "FWA",
+              "Fixed wireless access: home internet delivered over a mobile or radio network."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which device suits a provider selling home internet over a 5G network?",
+          "o": [
+            "NX510v",
+            "HX710",
+            "EX520v"
+          ],
+          "a": 0,
+          "w": "NX models are 5G routers. HX are mesh units and EX520v is a fixed-line Wi-Fi 6 router."
+        },
+        {
+          "q": "What is HX510 mainly?",
+          "o": [
+            "A 5G router",
+            "A Wi-Fi 6 mesh access point",
+            "A fibre OLT"
+          ],
+          "a": 1,
+          "w": "Our datasheet describes HX510 as a whole-home mesh Wi-Fi access point."
+        },
+        {
+          "q": "What is the first question when picking an Aginet device?",
+          "o": [
+            "Which colour does the customer like",
+            "Which Wi-Fi name is used",
+            "What access network the provider runs"
+          ],
+          "a": 2,
+          "w": "The access network, fibre, copper or mobile, decides which family fits."
+        },
+        {
+          "q": "Why does a phone port matter to some providers?",
+          "o": [
+            "It powers the Wi-Fi",
+            "It lets customers keep a normal phone over internet voice",
+            "It speeds up downloads"
+          ],
+          "a": 1,
+          "w": "Models like EX520v and the NX routers offer a voice port for a normal telephone."
+        }
+      ]
+    },
+    {
+      "id": "ag-3-1",
+      "lvl": 3,
+      "title": "Remote management: TAUC and ACS",
+      "src": [
+        {
+          "l": "TP-Link Aginet Solution",
+          "u": "https://www.tp-link.com/us/landing/aginet-solution"
+        },
+        {
+          "l": "TR-069 (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/TR-069"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Why providers care",
+          "t": "A provider cannot send a technician to every home. With a standard like <b>TR-069</b>, a server called an <b>ACS</b> can set up devices, check status, update firmware and run diagnostics remotely.",
+          "g": [
+            [
+              "TR-069",
+              "A long-standing standard that lets a provider's server manage devices at customer homes."
+            ],
+            [
+              "ACS",
+              "Auto-configuration server, the provider's management server."
+            ]
+          ]
+        },
+        {
+          "h": "Aginet's four parts",
+          "t": "TP-Link names <b>TAUC</b> (the cloud platform), <b>Aginet ACS</b>, <b>Aginet Config</b> and <b>Aginet App</b>. TAUC is built on TR-369 and TR-069, and lists zero-touch deployment and troubleshooting tools.",
+          "g": [
+            [
+              "TAUC",
+              "TP-Link Aginet Unified Cloud."
+            ],
+            [
+              "TR-369",
+              "A newer management standard, also called USP."
+            ],
+            [
+              "Zero-touch",
+              "Devices set themselves up with no manual work."
+            ]
+          ]
+        },
+        {
+          "h": "Say it simply",
+          "t": "In a meeting: <b>the provider can set up, update and troubleshoot customers' boxes from one place</b>. Fewer visits and fewer support calls. Do not go into protocol detail unless the customer's technician asks.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does an ACS do?",
+          "o": [
+            "Sells subscriptions",
+            "Manages customers' devices remotely from the provider side",
+            "Provides Wi-Fi in the home"
+          ],
+          "a": 1,
+          "w": "An ACS is the provider's server that configures and monitors devices remotely."
+        },
+        {
+          "q": "Which is the best one-sentence benefit of TAUC for an ISP?",
+          "o": [
+            "Boxes can be set up and troubleshot remotely, cutting visits",
+            "It makes fibre cheaper",
+            "It replaces the router"
+          ],
+          "a": 0,
+          "w": "Remote setup and troubleshooting reduces technician visits and support effort."
+        },
+        {
+          "q": "A customer asks about TR-069 support. How do you respond at sales level?",
+          "o": [
+            "Ignore the question",
+            "Explain every protocol parameter",
+            "Confirm it is part of how Aginet devices are remotely managed and offer a technical contact"
+          ],
+          "a": 2,
+          "w": "Datasheets and TP-Link pages list TR-069 support, but deep protocol answers belong to a technical contact."
+        }
+      ]
+    },
+    {
+      "id": "ag-3-2",
+      "lvl": 3,
+      "title": "Branding and the app",
+      "src": [
+        {
+          "l": "TP-Link Aginet Solution",
+          "u": "https://www.tp-link.com/us/landing/aginet-solution"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Aginet Config",
+          "t": "<b>Aginet Config</b> lets a provider set its own default settings for all devices, including a logo and favicon. The settings come back when a customer presses reset, which reduces repeat support calls.",
+          "g": [
+            [
+              "Favicon",
+              "The small icon shown in a browser tab."
+            ],
+            [
+              "Factory reset",
+              "Wiping a device back to its default settings."
+            ]
+          ]
+        },
+        {
+          "h": "Aginet App",
+          "t": "The <b>Aginet App</b> gives subscribers a way to manage their network and run diagnostics. TP-Link says it supports ISP co-branding, so the provider's brand is visible rather than TP-Link's alone.",
+          "g": [
+            [
+              "Co-branding",
+              "Showing two brands together, here the provider's and TP-Link's."
+            ]
+          ]
+        },
+        {
+          "h": "Why it sells",
+          "t": "A provider wants the box to feel like <b>its own service</b>. Branding and a ready-made app save them building these tools themselves. Ask how much customisation they need before promising specifics.",
+          "g": [
+            [
+              "White-label",
+              "Selling a product under another company's brand."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What happens after a customer factory-resets a device with Aginet Config defaults?",
+          "o": [
+            "It reverts to generic TP-Link defaults",
+            "It keeps the provider's configured defaults",
+            "It stops working"
+          ],
+          "a": 1,
+          "w": "TP-Link states the configured defaults persist after a factory reset."
+        },
+        {
+          "q": "What does the Aginet App let subscribers do?",
+          "o": [
+            "Order fibre",
+            "Replace the OLT",
+            "Manage their network and run diagnostics"
+          ],
+          "a": 2,
+          "w": "It is an end-user app for managing the network and running checks."
+        },
+        {
+          "q": "A provider asks for a fully custom app design. What is the safest answer?",
+          "o": [
+            "Yes, anything is possible",
+            "TP-Link lists ISP co-branding, but check exact options with TP-Link before promising",
+            "No, customisation is impossible"
+          ],
+          "a": 1,
+          "w": "Public sources only confirm co-branding, so exact scope must be checked."
+        }
+      ]
+    },
+    {
+      "id": "ag-4-1",
+      "lvl": 4,
+      "title": "Aginet versus retail TP-Link and others",
+      "src": [
+        {
+          "l": "TP-Link service provider site",
+          "u": "https://service-provider.tp-link.com/"
+        },
+        {
+          "l": "TP-Link Aginet Solution",
+          "u": "https://www.tp-link.com/us/landing/aginet-solution"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Not the shelf router",
+          "t": "A retail router is set up by the buyer. An Aginet device is meant to be <b>set up and managed by the provider</b>. The hardware may look similar to what people know, but the tools around it are what the provider is buying.",
+          "g": []
+        },
+        {
+          "h": "Familiar hardware, provider tools",
+          "t": "Aginet pairs devices that look like everyday routers with a <b>management platform built for providers</b>. That platform is what TP-Link itself stresses, also for smaller providers. Whether it beats other makers is not something we can prove here.",
+          "g": []
+        },
+        {
+          "h": "Other CPE vendors",
+          "t": "Providers can also buy from other CPE makers or have boxes built to their own spec. We have no verified comparison, so <b>do not claim you are better</b>. Ask what they use today and what is missing.",
+          "g": [
+            [
+              "Operator-specific build",
+              "Hardware made to one provider's own specification."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the main difference between a retail router and an Aginet device?",
+          "o": [
+            "Aginet devices are meant to be managed by the provider",
+            "Aginet has no Wi-Fi",
+            "Retail routers cannot use Wi-Fi 6"
+          ],
+          "a": 0,
+          "w": "The provider management tools are the point of the Aginet line."
+        },
+        {
+          "q": "A customer says a rival CPE is better. What should you do?",
+          "o": [
+            "Claim Aginet always wins",
+            "Say you cannot help",
+            "Ask what they use today and which gaps they want to close"
+          ],
+          "a": 2,
+          "w": "We have no verified comparison, so discovery questions are safer than claims."
+        },
+        {
+          "q": "What does TP-Link itself stress about Aginet?",
+          "o": [
+            "A provider management platform around the devices",
+            "That it is the cheapest option",
+            "That it owns fibre networks"
+          ],
+          "a": 0,
+          "w": "The provider-side management tools are the core of the Aginet offer."
+        }
+      ]
+    },
+    {
+      "id": "ag-4-2",
+      "lvl": 4,
+      "title": "Scenarios and objections",
+      "src": [
+        {
+          "l": "TP-Link Aginet Solution",
+          "u": "https://www.tp-link.com/us/landing/aginet-solution"
+        },
+        {
+          "l": "TP-Link XGS-PON Wi-Fi 7 announcement",
+          "u": "https://service-provider.tp-link.com/events/694/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Scenario: small fibre network",
+          "t": "A local fibre network owner runs ONTs already and wants a home router plus remote support. Think <b>router with Ethernet WAN, TR-069 and the Aginet tools</b>, and add mesh units for big homes.",
+          "g": []
+        },
+        {
+          "h": "Scenario: mixed network",
+          "t": "A provider has fibre in towns and 5G in rural areas. One vendor with <b>routers, mesh and 5G models managed in one platform</b> is the selling point TP-Link itself stresses for Aginet.",
+          "g": []
+        },
+        {
+          "h": "Objections",
+          "t": "'It is a consumer brand': answer with the <b>provider management tools</b>. 'Do you have my exact feature': <b>ask a technical contact</b>. 'Is the newest Wi-Fi needed': only if their customers need it.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A fibre network owner already has ONTs. Which first suggestion fits?",
+          "o": [
+            "A 5G router",
+            "A router with an Ethernet WAN port plus remote management",
+            "A new OLT"
+          ],
+          "a": 1,
+          "w": "With ONTs in place, the home device can connect via Ethernet WAN and be managed remotely."
+        },
+        {
+          "q": "A provider has fibre in town and 5G in rural areas. What is the strongest point?",
+          "o": [
+            "Only fibre matters",
+            "They need two vendors",
+            "Fixed, mobile and mesh devices can sit under one management platform"
+          ],
+          "a": 2,
+          "w": "TP-Link positions Aginet as a platform covering several device types."
+        },
+        {
+          "q": "A customer says TP-Link is only a consumer brand. What is a good reply?",
+          "o": [
+            "Point to the provider management tools in Aginet",
+            "Agree and end the call",
+            "Say consumer brands are always better"
+          ],
+          "a": 0,
+          "w": "The provider-side tools are what separate Aginet from shelf products."
+        },
+        {
+          "q": "A customer asks about an exact feature you cannot verify. What do you do?",
+          "o": [
+            "Guess",
+            "Say yes to win the deal",
+            "Check with a technical contact before answering"
+          ],
+          "a": 2,
+          "w": "Never promise unverified features."
+        }
+      ]
+    }
+  ]
+}

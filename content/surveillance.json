@@ -1,0 +1,1010 @@
+{
+  "title": "Surveillance and cameras",
+  "emoji": "📹",
+  "desc": "IP cameras, recording, analytics, access control",
+  "src": [
+    {
+      "l": "ONVIF about",
+      "u": "https://www.onvif.org/about/mission/"
+    },
+    {
+      "l": "IP camera (Wikipedia)",
+      "u": "https://en.wikipedia.org/wiki/IP_camera"
+    },
+    {
+      "l": "Power over Ethernet (Wikipedia)",
+      "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sv-1-1",
+      "lvl": 1,
+      "title": "IP cameras vs analog",
+      "src": [
+        {
+          "l": "IP camera (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/IP_camera"
+        },
+        {
+          "l": "CCTV (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Closed-circuit_television"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Two generations of cameras",
+          "t": "<b>Analog</b> cameras send a video signal down a dedicated cable to a recorder. <b>IP cameras</b> send digital video over an ordinary network, like a laptop does. Today IP is the normal choice for new installations.",
+          "g": [
+            [
+              "CCTV",
+              "Closed-circuit television: cameras sending video to a limited set of screens or recorders, not broadcast to everyone."
+            ],
+            [
+              "IP",
+              "Internet Protocol: the addressing system networks use, so each device gets its own address."
+            ]
+          ]
+        },
+        {
+          "h": "What IP adds",
+          "t": "An IP camera needs only a network, not a special video cable. It can be viewed from a computer or phone, can run <b>analytics</b> on board, and typically gives about <b>four times</b> the resolution of an analog camera.",
+          "g": [
+            [
+              "Analytics",
+              "Software that recognises things in video, such as people or vehicles."
+            ]
+          ]
+        },
+        {
+          "h": "Old and new in one building",
+          "t": "Analog is still around in old buildings. A <b>DVR</b> records analog cameras. An <b>NVR</b> records IP cameras. Customers with old coax cabling sometimes keep it, but for new work you will usually quote IP.",
+          "g": [
+            [
+              "DVR",
+              "Digital video recorder: the box that records analog cameras."
+            ],
+            [
+              "NVR",
+              "Network video recorder: the box or server that records IP cameras over the network."
+            ],
+            [
+              "Coax",
+              "Coaxial cable: the round cable used for old analog cameras and TV aerials."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "How does an IP camera send its video?",
+          "o": [
+            "Over a normal network in digital form",
+            "Over a dedicated coax cable as an analog signal",
+            "Only over Wi-Fi to the cloud"
+          ],
+          "a": 0,
+          "w": "IP cameras use a standard network. Many connect by Ethernet cable, and some by Wi-Fi, but the network is what defines them."
+        },
+        {
+          "q": "Which recorder is made for IP cameras?",
+          "o": [
+            "DVR",
+            "NVR",
+            "Splitter"
+          ],
+          "a": 1,
+          "w": "NVR means network video recorder. A DVR records analog cameras.",
+          "g": [
+            [
+              "NVR",
+              "Network video recorder."
+            ],
+            [
+              "DVR",
+              "Digital video recorder, for analog cameras."
+            ]
+          ]
+        },
+        {
+          "q": "A customer with an old analog system wants a clearly sharper picture. What is the usual direction?",
+          "o": [
+            "Add a longer coax cable",
+            "Turn up the brightness on the monitor",
+            "Move to IP cameras, which offer higher resolution"
+          ],
+          "a": 2,
+          "w": "IP cameras typically offer much higher resolution than analog, which is the main reason customers upgrade."
+        }
+      ]
+    },
+    {
+      "id": "sv-2-1",
+      "lvl": 2,
+      "title": "Resolution and megapixels",
+      "src": [
+        {
+          "l": "Display resolution (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Display_resolution"
+        },
+        {
+          "l": "Storage and retention maths (Forasoft)",
+          "u": "https://www.forasoft.com/learn/video-surveillance/articles-vms/surveillance-storage-retention-math"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Pixels in plain words",
+          "t": "Resolution is how many tiny dots, <b>pixels</b>, make the picture. Full HD, also called 1080p, is about <b>2 megapixels</b>. 4K is about <b>8 megapixels</b>, four times as many dots. More pixels means more detail, such as a number plate or a face.",
+          "g": [
+            [
+              "Pixel",
+              "One tiny dot of the image."
+            ],
+            [
+              "Megapixel (MP)",
+              "One million pixels."
+            ]
+          ]
+        },
+        {
+          "h": "More is not always better",
+          "t": "More pixels create a bigger video stream, which needs more <b>bandwidth</b> and <b>storage</b>. A 4K camera watching a quiet corridor is often a waste. Match the resolution to what the customer must actually see.",
+          "g": [
+            [
+              "Bandwidth",
+              "How much data the network must carry each second."
+            ]
+          ]
+        },
+        {
+          "h": "Detail depends on distance",
+          "t": "What matters is detail on the target, not the headline number. A wide view from far away spreads the pixels thin. To identify someone, you need enough pixels on their face, so a wider area may need a higher resolution or more cameras.",
+          "g": [
+            [
+              "Identify",
+              "Recognise who or what something is, which needs more detail than just noticing something is there."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Roughly how many megapixels is a 4K camera?",
+          "o": [
+            "About 8",
+            "About 2",
+            "About 20"
+          ],
+          "a": 0,
+          "w": "4K is 3840 x 2160, about 8 megapixels. Full HD is about 2.",
+          "g": [
+            [
+              "4K",
+              "About 3840 x 2160 pixels."
+            ]
+          ]
+        },
+        {
+          "q": "Why not simply sell 4K to everyone?",
+          "o": [
+            "It cannot record at night",
+            "It creates bigger streams that need more bandwidth and storage",
+            "It only works with analog recorders"
+          ],
+          "a": 1,
+          "w": "Higher resolution means more data to carry and to store, so it should be chosen where the detail is needed."
+        },
+        {
+          "q": "A shop wants to read a customer's face at the entrance. What matters most?",
+          "o": [
+            "The length of the network cable",
+            "The camera's colour",
+            "Enough pixels on the face at that distance"
+          ],
+          "a": 2,
+          "w": "Detail on the target decides whether you can identify someone, not just the headline megapixels."
+        }
+      ]
+    },
+    {
+      "id": "sv-2-2",
+      "lvl": 2,
+      "title": "Lenses, field of view and night vision",
+      "src": [
+        {
+          "l": "IP CCTV lenses (NetXL)",
+          "u": "https://netxl.com/blog/cctv/ip-cctv-camera-lenses"
+        },
+        {
+          "l": "Night-vision device (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Night-vision_device"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Wide or far",
+          "t": "The lens <b>focal length</b>, in millimetres, sets the view. A <b>short</b> lens, such as 2.8 mm, sees a wide area with less detail. A <b>long</b> lens, such as 12 mm, sees farther across a narrow angle. <b>Varifocal</b> lenses let the installer adjust it.",
+          "g": [
+            [
+              "Focal length",
+              "A lens number in mm. Small number: wide view. Large number: narrow, zoomed-in view."
+            ],
+            [
+              "Field of view (FOV)",
+              "How wide an area the camera sees."
+            ],
+            [
+              "Varifocal",
+              "A lens whose view can be adjusted at install time."
+            ]
+          ]
+        },
+        {
+          "h": "Dark scenes",
+          "t": "Many cameras have <b>infrared (IR) LEDs</b> that light the scene with light we cannot see, giving a black and white night picture. They only reach so far. <b>Thermal</b> cameras detect heat instead and need no light at all.",
+          "g": [
+            [
+              "IR",
+              "Infrared: light invisible to the human eye but visible to camera sensors."
+            ],
+            [
+              "Thermal camera",
+              "Shows heat, not light. Good at spotting people in total darkness."
+            ]
+          ]
+        },
+        {
+          "h": "Choosing for the site",
+          "t": "Entrances and corridors suit wide lenses. Long driveways or fences need a longer lens or a zoom. Ask: how far, how wide, how dark? Plan for the worst light conditions, not the afternoon sun.",
+          "g": [
+            [
+              "Zoom lens",
+              "A lens that moves between wide and zoomed-in views."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which lens gives the widest view?",
+          "o": [
+            "2.8 mm",
+            "12 mm",
+            "They are the same"
+          ],
+          "a": 0,
+          "w": "The smaller the focal length number, the wider the view, though with less detail at distance."
+        },
+        {
+          "q": "What does an IR LED camera do at night?",
+          "o": [
+            "Detects heat from people",
+            "Lights the scene with light invisible to us",
+            "Records only sound"
+          ],
+          "a": 1,
+          "w": "IR LEDs illuminate the scene for the camera. Detecting heat is what thermal cameras do."
+        },
+        {
+          "q": "A customer wants to watch a 60 m fence line in darkness with no lighting at all. What do you raise?",
+          "o": [
+            "A fisheye lens",
+            "A lower resolution",
+            "A thermal camera or a camera with a long lens and strong illumination"
+          ],
+          "a": 2,
+          "w": "Long distance and dark need either reach and light, or thermal imaging which needs no light."
+        },
+        {
+          "q": "What is a varifocal lens?",
+          "o": [
+            "A lens whose view can be adjusted during installation",
+            "A lens with fixed view",
+            "A lens only for night"
+          ],
+          "a": 0,
+          "w": "Varifocal lets the installer fine-tune the view on site."
+        }
+      ]
+    },
+    {
+      "id": "sv-3-1",
+      "lvl": 3,
+      "title": "PoE cameras and cabling",
+      "src": [
+        {
+          "l": "Power over Ethernet (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+        },
+        {
+          "l": "IP camera (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/IP_camera"
+        }
+      ],
+      "pages": [
+        {
+          "h": "One cable, two jobs",
+          "t": "<b>PoE</b> sends power through the same Ethernet cable that carries the video. The camera needs no separate power supply or nearby socket, which makes installation on ceilings, poles and walls much simpler.",
+          "g": [
+            [
+              "PoE",
+              "Power over Ethernet: electricity and data over one network cable."
+            ],
+            [
+              "PoE switch",
+              "A network switch that supplies the power to PoE devices."
+            ]
+          ]
+        },
+        {
+          "h": "Power levels",
+          "t": "PoE comes in grades. <b>802.3af</b> gives up to 15.4 W, <b>802.3at (PoE+)</b> up to 30 W, and <b>802.3bt</b> up to 60 or 90 W. Small fixed cameras need little. Cameras with heaters, motors or lights, like PTZ models, may need more.",
+          "g": [
+            [
+              "PTZ",
+              "Pan-tilt-zoom camera: it can turn and zoom, by remote control or automatically."
+            ],
+            [
+              "W (watt)",
+              "A unit of power."
+            ]
+          ]
+        },
+        {
+          "h": "What to check",
+          "t": "Add up the power of all cameras and compare it with the <b>PoE budget</b> of the switch. Also check cable length: standard Ethernet reaches about 100 m. Longer runs need extenders or a fibre link.",
+          "g": [
+            [
+              "PoE budget",
+              "The total power a switch can supply across all its ports together."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the main benefit of PoE for cameras?",
+          "o": [
+            "Higher resolution",
+            "Power and data on one cable",
+            "Free cloud storage"
+          ],
+          "a": 1,
+          "w": "PoE removes the need for separate power at the camera location."
+        },
+        {
+          "q": "Which camera type is most likely to need a stronger PoE standard?",
+          "o": [
+            "Small fixed indoor camera",
+            "A passive door sensor",
+            "PTZ camera with motors and heater"
+          ],
+          "a": 2,
+          "w": "Motors, heaters and strong lights draw more power than a simple fixed camera."
+        },
+        {
+          "q": "A customer plans 16 cameras on one 8-port switch's PoE budget of 60 W. What is the problem?",
+          "o": [
+            "The switch has too few ports and too little total power",
+            "Cameras cannot share a switch",
+            "PoE cannot carry video"
+          ],
+          "a": 0,
+          "w": "Both ports and the total PoE budget limit how many cameras one switch can feed."
+        },
+        {
+          "q": "Roughly how long can a standard Ethernet cable run?",
+          "o": [
+            "About 10 m",
+            "About 100 m",
+            "About 1000 m"
+          ],
+          "a": 1,
+          "w": "About 100 m is the usual limit. Beyond that you need extenders or fibre."
+        }
+      ]
+    },
+    {
+      "id": "sv-3-2",
+      "lvl": 3,
+      "title": "NVR, edge and cloud recording",
+      "src": [
+        {
+          "l": "IP camera (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/IP_camera"
+        },
+        {
+          "l": "CCTV (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Closed-circuit_television"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Where does the video live?",
+          "t": "Three common places. An <b>NVR</b> records on a box on site. <b>Edge</b> recording saves on the camera itself, often on a micro-SD card. <b>Cloud</b> recording stores footage with a service on the internet, usually for a subscription.",
+          "g": [
+            [
+              "Edge",
+              "Done on the device itself, at the 'edge' of the network."
+            ],
+            [
+              "Cloud",
+              "Run by a provider on the internet instead of on site."
+            ],
+            [
+              "Micro-SD",
+              "A small memory card inside the camera."
+            ]
+          ]
+        },
+        {
+          "h": "Strengths of each",
+          "t": "<b>NVR:</b> lots of storage, full control, no monthly fee for storage. <b>Edge:</b> cheapest and simple for one or two cameras. <b>Cloud:</b> no box to maintain and easy remote access, but needs good upload speed and an ongoing subscription.",
+          "g": [
+            [
+              "Upload speed",
+              "How fast a site can send data to the internet."
+            ]
+          ]
+        },
+        {
+          "h": "Mixing them",
+          "t": "Many systems combine them: cameras record to an NVR, and keep an <b>edge</b> backup card in case the network drops. Cloud is often a good fit for small shops and many small sites that nobody wants to maintain.",
+          "g": [
+            [
+              "VMS",
+              "Video management software: the program for viewing and managing many cameras."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Where does edge recording save the video?",
+          "o": [
+            "On the router",
+            "In the cloud only",
+            "On the camera itself"
+          ],
+          "a": 2,
+          "w": "Edge means in the device, commonly on a micro-SD card."
+        },
+        {
+          "q": "Which is a typical drawback of cloud recording?",
+          "o": [
+            "It needs an ongoing subscription and good upload speed",
+            "It cannot be viewed remotely",
+            "It needs a DVR"
+          ],
+          "a": 0,
+          "w": "Cloud recording runs as a service, so there is a recurring cost and the site needs enough upload bandwidth."
+        },
+        {
+          "q": "A warehouse with 32 cameras wants lots of local footage and no monthly storage fee. What fits?",
+          "o": [
+            "Micro-SD only",
+            "An NVR on site",
+            "A free phone app"
+          ],
+          "a": 1,
+          "w": "An NVR gives plenty of local storage for many cameras without a storage subscription."
+        }
+      ]
+    },
+    {
+      "id": "sv-3-3",
+      "lvl": 3,
+      "title": "Storage and retention",
+      "src": [
+        {
+          "l": "Storage and retention maths (Forasoft)",
+          "u": "https://www.forasoft.com/learn/video-surveillance/articles-vms/surveillance-storage-retention-math"
+        }
+      ],
+      "pages": [
+        {
+          "h": "How storage is worked out",
+          "t": "Four things set the need: <b>how many cameras</b>, each camera's <b>bitrate</b>, how many <b>days</b> to keep, and whether it records constantly or only on motion. Double the days and you double the storage.",
+          "g": [
+            [
+              "Bitrate",
+              "How much data per second one camera's video produces. Higher resolution and busier scenes mean higher bitrate."
+            ],
+            [
+              "Retention",
+              "How long footage is kept before it is overwritten."
+            ]
+          ]
+        },
+        {
+          "h": "Ways to save space",
+          "t": "<b>H.265</b> compression needs roughly half the data of H.264 at similar quality. Lowering the frame rate helps, and <b>motion recording</b> on a quiet scene can save a lot. The trade-off is a risk of missing the start of an event.",
+          "g": [
+            [
+              "H.264 / H.265",
+              "Video compression methods. H.265 is newer and makes smaller files."
+            ],
+            [
+              "Frame rate",
+              "Pictures per second. Fewer frames, smaller files."
+            ]
+          ]
+        },
+        {
+          "h": "Buy more than the maths says",
+          "t": "Disks in a recorder need extra room for redundancy and for staying not completely full, so plan for roughly <b>1.5 times</b> the raw figure. Use disks made for recording around the clock, not ordinary desktop ones.",
+          "g": [
+            [
+              "RAID",
+              "Several disks working together so one failing does not lose footage."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What happens to storage need if retention goes from 14 to 28 days?",
+          "o": [
+            "It stays the same",
+            "It halves",
+            "It roughly doubles"
+          ],
+          "a": 2,
+          "w": "Retention days are a straight multiplier."
+        },
+        {
+          "q": "Which change cuts storage without changing the number of cameras?",
+          "o": [
+            "Switching to H.265",
+            "A bigger monitor",
+            "Longer cables"
+          ],
+          "a": 0,
+          "w": "H.265 needs roughly half the data of H.264 at similar quality."
+        },
+        {
+          "q": "A customer's calculation says 20 TB. What should you quote?",
+          "o": [
+            "Exactly 20 TB",
+            "More, around 1.5 times, to allow for redundancy and headroom",
+            "Much less, because motion recording is always safe"
+          ],
+          "a": 1,
+          "w": "Redundancy and keeping disks from being full add overhead, so you plan above the raw number."
+        },
+        {
+          "q": "Why can motion-only recording be risky?",
+          "o": [
+            "It stops cameras working at night",
+            "It makes the picture blurry",
+            "It can miss the start of an event"
+          ],
+          "a": 2,
+          "w": "If recording starts only when motion is detected, the first moments can be missed."
+        }
+      ]
+    },
+    {
+      "id": "sv-4-1",
+      "lvl": 4,
+      "title": "Analytics and AI detection",
+      "src": [
+        {
+          "l": "CCTV (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Closed-circuit_television"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Cameras that understand",
+          "t": "<b>Video analytics</b> can detect and classify objects, such as people and vehicles, apply zone rules like a line crossing, and measure speed. It can run <b>on the camera</b> or on a central server.",
+          "g": [
+            [
+              "Line crossing",
+              "An alert when something crosses a drawn line in the picture."
+            ],
+            [
+              "Classify",
+              "Decide what kind of thing it is, for example person or car."
+            ]
+          ]
+        },
+        {
+          "h": "Why customers want it",
+          "t": "Plain motion detection fires for shadows, rain and insects. AI detection that looks for <b>people or vehicles</b> gives fewer false alarms, so staff only look at what matters. It also helps search recordings fast.",
+          "g": [
+            [
+              "False alarm",
+              "An alert caused by something harmless."
+            ]
+          ]
+        },
+        {
+          "h": "Questions to ask",
+          "t": "Where does the analytics run, on the camera or a server? Is it a one-off feature or a <b>licence</b> per camera? Does it work with the customer's recorder? Do not promise perfect accuracy: results depend on light, angle and distance.",
+          "g": [
+            [
+              "Licence",
+              "Permission to use a software feature, sometimes bought per camera."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the sales benefit of people and vehicle detection over plain motion detection?",
+          "o": [
+            "Fewer false alarms",
+            "Higher resolution",
+            "Longer cable runs"
+          ],
+          "a": 0,
+          "w": "Classifying objects ignores harmless movement like shadows and rain."
+        },
+        {
+          "q": "Where can analytics run?",
+          "o": [
+            "Only in the cloud",
+            "On the camera or on a central server",
+            "Only on a phone"
+          ],
+          "a": 1,
+          "w": "Both on-camera (edge) and server-based analytics exist."
+        },
+        {
+          "q": "A customer asks if the AI is always 100 percent accurate. Best reply?",
+          "o": [
+            "Yes, always",
+            "No, AI never works",
+            "It is very helpful, but accuracy depends on light, angle and distance"
+          ],
+          "a": 2,
+          "w": "Be honest: analytics is strong but conditions affect results."
+        }
+      ]
+    },
+    {
+      "id": "sv-4-2",
+      "lvl": 4,
+      "title": "Access control and door entry",
+      "src": [
+        {
+          "l": "Access control (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Access_control"
+        }
+      ],
+      "pages": [
+        {
+          "h": "The parts of a door system",
+          "t": "A <b>credential</b> such as a card, fob, PIN or phone is read by a <b>reader</b>. A <b>controller</b> checks the list of who is allowed and tells an <b>electric lock</b> to open. Every event is logged.",
+          "g": [
+            [
+              "Credential",
+              "What proves who you are: a card, PIN, fingerprint or phone."
+            ],
+            [
+              "Controller",
+              "The brain that decides whether a door opens and records it."
+            ]
+          ]
+        },
+        {
+          "h": "Smarter doors",
+          "t": "Modern systems use <b>IP readers</b> and controllers on the network, and credentials like phones. Some readers include a camera, speaker and microphone, which is the idea behind a <b>video door station</b> for apartment blocks.",
+          "g": [
+            [
+              "Door station / intercom",
+              "A panel at the entrance with a button, speaker and often a camera."
+            ]
+          ]
+        },
+        {
+          "h": "Safety first",
+          "t": "A door must always let people <b>out</b> in an emergency. Locks usually have a mechanical or exit-button fallback. This is a rule installers take seriously, so remind customers that safety and fire rules apply, not just security.",
+          "g": [
+            [
+              "Request to exit (RTE)",
+              "A button or sensor that lets people leave without triggering an alarm."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which part decides if the door opens?",
+          "o": [
+            "The controller",
+            "The credential",
+            "The camera"
+          ],
+          "a": 0,
+          "w": "The controller compares the credential with its list, grants or denies access and logs it."
+        },
+        {
+          "q": "What is a typical use of a video door station?",
+          "o": [
+            "Storing footage for a year",
+            "Apartment block entrance",
+            "Measuring network speed"
+          ],
+          "a": 1,
+          "w": "A door station combines a bell, speaker and camera at an entrance."
+        },
+        {
+          "q": "What must an electric lock never prevent?",
+          "o": [
+            "Visitors ringing the bell",
+            "Logging of events",
+            "People leaving in an emergency"
+          ],
+          "a": 2,
+          "w": "Safe exit is a basic requirement, so locks need a free-exit fallback."
+        }
+      ]
+    },
+    {
+      "id": "sv-4-3",
+      "lvl": 4,
+      "title": "Privacy and GDPR basics",
+      "src": [
+        {
+          "l": "GDPR Article 5",
+          "u": "https://gdpr-info.eu/art-5-gdpr/"
+        },
+        {
+          "l": "CCTV (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Closed-circuit_television"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Video is personal data",
+          "t": "If a person can be recognised, the footage is <b>personal data</b>, so GDPR rules apply to the customer who runs the cameras. This is awareness, not legal advice: customers should check local rules and ask their own legal adviser.",
+          "g": [
+            [
+              "GDPR",
+              "The EU's data protection law."
+            ],
+            [
+              "Personal data",
+              "Information about an identifiable person, such as their face on video."
+            ]
+          ]
+        },
+        {
+          "h": "Key principles",
+          "t": "Three that matter most for cameras: <b>purpose limitation</b>, a clear reason for filming; <b>data minimisation</b>, film no more than needed; and <b>storage limitation</b>, do not keep footage longer than necessary.",
+          "g": [
+            [
+              "Data minimisation",
+              "Collect only the data you really need."
+            ],
+            [
+              "Storage limitation",
+              "Do not keep personal data longer than needed."
+            ]
+          ]
+        },
+        {
+          "h": "What you can do as a seller",
+          "t": "Help customers think about where cameras point, how long footage is kept, who can watch it, and that it is secured. Features like <b>privacy masking</b> and user permissions help. Signs and rules differ by country, so refer to the authority.",
+          "g": [
+            [
+              "Privacy masking",
+              "Blocking out part of the picture, such as a neighbour's window."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "When is camera footage personal data?",
+          "o": [
+            "When a person can be recognised",
+            "Only if it is stored in the cloud",
+            "Never"
+          ],
+          "a": 0,
+          "w": "If people are identifiable, it counts as personal data under GDPR."
+        },
+        {
+          "q": "Which principle says do not keep footage longer than necessary?",
+          "o": [
+            "Purpose limitation",
+            "Storage limitation",
+            "Accuracy"
+          ],
+          "a": 1,
+          "w": "Storage limitation means keeping data only as long as needed."
+        },
+        {
+          "q": "A customer asks exactly how many days the law allows. Best answer?",
+          "o": [
+            "Always 30 days",
+            "No limit exists",
+            "It depends on country and purpose, so check with the local data protection authority or a legal adviser"
+          ],
+          "a": 2,
+          "w": "Rules differ by country and use, and we give awareness, not legal advice."
+        },
+        {
+          "q": "Which feature helps avoid filming a neighbour's window?",
+          "o": [
+            "Privacy masking",
+            "H.265",
+            "PoE"
+          ],
+          "a": 0,
+          "w": "Privacy masking blocks out chosen parts of the image."
+        }
+      ]
+    },
+    {
+      "id": "sv-5-1",
+      "lvl": 5,
+      "title": "ONVIF and mixing brands",
+      "src": [
+        {
+          "l": "ONVIF about",
+          "u": "https://www.onvif.org/about/mission/"
+        },
+        {
+          "l": "ONVIF profiles",
+          "u": "https://www.onvif.org/profiles/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A common language",
+          "t": "<b>ONVIF</b> is an open industry group, founded in 2008, that defines standard interfaces so IP security products from different makers can work together. More than 500 member companies take part.",
+          "g": [
+            [
+              "ONVIF",
+              "Open Network Video Interface Forum: a standard for security products to talk to each other."
+            ],
+            [
+              "Interoperability",
+              "Different products working together."
+            ]
+          ]
+        },
+        {
+          "h": "Profiles",
+          "t": "Products support <b>profiles</b>. <b>S</b> is basic video streaming, <b>T</b> advanced streaming, <b>G</b> edge storage and retrieval, <b>M</b> analytics metadata, and <b>A</b> and <b>C</b> are for access control.",
+          "g": [
+            [
+              "Profile",
+              "A defined set of ONVIF features a product promises to support."
+            ],
+            [
+              "Metadata",
+              "Extra data about the video, such as detected objects."
+            ]
+          ]
+        },
+        {
+          "h": "Not a guarantee of everything",
+          "t": "ONVIF makes mixing brands <b>possible</b>, but check the profiles a recorder and a camera share. Brand-specific features, such as special analytics, may only work inside the same ecosystem. Ask the vendor to confirm the combination.",
+          "g": [
+            [
+              "Ecosystem",
+              "Products of one brand designed to work best together."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is ONVIF for?",
+          "o": [
+            "A video compression format",
+            "Standard interfaces so IP security products can interoperate",
+            "A cloud storage service"
+          ],
+          "a": 1,
+          "w": "ONVIF defines interfaces for interoperability between makers."
+        },
+        {
+          "q": "Which profile is basic video streaming?",
+          "o": [
+            "G",
+            "A",
+            "S"
+          ],
+          "a": 2,
+          "w": "Profile S covers basic video streaming. G is edge storage and A is access control."
+        },
+        {
+          "q": "A customer wants brand X cameras on a brand Y recorder. First step?",
+          "o": [
+            "Check shared ONVIF profiles and ask for confirmation of special features",
+            "Assume everything works",
+            "Tell them it is impossible"
+          ],
+          "a": 0,
+          "w": "ONVIF makes it likely for core features, but extras may not carry over."
+        }
+      ]
+    },
+    {
+      "id": "sv-5-2",
+      "lvl": 5,
+      "title": "Four typical customers",
+      "src": [
+        {
+          "l": "IP camera (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/IP_camera"
+        },
+        {
+          "l": "Storage and retention maths (Forasoft)",
+          "u": "https://www.forasoft.com/learn/video-surveillance/articles-vms/surveillance-storage-retention-math"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Shop and apartment block",
+          "t": "<b>Shop:</b> a few cameras, wide lenses at the entrance and till, easy remote viewing, maybe cloud or a small NVR. <b>Apartment block:</b> entrance door station, cameras in common areas, access control, and careful privacy.",
+          "g": [
+            [
+              "Common areas",
+              "Stairwells, lobbies and garages shared by residents."
+            ]
+          ]
+        },
+        {
+          "h": "Warehouse and building site",
+          "t": "<b>Warehouse:</b> many cameras, long distances, an NVR with big storage and analytics for people and vehicles. <b>Building site:</b> temporary, often no fixed network, so solar or mobile connectivity and rugged outdoor cameras help.",
+          "g": [
+            [
+              "Rugged",
+              "Built to survive weather, dust and knocks."
+            ]
+          ]
+        },
+        {
+          "h": "Questions that work everywhere",
+          "t": "What must you see, how far and how dark? How many days of footage? Is there a network and power? Who watches it? Any <b>privacy</b> rules? These questions shape the camera, recorder, switch and storage you quote.",
+          "g": [
+            [
+              "Scope",
+              "What exactly the project includes."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which setup suits a temporary building site with no network?",
+          "o": [
+            "Cameras with wired PoE to a rack",
+            "Rugged outdoor cameras with mobile connectivity and a local power solution",
+            "Analog cameras on coax"
+          ],
+          "a": 1,
+          "w": "A temporary site rarely has fixed cabling, so mobile connectivity and rugged gear fit."
+        },
+        {
+          "q": "A warehouse wants to be alerted only when a person enters a zone at night. What helps?",
+          "o": [
+            "Higher bitrate",
+            "A micro-SD card",
+            "Analytics with people detection and zone rules"
+          ],
+          "a": 2,
+          "w": "Analytics can classify people and apply zone rules."
+        },
+        {
+          "q": "Which question belongs in every customer conversation?",
+          "o": [
+            "How many days of footage do you need to keep?",
+            "What colour is the building?",
+            "Which phone brand do you use?"
+          ],
+          "a": 0,
+          "w": "Retention drives storage size, so it is a key early question."
+        }
+      ]
+    }
+  ]
+}

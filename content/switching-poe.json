@@ -1,0 +1,768 @@
+{
+ "title": "Switching and PoE",
+ "emoji": "🔌",
+ "desc": "Switches, PoE, port speeds, VLAN and QoS",
+ "src": [
+  {
+   "l": "Wikipedia: Network switch",
+   "u": "https://en.wikipedia.org/wiki/Network_switch"
+  },
+  {
+   "l": "Wikipedia: Power over Ethernet",
+   "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+  },
+  {
+   "l": "Wikipedia: 2.5GBASE-T and 5GBASE-T",
+   "u": "https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "sw-1-1",
+   "lvl": 1,
+   "title": "What a switch does",
+   "src": [
+    {
+     "l": "Wikipedia: Network switch",
+     "u": "https://en.wikipedia.org/wiki/Network_switch"
+    },
+    {
+     "l": "Wikipedia: Router (computing)",
+     "u": "https://en.wikipedia.org/wiki/Router_(computing)"
+    }
+   ],
+   "pages": [
+    {
+     "h": "The local junction",
+     "t": "A <b>switch</b> connects wired devices inside one network: PCs, printers, phones, cameras and access points. Each device plugs into a <b>port</b>. It learns which device sits on which port and sends data only to the right one.",
+     "g": [
+      [
+       "Switch",
+       "A box with many network ports that links wired devices in a LAN."
+      ],
+      [
+       "Port",
+       "A socket on the switch where a cable plugs in."
+      ]
+     ]
+    },
+    {
+     "h": "Not a router",
+     "t": "A <b>router</b> connects different networks, like your LAN and the internet. A switch connects devices <b>within</b> a network. Most customers need both: the router at the door, switches inside the building.",
+     "g": [
+      [
+       "Router",
+       "Device that forwards traffic between networks."
+      ]
+     ]
+    },
+    {
+     "h": "Why a seller cares",
+     "t": "Switches are in nearly every project, so they are an easy add-on to any router, firewall or Wi-Fi sale. The key choices are: <b>how many ports</b>, <b>how fast</b>, <b>PoE or not</b>, and <b>how smart</b>.",
+     "g": [
+      [
+       "Add-on",
+       "An extra product sold alongside the main item."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does a switch connect?",
+     "o": [
+      "Your office to the internet provider",
+      "Devices within one network",
+      "Two cities"
+     ],
+     "a": 1,
+     "w": "Switches link wired devices inside a LAN; routers link networks."
+    },
+    {
+     "q": "Which statement is right?",
+     "o": [
+      "A router and a switch are the same",
+      "A switch only works with Wi-Fi",
+      "A router connects networks, a switch connects devices in one network"
+     ],
+     "a": 2,
+     "w": "Router between networks, switch inside the network."
+    },
+    {
+     "q": "Which is NOT one of the key choices for a switch?",
+     "o": [
+      "The brand of the customer's coffee machine",
+      "Number of ports",
+      "PoE or not"
+     ],
+     "a": 0,
+     "w": "Ports, speed, PoE and management level are the real choices."
+    }
+   ]
+  },
+  {
+   "id": "sw-1-2",
+   "lvl": 1,
+   "title": "Unmanaged, smart, managed",
+   "src": [
+    {
+     "l": "Wikipedia: Network switch",
+     "u": "https://en.wikipedia.org/wiki/Network_switch"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Unmanaged: plug and play",
+     "t": "An <b>unmanaged</b> switch has no settings. You plug it in and it works. It is typically the cheapest type and common in small offices and homes. Good when nothing needs to be configured.",
+     "g": [
+      [
+       "Unmanaged",
+       "A switch with no configuration, just plug and play."
+      ]
+     ]
+    },
+    {
+     "h": "Smart: a few settings",
+     "t": "A <b>smart</b> (web-managed) switch offers a web page with basic options such as <b>VLANs</b>, port speed settings and monitoring, usually without a command line. A good middle step for small businesses.",
+     "g": [
+      [
+       "VLAN",
+       "A logical network separated inside shared equipment."
+      ],
+      [
+       "CLI",
+       "Command-line interface: typed commands used by technicians."
+      ]
+     ]
+    },
+    {
+     "h": "Managed: full control",
+     "t": "<b>Managed</b> switches add a full feature set: command line, SNMP monitoring, backup of settings and central management. They suit larger networks where an IT team wants tight control. They normally cost more.",
+     "g": [
+      [
+       "SNMP",
+       "A standard way for tools to monitor network devices."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A café needs five ports for POS and a printer, nothing special. Which type?",
+     "o": [
+      "Fully managed switch",
+      "Layer 3 core switch",
+      "Unmanaged switch"
+     ],
+     "a": 2,
+     "w": "Unmanaged is simple, plug and play, and fits basic needs."
+    },
+    {
+     "q": "What does a smart switch usually give you?",
+     "o": [
+      "A web page with basic settings like VLANs",
+      "No ports",
+      "Built-in Wi-Fi"
+     ],
+     "a": 0,
+     "w": "Smart switches have a limited feature set managed through a web interface."
+    },
+    {
+     "q": "Which customer suits a fully managed switch best?",
+     "o": [
+      "A home user",
+      "A larger company with an IT team and many VLANs",
+      "A garden shed"
+     ],
+     "a": 1,
+     "w": "Managed switches suit larger networks needing central control and monitoring."
+    }
+   ]
+  },
+  {
+   "id": "sw-2-1",
+   "lvl": 2,
+   "title": "Layer 2 vs layer 3",
+   "src": [
+    {
+     "l": "Wikipedia: Network switch",
+     "u": "https://en.wikipedia.org/wiki/Network_switch"
+    },
+    {
+     "l": "Wikipedia: Virtual LAN",
+     "u": "https://en.wikipedia.org/wiki/Virtual_LAN"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Layer 2: local delivery",
+     "t": "A <b>Layer 2</b> switch forwards data by <b>MAC address</b>, the hardware ID of each device. It only knows who is on which port. That is enough for one network or for several VLANs that never need to talk to each other.",
+     "g": [
+      [
+       "Layer 2",
+       "The level where local delivery by MAC address happens."
+      ],
+      [
+       "MAC address",
+       "A unique hardware ID of a network device."
+      ]
+     ]
+    },
+    {
+     "h": "Layer 3: adds routing",
+     "t": "A <b>Layer 3</b> (multilayer) switch can also <b>route</b> between networks by IP address. It lets different VLANs talk to each other at high speed inside the building, without sending everything to the router.",
+     "g": [
+      [
+       "Layer 3",
+       "The level where IP addresses and routing work."
+      ]
+     ]
+    },
+    {
+     "h": "Which one?",
+     "t": "Small and medium sites usually need <b>Layer 2</b>, with the router handling VLAN-to-VLAN traffic. Bigger sites with many VLANs and lots of internal traffic benefit from a <b>Layer 3</b> core switch.",
+     "g": [
+      [
+       "Core switch",
+       "The central switch that other switches connect to."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does a Layer 3 switch add?",
+     "o": [
+      "PoE",
+      "Routing between networks",
+      "Wi-Fi"
+     ],
+     "a": 1,
+     "w": "Layer 3 switches can forward by IP address, i.e. route."
+    },
+    {
+     "q": "Layer 2 switches forward data using...",
+     "o": [
+      "Websites",
+      "Passwords",
+      "MAC addresses"
+     ],
+     "a": 2,
+     "w": "Layer 2 learns MAC addresses per port.",
+     "g": [
+      [
+       "MAC address",
+       "Hardware ID."
+      ]
+     ]
+    },
+    {
+     "q": "A 20-person office with one VLAN and one router. Which is enough?",
+     "o": [
+      "A Layer 2 switch",
+      "A Layer 3 core switch",
+      "Nothing"
+     ],
+     "a": 0,
+     "w": "A simple Layer 2 switch with the router doing the routing is enough."
+    }
+   ]
+  },
+  {
+   "id": "sw-2-2",
+   "lvl": 2,
+   "title": "PoE: power over the cable",
+   "src": [
+    {
+     "l": "Wikipedia: Power over Ethernet",
+     "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+    }
+   ],
+   "pages": [
+    {
+     "h": "One cable, data and power",
+     "t": "<b>PoE</b> sends electricity through the same network cable as the data. A camera or access point on the ceiling then needs <b>no power socket</b> next to it. The switch (or an injector) is the power source.",
+     "g": [
+      [
+       "PoE",
+       "Power over Ethernet: electricity delivered through the network cable."
+      ],
+      [
+       "Injector",
+       "A small box that adds PoE power to one cable."
+      ]
+     ]
+    },
+    {
+     "h": "The three families",
+     "t": "<b>PoE</b> (802.3af) offers up to 15.4 W per port. <b>PoE+</b> (802.3at) up to 30 W. <b>PoE++</b> (802.3bt) up to 60 W or 90 W. Some power is lost in the cable, so the device receives slightly less.",
+     "g": [
+      [
+       "PSE",
+       "Power Sourcing Equipment: the switch or injector giving power."
+      ],
+      [
+       "PD",
+       "Powered Device: the camera, phone or AP receiving power."
+      ]
+     ]
+    },
+    {
+     "h": "Check both sides",
+     "t": "A device works if the switch offers <b>at least what the device needs</b>. A strong PoE++ port can power a small PoE device, because the device only draws what it needs. The opposite does not work.",
+     "g": []
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does PoE do?",
+     "o": [
+      "Speeds up Wi-Fi",
+      "Encrypts traffic",
+      "Delivers power through the network cable"
+     ],
+     "a": 2,
+     "w": "PoE carries power and data in the same cable.",
+     "g": [
+      [
+       "PoE",
+       "Power over Ethernet."
+      ]
+     ]
+    },
+    {
+     "q": "Which standard offers up to about 30 W per port?",
+     "o": [
+      "PoE+ (802.3at)",
+      "PoE (802.3af)",
+      "PoE++ at 90 W"
+     ],
+     "a": 0,
+     "w": "PoE+ (802.3at) provides up to 30 W at the source."
+    },
+    {
+     "q": "A device needs more power than the switch port offers. What happens?",
+     "o": [
+      "It runs slowly",
+      "It does not get enough power, so choose a stronger PoE port",
+      "The switch upgrades itself"
+     ],
+     "a": 1,
+     "w": "The port must offer at least what the device requires."
+    }
+   ]
+  },
+  {
+   "id": "sw-2-3",
+   "lvl": 2,
+   "title": "What PoE powers",
+   "src": [
+    {
+     "l": "Wikipedia: Power over Ethernet",
+     "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+    },
+    {
+     "l": "Wikipedia: Network switch",
+     "u": "https://en.wikipedia.org/wiki/Network_switch"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Everyday PoE devices",
+     "t": "The classic PoE devices are <b>VoIP phones</b>, <b>IP cameras</b> and <b>wireless access points</b>. These often sit high up or far from sockets, so one cable for both power and data saves installation cost and time.",
+     "g": [
+      [
+       "VoIP phone",
+       "A phone that calls over the network."
+      ],
+      [
+       "IP camera",
+       "A network camera that sends video over the cable."
+      ]
+     ]
+    },
+    {
+     "h": "The power-hungry ones",
+     "t": "Higher power (PoE++, four pairs) can run <b>pan-tilt-zoom cameras</b>, high-performance access points and even <b>laptop charging</b>. These are the cases where checking the power need first really matters.",
+     "g": [
+      [
+       "PTZ camera",
+       "A camera that can pan, tilt and zoom, often with motors."
+      ]
+     ]
+    },
+    {
+     "h": "A bonus: backup power",
+     "t": "Because power comes from the switch, connecting the switch to a <b>UPS</b> keeps phones and access points running during a power cut. A nice selling point for shops and offices that must stay reachable.",
+     "g": [
+      [
+       "UPS",
+       "A battery unit that keeps equipment running in a power cut."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which device is a classic PoE example?",
+     "o": [
+      "Desktop PC",
+      "Wireless access point on the ceiling",
+      "Microwave"
+     ],
+     "a": 1,
+     "w": "Phones, cameras and access points are classic PoE devices."
+    },
+    {
+     "q": "Why mention a UPS together with a PoE switch?",
+     "o": [
+      "It makes cables longer",
+      "It adds Wi-Fi",
+      "PoE devices can keep running if the switch has backup power"
+     ],
+     "a": 2,
+     "w": "The switch powers the devices, so backing up the switch backs up them too."
+    },
+    {
+     "q": "Which device typically needs the higher PoE++ class?",
+     "o": [
+      "A PTZ camera or high-performance access point",
+      "A simple desk phone",
+      "A label printer"
+     ],
+     "a": 0,
+     "w": "Power-hungry devices like PTZ cameras and strong APs use higher classes."
+    }
+   ]
+  },
+  {
+   "id": "sw-3-1",
+   "lvl": 3,
+   "title": "Port speeds and uplinks",
+   "src": [
+    {
+     "l": "Wikipedia: 2.5GBASE-T and 5GBASE-T",
+     "u": "https://en.wikipedia.org/wiki/2.5GBASE-T_and_5GBASE-T"
+    },
+    {
+     "l": "Wikipedia: Network switch",
+     "u": "https://en.wikipedia.org/wiki/Network_switch"
+    }
+   ],
+   "pages": [
+    {
+     "h": "1G is the normal",
+     "t": "Most office ports run at <b>1 Gbit/s</b> (1G). That is fine for PCs, phones and most cameras. Faster ports are added where traffic is concentrated or where a device needs more than 1G.",
+     "g": [
+      [
+       "Gbit/s",
+       "Gigabits per second, a unit of link speed."
+      ]
+     ]
+    },
+    {
+     "h": "2.5G in between",
+     "t": "<b>2.5G</b> (and 5G) ports were created because modern Wi-Fi access points can exceed 1G. They run over existing <b>Cat5e</b> cable up to 100 m, and PoE works with them. A single faster port replaces bundling two cables.",
+     "g": [
+      [
+       "2.5GBASE-T",
+       "Ethernet at 2.5 Gbit/s over normal copper cable."
+      ],
+      [
+       "Link aggregation",
+       "Bonding several cables to act as one faster link."
+      ]
+     ]
+    },
+    {
+     "h": "Uplinks: the motorway",
+     "t": "An <b>uplink</b> joins an access switch to the rest of the network. Many devices share it, so it should be faster than the single ports. <b>10G uplinks</b> are common via SFP+ slots, often on fibre.",
+     "g": [
+      [
+       "Uplink",
+       "A faster link from a switch to the next level of the network."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Why do some access points need 2.5G ports?",
+     "o": [
+      "They need more PoE only",
+      "They have no antenna",
+      "They can exceed 1 Gbit/s and need a faster wired link"
+     ],
+     "a": 2,
+     "w": "Modern Wi-Fi access points can exceed gigabit speeds."
+    },
+    {
+     "q": "What is an uplink?",
+     "o": [
+      "A faster link from a switch to the rest of the network",
+      "A Wi-Fi password",
+      "A type of cable colour"
+     ],
+     "a": 0,
+     "w": "Uplinks concentrate many slower ports into a higher-speed path."
+    },
+    {
+     "q": "Does 2.5G need new cable?",
+     "o": [
+      "Always Cat8",
+      "No, it runs over Cat5e or better up to 100 m",
+      "Only fibre"
+     ],
+     "a": 1,
+     "w": "2.5GBASE-T is designed to work over existing gigabit cabling."
+    }
+   ]
+  },
+  {
+   "id": "sw-3-2",
+   "lvl": 3,
+   "title": "SFP, fibre and stacking",
+   "src": [
+    {
+     "l": "Wikipedia: Small Form-factor Pluggable",
+     "u": "https://en.wikipedia.org/wiki/Small_Form-factor_Pluggable"
+    },
+    {
+     "l": "Wikipedia: Stackable switch",
+     "u": "https://en.wikipedia.org/wiki/Stackable_switch"
+    }
+   ],
+   "pages": [
+    {
+     "h": "SFP slots",
+     "t": "An <b>SFP</b> slot accepts a plug-in module that matches the cable: fibre or copper. <b>SFP+</b> modules are known for 10 Gbit/s. Modules are <b>hot-swappable</b>, so you choose the module for the distance and swap later without replacing the switch.",
+     "g": [
+      [
+       "SFP/SFP+",
+       "Plug-in transceiver modules for fibre or copper, 1G and 10G typically."
+      ],
+      [
+       "Hot-swappable",
+       "Can be changed while the device is powered."
+      ]
+     ]
+    },
+    {
+     "h": "Which fibre module",
+     "t": "<b>Multimode</b> modules cover short runs, roughly hundreds of metres. <b>Single-mode</b> modules reach kilometres. The module type must match the fibre type and the module at the other end, so always check the cable.",
+     "g": [
+      [
+       "Multimode / single-mode",
+       "Short-distance and long-distance fibre types."
+      ]
+     ]
+    },
+    {
+     "h": "Stacking",
+     "t": "<b>Stackable</b> switches can be linked so they work as <b>one switch</b> with the combined ports, managed through a single IP address. Handy when a site outgrows one switch and you want one place for configuration.",
+     "g": [
+      [
+       "Stacking",
+       "Linking switches so they act as one unit."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Why are SFP slots useful?",
+     "o": [
+      "They power the switch",
+      "You pick fibre or copper modules to suit the link",
+      "They create Wi-Fi"
+     ],
+     "a": 1,
+     "w": "SFP modules are swappable and matched to the cable type and distance."
+    },
+    {
+     "q": "Two buildings are 3 km apart. Which module type?",
+     "o": [
+      "Multimode short-range",
+      "Copper SFP",
+      "Single-mode"
+     ],
+     "a": 2,
+     "w": "Single-mode modules cover longer distances."
+    },
+    {
+     "q": "What does stacking give you?",
+     "o": [
+      "Several switches managed as one",
+      "Faster Wi-Fi",
+      "Free PoE"
+     ],
+     "a": 0,
+     "w": "A stack acts as one switch with one management address.",
+     "g": [
+      [
+       "Stack",
+       "Linked switches acting as one."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sw-4-1",
+   "lvl": 4,
+   "title": "VLAN, QoS and power budget",
+   "src": [
+    {
+     "l": "Wikipedia: Quality of service",
+     "u": "https://en.wikipedia.org/wiki/Quality_of_service"
+    },
+    {
+     "l": "Wikipedia: Virtual LAN",
+     "u": "https://en.wikipedia.org/wiki/Virtual_LAN"
+    },
+    {
+     "l": "Wikipedia: Power over Ethernet",
+     "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+    }
+   ],
+   "pages": [
+    {
+     "h": "VLAN on a switch",
+     "t": "<b>VLANs</b> split one switch into separate logical networks, for example staff, guests and cameras. It needs a smart or managed switch. Many customers choose managed switches simply to keep guests and cameras apart from staff.",
+     "g": []
+    },
+    {
+     "h": "QoS: priority lanes",
+     "t": "<b>QoS</b> lets a switch treat traffic differently. Voice and video need steady, low-delay delivery, so they go first in busy moments, while file downloads take what is left. It matters when links get congested.",
+     "g": [
+      [
+       "QoS",
+       "Quality of Service: giving some traffic priority over other traffic."
+      ]
+     ]
+    },
+    {
+     "h": "The power budget",
+     "t": "A PoE switch has a <b>total power budget</b>, not just a per-port limit. A 24-port switch cannot always power 24 big devices at once. Add up what all devices need, then check the budget in the datasheet.",
+     "g": [
+      [
+       "Power budget",
+       "The total PoE power a switch can deliver across all ports."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is QoS for?",
+     "o": [
+      "Making cables longer",
+      "Powering cameras",
+      "Giving voice and video priority when the network is busy"
+     ],
+     "a": 2,
+     "w": "QoS marks and queues traffic so real-time traffic is served first."
+    },
+    {
+     "q": "A customer plans 20 cameras on a 24-port PoE switch. What must you check?",
+     "o": [
+      "The total PoE power budget",
+      "Only the number of ports",
+      "The Wi-Fi band"
+     ],
+     "a": 0,
+     "w": "The switch has a total budget; ports alone do not say if all can be powered."
+    },
+    {
+     "q": "Which switch type is needed for VLANs?",
+     "o": [
+      "Unmanaged",
+      "Smart or managed",
+      "Hub"
+     ],
+     "a": 1,
+     "w": "VLAN settings need at least a smart (web-managed) switch."
+    }
+   ]
+  },
+  {
+   "id": "sw-4-2",
+   "lvl": 4,
+   "title": "Picking a switch: scenarios",
+   "src": [
+    {
+     "l": "Wikipedia: Network switch",
+     "u": "https://en.wikipedia.org/wiki/Network_switch"
+    },
+    {
+     "l": "Wikipedia: Power over Ethernet",
+     "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Small shop",
+     "t": "Six PCs, one printer, two cameras, one access point. A <b>8 to 16-port</b> switch, <b>PoE</b> for the cameras and AP, smart if guests need Wi-Fi apart. Unmanaged works when nothing needs separating.",
+     "g": []
+    },
+    {
+     "h": "Office floor",
+     "t": "Forty users, IP phones, three access points. A <b>PoE+ 24 to 48-port</b> managed switch, <b>VLANs</b> for voice and guests, and QoS for calls. Plan an uplink to the router or core, ideally 10G if traffic is heavy.",
+     "g": []
+    },
+    {
+     "h": "Camera site",
+     "t": "Sixteen cameras, some PTZ, a recorder, long cable runs. A <b>PoE switch with a big power budget</b> and some PoE++ ports, <b>fibre uplinks</b> to far buildings, and a UPS. Ask for each camera's power draw first.",
+     "g": [
+      [
+       "NVR",
+       "Network Video Recorder: stores camera video."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A shop has two cameras and one AP, nothing else special. Which fits?",
+     "o": [
+      "A 48-port core switch",
+      "A small PoE switch",
+      "A fibre-only switch"
+     ],
+     "a": 1,
+     "w": "A small PoE switch powers the cameras and AP simply."
+    },
+    {
+     "q": "An office wants voice and guests separated with call priority. What features?",
+     "o": [
+      "Unmanaged switch only",
+      "Longer cables",
+      "VLANs and QoS on a managed switch"
+     ],
+     "a": 2,
+     "w": "VLANs separate traffic and QoS prioritises voice."
+    },
+    {
+     "q": "A site with 16 cameras including PTZ. Which first question?",
+     "o": [
+      "What is each camera's power draw?",
+      "What colour are the cameras?",
+      "Is there a coffee machine?"
+     ],
+     "a": 0,
+     "w": "Power draw defines PoE class and the total budget."
+    },
+    {
+     "q": "Distant building needs a link from the camera switch. What do you suggest?",
+     "o": [
+      "A Cat5e run of 300 m",
+      "A Wi-Fi extender only",
+      "A fibre uplink via SFP"
+     ],
+     "a": 2,
+     "w": "Copper tops out around 100 m; fibre via SFP handles longer links."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1015 @@
+{
+  "title": "Ubiquiti",
+  "emoji": "📡",
+  "desc": "UniFi networking, cameras, door access and ISP wireless",
+  "src": [
+    {
+      "l": "Ubiquiti home page",
+      "u": "https://ui.com/"
+    },
+    {
+      "l": "UniFi consoles and gateways",
+      "u": "https://ui.com/consoles"
+    },
+    {
+      "l": "Ubiquiti on Wikipedia (company overview)",
+      "u": "https://en.wikipedia.org/wiki/Ubiquiti"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ub-1-1",
+      "lvl": 1,
+      "title": "Who is Ubiquiti?",
+      "src": [
+        {
+          "l": "Ubiquiti on Wikipedia",
+          "u": "https://en.wikipedia.org/wiki/Ubiquiti"
+        },
+        {
+          "l": "Ubiquiti home page",
+          "u": "https://ui.com/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "An American networking company",
+          "t": "Ubiquiti (now <b>Ubiquiti Inc.</b>) was founded in 2003 by <b>Robert Pera</b> and is listed on the New York Stock Exchange. It started with wireless radios and grew into a broad range of networking products for homes and businesses."
+        },
+        {
+          "h": "UniFi is the famous part",
+          "t": "<b>UniFi</b> is the best-known line. It targets home, prosumer and business customers with network gear, <b>IP cameras</b>, door access and phones. Other lines such as airMAX and UISP serve internet providers.",
+          "g": [
+            [
+              "Prosumer",
+              "A buyer between home user and professional: wants business-grade gear but often sets it up themselves."
+            ],
+            [
+              "IP camera",
+              "A security camera that sends video over the network instead of a special video cable."
+            ]
+          ]
+        },
+        {
+          "h": "One brand, many sectors",
+          "t": "The pitch on ui.com is <b>networking, physical security and more, unified</b>. For a distributor, that means one vendor can cover the network, cameras and door control for the same customer."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which Ubiquiti line is the best known and targets home, prosumer and business customers?",
+          "o": [
+            "EdgeMax",
+            "UniFi",
+            "UFiber"
+          ],
+          "a": 1,
+          "w": "UniFi is the company's best-known line. EdgeMax is only wired routers and switches, and UFiber is for fibre ISPs."
+        },
+        {
+          "q": "What does Ubiquiti's own site describe as its idea?",
+          "o": [
+            "Only cheap Wi-Fi routers for consumers",
+            "Networking, physical security and more, unified",
+            "Cloud software with no hardware"
+          ],
+          "a": 1,
+          "w": "The home page says networking, physical security and more are unified in one offering."
+        },
+        {
+          "q": "Which term describes a buyer who wants business-grade gear but often sets it up themselves?",
+          "o": [
+            "Prosumer",
+            "Carrier",
+            "Integrator"
+          ],
+          "a": 0,
+          "w": "Prosumer sits between home user and professional.",
+          "g": [
+            [
+              "Prosumer",
+              "A buyer between home user and professional."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ub-1-2",
+      "lvl": 1,
+      "title": "The UniFi idea: one system",
+      "src": [
+        {
+          "l": "UniFi consoles and gateways",
+          "u": "https://ui.com/consoles"
+        },
+        {
+          "l": "Ubiquiti on Wikipedia",
+          "u": "https://en.wikipedia.org/wiki/Ubiquiti"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A console runs the show",
+          "t": "UniFi hardware is managed from a <b>console</b>, a box that runs <b>UniFi OS</b>. Many gateways such as the Dream Machine and Cloud Gateway are consoles. You add apps to it, and each app handles one area.",
+          "g": [
+            [
+              "Console",
+              "The UniFi box (often a gateway) that runs the management software for the whole site."
+            ],
+            [
+              "Gateway",
+              "The device that connects your local network to the internet and enforces rules."
+            ]
+          ]
+        },
+        {
+          "h": "Apps for each job",
+          "t": "Typical apps: <b>Network</b> (gateway, switches, Wi-Fi), <b>Protect</b> (cameras), <b>Access</b> (doors), <b>Talk</b> (phones) and <b>Connect</b> (signage and EV charging). One login and one look and feel across them."
+        },
+        {
+          "h": "Adopt, don't configure from scratch",
+          "t": "New UniFi devices are <b>adopted</b> into the console, then configured centrally, locally or remotely through a web portal and the mobile apps. That is why installers like it: one place to see the whole site.",
+          "g": [
+            [
+              "Adopt",
+              "UniFi term for connecting a new device to your console so it can be managed centrally."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What runs the UniFi apps for a site?",
+          "o": [
+            "A console running UniFi OS",
+            "A separate server per app",
+            "Each camera on its own"
+          ],
+          "a": 0,
+          "w": "A console running UniFi OS hosts the apps such as Network and Protect."
+        },
+        {
+          "q": "Which app manages the cameras?",
+          "o": [
+            "Access",
+            "Protect",
+            "Talk"
+          ],
+          "a": 1,
+          "w": "Protect is the camera app. Access is doors and Talk is phones."
+        },
+        {
+          "q": "What does 'adopt' mean in UniFi?",
+          "o": [
+            "Buying a support contract",
+            "Connecting a new device to the console to manage it",
+            "Registering as a partner"
+          ],
+          "a": 1,
+          "w": "Adopting links the device to the console so it is configured centrally.",
+          "g": [
+            [
+              "Adopt",
+              "Connect a device to your console so it can be managed."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ub-2-1",
+      "lvl": 2,
+      "title": "Gateways and consoles",
+      "src": [
+        {
+          "l": "UniFi Cloud Gateways",
+          "u": "https://ui.com/cloud-gateways"
+        },
+        {
+          "l": "UniFi consoles",
+          "u": "https://ui.com/consoles"
+        }
+      ],
+      "pages": [
+        {
+          "h": "The brain of the site",
+          "t": "A <b>gateway</b> connects the site to the internet. UniFi gateways add a <b>firewall</b>, intrusion prevention, VPN and handling of more than one internet line. Many models double as the console that runs the apps.",
+          "g": [
+            [
+              "VPN",
+              "Virtual Private Network: a secure tunnel between sites or to a remote user."
+            ],
+            [
+              "Firewall",
+              "Software or hardware that filters traffic between networks."
+            ]
+          ]
+        },
+        {
+          "h": "Sizes",
+          "t": "Ubiquiti positions <b>Cloud Gateway Ultra and Max</b> for small to medium sites, <b>Dream Machine Pro</b> and Pro Max for large sites, and <b>Enterprise Firewall</b> models at the top. Some, like <b>Dream Router 7</b>, add Wi-Fi and a PoE switch."
+        },
+        {
+          "h": "The compact option",
+          "t": "<b>UniFi Express 7</b> is a super-compact gateway that can grow with mesh Wi-Fi. It runs only the Network app, so it suits simple sites, not ones wanting cameras and door control on the same box.",
+          "g": [
+            [
+              "PoE",
+              "Power over Ethernet: power and data on one network cable."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A small shop wants a simple gateway plus Wi-Fi in one device. Which fits the product positioning best?",
+          "o": [
+            "Enterprise Firewall",
+            "Dream Router 7",
+            "Dream Machine Pro Max"
+          ],
+          "a": 1,
+          "w": "Dream Router 7 combines gateway, Wi-Fi 7 and a PoE switch. The others target larger sites."
+        },
+        {
+          "q": "What is limited about UniFi Express 7?",
+          "o": [
+            "It needs a monthly licence",
+            "It cannot do Wi-Fi",
+            "It only runs the Network app"
+          ],
+          "a": 2,
+          "w": "Express runs only UniFi Network, so no Protect or Access on it."
+        },
+        {
+          "q": "Which tier is at the top of the gateway range?",
+          "o": [
+            "Enterprise Firewall",
+            "Cloud Gateway Ultra",
+            "Dream Wall"
+          ],
+          "a": 0,
+          "w": "Enterprise Firewall models are the top-end options."
+        },
+        {
+          "q": "What is PoE used for?",
+          "o": [
+            "Encrypting VPN traffic",
+            "Sending power and data over one cable",
+            "Speeding up the internet line"
+          ],
+          "a": 1,
+          "w": "PoE powers devices such as access points and cameras over the network cable.",
+          "g": [
+            [
+              "PoE",
+              "Power over Ethernet."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ub-2-2",
+      "lvl": 2,
+      "title": "UniFi switches and Wi-Fi",
+      "src": [
+        {
+          "l": "UniFi switching",
+          "u": "https://ui.com/switching"
+        },
+        {
+          "l": "UniFi WiFi",
+          "u": "https://ui.com/wifi"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Switches in families",
+          "t": "UniFi switches range from <b>compact</b> ones for tight spaces, through <b>value</b> and <b>professional</b> models, up to <b>enterprise</b> core switches. Higher tiers offer more PoE power, faster uplinks and routing. All are managed centrally without licence fees.",
+          "g": [
+            [
+              "Uplink",
+              "The fast port connecting a switch to the rest of the network."
+            ]
+          ]
+        },
+        {
+          "h": "Wi-Fi access points",
+          "t": "Access points come as <b>ceiling</b> models (U7 and U6), <b>enterprise</b> models for crowded places such as stadiums, <b>in-wall</b> units, and weatherproof <b>outdoor</b> units. Most are powered over PoE from a UniFi switch.",
+          "g": [
+            [
+              "Access point (AP)",
+              "A device that gives Wi-Fi coverage and connects by cable to the network."
+            ]
+          ]
+        },
+        {
+          "h": "Plan before you sell",
+          "t": "APs need a UniFi console to be managed, and <b>mesh</b> needs one too. Ubiquiti offers a <b>Design Center</b> for planning coverage. Good habit: let the reseller plan where APs go before quoting.",
+          "g": [
+            [
+              "Mesh",
+              "Access points linking to each other wirelessly instead of every one needing a cable."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A stadium needs Wi-Fi for very many users. Which AP category matches?",
+          "o": [
+            "Extender",
+            "In-wall",
+            "Enterprise"
+          ],
+          "a": 2,
+          "w": "The Enterprise category is for critical, high-density sites, including arenas."
+        },
+        {
+          "q": "What do UniFi APs need to be managed?",
+          "o": [
+            "A UniFi console",
+            "A Windows PC permanently on",
+            "A monthly subscription"
+          ],
+          "a": 0,
+          "w": "APs are adopted into a UniFi console, which also enables mesh."
+        },
+        {
+          "q": "Which tool helps plan AP coverage?",
+          "o": [
+            "Etherlighting",
+            "Design Center",
+            "Talk Relay"
+          ],
+          "a": 1,
+          "w": "UniFi Design Center is for planning coverage."
+        }
+      ]
+    },
+    {
+      "id": "ub-2-3",
+      "lvl": 2,
+      "title": "Protect cameras and Access doors",
+      "src": [
+        {
+          "l": "UniFi Protect",
+          "u": "https://ui.com/camera-security"
+        },
+        {
+          "l": "UniFi Access",
+          "u": "https://ui.com/door-access"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Protect: cameras",
+          "t": "<b>UniFi Protect</b> runs on a UniFi console and records to <b>local storage</b>. Cameras come in bullet, dome, turret, PTZ and 360 styles. Detections for motion, people and vehicles are built in. Ubiquiti states no licence fees.",
+          "g": [
+            [
+              "PTZ",
+              "Pan-tilt-zoom: a camera you can steer and zoom."
+            ],
+            [
+              "NVR",
+              "Network video recorder: the box that stores camera footage."
+            ]
+          ]
+        },
+        {
+          "h": "Access: doors",
+          "t": "<b>UniFi Access</b> controls doors with <b>hubs</b> and <b>readers</b>. People can open doors with cards, fobs or a phone. Starter kits exist for single doors, elevators and vehicle gates.",
+          "g": [
+            [
+              "Hub",
+              "The box that connects to the lock and reader and enforces who may enter."
+            ]
+          ]
+        },
+        {
+          "h": "Better together",
+          "t": "Access integrates with Protect, so a door event can be linked to its video. Both are managed from the same system. That is a strong angle for sites that already run UniFi networking."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Where does UniFi Protect record by default?",
+          "o": [
+            "A paid third-party service",
+            "Only Ubiquiti's cloud",
+            "Local storage on the console or recorder"
+          ],
+          "a": 2,
+          "w": "Protect records to local storage; cloud archiving is optional."
+        },
+        {
+          "q": "A customer wants door control linked with video of who entered. What do you suggest?",
+          "o": [
+            "Access together with Protect",
+            "airMAX only",
+            "Talk with Connect"
+          ],
+          "a": 0,
+          "w": "Access integrates with Protect to link door events and video."
+        },
+        {
+          "q": "What connects the lock and reader in UniFi Access?",
+          "o": [
+            "A phone",
+            "A hub",
+            "A switch only"
+          ],
+          "a": 1,
+          "w": "Readers connect to a hub, which handles access rights.",
+          "g": [
+            [
+              "Hub",
+              "Box connecting reader and lock."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ub-2-4",
+      "lvl": 2,
+      "title": "Talk, Connect and mobile backup",
+      "src": [
+        {
+          "l": "UniFi Talk",
+          "u": "https://ui.com/phone-system"
+        },
+        {
+          "l": "UniFi consoles",
+          "u": "https://ui.com/consoles"
+        },
+        {
+          "l": "UniFi Cloud Gateways",
+          "u": "https://ui.com/cloud-gateways"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Talk: business phones",
+          "t": "<b>UniFi Talk</b> is a business <b>VoIP</b> phone system with touchscreen desk and wall phones. It can run on a UniFi console or work with a third-party phone system. Hardware and the Talk phone service are separate costs.",
+          "g": [
+            [
+              "VoIP",
+              "Voice over IP: phone calls over the internet."
+            ],
+            [
+              "PBX",
+              "Private branch exchange: a company's internal phone system."
+            ]
+          ]
+        },
+        {
+          "h": "Connect: signage and more",
+          "t": "<b>UniFi Connect</b> covers digital signage, lighting and <b>EV charging</b> management on the same console. It is the add-on line: handy for hotels and shops that want more than networking.",
+          "g": [
+            [
+              "Digital signage",
+              "Screens showing menus, ads or info, managed centrally."
+            ]
+          ]
+        },
+        {
+          "h": "Mobile internet",
+          "t": "Some UniFi devices add <b>5G</b>: for example <b>Dream Router 5G Max</b>, and the Cloud Gateway Industrial with remote SIM support. They suit sites where fixed internet is slow to install or needs a backup line.",
+          "g": [
+            [
+              "5G backup",
+              "Mobile internet used when the main line fails, or as the main line where no cable exists."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which UniFi app manages digital signage and EV charging?",
+          "o": [
+            "Protect",
+            "Talk",
+            "Connect"
+          ],
+          "a": 2,
+          "w": "Connect covers signage, lighting and EV charging."
+        },
+        {
+          "q": "A pop-up shop has no cable internet yet. Which is the most relevant UniFi product type?",
+          "o": [
+            "A 5G-capable device such as Dream Router 5G Max",
+            "An enterprise core switch",
+            "A Talk wall phone"
+          ],
+          "a": 0,
+          "w": "5G devices use mobile internet as primary or backup connection."
+        },
+        {
+          "q": "What is a cost to remember when selling UniFi Talk?",
+          "o": [
+            "A yearly Network licence",
+            "There is a phone service subscription besides the hardware",
+            "A per-camera fee"
+          ],
+          "a": 1,
+          "w": "Ubiquiti says there are no extra licence fees, but hardware and Talk service subscriptions are separate."
+        }
+      ]
+    },
+    {
+      "id": "ub-3-1",
+      "lvl": 3,
+      "title": "Cloud and local management",
+      "src": [
+        {
+          "l": "UniFi consoles",
+          "u": "https://ui.com/consoles"
+        },
+        {
+          "l": "UniFi Protect",
+          "u": "https://ui.com/camera-security"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Local first",
+          "t": "A UniFi site is run by a console <b>on site</b>. Traffic handling, security rules and camera recording happen locally. If the internet drops, the local network and recordings keep working as designed.",
+          "g": [
+            [
+              "On-premises",
+              "Running on hardware at the customer's own location, not in someone else's data centre."
+            ]
+          ]
+        },
+        {
+          "h": "Remote on top",
+          "t": "For remote access Ubiquiti offers <b>Site Manager</b> (unifi.ui.com) and the mobile apps, described as free. One login can reach many sites, which suits resellers and MSPs looking after several customers.",
+          "g": [
+            [
+              "MSP",
+              "Managed service provider: a company that runs IT for customers."
+            ]
+          ]
+        },
+        {
+          "h": "No licence fees",
+          "t": "Ubiquiti states <b>no licence fees</b> for managing network gear and for Protect cameras, whether 4 or 4,000. This is a key difference from vendors that charge per device or per year. Always confirm exceptions, such as Talk service."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Where does a UniFi site mainly handle traffic and recording?",
+          "o": [
+            "At the reseller's office",
+            "Only in Ubiquiti's cloud",
+            "On site in the console"
+          ],
+          "a": 2,
+          "w": "The gateway runs on premises, with remote management added on top."
+        },
+        {
+          "q": "A reseller looks after ten small customers. Which feature helps most?",
+          "o": [
+            "Site Manager for remote multi-site access",
+            "Mesh Wi-Fi",
+            "Etherlighting"
+          ],
+          "a": 0,
+          "w": "Site Manager and the apps give remote access to many sites."
+        },
+        {
+          "q": "How do you describe UniFi's licensing for Protect?",
+          "o": [
+            "A fee per user login",
+            "No licence fees stated by Ubiquiti",
+            "A yearly fee per camera"
+          ],
+          "a": 1,
+          "w": "Ubiquiti says Protect licensing is $0, whatever the number of cameras."
+        },
+        {
+          "q": "What does 'on-premises' mean?",
+          "o": [
+            "Hosted in the vendor's cloud",
+            "Rented by the hour",
+            "Running at the customer's location"
+          ],
+          "a": 2,
+          "w": "On-premises means the hardware sits at the customer's site.",
+          "g": [
+            [
+              "On-premises",
+              "Running at the customer's own location."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ub-3-2",
+      "lvl": 3,
+      "title": "ISP wireless and fibre lines",
+      "src": [
+        {
+          "l": "Ubiquiti on Wikipedia",
+          "u": "https://en.wikipedia.org/wiki/Ubiquiti"
+        },
+        {
+          "l": "UniFi consoles",
+          "u": "https://ui.com/consoles"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Not the same as UniFi",
+          "t": "Besides UniFi, Ubiquiti has lines built for internet providers: <b>airMAX</b> for point-to-point and point-to-multipoint radio links, <b>airFiber</b> for wireless ISPs, and <b>UFiber</b> for fibre ISPs. Those are sold to carriers, not to offices.",
+          "g": [
+            [
+              "WISP",
+              "Wireless Internet Service Provider: sells internet to homes or firms using radio links."
+            ],
+            [
+              "Point-to-point",
+              "A radio link joining exactly two places, for example two buildings."
+            ]
+          ]
+        },
+        {
+          "h": "Managed with UISP",
+          "t": "These carrier-type products are managed in <b>UISP</b>, a separate system from UniFi. Customers are <b>WISPs</b>, local fibre operators and installers building links between sites. It is a different conversation from an office Wi-Fi quote.",
+          "g": [
+            [
+              "Point-to-multipoint",
+              "One radio mast serving many customer antennas."
+            ]
+          ]
+        },
+        {
+          "h": "Spot the right buyer",
+          "t": "If the customer talks about <b>subscribers</b>, towers or linking far-apart buildings, think airMAX or UISP. If they talk about offices, hotels or shops, think UniFi. Check models carefully: lines are not interchangeable."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A customer sells internet to farms using radio masts. Which Ubiquiti area fits?",
+          "o": [
+            "airMAX and UISP",
+            "UniFi Talk",
+            "UniFi Protect"
+          ],
+          "a": 0,
+          "w": "airMAX and the UISP management system are aimed at wireless ISPs."
+        },
+        {
+          "q": "Which line is aimed at fibre ISPs?",
+          "o": [
+            "UniFi Access",
+            "UFiber",
+            "EdgeMax"
+          ],
+          "a": 1,
+          "w": "UFiber serves fibre ISPs, per the company overview."
+        },
+        {
+          "q": "What is a WISP?",
+          "o": [
+            "A type of PoE switch",
+            "A Wi-Fi security protocol",
+            "A wireless internet service provider"
+          ],
+          "a": 2,
+          "w": "A WISP sells internet over radio links.",
+          "g": [
+            [
+              "WISP",
+              "Wireless Internet Service Provider."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ub-3-3",
+      "lvl": 3,
+      "title": "Choosing the line for a customer",
+      "src": [
+        {
+          "l": "UniFi consoles",
+          "u": "https://ui.com/consoles"
+        },
+        {
+          "l": "UniFi WiFi",
+          "u": "https://ui.com/wifi"
+        },
+        {
+          "l": "UniFi Access",
+          "u": "https://ui.com/door-access"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Start from the problem",
+          "t": "Ask what the customer needs to <b>do</b>: connect, cover with Wi-Fi, watch, lock or call. Then pick the app. Same console, more apps. The quote usually starts with <b>gateway, switch, APs</b>, then grows."
+        },
+        {
+          "h": "Typical buyers",
+          "t": "<b>SMB offices and shops</b>: gateway, PoE switch, APs, a few cameras. <b>Hospitality</b>: many APs, guest Wi-Fi, door access, phones. <b>Prosumers</b>: a Dream Router and cameras. <b>ISPs</b>: airMAX, UISP, fibre.",
+          "g": [
+            [
+              "SMB",
+              "Small and medium-sized business."
+            ]
+          ]
+        },
+        {
+          "h": "Questions to ask",
+          "t": "How many sites? How many people on Wi-Fi? Cameras or doors too? Is internet cabled or mobile only? Who will manage it afterwards? The answers decide model size, PoE budget and whether remote management matters."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A 20-room hotel wants guest Wi-Fi in every room corridor and door control. What do you start with?",
+          "o": [
+            "Gateway, PoE switch, APs and Access",
+            "UFiber and airMAX",
+            "Only a Dream Router 5G"
+          ],
+          "a": 0,
+          "w": "A hotel needs network, many APs and door access, all fitting into UniFi."
+        },
+        {
+          "q": "A small shop with four cameras and simple Wi-Fi. Best match?",
+          "o": [
+            "Enterprise Firewall Core",
+            "Cloud Gateway with Protect and a PoE switch plus an AP",
+            "UISP with airFiber"
+          ],
+          "a": 1,
+          "w": "A small-site gateway running Protect, plus PoE gear, covers it."
+        },
+        {
+          "q": "A WISP wants links between two towers. Which area?",
+          "o": [
+            "UniFi Connect",
+            "UniFi Talk",
+            "airMAX or airFiber under UISP"
+          ],
+          "a": 2,
+          "w": "Point-to-point links are the airMAX and airFiber territory."
+        },
+        {
+          "q": "Which question helps size the PoE budget?",
+          "o": [
+            "How many APs and cameras need power?",
+            "Do they own a phone?",
+            "What colour should the devices be?"
+          ],
+          "a": 0,
+          "w": "PoE devices such as APs and cameras draw from the switch's power budget.",
+          "g": [
+            [
+              "PoE budget",
+              "Total power a switch can supply to connected devices."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ub-4-1",
+      "lvl": 4,
+      "title": "Strengths and limits",
+      "src": [
+        {
+          "l": "UniFi switching",
+          "u": "https://ui.com/switching"
+        },
+        {
+          "l": "UniFi consoles",
+          "u": "https://ui.com/consoles"
+        },
+        {
+          "l": "Ubiquiti on Wikipedia",
+          "u": "https://en.wikipedia.org/wiki/Ubiquiti"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Where UniFi shines",
+          "t": "<b>One system</b> for network, cameras, doors and phones; no licence fees on management; easy rollout for installers; a wide range from small to large. For SMB and hospitality, that unified story is hard to match.",
+          "g": [
+            [
+              "Unified",
+              "Everything managed in one place instead of separate tools per product."
+            ]
+          ]
+        },
+        {
+          "h": "Where to be careful",
+          "t": "UniFi is a <b>single-vendor ecosystem</b>: its strongest features need UniFi devices together. Big regulated organisations may have specific <b>certification, support or compliance</b> demands, so check their requirements before you promise."
+        },
+        {
+          "h": "Honest framing",
+          "t": "UniFi targets home, prosumer and business users, and it has had public security criticism in the past. Do not claim it replaces every <b>enterprise</b> platform. Present it as a strong fit for SMB, and let the customer's needs decide.",
+          "g": [
+            [
+              "Enterprise vendor",
+              "A vendor aimed at large organisations, typically with deep support contracts and compliance features."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is UniFi's biggest sales strength for an SMB?",
+          "o": [
+            "Only works with other vendors' gear",
+            "One system for network, cameras, doors and phones",
+            "Lowest-ever certification count"
+          ],
+          "a": 1,
+          "w": "The unified story across areas is the main strength."
+        },
+        {
+          "q": "A large bank asks if UniFi meets its compliance rules. Best answer?",
+          "o": [
+            "UniFi cannot be used anywhere",
+            "Yes, always",
+            "Check their specific requirements before promising"
+          ],
+          "a": 2,
+          "w": "Regulated organisations have specific demands, so verify rather than assume."
+        },
+        {
+          "q": "What does 'single-vendor ecosystem' mean?",
+          "o": [
+            "The best features need the vendor's own devices together",
+            "The vendor sells only one product",
+            "Customers can use only one site"
+          ],
+          "a": 0,
+          "w": "UniFi's apps and devices work best when used together."
+        }
+      ]
+    },
+    {
+      "id": "ub-4-2",
+      "lvl": 4,
+      "title": "Handling objections",
+      "src": [
+        {
+          "l": "UniFi Protect",
+          "u": "https://ui.com/camera-security"
+        },
+        {
+          "l": "UniFi consoles",
+          "u": "https://ui.com/consoles"
+        },
+        {
+          "l": "UniFi Talk",
+          "u": "https://ui.com/phone-system"
+        }
+      ],
+      "pages": [
+        {
+          "h": "'Is it professional enough?'",
+          "t": "Point to the range: <b>Enterprise Firewall</b> gateways, enterprise switches and enterprise Wi-Fi exist, alongside small sites. Add that the choice depends on size and requirements, and offer to involve a colleague for bigger projects."
+        },
+        {
+          "h": "'What about cloud lock-in?'",
+          "t": "The console runs <b>on site</b> and recording is local. Remote access via <b>Site Manager</b> is optional. A sound answer: the site runs locally, the cloud portal adds remote convenience.",
+          "g": [
+            [
+              "Lock-in",
+              "Being tied to a vendor because switching away is hard or costly."
+            ]
+          ]
+        },
+        {
+          "h": "'What does it cost long term?'",
+          "t": "Management and Protect carry <b>no licence fees</b> per Ubiquiti. Talk phone service and some extras are separate subscriptions. Never quote prices from memory: send resellers to current price lists and your sales contact."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A customer fears the cloud is mandatory. What is a good reply?",
+          "o": [
+            "Everything runs only in the cloud",
+            "The console runs on site; remote access is optional",
+            "Cameras stream live to Ubiquiti servers"
+          ],
+          "a": 1,
+          "w": "The gateway runs on premises, with remote portals on top."
+        },
+        {
+          "q": "'Is there a yearly fee per camera?' What do you say?",
+          "o": [
+            "Only above 100 cameras",
+            "Yes, per year",
+            "Ubiquiti states no licence fees for Protect"
+          ],
+          "a": 2,
+          "w": "Ubiquiti says licensing is $0 whether 4 or 4,000 cameras."
+        },
+        {
+          "q": "Which cost is separate from hardware?",
+          "o": [
+            "UniFi Talk phone service subscription",
+            "Switch management",
+            "UniFi Network app"
+          ],
+          "a": 0,
+          "w": "Talk hardware and service subscriptions are separate costs."
+        },
+        {
+          "q": "What should you avoid in a customer chat?",
+          "o": [
+            "Asking about their site size",
+            "Quoting prices from memory",
+            "Mentioning Site Manager"
+          ],
+          "a": 1,
+          "w": "Prices change; use current price lists instead."
+        }
+      ]
+    },
+    {
+      "id": "ub-5-1",
+      "lvl": 5,
+      "title": "Scenario drill",
+      "src": [
+        {
+          "l": "UniFi consoles",
+          "u": "https://ui.com/consoles"
+        },
+        {
+          "l": "UniFi WiFi",
+          "u": "https://ui.com/wifi"
+        },
+        {
+          "l": "UniFi Access",
+          "u": "https://ui.com/door-access"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Think in building blocks",
+          "t": "Every UniFi project is a mix of <b>gateway, switches, APs</b> plus optional apps: <b>Protect, Access, Talk, Connect</b>. ISP projects are another family: <b>airMAX, airFiber, UFiber</b> with UISP."
+        },
+        {
+          "h": "Multi-site and managed",
+          "t": "A reseller with many small customers values <b>multi-site</b> remote management through Site Manager. A single big site values <b>Enterprise</b> or Pro-level gateways and switches with more PoE and faster uplinks."
+        },
+        {
+          "h": "Know when to escalate",
+          "t": "Very large, regulated or unusual projects need a colleague or the vendor. Your job: spot the customer type, ask the right questions, and name the right product family. Detail comes from the specialists."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "An MSP manages 30 small clients and wants a single view. What feature is most relevant?",
+          "o": [
+            "Mesh",
+            "Etherlighting",
+            "Multi-site remote management"
+          ],
+          "a": 2,
+          "w": "Site Manager gives remote access to many sites."
+        },
+        {
+          "q": "A farm co-op wants to share one internet line to a barn 2 km away. Best direction?",
+          "o": [
+            "A point-to-point airMAX style link",
+            "Dream Machine Pro Max",
+            "UniFi Talk wall phone"
+          ],
+          "a": 0,
+          "w": "Linking distant buildings is point-to-point wireless territory."
+        },
+        {
+          "q": "A cafe wants Wi-Fi, two cameras and a menu screen on one console. Which apps?",
+          "o": [
+            "Access only",
+            "Network, Protect and Connect",
+            "Talk and airFiber"
+          ],
+          "a": 1,
+          "w": "Network handles Wi-Fi, Protect cameras, Connect signage."
+        },
+        {
+          "q": "A government agency with strict rules asks about UniFi. What do you do?",
+          "o": [
+            "Promise compliance",
+            "Refuse to talk",
+            "Collect their requirements and involve a colleague"
+          ],
+          "a": 2,
+          "w": "Regulated cases need verified answers, so escalate."
+        }
+      ]
+    }
+  ]
+}

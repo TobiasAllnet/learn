@@ -1,0 +1,897 @@
+{
+  "title": "Licensing and support",
+  "emoji": "🧾",
+  "desc": "How tech vendors sell: licences, support, partners, lifecycle",
+  "src": [
+    {
+      "l": "Software license (Wikipedia)",
+      "u": "https://en.wikipedia.org/wiki/Software_license"
+    },
+    {
+      "l": "Return merchandise authorization (Wikipedia)",
+      "u": "https://en.wikipedia.org/wiki/Return_merchandise_authorization"
+    },
+    {
+      "l": "End-of-sale and end-of-life terms (Cisco)",
+      "u": "https://www.cisco.com/c/en/us/products/eos-eol-policy.html"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "li-1-1",
+      "lvl": 1,
+      "title": "Perpetual vs subscription",
+      "src": [
+        {
+          "l": "Software license (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Software_license"
+        },
+        {
+          "l": "Software as a service (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Software_as_a_service"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Buy once or pay as you go",
+          "t": "A <b>perpetual licence</b> is bought once and used for a particular version of the software with no end date. A <b>subscription</b> is paid for a period, such as a year, and stops when you stop paying.",
+          "g": [
+            [
+              "Licence",
+              "Permission from the vendor to use software, under set conditions."
+            ],
+            [
+              "Perpetual",
+              "Without an end date."
+            ]
+          ]
+        },
+        {
+          "h": "Why vendors moved to subscriptions",
+          "t": "Subscriptions give the vendor <b>recurring revenue</b> and let the customer start with a lower upfront cost. They usually include updates and fixes while active. The trade-off for the customer is a continuing cost.",
+          "g": [
+            [
+              "Recurring revenue",
+              "Income that repeats every month or year."
+            ],
+            [
+              "Upfront cost",
+              "What you pay at the start."
+            ]
+          ]
+        },
+        {
+          "h": "What to tell a reseller",
+          "t": "Always ask: is this <b>hardware only</b>, a <b>one-off licence</b>, or a <b>subscription</b>? Many products mix them: you buy the box once and subscribe to security updates or cloud features. Make the customer understand what stops when a subscription ends.",
+          "g": [
+            [
+              "Hardware only",
+              "A physical device with no extra software fees."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What defines a subscription licence?",
+          "o": [
+            "It is paid for a period and ends if not renewed",
+            "It never ends",
+            "It is free"
+          ],
+          "a": 0,
+          "w": "Subscriptions are temporary and billed per period."
+        },
+        {
+          "q": "What is a common benefit of subscriptions for the customer?",
+          "o": [
+            "No renewals ever",
+            "Lower upfront cost",
+            "Unlimited users"
+          ],
+          "a": 1,
+          "w": "Temporary licences lower the initial cost, at the price of ongoing payments."
+        },
+        {
+          "q": "A customer buys a firewall box and a security subscription. What happens when the subscription ends?",
+          "o": [
+            "Nothing at all changes",
+            "The box is returned",
+            "The box still works but the subscription features stop"
+          ],
+          "a": 2,
+          "w": "Hardware remains, but subscribed services and updates end with the subscription."
+        }
+      ]
+    },
+    {
+      "id": "li-1-2",
+      "lvl": 1,
+      "title": "Distributor, reseller, integrator, MSP",
+      "src": [
+        {
+          "l": "Distribution (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Distribution_(marketing)"
+        },
+        {
+          "l": "Value-added reseller (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Value-added_reseller"
+        },
+        {
+          "l": "Managed services (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Managed_services"
+        }
+      ],
+      "pages": [
+        {
+          "h": "The chain",
+          "t": "The <b>vendor</b> makes the product. A <b>distributor</b> buys in volume, holds stock and sells to <b>resellers</b>. Resellers sell to the end customer. Wholesalers like distributors do not sell directly to the public.",
+          "g": [
+            [
+              "Vendor / manufacturer",
+              "The company that makes or owns the product brand."
+            ],
+            [
+              "Channel",
+              "The route from vendor to end customer through partners."
+            ]
+          ]
+        },
+        {
+          "h": "Resellers with extra",
+          "t": "A <b>value-added reseller (VAR)</b> adds something to the product: installation, consulting, training or a tailored solution. A <b>system integrator</b> combines products from many vendors into one working solution for a customer.",
+          "g": [
+            [
+              "VAR",
+              "Value-added reseller: sells a product plus its own added services."
+            ],
+            [
+              "Integrator",
+              "Builds one working solution out of many parts."
+            ]
+          ]
+        },
+        {
+          "h": "Managed services",
+          "t": "An <b>MSP</b> takes ongoing responsibility for a customer's IT, often for a fixed monthly fee, instead of fixing things only when they break. MSPs like <b>subscriptions</b> and cloud-managed products that they can monitor remotely.",
+          "g": [
+            [
+              "MSP",
+              "Managed service provider: runs a customer's IT for a recurring fee."
+            ],
+            [
+              "Break/fix",
+              "Paying for help only when something breaks."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Who buys from the vendor in volume and sells to resellers?",
+          "o": [
+            "Distributor",
+            "End user",
+            "Integrator's customer"
+          ],
+          "a": 0,
+          "w": "Distributors hold stock and serve resellers."
+        },
+        {
+          "q": "What makes a VAR 'value-added'?",
+          "o": [
+            "A lower price always",
+            "Services or features added on top of the product",
+            "It is run by the vendor"
+          ],
+          "a": 1,
+          "w": "A VAR adds integration, consulting, training or a tailored solution."
+        },
+        {
+          "q": "Which partner type prefers products it can monitor remotely for a monthly fee?",
+          "o": [
+            "Courier",
+            "Consumer shop",
+            "MSP"
+          ],
+          "a": 2,
+          "w": "MSPs run IT as an ongoing subscription service."
+        }
+      ]
+    },
+    {
+      "id": "li-2-1",
+      "lvl": 2,
+      "title": "Per device, per user, per feature",
+      "src": [
+        {
+          "l": "Software license (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Software_license"
+        },
+        {
+          "l": "Software as a service (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Software_as_a_service"
+        }
+      ],
+      "pages": [
+        {
+          "h": "What is being counted?",
+          "t": "A licence counts something. <b>Per device</b>: each firewall, camera or access point. <b>Per user</b>: each person using the service. <b>Per feature</b>: you pay to unlock extras such as advanced security or analytics. Usage can also be counted by users, storage or transactions.",
+          "g": [
+            [
+              "Metric",
+              "The thing a licence is counted by."
+            ]
+          ]
+        },
+        {
+          "h": "Why it matters",
+          "t": "The metric decides how a customer's cost <b>grows</b>. A per-device licence grows with every new box. A per-user one grows with staff. A customer with few users but many devices will prefer a per-user model, and the other way round.",
+          "g": [
+            [
+              "Scale",
+              "To grow in size, such as more sites or staff."
+            ]
+          ]
+        },
+        {
+          "h": "Always check",
+          "t": "Before quoting, check <b>what is counted</b>, what the licence includes, and how long it runs. Vendors use different words for similar things, so read the licence description or ask your contact. Never assume that 'one licence' covers the whole site.",
+          "g": [
+            [
+              "Licence description",
+              "The vendor's document saying what a licence covers."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is a per-user licence counted by?",
+          "o": [
+            "The number of people using it",
+            "The number of cables",
+            "The building size"
+          ],
+          "a": 0,
+          "w": "Per-user licences scale with the number of users."
+        },
+        {
+          "q": "A customer has 3 staff but 20 cameras. Which metric is likely cheaper for them?",
+          "o": [
+            "Per device",
+            "Per user",
+            "They are always equal"
+          ],
+          "a": 1,
+          "w": "Few users and many devices favour per-user counting."
+        },
+        {
+          "q": "What should you do before quoting a licence?",
+          "o": [
+            "Quote the biggest one",
+            "Assume it covers everything",
+            "Check what it counts and what it includes"
+          ],
+          "a": 2,
+          "w": "Metrics and inclusions vary between vendors."
+        }
+      ]
+    },
+    {
+      "id": "li-2-2",
+      "lvl": 2,
+      "title": "Warranty and support contracts",
+      "src": [
+        {
+          "l": "Warranty (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Warranty"
+        },
+        {
+          "l": "Fortinet support services",
+          "u": "https://www.fortinet.com/support/support-services"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Warranty",
+          "t": "A <b>warranty</b> is the vendor's promise that a product is free from defects for a set time, often limited in duration or scope. It usually covers faults in materials and workmanship, not misuse or wear.",
+          "g": [
+            [
+              "Defect",
+              "A fault in the product from how it was made."
+            ],
+            [
+              "Limited warranty",
+              "A warranty restricted in time, scope or both."
+            ]
+          ]
+        },
+        {
+          "h": "Support contracts",
+          "t": "A <b>support contract</b> goes beyond the warranty: access to technical help, software updates and often hardware replacement. Vendors sell <b>tiers</b>, from basic to premium, differing in help hours and replacement speed.",
+          "g": [
+            [
+              "Tier",
+              "A level of service, such as standard or premium."
+            ],
+            [
+              "TAC",
+              "Technical assistance centre: the vendor's help desk."
+            ]
+          ]
+        },
+        {
+          "h": "What to ask",
+          "t": "Ask what the <b>base warranty</b> is, what tiers exist, and when the support clock starts. Higher tiers add faster hardware replacement and 24x7 help. Customers with critical systems should consider them, while others may not need more than the standard.",
+          "g": [
+            [
+              "24x7",
+              "Around the clock, every day."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does a standard warranty typically cover?",
+          "o": [
+            "Defects in materials and workmanship",
+            "Misuse and drops",
+            "Software upgrades forever"
+          ],
+          "a": 0,
+          "w": "Warranties usually cover manufacturing faults."
+        },
+        {
+          "q": "How do support tiers usually differ?",
+          "o": [
+            "Cable colour",
+            "Help hours and replacement speed",
+            "The user's age"
+          ],
+          "a": 1,
+          "w": "Higher tiers add faster response and replacement."
+        },
+        {
+          "q": "A hospital cannot tolerate a long outage. What do you suggest?",
+          "o": [
+            "Only the base warranty",
+            "No contract",
+            "A higher support tier with fast replacement"
+          ],
+          "a": 2,
+          "w": "Critical customers benefit from faster replacement and 24x7 help."
+        }
+      ]
+    },
+    {
+      "id": "li-2-3",
+      "lvl": 2,
+      "title": "RMA and advance replacement",
+      "src": [
+        {
+          "l": "RMA (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Return_merchandise_authorization"
+        },
+        {
+          "l": "Fortinet support services",
+          "u": "https://www.fortinet.com/support/support-services"
+        }
+      ],
+      "pages": [
+        {
+          "h": "What is an RMA?",
+          "t": "<b>RMA</b> means return merchandise authorization. It is the agreed process for returning a product during warranty to get a refund, repair or replacement. You request an RMA <b>before</b> sending anything back.",
+          "g": [
+            [
+              "RMA",
+              "Return merchandise authorization: a permission and number for sending back a faulty product."
+            ]
+          ]
+        },
+        {
+          "h": "A step for diagnosis",
+          "t": "The RMA gives the vendor a chance to <b>diagnose</b> the problem first. Many 'faulty' products are really installation or configuration issues. So expect questions and tests before an RMA is approved.",
+          "g": [
+            [
+              "Diagnose",
+              "Find out what is actually wrong."
+            ]
+          ]
+        },
+        {
+          "h": "Advance replacement",
+          "t": "With <b>advance replacement</b>, the vendor sends the replacement <b>before</b> receiving the faulty unit, so the customer is down for less time. Some support tiers offer faster or more secure RMA options. Check what the contract includes.",
+          "g": [
+            [
+              "Advance replacement",
+              "Getting the new unit first, then returning the old one."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "When do you request an RMA?",
+          "o": [
+            "Before sending the product back",
+            "After the vendor receives it",
+            "Never"
+          ],
+          "a": 0,
+          "w": "The authorization comes before the return happens."
+        },
+        {
+          "q": "What is advance replacement?",
+          "o": [
+            "A free upgrade",
+            "The replacement is sent before the faulty unit arrives",
+            "A longer cable"
+          ],
+          "a": 1,
+          "w": "It reduces the customer's downtime."
+        },
+        {
+          "q": "Why might an RMA be questioned at first?",
+          "o": [
+            "Vendors dislike customers",
+            "RMAs are never approved",
+            "Many faults are really configuration issues, so the vendor diagnoses first"
+          ],
+          "a": 2,
+          "w": "The RMA is a chance to fix or diagnose the issue before a return."
+        }
+      ]
+    },
+    {
+      "id": "li-3-1",
+      "lvl": 3,
+      "title": "Renewals and co-terming",
+      "src": [
+        {
+          "l": "Co-term (Hyperline glossary)",
+          "u": "https://www.hyperline.co/resources/glossary-terms/co-term"
+        },
+        {
+          "l": "Software license (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Software_license"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Renewals matter",
+          "t": "Subscriptions and support contracts end on a date. A <b>renewal</b> keeps them going. Missing it can mean lost updates, features or support. Good resellers track renewal dates, because that is repeat business and a service to the customer.",
+          "g": [
+            [
+              "Renewal",
+              "Extending a subscription or contract for another period."
+            ]
+          ]
+        },
+        {
+          "h": "Co-terming",
+          "t": "<b>Co-terming</b> aligns several subscriptions so they all end on the <b>same date</b>. A customer with products bought at different times gets one renewal instead of many. A later purchase is adjusted for the shorter time left.",
+          "g": [
+            [
+              "Co-term",
+              "Making different subscriptions expire together."
+            ],
+            [
+              "Proration",
+              "Charging only for the part of the period that remains."
+            ]
+          ]
+        },
+        {
+          "h": "Check availability",
+          "t": "Not every vendor or product allows co-terming, and rules on how it is priced differ. Ask the vendor or your distributor <b>before</b> promising it to a customer. A single renewal date simplifies budgeting for the customer.",
+          "g": [
+            [
+              "Budgeting",
+              "Planning what will be spent and when."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does co-terming do?",
+          "o": [
+            "Aligns subscriptions to one shared end date",
+            "Cancels subscriptions",
+            "Doubles the subscription"
+          ],
+          "a": 0,
+          "w": "It synchronises end dates so there is one renewal."
+        },
+        {
+          "q": "A customer added a licence in April, other licences renew in January. What does co-terming help with?",
+          "o": [
+            "Nothing",
+            "Aligning the April licence to the January renewal, with adjusted cost",
+            "Moving the January renewal to April only"
+          ],
+          "a": 1,
+          "w": "The newer item is prorated so it ends with the others."
+        },
+        {
+          "q": "What should you do before promising co-terming?",
+          "o": [
+            "Avoid renewals",
+            "Promise it to everyone",
+            "Check that the vendor supports it"
+          ],
+          "a": 2,
+          "w": "Co-terming rules differ between vendors."
+        }
+      ]
+    },
+    {
+      "id": "li-3-2",
+      "lvl": 3,
+      "title": "Cloud-managed subscriptions",
+      "src": [
+        {
+          "l": "Software as a service (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Software_as_a_service"
+        },
+        {
+          "l": "Managed services (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Managed_services"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Managed from the cloud",
+          "t": "A <b>cloud-managed</b> product is configured and monitored through a web portal run by the vendor. The provider runs the platform and handles its updates, so the customer does not host the management software.",
+          "g": [
+            [
+              "Cloud-managed",
+              "Controlled through a vendor-hosted web portal."
+            ],
+            [
+              "Portal",
+              "A website where you manage your devices or account."
+            ]
+          ]
+        },
+        {
+          "h": "How it is sold",
+          "t": "Cloud management is usually a <b>subscription</b>, sometimes included free with the hardware and sometimes sold per device or per feature. Check what is free, what needs a subscription and what happens to the device if it ends.",
+          "g": [
+            [
+              "Per feature",
+              "Extras are paid for separately."
+            ]
+          ]
+        },
+        {
+          "h": "Why customers like it",
+          "t": "Many sites can be seen from <b>one dashboard</b>, so MSPs and multi-site customers save visits. The trade-off is dependence on the vendor's cloud and a recurring cost. Offer on-premises options where the customer cannot use cloud.",
+          "g": [
+            [
+              "On-premises",
+              "Software run on the customer's own server instead of in the cloud."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Who runs the management platform in a cloud-managed product?",
+          "o": [
+            "The vendor",
+            "The customer's IT only",
+            "The reseller's accountant"
+          ],
+          "a": 0,
+          "w": "The provider operates the platform and updates it."
+        },
+        {
+          "q": "Which customer benefits most from cloud management?",
+          "o": [
+            "A single home user with one device",
+            "A company with many remote sites",
+            "A site with no internet at all"
+          ],
+          "a": 1,
+          "w": "One dashboard saves visits across many sites."
+        },
+        {
+          "q": "What should you clarify when quoting?",
+          "o": [
+            "Nothing",
+            "The colour of the portal",
+            "What is free, what needs a subscription, and what happens when it ends"
+          ],
+          "a": 2,
+          "w": "Terms vary and surprises hurt trust."
+        }
+      ]
+    },
+    {
+      "id": "li-3-3",
+      "lvl": 3,
+      "title": "SKUs, lead times and stock",
+      "src": [
+        {
+          "l": "SKU (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Stock_keeping_unit"
+        },
+        {
+          "l": "Lead time (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Lead_time"
+        },
+        {
+          "l": "Distribution (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Distribution_(marketing)"
+        }
+      ],
+      "pages": [
+        {
+          "h": "SKU and part number",
+          "t": "A <b>SKU</b> identifies one exact item for sale, such as a model in a certain colour, region or bundle. Codes are not standardised, so a vendor's part number and a distributor's SKU can differ. Always quote the exact code to avoid mistakes.",
+          "g": [
+            [
+              "SKU",
+              "Stock keeping unit: a code for one specific item."
+            ],
+            [
+              "Part number",
+              "The manufacturer's code for a product."
+            ]
+          ]
+        },
+        {
+          "h": "Stock and lead time",
+          "t": "<b>Stock</b> is what the distributor holds now. <b>Lead time</b> is the delay from order to delivery. Items in stock ship fast. Items not in stock must be ordered from the vendor, with a lead time that can change.",
+          "g": [
+            [
+              "Stock / availability",
+              "How many units can ship right away."
+            ],
+            [
+              "Lead time",
+              "The wait between ordering and receiving."
+            ]
+          ]
+        },
+        {
+          "h": "Managing expectations",
+          "t": "Tell the customer the <b>realistic date</b>, not the hope. For projects, check stock early, order in time, and ask about <b>backorders</b> or alternatives. Do not confirm delivery to the customer before you have it from your distributor.",
+          "g": [
+            [
+              "Backorder",
+              "An order placed for something that is out of stock and will come later."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does a SKU identify?",
+          "o": [
+            "One specific item for sale",
+            "A customer",
+            "A warehouse"
+          ],
+          "a": 0,
+          "w": "A SKU is a code for a distinct item."
+        },
+        {
+          "q": "What is lead time?",
+          "o": [
+            "The warranty length",
+            "The wait between order and delivery",
+            "The cable length"
+          ],
+          "a": 1,
+          "w": "It is the delay from ordering to receiving."
+        },
+        {
+          "q": "A customer needs 30 units for a project in three weeks, none in stock. What do you do?",
+          "o": [
+            "Wait until they ask again",
+            "Promise delivery tomorrow",
+            "Check stock and lead time early and order promptly"
+          ],
+          "a": 2,
+          "w": "Realistic dates and early orders prevent trouble."
+        }
+      ]
+    },
+    {
+      "id": "li-4-1",
+      "lvl": 4,
+      "title": "NFR units, deal registration and margin words",
+      "src": [
+        {
+          "l": "Not for resale (TechTarget)",
+          "u": "https://www.techtarget.com/it-strategy/definition/not-for-resale-NFR"
+        },
+        {
+          "l": "Deal registration (Reditus glossary)",
+          "u": "https://getreditus.com/resources/glossary/deal-registration"
+        },
+        {
+          "l": "Distribution (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Distribution_(marketing)"
+        }
+      ],
+      "pages": [
+        {
+          "h": "NFR and demo units",
+          "t": "<b>NFR</b> means not for resale. Vendors give partners such units or licences for <b>testing, demos and training</b>, not to sell on. They may be limited to the partner's own office or banned from production use. Terms differ by vendor.",
+          "g": [
+            [
+              "NFR",
+              "Not for resale: for the partner's own use, not to be sold."
+            ],
+            [
+              "Demo unit",
+              "A unit used to show a product to customers."
+            ]
+          ]
+        },
+        {
+          "h": "Deal registration",
+          "t": "In <b>deal registration</b> a partner tells the vendor about a specific opportunity. If approved, the partner gets protection for a set period, so another partner or the vendor's own team does not step in. It also keeps pipelines visible.",
+          "g": [
+            [
+              "Opportunity",
+              "A potential sale being worked on."
+            ],
+            [
+              "Pipeline",
+              "All the opportunities a seller is working."
+            ]
+          ]
+        },
+        {
+          "h": "Margin vocabulary",
+          "t": "<b>List price</b> is the vendor's published price. <b>Discount</b> is the reduction from list. <b>Margin</b> is what the seller keeps after the cost of goods. Vendors may offer better terms for registered deals. Never share partner terms with others.",
+          "g": [
+            [
+              "Margin",
+              "The difference between what you pay and what you sell for."
+            ],
+            [
+              "List price",
+              "The official starting price before discounts."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is an NFR unit for?",
+          "o": [
+            "Partner testing, demos and training",
+            "Selling to end users",
+            "Production use at a customer"
+          ],
+          "a": 0,
+          "w": "NFR means not for resale and is for the partner's own evaluation."
+        },
+        {
+          "q": "What does deal registration give a partner?",
+          "o": [
+            "A free product",
+            "Protection on a specific opportunity for a set time",
+            "A new customer list"
+          ],
+          "a": 1,
+          "w": "Approved registrations protect the partner's work."
+        },
+        {
+          "q": "What is margin?",
+          "o": [
+            "A kind of warranty",
+            "The vendor's list price",
+            "The seller's gain after the cost of goods"
+          ],
+          "a": 2,
+          "w": "Margin is what the seller keeps."
+        },
+        {
+          "q": "A reseller asks what another reseller pays. What do you do?",
+          "o": [
+            "Keep partner terms confidential",
+            "Share to be helpful",
+            "Post it publicly"
+          ],
+          "a": 0,
+          "w": "Terms are confidential between vendor and partner."
+        }
+      ]
+    },
+    {
+      "id": "li-5-1",
+      "lvl": 5,
+      "title": "End of sale and end of life",
+      "src": [
+        {
+          "l": "End-of-sale and end-of-life terms (Cisco)",
+          "u": "https://www.cisco.com/c/en/us/products/eos-eol-policy.html"
+        }
+      ],
+      "pages": [
+        {
+          "h": "The terms",
+          "t": "<b>End of sale (EoS)</b> is the date after which a product can no longer be ordered. <b>End of life (EoL)</b> is the process of retiring it. The <b>last date of support</b> is when support under contract ends.",
+          "g": [
+            [
+              "EoS",
+              "End of sale: last day to order."
+            ],
+            [
+              "EoL",
+              "End of life: the process of retiring a product."
+            ],
+            [
+              "LDoS",
+              "Last date of support."
+            ]
+          ]
+        },
+        {
+          "h": "The timeline",
+          "t": "Vendors usually <b>announce</b> end of sale in advance, then keep supporting active contracts for a period afterwards. Subscriptions and support that would run past the last support date stop being sold. Each vendor sets its own periods.",
+          "g": [
+            [
+              "Announcement",
+              "The public notice of EoS and EoL dates."
+            ]
+          ]
+        },
+        {
+          "h": "Why sales cares",
+          "t": "Customers on old products need a <b>migration plan</b>. EoS is a chance to propose a successor, not a crisis. Check lifecycle dates before quoting a long-term project, so you do not sell something about to be retired.",
+          "g": [
+            [
+              "Migration",
+              "Moving from an old product to a new one."
+            ],
+            [
+              "Successor",
+              "The newer product that replaces an older one."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does end of sale mean?",
+          "o": [
+            "Support has ended",
+            "The product can no longer be ordered",
+            "The price has dropped"
+          ],
+          "a": 1,
+          "w": "EoS is the last date to order."
+        },
+        {
+          "q": "After end of sale, what usually continues for a while?",
+          "o": [
+            "Nothing",
+            "Free replacements forever",
+            "Support under active contracts"
+          ],
+          "a": 2,
+          "w": "Vendors keep supporting active contracts until the last date of support."
+        },
+        {
+          "q": "You are quoting a 5 year project. What should you check?",
+          "o": [
+            "Lifecycle dates of the product",
+            "Only the colour",
+            "Nothing"
+          ],
+          "a": 0,
+          "w": "A soon-to-retire product is a poor basis for a long project."
+        }
+      ]
+    }
+  ]
+}

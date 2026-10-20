@@ -19,23 +19,28 @@ html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-sys
 #app{max-width:520px;margin:0 auto;min-height:100vh;min-height:100dvh;padding:calc(env(safe-area-inset-top) + 16px) 16px calc(env(safe-area-inset-bottom) + 24px);display:flex;flex-direction:column}
 h1{font-size:26px;margin:0}h2{font-size:21px;margin:0 0 8px}
 .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
-.chips{display:flex;gap:8px}
+.chips{display:flex;gap:8px;align-items:center}
 .chip{background:var(--card);border-radius:999px;padding:7px 12px;font-size:14px;font-weight:600}
+.gear{background:var(--card);border:0;color:var(--text);border-radius:999px;width:34px;height:34px;font-size:16px;cursor:pointer}
 .sub{color:var(--mute);font-size:14px;margin:2px 0 14px}
+.sec{color:var(--mute);font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin:18px 0 8px}
 .card{background:var(--card);border-radius:18px;padding:16px;margin-bottom:12px}
-.deck{display:flex;gap:14px;align-items:center;width:100%;text-align:left;border:0;color:inherit;font:inherit;cursor:pointer}
+.deck{display:flex;gap:14px;align-items:center;width:100%;text-align:left;border:0;color:inherit;font:inherit;cursor:pointer;padding:13px 14px}
 .deck:active{transform:scale(.985)}
-.emoji{font-size:30px;width:52px;height:52px;border-radius:14px;background:var(--card2);display:grid;place-items:center;flex:none}
-.deck b{display:block;font-size:17px}.deck small{color:var(--mute)}
+.emoji{font-size:28px;width:48px;height:48px;border-radius:14px;background:var(--card2);display:grid;place-items:center;flex:none}
+.deck b{display:block;font-size:16px}.deck small{color:var(--mute);font-size:13px}
 .bar{height:6px;background:var(--card2);border-radius:99px;overflow:hidden;margin-top:8px}
 .bar i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .3s}
 .btn{display:block;width:100%;border:0;border-radius:14px;padding:15px;font:inherit;font-size:17px;font-weight:700;color:#fff;background:var(--accent);cursor:pointer;margin-top:10px}
 .btn.ghost{background:var(--card2);color:var(--text)}
+.btn.sm{padding:11px;font-size:15px}
 .btn:disabled{opacity:.4}
 .btn:active{filter:brightness(.9)}
-.big{background:linear-gradient(135deg,#4f46e5,#8b5cf6);border-radius:20px;padding:18px;margin-bottom:16px}
-.big h2{margin:0}.big p{margin:4px 0 0;opacity:.9;font-size:14px}
-.back{background:none;border:0;color:var(--mute);font:inherit;font-size:16px;padding:6px 0;cursor:pointer}
+.big{background:linear-gradient(135deg,#4f46e5,#8b5cf6);border-radius:20px;padding:18px;margin-bottom:12px}
+.big.alt{background:linear-gradient(135deg,#0f766e,#14b8a6)}
+.big h2{margin:0}.big p{margin:4px 0 0;opacity:.92;font-size:14px}
+.big .btn{background:rgba(255,255,255,.22);margin-top:12px}
+.back{background:none;border:0;color:var(--mute);font:inherit;font-size:16px;padding:6px 0;cursor:pointer;text-align:left}
 .read{font-size:18px;line-height:1.55}
 .read b{color:#fff}.read .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--accent);text-transform:uppercase;margin-bottom:6px}
 .read ul{padding-left:20px}.read li{margin:6px 0}
@@ -43,127 +48,124 @@ h1{font-size:26px;margin:0}h2{font-size:21px;margin:0 0 8px}
 .opt.ok{border-color:var(--ok);background:rgba(53,201,138,.14)}
 .opt.bad{border-color:var(--bad);background:rgba(239,91,107,.14)}
 .why{margin-top:12px;padding:12px 14px;border-radius:12px;background:var(--card2);font-size:15px;line-height:1.45}
-.src{color:var(--mute);font-size:12px;margin-top:8px}.src a{color:var(--mute)}
+.src{color:var(--mute);font-size:12px;margin-top:10px;line-height:1.5}.src a{color:var(--mute)}
 .gloss{margin:2px 0 6px;padding:9px 12px;border-left:3px solid var(--warn);background:rgba(245,184,75,.08);border-radius:0 10px 10px 0;font-size:14px;line-height:1.4;color:#e9dcc0}
 .gloss b{color:var(--warn)}
-.lvl{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:99px;background:var(--card2);color:var(--mute);margin-left:6px;vertical-align:middle}
+.lvlh{color:var(--mute);font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:14px 0 6px}
+.row{display:flex;gap:8px}.row .btn{margin-top:8px}
 .spacer{flex:1}
 .center{text-align:center}.score{font-size:64px;font-weight:800;margin:18px 0 4px}
-.dots{display:flex;gap:6px;justify-content:center;margin:6px 0 16px}.dots i{width:8px;height:8px;border-radius:50%;background:var(--card2)}.dots i.on{background:var(--accent)}
+.dots{display:flex;gap:5px;justify-content:center;margin:6px 0 16px;flex-wrap:wrap}.dots i{width:8px;height:8px;border-radius:50%;background:var(--card2)}.dots i.on{background:var(--accent)}
 .note{color:var(--mute);font-size:13px;text-align:center;margin-top:18px}
+.set{background:var(--card);border-radius:14px;padding:12px;margin-bottom:8px}.set b{font-size:15px}
+.set .p{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:8px}
+.set .p button{height:40px;border:0;border-radius:10px;background:var(--card2);color:var(--text);font:inherit;font-size:15px;cursor:pointer}
+.set .p button.on{background:var(--accent);font-weight:700}.set .p button.z.on{background:var(--bad)}
 </style>
 </head>
 <body>
-<div id="app"></div>
+<div id="app"><div class="note">Loading…</div></div>
 <script>
-/* ---------- CONTENT (demo) ---------- */
-const DECKS=[
- {id:"stormshield",emoji:"🛡️",title:"Stormshield",desc:"European network security",
-  lessons:[
-   {id:"ss1",title:"Who is Stormshield?",pages:[
-     {h:"The one-line version",t:"<b>Stormshield</b> is a fully <b>European</b> firewall vendor. It is growing across several sectors, not just one niche."},
-     {h:"What makes it different",t:"<ul><li>Covers both <b>IT</b> and <b>OT</b> protocols (office networks and industrial machines)</li><li>Has <b>EU</b> and <b>NATO RESTRICTED</b> certifications</li></ul>That makes it a natural fit where governments, defence or critical infrastructure care about <i>where</i> the product comes from."},
-     {h:"Why a seller cares",t:"When a customer asks <b>\"do you have a European option?\"</b> or works with industrial sites, Stormshield is the answer to have ready."}],
-    quiz:[
-     {q:"Where is Stormshield from?",o:["USA","Europe","Asia"],a:1,w:"Stormshield is a fully European firewall vendor."},
-     {q:"Which certifications does Stormshield hold?",o:["EU and NATO RESTRICTED","Only ISO 9001","None, it is too new"],a:0,w:"EU and NATO RESTRICTED certifications are a key selling point."},
-     {q:"Stormshield supports which kinds of protocols?",o:["Only IT","Only OT","Both IT and OT"],a:2,w:"It covers both IT and OT protocols, so it suits offices and industrial sites."}]}
-  ],src:"Demo content from Allnet sales notes. Real decks will cite vendor sources."},
- {id:"firewall",emoji:"🧱",title:"Firewall basics",desc:"Core networking concept",
-  lessons:[
-   {id:"fw1",title:"What is a firewall?",pages:[
-     {h:"The bouncer",t:"A <b>firewall</b> sits between a network and the outside world and decides what traffic may pass, based on rules. Think of a <b>bouncer at a door</b> with a guest list."},
-     {h:"Next-generation (NGFW)",t:"Old firewalls only looked at <b>addresses and ports</b>. A <b>next-generation firewall</b> also understands <b>which application</b> is talking, and can add things like intrusion prevention and VPN."},
-     {h:"Where it sits",t:"Usually at the edge, between the company LAN and the internet. Also used <b>inside</b> a network to separate parts, for example office and factory floor."}],
-    quiz:[
-     {q:"What does a firewall mainly do?",o:["Speeds up Wi-Fi","Decides which traffic is allowed through","Stores backups"],a:1,w:"It filters traffic based on rules, like a bouncer with a guest list.",g:[["Traffic","The data packets moving across a network."]]},
-     {q:"What does 'next-generation' add over a basic firewall?",o:["It understands which application is talking","It is always wireless","It replaces the switch"],a:0,w:"NGFWs inspect at application level, not just addresses and ports.",g:[["NGFW","Next-Generation Firewall."],["Port","A numbered 'door' on a device, e.g. 443 for secure web traffic."]]},
-     {q:"Where is a firewall typically placed?",o:["Between the LAN and the internet","Inside the keyboard","Only at the customer's home"],a:0,w:"Typically at the edge, and sometimes inside to separate network zones.",g:[["LAN","Local Area Network: the private network inside one building or company, like your office Wi-Fi and cables."]]}]},
-   {id:"fw2",lvl:2,title:"Zones, rules and VPN",pages:[
-     {h:"Zones",t:"Firewalls split a network into <b>zones</b>, such as <b>LAN</b> (trusted inside), <b>WAN</b> (the internet) and <b>DMZ</b> (servers that must be reachable from outside, kept apart from the LAN).",g:[["WAN","Wide Area Network: the big outside network, in practice the internet."],["DMZ","Demilitarized Zone: a separate segment for public-facing servers, so a hacked web server cannot reach the inside."]]},
-     {h:"Rules are read top down",t:"Each rule says <b>who, to where, which service, allow or block</b>. The firewall checks them <b>from the top</b> and uses the <b>first match</b>. Usually the last rule is <b>deny all</b>.",g:[["Deny all","A catch-all rule that blocks anything not explicitly allowed above it."]]},
-     {h:"VPN",t:"A <b>VPN</b> builds an encrypted tunnel over the internet, so a remote employee or a branch office can safely reach the LAN. Most firewalls can terminate VPNs.",g:[["VPN","Virtual Private Network: an encrypted tunnel that makes a remote device behave as if it were inside the LAN."]]}],
-    quiz:[
-     {q:"A web server must be reachable from the internet but isolated from the office LAN. Where does it go?",o:["In the DMZ","In the WAN","On the CEO's laptop"],a:0,w:"A DMZ keeps public servers separate from the inside network.",g:[["DMZ","A separate segment for public-facing servers."]]},
-     {q:"Two rules match the same traffic: rule 3 allows it, rule 7 blocks it. What happens?",o:["It is blocked","It is allowed","The firewall crashes"],a:1,w:"Rules are checked top down and the first match wins, so rule 3 allows it."},
-     {q:"What does a VPN let a remote employee do?",o:["Reach the LAN through an encrypted tunnel","Make the internet faster","Skip the firewall rules"],a:0,w:"A VPN tunnels traffic encrypted over the internet into the LAN.",g:[["VPN","Virtual Private Network."]]}]}
-  ],src:"Demo content, general networking knowledge."},
- {id:"ai",emoji:"🤖",title:"AI & prompting",desc:"Use AI better at work",
-  lessons:[
-   {id:"ai1",title:"The 3-part prompt",pages:[
-     {h:"Context, task, format",t:"A good prompt has three parts:<ul><li><b>Context</b>: who you are, who it is for</li><li><b>Task</b>: exactly what you want</li><li><b>Format</b>: how the answer should look</li></ul>"},
-     {h:"Example",t:"<b>Weak:</b> \"Write an email.\"<br><br><b>Strong:</b> \"I am a sales rep at an IT distributor. Write a 4-sentence email to a reseller introducing a European firewall brand. Friendly tone, no buzzwords.\""},
-     {h:"Then iterate",t:"The first answer is a draft. Reply with <b>\"shorter\"</b>, <b>\"more concrete\"</b> or <b>\"less formal\"</b>. Iterating is normal, not a failure."}],
-    quiz:[
-     {q:"Which is NOT one of the three parts?",o:["Context","Task","Password"],a:2,w:"The three parts are context, task and format."},
-     {q:"Why is the strong example better?",o:["It is longer","It says who, what and how","It uses polite words"],a:1,w:"It gives context, a clear task and a format."},
-     {q:"The first AI answer is not good. What now?",o:["Give up","Ask it to adjust, e.g. 'shorter'","Start a new life"],a:1,w:"Iterate: treat the first answer as a draft."}]}
-  ],src:"Demo content, general prompting practice."}
-];
-
 /* ---------- STATE ---------- */
 const KEY="learn.v1";
-let S={xp:0,streak:0,last:"",done:{},seen:{}};
+let S={xp:0,streak:0,last:"",done:{},seen:{},focus:{},sr:{}};
 try{S=Object.assign(S,JSON.parse(localStorage.getItem(KEY)||"{}"))}catch(e){}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
-const today=()=>{const d=new Date();return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0")};
-function bumpStreak(){
-  const t=today();if(S.last===t)return;
-  const y=new Date();y.setDate(y.getDate()-1);
-  const ys=y.getFullYear()+"-"+String(y.getMonth()+1).padStart(2,"0")+"-"+String(y.getDate()).padStart(2,"0");
-  S.streak=(S.last===ys)?S.streak+1:1;S.last=t;
-}
-const streakNow=()=>{const t=today();if(S.last===t)return S.streak;const y=new Date();y.setDate(y.getDate()-1);
-  const ys=y.getFullYear()+"-"+String(y.getMonth()+1).padStart(2,"0")+"-"+String(y.getDate()).padStart(2,"0");return S.last===ys?S.streak:0};
+const dayNum=()=>{const d=new Date();return Math.floor((d.getTime()-d.getTimezoneOffset()*6e4)/864e5)};
+const dstr=n=>new Date(n*864e5).toISOString().slice(0,10);
+function bumpStreak(){const t=dayNum();if(S.last===dstr(t))return;S.streak=(S.last===dstr(t-1))?S.streak+1:1;S.last=dstr(t)}
+const streakNow=()=>{const t=dayNum();return (S.last===dstr(t)||S.last===dstr(t-1))?S.streak:0};
+const INTERVALS=[0,1,3,7,16,35];
+function srDue(id){const r=S.sr[id];return !r||r.d<=dayNum()}
+function srUpdate(id,ok){const r=S.sr[id]||{b:0};r.b=ok?Math.min(r.b+1,5):0;r.d=dayNum()+INTERVALS[r.b];S.sr[id]=r}
 const $=document.getElementById("app");
 const shuffle=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(p=>p[1]);
+const GROUPS={brand:"Brands",base:"Base topics",life:"Life skills"};
+let DECKS=[];
+
+/* ---------- LOAD CONTENT ---------- */
+async function load(){
+  let idx;
+  try{idx=await (await fetch("content/index.json",{cache:"no-store"})).json()}catch(e){$.innerHTML='<div class="note">Could not load content. Check your internet and reopen.</div>';return}
+  const res=await Promise.all(idx.decks.map(async m=>{
+    try{const d=await (await fetch("content/"+m.id+".json",{cache:"no-store"})).json();
+      d.id=m.id;d.group=m.group||d.group||"base";d.deffocus=m.focus==null?3:m.focus;
+      d.lessons=(d.lessons||[]).filter(l=>l.pages&&l.quiz&&l.quiz.length);
+      d.lessons.forEach(l=>{l.lvl=l.lvl||1;l.quiz.forEach((q,i)=>{q.id=l.id+"#"+i})});
+      d.lessons.sort((a,b)=>a.lvl-b.lvl);
+      return d.lessons.length?d:null}catch(e){return null}}));
+  DECKS=res.filter(Boolean);
+  home();
+}
+const focusOf=d=>S.focus[d.id]==null?d.deffocus:S.focus[d.id];
 
 /* ---------- VIEWS ---------- */
-function topbar(){return `<div class="top"><h1>Learn</h1><div class="chips"><span class="chip">🔥 ${streakNow()}</span><span class="chip">⭐ ${S.xp}</span></div></div>`}
-function home(){
-  const seenQs=allSeenQuestions();
-  $.innerHTML=topbar()+
-   (seenQs.length?`<div class="big"><h2>Quick quiz</h2><p>${seenQs.length} questions from lessons you have read. About 2 minutes.</p><button class="btn ghost" id="quick" style="background:rgba(255,255,255,.2);color:#fff;margin-top:12px">Start</button></div>`
-     :`<div class="big"><h2>Welcome</h2><p>Read a short lesson, then get quizzed on it. Finish one lesson to unlock Quick quiz.</p></div>`)+
-   `<div class="sub">Topics</div>`+
-   DECKS.map(d=>{const n=d.lessons.length,k=d.lessons.filter(l=>S.done[l.id]).length;
-     return `<button class="card deck" data-d="${d.id}"><div class="emoji">${d.emoji}</div><div style="flex:1"><b>${d.title}</b><small>${d.desc}</small><div class="bar"><i style="width:${k/n*100}%"></i></div></div></button>`}).join("")+
-   `<div class="note">Demo version, updated by Claude 20 Oct 2026. Real content will cite vendor sources.</div>`;
-  $.querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>deck(b.dataset.d));
-  const q=document.getElementById("quick");if(q)q.onclick=()=>runQuiz(shuffle(seenQs).slice(0,6),"Quick quiz",home);
+function topbar(){return `<div class="top"><h1>Learn</h1><div class="chips"><span class="chip">🔥 ${streakNow()}</span><span class="chip">⭐ ${S.xp}</span><button class="gear" id="gear" aria-label="Settings">⚙</button></div></div>`}
+function pool(){const out=[];DECKS.forEach(d=>{const f=focusOf(d);if(!f)return;d.lessons.forEach(l=>{if(S.seen[l.id])l.quiz.forEach(q=>out.push({q,f,due:srDue(q.id)}))})});return out}
+function pickQuick(n){
+  const p=pool(),w=x=>Math.random()/x.f;
+  const due=p.filter(x=>x.due).sort((a,b)=>w(a)-w(b)),rest=p.filter(x=>!x.due).sort((a,b)=>w(a)-w(b));
+  const picked=due.slice(0,n);if(picked.length<Math.min(6,p.length))picked.push(...rest.slice(0,Math.min(6,p.length)-picked.length));
+  return shuffle(picked.map(x=>x.q));
 }
-function allSeenQuestions(){const out=[];DECKS.forEach(d=>d.lessons.forEach(l=>{if(S.seen[l.id])l.quiz.forEach(q=>out.push(q))}));return out}
+function nextLesson(){
+  const ds=DECKS.filter(d=>focusOf(d)>0).sort((a,b)=>focusOf(b)-focusOf(a));
+  for(const d of ds){const l=d.lessons.find(l=>!S.done[l.id]);if(l)return {d,l}}return null;
+}
+function home(){
+  const p=pool(),dueN=p.filter(x=>x.due).length,nx=nextLesson();
+  let h=topbar();
+  h+=p.length?`<div class="big"><h2>Quick quiz</h2><p>${dueN?dueN+" question"+(dueN>1?"s":"")+" due for review.":"Nothing due. Practice anyway."} About 2 minutes.</p><button class="btn" id="quick">Start</button></div>`
+    :`<div class="big"><h2>Welcome</h2><p>Read a short lesson, then get quizzed. Finish one lesson to unlock Quick quiz.</p></div>`;
+  if(nx)h+=`<div class="big alt"><h2>Next lesson</h2><p>${nx.d.emoji} ${nx.d.title}: ${nx.l.title}</p><button class="btn" id="nextl">Read now</button></div>`;
+  Object.keys(GROUPS).forEach(g=>{
+    const ds=DECKS.filter(d=>d.group===g&&focusOf(d)>0).sort((a,b)=>focusOf(b)-focusOf(a));
+    if(!ds.length)return;
+    h+=`<div class="sec">${GROUPS[g]}</div>`+ds.map(d=>{const n=d.lessons.length,k=d.lessons.filter(l=>S.done[l.id]).length;
+      return `<button class="card deck" data-d="${d.id}"><div class="emoji">${d.emoji||"📘"}</div><div style="flex:1"><b>${d.title}</b><small>${d.desc||""} • ${k}/${n}</small><div class="bar"><i style="width:${k/n*100}%"></i></div></div></button>`}).join("");
+  });
+  $.innerHTML=h;
+  document.getElementById("gear").onclick=settings;
+  $.querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>deck(b.dataset.d));
+  const q=document.getElementById("quick");if(q)q.onclick=()=>runQuiz(pickQuick(8),"Quick quiz",home);
+  const n=document.getElementById("nextl");if(n)n.onclick=()=>read(nx.d,nx.l,0);
+}
 function deck(id){
-  const d=DECKS.find(x=>x.id===id);
-  $.innerHTML=`<button class="back" id="b">‹ Back</button><div class="top"><h1>${d.emoji} ${d.title}</h1></div>`+
-   d.lessons.map(l=>`<div class="card"><b>${l.title}</b><span class="lvl">Level ${l.lvl||1}</span><div class="sub">${S.done[l.id]?"✅ Completed":"Read, then quiz • about 3 min"}</div>
-    <button class="btn" data-r="${l.id}">Read &amp; learn</button>
-    <button class="btn ghost" data-t="${l.id}" ${S.seen[l.id]?"":"disabled"}>Quiz only${S.seen[l.id]?"":" (read first)"}</button></div>`).join("")+
-   `<div class="src">${d.src}</div>`;
+  const d=DECKS.find(x=>x.id===id);let lastLvl=0,h=`<button class="back" id="b">‹ Back</button><div class="top"><h1>${d.emoji||""} ${d.title}</h1></div>`;
+  d.lessons.forEach(l=>{
+    if(l.lvl!==lastLvl){h+=`<div class="lvlh">Level ${l.lvl}</div>`;lastLvl=l.lvl}
+    h+=`<div class="card"><b>${l.title}</b><div class="sub" style="margin-bottom:0">${S.done[l.id]?"✅ Completed":"About 2 min"}</div>
+    <div class="row"><button class="btn sm" data-r="${l.id}">Read &amp; learn</button><button class="btn sm ghost" data-t="${l.id}" ${S.seen[l.id]?"":"disabled"}>Quiz only</button></div></div>`});
+  if(d.src&&d.src.length)h+=`<div class="src">Sources: ${d.src.map(s=>`<a href="${s.u}" target="_blank" rel="noopener">${s.l}</a>`).join(" · ")}</div>`;
+  $.innerHTML=h;
   document.getElementById("b").onclick=home;
   $.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>read(d,d.lessons.find(l=>l.id===b.dataset.r),0));
   $.querySelectorAll("[data-t]").forEach(b=>b.onclick=()=>{const l=d.lessons.find(l=>l.id===b.dataset.t);runQuiz(shuffle(l.quiz),l.title,()=>deck(id),l.id)});
 }
+function gloss(g){return g&&g.length?g.map(x=>`<div class="gloss"><b>${x[0]}</b> = ${x[1]}</div>`).join(""):""}
 function read(d,l,i){
   const p=l.pages[i],last=i===l.pages.length-1;
+  const src=last&&l.src&&l.src.length?`<div class="src">Source: ${l.src.map(s=>`<a href="${s.u}" target="_blank" rel="noopener">${s.l}</a>`).join(" · ")}</div>`:"";
   $.innerHTML=`<button class="back" id="b">‹ ${d.title}</button><div class="dots">${l.pages.map((_,k)=>`<i class="${k<=i?"on":""}"></i>`).join("")}</div>
-   <div class="card read"><div class="tag">${l.title}</div><h2>${p.h}</h2>${p.t}${gloss(p.g)}</div><div class="spacer"></div>
+   <div class="card read"><div class="tag">${l.title}</div><h2>${p.h}</h2>${p.t}${gloss(p.g)}${src}</div><div class="spacer"></div>
    <button class="btn" id="n">${last?"Start quiz":"Next"}</button>`;
   document.getElementById("b").onclick=()=>deck(d.id);
   document.getElementById("n").onclick=()=>{if(last){S.seen[l.id]=1;save();runQuiz(shuffle(l.quiz),l.title,()=>deck(d.id),l.id)}else read(d,l,i+1)};
 }
 function runQuiz(qs,title,onExit,lessonId){
   let i=0,right=0;
+  if(!qs.length){onExit();return}
   const show=()=>{
     const q=qs[i];
     $.innerHTML=`<button class="back" id="b">‹ Exit</button><div class="dots">${qs.map((_,k)=>`<i class="${k<=i?"on":""}"></i>`).join("")}</div>
-     <h2>${q.q}</h2>${gloss(q.g)}<div id="opts">${shuffleIdx(q).map(k=>`<button class="opt" data-k="${k}">${q.o[k]}</button>`).join("")}</div><div id="fb"></div><div class="spacer"></div>`;
+     <h2>${q.q}</h2>${gloss(q.g)}<div id="opts">${shuffle(q.o.map((_,k)=>k)).map(k=>`<button class="opt" data-k="${k}">${q.o[k]}</button>`).join("")}</div><div id="fb"></div><div class="spacer"></div>`;
     document.getElementById("b").onclick=onExit;
     $.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
       const k=+b.dataset.k,ok=k===q.a;if(ok)right++;
+      if(q.id)srUpdate(q.id,ok);save();
       $.querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(+x.dataset.k===q.a)x.classList.add("ok")});
       if(!ok)b.classList.add("bad");
-      if(navigator.vibrate)navigator.vibrate(ok?15:[30,40,30]);
+      if(navigator.vibrate)try{navigator.vibrate(ok?15:[30,40,30])}catch(e){}
       document.getElementById("fb").innerHTML=`<div class="why">${ok?"✅ Correct. ":"❌ Not quite. "}${q.w}</div><button class="btn" id="n">${i===qs.length-1?"Finish":"Next"}</button>`;
       document.getElementById("n").onclick=()=>{i++;i<qs.length?show():finish()};
     });
@@ -179,9 +181,17 @@ function runQuiz(qs,title,onExit,lessonId){
   };
   show();
 }
-function gloss(g){return g&&g.length?g.map(x=>`<div class="gloss"><b>${x[0]}</b> = ${x[1]}</div>`).join(""):""}
-function shuffleIdx(q){return shuffle(q.o.map((_,k)=>k))}
-home();
+function settings(){
+  let h=`<button class="back" id="b">‹ Back</button><div class="top"><h1>Focus</h1></div><div class="sub">0 hides a topic. 5 means more questions from it in Quick quiz and it comes first in Next lesson.</div>`;
+  Object.keys(GROUPS).forEach(g=>{const ds=DECKS.filter(d=>d.group===g);if(!ds.length)return;h+=`<div class="sec">${GROUPS[g]}</div>`+ds.map(d=>{const f=focusOf(d);
+    return `<div class="set"><b>${d.emoji||""} ${d.title}</b><div class="p" data-d="${d.id}">${[0,1,2,3,4,5].map(i=>`<button class="${i===0?"z ":""}${i===f?"on":""}" data-v="${i}">${i}</button>`).join("")}</div></div>`}).join("")});
+  h+=`<button class="btn ghost" id="reset" style="margin-top:20px">Reset all progress</button><div class="note">${DECKS.reduce((n,d)=>n+d.lessons.length,0)} lessons loaded</div>`;
+  $.innerHTML=h;
+  document.getElementById("b").onclick=home;
+  $.querySelectorAll(".p").forEach(p=>p.querySelectorAll("button").forEach(b=>b.onclick=()=>{S.focus[p.dataset.d]=+b.dataset.v;save();p.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b))}));
+  document.getElementById("reset").onclick=()=>{if(confirm("Reset streak, XP and all progress?")){const f=S.focus;S={xp:0,streak:0,last:"",done:{},seen:{},focus:f,sr:{}};save();home()}};
+}
+load();
 if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js").catch(()=>{});
 </script>
 </body>

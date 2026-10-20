@@ -1,0 +1,1187 @@
+{
+ "title": "Stormshield",
+ "emoji": "🛡️",
+ "desc": "European network security: firewalls, endpoint and data",
+ "src": [
+  {
+   "l": "Stormshield products",
+   "u": "https://www.stormshield.com/products-services/products/"
+  },
+  {
+   "l": "Stormshield about us",
+   "u": "https://www.stormshield.com/about-us/"
+  },
+  {
+   "l": "SNS product range",
+   "u": "https://www.stormshield.com/products-services/products/network-security/product-range-sns/"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "ss-1-1",
+   "lvl": 1,
+   "title": "Who is Stormshield?",
+   "src": [
+    {
+     "l": "Stormshield about us",
+     "u": "https://www.stormshield.com/about-us/"
+    },
+    {
+     "l": "Stormshield products",
+     "u": "https://www.stormshield.com/products-services/products/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "A European security vendor",
+     "t": "Stormshield makes <b>cyber security products</b> and is a wholly-owned subsidiary of <b>Airbus Defence and Space Cyber Programmes</b>. Think of it as the European alternative to the big US and Asian security brands, built with defence-grade customers in mind.",
+     "g": [
+      [
+       "VENDOR",
+       "The company that makes a product. Allnet is the distributor in between."
+      ],
+      [
+       "SUBSIDIARY",
+       "A company owned by a bigger parent company."
+      ]
+     ]
+    },
+    {
+     "h": "Three areas of protection",
+     "t": "The products cover <b>network</b> (firewalls), <b>endpoint</b> (protecting PCs and servers) and <b>data</b> (encrypting files). One vendor, three layers, so a customer can protect the whole chain instead of only one door.",
+     "g": [
+      [
+       "ENDPOINT",
+       "A device a person or process uses: laptop, PC or server."
+      ],
+      [
+       "FIREWALL",
+       "A security box between networks that decides which traffic is allowed through."
+      ]
+     ]
+    },
+    {
+     "h": "Who buys it",
+     "t": "Stormshield lists sectors such as <b>defence, public administration, healthcare, water, electric utilities, transport and aviation</b>. These are customers who care where a product comes from and what it is certified for.",
+     "g": [
+      [
+       "PUBLIC ADMINISTRATION",
+       "Government bodies, municipalities and agencies."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Who owns Stormshield?",
+     "o": [
+      "Airbus Defence and Space Cyber Programmes",
+      "A US firewall giant",
+      "An independent reseller group"
+     ],
+     "a": 0,
+     "w": "Stormshield is a wholly-owned subsidiary of Airbus Defence and Space Cyber Programmes."
+    },
+    {
+     "q": "Which three areas do Stormshield products cover?",
+     "o": [
+      "Wi-Fi, cameras and cables",
+      "Network, endpoint and data",
+      "Phones, tablets and printers"
+     ],
+     "a": 1,
+     "w": "The range is network (firewalls), endpoint (PCs and servers) and data (encryption)."
+    },
+    {
+     "q": "Which kind of customer is a typical Stormshield fit?",
+     "o": [
+      "A small online shop with no security needs",
+      "A hobbyist with one laptop",
+      "A public body that cares about European origin and certification"
+     ],
+     "a": 2,
+     "w": "Public administration, defence and other sensitive sectors are named Stormshield sectors.",
+     "g": [
+      [
+       "ENCRYPTION",
+       "Scrambling data so only people with the key can read it."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ss-2-1",
+   "lvl": 2,
+   "title": "SNS firewalls: the size ladder",
+   "src": [
+    {
+     "l": "SNS product range",
+     "u": "https://www.stormshield.com/products-services/products/network-security/product-range-sns/"
+    },
+    {
+     "l": "Network security (SNS)",
+     "u": "https://www.stormshield.com/products-services/products/network-security/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "SNS is the core line",
+     "t": "<b>SNS</b> (Stormshield Network Security) is the firewall range for normal IT networks. It combines <b>UTM and next-generation firewall</b> features, so one box handles filtering, intrusion prevention, VPN and web control.",
+     "g": [
+      [
+       "UTM",
+       "Unified Threat Management: many security functions in one box."
+      ],
+      [
+       "NGFW",
+       "Next-generation firewall: understands applications and threats, not just ports."
+      ],
+      [
+       "VPN",
+       "A secure tunnel over the internet between sites or to a person."
+      ]
+     ]
+    },
+    {
+     "h": "Small, medium, large",
+     "t": "Models are named by size. <b>SN-S</b> (and the small SN-XS-Series-170) fit small businesses and remote sites. <b>SN-M and SN1100</b> fit medium companies and large agencies. <b>SN-L and SN-XL</b> fit head offices and big VPN hubs.",
+     "g": [
+      [
+       "REMOTE SITE",
+       "A small branch or shop connected back to head office."
+      ],
+      [
+       "VPN CONCENTRATOR",
+       "A big firewall that many remote sites connect into."
+      ]
+     ]
+    },
+    {
+     "h": "One firmware for all",
+     "t": "All SNS firewalls run the <b>same firmware</b>. A customer who grows from a small box to a big one keeps the same features and the same way of working. That makes it easy for resellers to learn once and sell across sizes.",
+     "g": [
+      [
+       "FIRMWARE",
+       "The operating software inside a device."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does SNS stand for in Stormshield's range?",
+     "o": [
+      "Secure Network Switch",
+      "Stormshield Network Security",
+      "Small Network Solution"
+     ],
+     "a": 1,
+     "w": "SNS is Stormshield Network Security, the firewall range."
+    },
+    {
+     "q": "A customer has 30 staff and one small office. Which group is the natural starting point?",
+     "o": [
+      "SN-XL",
+      "SNxr",
+      "SN-S Series"
+     ],
+     "a": 2,
+     "w": "SN-S (and the small XS) target small businesses and remote sites.",
+     "g": [
+      [
+       "SN-S",
+       "Small SNS models, for small offices."
+      ]
+     ]
+    },
+    {
+     "q": "What is the benefit of the single firmware across all SNS models?",
+     "o": [
+      "Same features and way of working at every size",
+      "All models cost the same",
+      "No updates are ever needed"
+     ],
+     "a": 0,
+     "w": "One firmware means the same features and way of working from small to large boxes."
+    },
+    {
+     "q": "Where would you place an SN-L or SN-XL?",
+     "o": [
+      "A small kiosk",
+      "A head office or VPN hub",
+      "A tractor"
+     ],
+     "a": 1,
+     "w": "Large models suit head offices and VPN concentrators."
+    }
+   ]
+  },
+  {
+   "id": "ss-2-2",
+   "lvl": 2,
+   "title": "SNi and SNxr: when the box goes to a factory",
+   "src": [
+    {
+     "l": "Industrial range (SNi)",
+     "u": "https://www.stormshield.com/products-services/products/operational-protection/our-range-ot/"
+    },
+    {
+     "l": "SNi40 page",
+     "u": "https://www.stormshield.com/products/sni40/"
+    },
+    {
+     "l": "Defense and military",
+     "u": "https://stormshield.com/products-services/by-industry/defense-and-military-organizations"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Industrial firewalls",
+     "t": "<b>SNi</b> firewalls (SNi10, SNi20, SNi40, SNi50) protect <b>OT</b>: factory floors, water plants and power networks. They mount on a <b>DIN rail</b> in a control cabinet and help segment the network to limit attack spread.",
+     "g": [
+      [
+       "OT",
+       "Operational Technology: machines and control systems that run physical processes."
+      ],
+      [
+       "DIN RAIL",
+       "Standard metal rail inside industrial cabinets."
+      ],
+      [
+       "SEGMENTATION",
+       "Splitting a network into zones so a problem cannot spread."
+      ]
+     ]
+    },
+    {
+     "h": "Keeps production running",
+     "t": "Industrial boxes offer <b>high availability</b> and a <b>safety mode</b> so production continues if the firewall fails. They also check industrial messages and protect <b>PLCs</b>. The SNi40 is off sale and the <b>SNi50</b> is its successor.",
+     "g": [
+      [
+       "PLC",
+       "Industrial controller that runs a machine."
+      ],
+      [
+       "HIGH AVAILABILITY",
+       "Two devices so one takes over if the other fails."
+      ]
+     ]
+    },
+    {
+     "h": "SNxr1200: the rugged one",
+     "t": "<b>SNxr1200</b> is the most ruggedized model, made for critical environments such as <b>military vehicles</b>. It is a different job from a factory box: not a cabinet in a plant, but equipment built for harsh field conditions.",
+     "g": [
+      [
+       "RUGGEDIZED",
+       "Built to survive shock, dust, water and extreme temperatures."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does OT mean?",
+     "o": [
+      "Online Trading",
+      "Operational Technology",
+      "Optical Transfer"
+     ],
+     "a": 1,
+     "w": "OT is the machines and control systems that run physical processes."
+    },
+    {
+     "q": "A water utility wants to protect pumps and PLCs in control cabinets. Which line?",
+     "o": [
+      "SNi",
+      "SN-XL",
+      "SES"
+     ],
+     "a": 0,
+     "w": "SNi is the industrial range built for operational networks and cabinets."
+    },
+    {
+     "q": "Which SNi model replaced the off-sale SNi40?",
+     "o": [
+      "SNi10",
+      "SNi50",
+      "SNxr1200"
+     ],
+     "a": 1,
+     "w": "Stormshield points to the SNi50 as the successor."
+    },
+    {
+     "q": "Which model is aimed at military vehicles and harsh conditions?",
+     "o": [
+      "SN-M-Series-520",
+      "SNi10",
+      "SNxr1200"
+     ],
+     "a": 2,
+     "w": "The SNxr1200 is the most ruggedized option for critical environments."
+    }
+   ]
+  },
+  {
+   "id": "ss-2-3",
+   "lvl": 2,
+   "title": "SES: protecting the laptops and servers",
+   "src": [
+    {
+     "l": "Endpoint security (SES)",
+     "u": "https://www.stormshield.com/products-services/products/endpoint-security/"
+    },
+    {
+     "l": "Stormshield products",
+     "u": "https://www.stormshield.com/products-services/products/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "What SES does",
+     "t": "<b>SES</b> (Stormshield Endpoint Security) is software on <b>workstations and servers</b>. It detects and blocks suspicious behaviour in real time, such as attempts to exploit system flaws. A firewall guards the network, SES guards the machine itself.",
+     "g": [
+      [
+       "WORKSTATION",
+       "A normal office PC."
+      ],
+      [
+       "EXPLOIT",
+       "Using a software flaw to break in."
+      ]
+     ]
+    },
+    {
+     "h": "No signatures needed",
+     "t": "Stormshield says SES works <b>without signatures</b>, meaning it does not need a list of known malware. It also offers <b>ransomware protection</b> and <b>threat hunting</b>. This kind of product is called EDR: detection and response on endpoints.",
+     "g": [
+      [
+       "SIGNATURE",
+       "A fingerprint of known malware."
+      ],
+      [
+       "RANSOMWARE",
+       "Malware that locks files and demands payment."
+      ],
+      [
+       "EDR",
+       "Endpoint Detection and Response."
+      ]
+     ]
+    },
+    {
+     "h": "Many ways to run it",
+     "t": "SES can run <b>on-premises, as SaaS or via a managed service provider</b>. It also holds a first-level <b>CSPN certification</b> from the French agency ANSSI, which matters to sensitive sectors.",
+     "g": [
+      [
+       "SAAS",
+       "Software run by the vendor in the cloud."
+      ],
+      [
+       "MSSP",
+       "Managed Security Service Provider: a company that runs security for others."
+      ],
+      [
+       "CSPN",
+       "A French first-level security certification for products."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does SES protect?",
+     "o": [
+      "Wi-Fi access points",
+      "Workstations and servers",
+      "Network cables"
+     ],
+     "a": 1,
+     "w": "SES is endpoint security for PCs and servers."
+    },
+    {
+     "q": "What does 'works without signatures' mean?",
+     "o": [
+      "No licence is needed",
+      "It needs a human to approve each file",
+      "It does not rely on a list of known malware"
+     ],
+     "a": 2,
+     "w": "It detects suspicious behaviour instead of matching known malware fingerprints."
+    },
+    {
+     "q": "A customer already has a firewall but worries about laptops. What is the answer?",
+     "o": [
+      "Add an SES endpoint layer",
+      "Buy a bigger firewall",
+      "Replace the Wi-Fi"
+     ],
+     "a": 0,
+     "w": "The firewall protects the network edge, SES protects each machine."
+    },
+    {
+     "q": "How can SES be deployed?",
+     "o": [
+      "Only on a USB stick",
+      "Only through a vendor visit",
+      "On-premises, SaaS or via a managed provider"
+     ],
+     "a": 2,
+     "w": "The options are on-premises, SaaS and a managed service through a certified MSSP."
+    }
+   ]
+  },
+  {
+   "id": "ss-2-4",
+   "lvl": 2,
+   "title": "SDS: protecting the data itself",
+   "src": [
+    {
+     "l": "SDS range",
+     "u": "https://www.stormshield.com/products-services/products/data-protection/sds-range/"
+    },
+    {
+     "l": "Data security",
+     "u": "https://www.stormshield.com/products-services/products/data-security/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Encrypt the files",
+     "t": "<b>SDS</b> (Stormshield Data Security) encrypts sensitive information <b>end to end</b>, so it is not sent or stored in plain text. Even if someone gets the file, they cannot read it without access rights.",
+     "g": [
+      [
+       "END-TO-END ENCRYPTION",
+       "Data stays encrypted from sender to receiver."
+      ]
+     ]
+    },
+    {
+     "h": "Keys stay with the company",
+     "t": "Stormshield says the <b>keys stay under the company's control</b>, so even administrators cannot read protected data. Access is set by groups and profiles. That is the pitch for regulated or secretive organisations.",
+     "g": [
+      [
+       "KEY",
+       "The secret that unlocks encrypted data."
+      ]
+     ]
+    },
+    {
+     "h": "Several pieces",
+     "t": "<b>SDS Enterprise</b> is the core. <b>SDS for Google Workspace</b> adds encryption to Google tools. <b>Smart File Reader</b> is free software for recipients. <b>Data Connector</b> builds it into business apps. An <b>encryption portal</b> shares files with outsiders.",
+     "g": [
+      [
+       "GOOGLE WORKSPACE",
+       "Google's online office and mail suite."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is SDS mainly for?",
+     "o": [
+      "Blocking spam",
+      "Encrypting sensitive data",
+      "Monitoring cameras"
+     ],
+     "a": 1,
+     "w": "SDS is the encryption line."
+    },
+    {
+     "q": "Who holds the encryption keys, according to Stormshield?",
+     "o": [
+      "Stormshield support",
+      "Google",
+      "The company itself"
+     ],
+     "a": 2,
+     "w": "The keys stay under the customer's control."
+    },
+    {
+     "q": "A partner receives encrypted files but will not buy the full product. What fits?",
+     "o": [
+      "Data Connector",
+      "SDS Enterprise licence",
+      "Smart File Reader"
+     ],
+     "a": 2,
+     "w": "Smart File Reader is the free reader for encrypted packages."
+    },
+    {
+     "q": "Which customer fits SDS for Google Workspace?",
+     "o": [
+      "One using Google Workspace for mail and docs",
+      "One with only paper files",
+      "One using only industrial controllers"
+     ],
+     "a": 0,
+     "w": "It adds encryption to data stored in Google tools."
+    }
+   ]
+  },
+  {
+   "id": "ss-3-1",
+   "lvl": 3,
+   "title": "Managing many firewalls: SMC, SLS and XDR",
+   "src": [
+    {
+     "l": "Stormshield Management Center",
+     "u": "https://www.stormshield.com/products-services/products/network-security/administration-tools-sns-firewalls/smc/"
+    },
+    {
+     "l": "Stormshield Log Supervisor",
+     "u": "https://www.stormshield.com/products-services/products/network-security/administration-tools-sns-firewalls/sls/"
+    },
+    {
+     "l": "Stormshield XDR",
+     "u": "https://www.stormshield.com/products-services/products/stormshield-xdr/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "SMC: one console",
+     "t": "<b>SMC</b> (Stormshield Management Center) is for customers with <b>many sites and many SNS firewalls</b>. It gives one central place to deploy configuration, push updates and watch firewalls and VPN tunnels.",
+     "g": [
+      [
+       "MULTI-SITE",
+       "A company with several offices, shops or plants."
+      ],
+      [
+       "VPN TUNNEL",
+       "A secure link between two sites."
+      ]
+     ]
+    },
+    {
+     "h": "SLS: collecting the logs",
+     "t": "<b>SLS</b> (Stormshield Log Supervisor) is a <b>SIEM</b>: it collects event logs from firewalls, SES agents and many other sources into one view. It keeps logs for years, useful for audits and compliance.",
+     "g": [
+      [
+       "SIEM",
+       "Security Information and Event Management: central log analysis."
+      ],
+      [
+       "LOG",
+       "A record of what happened on a device."
+      ]
+     ]
+    },
+    {
+     "h": "XDR ties it together",
+     "t": "<b>Stormshield XDR</b> combines <b>SNS, SES and threat intelligence</b>, orchestrated by SLS, to correlate events across network and endpoints and send real-time alerts. It is a package idea for customers who run both.",
+     "g": [
+      [
+       "XDR",
+       "Extended Detection and Response: connects alerts from several security layers."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A retailer has 80 shops, each with an SNS firewall. What helps manage them?",
+     "o": [
+      "SDS",
+      "SMC",
+      "SNxr1200"
+     ],
+     "a": 1,
+     "w": "SMC is central administration for multi-site SNS deployments."
+    },
+    {
+     "q": "What does SLS mainly do?",
+     "o": [
+      "Encrypts files",
+      "Provides Wi-Fi",
+      "Collects and analyses logs"
+     ],
+     "a": 2,
+     "w": "SLS is a SIEM for log management."
+    },
+    {
+     "q": "What does XDR combine?",
+     "o": [
+      "Network (SNS), endpoint (SES) and threat intelligence",
+      "Cables, racks and switches",
+      "Wi-Fi and cameras"
+     ],
+     "a": 0,
+     "w": "XDR links SNS, SES and Stormshield threat intelligence, orchestrated by SLS."
+    },
+    {
+     "q": "A single small office with one firewall asks about SMC. Likely answer?",
+     "o": [
+      "Essential, nothing works without it",
+      "Not needed, SMC is for many firewalls",
+      "Only for cameras"
+     ],
+     "a": 1,
+     "w": "SMC targets organisations with several SNS firewalls across sites."
+    }
+   ]
+  },
+  {
+   "id": "ss-3-2",
+   "lvl": 3,
+   "title": "Virtual and cloud firewalls: EVA",
+   "src": [
+    {
+     "l": "Elastic Virtual Appliance",
+     "u": "https://www.stormshield.com/products-services/products/network-security/product-range-sns/elastic-virtual-appliances/"
+    },
+    {
+     "l": "SNS product range",
+     "u": "https://www.stormshield.com/products-services/products/network-security/product-range-sns/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Firewall as software",
+     "t": "<b>EVA</b> (Elastic Virtual Appliance) is Stormshield's <b>virtual firewall</b>. Instead of a box, it runs as software in a data centre or cloud, protecting servers and services that live there.",
+     "g": [
+      [
+       "VIRTUAL APPLIANCE",
+       "A device delivered as software that runs on a virtual machine."
+      ],
+      [
+       "HYPERVISOR",
+       "Software that runs virtual machines, e.g. VMware or Hyper-V."
+      ]
+     ]
+    },
+    {
+     "h": "Where it runs",
+     "t": "EVA runs on common hypervisors such as <b>VMware, Hyper-V and KVM</b>, and is available in clouds like <b>AWS, Azure, 3DS Outscale and OVHcloud</b>. Its performance scales with the CPU and memory you give it.",
+     "g": [
+      [
+       "CLOUD MARKETPLACE",
+       "An app store inside a cloud provider."
+      ]
+     ]
+    },
+    {
+     "h": "Why choose it",
+     "t": "Pick EVA when the workload is <b>in the cloud or virtualised</b> and a hardware box makes no sense. It also appeals to customers who want a <b>French-developed, sovereign</b> option, for example in European sovereign clouds.",
+     "g": [
+      [
+       "SOVEREIGN",
+       "Under local legal control, not subject to foreign rules."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is EVA?",
+     "o": [
+      "A rugged vehicle firewall",
+      "A virtual firewall",
+      "An encryption portal"
+     ],
+     "a": 1,
+     "w": "EVA is the virtual firewall range."
+    },
+    {
+     "q": "A customer moves servers into Azure. Which Stormshield product?",
+     "o": [
+      "SNi50",
+      "SES",
+      "EVA"
+     ],
+     "a": 2,
+     "w": "EVA is built for cloud and virtual environments."
+    },
+    {
+     "q": "What decides EVA performance?",
+     "o": [
+      "The colour of the box",
+      "CPU and memory allocated",
+      "The number of Wi-Fi networks"
+     ],
+     "a": 1,
+     "w": "Performance scales with the vCPU and vRAM allocated."
+    },
+    {
+     "q": "A factory floor with PLCs needs a firewall in a cabinet. Is EVA right?",
+     "o": [
+      "No, an SNi industrial firewall fits better",
+      "Yes, always",
+      "Only with SMC"
+     ],
+     "a": 0,
+     "w": "EVA is software for virtual or cloud workloads, SNi is the cabinet-mounted industrial option."
+    }
+   ]
+  },
+  {
+   "id": "ss-3-3",
+   "lvl": 3,
+   "title": "Certifications: EU and NATO RESTRICTED",
+   "src": [
+    {
+     "l": "Defense and military",
+     "u": "https://stormshield.com/products-services/by-industry/defense-and-military-organizations"
+    },
+    {
+     "l": "SNS product range",
+     "u": "https://www.stormshield.com/products-services/products/network-security/product-range-sns/"
+    },
+    {
+     "l": "Industrial range (SNi)",
+     "u": "https://www.stormshield.com/products-services/products/operational-protection/our-range-ot/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Why certifications matter",
+     "t": "A <b>certification</b> means an independent body tested the product. Governments and defence buyers often <b>require</b> it. Stormshield lists Common Criteria <b>EAL4+</b> and <b>ANSSI Standard qualification</b>, the French agency's approval level.",
+     "g": [
+      [
+       "COMMON CRITERIA",
+       "International standard for testing IT security products."
+      ],
+      [
+       "ANSSI",
+       "The French national cyber security agency."
+      ]
+     ]
+    },
+    {
+     "h": "EU and NATO RESTRICTED",
+     "t": "Stormshield also shows <b>EU RESTRICTED</b> and <b>NATO RESTRICTED</b> labels. These are classification levels for sensitive but not top-secret information, so buyers handling such data can look at these products.",
+     "g": [
+      [
+       "RESTRICTED",
+       "A low classification level for sensitive government information."
+      ]
+     ]
+    },
+    {
+     "h": "What to say, and not say",
+     "t": "Say that Stormshield holds these <b>European certifications</b>. Do not promise which exact model covers which label: ask a Stormshield contact for the certificate scope. Also notable: <b>IEC 62443-4-1</b> for secure product development.",
+     "g": [
+      [
+       "IEC 62443",
+       "Standard family for industrial cyber security."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does a certification show?",
+     "o": [
+      "The product is cheap",
+      "An independent body tested it",
+      "It has Wi-Fi"
+     ],
+     "a": 1,
+     "w": "Certification means independent testing."
+    },
+    {
+     "q": "Which French body gives Standard qualification?",
+     "o": [
+      "NATO",
+      "Airbus",
+      "ANSSI"
+     ],
+     "a": 2,
+     "w": "ANSSI is the French cyber security agency."
+    },
+    {
+     "q": "A defence customer asks for NATO RESTRICTED. What do you do?",
+     "o": [
+      "Promise all models are covered",
+      "Confirm the label exists and check exact scope with Stormshield",
+      "Say no such label exists"
+     ],
+     "a": 1,
+     "w": "The label exists, but model scope must be confirmed."
+    },
+    {
+     "q": "What is RESTRICTED?",
+     "o": [
+      "A low classification for sensitive information",
+      "A broken product state",
+      "A VPN type"
+     ],
+     "a": 0,
+     "w": "It is a lower classification level for sensitive information."
+    }
+   ]
+  },
+  {
+   "id": "ss-4-1",
+   "lvl": 4,
+   "title": "Subscriptions and security packs",
+   "src": [
+    {
+     "l": "Maintenance and security packs",
+     "u": "https://stormshield.com/our-support/services/maintenance/"
+    },
+    {
+     "l": "Network security (SNS)",
+     "u": "https://www.stormshield.com/products-services/products/network-security/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Hardware plus a pack",
+     "t": "A firewall is bought with a <b>security pack</b>, an ongoing maintenance package. It keeps the box updated and supported. Without a pack, a firewall slowly falls out of date, so renewals matter for resellers.",
+     "g": [
+      [
+       "SUBSCRIPTION",
+       "A recurring fee for ongoing service."
+      ],
+      [
+       "RENEWAL",
+       "Extending a subscription when it expires."
+      ]
+     ]
+    },
+    {
+     "h": "Essential versus Premium",
+     "t": "<b>Essential</b> covers unified protection: segmentation, secure communications, SD-WAN, intrusion prevention and ZTNA. <b>Premium</b> adds advanced antimalware, AI sandboxing (Breach Fighter) and cloud-based web address filtering for demanding customers.",
+     "g": [
+      [
+       "SD-WAN",
+       "Smart routing across several internet links."
+      ],
+      [
+       "ZTNA",
+       "Zero Trust Network Access: no one is trusted by default."
+      ],
+      [
+       "SANDBOX",
+       "A safe test area where suspicious files are run."
+      ]
+     ]
+    },
+    {
+     "h": "Industrial and add-ons",
+     "t": "<b>Industrial</b> and <b>Industrial Plus</b> packs exist for industrial sites. Maintenance includes hardware exchange, support and updates. Extra services can be <b>added à la carte</b>. Check current pack details with Stormshield.",
+     "g": [
+      [
+       "A LA CARTE",
+       "Chosen individually, on top of the base."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does a security pack mainly provide?",
+     "o": [
+      "Free cables",
+      "Ongoing maintenance and updates",
+      "A one-time discount"
+     ],
+     "a": 1,
+     "w": "Packs are ongoing maintenance and update services."
+    },
+    {
+     "q": "Which pack adds sandboxing and advanced antimalware?",
+     "o": [
+      "Essential",
+      "Industrial",
+      "Premium"
+     ],
+     "a": 2,
+     "w": "Premium adds Breach Fighter sandboxing and advanced antimalware."
+    },
+    {
+     "q": "A customer wants basic unified protection. Which pack?",
+     "o": [
+      "Essential",
+      "Premium only",
+      "Industrial Plus"
+     ],
+     "a": 0,
+     "w": "Essential covers segmentation, IPS, ZTNA and so on."
+    },
+    {
+     "q": "Why do renewals matter?",
+     "o": [
+      "Boxes stop working immediately",
+      "Protection and support stay current",
+      "The colour changes"
+     ],
+     "a": 1,
+     "w": "Packs keep protection updated and supported."
+    }
+   ]
+  },
+  {
+   "id": "ss-4-2",
+   "lvl": 4,
+   "title": "Stormshield versus typical competitors",
+   "src": [
+    {
+     "l": "Stormshield about us",
+     "u": "https://www.stormshield.com/about-us/"
+    },
+    {
+     "l": "SNS product range",
+     "u": "https://www.stormshield.com/products-services/products/network-security/product-range-sns/"
+    },
+    {
+     "l": "Network security (SNS)",
+     "u": "https://www.stormshield.com/products-services/products/network-security/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "The usual rivals",
+     "t": "In firewalls the customer often compares with <b>Fortinet, Check Point, Palo Alto, Sophos and WatchGuard</b>. These are large international brands. Stormshield competes on <b>origin, certification and fit</b>, not on being the biggest.",
+     "g": [
+      [
+       "COMPETITOR",
+       "Another vendor selling a similar product."
+      ]
+     ]
+    },
+    {
+     "h": "The plain-words difference",
+     "t": "Stormshield is <b>European</b>, owned by Airbus, with <b>EU and NATO RESTRICTED</b> labels and <b>ANSSI qualification</b>. It covers <b>IT and OT on one firmware</b>, and adds endpoint and data products from the same vendor."
+    },
+    {
+     "h": "Be honest on performance",
+     "t": "Do not claim Stormshield beats everyone on speed. Comparison sheets exist but change often. Lead with <b>trust, European control and certification</b>, then check the specific model with a Stormshield contact.",
+     "g": [
+      [
+       "THROUGHPUT",
+       "How much traffic a device can handle."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is Stormshield's best angle against big international brands?",
+     "o": [
+      "Always the fastest",
+      "European origin and certification",
+      "Cheapest in all cases"
+     ],
+     "a": 1,
+     "w": "The main angle is origin, certifications and fit."
+    },
+    {
+     "q": "Which is true about SNS firmware?",
+     "o": [
+      "IT and OT run on one firmware",
+      "OT needs another vendor",
+      "Only IT works"
+     ],
+     "a": 0,
+     "w": "SNS covers IT and OT on one firmware."
+    },
+    {
+     "q": "A customer asks if Stormshield is faster than a rival. Best reply?",
+     "o": [
+      "Yes, always",
+      "Lead with trust and certification, check model data with Stormshield",
+      "No, never"
+     ],
+     "a": 1,
+     "w": "Do not over-claim performance."
+    },
+    {
+     "q": "Which of these is named as a typical firewall competitor?",
+     "o": [
+      "Shelly",
+      "Cudy",
+      "Palo Alto"
+     ],
+     "a": 2,
+     "w": "Palo Alto is one of the usual rivals, along with Fortinet, Check Point, Sophos and WatchGuard."
+    }
+   ]
+  },
+  {
+   "id": "ss-5-1",
+   "lvl": 5,
+   "title": "Which product for which customer?",
+   "src": [
+    {
+     "l": "SNS product range",
+     "u": "https://www.stormshield.com/products-services/products/network-security/product-range-sns/"
+    },
+    {
+     "l": "Industrial range (SNi)",
+     "u": "https://www.stormshield.com/products-services/products/operational-protection/our-range-ot/"
+    },
+    {
+     "l": "Defense and military",
+     "u": "https://stormshield.com/products-services/by-industry/defense-and-military-organizations"
+    },
+    {
+     "l": "Endpoint security (SES)",
+     "u": "https://www.stormshield.com/products-services/products/endpoint-security/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Small office versus factory",
+     "t": "<b>Small office:</b> an SN-S (or XS) firewall. <b>Factory:</b> an SNi industrial firewall in the cabinet, plus SNS at the IT edge. <b>Cloud workloads:</b> EVA. Match the product to <b>where it physically sits</b>.",
+     "g": [
+      [
+       "EDGE",
+       "The border between a network and the internet."
+      ]
+     ]
+    },
+    {
+     "h": "Government and defence",
+     "t": "A <b>public body or defence customer</b> cares about certification. Offer SNS with the EU and NATO RESTRICTED story, SES for endpoints, SDS for files, and for vehicles the SNxr1200. Always confirm certificate scope.",
+     "g": [
+      [
+       "VEHICLE-MOUNTED",
+       "Fitted inside a vehicle, ship or aircraft."
+      ]
+     ]
+    },
+    {
+     "h": "Many sites, many layers",
+     "t": "<b>Retail chain with many shops:</b> small SNS boxes plus SMC. <b>Customer wanting visibility:</b> add SLS or XDR. <b>Laptop worries:</b> SES. <b>Sensitive files:</b> SDS. Layers combine, they do not replace each other."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Small office, 20 staff, one site. Best fit?",
+     "o": [
+      "SN-S firewall",
+      "SN-XL",
+      "SNxr1200"
+     ],
+     "a": 0,
+     "w": "SN-S fits small businesses."
+    },
+    {
+     "q": "A bottling plant wants protection in its control cabinets. Best fit?",
+     "o": [
+      "SDS",
+      "SNi",
+      "SMC alone"
+     ],
+     "a": 1,
+     "w": "SNi is the industrial range for cabinets."
+    },
+    {
+     "q": "A ministry needs a firewall plus sensitive file encryption. Best combo?",
+     "o": [
+      "SES only",
+      "EVA only",
+      "SNS plus SDS, confirming certificate scope"
+     ],
+     "a": 2,
+     "w": "SNS and SDS match network and data needs with certification."
+    },
+    {
+     "q": "Which product fits a military vehicle?",
+     "o": [
+      "SN-M-Series-520",
+      "SNi10",
+      "SNxr1200"
+     ],
+     "a": 2,
+     "w": "The SNxr1200 is the ruggedized model for vehicles."
+    }
+   ]
+  },
+  {
+   "id": "ss-5-2",
+   "lvl": 5,
+   "title": "Objections and good questions",
+   "src": [
+    {
+     "l": "Stormshield about us",
+     "u": "https://www.stormshield.com/about-us/"
+    },
+    {
+     "l": "SDS range",
+     "u": "https://www.stormshield.com/products-services/products/data-protection/sds-range/"
+    },
+    {
+     "l": "Network security (SNS)",
+     "u": "https://www.stormshield.com/products-services/products/network-security/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Common objections",
+     "t": "<b>'We already use another brand.'</b> Suggest a second layer or a certification-driven project. <b>'Why European?'</b> Data control and certified products. <b>'Is it only for governments?'</b> No: small models fit small businesses too.",
+     "g": [
+      [
+       "OBJECTION",
+       "A reason the customer gives for not buying."
+      ]
+     ]
+    },
+    {
+     "h": "Questions to ask",
+     "t": "Ask: <b>How many sites?</b> Is there <b>factory or OT equipment</b>? Is anything in the <b>cloud</b>? Do you handle <b>regulated or classified data</b>? Who manages security today? Answers point to the right product.",
+     "g": [
+      [
+       "REGULATED",
+       "Subject to legal rules about how data is handled."
+      ]
+     ]
+    },
+    {
+     "h": "Know your limits",
+     "t": "Allnet is a distributor selling to <b>resellers</b>. Do not quote exact specs from memory. Say what the product is for, check models and certificate scope, and bring in the Stormshield team for the details.",
+     "g": [
+      [
+       "DISTRIBUTOR",
+       "Sells vendor products to resellers, not to end customers."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A customer says: 'We use another brand.' Good reply?",
+     "o": [
+      "Drop the lead",
+      "Offer certification-driven or second-layer angles",
+      "Insist they switch now"
+     ],
+     "a": 1,
+     "w": "Find a fit rather than force a switch."
+    },
+    {
+     "q": "Which question points to the SNi line?",
+     "o": [
+      "Do you have factory equipment?",
+      "Do you use Google?",
+      "Do you have cameras?"
+     ],
+     "a": 0,
+     "w": "Factory or OT equipment points to SNi."
+    },
+    {
+     "q": "Which question helps decide on EVA?",
+     "o": [
+      "Do you use a printer?",
+      "How tall is the building?",
+      "Is anything running in the cloud?"
+     ],
+     "a": 2,
+     "w": "Cloud workloads point to EVA."
+    },
+    {
+     "q": "Who does Allnet normally sell to?",
+     "o": [
+      "End consumers",
+      "Resellers and integrators",
+      "Only governments"
+     ],
+     "a": 1,
+     "w": "Allnet is a distributor selling to resellers."
+    }
+   ]
+  }
+ ]
+}

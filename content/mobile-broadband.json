@@ -1,0 +1,954 @@
+{
+  "title": "Mobile broadband 4G/5G",
+  "emoji": "📶",
+  "desc": "Internet over the mobile network: SIMs, 5G, antennas, failover",
+  "src": [
+    {
+      "l": "3GPP 5G system overview",
+      "u": "https://www.3gpp.org/technologies/5g-system-overview"
+    },
+    {
+      "l": "5G (Wikipedia)",
+      "u": "https://en.wikipedia.org/wiki/5G"
+    },
+    {
+      "l": "eSIM (Wikipedia)",
+      "u": "https://en.wikipedia.org/wiki/ESIM"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "mb-1-1",
+      "lvl": 1,
+      "title": "What is mobile broadband?",
+      "src": [
+        {
+          "l": "LTE (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/LTE_(telecommunication)"
+        },
+        {
+          "l": "Teltonika RUT901",
+          "u": "https://teltonika-networks.com/products/routers/RUT901"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Internet without a cable",
+          "t": "<b>Mobile broadband</b> is internet delivered over the same cellular network your phone uses. A <b>cellular router</b> takes a SIM card and shares that connection with laptops, cameras and machines over Ethernet or Wi-Fi.",
+          "g": [
+            [
+              "Cellular router",
+              "A router that gets its internet from a SIM card and the mobile network instead of a cable."
+            ],
+            [
+              "SIM",
+              "The small card (or chip) that identifies a subscription on the mobile network."
+            ]
+          ]
+        },
+        {
+          "h": "Generations",
+          "t": "Mobile networks come in generations. <b>4G</b> (also called <b>LTE</b>) is what most people use today. <b>5G</b> is the newer generation. Older <b>3G and 2G</b> exist as a fallback in many routers.",
+          "g": [
+            [
+              "LTE",
+              "Long Term Evolution: the technology behind 4G."
+            ],
+            [
+              "3G / 2G",
+              "Older generations, slower, used as a fallback."
+            ]
+          ]
+        },
+        {
+          "h": "When it beats a cable",
+          "t": "Cellular is the answer when a cable is <b>too slow to install</b>, too expensive, or not possible: temporary sites, remote buildings and vehicles. It is also a popular <b>backup</b> when the main fixed line fails.",
+          "g": [
+            [
+              "Backup",
+              "A second connection that takes over when the main one fails."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does a cellular router need to get online?",
+          "o": [
+            "A SIM and mobile coverage",
+            "A telephone line",
+            "A satellite dish"
+          ],
+          "a": 0,
+          "w": "It gets internet from the mobile network through a SIM."
+        },
+        {
+          "q": "Which is another name for 4G?",
+          "o": [
+            "ADSL",
+            "LTE",
+            "Wi-Fi 6"
+          ],
+          "a": 1,
+          "w": "LTE is the technology behind 4G.",
+          "g": [
+            [
+              "ADSL",
+              "An older internet service over telephone copper lines."
+            ]
+          ]
+        },
+        {
+          "q": "A customer needs internet at a temporary event site in two days. Best idea?",
+          "o": [
+            "Order a fixed fibre line",
+            "Wait for a cable contractor",
+            "A cellular router with a data SIM"
+          ],
+          "a": 2,
+          "w": "Cellular is fast to deploy where a cable would take too long."
+        }
+      ]
+    },
+    {
+      "id": "mb-1-2",
+      "lvl": 1,
+      "title": "SIM and eSIM",
+      "src": [
+        {
+          "l": "SIM (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Subscriber_identity_module"
+        },
+        {
+          "l": "eSIM (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/ESIM"
+        }
+      ],
+      "pages": [
+        {
+          "h": "What a SIM does",
+          "t": "A <b>SIM</b> holds the identity and secret key that prove to the network who you are and which subscription you pay for. Common sizes are mini, micro and <b>nano</b>, the smallest removable one, used in phones.",
+          "g": [
+            [
+              "Nano-SIM",
+              "The small SIM size used in most modern phones and many routers."
+            ]
+          ]
+        },
+        {
+          "h": "eSIM",
+          "t": "An <b>eSIM</b> is a chip built into the device. It cannot be removed, but its subscription can be changed <b>remotely</b> by software. A device can hold several profiles, with one or two active at a time.",
+          "g": [
+            [
+              "eSIM",
+              "A SIM built into the device, programmed over the air."
+            ],
+            [
+              "Profile",
+              "One stored subscription on an eSIM."
+            ]
+          ]
+        },
+        {
+          "h": "Why it matters in sales",
+          "t": "eSIM suits devices that are <b>sealed</b> or hard to reach, and large IoT roll-outs, since nobody needs to swap cards. A normal SIM slot is still more flexible for small projects. Always check whether the product supports the type the customer wants.",
+          "g": [
+            [
+              "IoT",
+              "Internet of Things: devices like meters and sensors that connect on their own."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "How is an eSIM different from a normal SIM?",
+          "o": [
+            "It is built in and can be reprogrammed remotely",
+            "It works without any network",
+            "It is always free"
+          ],
+          "a": 0,
+          "w": "An eSIM is an embedded chip whose subscription is set up over the air."
+        },
+        {
+          "q": "Where is eSIM especially useful?",
+          "o": [
+            "Old desktop phones",
+            "Sealed devices in hard-to-reach places",
+            "Printers"
+          ],
+          "a": 1,
+          "w": "Not having to swap a card is valuable when devices are sealed or numerous."
+        },
+        {
+          "q": "A customer wants to change operator in the field with no tools. What helps?",
+          "o": [
+            "A larger SIM",
+            "A longer antenna",
+            "eSIM, or dual SIM slots"
+          ],
+          "a": 2,
+          "w": "eSIM profiles can be changed by software, and dual SIM slots allow switching between two subscriptions."
+        }
+      ]
+    },
+    {
+      "id": "mb-2-1",
+      "lvl": 2,
+      "title": "4G vs 5G",
+      "src": [
+        {
+          "l": "5G (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/5G"
+        },
+        {
+          "l": "3GPP 5G system overview",
+          "u": "https://www.3gpp.org/technologies/5g-system-overview"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Same idea, more capability",
+          "t": "5G is not just faster. It aims at three things: faster mobile broadband, very <b>reliable low-delay</b> connections for critical uses, and <b>massive IoT</b> with huge numbers of devices. Many customers will mostly notice speed and response time.",
+          "g": [
+            [
+              "Latency",
+              "The delay before data starts to flow. Lower is better for real-time use."
+            ]
+          ]
+        },
+        {
+          "h": "Low, mid and high band",
+          "t": "Low-band 5G reaches far and goes through walls but is slower. <b>Mid-band</b> is the compromise. High-band, <b>mmWave</b>, is very fast but reaches only short distances and is blocked easily by walls. Higher frequency: faster but shorter range.",
+          "g": [
+            [
+              "mmWave",
+              "Very high frequency 5G: huge speed, tiny range."
+            ],
+            [
+              "Band",
+              "A slice of radio frequencies used for mobile service."
+            ]
+          ]
+        },
+        {
+          "h": "Does the customer need 5G?",
+          "t": "Not always. If 4G coverage is good, 4G is cheaper and plenty for cameras, POS and backup. Choose <b>5G</b> when the site needs more speed, when the area has good 5G coverage, or when the project must last for years.",
+          "g": [
+            [
+              "POS",
+              "Point of sale: the till or card terminal in a shop."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which 5G type reaches farthest and enters buildings best?",
+          "o": [
+            "Low-band",
+            "mmWave",
+            "They are all equal"
+          ],
+          "a": 0,
+          "w": "Lower frequencies travel farther and pass through walls better, at lower speed."
+        },
+        {
+          "q": "What is the catch with mmWave?",
+          "o": [
+            "It is slower than 4G",
+            "Very short range and easily blocked",
+            "It does not need antennas"
+          ],
+          "a": 1,
+          "w": "High frequencies give big speed but lose strength quickly through obstacles."
+        },
+        {
+          "q": "A shop only needs a backup line for a card terminal. Which is the sensible starting point?",
+          "o": [
+            "A satellite link",
+            "mmWave only",
+            "A 4G router, if 4G coverage is good"
+          ],
+          "a": 2,
+          "w": "A card terminal uses little data, so 4G is usually enough and cheaper."
+        }
+      ]
+    },
+    {
+      "id": "mb-2-2",
+      "lvl": 2,
+      "title": "5G NSA vs SA",
+      "src": [
+        {
+          "l": "3GPP 5G system overview",
+          "u": "https://www.3gpp.org/technologies/5g-system-overview"
+        },
+        {
+          "l": "5G (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/5G"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Two ways to build 5G",
+          "t": "<b>Non-standalone (NSA)</b> adds 5G radio on top of the existing 4G core. <b>Standalone (SA)</b> uses a brand-new 5G core. Early rollouts were NSA, because operators could add 5G without replacing the core.",
+          "g": [
+            [
+              "Core network",
+              "The operator's central systems that handle subscribers, sessions and data."
+            ],
+            [
+              "NSA",
+              "Non-standalone: 5G radio relying on the 4G core."
+            ],
+            [
+              "SA",
+              "Standalone: 5G radio with its own 5G core."
+            ]
+          ]
+        },
+        {
+          "h": "What changes",
+          "t": "With NSA, users get 5G radio benefits such as lower delay, but only 4G services. Only <b>SA</b> supports the full set of 5G services, such as <b>network slicing</b>, separate virtual networks for different needs.",
+          "g": [
+            [
+              "Network slicing",
+              "Running several separate virtual networks over one physical network."
+            ]
+          ]
+        },
+        {
+          "h": "What to check",
+          "t": "A router must support the mode the operator uses. A 5G router that supports <b>NSA only</b> may miss out on SA features, and the other way round. Ask which operator, and whether it offers SA in the area.",
+          "g": [
+            [
+              "Operator",
+              "The mobile network company, such as Telia or Elisa."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does NSA 5G rely on?",
+          "o": [
+            "The existing 4G core",
+            "A satellite",
+            "Wi-Fi"
+          ],
+          "a": 0,
+          "w": "Non-standalone adds 5G radio to the 4G core network."
+        },
+        {
+          "q": "Which mode supports the full set of 5G services?",
+          "o": [
+            "NSA",
+            "SA",
+            "Neither"
+          ],
+          "a": 1,
+          "w": "Only standalone offers all 5G phase 1 services."
+        },
+        {
+          "q": "A customer wants network slicing. What do you check?",
+          "o": [
+            "The SIM size",
+            "The antenna colour",
+            "Whether the operator offers SA and the router supports it"
+          ],
+          "a": 2,
+          "w": "Slicing needs a standalone 5G network and compatible equipment."
+        }
+      ]
+    },
+    {
+      "id": "mb-2-3",
+      "lvl": 2,
+      "title": "Bands and carrier aggregation",
+      "src": [
+        {
+          "l": "Carrier aggregation (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Carrier_aggregation"
+        },
+        {
+          "l": "LTE (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/LTE_(telecommunication)"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Bands are lanes",
+          "t": "A <b>band</b> is a slice of radio spectrum. Operators use different bands in different countries, so a router must support the <b>bands your operator uses</b>. A device from one region may not work well in another.",
+          "g": [
+            [
+              "Spectrum",
+              "The range of radio frequencies available for use."
+            ]
+          ]
+        },
+        {
+          "h": "Combining lanes",
+          "t": "<b>Carrier aggregation</b> joins several frequency blocks into one connection for a user. More blocks means a higher peak speed and better use of the network. It can combine blocks in the same band or in different bands.",
+          "g": [
+            [
+              "Carrier aggregation (CA)",
+              "Combining several channels so one device gets more total speed."
+            ]
+          ]
+        },
+        {
+          "h": "In sales terms",
+          "t": "Carrier aggregation is a spec-sheet line that tells you the router <b>can</b> use it if the operator offers it. It is only a benefit where the network supports it. Do not promise speeds, but ask about coverage and the operator.",
+          "g": [
+            [
+              "Peak speed",
+              "The theoretical top speed in ideal conditions, rarely what you get all the time."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is carrier aggregation?",
+          "o": [
+            "Combining several frequency blocks for one connection",
+            "Sharing a SIM between two routers",
+            "Moving data to the cloud"
+          ],
+          "a": 0,
+          "w": "It joins component carriers so a device can get more speed."
+        },
+        {
+          "q": "Why must a router support the right bands?",
+          "o": [
+            "Bands decide the router colour",
+            "Operators use specific bands, and the router must be able to use them",
+            "Only for Wi-Fi"
+          ],
+          "a": 1,
+          "w": "If the router lacks the operator's bands, coverage or speed suffers."
+        },
+        {
+          "q": "A customer asks for a guaranteed speed because the router lists carrier aggregation. Reply?",
+          "o": [
+            "Guaranteed, yes",
+            "It slows things down",
+            "It can help where the operator supports it, but speeds vary"
+          ],
+          "a": 2,
+          "w": "Peak speeds are theoretical and depend on the network."
+        }
+      ]
+    },
+    {
+      "id": "mb-3-4",
+      "lvl": 3,
+      "title": "LTE categories",
+      "src": [
+        {
+          "l": "LTE (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/LTE_(telecommunication)"
+        },
+        {
+          "l": "Teltonika RUT901",
+          "u": "https://teltonika-networks.com/products/routers/RUT901"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A device class",
+          "t": "An <b>LTE category</b>, like Cat 4, tells you what a device's modem can do at most. Peak rates depend on the <b>user equipment category</b>. A higher category number generally means a higher possible speed.",
+          "g": [
+            [
+              "Modem",
+              "The part that talks to the mobile network."
+            ],
+            [
+              "Cat (category)",
+              "A class number describing a modem's capability, such as Cat 4."
+            ]
+          ]
+        },
+        {
+          "h": "What it does not say",
+          "t": "The category is a <b>ceiling</b>, not what the user will get. Real speed depends on signal, congestion and the operator. Two routers with the same category can behave differently in a weak signal area, where the <b>antennas</b> matter.",
+          "g": [
+            [
+              "Congestion",
+              "Too many users sharing the same cell, which slows everyone."
+            ]
+          ]
+        },
+        {
+          "h": "Picking one",
+          "t": "Cat 4 is a sensible choice for cameras, backup lines and IoT. For many users or heavy use, look at <b>higher categories</b> or 5G. Match the category to the workload, not to the biggest number on the box.",
+          "g": [
+            [
+              "Workload",
+              "What the customer will actually do with the connection."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does an LTE category describe?",
+          "o": [
+            "The maximum capability of the modem",
+            "The SIM size",
+            "The cable length"
+          ],
+          "a": 0,
+          "w": "It is a capability class that sets a ceiling on peak speed."
+        },
+        {
+          "q": "Does Cat 6 guarantee better speed than Cat 4 in every case?",
+          "o": [
+            "Yes, always",
+            "No, it is only a ceiling and real speed depends on signal and congestion",
+            "It makes the signal stronger"
+          ],
+          "a": 1,
+          "w": "Real-world speed depends on the network and signal."
+        },
+        {
+          "q": "A shop needs a backup line for a till and a camera. Which is likely enough?",
+          "o": [
+            "No router",
+            "The highest category possible",
+            "A modest category such as Cat 4"
+          ],
+          "a": 2,
+          "w": "Light workloads rarely need the highest category."
+        }
+      ]
+    },
+    {
+      "id": "mb-3-1",
+      "lvl": 3,
+      "title": "Why routers have external antennas",
+      "src": [
+        {
+          "l": "Antenna diversity (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Antenna_diversity"
+        },
+        {
+          "l": "Fixed wireless (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Fixed_wireless"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Signals bounce",
+          "t": "A mobile signal reaches a router by several bounced paths, which can cancel each other out. With <b>two or more antennas</b>, one antenna often still gets a good signal when another is in a dead spot. That is why many routers have two.",
+          "g": [
+            [
+              "Diversity",
+              "Using multiple antennas so the receiver picks the best signal."
+            ],
+            [
+              "MIMO",
+              "Multiple antennas at both ends to send and receive more data at once."
+            ]
+          ]
+        },
+        {
+          "h": "Why external",
+          "t": "External antennas can be <b>moved or replaced</b>. A better or outdoor antenna on a cable can sit near a window or on a roof, where the signal is stronger, while the router stays indoors. This often fixes a weak-signal site cheaply.",
+          "g": [
+            [
+              "Window",
+              "Glass and walls weaken the signal, so being near a window or outside helps."
+            ]
+          ]
+        },
+        {
+          "h": "Placement tips",
+          "t": "Place the router or antenna <b>high</b> and near a window, away from metal and thick walls. If the signal is weak inside a building, an <b>external antenna</b> or an outdoor unit is the first thing to suggest, before blaming the router.",
+          "g": [
+            [
+              "Signal strength",
+              "How strong the received signal is, shown in bars or in dBm."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Why do routers often have two antennas?",
+          "o": [
+            "If one antenna is in a dead spot, the other often still gets a signal",
+            "To look better",
+            "To use less power"
+          ],
+          "a": 0,
+          "w": "Different antennas see different interference, so diversity improves reliability."
+        },
+        {
+          "q": "What is a benefit of an external antenna on a cable?",
+          "o": [
+            "It makes the router faster by itself",
+            "It can be placed where the signal is strongest",
+            "It replaces the SIM"
+          ],
+          "a": 1,
+          "w": "It lets the antenna sit at a better spot than the router."
+        },
+        {
+          "q": "A cottage has weak signal indoors. First suggestion?",
+          "o": [
+            "Switch to a cable",
+            "Buy a bigger SIM",
+            "Move the antenna higher or outdoors, or use external antennas"
+          ],
+          "a": 2,
+          "w": "Better antenna placement often fixes weak signal cheaply."
+        }
+      ]
+    },
+    {
+      "id": "mb-3-2",
+      "lvl": 3,
+      "title": "Indoor vs outdoor units and FWA",
+      "src": [
+        {
+          "l": "Fixed wireless (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Fixed_wireless"
+        },
+        {
+          "l": "5G (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/5G"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Indoor units",
+          "t": "<b>Indoor</b> routers sit in a room, powered from a socket, and are the simple choice where signal is good. They are cheap and easy, but walls cost signal, so reception depends on the building.",
+          "g": [
+            [
+              "Indoor unit",
+              "A router designed to live inside, protected from weather."
+            ]
+          ]
+        },
+        {
+          "h": "Outdoor units",
+          "t": "<b>Outdoor</b> units mount on a wall or mast, often powered by <b>PoE</b>, and are built for weather. They stand where the signal is best and connect to the building by cable. They suit remote houses, cottages and farms.",
+          "g": [
+            [
+              "PoE",
+              "Power over Ethernet: power and data on one network cable."
+            ],
+            [
+              "Mast",
+              "A pole used to mount an antenna or unit high up."
+            ]
+          ]
+        },
+        {
+          "h": "Fixed wireless access",
+          "t": "<b>FWA</b> delivers home or business broadband over a radio link instead of a cable. Using 5G or 4G, it is especially useful in <b>rural areas</b> where laying cable is expensive. It is often the main line, not just a backup.",
+          "g": [
+            [
+              "FWA",
+              "Fixed wireless access: broadband over a radio link to a fixed location."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which unit type suits a remote farmhouse with weak signal?",
+          "o": [
+            "Outdoor unit on a wall or mast",
+            "Indoor router in the basement",
+            "A desk phone"
+          ],
+          "a": 0,
+          "w": "An outdoor unit can stand where the signal is best."
+        },
+        {
+          "q": "What does FWA stand for?",
+          "o": [
+            "Fast Wi-Fi adapter",
+            "Fixed wireless access",
+            "Firewall access"
+          ],
+          "a": 1,
+          "w": "FWA is broadband delivered by radio to a fixed location."
+        },
+        {
+          "q": "Why are outdoor units often powered by PoE?",
+          "o": [
+            "It removes the need for a SIM",
+            "PoE is faster than 5G",
+            "One cable brings both power and data to the mast"
+          ],
+          "a": 2,
+          "w": "PoE avoids a separate power cable out to the unit."
+        }
+      ]
+    },
+    {
+      "id": "mb-3-3",
+      "lvl": 3,
+      "title": "Failover and dual SIM",
+      "src": [
+        {
+          "l": "Teltonika RUT901",
+          "u": "https://teltonika-networks.com/products/routers/RUT901"
+        },
+        {
+          "l": "Fixed wireless (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Fixed_wireless"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Two ways to stay online",
+          "t": "<b>WAN failover</b> means a router switches to a backup connection when the main one fails. <b>Dual SIM</b> means two SIM slots, so it can switch to a second operator if the first has no signal.",
+          "g": [
+            [
+              "WAN",
+              "Wide area network: the connection to the internet outside your building."
+            ],
+            [
+              "Failover",
+              "Automatically switching to a backup when the main connection fails."
+            ]
+          ]
+        },
+        {
+          "h": "What triggers a switch",
+          "t": "Typical triggers on a dual SIM router include <b>weak signal</b>, no network, a failed data connection, a data limit reached, or roaming. The router checks and swaps to the other SIM or the other WAN.",
+          "g": [
+            [
+              "Roaming",
+              "Using another operator's network, often when abroad, usually at higher cost."
+            ]
+          ]
+        },
+        {
+          "h": "Backup for offices",
+          "t": "A common office setup: the <b>fixed line</b> is primary, <b>cellular</b> is the backup. When the line drops, the router moves to 4G or 5G in seconds. Shops, clinics and anything with card payments love this.",
+          "g": [
+            [
+              "Primary / backup",
+              "The main connection and the one that waits in reserve."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the point of dual SIM?",
+          "o": [
+            "Switch to a second operator if the first fails",
+            "Double the speed always",
+            "Share one SIM with two people"
+          ],
+          "a": 0,
+          "w": "Two SIMs give resilience across two networks."
+        },
+        {
+          "q": "Which can trigger a SIM switch?",
+          "o": [
+            "A new colour on the box",
+            "Weak signal or no network",
+            "The time of day only"
+          ],
+          "a": 1,
+          "w": "Routers can switch on conditions like weak signal, no network or a failed data connection."
+        },
+        {
+          "q": "A shop has a fibre line and needs card payments to keep working. Recommend?",
+          "o": [
+            "Nothing, fibre never fails",
+            "A second fibre line only",
+            "A cellular router as backup with failover"
+          ],
+          "a": 2,
+          "w": "Cellular backup keeps payments running when the main line drops."
+        },
+        {
+          "q": "What does WAN mean in failover?",
+          "o": [
+            "The connection to the outside internet",
+            "The office Wi-Fi",
+            "The power supply"
+          ],
+          "a": 0,
+          "w": "WAN is the connection out to the wider internet."
+        }
+      ]
+    },
+    {
+      "id": "mb-4-1",
+      "lvl": 4,
+      "title": "Use cases",
+      "src": [
+        {
+          "l": "Teltonika RUT901",
+          "u": "https://teltonika-networks.com/products/routers/RUT901"
+        },
+        {
+          "l": "Fixed wireless (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Fixed_wireless"
+        },
+        {
+          "l": "eSIM (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/ESIM"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Places with no cable",
+          "t": "<b>Cottages and remote buildings</b> often have no fixed line, so an outdoor 4G or 5G unit is the main internet. <b>Building sites</b> are temporary: a rugged cellular router can be set up in an hour and moved later.",
+          "g": [
+            [
+              "Rugged",
+              "Built for dust, vibration, weather and a wide temperature range."
+            ]
+          ]
+        },
+        {
+          "h": "On the move and the unattended",
+          "t": "<b>Vehicles</b> such as buses and service vans use cellular routers for passenger Wi-Fi and fleet data. <b>IoT</b> sites like meters, signs and cameras use small routers or eSIM devices that nobody visits often.",
+          "g": [
+            [
+              "Fleet",
+              "A group of vehicles managed together."
+            ]
+          ]
+        },
+        {
+          "h": "Backup for offices",
+          "t": "Offices, shops and clinics use cellular as a <b>safety net</b>. Remote management helps too: the vendor's platform lets a reseller monitor many routers from one place. Mention that it is often easier to <b>manage</b> than to install.",
+          "g": [
+            [
+              "Remote management",
+              "Monitoring and configuring devices over the internet instead of visiting each one."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which customer is a classic fit for cellular as the main internet?",
+          "o": [
+            "A city office with fibre only",
+            "A cottage with no fixed line",
+            "A data centre"
+          ],
+          "a": 1,
+          "w": "Where no cable exists, mobile broadband is the practical main line."
+        },
+        {
+          "q": "Why do vehicles use cellular routers?",
+          "o": [
+            "They have no antennas",
+            "They need only Ethernet",
+            "They move, so a cable is impossible"
+          ],
+          "a": 2,
+          "w": "Moving vehicles can only connect over mobile networks."
+        },
+        {
+          "q": "What is a benefit of remote management for a reseller?",
+          "o": [
+            "Watch and update many routers from one place",
+            "Faster mobile speeds",
+            "Free SIMs"
+          ],
+          "a": 0,
+          "w": "A central platform saves visits to each site."
+        }
+      ]
+    },
+    {
+      "id": "mb-4-2",
+      "lvl": 4,
+      "title": "What to ask a customer",
+      "src": [
+        {
+          "l": "5G (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/5G"
+        },
+        {
+          "l": "PoE (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+        },
+        {
+          "l": "SIM (Wikipedia)",
+          "u": "https://en.wikipedia.org/wiki/Subscriber_identity_module"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Coverage first",
+          "t": "Start with <b>coverage</b>: which operator works at the site, 4G or 5G, and what is the signal like indoors? Check the operator's map, then test with a phone on site. No signal means no router will help.",
+          "g": [
+            [
+              "Coverage",
+              "Whether the mobile network reaches the location with usable signal."
+            ]
+          ]
+        },
+        {
+          "h": "Data plan and power",
+          "t": "Ask how much <b>data</b> the use needs. Cameras and video use a lot, backup uses little. Check the plan type and any limits. Then <b>power</b>: is there a socket, PoE, or only 12 V in a vehicle or on a mast?",
+          "g": [
+            [
+              "Data plan",
+              "The subscription's monthly data allowance and price terms."
+            ]
+          ]
+        },
+        {
+          "h": "The rest",
+          "t": "Who manages it, how critical is uptime, is a <b>backup SIM</b> needed, and is the site fixed or moving? These questions point to indoor or outdoor, 4G or 5G, one SIM or two. Write the answers down before quoting.",
+          "g": [
+            [
+              "Uptime",
+              "The share of time a connection is working."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the first thing to establish?",
+          "o": [
+            "The router colour",
+            "Mobile coverage at the site",
+            "The SIM size"
+          ],
+          "a": 1,
+          "w": "Without usable signal, no router can deliver."
+        },
+        {
+          "q": "Why ask about data use?",
+          "o": [
+            "It decides the antenna length only",
+            "To pick the Wi-Fi name",
+            "Cameras and video need far more data than a till backup"
+          ],
+          "a": 2,
+          "w": "Plans and limits must fit the workload."
+        },
+        {
+          "q": "A customer wants a router on a mast far from any building. Which question matters most next?",
+          "o": [
+            "How will it be powered, for example PoE?",
+            "What mobile phone they have",
+            "What colour the mast is"
+          ],
+          "a": 0,
+          "w": "Power at remote spots decides what hardware fits."
+        }
+      ]
+    }
+  ]
+}
