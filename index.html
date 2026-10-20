@@ -128,7 +128,7 @@ function home(){
    `<div class="sub">Topics</div>`+
    DECKS.map(d=>{const n=d.lessons.length,k=d.lessons.filter(l=>S.done[l.id]).length;
      return `<button class="card deck" data-d="${d.id}"><div class="emoji">${d.emoji}</div><div style="flex:1"><b>${d.title}</b><small>${d.desc}</small><div class="bar"><i style="width:${k/n*100}%"></i></div></div></button>`}).join("")+
-   `<div class="note">Demo version. Real content will cite vendor sources.</div>`;
+   `<div class="note">Demo version, updated by Claude 20 Oct 2026. Real content will cite vendor sources.</div>`;
   $.querySelectorAll("[data-d]").forEach(b=>b.onclick=()=>deck(b.dataset.d));
   const q=document.getElementById("quick");if(q)q.onclick=()=>runQuiz(shuffle(seenQs).slice(0,6),"Quick quiz",home);
 }
