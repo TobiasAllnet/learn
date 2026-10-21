@@ -26,6 +26,9 @@ PRIVACY = re.compile(
 
 idx = json.load(open(os.path.join(D, "index.json"), encoding="utf-8"))
 groups = idx.get("groups", {})
+for gk, gv in groups.items():
+    if isinstance(gv, dict) and not str(gv.get("color", "#")).startswith("#"):
+        print("  ! group %s has a bad color" % gk)
 listed = [d["id"] for d in idx["decks"]]
 only = sys.argv[1:]
 ids = {}
@@ -53,6 +56,9 @@ for m in idx["decks"]:
             p("missing " + k)
     if not d.get("src"):
         p("no deck src")
+    for r in d.get("related", []):
+        if r not in listed:
+            p("related id '%s' is not a deck in index.json" % r)
     lv = {}
     for l in d.get("lessons", []):
         lid = l.get("id")

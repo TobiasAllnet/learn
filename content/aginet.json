@@ -852,5 +852,9 @@
         }
       ]
     }
+  ],
+  "related": [
+    "network-basics",
+    "wifi"
   ]
 }

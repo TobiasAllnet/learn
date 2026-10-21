@@ -1174,5 +1174,10 @@
         }
       ]
     }
+  ],
+  "related": [
+    "firewalls",
+    "it-vs-ot",
+    "network-basics"
   ]
 }

@@ -1045,5 +1045,8 @@
         }
       ]
     }
+  ],
+  "related": [
+    "switching-poe"
   ]
 }

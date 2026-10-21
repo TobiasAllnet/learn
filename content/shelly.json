@@ -1122,5 +1122,9 @@
         }
       ]
     }
+  ],
+  "related": [
+    "wifi",
+    "network-basics"
   ]
 }

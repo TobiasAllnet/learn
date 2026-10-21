@@ -1,4 +1,4 @@
-{"groups":{"brand": "Brands", "base": "Base topics", "life": "Life skills"},
+{"groups":{"brand": {"label": "Brands", "color": "#ee6a4f"}, "base": {"label": "IT basics", "color": "#5aa2ff"}, "ai": {"label": "AI", "color": "#43c59e"}, "life": {"label": "Life skills", "color": "#e2b04a"}},
 "decks":[
 {"id": "stormshield", "group": "brand", "focus": 5},
 {"id": "ubiquiti", "group": "brand", "focus": 5},
