@@ -23,6 +23,5 @@
 {"id": "zyxel", "group": "brand", "focus": 3},
 {"id": "teltonika", "group": "brand", "focus": 3},
 {"id": "cudy", "group": "brand", "focus": 3},
-{"id": "aqara", "group": "brand", "focus": 3},
-{"id": "webmercs-netset", "group": "brand", "focus": 1}
+{"id": "aqara", "group": "brand", "focus": 3}
 ]}
