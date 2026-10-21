@@ -53,16 +53,17 @@ def make(size, text):
     box = [(.5 - .155)*s, (.385 - .155)*s, (.5 + .155)*s, (.385 + .155)*s]
     d.arc(box, start=195, end=255, fill=(150, 152, 165, 255), width=int(.014*s))
     # watermark, bottom right
-    font = ImageFont.truetype(FONT, int(.085*s))
-    layer = Image.new('RGBA', (s, s), (0, 0, 0, 0))
-    ld = ImageDraw.Draw(layer)
-    tw = ld.textlength(text, font=font)
-    ld.text((.93*s - tw, .965*s), text, font=font, fill=(255, 255, 255, 170), anchor='ls')
-    img = Image.alpha_composite(img.convert('RGBA'), layer).convert('RGB')
+    if text:
+        font = ImageFont.truetype(FONT, int(.085*s))
+        layer = Image.new('RGBA', (s, s), (0, 0, 0, 0))
+        ld = ImageDraw.Draw(layer)
+        tw = ld.textlength(text, font=font)
+        ld.text((.93*s - tw, .965*s), text, font=font, fill=(255, 255, 255, 170), anchor='ls')
+        img = Image.alpha_composite(img.convert('RGBA'), layer).convert('RGB')
     return img.resize((size, size), Image.LANCZOS)
 
 out = sys.argv[1] if len(sys.argv) > 1 else '.'
-text = sys.argv[2] if len(sys.argv) > 2 else 'Tobias'
+text = sys.argv[2] if len(sys.argv) > 2 else ''  # optional watermark, none by default
 os.makedirs(out, exist_ok=True)
 for n in (180, 192, 512):
     make(n, text).save(os.path.join(out, 'icon-%d.png' % n))
