@@ -1,754 +1,753 @@
 {
- "title": "Firewalls",
- "emoji": "🔥",
- "desc": "What firewalls do, NGFW, UTM, VPN and SD-WAN",
- "src": [
-  {
-   "l": "Wikipedia: Firewall (computing)",
-   "u": "https://en.wikipedia.org/wiki/Firewall_(computing)"
-  },
-  {
-   "l": "Cisco: What is a firewall?",
-   "u": "https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html"
-  },
-  {
-   "l": "Fortinet: Unified threat management",
-   "u": "https://www.fortinet.com/resources/cyberglossary/unified-threat-management"
-  }
- ],
- "lessons": [
-  {
-   "id": "fw-1-1",
-   "lvl": 1,
-   "title": "What a firewall does",
-   "src": [
+  "title": "Firewalls",
+  "desc": "What firewalls do, NGFW, UTM, VPN and SD-WAN",
+  "src": [
     {
-     "l": "Wikipedia: Firewall (computing)",
-     "u": "https://en.wikipedia.org/wiki/Firewall_(computing)"
-    }
-   ],
-   "pages": [
-    {
-     "h": "A guard at the door",
-     "t": "A <b>firewall</b> watches the traffic going in and out of a network and decides what is allowed. It usually sits between a trusted network (the office) and an untrusted one (the internet). Think of a guard checking every visitor against a list.",
-     "g": [
-      [
-       "Firewall",
-       "A security device or software that allows or blocks network traffic by rules."
-      ]
-     ]
+      "l": "Wikipedia: Firewall (computing)",
+      "u": "https://en.wikipedia.org/wiki/Firewall_(computing)"
     },
     {
-     "h": "Rules decide",
-     "t": "Each <b>rule</b> says what to do with traffic matching a source, destination, port, protocol or application: allow, deny or inspect more. The first firewalls simply checked addresses and ports in each packet.",
-     "g": [
-      [
-       "Packet",
-       "A small chunk of data travelling over a network."
+      "l": "Cisco: What is a firewall?",
+      "u": "https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html"
+    },
+    {
+      "l": "Fortinet: Unified threat management",
+      "u": "https://www.fortinet.com/resources/cyberglossary/unified-threat-management"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "fw-1-1",
+      "lvl": 1,
+      "title": "What a firewall does",
+      "src": [
+        {
+          "l": "Wikipedia: Firewall (computing)",
+          "u": "https://en.wikipedia.org/wiki/Firewall_(computing)"
+        }
       ],
-      [
-       "Port",
-       "A numbered door for a service, like 443 for secure web."
-      ]
-     ]
-    },
-    {
-     "h": "Where you find them",
-     "t": "Firewalls can be <b>network-based</b> (a box at the edge) or <b>host-based</b> (software on a PC). Customers of every size usually want one at the internet connection.",
-     "g": [
-      [
-       "Host-based",
-       "Firewall software running on one computer."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What does a firewall do?",
-     "o": [
-      "Boosts Wi-Fi signal",
-      "Allows or blocks traffic by rules",
-      "Gives out IP addresses"
-     ],
-     "a": 1,
-     "w": "It monitors and controls incoming and outgoing traffic based on security rules."
-    },
-    {
-     "q": "Where is a network firewall normally placed?",
-     "o": [
-      "Inside every cable",
-      "Only in the cloud",
-      "Between trusted and untrusted networks"
-     ],
-     "a": 2,
-     "w": "It sits between, for example, the office LAN and the internet."
-    },
-    {
-     "q": "Which is a host-based firewall?",
-     "o": [
-      "Software on a single laptop",
-      "A box at the office edge",
-      "A fibre cable"
-     ],
-     "a": 0,
-     "w": "Host-based firewalls run on the computer they protect."
-    }
-   ]
-  },
-  {
-   "id": "fw-1-2",
-   "lvl": 1,
-   "title": "Zones: LAN, WAN, DMZ",
-   "src": [
-    {
-     "l": "Wikipedia: Firewall (computing)",
-     "u": "https://en.wikipedia.org/wiki/Firewall_(computing)"
-    },
-    {
-     "l": "Wikipedia: DMZ (computing)",
-     "u": "https://en.wikipedia.org/wiki/Demilitarized_zone_(computing)"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Splitting into zones",
-     "t": "Firewalls group networks into <b>zones</b> with different trust levels: <b>LAN</b> (inside), <b>WAN</b> (outside, the internet), sometimes Wi-Fi and <b>DMZ</b>. Rules then say which zone may talk to which.",
-     "g": [
-      [
-       "Zone",
-       "A group of network segments treated with the same trust level."
+      "pages": [
+        {
+          "h": "A guard at the door",
+          "t": "A <b>firewall</b> watches the traffic going in and out of a network and decides what is allowed. It usually sits between a trusted network (the office) and an untrusted one (the internet). Think of a guard checking every visitor against a list.",
+          "g": [
+            [
+              "Firewall",
+              "A security device or software that allows or blocks network traffic by rules."
+            ]
+          ]
+        },
+        {
+          "h": "Rules decide",
+          "t": "Each <b>rule</b> says what to do with traffic matching a source, destination, port, protocol or application: allow, deny or inspect more. The first firewalls simply checked addresses and ports in each packet.",
+          "g": [
+            [
+              "Packet",
+              "A small chunk of data travelling over a network."
+            ],
+            [
+              "Port",
+              "A numbered door for a service, like 443 for secure web."
+            ]
+          ]
+        },
+        {
+          "h": "Where you find them",
+          "t": "Firewalls can be <b>network-based</b> (a box at the edge) or <b>host-based</b> (software on a PC). Customers of every size usually want one at the internet connection.",
+          "g": [
+            [
+              "Host-based",
+              "Firewall software running on one computer."
+            ]
+          ]
+        }
       ],
-      [
-       "WAN (in firewalls)",
-       "The outside, usually the internet side."
+      "quiz": [
+        {
+          "q": "What does a firewall do?",
+          "o": [
+            "Boosts Wi-Fi signal",
+            "Allows or blocks traffic by rules",
+            "Gives out IP addresses"
+          ],
+          "a": 1,
+          "w": "It monitors and controls incoming and outgoing traffic based on security rules."
+        },
+        {
+          "q": "Where is a network firewall normally placed?",
+          "o": [
+            "Inside every cable",
+            "Only in the cloud",
+            "Between trusted and untrusted networks"
+          ],
+          "a": 2,
+          "w": "It sits between, for example, the office LAN and the internet."
+        },
+        {
+          "q": "Which is a host-based firewall?",
+          "o": [
+            "Software on a single laptop",
+            "A box at the office edge",
+            "A fibre cable"
+          ],
+          "a": 0,
+          "w": "Host-based firewalls run on the computer they protect."
+        }
       ]
-     ]
     },
     {
-     "h": "A typical default",
-     "t": "A common default: traffic from <b>LAN to WAN</b> is allowed, but traffic from <b>WAN to LAN</b> is dropped. Staff can browse out, strangers cannot walk in. Extra rules open specific, deliberate exceptions.",
-     "g": []
-    },
-    {
-     "h": "The DMZ",
-     "t": "A <b>DMZ</b> is a middle zone for services that the outside needs to reach, like a web or mail server. If one of them is hacked, the damage is kept away from the internal network.",
-     "g": [
-      [
-       "DMZ",
-       "Demilitarized zone: a buffer network for public-facing servers."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What is the typical default between zones?",
-     "o": [
-      "WAN to LAN allowed, LAN to WAN dropped",
-      "Everything allowed",
-      "LAN to WAN allowed, WAN to LAN dropped"
-     ],
-     "a": 2,
-     "w": "Inside users can go out; unsolicited traffic from outside is dropped."
-    },
-    {
-     "q": "A customer hosts a public web server. Where should it go?",
-     "o": [
-      "In the DMZ",
-      "Directly on the WAN with no firewall",
-      "On a staff laptop"
-     ],
-     "a": 0,
-     "w": "A DMZ exposes the needed services while shielding the internal network.",
-     "g": [
-      [
-       "DMZ",
-       "Buffer zone for public servers."
-      ]
-     ]
-    },
-    {
-     "q": "What is the point of zones?",
-     "o": [
-      "Faster downloads",
-      "Different trust levels with rules between them",
-      "More Wi-Fi channels"
-     ],
-     "a": 1,
-     "w": "Zones let the firewall apply rules based on trust between areas."
-    }
-   ]
-  },
-  {
-   "id": "fw-2-1",
-   "lvl": 2,
-   "title": "Stateful vs next-generation",
-   "src": [
-    {
-     "l": "Cisco: What is a firewall?",
-     "u": "https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html"
-    },
-    {
-     "l": "Wikipedia: Firewall (computing)",
-     "u": "https://en.wikipedia.org/wiki/Firewall_(computing)"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Stateful: remembers the conversation",
-     "t": "A <b>stateful</b> firewall tracks each connection from start to finish and uses context from earlier packets. It knows a reply belongs to a request that went out. It decides on address, port and protocol.",
-     "g": [
-      [
-       "Stateful inspection",
-       "Tracking whole connections instead of judging each packet alone."
-      ]
-     ]
-    },
-    {
-     "h": "NGFW: knows the application",
-     "t": "A <b>next-generation firewall</b> adds <b>application awareness</b>, intrusion prevention, web filtering by reputation and threat intelligence. It can see that traffic on port 443 is a video call or a file-sharing app, not just \"web\".",
-     "g": [
-      [
-       "NGFW",
-       "Next-Generation Firewall: a firewall that understands applications and users and adds threat protection."
-      ]
-     ]
-    },
-    {
-     "h": "Users, not just addresses",
-     "t": "NGFW rules can target <b>users and groups</b> by linking to a directory service, plus inspect encrypted (TLS) traffic. So the rule can say: marketing may use this app, guests may not. That is easier to manage than IP lists.",
-     "g": [
-      [
-       "TLS inspection",
-       "Opening encrypted traffic to check it for threats."
+      "id": "fw-1-2",
+      "lvl": 1,
+      "title": "Zones: LAN, WAN, DMZ",
+      "src": [
+        {
+          "l": "Wikipedia: Firewall (computing)",
+          "u": "https://en.wikipedia.org/wiki/Firewall_(computing)"
+        },
+        {
+          "l": "Wikipedia: DMZ (computing)",
+          "u": "https://en.wikipedia.org/wiki/Demilitarized_zone_(computing)"
+        }
       ],
-      [
-       "Directory service",
-       "A central list of users, such as Active Directory."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What does a stateful firewall track?",
-     "o": [
-      "Wi-Fi signal",
-      "Whole connections from start to end",
-      "Cable length"
-     ],
-     "a": 1,
-     "w": "It uses context from earlier packets in the same connection."
-    },
-    {
-     "q": "Which feature separates an NGFW from a simple stateful firewall?",
-     "o": [
-      "It has more ports",
-      "It uses cables",
-      "Application awareness and intrusion prevention"
-     ],
-     "a": 2,
-     "w": "NGFWs go beyond stateful inspection with app awareness, IPS and more.",
-     "g": [
-      [
-       "IPS",
-       "Intrusion Prevention System, which blocks detected attacks."
-      ]
-     ]
-    },
-    {
-     "q": "A customer wants marketing to use a social app while others cannot. What do you point to?",
-     "o": [
-      "NGFW user and application rules",
-      "Port forwarding",
-      "A bigger switch"
-     ],
-     "a": 0,
-     "w": "Next-gen rules can target applications and user groups."
-    }
-   ]
-  },
-  {
-   "id": "fw-2-2",
-   "lvl": 2,
-   "title": "UTM and threat protection",
-   "src": [
-    {
-     "l": "Fortinet: Unified threat management",
-     "u": "https://www.fortinet.com/resources/cyberglossary/unified-threat-management"
-    },
-    {
-     "l": "Wikipedia: Intrusion detection system",
-     "u": "https://en.wikipedia.org/wiki/Intrusion_detection_system"
-    }
-   ],
-   "pages": [
-    {
-     "h": "UTM: many tools in one box",
-     "t": "<b>UTM</b> bundles firewall, intrusion prevention, antivirus, <b>VPN</b> and web filtering into a single device with one console. That means fewer boxes and one place to manage them, which often suits teams with little IT staff.",
-     "g": [
-      [
-       "UTM",
-       "Unified Threat Management: several security functions in one device."
+      "pages": [
+        {
+          "h": "Splitting into zones",
+          "t": "Firewalls group networks into <b>zones</b> with different trust levels: <b>LAN</b> (inside), <b>WAN</b> (outside, the internet), sometimes Wi-Fi and <b>DMZ</b>. Rules then say which zone may talk to which.",
+          "g": [
+            [
+              "Zone",
+              "A group of network segments treated with the same trust level."
+            ],
+            [
+              "WAN (in firewalls)",
+              "The outside, usually the internet side."
+            ]
+          ]
+        },
+        {
+          "h": "A typical default",
+          "t": "A common default: traffic from <b>LAN to WAN</b> is allowed, but traffic from <b>WAN to LAN</b> is dropped. Staff can browse out, strangers cannot walk in. Extra rules open specific, deliberate exceptions.",
+          "g": []
+        },
+        {
+          "h": "The DMZ",
+          "t": "A <b>DMZ</b> is a middle zone for services that the outside needs to reach, like a web or mail server. If one of them is hacked, the damage is kept away from the internal network.",
+          "g": [
+            [
+              "DMZ",
+              "Demilitarized zone: a buffer network for public-facing servers."
+            ]
+          ]
+        }
       ],
-      [
-       "Web filtering",
-       "Blocking access to chosen websites or categories."
+      "quiz": [
+        {
+          "q": "What is the typical default between zones?",
+          "o": [
+            "WAN to LAN allowed, LAN to WAN dropped",
+            "Everything allowed",
+            "LAN to WAN allowed, WAN to LAN dropped"
+          ],
+          "a": 2,
+          "w": "Inside users can go out; unsolicited traffic from outside is dropped."
+        },
+        {
+          "q": "A customer hosts a public web server. Where should it go?",
+          "o": [
+            "In the DMZ",
+            "Directly on the WAN with no firewall",
+            "On a staff laptop"
+          ],
+          "a": 0,
+          "w": "A DMZ exposes the needed services while shielding the internal network.",
+          "g": [
+            [
+              "DMZ",
+              "Buffer zone for public servers."
+            ]
+          ]
+        },
+        {
+          "q": "What is the point of zones?",
+          "o": [
+            "Faster downloads",
+            "Different trust levels with rules between them",
+            "More Wi-Fi channels"
+          ],
+          "a": 1,
+          "w": "Zones let the firewall apply rules based on trust between areas."
+        }
       ]
-     ]
     },
     {
-     "h": "IDS vs IPS",
-     "t": "<b>IDS</b> only detects and reports. <b>IPS</b> sits in the traffic path and can <b>block</b> attacks. Signature-based checks catch known attacks; anomaly-based ones flag unusual behaviour but can raise false alarms.",
-     "g": [
-      [
-       "IDS",
-       "Intrusion Detection System: raises alerts."
+      "id": "fw-2-1",
+      "lvl": 2,
+      "title": "Stateful vs next-generation",
+      "src": [
+        {
+          "l": "Cisco: What is a firewall?",
+          "u": "https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html"
+        },
+        {
+          "l": "Wikipedia: Firewall (computing)",
+          "u": "https://en.wikipedia.org/wiki/Firewall_(computing)"
+        }
       ],
-      [
-       "Signature",
-       "A known attack pattern."
-      ]
-     ]
-    },
-    {
-     "h": "Sandboxing",
-     "t": "A <b>sandbox</b> runs suspicious files in a safe, isolated space to watch what they do before they reach users. It helps with new threats that no signature knows yet. These features are often licensed as subscriptions.",
-     "g": [
-      [
-       "Sandboxing",
-       "Testing suspicious files in an isolated environment."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What is the difference between IDS and IPS?",
-     "o": [
-      "IDS can block, IPS only reports",
-      "They are the same",
-      "IPS can block, IDS only reports"
-     ],
-     "a": 2,
-     "w": "An IPS sits in line and actively blocks detected intrusions."
-    },
-    {
-     "q": "What does a sandbox do?",
-     "o": [
-      "Runs suspicious files in isolation to see what they do",
-      "Gives out IP addresses",
-      "Extends fibre range"
-     ],
-     "a": 0,
-     "w": "Sandboxing catches novel threats by observing behaviour in a safe space."
-    },
-    {
-     "q": "A small firm has one IT person and wants one box and one console. What fits?",
-     "o": [
-      "Separate boxes for every function",
-      "A UTM",
-      "A hub"
-     ],
-     "a": 1,
-     "w": "UTM combines functions in one device with one console, which usually suits small teams."
-    }
-   ]
-  },
-  {
-   "id": "fw-3-1",
-   "lvl": 3,
-   "title": "VPN: site-to-site and remote access",
-   "src": [
-    {
-     "l": "Wikipedia: Virtual private network",
-     "u": "https://en.wikipedia.org/wiki/Virtual_private_network"
-    }
-   ],
-   "pages": [
-    {
-     "h": "A private tunnel",
-     "t": "A <b>VPN</b> wraps traffic in an encrypted <b>tunnel</b> across a public network like the internet. The traffic stays private, as if both ends were on the same LAN. Firewalls very often include VPN functions.",
-     "g": [
-      [
-       "VPN",
-       "Virtual Private Network: an encrypted tunnel over the internet."
+      "pages": [
+        {
+          "h": "Stateful: remembers the conversation",
+          "t": "A <b>stateful</b> firewall tracks each connection from start to finish and uses context from earlier packets. It knows a reply belongs to a request that went out. It decides on address, port and protocol.",
+          "g": [
+            [
+              "Stateful inspection",
+              "Tracking whole connections instead of judging each packet alone."
+            ]
+          ]
+        },
+        {
+          "h": "NGFW: knows the application",
+          "t": "A <b>next-generation firewall</b> adds <b>application awareness</b>, intrusion prevention, web filtering by reputation and threat intelligence. It can see that traffic on port 443 is a video call or a file-sharing app, not just \"web\".",
+          "g": [
+            [
+              "NGFW",
+              "Next-Generation Firewall: a firewall that understands applications and users and adds threat protection."
+            ]
+          ]
+        },
+        {
+          "h": "Users, not just addresses",
+          "t": "NGFW rules can target <b>users and groups</b> by linking to a directory service, plus inspect encrypted (TLS) traffic. So the rule can say: marketing may use this app, guests may not. That is easier to manage than IP lists.",
+          "g": [
+            [
+              "TLS inspection",
+              "Opening encrypted traffic to check it for threats."
+            ],
+            [
+              "Directory service",
+              "A central list of users, such as Active Directory."
+            ]
+          ]
+        }
       ],
-      [
-       "Tunnel",
-       "A protected path through a network."
+      "quiz": [
+        {
+          "q": "What does a stateful firewall track?",
+          "o": [
+            "Wi-Fi signal",
+            "Whole connections from start to end",
+            "Cable length"
+          ],
+          "a": 1,
+          "w": "It uses context from earlier packets in the same connection."
+        },
+        {
+          "q": "Which feature separates an NGFW from a simple stateful firewall?",
+          "o": [
+            "It has more ports",
+            "It uses cables",
+            "Application awareness and intrusion prevention"
+          ],
+          "a": 2,
+          "w": "NGFWs go beyond stateful inspection with app awareness, IPS and more.",
+          "g": [
+            [
+              "IPS",
+              "Intrusion Prevention System, which blocks detected attacks."
+            ]
+          ]
+        },
+        {
+          "q": "A customer wants marketing to use a social app while others cannot. What do you point to?",
+          "o": [
+            "NGFW user and application rules",
+            "Port forwarding",
+            "A bigger switch"
+          ],
+          "a": 0,
+          "w": "Next-gen rules can target applications and user groups."
+        }
       ]
-     ]
     },
     {
-     "h": "Site-to-site",
-     "t": "<b>Site-to-site</b> VPNs link whole networks: two gateways create the tunnel, and everyone at both sites reaches the other side. Typical case: a branch office connecting to head office or a data centre.",
-     "g": [
-      [
-       "Gateway",
-       "The device at the edge of a site that makes the tunnel."
-      ]
-     ]
-    },
-    {
-     "h": "Remote access",
-     "t": "<b>Remote access</b> VPNs let individual users connect to the company network from home or on the road. Each laptop opens its own tunnel, usually through client software. That is the home office case.",
-     "g": [
-      [
-       "Client",
-       "Software on the user's own device."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "A company wants its branch to reach head office files. Which VPN?",
-     "o": [
-      "Remote access",
-      "Site-to-site",
-      "Guest VPN"
-     ],
-     "a": 1,
-     "w": "Site-to-site links whole networks through gateways at each location."
-    },
-    {
-     "q": "An employee works from home and needs the file server. Which VPN?",
-     "o": [
-      "Site-to-site",
-      "None, just Wi-Fi",
-      "Remote access"
-     ],
-     "a": 2,
-     "w": "Remote access gives individual devices their own tunnel into the network."
-    },
-    {
-     "q": "What does a VPN tunnel do?",
-     "o": [
-      "Encrypts traffic over a public network",
-      "Speeds up internet",
-      "Gives IP addresses"
-     ],
-     "a": 0,
-     "w": "It protects traffic crossing the internet by encrypting it."
-    }
-   ]
-  },
-  {
-   "id": "fw-3-2",
-   "lvl": 3,
-   "title": "IPsec vs SSL VPN",
-   "src": [
-    {
-     "l": "Wikipedia: Virtual private network",
-     "u": "https://en.wikipedia.org/wiki/Virtual_private_network"
-    },
-    {
-     "l": "NordLayer: SSL VPN vs IPsec",
-     "u": "https://nordlayer.com/learn/vpn/ssl-vpn-vs-ipsec/"
-    }
-   ],
-   "pages": [
-    {
-     "h": "IPsec",
-     "t": "<b>IPsec</b> is an IETF standards-based suite that encrypts IP packets. Tunnels are set up using <b>IKE</b>. It is the classic choice for site-to-site links, and the newer IKEv2 copes well when a phone changes network.",
-     "g": [
-      [
-       "IPsec",
-       "A standard way to encrypt and wrap IP traffic."
+      "id": "fw-2-2",
+      "lvl": 2,
+      "title": "UTM and threat protection",
+      "src": [
+        {
+          "l": "Fortinet: Unified threat management",
+          "u": "https://www.fortinet.com/resources/cyberglossary/unified-threat-management"
+        },
+        {
+          "l": "Wikipedia: Intrusion detection system",
+          "u": "https://en.wikipedia.org/wiki/Intrusion_detection_system"
+        }
       ],
-      [
-       "IKE",
-       "The protocol that sets up the IPsec tunnel."
-      ]
-     ]
-    },
-    {
-     "h": "SSL/TLS",
-     "t": "<b>SSL/TLS</b> VPNs run over the same protocol as secure websites. Because it looks like ordinary web traffic, it tends to get through networks that only allow web traffic. Many remote-access setups use them.",
-     "g": [
-      [
-       "TLS/SSL",
-       "The encryption used by HTTPS websites."
-      ]
-     ]
-    },
-    {
-     "h": "What to tell a customer",
-     "t": "Both are secure when set up well. Rule of thumb: <b>IPsec</b> for linking sites, <b>SSL</b> where users sit behind restrictive hotel or guest networks. Always ask which the firewalls at both ends support.",
-     "g": []
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Why does an SSL VPN often work on strict guest networks?",
-     "o": [
-      "It needs no encryption",
-      "It uses fibre",
-      "It uses the same protocol as HTTPS"
-     ],
-     "a": 2,
-     "w": "Because it looks like normal web traffic, it passes where web is allowed."
-    },
-    {
-     "q": "Which is the classic standards-based suite for site-to-site tunnels?",
-     "o": [
-      "IPsec",
-      "DHCP",
-      "SSID"
-     ],
-     "a": 0,
-     "w": "IPsec is an IETF suite that encrypts IP packets."
-    },
-    {
-     "q": "What should you check when linking two sites with VPN?",
-     "o": [
-      "The colour of the boxes",
-      "That both firewalls support the chosen VPN type",
-      "The Wi-Fi band"
-     ],
-     "a": 1,
-     "w": "Both ends must speak the same VPN method."
-    }
-   ]
-  },
-  {
-   "id": "fw-3-3",
-   "lvl": 3,
-   "title": "SD-WAN in plain words",
-   "src": [
-    {
-     "l": "Wikipedia: SD-WAN",
-     "u": "https://en.wikipedia.org/wiki/SD-WAN"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Smarter links between sites",
-     "t": "<b>SD-WAN</b> manages a WAN with software. It builds encrypted tunnels between sites, often over ordinary internet lines, and steers each application over the best available link.",
-     "g": [
-      [
-       "SD-WAN",
-       "Software-Defined WAN: software that manages and optimises links between sites."
-      ]
-     ]
-    },
-    {
-     "h": "Many links, one policy",
-     "t": "A site can use fibre, broadband and <b>4G/5G</b> together. SD-WAN spots outages and <b>fails over</b> to a working link. Important apps like voice get priority. The caveat: the internet gives no guaranteed performance.",
-     "g": [
-      [
-       "Failover",
-       "Automatic switch to a backup link when the main one fails."
+      "pages": [
+        {
+          "h": "UTM: many tools in one box",
+          "t": "<b>UTM</b> bundles firewall, intrusion prevention, antivirus, <b>VPN</b> and web filtering into a single device with one console. That means fewer boxes and one place to manage them, which often suits teams with little IT staff.",
+          "g": [
+            [
+              "UTM",
+              "Unified Threat Management: several security functions in one device."
+            ],
+            [
+              "Web filtering",
+              "Blocking access to chosen websites or categories."
+            ]
+          ]
+        },
+        {
+          "h": "IDS vs IPS",
+          "t": "<b>IDS</b> only detects and reports. <b>IPS</b> sits in the traffic path and can <b>block</b> attacks. Signature-based checks catch known attacks; anomaly-based ones flag unusual behaviour but can raise false alarms.",
+          "g": [
+            [
+              "IDS",
+              "Intrusion Detection System: raises alerts."
+            ],
+            [
+              "Signature",
+              "A known attack pattern."
+            ]
+          ]
+        },
+        {
+          "h": "Sandboxing",
+          "t": "A <b>sandbox</b> runs suspicious files in a safe, isolated space to watch what they do before they reach users. It helps with new threats that no signature knows yet. These features are often licensed as subscriptions.",
+          "g": [
+            [
+              "Sandboxing",
+              "Testing suspicious files in an isolated environment."
+            ]
+          ]
+        }
       ],
-      [
-       "MPLS",
-       "A carrier-managed private WAN service."
+      "quiz": [
+        {
+          "q": "What is the difference between IDS and IPS?",
+          "o": [
+            "IDS can block, IPS only reports",
+            "They are the same",
+            "IPS can block, IDS only reports"
+          ],
+          "a": 2,
+          "w": "An IPS sits in line and actively blocks detected intrusions."
+        },
+        {
+          "q": "What does a sandbox do?",
+          "o": [
+            "Runs suspicious files in isolation to see what they do",
+            "Gives out IP addresses",
+            "Extends fibre range"
+          ],
+          "a": 0,
+          "w": "Sandboxing catches novel threats by observing behaviour in a safe space."
+        },
+        {
+          "q": "A small firm has one IT person and wants one box and one console. What fits?",
+          "o": [
+            "Separate boxes for every function",
+            "A UTM",
+            "A hub"
+          ],
+          "a": 1,
+          "w": "UTM combines functions in one device with one console, which usually suits small teams."
+        }
       ]
-     ]
     },
     {
-     "h": "Central management",
-     "t": "Settings are pushed from <b>one central place</b>, cloud or on-site, to every branch. Chains with many shops or offices like this, and some firewalls include SD-WAN features. Not every small customer needs it.",
-     "g": []
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What does SD-WAN do?",
-     "o": [
-      "Makes cables longer",
-      "Manages several links between sites and picks the best path per application",
-      "Assigns IP addresses"
-     ],
-     "a": 1,
-     "w": "It uses software to steer traffic over the best link and fail over on outages.",
-     "g": [
-      [
-       "SD-WAN",
-       "Software-Defined WAN."
-      ]
-     ]
-    },
-    {
-     "q": "A retail chain has 40 shops, each with fibre and a 4G backup. Which concept fits?",
-     "o": [
-      "DMZ",
-      "PoE",
-      "SD-WAN"
-     ],
-     "a": 2,
-     "w": "Many sites with several links managed centrally is the SD-WAN use case."
-    },
-    {
-     "q": "What is a caveat of SD-WAN over internet links?",
-     "o": [
-      "There are no guaranteed performance levels",
-      "It cannot use 4G",
-      "It needs no firewall"
-     ],
-     "a": 0,
-     "w": "Internet traffic has no end-to-end performance guarantee like carrier private lines."
-    }
-   ]
-  },
-  {
-   "id": "fw-4-1",
-   "lvl": 4,
-   "title": "Hardware, virtual, cloud and sizing",
-   "src": [
-    {
-     "l": "Cisco: What is a firewall?",
-     "u": "https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html"
-    },
-    {
-     "l": "Tufin: firewall throughput",
-     "u": "https://www.tufin.com/blog/understanding-firewall-throughput-analysis"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Forms of firewall",
-     "t": "<b>Hardware</b> appliances are the usual box at the office. <b>Virtual</b> firewalls run on hypervisors on-site or in public clouds. <b>Cloud-native</b> ones are built to secure cloud workloads at scale. Pick by where the protected systems live.",
-     "g": [
-      [
-       "Appliance",
-       "A dedicated hardware device."
+      "id": "fw-3-1",
+      "lvl": 3,
+      "title": "VPN: site-to-site and remote access",
+      "src": [
+        {
+          "l": "Wikipedia: Virtual private network",
+          "u": "https://en.wikipedia.org/wiki/Virtual_private_network"
+        }
       ],
-      [
-       "Hypervisor",
-       "Software that runs virtual machines, such as VMware or Hyper-V."
+      "pages": [
+        {
+          "h": "A private tunnel",
+          "t": "A <b>VPN</b> wraps traffic in an encrypted <b>tunnel</b> across a public network like the internet. The traffic stays private, as if both ends were on the same LAN. Firewalls very often include VPN functions.",
+          "g": [
+            [
+              "VPN",
+              "Virtual Private Network: an encrypted tunnel over the internet."
+            ],
+            [
+              "Tunnel",
+              "A protected path through a network."
+            ]
+          ]
+        },
+        {
+          "h": "Site-to-site",
+          "t": "<b>Site-to-site</b> VPNs link whole networks: two gateways create the tunnel, and everyone at both sites reaches the other side. Typical case: a branch office connecting to head office or a data centre.",
+          "g": [
+            [
+              "Gateway",
+              "The device at the edge of a site that makes the tunnel."
+            ]
+          ]
+        },
+        {
+          "h": "Remote access",
+          "t": "<b>Remote access</b> VPNs let individual users connect to the company network from home or on the road. Each laptop opens its own tunnel, usually through client software. That is the home office case.",
+          "g": [
+            [
+              "Client",
+              "Software on the user's own device."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A company wants its branch to reach head office files. Which VPN?",
+          "o": [
+            "Remote access",
+            "Site-to-site",
+            "Guest VPN"
+          ],
+          "a": 1,
+          "w": "Site-to-site links whole networks through gateways at each location."
+        },
+        {
+          "q": "An employee works from home and needs the file server. Which VPN?",
+          "o": [
+            "Site-to-site",
+            "None, just Wi-Fi",
+            "Remote access"
+          ],
+          "a": 2,
+          "w": "Remote access gives individual devices their own tunnel into the network."
+        },
+        {
+          "q": "What does a VPN tunnel do?",
+          "o": [
+            "Encrypts traffic over a public network",
+            "Speeds up internet",
+            "Gives IP addresses"
+          ],
+          "a": 0,
+          "w": "It protects traffic crossing the internet by encrypting it."
+        }
       ]
-     ]
     },
     {
-     "h": "Managed where?",
-     "t": "Firewalls can be managed <b>on-premises</b> (a console or the box itself) or from a <b>cloud portal</b>, which some vendors offer. Cloud management helps resellers handle many small customers from one view.",
-     "g": [
-      [
-       "On-prem",
-       "Hosted and run at the customer's own site."
+      "id": "fw-3-2",
+      "lvl": 3,
+      "title": "IPsec vs SSL VPN",
+      "src": [
+        {
+          "l": "Wikipedia: Virtual private network",
+          "u": "https://en.wikipedia.org/wiki/Virtual_private_network"
+        },
+        {
+          "l": "NordLayer: SSL VPN vs IPsec",
+          "u": "https://nordlayer.com/learn/vpn/ssl-vpn-vs-ipsec/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "IPsec",
+          "t": "<b>IPsec</b> is an IETF standards-based suite that encrypts IP packets. Tunnels are set up using <b>IKE</b>. It is the classic choice for site-to-site links, and the newer IKEv2 copes well when a phone changes network.",
+          "g": [
+            [
+              "IPsec",
+              "A standard way to encrypt and wrap IP traffic."
+            ],
+            [
+              "IKE",
+              "The protocol that sets up the IPsec tunnel."
+            ]
+          ]
+        },
+        {
+          "h": "SSL/TLS",
+          "t": "<b>SSL/TLS</b> VPNs run over the same protocol as secure websites. Because it looks like ordinary web traffic, it tends to get through networks that only allow web traffic. Many remote-access setups use them.",
+          "g": [
+            [
+              "TLS/SSL",
+              "The encryption used by HTTPS websites."
+            ]
+          ]
+        },
+        {
+          "h": "What to tell a customer",
+          "t": "Both are secure when set up well. Rule of thumb: <b>IPsec</b> for linking sites, <b>SSL</b> where users sit behind restrictive hotel or guest networks. Always ask which the firewalls at both ends support.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Why does an SSL VPN often work on strict guest networks?",
+          "o": [
+            "It needs no encryption",
+            "It uses fibre",
+            "It uses the same protocol as HTTPS"
+          ],
+          "a": 2,
+          "w": "Because it looks like normal web traffic, it passes where web is allowed."
+        },
+        {
+          "q": "Which is the classic standards-based suite for site-to-site tunnels?",
+          "o": [
+            "IPsec",
+            "DHCP",
+            "SSID"
+          ],
+          "a": 0,
+          "w": "IPsec is an IETF suite that encrypts IP packets."
+        },
+        {
+          "q": "What should you check when linking two sites with VPN?",
+          "o": [
+            "The colour of the boxes",
+            "That both firewalls support the chosen VPN type",
+            "The Wi-Fi band"
+          ],
+          "a": 1,
+          "w": "Both ends must speak the same VPN method."
+        }
       ]
-     ]
     },
     {
-     "h": "Sizing logic",
-     "t": "Size by the <b>number of users</b>, the <b>internet speed</b>, and which protections will be switched on, since inspection features slow throughput. Ask for growth plans too. Check the maker's datasheet instead of guessing.",
-     "g": [
-      [
-       "Throughput",
-       "How much traffic a device can process per second."
+      "id": "fw-3-3",
+      "lvl": 3,
+      "title": "SD-WAN in plain words",
+      "src": [
+        {
+          "l": "Wikipedia: SD-WAN",
+          "u": "https://en.wikipedia.org/wiki/SD-WAN"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Smarter links between sites",
+          "t": "<b>SD-WAN</b> manages a WAN with software. It builds encrypted tunnels between sites, often over ordinary internet lines, and steers each application over the best available link.",
+          "g": [
+            [
+              "SD-WAN",
+              "Software-Defined WAN: software that manages and optimises links between sites."
+            ]
+          ]
+        },
+        {
+          "h": "Many links, one policy",
+          "t": "A site can use fibre, broadband and <b>4G/5G</b> together. SD-WAN spots outages and <b>fails over</b> to a working link. Important apps like voice get priority. The caveat: the internet gives no guaranteed performance.",
+          "g": [
+            [
+              "Failover",
+              "Automatic switch to a backup link when the main one fails."
+            ],
+            [
+              "MPLS",
+              "A carrier-managed private WAN service."
+            ]
+          ]
+        },
+        {
+          "h": "Central management",
+          "t": "Settings are pushed from <b>one central place</b>, cloud or on-site, to every branch. Chains with many shops or offices like this, and some firewalls include SD-WAN features. Not every small customer needs it.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does SD-WAN do?",
+          "o": [
+            "Makes cables longer",
+            "Manages several links between sites and picks the best path per application",
+            "Assigns IP addresses"
+          ],
+          "a": 1,
+          "w": "It uses software to steer traffic over the best link and fail over on outages.",
+          "g": [
+            [
+              "SD-WAN",
+              "Software-Defined WAN."
+            ]
+          ]
+        },
+        {
+          "q": "A retail chain has 40 shops, each with fibre and a 4G backup. Which concept fits?",
+          "o": [
+            "DMZ",
+            "PoE",
+            "SD-WAN"
+          ],
+          "a": 2,
+          "w": "Many sites with several links managed centrally is the SD-WAN use case."
+        },
+        {
+          "q": "What is a caveat of SD-WAN over internet links?",
+          "o": [
+            "There are no guaranteed performance levels",
+            "It cannot use 4G",
+            "It needs no firewall"
+          ],
+          "a": 0,
+          "w": "Internet traffic has no end-to-end performance guarantee like carrier private lines."
+        }
       ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Where would a virtual firewall fit best?",
-     "o": [
-      "Powering a camera",
-      "Replacing a patch cable",
-      "Protecting workloads in a private or public cloud"
-     ],
-     "a": 2,
-     "w": "Virtual firewalls run on hypervisors or in public clouds."
     },
     {
-     "q": "A reseller supports 50 small customers. What management style helps most?",
-     "o": [
-      "Cloud portal management",
-      "Visiting each site with a laptop",
-      "Printed config sheets"
-     ],
-     "a": 0,
-     "w": "Cloud management lets one view cover many small sites."
-    },
-    {
-     "q": "Which affects firewall sizing?",
-     "o": [
-      "Only the colour",
-      "Users, internet speed and enabled protections",
-      "Only the cable type"
-     ],
-     "a": 1,
-     "w": "Inspection features reduce throughput, so enabled protections matter."
-    }
-   ]
-  },
-  {
-   "id": "fw-4-2",
-   "lvl": 4,
-   "title": "Customers, questions, competitors",
-   "src": [
-    {
-     "l": "Fortinet: Unified threat management",
-     "u": "https://www.fortinet.com/resources/cyberglossary/unified-threat-management"
-    },
-    {
-     "l": "Cisco: What is a firewall?",
-     "u": "https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Typical customer types",
-     "t": "<b>Small offices</b> want simple, bundled protection and easy management. <b>Mid-size firms</b> add VPNs, user rules and several sites. <b>Large or regulated</b> customers need depth, logs and certifications. Match the box to the customer's skill and risk.",
-     "g": [
-      [
-       "Certification",
-       "Official proof a product meets a security standard."
+      "id": "fw-4-1",
+      "lvl": 4,
+      "title": "Hardware, virtual, cloud and sizing",
+      "src": [
+        {
+          "l": "Cisco: What is a firewall?",
+          "u": "https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html"
+        },
+        {
+          "l": "Tufin: firewall throughput",
+          "u": "https://www.tufin.com/blog/understanding-firewall-throughput-analysis"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Forms of firewall",
+          "t": "<b>Hardware</b> appliances are the usual box at the office. <b>Virtual</b> firewalls run on hypervisors on-site or in public clouds. <b>Cloud-native</b> ones are built to secure cloud workloads at scale. Pick by where the protected systems live.",
+          "g": [
+            [
+              "Appliance",
+              "A dedicated hardware device."
+            ],
+            [
+              "Hypervisor",
+              "Software that runs virtual machines, such as VMware or Hyper-V."
+            ]
+          ]
+        },
+        {
+          "h": "Managed where?",
+          "t": "Firewalls can be managed <b>on-premises</b> (a console or the box itself) or from a <b>cloud portal</b>, which some vendors offer. Cloud management helps resellers handle many small customers from one view.",
+          "g": [
+            [
+              "On-prem",
+              "Hosted and run at the customer's own site."
+            ]
+          ]
+        },
+        {
+          "h": "Sizing logic",
+          "t": "Size by the <b>number of users</b>, the <b>internet speed</b>, and which protections will be switched on, since inspection features slow throughput. Ask for growth plans too. Check the maker's datasheet instead of guessing.",
+          "g": [
+            [
+              "Throughput",
+              "How much traffic a device can process per second."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Where would a virtual firewall fit best?",
+          "o": [
+            "Powering a camera",
+            "Replacing a patch cable",
+            "Protecting workloads in a private or public cloud"
+          ],
+          "a": 2,
+          "w": "Virtual firewalls run on hypervisors or in public clouds."
+        },
+        {
+          "q": "A reseller supports 50 small customers. What management style helps most?",
+          "o": [
+            "Cloud portal management",
+            "Visiting each site with a laptop",
+            "Printed config sheets"
+          ],
+          "a": 0,
+          "w": "Cloud management lets one view cover many small sites."
+        },
+        {
+          "q": "Which affects firewall sizing?",
+          "o": [
+            "Only the colour",
+            "Users, internet speed and enabled protections",
+            "Only the cable type"
+          ],
+          "a": 1,
+          "w": "Inspection features reduce throughput, so enabled protections matter."
+        }
       ]
-     ]
     },
     {
-     "h": "Questions to ask",
-     "t": "How many users and sites? Remote workers? Who manages IT? Any public servers? Compliance needs? Current firewall and when its <b>licence or support</b> runs out? Renewal dates are good conversation starters.",
-     "g": [
-      [
-       "Licence",
-       "A subscription that unlocks security features and updates."
+      "id": "fw-4-2",
+      "lvl": 4,
+      "title": "Customers, questions, competitors",
+      "src": [
+        {
+          "l": "Fortinet: Unified threat management",
+          "u": "https://www.fortinet.com/resources/cyberglossary/unified-threat-management"
+        },
+        {
+          "l": "Cisco: What is a firewall?",
+          "u": "https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Typical customer types",
+          "t": "<b>Small offices</b> want simple, bundled protection and easy management. <b>Mid-size firms</b> add VPNs, user rules and several sites. <b>Large or regulated</b> customers need depth, logs and certifications. Match the box to the customer's skill and risk.",
+          "g": [
+            [
+              "Certification",
+              "Official proof a product meets a security standard."
+            ]
+          ]
+        },
+        {
+          "h": "Questions to ask",
+          "t": "How many users and sites? Remote workers? Who manages IT? Any public servers? Compliance needs? Current firewall and when its <b>licence or support</b> runs out? Renewal dates are good conversation starters.",
+          "g": [
+            [
+              "Licence",
+              "A subscription that unlocks security features and updates."
+            ]
+          ]
+        },
+        {
+          "h": "Competitor categories",
+          "t": "Think in categories, not brands: <b>UTM-style</b> all-in-ones for small business, <b>enterprise NGFW</b> platforms, <b>cloud-managed</b> small-site boxes, and plain <b>consumer routers</b>. The honest sales point is fit, support and local service.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which customer most needs an all-in-one, simple-to-manage box?",
+          "o": [
+            "A global bank",
+            "A 10-person office with no IT staff",
+            "A cable factory"
+          ],
+          "a": 1,
+          "w": "UTM-style bundles suit small teams with limited IT resources."
+        },
+        {
+          "q": "Which is a good opening question?",
+          "o": [
+            "What is your favourite colour?",
+            "How long are your cables?",
+            "When does your current firewall licence expire?"
+          ],
+          "a": 2,
+          "w": "Licence and support expiry reveal timing and the customer's current setup."
+        },
+        {
+          "q": "Which is a competitor category and not a brand?",
+          "o": [
+            "Consumer routers",
+            "A specific model",
+            "A cable colour"
+          ],
+          "a": 0,
+          "w": "Categories like consumer routers help compare without pushing brands."
+        }
       ]
-     ]
-    },
-    {
-     "h": "Competitor categories",
-     "t": "Think in categories, not brands: <b>UTM-style</b> all-in-ones for small business, <b>enterprise NGFW</b> platforms, <b>cloud-managed</b> small-site boxes, and plain <b>consumer routers</b>. The honest sales point is fit, support and local service.",
-     "g": []
     }
-   ],
-   "quiz": [
-    {
-     "q": "Which customer most needs an all-in-one, simple-to-manage box?",
-     "o": [
-      "A global bank",
-      "A 10-person office with no IT staff",
-      "A cable factory"
-     ],
-     "a": 1,
-     "w": "UTM-style bundles suit small teams with limited IT resources."
-    },
-    {
-     "q": "Which is a good opening question?",
-     "o": [
-      "What is your favourite colour?",
-      "How long are your cables?",
-      "When does your current firewall licence expire?"
-     ],
-     "a": 2,
-     "w": "Licence and support expiry reveal timing and the customer's current setup."
-    },
-    {
-     "q": "Which is a competitor category and not a brand?",
-     "o": [
-      "Consumer routers",
-      "A specific model",
-      "A cable colour"
-     ],
-     "a": 0,
-     "w": "Categories like consumer routers help compare without pushing brands."
-    }
-   ]
-  }
- ]
+  ]
 }

@@ -48,7 +48,7 @@ for m in idx["decks"]:
     except Exception as e:
         p("INVALID JSON: %s" % e)
         continue
-    for k in ("title", "emoji", "desc", "lessons"):
+    for k in ("title", "desc", "lessons"):
         if k not in d:
             p("missing " + k)
     if not d.get("src"):

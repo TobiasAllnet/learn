@@ -1,723 +1,722 @@
 {
- "title": "Wi-Fi",
- "emoji": "📶",
- "desc": "Wi-Fi 5/6/6E/7, bands, access points, surveys and security",
- "src": [
-  {
-   "l": "Wikipedia: Wi-Fi",
-   "u": "https://en.wikipedia.org/wiki/Wi-Fi"
-  },
-  {
-   "l": "Wi-Fi Alliance: Wi-Fi CERTIFIED 7",
-   "u": "https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7"
-  },
-  {
-   "l": "Wi-Fi Alliance: Security",
-   "u": "https://www.wi-fi.org/discover-wi-fi/security"
-  }
- ],
- "lessons": [
-  {
-   "id": "wf-1-1",
-   "lvl": 1,
-   "title": "Wi-Fi generations in plain words",
-   "src": [
+  "title": "Wi-Fi",
+  "desc": "Wi-Fi 5/6/6E/7, bands, access points, surveys and security",
+  "src": [
     {
-     "l": "Wikipedia: Wi-Fi",
-     "u": "https://en.wikipedia.org/wiki/Wi-Fi"
+      "l": "Wikipedia: Wi-Fi",
+      "u": "https://en.wikipedia.org/wiki/Wi-Fi"
     },
     {
-     "l": "Wi-Fi Alliance: Wi-Fi CERTIFIED 7",
-     "u": "https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7"
-    }
-   ],
-   "pages": [
+      "l": "Wi-Fi Alliance: Wi-Fi CERTIFIED 7",
+      "u": "https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7"
+    },
     {
-     "h": "Simple names for old standards",
-     "t": "Wi-Fi is built on <b>IEEE 802.11</b> standards. Instead of cryptic letters, generations now have numbers: <b>Wi-Fi 4</b> (802.11n), <b>Wi-Fi 5</b> (802.11ac), <b>Wi-Fi 6</b> (802.11ax) and <b>Wi-Fi 7</b> (802.11be).",
-     "g": [
-      [
-       "IEEE 802.11",
-       "The family of technical standards behind Wi-Fi."
+      "l": "Wi-Fi Alliance: Security",
+      "u": "https://www.wi-fi.org/discover-wi-fi/security"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "wf-1-1",
+      "lvl": 1,
+      "title": "Wi-Fi generations in plain words",
+      "src": [
+        {
+          "l": "Wikipedia: Wi-Fi",
+          "u": "https://en.wikipedia.org/wiki/Wi-Fi"
+        },
+        {
+          "l": "Wi-Fi Alliance: Wi-Fi CERTIFIED 7",
+          "u": "https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7"
+        }
       ],
-      [
-       "Wi-Fi",
-       "A brand and compliance certification for 802.11 wireless networking."
-      ]
-     ]
-    },
-    {
-     "h": "Newer means more headroom",
-     "t": "Each generation raises the top theoretical speed and handles more devices better. Real speeds are always lower than the headline. The generation matters most when <b>many devices</b> share a place, not when one laptop is on its own.",
-     "g": [
-      [
-       "Link rate",
-       "The theoretical top speed of a wireless link, not what you will get in daily use."
-      ]
-     ]
-    },
-    {
-     "h": "Both sides must support it",
-     "t": "A new access point does not make an old phone faster. <b>Devices and access points</b> both need the generation. Newer gear still works with older devices, they just connect the older way. So selling Wi-Fi 6 or 7 is a common way to future-proof.",
-     "g": []
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which is the technical name behind Wi-Fi 6?",
-     "o": [
-      "802.11n",
-      "802.11ax",
-      "802.11ac"
-     ],
-     "a": 1,
-     "w": "Wi-Fi 6 is 802.11ax; Wi-Fi 5 is 802.11ac; Wi-Fi 4 is 802.11n."
-    },
-    {
-     "q": "A customer installs a Wi-Fi 7 access point but all devices are old. What happens?",
-     "o": [
-      "Old devices become Wi-Fi 7",
-      "Nothing connects",
-      "Old devices still connect but with older Wi-Fi"
-     ],
-     "a": 2,
-     "w": "Both ends must support the generation; older devices use older modes."
-    },
-    {
-     "q": "When does the generation matter most?",
-     "o": [
-      "When many devices share the space",
-      "Only for printers",
-      "Never"
-     ],
-     "a": 0,
-     "w": "Newer generations handle more simultaneous devices better."
-    }
-   ]
-  },
-  {
-   "id": "wf-1-2",
-   "lvl": 1,
-   "title": "SSID, access point, router, mesh",
-   "src": [
-    {
-     "l": "Wikipedia: Service set (802.11 network)",
-     "u": "https://en.wikipedia.org/wiki/Service_set_(802.11_network)"
-    },
-    {
-     "l": "Wikipedia: Wireless access point",
-     "u": "https://en.wikipedia.org/wiki/Wireless_access_point"
-    },
-    {
-     "l": "Wikipedia: Wireless mesh network",
-     "u": "https://en.wikipedia.org/wiki/Wireless_mesh_network"
-    }
-   ],
-   "pages": [
-    {
-     "h": "SSID is the name",
-     "t": "The <b>SSID</b> is the Wi-Fi network name that you see in the list. Several access points can share <b>one SSID</b>, so a big office or house looks like one seamless network to users.",
-     "g": [
-      [
-       "SSID",
-       "Service Set Identifier: the name of a Wi-Fi network."
-      ]
-     ]
-    },
-    {
-     "h": "AP or wireless router",
-     "t": "An <b>access point</b> adds Wi-Fi to a wired network. A <b>wireless router</b> combines the router and an access point in one unit. Businesses often prefer separate access points, placed where the coverage is needed.",
-     "g": [
-      [
-       "Access point (AP)",
-       "Device that connects Wi-Fi devices to the wired network."
-      ]
-     ]
-    },
-    {
-     "h": "Mesh",
-     "t": "In a <b>mesh</b>, nodes relay traffic for each other so you can cover an area without a cable to every node. Good for cost-effective coverage and self-healing, but fewer cables to the units means more sharing of radio capacity.",
-     "g": [
-      [
-       "Mesh",
-       "A network where nodes pass traffic on for one another."
+      "pages": [
+        {
+          "h": "Simple names for old standards",
+          "t": "Wi-Fi is built on <b>IEEE 802.11</b> standards. Instead of cryptic letters, generations now have numbers: <b>Wi-Fi 4</b> (802.11n), <b>Wi-Fi 5</b> (802.11ac), <b>Wi-Fi 6</b> (802.11ax) and <b>Wi-Fi 7</b> (802.11be).",
+          "g": [
+            [
+              "IEEE 802.11",
+              "The family of technical standards behind Wi-Fi."
+            ],
+            [
+              "Wi-Fi",
+              "A brand and compliance certification for 802.11 wireless networking."
+            ]
+          ]
+        },
+        {
+          "h": "Newer means more headroom",
+          "t": "Each generation raises the top theoretical speed and handles more devices better. Real speeds are always lower than the headline. The generation matters most when <b>many devices</b> share a place, not when one laptop is on its own.",
+          "g": [
+            [
+              "Link rate",
+              "The theoretical top speed of a wireless link, not what you will get in daily use."
+            ]
+          ]
+        },
+        {
+          "h": "Both sides must support it",
+          "t": "A new access point does not make an old phone faster. <b>Devices and access points</b> both need the generation. Newer gear still works with older devices, they just connect the older way. So selling Wi-Fi 6 or 7 is a common way to future-proof.",
+          "g": []
+        }
       ],
-      [
-       "Backhaul",
-       "The link carrying traffic from an AP back to the main network."
+      "quiz": [
+        {
+          "q": "Which is the technical name behind Wi-Fi 6?",
+          "o": [
+            "802.11n",
+            "802.11ax",
+            "802.11ac"
+          ],
+          "a": 1,
+          "w": "Wi-Fi 6 is 802.11ax; Wi-Fi 5 is 802.11ac; Wi-Fi 4 is 802.11n."
+        },
+        {
+          "q": "A customer installs a Wi-Fi 7 access point but all devices are old. What happens?",
+          "o": [
+            "Old devices become Wi-Fi 7",
+            "Nothing connects",
+            "Old devices still connect but with older Wi-Fi"
+          ],
+          "a": 2,
+          "w": "Both ends must support the generation; older devices use older modes."
+        },
+        {
+          "q": "When does the generation matter most?",
+          "o": [
+            "When many devices share the space",
+            "Only for printers",
+            "Never"
+          ],
+          "a": 0,
+          "w": "Newer generations handle more simultaneous devices better."
+        }
       ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What is an SSID?",
-     "o": [
-      "A cable type",
-      "A router password",
-      "A Wi-Fi network name"
-     ],
-     "a": 2,
-     "w": "The SSID is the name shown when you search for Wi-Fi."
     },
     {
-     "q": "A wireless router is...",
-     "o": [
-      "A router and access point combined",
-      "A switch only",
-      "A fibre module"
-     ],
-     "a": 0,
-     "w": "It combines routing and Wi-Fi access in one device."
-    },
-    {
-     "q": "What is a mesh network good for?",
-     "o": [
-      "Making cables faster",
-      "Covering an area without cabling every node",
-      "Hiding the SSID"
-     ],
-     "a": 1,
-     "w": "Mesh nodes relay traffic, which saves cabling and can self-heal."
-    }
-   ]
-  },
-  {
-   "id": "wf-2-1",
-   "lvl": 2,
-   "title": "2.4, 5 and 6 GHz",
-   "src": [
-    {
-     "l": "Wikipedia: Wi-Fi",
-     "u": "https://en.wikipedia.org/wiki/Wi-Fi"
-    },
-    {
-     "l": "Wikipedia: Wi-Fi 6E",
-     "u": "https://en.wikipedia.org/wiki/Wi-Fi_6E"
-    },
-    {
-     "l": "Wi-Fi NOW: EU releases 480 MHz of 6 GHz",
-     "u": "https://wifinowglobal.com/news-blog/its-official-eu-releases-480-mhz-of-6-ghz-spectrum-to-wi-fi-finally"
-    }
-   ],
-   "pages": [
-    {
-     "h": "2.4 GHz: reaches far, crowded",
-     "t": "<b>2.4 GHz</b> is the oldest band. Lower frequencies generally travel further, but the band is <b>crowded</b>: Bluetooth gadgets and microwave ovens interfere. It still matters for old and simple devices like smart plugs.",
-     "g": [
-      [
-       "GHz",
-       "Gigahertz: the radio frequency band Wi-Fi uses."
+      "id": "wf-1-2",
+      "lvl": 1,
+      "title": "SSID, access point, router, mesh",
+      "src": [
+        {
+          "l": "Wikipedia: Service set (802.11 network)",
+          "u": "https://en.wikipedia.org/wiki/Service_set_(802.11_network)"
+        },
+        {
+          "l": "Wikipedia: Wireless access point",
+          "u": "https://en.wikipedia.org/wiki/Wireless_access_point"
+        },
+        {
+          "l": "Wikipedia: Wireless mesh network",
+          "u": "https://en.wikipedia.org/wiki/Wireless_mesh_network"
+        }
+      ],
+      "pages": [
+        {
+          "h": "SSID is the name",
+          "t": "The <b>SSID</b> is the Wi-Fi network name that you see in the list. Several access points can share <b>one SSID</b>, so a big office or house looks like one seamless network to users.",
+          "g": [
+            [
+              "SSID",
+              "Service Set Identifier: the name of a Wi-Fi network."
+            ]
+          ]
+        },
+        {
+          "h": "AP or wireless router",
+          "t": "An <b>access point</b> adds Wi-Fi to a wired network. A <b>wireless router</b> combines the router and an access point in one unit. Businesses often prefer separate access points, placed where the coverage is needed.",
+          "g": [
+            [
+              "Access point (AP)",
+              "Device that connects Wi-Fi devices to the wired network."
+            ]
+          ]
+        },
+        {
+          "h": "Mesh",
+          "t": "In a <b>mesh</b>, nodes relay traffic for each other so you can cover an area without a cable to every node. Good for cost-effective coverage and self-healing, but fewer cables to the units means more sharing of radio capacity.",
+          "g": [
+            [
+              "Mesh",
+              "A network where nodes pass traffic on for one another."
+            ],
+            [
+              "Backhaul",
+              "The link carrying traffic from an AP back to the main network."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is an SSID?",
+          "o": [
+            "A cable type",
+            "A router password",
+            "A Wi-Fi network name"
+          ],
+          "a": 2,
+          "w": "The SSID is the name shown when you search for Wi-Fi."
+        },
+        {
+          "q": "A wireless router is...",
+          "o": [
+            "A router and access point combined",
+            "A switch only",
+            "A fibre module"
+          ],
+          "a": 0,
+          "w": "It combines routing and Wi-Fi access in one device."
+        },
+        {
+          "q": "What is a mesh network good for?",
+          "o": [
+            "Making cables faster",
+            "Covering an area without cabling every node",
+            "Hiding the SSID"
+          ],
+          "a": 1,
+          "w": "Mesh nodes relay traffic, which saves cabling and can self-heal."
+        }
       ]
-     ]
     },
     {
-     "h": "5 GHz: more room",
-     "t": "<b>5 GHz</b> has more channels, so more devices can share the air. Higher frequencies generally have shorter range. It is a main band for modern business Wi-Fi, together with 6 GHz where supported.",
-     "g": [
-      [
-       "Channel",
-       "A slice of the radio band used by one Wi-Fi network at a time."
+      "id": "wf-2-1",
+      "lvl": 2,
+      "title": "2.4, 5 and 6 GHz",
+      "src": [
+        {
+          "l": "Wikipedia: Wi-Fi",
+          "u": "https://en.wikipedia.org/wiki/Wi-Fi"
+        },
+        {
+          "l": "Wikipedia: Wi-Fi 6E",
+          "u": "https://en.wikipedia.org/wiki/Wi-Fi_6E"
+        },
+        {
+          "l": "Wi-Fi NOW: EU releases 480 MHz of 6 GHz",
+          "u": "https://wifinowglobal.com/news-blog/its-official-eu-releases-480-mhz-of-6-ghz-spectrum-to-wi-fi-finally"
+        }
+      ],
+      "pages": [
+        {
+          "h": "2.4 GHz: reaches far, crowded",
+          "t": "<b>2.4 GHz</b> is the oldest band. Lower frequencies generally travel further, but the band is <b>crowded</b>: Bluetooth gadgets and microwave ovens interfere. It still matters for old and simple devices like smart plugs.",
+          "g": [
+            [
+              "GHz",
+              "Gigahertz: the radio frequency band Wi-Fi uses."
+            ]
+          ]
+        },
+        {
+          "h": "5 GHz: more room",
+          "t": "<b>5 GHz</b> has more channels, so more devices can share the air. Higher frequencies generally have shorter range. It is a main band for modern business Wi-Fi, together with 6 GHz where supported.",
+          "g": [
+            [
+              "Channel",
+              "A slice of the radio band used by one Wi-Fi network at a time."
+            ]
+          ]
+        },
+        {
+          "h": "6 GHz: a fresh lane",
+          "t": "The <b>6 GHz</b> band adds a lot of new spectrum: up to 1200 MHz in the US, but Europe has so far opened about 480 MHz. It allows very wide channels and starts out uncrowded. Wi-Fi 6E and Wi-Fi 7 use it, so devices need to support it.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which band is the most crowded?",
+          "o": [
+            "5 GHz",
+            "2.4 GHz",
+            "6 GHz"
+          ],
+          "a": 1,
+          "w": "2.4 GHz shares space with Bluetooth, microwaves and many devices."
+        },
+        {
+          "q": "Which band is only used by Wi-Fi 6E and Wi-Fi 7 devices?",
+          "o": [
+            "2.4 GHz",
+            "5 GHz only",
+            "6 GHz"
+          ],
+          "a": 2,
+          "w": "6 GHz arrived with Wi-Fi 6E and is used by Wi-Fi 7 as well."
+        },
+        {
+          "q": "Smart plugs in a house with thick walls. Which band do they typically use?",
+          "o": [
+            "2.4 GHz",
+            "6 GHz",
+            "None"
+          ],
+          "a": 0,
+          "w": "Lower frequency reaches further, so simple devices use 2.4 GHz."
+        }
       ]
-     ]
     },
     {
-     "h": "6 GHz: a fresh lane",
-     "t": "The <b>6 GHz</b> band adds a lot of new spectrum: up to 1200 MHz in the US, but Europe has so far opened about 480 MHz. It allows very wide channels and starts out uncrowded. Wi-Fi 6E and Wi-Fi 7 use it, so devices need to support it.",
-     "g": []
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which band is the most crowded?",
-     "o": [
-      "5 GHz",
-      "2.4 GHz",
-      "6 GHz"
-     ],
-     "a": 1,
-     "w": "2.4 GHz shares space with Bluetooth, microwaves and many devices."
-    },
-    {
-     "q": "Which band is only used by Wi-Fi 6E and Wi-Fi 7 devices?",
-     "o": [
-      "2.4 GHz",
-      "5 GHz only",
-      "6 GHz"
-     ],
-     "a": 2,
-     "w": "6 GHz arrived with Wi-Fi 6E and is used by Wi-Fi 7 as well."
-    },
-    {
-     "q": "Smart plugs in a house with thick walls. Which band do they typically use?",
-     "o": [
-      "2.4 GHz",
-      "6 GHz",
-      "None"
-     ],
-     "a": 0,
-     "w": "Lower frequency reaches further, so simple devices use 2.4 GHz."
-    }
-   ]
-  },
-  {
-   "id": "wf-2-2",
-   "lvl": 2,
-   "title": "Wi-Fi 6, 6E and 7: what is new",
-   "src": [
-    {
-     "l": "Wi-Fi Alliance: Wi-Fi CERTIFIED 7",
-     "u": "https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7"
-    },
-    {
-     "l": "Wikipedia: Wi-Fi 6E",
-     "u": "https://en.wikipedia.org/wiki/Wi-Fi_6E"
-    },
-    {
-     "l": "Wikipedia: Wi-Fi",
-     "u": "https://en.wikipedia.org/wiki/Wi-Fi"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Wi-Fi 6 and 6E",
-     "t": "<b>Wi-Fi 6</b> (802.11ax) works in 2.4 and 5 GHz and copes better with many devices. <b>Wi-Fi 6E</b> is the same technology plus the <b>6 GHz band</b>, giving more room and wide channels.",
-     "g": [
-      [
-       "6E",
-       "Wi-Fi 6 extended to the 6 GHz band."
+      "id": "wf-2-2",
+      "lvl": 2,
+      "title": "Wi-Fi 6, 6E and 7: what is new",
+      "src": [
+        {
+          "l": "Wi-Fi Alliance: Wi-Fi CERTIFIED 7",
+          "u": "https://www.wi-fi.org/discover-wi-fi/wi-fi-certified-7"
+        },
+        {
+          "l": "Wikipedia: Wi-Fi 6E",
+          "u": "https://en.wikipedia.org/wiki/Wi-Fi_6E"
+        },
+        {
+          "l": "Wikipedia: Wi-Fi",
+          "u": "https://en.wikipedia.org/wiki/Wi-Fi"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Wi-Fi 6 and 6E",
+          "t": "<b>Wi-Fi 6</b> (802.11ax) works in 2.4 and 5 GHz and copes better with many devices. <b>Wi-Fi 6E</b> is the same technology plus the <b>6 GHz band</b>, giving more room and wide channels.",
+          "g": [
+            [
+              "6E",
+              "Wi-Fi 6 extended to the 6 GHz band."
+            ]
+          ]
+        },
+        {
+          "h": "Wi-Fi 7",
+          "t": "<b>Wi-Fi 7</b> (802.11be, 2024) improves all three bands. Highlights: <b>320 MHz channels</b> in 6 GHz and <b>multi-link operation</b>, which spreads traffic across several links for higher throughput and reliability.",
+          "g": [
+            [
+              "Multi-link operation (MLO)",
+              "A device using several bands at once."
+            ]
+          ]
+        },
+        {
+          "h": "Who needs Wi-Fi 7?",
+          "t": "It targets demanding uses like AR/VR, 3D training and ultra-high-definition video, and dense venues. Most small offices run fine on Wi-Fi 6. Fast access points often benefit from <b>multigig ports</b> on the switch.",
+          "g": [
+            [
+              "Multigig port",
+              "A switch port faster than 1G, such as 2.5G."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does Wi-Fi 6E add to Wi-Fi 6?",
+          "o": [
+            "Fibre support",
+            "A new cable",
+            "The 6 GHz band"
+          ],
+          "a": 2,
+          "w": "6E is Wi-Fi 6 plus the 6 GHz band."
+        },
+        {
+          "q": "What is multi-link operation in Wi-Fi 7?",
+          "o": [
+            "Using several links to raise throughput and reliability",
+            "Having many SSIDs",
+            "Sharing a password"
+          ],
+          "a": 0,
+          "w": "MLO spreads traffic across multiple links."
+        },
+        {
+          "q": "A 6-person office with laptops and phones asks if Wi-Fi 7 is a must. Best answer?",
+          "o": [
+            "Yes, nothing else works",
+            "Wi-Fi 6 is usually enough; Wi-Fi 7 is future-proofing",
+            "No Wi-Fi at all"
+          ],
+          "a": 1,
+          "w": "Wi-Fi 7 targets demanding uses; modest sites often do fine with Wi-Fi 6."
+        }
       ]
-     ]
     },
     {
-     "h": "Wi-Fi 7",
-     "t": "<b>Wi-Fi 7</b> (802.11be, 2024) improves all three bands. Highlights: <b>320 MHz channels</b> in 6 GHz and <b>multi-link operation</b>, which spreads traffic across several links for higher throughput and reliability.",
-     "g": [
-      [
-       "Multi-link operation (MLO)",
-       "A device using several bands at once."
+      "id": "wf-3-1",
+      "lvl": 3,
+      "title": "Controller, cloud or standalone",
+      "src": [
+        {
+          "l": "Wikipedia: Wireless LAN controller",
+          "u": "https://en.wikipedia.org/wiki/Wireless_LAN_controller"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Standalone",
+          "t": "A <b>standalone</b> access point works on its own and is set up one by one. Fine for a single AP. With many, each unit has its own settings, and it is easy to end up with inconsistent setups.",
+          "g": [
+            [
+              "Standalone AP",
+              "An AP configured and run on its own, without a controller."
+            ]
+          ]
+        },
+        {
+          "h": "Controller-based",
+          "t": "A <b>wireless LAN controller</b> manages many APs centrally: settings, security, and smooth hand-over of clients. It can be a central unit, built into APs, or <b>cloud-based</b>. One place to configure replaces touching each AP.",
+          "g": [
+            [
+              "Controller",
+              "A device or software that manages many access points from one place."
+            ]
+          ]
+        },
+        {
+          "h": "Roaming",
+          "t": "<b>Roaming</b> is a device moving from one AP to the next while walking around. APs with the same SSID and security allow it. Good design makes it smooth, so calls and scanners do not drop.",
+          "g": [
+            [
+              "Roaming",
+              "A device switching between access points without manually reconnecting."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does a controller do?",
+          "o": [
+            "Gives out power",
+            "Manages many APs centrally",
+            "Makes cables"
+          ],
+          "a": 1,
+          "w": "A wireless LAN controller centralises AP configuration and management."
+        },
+        {
+          "q": "A hotel has 60 access points. What do you suggest?",
+          "o": [
+            "Standalone, configured one by one",
+            "A single home router",
+            "Controller or cloud management"
+          ],
+          "a": 2,
+          "w": "Central management avoids configuring 60 units separately."
+        },
+        {
+          "q": "What does roaming need?",
+          "o": [
+            "APs sharing the same SSID and security",
+            "Different passwords per AP",
+            "Only 2.4 GHz"
+          ],
+          "a": 0,
+          "w": "APs sharing SSID and security let devices move between them."
+        }
       ]
-     ]
     },
     {
-     "h": "Who needs Wi-Fi 7?",
-     "t": "It targets demanding uses like AR/VR, 3D training and ultra-high-definition video, and dense venues. Most small offices run fine on Wi-Fi 6. Fast access points often benefit from <b>multigig ports</b> on the switch.",
-     "g": [
-      [
-       "Multigig port",
-       "A switch port faster than 1G, such as 2.5G."
+      "id": "wf-3-2",
+      "lvl": 3,
+      "title": "Coverage, capacity and site surveys",
+      "src": [
+        {
+          "l": "Wikipedia: Wireless site survey",
+          "u": "https://en.wikipedia.org/wiki/Wireless_site_survey"
+        },
+        {
+          "l": "Wikipedia: Wi-Fi",
+          "u": "https://en.wikipedia.org/wiki/Wi-Fi"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Coverage vs capacity",
+          "t": "<b>Coverage</b> means signal reaches everywhere. <b>Capacity</b> means enough speed for everyone using it at once. One AP may cover a hall but choke when hundreds connect. Think of room size and of the number of people.",
+          "g": [
+            [
+              "Capacity",
+              "How many users and how much data the Wi-Fi can serve at once."
+            ]
+          ]
+        },
+        {
+          "h": "Why walls matter",
+          "t": "Walls, floors, metal shelves and water absorb or reflect signal, and an AP often reaches roughly 20 m indoors. Other Wi-Fi, microwaves and cordless phones add <b>interference</b>. So a floor plan alone can mislead.",
+          "g": [
+            [
+              "Interference",
+              "Other radio signals that disturb your Wi-Fi."
+            ]
+          ]
+        },
+        {
+          "h": "Site survey",
+          "t": "A <b>site survey</b> plans AP positions to meet coverage, speed, roaming and call quality. <b>Predictive</b> surveys simulate on a floor plan. <b>On-site</b> surveys measure in the real building. Do it for hotels, warehouses and complaints.",
+          "g": [
+            [
+              "Site survey",
+              "A planning or audit process measuring Wi-Fi conditions in a real place."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A conference room has full signal but video calls lag when 80 people join. What is the likely issue?",
+          "o": [
+            "Coverage",
+            "SSID spelling",
+            "Capacity"
+          ],
+          "a": 2,
+          "w": "Signal reaches, but there is not enough capacity for that many users."
+        },
+        {
+          "q": "What does a predictive survey use?",
+          "o": [
+            "Software simulation on a floor plan",
+            "Walking with a measuring device only",
+            "A guess"
+          ],
+          "a": 0,
+          "w": "Predictive surveys model coverage with virtual APs on a plan."
+        },
+        {
+          "q": "When is a site survey most worth it?",
+          "o": [
+            "A one-room home",
+            "Large or tricky sites like hotels and warehouses",
+            "Never"
+          ],
+          "a": 1,
+          "w": "Complex sites with many users or obstacles benefit most."
+        }
       ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What does Wi-Fi 6E add to Wi-Fi 6?",
-     "o": [
-      "Fibre support",
-      "A new cable",
-      "The 6 GHz band"
-     ],
-     "a": 2,
-     "w": "6E is Wi-Fi 6 plus the 6 GHz band."
     },
     {
-     "q": "What is multi-link operation in Wi-Fi 7?",
-     "o": [
-      "Using several links to raise throughput and reliability",
-      "Having many SSIDs",
-      "Sharing a password"
-     ],
-     "a": 0,
-     "w": "MLO spreads traffic across multiple links."
-    },
-    {
-     "q": "A 6-person office with laptops and phones asks if Wi-Fi 7 is a must. Best answer?",
-     "o": [
-      "Yes, nothing else works",
-      "Wi-Fi 6 is usually enough; Wi-Fi 7 is future-proofing",
-      "No Wi-Fi at all"
-     ],
-     "a": 1,
-     "w": "Wi-Fi 7 targets demanding uses; modest sites often do fine with Wi-Fi 6."
-    }
-   ]
-  },
-  {
-   "id": "wf-3-1",
-   "lvl": 3,
-   "title": "Controller, cloud or standalone",
-   "src": [
-    {
-     "l": "Wikipedia: Wireless LAN controller",
-     "u": "https://en.wikipedia.org/wiki/Wireless_LAN_controller"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Standalone",
-     "t": "A <b>standalone</b> access point works on its own and is set up one by one. Fine for a single AP. With many, each unit has its own settings, and it is easy to end up with inconsistent setups.",
-     "g": [
-      [
-       "Standalone AP",
-       "An AP configured and run on its own, without a controller."
+      "id": "wf-3-3",
+      "lvl": 3,
+      "title": "Security and guest networks",
+      "src": [
+        {
+          "l": "Wi-Fi Alliance: Security",
+          "u": "https://www.wi-fi.org/discover-wi-fi/security"
+        },
+        {
+          "l": "Wikipedia: Wi-Fi Protected Access",
+          "u": "https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access"
+        }
+      ],
+      "pages": [
+        {
+          "h": "WPA2 and WPA3",
+          "t": "<b>WPA2</b> (2004) is still common. <b>WPA3</b> (announced 2018) is stronger, with better protection against password guessing, and has been required for Wi-Fi CERTIFIED devices since 2020. Choose WPA3 where all devices support it.",
+          "g": [
+            [
+              "WPA2/WPA3",
+              "Wi-Fi security standards. WPA3 is the newer, stronger one."
+            ]
+          ]
+        },
+        {
+          "h": "Personal vs Enterprise",
+          "t": "<b>Personal</b> uses one shared password: good for homes and small offices. <b>Enterprise</b> checks each user via a login server (802.1X, often RADIUS), so you can remove one person without changing everyone's password.",
+          "g": [
+            [
+              "RADIUS",
+              "A login server that checks who may join the network."
+            ]
+          ]
+        },
+        {
+          "h": "Guest networks",
+          "t": "A <b>guest network</b> gives visitors internet only, kept apart from staff systems, often with its own SSID and VLAN. For open public Wi-Fi, <b>Enhanced Open</b> encrypts traffic without a shared password.",
+          "g": [
+            [
+              "Guest network",
+              "A separate Wi-Fi for visitors with no access to internal systems."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the benefit of WPA3-Personal?",
+          "o": [
+            "More range",
+            "Stronger defence against password guessing",
+            "Free internet"
+          ],
+          "a": 1,
+          "w": "WPA3-Personal adds protection against password-guessing attacks."
+        },
+        {
+          "q": "A 200-person company wants to remove a leaver without changing a shared password. What fits?",
+          "o": [
+            "A longer password",
+            "Hiding the SSID",
+            "WPA Enterprise with per-user login"
+          ],
+          "a": 2,
+          "w": "Enterprise authentication uses individual logins via 802.1X."
+        },
+        {
+          "q": "What is the main point of a guest network?",
+          "o": [
+            "Visitors get internet but not internal systems",
+            "Faster speed",
+            "Free cables"
+          ],
+          "a": 0,
+          "w": "It separates guests from staff systems."
+        }
       ]
-     ]
     },
     {
-     "h": "Controller-based",
-     "t": "A <b>wireless LAN controller</b> manages many APs centrally: settings, security, and smooth hand-over of clients. It can be a central unit, built into APs, or <b>cloud-based</b>. One place to configure replaces touching each AP.",
-     "g": [
-      [
-       "Controller",
-       "A device or software that manages many access points from one place."
+      "id": "wf-4-1",
+      "lvl": 4,
+      "title": "Scenario: home office and shop",
+      "src": [
+        {
+          "l": "Wikipedia: Wireless site survey",
+          "u": "https://en.wikipedia.org/wiki/Wireless_site_survey"
+        },
+        {
+          "l": "Wikipedia: Wireless access point",
+          "u": "https://en.wikipedia.org/wiki/Wireless_access_point"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Home office",
+          "t": "One person, few devices. A <b>good wireless router</b> may be enough, or one access point if the router is badly placed. Large houses may need a <b>mesh</b> or wired APs. Wi-Fi 6 is a safe pick today.",
+          "g": []
+        },
+        {
+          "h": "Small shop",
+          "t": "Customers, staff, a card terminal and maybe cameras. Use <b>one or two PoE access points</b>, a separate <b>guest SSID</b>, and WPA2/WPA3 for the staff network. Keep payment devices off the guest network.",
+          "g": [
+            [
+              "PoE access point",
+              "An AP powered through its network cable."
+            ]
+          ]
+        },
+        {
+          "h": "Questions to ask",
+          "t": "How big is the place, and what are the walls like? How many people and devices at peak? What must never fail, like card payments? Is cabling possible? Answers decide AP count and type.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A shop has a card terminal and offers free Wi-Fi. What is wise?",
+          "o": [
+            "Put everything on one network",
+            "Hide the SSID only",
+            "Put guests on a separate network from payment devices"
+          ],
+          "a": 2,
+          "w": "Guest traffic should be separate from important internal devices."
+        },
+        {
+          "q": "A one-person home office in a small flat. What is usually enough?",
+          "o": [
+            "A good wireless router",
+            "Ten PoE access points",
+            "A fibre switch"
+          ],
+          "a": 0,
+          "w": "Small sites with few devices rarely need more than one decent unit."
+        },
+        {
+          "q": "Which question helps size Wi-Fi?",
+          "o": [
+            "What is the owner's age?",
+            "How many devices at peak?",
+            "Which cable colour?"
+          ],
+          "a": 1,
+          "w": "Peak users and devices drive capacity needs."
+        }
       ]
-     ]
     },
     {
-     "h": "Roaming",
-     "t": "<b>Roaming</b> is a device moving from one AP to the next while walking around. APs with the same SSID and security allow it. Good design makes it smooth, so calls and scanners do not drop.",
-     "g": [
-      [
-       "Roaming",
-       "A device switching between access points without manually reconnecting."
+      "id": "wf-4-2",
+      "lvl": 4,
+      "title": "Scenario: hotel and warehouse",
+      "src": [
+        {
+          "l": "Wikipedia: Wireless site survey",
+          "u": "https://en.wikipedia.org/wiki/Wireless_site_survey"
+        },
+        {
+          "l": "Wikipedia: Wireless LAN controller",
+          "u": "https://en.wikipedia.org/wiki/Wireless_LAN_controller"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Hotel",
+          "t": "Many rooms, thick walls, guests streaming at the same time. Plan <b>many APs</b>, wired back to a switch, <b>central management</b> and good <b>roaming</b>. A <b>site survey</b> is strongly advised. Separate guest and staff networks.",
+          "g": []
+        },
+        {
+          "h": "Warehouse",
+          "t": "Tall metal racks, big open spaces, handheld scanners that must not drop. Metal blocks signal, so APs sit high and carefully placed. <b>Roaming quality</b> and coverage beat top speed. Survey on site, with racks full.",
+          "g": [
+            [
+              "Roaming scanner",
+              "A handheld that moves between APs while in use."
+            ]
+          ]
+        },
+        {
+          "h": "What to sell",
+          "t": "A reseller should offer the <b>survey</b>, the <b>APs</b> with a <b>controller or cloud tool</b>, PoE switches, and outdoor or ruggedised APs where needed. The extras make the project work and protect their reputation.",
+          "g": [
+            [
+              "Ruggedised",
+              "Built to handle dust, cold or knocks."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which matters most in a warehouse with handheld scanners?",
+          "o": [
+            "The brightest LEDs",
+            "Reliable roaming and coverage",
+            "The most SSIDs"
+          ],
+          "a": 1,
+          "w": "Scanners move around, so stable coverage and roaming matter more than peak speed."
+        },
+        {
+          "q": "A hotel has 150 rooms. Which is the best advice?",
+          "o": [
+            "One router in the lobby",
+            "Use only 2.4 GHz",
+            "Plan with a site survey and central management"
+          ],
+          "a": 2,
+          "w": "Large sites with many walls need surveyed placement and central control."
+        },
+        {
+          "q": "Why do metal racks matter?",
+          "o": [
+            "They block signal, so AP placement needs care",
+            "They boost Wi-Fi",
+            "They have no effect"
+          ],
+          "a": 0,
+          "w": "Obstacles like metal absorb or reflect radio signals."
+        }
       ]
-     ]
     }
-   ],
-   "quiz": [
-    {
-     "q": "What does a controller do?",
-     "o": [
-      "Gives out power",
-      "Manages many APs centrally",
-      "Makes cables"
-     ],
-     "a": 1,
-     "w": "A wireless LAN controller centralises AP configuration and management."
-    },
-    {
-     "q": "A hotel has 60 access points. What do you suggest?",
-     "o": [
-      "Standalone, configured one by one",
-      "A single home router",
-      "Controller or cloud management"
-     ],
-     "a": 2,
-     "w": "Central management avoids configuring 60 units separately."
-    },
-    {
-     "q": "What does roaming need?",
-     "o": [
-      "APs sharing the same SSID and security",
-      "Different passwords per AP",
-      "Only 2.4 GHz"
-     ],
-     "a": 0,
-     "w": "APs sharing SSID and security let devices move between them."
-    }
-   ]
-  },
-  {
-   "id": "wf-3-2",
-   "lvl": 3,
-   "title": "Coverage, capacity and site surveys",
-   "src": [
-    {
-     "l": "Wikipedia: Wireless site survey",
-     "u": "https://en.wikipedia.org/wiki/Wireless_site_survey"
-    },
-    {
-     "l": "Wikipedia: Wi-Fi",
-     "u": "https://en.wikipedia.org/wiki/Wi-Fi"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Coverage vs capacity",
-     "t": "<b>Coverage</b> means signal reaches everywhere. <b>Capacity</b> means enough speed for everyone using it at once. One AP may cover a hall but choke when hundreds connect. Think of room size and of the number of people.",
-     "g": [
-      [
-       "Capacity",
-       "How many users and how much data the Wi-Fi can serve at once."
-      ]
-     ]
-    },
-    {
-     "h": "Why walls matter",
-     "t": "Walls, floors, metal shelves and water absorb or reflect signal, and an AP often reaches roughly 20 m indoors. Other Wi-Fi, microwaves and cordless phones add <b>interference</b>. So a floor plan alone can mislead.",
-     "g": [
-      [
-       "Interference",
-       "Other radio signals that disturb your Wi-Fi."
-      ]
-     ]
-    },
-    {
-     "h": "Site survey",
-     "t": "A <b>site survey</b> plans AP positions to meet coverage, speed, roaming and call quality. <b>Predictive</b> surveys simulate on a floor plan. <b>On-site</b> surveys measure in the real building. Do it for hotels, warehouses and complaints.",
-     "g": [
-      [
-       "Site survey",
-       "A planning or audit process measuring Wi-Fi conditions in a real place."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "A conference room has full signal but video calls lag when 80 people join. What is the likely issue?",
-     "o": [
-      "Coverage",
-      "SSID spelling",
-      "Capacity"
-     ],
-     "a": 2,
-     "w": "Signal reaches, but there is not enough capacity for that many users."
-    },
-    {
-     "q": "What does a predictive survey use?",
-     "o": [
-      "Software simulation on a floor plan",
-      "Walking with a measuring device only",
-      "A guess"
-     ],
-     "a": 0,
-     "w": "Predictive surveys model coverage with virtual APs on a plan."
-    },
-    {
-     "q": "When is a site survey most worth it?",
-     "o": [
-      "A one-room home",
-      "Large or tricky sites like hotels and warehouses",
-      "Never"
-     ],
-     "a": 1,
-     "w": "Complex sites with many users or obstacles benefit most."
-    }
-   ]
-  },
-  {
-   "id": "wf-3-3",
-   "lvl": 3,
-   "title": "Security and guest networks",
-   "src": [
-    {
-     "l": "Wi-Fi Alliance: Security",
-     "u": "https://www.wi-fi.org/discover-wi-fi/security"
-    },
-    {
-     "l": "Wikipedia: Wi-Fi Protected Access",
-     "u": "https://en.wikipedia.org/wiki/Wi-Fi_Protected_Access"
-    }
-   ],
-   "pages": [
-    {
-     "h": "WPA2 and WPA3",
-     "t": "<b>WPA2</b> (2004) is still common. <b>WPA3</b> (announced 2018) is stronger, with better protection against password guessing, and has been required for Wi-Fi CERTIFIED devices since 2020. Choose WPA3 where all devices support it.",
-     "g": [
-      [
-       "WPA2/WPA3",
-       "Wi-Fi security standards. WPA3 is the newer, stronger one."
-      ]
-     ]
-    },
-    {
-     "h": "Personal vs Enterprise",
-     "t": "<b>Personal</b> uses one shared password: good for homes and small offices. <b>Enterprise</b> checks each user via a login server (802.1X, often RADIUS), so you can remove one person without changing everyone's password.",
-     "g": [
-      [
-       "RADIUS",
-       "A login server that checks who may join the network."
-      ]
-     ]
-    },
-    {
-     "h": "Guest networks",
-     "t": "A <b>guest network</b> gives visitors internet only, kept apart from staff systems, often with its own SSID and VLAN. For open public Wi-Fi, <b>Enhanced Open</b> encrypts traffic without a shared password.",
-     "g": [
-      [
-       "Guest network",
-       "A separate Wi-Fi for visitors with no access to internal systems."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What is the benefit of WPA3-Personal?",
-     "o": [
-      "More range",
-      "Stronger defence against password guessing",
-      "Free internet"
-     ],
-     "a": 1,
-     "w": "WPA3-Personal adds protection against password-guessing attacks."
-    },
-    {
-     "q": "A 200-person company wants to remove a leaver without changing a shared password. What fits?",
-     "o": [
-      "A longer password",
-      "Hiding the SSID",
-      "WPA Enterprise with per-user login"
-     ],
-     "a": 2,
-     "w": "Enterprise authentication uses individual logins via 802.1X."
-    },
-    {
-     "q": "What is the main point of a guest network?",
-     "o": [
-      "Visitors get internet but not internal systems",
-      "Faster speed",
-      "Free cables"
-     ],
-     "a": 0,
-     "w": "It separates guests from staff systems."
-    }
-   ]
-  },
-  {
-   "id": "wf-4-1",
-   "lvl": 4,
-   "title": "Scenario: home office and shop",
-   "src": [
-    {
-     "l": "Wikipedia: Wireless site survey",
-     "u": "https://en.wikipedia.org/wiki/Wireless_site_survey"
-    },
-    {
-     "l": "Wikipedia: Wireless access point",
-     "u": "https://en.wikipedia.org/wiki/Wireless_access_point"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Home office",
-     "t": "One person, few devices. A <b>good wireless router</b> may be enough, or one access point if the router is badly placed. Large houses may need a <b>mesh</b> or wired APs. Wi-Fi 6 is a safe pick today.",
-     "g": []
-    },
-    {
-     "h": "Small shop",
-     "t": "Customers, staff, a card terminal and maybe cameras. Use <b>one or two PoE access points</b>, a separate <b>guest SSID</b>, and WPA2/WPA3 for the staff network. Keep payment devices off the guest network.",
-     "g": [
-      [
-       "PoE access point",
-       "An AP powered through its network cable."
-      ]
-     ]
-    },
-    {
-     "h": "Questions to ask",
-     "t": "How big is the place, and what are the walls like? How many people and devices at peak? What must never fail, like card payments? Is cabling possible? Answers decide AP count and type.",
-     "g": []
-    }
-   ],
-   "quiz": [
-    {
-     "q": "A shop has a card terminal and offers free Wi-Fi. What is wise?",
-     "o": [
-      "Put everything on one network",
-      "Hide the SSID only",
-      "Put guests on a separate network from payment devices"
-     ],
-     "a": 2,
-     "w": "Guest traffic should be separate from important internal devices."
-    },
-    {
-     "q": "A one-person home office in a small flat. What is usually enough?",
-     "o": [
-      "A good wireless router",
-      "Ten PoE access points",
-      "A fibre switch"
-     ],
-     "a": 0,
-     "w": "Small sites with few devices rarely need more than one decent unit."
-    },
-    {
-     "q": "Which question helps size Wi-Fi?",
-     "o": [
-      "What is the owner's age?",
-      "How many devices at peak?",
-      "Which cable colour?"
-     ],
-     "a": 1,
-     "w": "Peak users and devices drive capacity needs."
-    }
-   ]
-  },
-  {
-   "id": "wf-4-2",
-   "lvl": 4,
-   "title": "Scenario: hotel and warehouse",
-   "src": [
-    {
-     "l": "Wikipedia: Wireless site survey",
-     "u": "https://en.wikipedia.org/wiki/Wireless_site_survey"
-    },
-    {
-     "l": "Wikipedia: Wireless LAN controller",
-     "u": "https://en.wikipedia.org/wiki/Wireless_LAN_controller"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Hotel",
-     "t": "Many rooms, thick walls, guests streaming at the same time. Plan <b>many APs</b>, wired back to a switch, <b>central management</b> and good <b>roaming</b>. A <b>site survey</b> is strongly advised. Separate guest and staff networks.",
-     "g": []
-    },
-    {
-     "h": "Warehouse",
-     "t": "Tall metal racks, big open spaces, handheld scanners that must not drop. Metal blocks signal, so APs sit high and carefully placed. <b>Roaming quality</b> and coverage beat top speed. Survey on site, with racks full.",
-     "g": [
-      [
-       "Roaming scanner",
-       "A handheld that moves between APs while in use."
-      ]
-     ]
-    },
-    {
-     "h": "What to sell",
-     "t": "A reseller should offer the <b>survey</b>, the <b>APs</b> with a <b>controller or cloud tool</b>, PoE switches, and outdoor or ruggedised APs where needed. The extras make the project work and protect their reputation.",
-     "g": [
-      [
-       "Ruggedised",
-       "Built to handle dust, cold or knocks."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which matters most in a warehouse with handheld scanners?",
-     "o": [
-      "The brightest LEDs",
-      "Reliable roaming and coverage",
-      "The most SSIDs"
-     ],
-     "a": 1,
-     "w": "Scanners move around, so stable coverage and roaming matter more than peak speed."
-    },
-    {
-     "q": "A hotel has 150 rooms. Which is the best advice?",
-     "o": [
-      "One router in the lobby",
-      "Use only 2.4 GHz",
-      "Plan with a site survey and central management"
-     ],
-     "a": 2,
-     "w": "Large sites with many walls need surveyed placement and central control."
-    },
-    {
-     "q": "Why do metal racks matter?",
-     "o": [
-      "They block signal, so AP placement needs care",
-      "They boost Wi-Fi",
-      "They have no effect"
-     ],
-     "a": 0,
-     "w": "Obstacles like metal absorb or reflect radio signals."
-    }
-   ]
-  }
- ]
+  ]
 }

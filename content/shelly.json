@@ -1,1127 +1,1126 @@
 {
- "title": "Shelly",
- "emoji": "🔌",
- "desc": "Smart relays, plugs and energy meters",
- "src": [
-  {
-   "l": "Shelly Europe shop (categories, protocols, integrations)",
-   "u": "https://www.shelly.com/"
-  },
-  {
-   "l": "Shelly Group corporate",
-   "u": "https://corporate.shelly.com/about-us-2/"
-  },
-  {
-   "l": "Shelly knowledge base: devices",
-   "u": "https://kb.shelly.cloud/knowledge-base/devices"
-  },
-  {
-   "l": "Shelly API docs (Gen2+)",
-   "u": "https://shelly-api-docs.shelly.cloud/gen2/"
-  }
- ],
- "lessons": [
-  {
-   "id": "sh-1-1",
-   "lvl": 1,
-   "title": "Who is Shelly?",
-   "src": [
+  "title": "Shelly",
+  "desc": "Smart relays, plugs and energy meters",
+  "src": [
     {
-     "l": "Shelly Group corporate",
-     "u": "https://corporate.shelly.com/about-us-2/"
+      "l": "Shelly Europe shop (categories, protocols, integrations)",
+      "u": "https://www.shelly.com/"
     },
     {
-     "l": "Shelly Europe shop (categories, protocols, integrations)",
-     "u": "https://www.shelly.com/"
-    }
-   ],
-   "pages": [
+      "l": "Shelly Group corporate",
+      "u": "https://corporate.shelly.com/about-us-2/"
+    },
     {
-     "h": "A Bulgarian smart home brand",
-     "t": "Shelly is made by <b>Shelly Group</b> (earlier called Allterco), with roots in <b>Sofia, Bulgaria</b>. It also has offices in Munich and other countries, and is present in <b>over 100 markets</b>. The shares are listed on stock exchanges, so this is an established company, not a startup.",
-     "g": [
-      [
-       "Smart home",
-       "Home devices you control from a phone or automate: lights, heating, shutters, plugs."
+      "l": "Shelly knowledge base: devices",
+      "u": "https://kb.shelly.cloud/knowledge-base/devices"
+    },
+    {
+      "l": "Shelly API docs (Gen2+)",
+      "u": "https://shelly-api-docs.shelly.cloud/gen2/"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sh-1-1",
+      "lvl": 1,
+      "title": "Who is Shelly?",
+      "src": [
+        {
+          "l": "Shelly Group corporate",
+          "u": "https://corporate.shelly.com/about-us-2/"
+        },
+        {
+          "l": "Shelly Europe shop (categories, protocols, integrations)",
+          "u": "https://www.shelly.com/"
+        }
       ],
-      [
-       "Listed company",
-       "A company whose shares are traded on a stock exchange."
-      ]
-     ]
-    },
-    {
-     "h": "What they make",
-     "t": "Shelly makes small <b>smart relays and switches</b>, dimmers, plugs, sensors, thermostats, <b>energy meters</b> and more. There is also a <b>professional line</b> and a Bluetooth sensor line. The idea is one family of devices for lights, heating, shutters and energy.",
-     "g": [
-      [
-       "Relay",
-       "An electronic switch that turns a power circuit on or off when told to."
+      "pages": [
+        {
+          "h": "A Bulgarian smart home brand",
+          "t": "Shelly is made by <b>Shelly Group</b> (earlier called Allterco), with roots in <b>Sofia, Bulgaria</b>. It also has offices in Munich and other countries, and is present in <b>over 100 markets</b>. The shares are listed on stock exchanges, so this is an established company, not a startup.",
+          "g": [
+            [
+              "Smart home",
+              "Home devices you control from a phone or automate: lights, heating, shutters, plugs."
+            ],
+            [
+              "Listed company",
+              "A company whose shares are traded on a stock exchange."
+            ]
+          ]
+        },
+        {
+          "h": "What they make",
+          "t": "Shelly makes small <b>smart relays and switches</b>, dimmers, plugs, sensors, thermostats, <b>energy meters</b> and more. There is also a <b>professional line</b> and a Bluetooth sensor line. The idea is one family of devices for lights, heating, shutters and energy.",
+          "g": [
+            [
+              "Relay",
+              "An electronic switch that turns a power circuit on or off when told to."
+            ],
+            [
+              "Energy meter",
+              "A device that measures how much electricity is used or produced."
+            ]
+          ]
+        },
+        {
+          "h": "Where Allnet fits",
+          "t": "Shelly works with <b>official resellers and verified installers</b>. Allnet Nordic is a distributor: we supply resellers and installers, who then sell to home owners and businesses. Your customer is the electrician or installer, not the person living in the house.",
+          "g": [
+            [
+              "Distributor",
+              "A company that buys from the vendor and sells to resellers, not to end users."
+            ],
+            [
+              "Installer",
+              "A professional, often an electrician, who fits and sets up systems for customers."
+            ]
+          ]
+        }
       ],
-      [
-       "Energy meter",
-       "A device that measures how much electricity is used or produced."
+      "quiz": [
+        {
+          "q": "Where does Shelly come from?",
+          "o": [
+            "Bulgaria",
+            "Taiwan",
+            "Germany"
+          ],
+          "a": 0,
+          "w": "Shelly Group has its roots in Sofia, Bulgaria, and also has offices in Munich and other places."
+        },
+        {
+          "q": "Who is Allnet Nordic's typical Shelly customer?",
+          "o": [
+            "A home owner buying one plug",
+            "A reseller or installer",
+            "A power utility"
+          ],
+          "a": 1,
+          "w": "Allnet is a distributor. Resellers and installers buy from us and sell on to end customers."
+        },
+        {
+          "q": "Which of these is NOT something Shelly is known for?",
+          "o": [
+            "Smart relays and plugs",
+            "Energy meters",
+            "Enterprise firewalls"
+          ],
+          "a": 2,
+          "w": "Shelly makes smart home and energy devices. Firewalls are a different world, such as Stormshield."
+        }
       ]
-     ]
     },
     {
-     "h": "Where Allnet fits",
-     "t": "Shelly works with <b>official resellers and verified installers</b>. Allnet Nordic is a distributor: we supply resellers and installers, who then sell to home owners and businesses. Your customer is the electrician or installer, not the person living in the house.",
-     "g": [
-      [
-       "Distributor",
-       "A company that buys from the vendor and sells to resellers, not to end users."
+      "id": "sh-1-2",
+      "lvl": 1,
+      "title": "Why installers like Shelly",
+      "src": [
+        {
+          "l": "Shelly Europe shop (categories, protocols, integrations)",
+          "u": "https://www.shelly.com/"
+        },
+        {
+          "l": "Shelly Plus 1PM",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-1pm"
+        },
+        {
+          "l": "Home Assistant: Shelly integration",
+          "u": "https://www.home-assistant.io/integrations/shelly/"
+        }
       ],
-      [
-       "Installer",
-       "A professional, often an electrician, who fits and sets up systems for customers."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Where does Shelly come from?",
-     "o": [
-      "Bulgaria",
-      "Taiwan",
-      "Germany"
-     ],
-     "a": 0,
-     "w": "Shelly Group has its roots in Sofia, Bulgaria, and also has offices in Munich and other places."
-    },
-    {
-     "q": "Who is Allnet Nordic's typical Shelly customer?",
-     "o": [
-      "A home owner buying one plug",
-      "A reseller or installer",
-      "A power utility"
-     ],
-     "a": 1,
-     "w": "Allnet is a distributor. Resellers and installers buy from us and sell on to end customers."
-    },
-    {
-     "q": "Which of these is NOT something Shelly is known for?",
-     "o": [
-      "Smart relays and plugs",
-      "Energy meters",
-      "Enterprise firewalls"
-     ],
-     "a": 2,
-     "w": "Shelly makes smart home and energy devices. Firewalls are a different world, such as Stormshield."
-    }
-   ]
-  },
-  {
-   "id": "sh-1-2",
-   "lvl": 1,
-   "title": "Why installers like Shelly",
-   "src": [
-    {
-     "l": "Shelly Europe shop (categories, protocols, integrations)",
-     "u": "https://www.shelly.com/"
-    },
-    {
-     "l": "Shelly Plus 1PM",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-1pm"
-    },
-    {
-     "l": "Home Assistant: Shelly integration",
-     "u": "https://www.home-assistant.io/integrations/shelly/"
-    }
-   ],
-   "pages": [
-    {
-     "h": "It fits behind the wall switch",
-     "t": "Many Shelly relays are tiny. The <b>Plus 1PM</b> is about 37 x 42 x 16 mm and is small enough for many <b>wall boxes</b>, behind an existing switch or socket. So you can make an old house smart without new wall panels or new cables.",
-     "g": [
-      [
-       "Retrofit",
-       "Adding smart features to an existing building without major rebuilding."
+      "pages": [
+        {
+          "h": "It fits behind the wall switch",
+          "t": "Many Shelly relays are tiny. The <b>Plus 1PM</b> is about 37 x 42 x 16 mm and is small enough for many <b>wall boxes</b>, behind an existing switch or socket. So you can make an old house smart without new wall panels or new cables.",
+          "g": [
+            [
+              "Retrofit",
+              "Adding smart features to an existing building without major rebuilding."
+            ],
+            [
+              "Wall box",
+              "The small box in the wall that holds a switch or socket."
+            ]
+          ]
+        },
+        {
+          "h": "No hub, works locally",
+          "t": "Shelly devices join the normal <b>Wi-Fi or network</b> and need no extra hub box. A Plus device can run on the local network without the internet, using its built-in web page. Remote access through the Shelly cloud is optional.",
+          "g": [
+            [
+              "Hub",
+              "A central box that other smart devices must connect to before they work."
+            ],
+            [
+              "Local control",
+              "Controlling a device over your own network, without a vendor's internet service."
+            ]
+          ]
+        },
+        {
+          "h": "Works with other systems",
+          "t": "Shelly lists support for <b>Alexa, Google Home, Apple HomeKit, Matter and Home Assistant</b>. Home Assistant states that its Shelly integration talks <b>directly to the device and needs no cloud</b>. That means little vendor lock-in for the installer.",
+          "g": [
+            [
+              "Home Assistant",
+              "A popular free smart home platform that people run themselves."
+            ],
+            [
+              "Lock-in",
+              "Being stuck with one vendor because nothing else works with their products."
+            ],
+            [
+              "Matter",
+              "A common smart home standard so devices from different brands work together."
+            ]
+          ]
+        }
       ],
-      [
-       "Wall box",
-       "The small box in the wall that holds a switch or socket."
+      "quiz": [
+        {
+          "q": "Why can a Shelly Plus 1PM often go behind an existing light switch?",
+          "o": [
+            "It is very small",
+            "It uses solar power",
+            "It needs no electricity"
+          ],
+          "a": 0,
+          "w": "The Plus 1PM is only about 37 x 42 x 16 mm, so it often fits a wall box."
+        },
+        {
+          "q": "What does 'no hub required' mean for the installer?",
+          "o": [
+            "The devices need no power",
+            "Fewer boxes to buy and set up",
+            "It only works with one app"
+          ],
+          "a": 1,
+          "w": "Shelly devices connect to the normal network directly, so there is no extra central box to buy."
+        },
+        {
+          "q": "An installer worries about being locked to one vendor's app. Best Shelly argument?",
+          "o": [
+            "It is the cheapest brand",
+            "It only works in the Shelly cloud",
+            "Local control and integrations such as Home Assistant"
+          ],
+          "a": 2,
+          "w": "Shelly can run locally and integrates with many platforms, so the customer is not forced into one cloud."
+        }
       ]
-     ]
     },
     {
-     "h": "No hub, works locally",
-     "t": "Shelly devices join the normal <b>Wi-Fi or network</b> and need no extra hub box. A Plus device can run on the local network without the internet, using its built-in web page. Remote access through the Shelly cloud is optional.",
-     "g": [
-      [
-       "Hub",
-       "A central box that other smart devices must connect to before they work."
+      "id": "sh-2-1",
+      "lvl": 2,
+      "title": "Relays: Plus 1, 1PM, 2PM and i4",
+      "src": [
+        {
+          "l": "Shelly Plus 1PM",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-1pm"
+        },
+        {
+          "l": "Shelly Plus 2PM",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-2pm"
+        },
+        {
+          "l": "Shelly Plus i4",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-i4"
+        }
       ],
-      [
-       "Local control",
-       "Controlling a device over your own network, without a vendor's internet service."
-      ]
-     ]
-    },
-    {
-     "h": "Works with other systems",
-     "t": "Shelly lists support for <b>Alexa, Google Home, Apple HomeKit, Matter and Home Assistant</b>. Home Assistant states that its Shelly integration talks <b>directly to the device and needs no cloud</b>. That means little vendor lock-in for the installer.",
-     "g": [
-      [
-       "Home Assistant",
-       "A popular free smart home platform that people run themselves."
+      "pages": [
+        {
+          "h": "The relay is the core product",
+          "t": "A relay sits in the wall box and switches a lamp, pump or other load. <b>Plus 1</b> is one channel. <b>Plus 1PM</b> adds <b>power measurement</b>, so you can see how much the connected load uses.",
+          "g": [
+            [
+              "Load",
+              "The thing that is switched, such as a lamp, pump or heater."
+            ],
+            [
+              "PM",
+              "Power Metering: the device measures power use as well as switching."
+            ],
+            [
+              "Channel",
+              "One independent output a relay can switch."
+            ]
+          ]
+        },
+        {
+          "h": "2PM: two circuits or a shutter",
+          "t": "The <b>Plus 2PM</b> has two channels with power metering. It can switch <b>two separate circuits</b> or work in <b>cover mode</b> to drive a roller shutter, blind or awning. One product covers both jobs, which keeps stocking simple.",
+          "g": [
+            [
+              "Roller shutter",
+              "A window cover that rolls up and down, driven by a motor."
+            ]
+          ]
+        },
+        {
+          "h": "i4: input only",
+          "t": "The <b>Plus i4</b> has <b>four inputs and no output</b>. It reads wall buttons or switches and uses them to trigger scenes or control other Shelly devices. Use it when a wall button should start something elsewhere, not switch its own load.",
+          "g": [
+            [
+              "Scene",
+              "A saved set of actions, such as all lights off, triggered by one press."
+            ]
+          ]
+        }
       ],
-      [
-       "Lock-in",
-       "Being stuck with one vendor because nothing else works with their products."
+      "quiz": [
+        {
+          "q": "What does the 'PM' in Plus 1PM add?",
+          "o": [
+            "A battery",
+            "Bluetooth",
+            "Power measurement"
+          ],
+          "a": 2,
+          "w": "PM stands for power metering: the device measures how much the connected load uses."
+        },
+        {
+          "q": "A customer wants to control a roller shutter. Which fits?",
+          "o": [
+            "Plus i4",
+            "Plus 2PM in cover mode",
+            "Plus H&T"
+          ],
+          "a": 1,
+          "w": "The 2PM has a cover mode for shutters and blinds. The i4 has no outputs and the H&T is a sensor."
+        },
+        {
+          "q": "What is the Plus i4 for?",
+          "o": [
+            "Reading wall buttons to trigger other things",
+            "Measuring a solar inverter",
+            "Switching a 16 A load"
+          ],
+          "a": 0,
+          "w": "The i4 only has inputs. It turns button presses into actions for other devices."
+        },
+        {
+          "q": "Which statement is true for the Plus 2PM?",
+          "o": [
+            "It is battery powered",
+            "It has one input only",
+            "It has two channels"
+          ],
+          "a": 2,
+          "w": "The 2PM has two channels with metering, usable for two circuits or one cover motor."
+        }
+      ]
+    },
+    {
+      "id": "sh-2-2",
+      "lvl": 2,
+      "title": "Plugs, sensors and small meters",
+      "src": [
+        {
+          "l": "Shelly Plus Plug S",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-plug-s"
+        },
+        {
+          "l": "Shelly Plus H&T",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-h-t"
+        },
+        {
+          "l": "Shelly EM Gen3",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-em-gen3"
+        }
       ],
-      [
-       "Matter",
-       "A common smart home standard so devices from different brands work together."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Why can a Shelly Plus 1PM often go behind an existing light switch?",
-     "o": [
-      "It is very small",
-      "It uses solar power",
-      "It needs no electricity"
-     ],
-     "a": 0,
-     "w": "The Plus 1PM is only about 37 x 42 x 16 mm, so it often fits a wall box."
-    },
-    {
-     "q": "What does 'no hub required' mean for the installer?",
-     "o": [
-      "The devices need no power",
-      "Fewer boxes to buy and set up",
-      "It only works with one app"
-     ],
-     "a": 1,
-     "w": "Shelly devices connect to the normal network directly, so there is no extra central box to buy."
-    },
-    {
-     "q": "An installer worries about being locked to one vendor's app. Best Shelly argument?",
-     "o": [
-      "It is the cheapest brand",
-      "It only works in the Shelly cloud",
-      "Local control and integrations such as Home Assistant"
-     ],
-     "a": 2,
-     "w": "Shelly can run locally and integrates with many platforms, so the customer is not forced into one cloud."
-    }
-   ]
-  },
-  {
-   "id": "sh-2-1",
-   "lvl": 2,
-   "title": "Relays: Plus 1, 1PM, 2PM and i4",
-   "src": [
-    {
-     "l": "Shelly Plus 1PM",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-1pm"
-    },
-    {
-     "l": "Shelly Plus 2PM",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-2pm"
-    },
-    {
-     "l": "Shelly Plus i4",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-i4"
-    }
-   ],
-   "pages": [
-    {
-     "h": "The relay is the core product",
-     "t": "A relay sits in the wall box and switches a lamp, pump or other load. <b>Plus 1</b> is one channel. <b>Plus 1PM</b> adds <b>power measurement</b>, so you can see how much the connected load uses.",
-     "g": [
-      [
-       "Load",
-       "The thing that is switched, such as a lamp, pump or heater."
+      "pages": [
+        {
+          "h": "Plug S: plug and play",
+          "t": "The <b>Plus Plug S</b> is a smart plug with built-in <b>power measurement</b> and overheating protection. It needs no installation: plug it in, plug the appliance in. Good for a heater or a coffee machine, or for checking what an old appliance really uses.",
+          "g": [
+            [
+              "Smart plug",
+              "An adapter that sits between socket and appliance and can switch it remotely."
+            ]
+          ]
+        },
+        {
+          "h": "H&T: temperature and humidity",
+          "t": "The <b>Plus H&T</b> is a battery sensor with a screen that reports <b>temperature and humidity</b>. It runs on 4 AA batteries, about a year according to the manual. Its readings can be sent to other systems, for example via webhooks or MQTT.",
+          "g": [
+            [
+              "Sensor",
+              "A device that measures something, like temperature, motion or light."
+            ]
+          ]
+        },
+        {
+          "h": "EM Gen3: a small energy meter",
+          "t": "The <b>Shelly EM Gen3</b> measures a single phase using external <b>current clamps</b>, described as contactless metering. It is small enough for a wall box. Use it to see what a circuit or a whole home uses.",
+          "g": [
+            [
+              "Phase",
+              "One of the live wires in mains power; homes have one or three."
+            ],
+            [
+              "Current clamp (CT)",
+              "A clip-on sensor that measures current without cutting the wire."
+            ]
+          ]
+        }
       ],
-      [
-       "PM",
-       "Power Metering: the device measures power use as well as switching."
+      "quiz": [
+        {
+          "q": "A retailer wants a no-installation device to see what an appliance uses. Which?",
+          "o": [
+            "Pro 4PM",
+            "Plus i4",
+            "Plus Plug S"
+          ],
+          "a": 2,
+          "w": "The Plug S has built-in power measurement and needs no wiring."
+        },
+        {
+          "q": "What does the Plus H&T measure?",
+          "o": [
+            "Water leaks",
+            "Temperature and humidity",
+            "Door position"
+          ],
+          "a": 1,
+          "w": "H&T stands for humidity and temperature."
+        },
+        {
+          "q": "What does the EM Gen3 use to measure current?",
+          "o": [
+            "A built-in thermometer",
+            "A wireless camera",
+            "External current transformers (clamps)"
+          ],
+          "a": 2,
+          "w": "It measures through external CTs, described as contactless metering."
+        }
+      ]
+    },
+    {
+      "id": "sh-2-3",
+      "lvl": 2,
+      "title": "The Pro line for professionals",
+      "src": [
+        {
+          "l": "Shelly Pro 4PM",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-4pm"
+        },
+        {
+          "l": "Shelly Pro 3EM",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-3em"
+        },
+        {
+          "l": "Shelly knowledge base: devices",
+          "u": "https://kb.shelly.cloud/knowledge-base/devices"
+        }
       ],
-      [
-       "Channel",
-       "One independent output a relay can switch."
-      ]
-     ]
-    },
-    {
-     "h": "2PM: two circuits or a shutter",
-     "t": "The <b>Plus 2PM</b> has two channels with power metering. It can switch <b>two separate circuits</b> or work in <b>cover mode</b> to drive a roller shutter, blind or awning. One product covers both jobs, which keeps stocking simple.",
-     "g": [
-      [
-       "Roller shutter",
-       "A window cover that rolls up and down, driven by a motor."
-      ]
-     ]
-    },
-    {
-     "h": "i4: input only",
-     "t": "The <b>Plus i4</b> has <b>four inputs and no output</b>. It reads wall buttons or switches and uses them to trigger scenes or control other Shelly devices. Use it when a wall button should start something elsewhere, not switch its own load.",
-     "g": [
-      [
-       "Scene",
-       "A saved set of actions, such as all lights off, triggered by one press."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What does the 'PM' in Plus 1PM add?",
-     "o": [
-      "A battery",
-      "Bluetooth",
-      "Power measurement"
-     ],
-     "a": 2,
-     "w": "PM stands for power metering: the device measures how much the connected load uses."
-    },
-    {
-     "q": "A customer wants to control a roller shutter. Which fits?",
-     "o": [
-      "Plus i4",
-      "Plus 2PM in cover mode",
-      "Plus H&T"
-     ],
-     "a": 1,
-     "w": "The 2PM has a cover mode for shutters and blinds. The i4 has no outputs and the H&T is a sensor."
-    },
-    {
-     "q": "What is the Plus i4 for?",
-     "o": [
-      "Reading wall buttons to trigger other things",
-      "Measuring a solar inverter",
-      "Switching a 16 A load"
-     ],
-     "a": 0,
-     "w": "The i4 only has inputs. It turns button presses into actions for other devices."
-    },
-    {
-     "q": "Which statement is true for the Plus 2PM?",
-     "o": [
-      "It is battery powered",
-      "It has one input only",
-      "It has two channels"
-     ],
-     "a": 2,
-     "w": "The 2PM has two channels with metering, usable for two circuits or one cover motor."
-    }
-   ]
-  },
-  {
-   "id": "sh-2-2",
-   "lvl": 2,
-   "title": "Plugs, sensors and small meters",
-   "src": [
-    {
-     "l": "Shelly Plus Plug S",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-plug-s"
-    },
-    {
-     "l": "Shelly Plus H&T",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-plus-h-t"
-    },
-    {
-     "l": "Shelly EM Gen3",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-em-gen3"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Plug S: plug and play",
-     "t": "The <b>Plus Plug S</b> is a smart plug with built-in <b>power measurement</b> and overheating protection. It needs no installation: plug it in, plug the appliance in. Good for a heater or a coffee machine, or for checking what an old appliance really uses.",
-     "g": [
-      [
-       "Smart plug",
-       "An adapter that sits between socket and appliance and can switch it remotely."
-      ]
-     ]
-    },
-    {
-     "h": "H&T: temperature and humidity",
-     "t": "The <b>Plus H&T</b> is a battery sensor with a screen that reports <b>temperature and humidity</b>. It runs on 4 AA batteries, about a year according to the manual. Its readings can be sent to other systems, for example via webhooks or MQTT.",
-     "g": [
-      [
-       "Sensor",
-       "A device that measures something, like temperature, motion or light."
-      ]
-     ]
-    },
-    {
-     "h": "EM Gen3: a small energy meter",
-     "t": "The <b>Shelly EM Gen3</b> measures a single phase using external <b>current clamps</b>, described as contactless metering. It is small enough for a wall box. Use it to see what a circuit or a whole home uses.",
-     "g": [
-      [
-       "Phase",
-       "One of the live wires in mains power; homes have one or three."
+      "pages": [
+        {
+          "h": "DIN rail and wired network",
+          "t": "The <b>Pro</b> line is made for the <b>DIN rail</b> inside the fuse cabinet. Models include Pro 1, 1PM, 2, 2PM, 3 and <b>4PM</b>, plus dimmers and energy meters. Pro devices such as the 4PM and 3EM offer <b>LAN (Ethernet), Wi-Fi and Bluetooth</b>.",
+          "g": [
+            [
+              "DIN rail",
+              "A standard metal rail in electrical cabinets that devices clip onto."
+            ],
+            [
+              "LAN / Ethernet",
+              "A wired network cable connection, generally more stable than Wi-Fi."
+            ]
+          ]
+        },
+        {
+          "h": "Why pros pick Pro",
+          "t": "Professional jobs often want everything in one cabinet with a <b>wired network</b> connection, which is generally more stable than Wi-Fi. The Pro 4PM has four channels, and a colour screen with buttons on the front for local menus.",
+          "g": [
+            [
+              "Cabinet",
+              "The fuse or distribution box where circuits are protected and switched."
+            ]
+          ]
+        },
+        {
+          "h": "Plus or Pro?",
+          "t": "Rule of thumb: <b>Plus</b> goes behind switches in existing homes, <b>Pro</b> goes in the cabinet for larger or professional jobs. Both are Shelly, so the same family and way of working. <b>Pro 3EM</b> is the three-phase energy meter of the Pro range.",
+          "g": [
+            [
+              "Three-phase",
+              "Mains supply with three live wires, common in larger buildings."
+            ]
+          ]
+        }
       ],
-      [
-       "Current clamp (CT)",
-       "A clip-on sensor that measures current without cutting the wire."
+      "quiz": [
+        {
+          "q": "Where is a Shelly Pro device normally mounted?",
+          "o": [
+            "Behind a light switch",
+            "On a DIN rail in the cabinet",
+            "On a window"
+          ],
+          "a": 1,
+          "w": "Pro devices are DIN-rail products for electrical cabinets."
+        },
+        {
+          "q": "What connection do Pro devices offer that is useful in a cabinet?",
+          "o": [
+            "Solar input",
+            "A built-in camera",
+            "LAN (Ethernet)"
+          ],
+          "a": 2,
+          "w": "Pro devices such as the 4PM offer wired LAN as well as Wi-Fi and Bluetooth."
+        },
+        {
+          "q": "Customer: an old house, only a wall box behind the switch, no cabinet space. Which line?",
+          "o": [
+            "Plus",
+            "Pro",
+            "Neither, Shelly cannot do this"
+          ],
+          "a": 0,
+          "w": "Plus relays are made to sit in the wall box behind existing switches."
+        }
       ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "A retailer wants a no-installation device to see what an appliance uses. Which?",
-     "o": [
-      "Pro 4PM",
-      "Plus i4",
-      "Plus Plug S"
-     ],
-     "a": 2,
-     "w": "The Plug S has built-in power measurement and needs no wiring."
     },
     {
-     "q": "What does the Plus H&T measure?",
-     "o": [
-      "Water leaks",
-      "Temperature and humidity",
-      "Door position"
-     ],
-     "a": 1,
-     "w": "H&T stands for humidity and temperature."
-    },
-    {
-     "q": "What does the EM Gen3 use to measure current?",
-     "o": [
-      "A built-in thermometer",
-      "A wireless camera",
-      "External current transformers (clamps)"
-     ],
-     "a": 2,
-     "w": "It measures through external CTs, described as contactless metering."
-    }
-   ]
-  },
-  {
-   "id": "sh-2-3",
-   "lvl": 2,
-   "title": "The Pro line for professionals",
-   "src": [
-    {
-     "l": "Shelly Pro 4PM",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-4pm"
-    },
-    {
-     "l": "Shelly Pro 3EM",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-3em"
-    },
-    {
-     "l": "Shelly knowledge base: devices",
-     "u": "https://kb.shelly.cloud/knowledge-base/devices"
-    }
-   ],
-   "pages": [
-    {
-     "h": "DIN rail and wired network",
-     "t": "The <b>Pro</b> line is made for the <b>DIN rail</b> inside the fuse cabinet. Models include Pro 1, 1PM, 2, 2PM, 3 and <b>4PM</b>, plus dimmers and energy meters. Pro devices such as the 4PM and 3EM offer <b>LAN (Ethernet), Wi-Fi and Bluetooth</b>.",
-     "g": [
-      [
-       "DIN rail",
-       "A standard metal rail in electrical cabinets that devices clip onto."
+      "id": "sh-3-1",
+      "lvl": 3,
+      "title": "Generations in plain words",
+      "src": [
+        {
+          "l": "Shelly knowledge base: devices",
+          "u": "https://kb.shelly.cloud/knowledge-base/devices"
+        },
+        {
+          "l": "Shelly API docs (Gen2+)",
+          "u": "https://shelly-api-docs.shelly.cloud/gen2/"
+        },
+        {
+          "l": "Enabling Matter on Shelly Gen3 and newer",
+          "u": "https://kb.shelly.cloud/knowledge-base/setting-up-gen3-devices-via-matter"
+        },
+        {
+          "l": "Shelly Gen4 press release (Jan 2025)",
+          "u": "https://www.securityinfowatch.com/home/press-release/55252718/shelly-group-shelly-to-unveil-next-gen-smart-home-devices-featuring-multi-protocol-connectivity-at-ces-2025"
+        },
+        {
+          "l": "Shelly 1PM Gen4",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-1pm-gen4"
+        }
       ],
-      [
-       "LAN / Ethernet",
-       "A wired network cable connection, generally more stable than Wi-Fi."
-      ]
-     ]
-    },
-    {
-     "h": "Why pros pick Pro",
-     "t": "Professional jobs often want everything in one cabinet with a <b>wired network</b> connection, which is generally more stable than Wi-Fi. The Pro 4PM has four channels, and a colour screen with buttons on the front for local menus.",
-     "g": [
-      [
-       "Cabinet",
-       "The fuse or distribution box where circuits are protected and switched."
-      ]
-     ]
-    },
-    {
-     "h": "Plus or Pro?",
-     "t": "Rule of thumb: <b>Plus</b> goes behind switches in existing homes, <b>Pro</b> goes in the cabinet for larger or professional jobs. Both are Shelly, so the same family and way of working. <b>Pro 3EM</b> is the three-phase energy meter of the Pro range.",
-     "g": [
-      [
-       "Three-phase",
-       "Mains supply with three live wires, common in larger buildings."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Where is a Shelly Pro device normally mounted?",
-     "o": [
-      "Behind a light switch",
-      "On a DIN rail in the cabinet",
-      "On a window"
-     ],
-     "a": 1,
-     "w": "Pro devices are DIN-rail products for electrical cabinets."
-    },
-    {
-     "q": "What connection do Pro devices offer that is useful in a cabinet?",
-     "o": [
-      "Solar input",
-      "A built-in camera",
-      "LAN (Ethernet)"
-     ],
-     "a": 2,
-     "w": "Pro devices such as the 4PM offer wired LAN as well as Wi-Fi and Bluetooth."
-    },
-    {
-     "q": "Customer: an old house, only a wall box behind the switch, no cabinet space. Which line?",
-     "o": [
-      "Plus",
-      "Pro",
-      "Neither, Shelly cannot do this"
-     ],
-     "a": 0,
-     "w": "Plus relays are made to sit in the wall box behind existing switches."
-    }
-   ]
-  },
-  {
-   "id": "sh-3-1",
-   "lvl": 3,
-   "title": "Generations in plain words",
-   "src": [
-    {
-     "l": "Shelly knowledge base: devices",
-     "u": "https://kb.shelly.cloud/knowledge-base/devices"
-    },
-    {
-     "l": "Shelly API docs (Gen2+)",
-     "u": "https://shelly-api-docs.shelly.cloud/gen2/"
-    },
-    {
-     "l": "Enabling Matter on Shelly Gen3 and newer",
-     "u": "https://kb.shelly.cloud/knowledge-base/setting-up-gen3-devices-via-matter"
-    },
-    {
-     "l": "Shelly Gen4 press release (Jan 2025)",
-     "u": "https://www.securityinfowatch.com/home/press-release/55252718/shelly-group-shelly-to-unveil-next-gen-smart-home-devices-featuring-multi-protocol-connectivity-at-ces-2025"
-    },
-    {
-     "l": "Shelly 1PM Gen4",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-1pm-gen4"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Gen1, Plus/Pro (Gen2), Gen3, Gen4",
-     "t": "Shelly numbers its device <b>generations</b>. <b>Plus</b> and <b>Pro</b> belong to Gen2. <b>Gen3</b> and <b>Gen4</b> follow. Shelly says the Gen2 generation brought a faster processor and more memory, and unified settings across devices.",
-     "g": [
-      [
-       "Generation (Gen)",
-       "A hardware and software version of the product family; newer is generally more capable."
+      "pages": [
+        {
+          "h": "Gen1, Plus/Pro (Gen2), Gen3, Gen4",
+          "t": "Shelly numbers its device <b>generations</b>. <b>Plus</b> and <b>Pro</b> belong to Gen2. <b>Gen3</b> and <b>Gen4</b> follow. Shelly says the Gen2 generation brought a faster processor and more memory, and unified settings across devices.",
+          "g": [
+            [
+              "Generation (Gen)",
+              "A hardware and software version of the product family; newer is generally more capable."
+            ],
+            [
+              "Firmware",
+              "The software inside a device; it can be updated."
+            ]
+          ]
+        },
+        {
+          "h": "Matter for newer devices",
+          "t": "The Shelly knowledge base explains how to enable <b>Matter</b> on Gen3 and newer devices that do not have it by default. It needs a firmware update and a Matter hub. Check the exact model before promising Matter, because support can differ.",
+          "g": [
+            [
+              "Matter",
+              "A shared smart home standard, so devices from different brands work together."
+            ],
+            [
+              "Hub",
+              "A central box that links devices."
+            ]
+          ]
+        },
+        {
+          "h": "Gen4 and Mini",
+          "t": "<b>Gen4</b> was presented in 2025 with <b>multi-protocol</b> connectivity: Wi-Fi, Bluetooth, and Matter or Zigbee, switchable per device. <b>Mini</b> models are extra small relays for tight wall boxes. In short: pick the newest generation that fits the job.",
+          "g": [
+            [
+              "Zigbee",
+              "A low-power wireless standard used by many smart home sensors and lights."
+            ],
+            [
+              "Multi-protocol",
+              "One device that can speak several wireless languages."
+            ]
+          ]
+        }
       ],
-      [
-       "Firmware",
-       "The software inside a device; it can be updated."
+      "quiz": [
+        {
+          "q": "Which generation do the Plus and Pro lines belong to?",
+          "o": [
+            "Gen4",
+            "Gen2",
+            "None, they are separate"
+          ],
+          "a": 1,
+          "w": "Plus and Pro devices belong to Gen2."
+        },
+        {
+          "q": "A customer asks about Matter. Best answer?",
+          "o": [
+            "Shelly does not use Matter",
+            "All Shelly ever made supports it",
+            "Newer generations can support it, check the exact model"
+          ],
+          "a": 2,
+          "w": "Matter is available on Gen3 and newer, but support depends on the model and firmware."
+        },
+        {
+          "q": "What is a Shelly Mini?",
+          "o": [
+            "A very small relay version",
+            "A Bluetooth remote",
+            "A cheaper cloud plan"
+          ],
+          "a": 0,
+          "w": "Mini devices are the extra-compact relays for tight wall boxes."
+        }
       ]
-     ]
     },
     {
-     "h": "Matter for newer devices",
-     "t": "The Shelly knowledge base explains how to enable <b>Matter</b> on Gen3 and newer devices that do not have it by default. It needs a firmware update and a Matter hub. Check the exact model before promising Matter, because support can differ.",
-     "g": [
-      [
-       "Matter",
-       "A shared smart home standard, so devices from different brands work together."
+      "id": "sh-3-2",
+      "lvl": 3,
+      "title": "BLU: Bluetooth sensors and the gateway",
+      "src": [
+        {
+          "l": "Shelly BLU Gateway Gen3",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-blu-gateway-gen3"
+        },
+        {
+          "l": "Shelly BLU Motion",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-blu-motion"
+        },
+        {
+          "l": "Shelly knowledge base: devices",
+          "u": "https://kb.shelly.cloud/knowledge-base/devices"
+        },
+        {
+          "l": "Shelly BLU TRV",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-blu-trv"
+        }
       ],
-      [
-       "Hub",
-       "A central box that links devices."
-      ]
-     ]
-    },
-    {
-     "h": "Gen4 and Mini",
-     "t": "<b>Gen4</b> was presented in 2025 with <b>multi-protocol</b> connectivity: Wi-Fi, Bluetooth, and Matter or Zigbee, switchable per device. <b>Mini</b> models are extra small relays for tight wall boxes. In short: pick the newest generation that fits the job.",
-     "g": [
-      [
-       "Zigbee",
-       "A low-power wireless standard used by many smart home sensors and lights."
+      "pages": [
+        {
+          "h": "What BLU is",
+          "t": "<b>BLU</b> is Shelly's range of small <b>Bluetooth</b> devices: motion sensor, door and window sensor, temperature sensor, buttons, remotes and a <b>radiator valve (TRV)</b>. They are battery powered and need no wiring, so they suit retrofits.",
+          "g": [
+            [
+              "Bluetooth LE",
+              "A low-power short-range wireless link used by small battery devices."
+            ],
+            [
+              "TRV",
+              "Thermostatic radiator valve: a smart valve on a radiator that regulates room heat."
+            ]
+          ]
+        },
+        {
+          "h": "The bridge: gateway",
+          "t": "BLU devices talk Bluetooth, not Wi-Fi, so they need a <b>gateway</b> to reach the Wi-Fi network. The <b>BLU Gateway Gen3</b> is a Bluetooth-to-Wi-Fi unit with a USB-A connector. It supports up to <b>five BLU TRVs</b>, with a range of up to 10 m indoors.",
+          "g": [
+            [
+              "Gateway",
+              "A device that connects two kinds of network, here Bluetooth and Wi-Fi."
+            ]
+          ]
+        },
+        {
+          "h": "Battery life and gateways",
+          "t": "The <b>BLU Motion</b> sensor runs on one coin battery, which Shelly estimates at up to <b>5 years</b>. In the Shelly app it needs a powered Shelly Wi-Fi and Bluetooth device, Gen2 or newer, acting as the gateway. So an existing Shelly relay can sometimes do that job.",
+          "g": [
+            [
+              "Coin cell",
+              "A flat round battery, like the ones in watches and key fobs."
+            ]
+          ]
+        }
       ],
-      [
-       "Multi-protocol",
-       "One device that can speak several wireless languages."
+      "quiz": [
+        {
+          "q": "What wireless technology do BLU devices use?",
+          "o": [
+            "Wired Ethernet",
+            "Mobile network",
+            "Bluetooth"
+          ],
+          "a": 2,
+          "w": "BLU stands for Bluetooth devices, which are battery powered and wire-free."
+        },
+        {
+          "q": "A customer wants smart radiator valves in an old building. What do you offer?",
+          "o": [
+            "Pro 3EM",
+            "BLU TRV with a BLU Gateway Gen3",
+            "Plus i4"
+          ],
+          "a": 1,
+          "w": "The BLU TRV is the radiator valve, and it reaches the network through a gateway."
+        },
+        {
+          "q": "Why does a BLU sensor need a gateway to reach your network?",
+          "o": [
+            "It speaks Bluetooth, not Wi-Fi",
+            "It has no battery",
+            "It only works outdoors"
+          ],
+          "a": 0,
+          "w": "The gateway bridges Bluetooth to the Wi-Fi network."
+        },
+        {
+          "q": "How many TRVs can one BLU Gateway Gen3 handle?",
+          "o": [
+            "Only one",
+            "Up to five",
+            "Up to fifty"
+          ],
+          "a": 1,
+          "w": "The Gen3 gateway page says it supports up to five BLU TRVs."
+        }
       ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which generation do the Plus and Pro lines belong to?",
-     "o": [
-      "Gen4",
-      "Gen2",
-      "None, they are separate"
-     ],
-     "a": 1,
-     "w": "Plus and Pro devices belong to Gen2."
     },
     {
-     "q": "A customer asks about Matter. Best answer?",
-     "o": [
-      "Shelly does not use Matter",
-      "All Shelly ever made supports it",
-      "Newer generations can support it, check the exact model"
-     ],
-     "a": 2,
-     "w": "Matter is available on Gen3 and newer, but support depends on the model and firmware."
-    },
-    {
-     "q": "What is a Shelly Mini?",
-     "o": [
-      "A very small relay version",
-      "A Bluetooth remote",
-      "A cheaper cloud plan"
-     ],
-     "a": 0,
-     "w": "Mini devices are the extra-compact relays for tight wall boxes."
-    }
-   ]
-  },
-  {
-   "id": "sh-3-2",
-   "lvl": 3,
-   "title": "BLU: Bluetooth sensors and the gateway",
-   "src": [
-    {
-     "l": "Shelly BLU Gateway Gen3",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-blu-gateway-gen3"
-    },
-    {
-     "l": "Shelly BLU Motion",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-blu-motion"
-    },
-    {
-     "l": "Shelly knowledge base: devices",
-     "u": "https://kb.shelly.cloud/knowledge-base/devices"
-    },
-    {
-     "l": "Shelly BLU TRV",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-blu-trv"
-    }
-   ],
-   "pages": [
-    {
-     "h": "What BLU is",
-     "t": "<b>BLU</b> is Shelly's range of small <b>Bluetooth</b> devices: motion sensor, door and window sensor, temperature sensor, buttons, remotes and a <b>radiator valve (TRV)</b>. They are battery powered and need no wiring, so they suit retrofits.",
-     "g": [
-      [
-       "Bluetooth LE",
-       "A low-power short-range wireless link used by small battery devices."
+      "id": "sh-3-3",
+      "lvl": 3,
+      "title": "Cloud, app and local control",
+      "src": [
+        {
+          "l": "Shelly Europe shop (categories, protocols, integrations)",
+          "u": "https://www.shelly.com/"
+        },
+        {
+          "l": "Home Assistant: Shelly integration",
+          "u": "https://www.home-assistant.io/integrations/shelly/"
+        },
+        {
+          "l": "Shelly Premium announcement",
+          "u": "https://corporate.shelly.com/en/news/shelly-group-plc-taps-recurring-revenue-potential-with-premium-subscription-feature-for-shelly-smart-control-app"
+        }
       ],
-      [
-       "TRV",
-       "Thermostatic radiator valve: a smart valve on a radiator that regulates room heat."
-      ]
-     ]
-    },
-    {
-     "h": "The bridge: gateway",
-     "t": "BLU devices talk Bluetooth, not Wi-Fi, so they need a <b>gateway</b> to reach the Wi-Fi network. The <b>BLU Gateway Gen3</b> is a Bluetooth-to-Wi-Fi unit with a USB-A connector. It supports up to <b>five BLU TRVs</b>, with a range of up to 10 m indoors.",
-     "g": [
-      [
-       "Gateway",
-       "A device that connects two kinds of network, here Bluetooth and Wi-Fi."
-      ]
-     ]
-    },
-    {
-     "h": "Battery life and gateways",
-     "t": "The <b>BLU Motion</b> sensor runs on one coin battery, which Shelly estimates at up to <b>5 years</b>. In the Shelly app it needs a powered Shelly Wi-Fi and Bluetooth device, Gen2 or newer, acting as the gateway. So an existing Shelly relay can sometimes do that job.",
-     "g": [
-      [
-       "Coin cell",
-       "A flat round battery, like the ones in watches and key fobs."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What wireless technology do BLU devices use?",
-     "o": [
-      "Wired Ethernet",
-      "Mobile network",
-      "Bluetooth"
-     ],
-     "a": 2,
-     "w": "BLU stands for Bluetooth devices, which are battery powered and wire-free."
-    },
-    {
-     "q": "A customer wants smart radiator valves in an old building. What do you offer?",
-     "o": [
-      "Pro 3EM",
-      "BLU TRV with a BLU Gateway Gen3",
-      "Plus i4"
-     ],
-     "a": 1,
-     "w": "The BLU TRV is the radiator valve, and it reaches the network through a gateway."
-    },
-    {
-     "q": "Why does a BLU sensor need a gateway to reach your network?",
-     "o": [
-      "It speaks Bluetooth, not Wi-Fi",
-      "It has no battery",
-      "It only works outdoors"
-     ],
-     "a": 0,
-     "w": "The gateway bridges Bluetooth to the Wi-Fi network."
-    },
-    {
-     "q": "How many TRVs can one BLU Gateway Gen3 handle?",
-     "o": [
-      "Only one",
-      "Up to five",
-      "Up to fifty"
-     ],
-     "a": 1,
-     "w": "The Gen3 gateway page says it supports up to five BLU TRVs."
-    }
-   ]
-  },
-  {
-   "id": "sh-3-3",
-   "lvl": 3,
-   "title": "Cloud, app and local control",
-   "src": [
-    {
-     "l": "Shelly Europe shop (categories, protocols, integrations)",
-     "u": "https://www.shelly.com/"
-    },
-    {
-     "l": "Home Assistant: Shelly integration",
-     "u": "https://www.home-assistant.io/integrations/shelly/"
-    },
-    {
-     "l": "Shelly Premium announcement",
-     "u": "https://corporate.shelly.com/en/news/shelly-group-plc-taps-recurring-revenue-potential-with-premium-subscription-feature-for-shelly-smart-control-app"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Two ways to use the same device",
-     "t": "Shelly devices can be controlled <b>locally</b> on your own network or <b>remotely</b> through the Shelly cloud. Plus devices run on a local Wi-Fi network with a built-in web page, and they also work with cloud services for remote access.",
-     "g": [
-      [
-       "Cloud",
-       "Internet servers run by a vendor, used for remote access and sharing."
-      ]
-     ]
-    },
-    {
-     "h": "The app",
-     "t": "The <b>Shelly app</b> sets up devices, schedules and scenes. Shelly also offers a <b>paid Premium tier</b> with extra features. As a seller you mostly need to know that Premium is an optional add-on for the end user, not something the installer must sell.",
-     "g": [
-      [
-       "Subscription",
-       "A recurring fee for extra features or services."
-      ]
-     ]
-    },
-    {
-     "h": "For tinkerers and integrators",
-     "t": "Shelly devices offer open interfaces such as <b>MQTT and HTTP</b>, and scripts that run inside the device. Home Assistant uses the device directly, <b>no cloud needed</b>. Integrators like this because they can build their own dashboards and rules.",
-     "g": [
-      [
-       "MQTT",
-       "A light messaging protocol used by many smart home systems."
+      "pages": [
+        {
+          "h": "Two ways to use the same device",
+          "t": "Shelly devices can be controlled <b>locally</b> on your own network or <b>remotely</b> through the Shelly cloud. Plus devices run on a local Wi-Fi network with a built-in web page, and they also work with cloud services for remote access.",
+          "g": [
+            [
+              "Cloud",
+              "Internet servers run by a vendor, used for remote access and sharing."
+            ]
+          ]
+        },
+        {
+          "h": "The app",
+          "t": "The <b>Shelly app</b> sets up devices, schedules and scenes. Shelly also offers a <b>paid Premium tier</b> with extra features. As a seller you mostly need to know that Premium is an optional add-on for the end user, not something the installer must sell.",
+          "g": [
+            [
+              "Subscription",
+              "A recurring fee for extra features or services."
+            ]
+          ]
+        },
+        {
+          "h": "For tinkerers and integrators",
+          "t": "Shelly devices offer open interfaces such as <b>MQTT and HTTP</b>, and scripts that run inside the device. Home Assistant uses the device directly, <b>no cloud needed</b>. Integrators like this because they can build their own dashboards and rules.",
+          "g": [
+            [
+              "MQTT",
+              "A light messaging protocol used by many smart home systems."
+            ],
+            [
+              "API",
+              "A way for other software to talk to a device in a defined way."
+            ]
+          ]
+        }
       ],
-      [
-       "API",
-       "A way for other software to talk to a device in a defined way."
+      "quiz": [
+        {
+          "q": "Can a Shelly Plus device run without the cloud?",
+          "o": [
+            "No, it always needs the cloud",
+            "Yes, on the local network",
+            "Only with a subscription"
+          ],
+          "a": 1,
+          "w": "The Plus devices run standalone on a local Wi-Fi network through their web interface."
+        },
+        {
+          "q": "What is Shelly Premium?",
+          "o": [
+            "A hardware version",
+            "A warranty",
+            "An optional paid app upgrade"
+          ],
+          "a": 2,
+          "w": "Shelly offers a paid Premium tier in the app with extra features."
+        },
+        {
+          "q": "An integrator wants to build own automations with open interfaces. What helps?",
+          "o": [
+            "Only the cloud app",
+            "MQTT, HTTP and scripting",
+            "Bluetooth buttons only"
+          ],
+          "a": 1,
+          "w": "Shelly devices offer MQTT, HTTP and scripting for custom setups."
+        }
       ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Can a Shelly Plus device run without the cloud?",
-     "o": [
-      "No, it always needs the cloud",
-      "Yes, on the local network",
-      "Only with a subscription"
-     ],
-     "a": 1,
-     "w": "The Plus devices run standalone on a local Wi-Fi network through their web interface."
     },
     {
-     "q": "What is Shelly Premium?",
-     "o": [
-      "A hardware version",
-      "A warranty",
-      "An optional paid app upgrade"
-     ],
-     "a": 2,
-     "w": "Shelly offers a paid Premium tier in the app with extra features."
-    },
-    {
-     "q": "An integrator wants to build own automations with open interfaces. What helps?",
-     "o": [
-      "Only the cloud app",
-      "MQTT, HTTP and scripting",
-      "Bluetooth buttons only"
-     ],
-     "a": 1,
-     "w": "Shelly devices offer MQTT, HTTP and scripting for custom setups."
-    }
-   ]
-  },
-  {
-   "id": "sh-4-1",
-   "lvl": 4,
-   "title": "Energy monitoring and solar",
-   "src": [
-    {
-     "l": "Shelly Pro 3EM",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-3em"
-    },
-    {
-     "l": "Shelly Pro 3EM-400",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-3em-400"
-    },
-    {
-     "l": "Shelly: home energy profiling service",
-     "u": "https://kb.shelly.cloud/knowledge-base/expanding-your-service-offering-home-energy-profil"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Meter the whole house",
-     "t": "The <b>Pro 3EM</b> is a DIN-rail <b>three-phase meter</b>. Current clamps (CTs) go on the incoming cables. It shows voltage, current and power per phase, and stores data at <b>one-minute intervals</b> for at least 45 days.",
-     "g": [
-      [
-       "Three-phase meter",
-       "A meter that measures all three live wires of a mains supply separately."
-      ]
-     ]
-    },
-    {
-     "h": "Solar and two-way flow",
-     "t": "Shelly calls the Pro 3EM <b>photovoltaic ready</b>: it measures energy flowing in <b>both directions</b>, import and export. That lets you compare solar production with grid use. Choose by current range: <b>120 A</b> clamps on the Pro 3EM, or the <b>Pro 3EM-400</b> for up to 400 A.",
-     "g": [
-      [
-       "Photovoltaic (PV)",
-       "Solar panels that turn sunlight into electricity."
+      "id": "sh-4-1",
+      "lvl": 4,
+      "title": "Energy monitoring and solar",
+      "src": [
+        {
+          "l": "Shelly Pro 3EM",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-3em"
+        },
+        {
+          "l": "Shelly Pro 3EM-400",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-3em-400"
+        },
+        {
+          "l": "Shelly: home energy profiling service",
+          "u": "https://kb.shelly.cloud/knowledge-base/expanding-your-service-offering-home-energy-profil"
+        }
       ],
-      [
-       "Import / export",
-       "Energy taken from the grid versus fed back into it."
-      ]
-     ]
-    },
-    {
-     "h": "A service for installers",
-     "t": "Shelly suggests a <b>home energy profiling service</b>: leave a Pro 3EM at the main board for two to four weeks, then show the customer their usage to help size a solar system. Do not promise it replaces the grid company's official meter.",
-     "g": [
-      [
-       "Profiling",
-       "Recording usage over time to see patterns."
+      "pages": [
+        {
+          "h": "Meter the whole house",
+          "t": "The <b>Pro 3EM</b> is a DIN-rail <b>three-phase meter</b>. Current clamps (CTs) go on the incoming cables. It shows voltage, current and power per phase, and stores data at <b>one-minute intervals</b> for at least 45 days.",
+          "g": [
+            [
+              "Three-phase meter",
+              "A meter that measures all three live wires of a mains supply separately."
+            ]
+          ]
+        },
+        {
+          "h": "Solar and two-way flow",
+          "t": "Shelly calls the Pro 3EM <b>photovoltaic ready</b>: it measures energy flowing in <b>both directions</b>, import and export. That lets you compare solar production with grid use. Choose by current range: <b>120 A</b> clamps on the Pro 3EM, or the <b>Pro 3EM-400</b> for up to 400 A.",
+          "g": [
+            [
+              "Photovoltaic (PV)",
+              "Solar panels that turn sunlight into electricity."
+            ],
+            [
+              "Import / export",
+              "Energy taken from the grid versus fed back into it."
+            ]
+          ]
+        },
+        {
+          "h": "A service for installers",
+          "t": "Shelly suggests a <b>home energy profiling service</b>: leave a Pro 3EM at the main board for two to four weeks, then show the customer their usage to help size a solar system. Do not promise it replaces the grid company's official meter.",
+          "g": [
+            [
+              "Profiling",
+              "Recording usage over time to see patterns."
+            ],
+            [
+              "Billing meter",
+              "The official meter the grid company uses to charge you."
+            ]
+          ]
+        }
       ],
-      [
-       "Billing meter",
-       "The official meter the grid company uses to charge you."
+      "quiz": [
+        {
+          "q": "What can the Pro 3EM tell a customer about solar?",
+          "o": [
+            "How many panels fit the roof",
+            "The weather forecast",
+            "Energy flowing both ways, import and export"
+          ],
+          "a": 2,
+          "w": "It is photovoltaic ready with measurement of energy in both directions."
+        },
+        {
+          "q": "A big site needs clamps up to 400 A. Which model?",
+          "o": [
+            "Shelly EM Gen3",
+            "Pro 3EM-400",
+            "Plus Plug S"
+          ],
+          "a": 1,
+          "w": "The Pro 3EM-400 is the version listed for 400 A current transformers."
+        },
+        {
+          "q": "What is the idea behind energy profiling?",
+          "o": [
+            "Measure usage for weeks to help size solar",
+            "Replace the utility meter",
+            "Switch off the main fuse"
+          ],
+          "a": 0,
+          "w": "The meter records usage so the installer can advise on a suitable solar system."
+        },
+        {
+          "q": "Do we promise the Pro 3EM replaces the grid company's billing meter?",
+          "o": [
+            "Yes, always",
+            "Only the 400 version",
+            "No, check local rules"
+          ],
+          "a": 2,
+          "w": "Shelly presents it as a monitoring and profiling tool, so never promise it replaces the official meter, and check local rules."
+        }
       ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What can the Pro 3EM tell a customer about solar?",
-     "o": [
-      "How many panels fit the roof",
-      "The weather forecast",
-      "Energy flowing both ways, import and export"
-     ],
-     "a": 2,
-     "w": "It is photovoltaic ready with measurement of energy in both directions."
     },
     {
-     "q": "A big site needs clamps up to 400 A. Which model?",
-     "o": [
-      "Shelly EM Gen3",
-      "Pro 3EM-400",
-      "Plus Plug S"
-     ],
-     "a": 1,
-     "w": "The Pro 3EM-400 is the version listed for 400 A current transformers."
-    },
-    {
-     "q": "What is the idea behind energy profiling?",
-     "o": [
-      "Measure usage for weeks to help size solar",
-      "Replace the utility meter",
-      "Switch off the main fuse"
-     ],
-     "a": 0,
-     "w": "The meter records usage so the installer can advise on a suitable solar system."
-    },
-    {
-     "q": "Do we promise the Pro 3EM replaces the grid company's billing meter?",
-     "o": [
-      "Yes, always",
-      "Only the 400 version",
-      "No, check local rules"
-     ],
-     "a": 2,
-     "w": "Shelly presents it as a monitoring and profiling tool, so never promise it replaces the official meter, and check local rules."
-    }
-   ]
-  },
-  {
-   "id": "sh-4-2",
-   "lvl": 4,
-   "title": "Which Shelly for which job?",
-   "src": [
-    {
-     "l": "Shelly knowledge base: devices",
-     "u": "https://kb.shelly.cloud/knowledge-base/devices"
-    },
-    {
-     "l": "Shelly Pro 4PM",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-4pm"
-    },
-    {
-     "l": "Shelly BLU Gateway Gen3",
-     "u": "https://kb.shelly.cloud/knowledge-base/shelly-blu-gateway-gen3"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Think place, then job",
-     "t": "First ask: <b>where</b> does it go and <b>what</b> must it do? Behind a switch: <b>Plus</b> or Mini relay. In the cabinet: <b>Pro</b>. Battery sensor or radiator valve: <b>BLU</b>. Whole-house energy: <b>Pro 3EM</b>. Anywhere, no tools: a <b>plug</b>."
-    },
-    {
-     "h": "Four quick examples",
-     "t": "<ul><li><b>Radiator valve:</b> BLU TRV plus BLU Gateway</li><li><b>DIN-rail install:</b> Pro 4PM or another Pro relay</li><li><b>Measure solar and grid:</b> Pro 3EM</li><li><b>Roller shutter:</b> Plus 2PM in cover mode</li></ul>"
-    },
-    {
-     "h": "Check the details",
-     "t": "Before quoting, confirm <b>load size</b> (the 1PM handles 16 A, the 2PM 10 A per channel), whether a <b>neutral wire</b> is present, and Wi-Fi coverage. Ask the installer: they know the site and the local rules.",
-     "g": [
-      [
-       "Neutral wire",
-       "The return wire in mains power; some smart devices need it in the wall box."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "A customer wants to automate a heating radiator valve. Which?",
-     "o": [
-      "Plus i4",
-      "Pro 3EM",
-      "BLU TRV with a BLU Gateway"
-     ],
-     "a": 2,
-     "w": "The BLU TRV is the smart radiator valve and uses the gateway to reach the network."
-    },
-    {
-     "q": "Fuse cabinet install with several circuits and a wired network. Which?",
-     "o": [
-      "Pro 4PM",
-      "Plus Plug S",
-      "BLU Motion"
-     ],
-     "a": 0,
-     "w": "The Pro 4PM is a DIN-rail relay with four channels and LAN."
-    },
-    {
-     "q": "Measure solar output and grid use on a three-phase site. Which?",
-     "o": [
-      "Plus H&T",
-      "Pro 3EM",
-      "Plus 1"
-     ],
-     "a": 1,
-     "w": "The Pro 3EM measures per phase in both directions."
-    },
-    {
-     "q": "A customer wants quick power data on one appliance, no wiring. Which?",
-     "o": [
-      "Pro 3",
-      "Plus 2PM",
-      "Plus Plug S"
-     ],
-     "a": 2,
-     "w": "The Plug S is plug and play and measures power use."
-    }
-   ]
-  },
-  {
-   "id": "sh-5-1",
-   "lvl": 5,
-   "title": "Where Shelly competes",
-   "src": [
-    {
-     "l": "Smart Home Compared: Fibaro vs Shelly",
-     "u": "https://smarthomecompared.com/brands/vs/fibaro-vs-shelly"
-    },
-    {
-     "l": "Shelly Europe shop (categories, protocols, integrations)",
-     "u": "https://www.shelly.com/"
-    },
-    {
-     "l": "Home Assistant: Shelly integration",
-     "u": "https://www.home-assistant.io/integrations/shelly/"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Different kinds of competitor",
-     "t": "Smart home relays come in types: <b>Wi-Fi relays</b> like Shelly, <b>Z-Wave systems</b> like Fibaro that work with a controller, and big building systems. Shelly aims at adding smart control behind existing switches and outlets.",
-     "g": [
-      [
-       "Z-Wave",
-       "A low-power wireless standard that works with a Z-Wave controller or hub."
+      "id": "sh-4-2",
+      "lvl": 4,
+      "title": "Which Shelly for which job?",
+      "src": [
+        {
+          "l": "Shelly knowledge base: devices",
+          "u": "https://kb.shelly.cloud/knowledge-base/devices"
+        },
+        {
+          "l": "Shelly Pro 4PM",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-4pm"
+        },
+        {
+          "l": "Shelly BLU Gateway Gen3",
+          "u": "https://kb.shelly.cloud/knowledge-base/shelly-blu-gateway-gen3"
+        }
       ],
-      [
-       "Controller",
-       "The brain of a smart home system that links devices and runs rules."
+      "pages": [
+        {
+          "h": "Think place, then job",
+          "t": "First ask: <b>where</b> does it go and <b>what</b> must it do? Behind a switch: <b>Plus</b> or Mini relay. In the cabinet: <b>Pro</b>. Battery sensor or radiator valve: <b>BLU</b>. Whole-house energy: <b>Pro 3EM</b>. Anywhere, no tools: a <b>plug</b>."
+        },
+        {
+          "h": "Four quick examples",
+          "t": "<ul><li><b>Radiator valve:</b> BLU TRV plus BLU Gateway</li><li><b>DIN-rail install:</b> Pro 4PM or another Pro relay</li><li><b>Measure solar and grid:</b> Pro 3EM</li><li><b>Roller shutter:</b> Plus 2PM in cover mode</li></ul>"
+        },
+        {
+          "h": "Check the details",
+          "t": "Before quoting, confirm <b>load size</b> (the 1PM handles 16 A, the 2PM 10 A per channel), whether a <b>neutral wire</b> is present, and Wi-Fi coverage. Ask the installer: they know the site and the local rules.",
+          "g": [
+            [
+              "Neutral wire",
+              "The return wire in mains power; some smart devices need it in the wall box."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A customer wants to automate a heating radiator valve. Which?",
+          "o": [
+            "Plus i4",
+            "Pro 3EM",
+            "BLU TRV with a BLU Gateway"
+          ],
+          "a": 2,
+          "w": "The BLU TRV is the smart radiator valve and uses the gateway to reach the network."
+        },
+        {
+          "q": "Fuse cabinet install with several circuits and a wired network. Which?",
+          "o": [
+            "Pro 4PM",
+            "Plus Plug S",
+            "BLU Motion"
+          ],
+          "a": 0,
+          "w": "The Pro 4PM is a DIN-rail relay with four channels and LAN."
+        },
+        {
+          "q": "Measure solar output and grid use on a three-phase site. Which?",
+          "o": [
+            "Plus H&T",
+            "Pro 3EM",
+            "Plus 1"
+          ],
+          "a": 1,
+          "w": "The Pro 3EM measures per phase in both directions."
+        },
+        {
+          "q": "A customer wants quick power data on one appliance, no wiring. Which?",
+          "o": [
+            "Pro 3",
+            "Plus 2PM",
+            "Plus Plug S"
+          ],
+          "a": 2,
+          "w": "The Plug S is plug and play and measures power use."
+        }
       ]
-     ]
     },
     {
-     "h": "Shelly's selling points",
-     "t": "A review comparison says Shelly suits people who want smart control behind <b>existing switches</b>, with broad integration with <b>Home Assistant, Alexa and Google Home</b>. Shelly also lists Z-Wave, Zigbee and KNXnet/IP in its range, so it can meet other worlds.",
-     "g": [
-      [
-       "KNX",
-       "A wired professional building automation standard."
+      "id": "sh-5-1",
+      "lvl": 5,
+      "title": "Where Shelly competes",
+      "src": [
+        {
+          "l": "Smart Home Compared: Fibaro vs Shelly",
+          "u": "https://smarthomecompared.com/brands/vs/fibaro-vs-shelly"
+        },
+        {
+          "l": "Shelly Europe shop (categories, protocols, integrations)",
+          "u": "https://www.shelly.com/"
+        },
+        {
+          "l": "Home Assistant: Shelly integration",
+          "u": "https://www.home-assistant.io/integrations/shelly/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Different kinds of competitor",
+          "t": "Smart home relays come in types: <b>Wi-Fi relays</b> like Shelly, <b>Z-Wave systems</b> like Fibaro that work with a controller, and big building systems. Shelly aims at adding smart control behind existing switches and outlets.",
+          "g": [
+            [
+              "Z-Wave",
+              "A low-power wireless standard that works with a Z-Wave controller or hub."
+            ],
+            [
+              "Controller",
+              "The brain of a smart home system that links devices and runs rules."
+            ]
+          ]
+        },
+        {
+          "h": "Shelly's selling points",
+          "t": "A review comparison says Shelly suits people who want smart control behind <b>existing switches</b>, with broad integration with <b>Home Assistant, Alexa and Google Home</b>. Shelly also lists Z-Wave, Zigbee and KNXnet/IP in its range, so it can meet other worlds.",
+          "g": [
+            [
+              "KNX",
+              "A wired professional building automation standard."
+            ]
+          ]
+        },
+        {
+          "h": "Handling objections",
+          "t": "'Is it only for hobbyists?' Point to the <b>Pro line</b>, DIN rail and wired LAN. 'What if the cloud goes away?' Local control. 'Is it locked in?' Open interfaces and integrations. Be honest on limits: check load size and Matter support per model.",
+          "g": [
+            [
+              "Objection",
+              "A concern or doubt a customer raises before buying."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which is a typical difference between Fibaro and Shelly?",
+          "o": [
+            "Fibaro is Wi-Fi only",
+            "Fibaro makes only plugs",
+            "Fibaro is Z-Wave based and uses a controller"
+          ],
+          "a": 2,
+          "w": "The comparison describes Fibaro as Z-Wave based, while Shelly adds control behind existing switches."
+        },
+        {
+          "q": "'Shelly is just for hobbyists.' Best answer?",
+          "o": [
+            "Agree and move on",
+            "Point to the Pro line for professional installs",
+            "Say it has no integrations"
+          ],
+          "a": 1,
+          "w": "The Pro line is DIN-rail and wired for professional jobs."
+        },
+        {
+          "q": "A customer fears cloud dependence. What do you say?",
+          "o": [
+            "Devices can run locally without the cloud",
+            "Everything needs the cloud",
+            "Use Bluetooth only"
+          ],
+          "a": 0,
+          "w": "Shelly devices can be controlled locally on the network."
+        }
       ]
-     ]
     },
     {
-     "h": "Handling objections",
-     "t": "'Is it only for hobbyists?' Point to the <b>Pro line</b>, DIN rail and wired LAN. 'What if the cloud goes away?' Local control. 'Is it locked in?' Open interfaces and integrations. Be honest on limits: check load size and Matter support per model.",
-     "g": [
-      [
-       "Objection",
-       "A concern or doubt a customer raises before buying."
+      "id": "sh-5-2",
+      "lvl": 5,
+      "title": "Who buys and what to ask",
+      "src": [
+        {
+          "l": "Shelly Europe shop (categories, protocols, integrations)",
+          "u": "https://www.shelly.com/"
+        },
+        {
+          "l": "Shelly: home energy profiling service",
+          "u": "https://kb.shelly.cloud/knowledge-base/expanding-your-service-offering-home-energy-profil"
+        },
+        {
+          "l": "Shelly Group corporate",
+          "u": "https://corporate.shelly.com/about-us-2/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Who buys",
+          "t": "Typical buyers are <b>electricians and installers</b> who retrofit homes, <b>integrators</b> who build full smart systems, and <b>retailers</b> who sell plug-and-play items like plugs and sensors. Shelly works with official resellers and verified installers.",
+          "g": [
+            [
+              "Integrator",
+              "A company that combines products from different brands into one working system."
+            ]
+          ]
+        },
+        {
+          "h": "Good questions to ask",
+          "t": "<ul><li>New build or existing home?</li><li>Behind switches or in a cabinet?</li><li>Do you need energy data or solar?</li><li>Which platform do end customers use: Alexa, Google, Apple or Home Assistant?</li></ul>"
+        },
+        {
+          "h": "Grow the order",
+          "t": "Energy gives extra business: a <b>home energy profiling</b> service with a Pro 3EM needs little training, according to Shelly. Combine relays with sensors and a gateway. Shelly also offers an Academy for training. Follow up with questions, not pressure.",
+          "g": [
+            [
+              "Upsell",
+              "Selling an additional product to the same customer."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which customer is most likely to buy plug and play items?",
+          "o": [
+            "A power utility",
+            "A retailer",
+            "A cloud provider"
+          ],
+          "a": 1,
+          "w": "Retailers sell plug and play items like plugs and sensors."
+        },
+        {
+          "q": "Best opening question to an installer?",
+          "o": [
+            "New build or existing home?",
+            "What colour is your van?",
+            "Do you like clouds?"
+          ],
+          "a": 0,
+          "w": "New build versus retrofit steers the choice between Pro and Plus."
+        },
+        {
+          "q": "What extra service can an installer offer with a Pro 3EM?",
+          "o": [
+            "Roof repair",
+            "Network cabling",
+            "Home energy profiling"
+          ],
+          "a": 2,
+          "w": "Shelly suggests profiling a home's energy use over weeks to help size solar."
+        }
       ]
-     ]
     }
-   ],
-   "quiz": [
-    {
-     "q": "Which is a typical difference between Fibaro and Shelly?",
-     "o": [
-      "Fibaro is Wi-Fi only",
-      "Fibaro makes only plugs",
-      "Fibaro is Z-Wave based and uses a controller"
-     ],
-     "a": 2,
-     "w": "The comparison describes Fibaro as Z-Wave based, while Shelly adds control behind existing switches."
-    },
-    {
-     "q": "'Shelly is just for hobbyists.' Best answer?",
-     "o": [
-      "Agree and move on",
-      "Point to the Pro line for professional installs",
-      "Say it has no integrations"
-     ],
-     "a": 1,
-     "w": "The Pro line is DIN-rail and wired for professional jobs."
-    },
-    {
-     "q": "A customer fears cloud dependence. What do you say?",
-     "o": [
-      "Devices can run locally without the cloud",
-      "Everything needs the cloud",
-      "Use Bluetooth only"
-     ],
-     "a": 0,
-     "w": "Shelly devices can be controlled locally on the network."
-    }
-   ]
-  },
-  {
-   "id": "sh-5-2",
-   "lvl": 5,
-   "title": "Who buys and what to ask",
-   "src": [
-    {
-     "l": "Shelly Europe shop (categories, protocols, integrations)",
-     "u": "https://www.shelly.com/"
-    },
-    {
-     "l": "Shelly: home energy profiling service",
-     "u": "https://kb.shelly.cloud/knowledge-base/expanding-your-service-offering-home-energy-profil"
-    },
-    {
-     "l": "Shelly Group corporate",
-     "u": "https://corporate.shelly.com/about-us-2/"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Who buys",
-     "t": "Typical buyers are <b>electricians and installers</b> who retrofit homes, <b>integrators</b> who build full smart systems, and <b>retailers</b> who sell plug-and-play items like plugs and sensors. Shelly works with official resellers and verified installers.",
-     "g": [
-      [
-       "Integrator",
-       "A company that combines products from different brands into one working system."
-      ]
-     ]
-    },
-    {
-     "h": "Good questions to ask",
-     "t": "<ul><li>New build or existing home?</li><li>Behind switches or in a cabinet?</li><li>Do you need energy data or solar?</li><li>Which platform do end customers use: Alexa, Google, Apple or Home Assistant?</li></ul>"
-    },
-    {
-     "h": "Grow the order",
-     "t": "Energy gives extra business: a <b>home energy profiling</b> service with a Pro 3EM needs little training, according to Shelly. Combine relays with sensors and a gateway. Shelly also offers an Academy for training. Follow up with questions, not pressure.",
-     "g": [
-      [
-       "Upsell",
-       "Selling an additional product to the same customer."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which customer is most likely to buy plug and play items?",
-     "o": [
-      "A power utility",
-      "A retailer",
-      "A cloud provider"
-     ],
-     "a": 1,
-     "w": "Retailers sell plug and play items like plugs and sensors."
-    },
-    {
-     "q": "Best opening question to an installer?",
-     "o": [
-      "New build or existing home?",
-      "What colour is your van?",
-      "Do you like clouds?"
-     ],
-     "a": 0,
-     "w": "New build versus retrofit steers the choice between Pro and Plus."
-    },
-    {
-     "q": "What extra service can an installer offer with a Pro 3EM?",
-     "o": [
-      "Roof repair",
-      "Network cabling",
-      "Home energy profiling"
-     ],
-     "a": 2,
-     "w": "Shelly suggests profiling a home's energy use over weeks to help size solar."
-    }
-   ]
-  }
- ]
+  ]
 }

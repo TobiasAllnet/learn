@@ -1,846 +1,845 @@
 {
- "title": "Network basics",
- "emoji": "🌐",
- "desc": "LAN, IP, DHCP, DNS, VLAN and cables in plain words",
- "src": [
-  {
-   "l": "Wikipedia: Local area network",
-   "u": "https://en.wikipedia.org/wiki/Local_area_network"
-  },
-  {
-   "l": "Wikipedia: Router (computing)",
-   "u": "https://en.wikipedia.org/wiki/Router_(computing)"
-  },
-  {
-   "l": "Wikipedia: Network switch",
-   "u": "https://en.wikipedia.org/wiki/Network_switch"
-  }
- ],
- "lessons": [
-  {
-   "id": "nb-1-1",
-   "lvl": 1,
-   "title": "LAN, WAN and the internet",
-   "src": [
+  "title": "Network basics",
+  "desc": "LAN, IP, DHCP, DNS, VLAN and cables in plain words",
+  "src": [
     {
-     "l": "Wikipedia: Local area network",
-     "u": "https://en.wikipedia.org/wiki/Local_area_network"
+      "l": "Wikipedia: Local area network",
+      "u": "https://en.wikipedia.org/wiki/Local_area_network"
+    },
+    {
+      "l": "Wikipedia: Router (computing)",
+      "u": "https://en.wikipedia.org/wiki/Router_(computing)"
+    },
+    {
+      "l": "Wikipedia: Network switch",
+      "u": "https://en.wikipedia.org/wiki/Network_switch"
     }
-   ],
-   "pages": [
+  ],
+  "lessons": [
     {
-     "h": "A LAN is your own local network",
-     "t": "A <b>LAN</b> connects computers, printers and phones inside a limited area, like one office, a home or a building. The equipment is managed locally. Most LANs use two technologies: <b>Ethernet cables</b> and <b>Wi-Fi</b>.",
-     "g": [
-      [
-       "LAN",
-       "Local Area Network: the network inside one building or site."
+      "id": "nb-1-1",
+      "lvl": 1,
+      "title": "LAN, WAN and the internet",
+      "src": [
+        {
+          "l": "Wikipedia: Local area network",
+          "u": "https://en.wikipedia.org/wiki/Local_area_network"
+        }
       ],
-      [
-       "Ethernet",
-       "The standard wired network technology, with cables ending in RJ45 plugs."
-      ]
-     ]
-    },
-    {
-     "h": "A WAN stretches across distance",
-     "t": "A <b>WAN</b> covers a much bigger area and usually runs over leased lines or internet links. A company that links its offices in Helsinki and Copenhagen is building a WAN. The LAN is the room, the WAN is the road between rooms.",
-     "g": [
-      [
-       "WAN",
-       "Wide Area Network: connects sites far apart, often via the internet or leased lines."
-      ]
-     ]
-    },
-    {
-     "h": "The internet connects networks",
-     "t": "The <b>internet</b> is a global system of connected networks. Your LAN reaches it through a router and a provider (ISP). So a typical customer has a LAN inside, a WAN link out, and the internet beyond.",
-     "g": [
-      [
-       "ISP",
-       "Internet Service Provider: the company that sells the internet connection."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What best describes a LAN?",
-     "o": [
-      "A global network of networks",
-      "A network inside a limited area such as an office",
-      "A leased line between countries"
-     ],
-     "a": 1,
-     "w": "A LAN covers a limited area like a home, office or building and is managed locally.",
-     "g": [
-      [
-       "LAN",
-       "Local Area Network."
-      ]
-     ]
-    },
-    {
-     "q": "A customer links offices in two cities over the internet. What is that link?",
-     "o": [
-      "A LAN",
-      "A switch",
-      "A WAN"
-     ],
-     "a": 2,
-     "w": "Links across long distances between sites are WAN links.",
-     "g": [
-      [
-       "WAN",
-       "Wide Area Network."
-      ]
-     ]
-    },
-    {
-     "q": "What are the two most common LAN technologies?",
-     "o": [
-      "Ethernet and Wi-Fi",
-      "Fibre and satellite",
-      "DNS and DHCP"
-     ],
-     "a": 0,
-     "w": "Wired Ethernet and wireless Wi-Fi are the two most common LAN technologies."
-    }
-   ]
-  },
-  {
-   "id": "nb-1-2",
-   "lvl": 1,
-   "title": "IP addresses",
-   "src": [
-    {
-     "l": "Wikipedia: IPv6",
-     "u": "https://en.wikipedia.org/wiki/IPv6"
-    },
-    {
-     "l": "Wikipedia: Network address translation",
-     "u": "https://en.wikipedia.org/wiki/Network_address_translation"
-    },
-    {
-     "l": "RFC 1918: Private address ranges",
-     "u": "https://datatracker.ietf.org/doc/html/rfc1918"
-    }
-   ],
-   "pages": [
-    {
-     "h": "An address for every device",
-     "t": "An <b>IP address</b> is like a postal address for a device on a network. Data needs to know where to go and where it came from. Every phone, laptop, camera and access point on a network gets one.",
-     "g": [
-      [
-       "IP address",
-       "A number that identifies a device on a network so data can find it."
-      ]
-     ]
-    },
-    {
-     "h": "Public and private",
-     "t": "A <b>public</b> address is reachable on the internet, and the router often gets one from the ISP. Inside the LAN, devices use <b>private</b> addresses that are not usable directly on the internet. Many different LANs can reuse the same private ranges.",
-     "g": [
-      [
-       "Private address",
-       "An address used only inside a local network, reserved by a standard (RFC 1918)."
-      ]
-     ]
-    },
-    {
-     "h": "IPv4 and IPv6",
-     "t": "<b>IPv4</b> has about 4.3 billion addresses, and the free supply has run out. <b>IPv6</b> uses much longer addresses (128 bits instead of 32), giving a huge supply. They are not directly compatible, so many networks run both side by side.",
-     "g": [
-      [
-       "IPv6",
-       "The newer address system with a practically unlimited supply of addresses."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Why was IPv6 created?",
-     "o": [
-      "To make Wi-Fi faster",
-      "To replace cables",
-      "IPv4 ran out of addresses"
-     ],
-     "a": 2,
-     "w": "IPv4 only has about 4.3 billion addresses, which was not enough.",
-     "g": [
-      [
-       "IPv4",
-       "The older address system with about 4.3 billion addresses."
-      ]
-     ]
-    },
-    {
-     "q": "Which address would a laptop normally have inside an office LAN?",
-     "o": [
-      "A private address",
-      "A public address",
-      "No address"
-     ],
-     "a": 0,
-     "w": "Devices inside a LAN normally use private addresses; the router holds the public one."
-    },
-    {
-     "q": "Are IPv4 and IPv6 directly compatible?",
-     "o": [
-      "Yes, fully",
-      "No, so networks often run both",
-      "Only on Wi-Fi"
-     ],
-     "a": 1,
-     "w": "They are not backwards compatible, so running both (dual stack) is the easiest path."
-    }
-   ]
-  },
-  {
-   "id": "nb-2-1",
-   "lvl": 2,
-   "title": "DHCP and DNS",
-   "src": [
-    {
-     "l": "Wikipedia: DHCP",
-     "u": "https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol"
-    },
-    {
-     "l": "Wikipedia: Domain Name System",
-     "u": "https://en.wikipedia.org/wiki/Domain_Name_System"
-    }
-   ],
-   "pages": [
-    {
-     "h": "DHCP hands out addresses",
-     "t": "When a device joins a network, <b>DHCP</b> gives it an IP address automatically, plus other settings like the gateway and DNS server. Nobody has to type numbers into each device. Many routers have a DHCP server built in.",
-     "g": [
-      [
-       "DHCP",
-       "Dynamic Host Configuration Protocol: gives devices their network settings automatically."
+      "pages": [
+        {
+          "h": "A LAN is your own local network",
+          "t": "A <b>LAN</b> connects computers, printers and phones inside a limited area, like one office, a home or a building. The equipment is managed locally. Most LANs use two technologies: <b>Ethernet cables</b> and <b>Wi-Fi</b>.",
+          "g": [
+            [
+              "LAN",
+              "Local Area Network: the network inside one building or site."
+            ],
+            [
+              "Ethernet",
+              "The standard wired network technology, with cables ending in RJ45 plugs."
+            ]
+          ]
+        },
+        {
+          "h": "A WAN stretches across distance",
+          "t": "A <b>WAN</b> covers a much bigger area and usually runs over leased lines or internet links. A company that links its offices in Helsinki and Copenhagen is building a WAN. The LAN is the room, the WAN is the road between rooms.",
+          "g": [
+            [
+              "WAN",
+              "Wide Area Network: connects sites far apart, often via the internet or leased lines."
+            ]
+          ]
+        },
+        {
+          "h": "The internet connects networks",
+          "t": "The <b>internet</b> is a global system of connected networks. Your LAN reaches it through a router and a provider (ISP). So a typical customer has a LAN inside, a WAN link out, and the internet beyond.",
+          "g": [
+            [
+              "ISP",
+              "Internet Service Provider: the company that sells the internet connection."
+            ]
+          ]
+        }
       ],
-      [
-       "Gateway",
-       "The router address a device sends traffic to when the destination is outside the LAN."
+      "quiz": [
+        {
+          "q": "What best describes a LAN?",
+          "o": [
+            "A global network of networks",
+            "A network inside a limited area such as an office",
+            "A leased line between countries"
+          ],
+          "a": 1,
+          "w": "A LAN covers a limited area like a home, office or building and is managed locally.",
+          "g": [
+            [
+              "LAN",
+              "Local Area Network."
+            ]
+          ]
+        },
+        {
+          "q": "A customer links offices in two cities over the internet. What is that link?",
+          "o": [
+            "A LAN",
+            "A switch",
+            "A WAN"
+          ],
+          "a": 2,
+          "w": "Links across long distances between sites are WAN links.",
+          "g": [
+            [
+              "WAN",
+              "Wide Area Network."
+            ]
+          ]
+        },
+        {
+          "q": "What are the two most common LAN technologies?",
+          "o": [
+            "Ethernet and Wi-Fi",
+            "Fibre and satellite",
+            "DNS and DHCP"
+          ],
+          "a": 0,
+          "w": "Wired Ethernet and wireless Wi-Fi are the two most common LAN technologies."
+        }
       ]
-     ]
     },
     {
-     "h": "Leases",
-     "t": "DHCP addresses are lent for a set time, called a <b>lease</b>. Devices renew it while they stay. If a device leaves, the address returns to the pool. Two DHCP servers on one network can cause confusing conflicts.",
-     "g": [
-      [
-       "Lease",
-       "The time a device may keep an address given by DHCP."
-      ]
-     ]
-    },
-    {
-     "h": "DNS is the phone book",
-     "t": "People type names like a website address, computers need IP numbers. <b>DNS</b> translates one into the other, like a phone book. When websites fail but pinging a raw IP number still works, a DNS problem is a common suspect.",
-     "g": [
-      [
-       "DNS",
-       "Domain Name System: turns names into IP addresses."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What does DHCP do?",
-     "o": [
-      "Translates names to IP addresses",
-      "Gives devices IP addresses automatically",
-      "Encrypts traffic"
-     ],
-     "a": 1,
-     "w": "DHCP automatically assigns IP addresses and settings to devices.",
-     "g": [
-      [
-       "DHCP",
-       "Gives devices their network settings automatically."
-      ]
-     ]
-    },
-    {
-     "q": "What does DNS do?",
-     "o": [
-      "Blocks viruses",
-      "Powers cameras",
-      "Turns names into IP addresses"
-     ],
-     "a": 2,
-     "w": "DNS works like a phone book: names in, IP addresses out.",
-     "g": [
-      [
-       "DNS",
-       "Domain Name System."
-      ]
-     ]
-    },
-    {
-     "q": "Where does a small office usually get DHCP from?",
-     "o": [
-      "The router",
-      "Every laptop",
-      "The printer cable"
-     ],
-     "a": 0,
-     "w": "Many routers include a DHCP server that hands out private addresses to the LAN."
-    }
-   ]
-  },
-  {
-   "id": "nb-2-2",
-   "lvl": 2,
-   "title": "Router, switch, access point",
-   "src": [
-    {
-     "l": "Wikipedia: Router (computing)",
-     "u": "https://en.wikipedia.org/wiki/Router_(computing)"
-    },
-    {
-     "l": "Wikipedia: Wireless access point",
-     "u": "https://en.wikipedia.org/wiki/Wireless_access_point"
-    },
-    {
-     "l": "Wikipedia: Network switch",
-     "u": "https://en.wikipedia.org/wiki/Network_switch"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Router: the doorway",
-     "t": "A <b>router</b> connects different networks and forwards traffic between them, for example your LAN and the internet. The default route (default gateway) handles everything that is not local. It is the doorway out of the building.",
-     "g": [
-      [
-       "Router",
-       "Device that forwards data between networks."
-      ]
-     ]
-    },
-    {
-     "h": "Switch: the local junction",
-     "t": "A <b>switch</b> connects devices inside one LAN with cables. It learns which device sits on which port and sends data only where needed. More ports mean more wired devices, like PCs, phones and cameras.",
-     "g": [
-      [
-       "Switch",
-       "Device with many ports that connects wired devices in a LAN."
-      ]
-     ]
-    },
-    {
-     "h": "Access point: the wireless bridge",
-     "t": "An <b>access point</b> (AP) gives Wi-Fi to a wired network. A home <b>wireless router</b> combines router, switch and AP in one box. Businesses often split them up so each part can be chosen and placed right.",
-     "g": [
-      [
-       "Access point",
-       "Device that connects Wi-Fi devices to the wired network."
+      "id": "nb-1-2",
+      "lvl": 1,
+      "title": "IP addresses",
+      "src": [
+        {
+          "l": "Wikipedia: IPv6",
+          "u": "https://en.wikipedia.org/wiki/IPv6"
+        },
+        {
+          "l": "Wikipedia: Network address translation",
+          "u": "https://en.wikipedia.org/wiki/Network_address_translation"
+        },
+        {
+          "l": "RFC 1918: Private address ranges",
+          "u": "https://datatracker.ietf.org/doc/html/rfc1918"
+        }
       ],
-      [
-       "Residential gateway",
-       "A home box combining router, switch, Wi-Fi and sometimes modem."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which device connects your LAN to the internet?",
-     "o": [
-      "Switch",
-      "Access point",
-      "Router"
-     ],
-     "a": 2,
-     "w": "The router forwards traffic between networks, such as LAN and internet."
-    },
-    {
-     "q": "A shop wants ten wired cash registers and printers on one network. What is the key device?",
-     "o": [
-      "A switch",
-      "A router only",
-      "An antenna"
-     ],
-     "a": 0,
-     "w": "A switch connects many wired devices in the same LAN."
-    },
-    {
-     "q": "What is a home wireless router?",
-     "o": [
-      "Only an access point",
-      "Router, switch and AP in one box",
-      "A fibre cable"
-     ],
-     "a": 1,
-     "w": "Home units combine routing, switching and Wi-Fi in a single device.",
-     "g": [
-      [
-       "AP",
-       "Access point."
-      ]
-     ]
-    }
-   ]
-  },
-  {
-   "id": "nb-3-1",
-   "lvl": 3,
-   "title": "NAT, ports and protocols",
-   "src": [
-    {
-     "l": "Wikipedia: Network address translation",
-     "u": "https://en.wikipedia.org/wiki/Network_address_translation"
-    },
-    {
-     "l": "Wikipedia: Port (computer networking)",
-     "u": "https://en.wikipedia.org/wiki/Port_(computer_networking)"
-    },
-    {
-     "l": "Wikipedia: List of TCP and UDP port numbers",
-     "u": "https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers"
-    }
-   ],
-   "pages": [
-    {
-     "h": "NAT shares one public address",
-     "t": "<b>NAT</b> rewrites addresses as traffic leaves the router, so a whole office of private addresses can share <b>one public address</b>. It helped IPv4 last longer. By default, connections can only be started from inside.",
-     "g": [
-      [
-       "NAT",
-       "Network Address Translation: lets many private devices share one public address."
-      ]
-     ]
-    },
-    {
-     "h": "Port forwarding",
-     "t": "Because outside connections are blocked by default, a camera or server inside needs a <b>port forward</b> to be reachable from the internet. It sends traffic arriving at a chosen port to one inside device. Use it carefully, since it opens a door.",
-     "g": [
-      [
-       "Port forwarding",
-       "A rule that sends incoming traffic on a given port to a chosen inside device."
-      ]
-     ]
-    },
-    {
-     "h": "Ports and protocols",
-     "t": "A <b>protocol</b> is an agreed way of talking. A <b>port</b> is a numbered door for a service. Web pages use port <b>443</b> (HTTPS), plain web 80, email between servers 25, and DNS 53. Firewalls often allow or block by port.",
-     "g": [
-      [
-       "Protocol",
-       "A set of agreed rules for how devices exchange data."
+      "pages": [
+        {
+          "h": "An address for every device",
+          "t": "An <b>IP address</b> is like a postal address for a device on a network. Data needs to know where to go and where it came from. Every phone, laptop, camera and access point on a network gets one.",
+          "g": [
+            [
+              "IP address",
+              "A number that identifies a device on a network so data can find it."
+            ]
+          ]
+        },
+        {
+          "h": "Public and private",
+          "t": "A <b>public</b> address is reachable on the internet, and the router often gets one from the ISP. Inside the LAN, devices use <b>private</b> addresses that are not usable directly on the internet. Many different LANs can reuse the same private ranges.",
+          "g": [
+            [
+              "Private address",
+              "An address used only inside a local network, reserved by a standard (RFC 1918)."
+            ]
+          ]
+        },
+        {
+          "h": "IPv4 and IPv6",
+          "t": "<b>IPv4</b> has about 4.3 billion addresses, and the free supply has run out. <b>IPv6</b> uses much longer addresses (128 bits instead of 32), giving a huge supply. They are not directly compatible, so many networks run both side by side.",
+          "g": [
+            [
+              "IPv6",
+              "The newer address system with a practically unlimited supply of addresses."
+            ]
+          ]
+        }
       ],
-      [
-       "Port",
-       "A number that tells a device which service should receive the data."
+      "quiz": [
+        {
+          "q": "Why was IPv6 created?",
+          "o": [
+            "To make Wi-Fi faster",
+            "To replace cables",
+            "IPv4 ran out of addresses"
+          ],
+          "a": 2,
+          "w": "IPv4 only has about 4.3 billion addresses, which was not enough.",
+          "g": [
+            [
+              "IPv4",
+              "The older address system with about 4.3 billion addresses."
+            ]
+          ]
+        },
+        {
+          "q": "Which address would a laptop normally have inside an office LAN?",
+          "o": [
+            "A private address",
+            "A public address",
+            "No address"
+          ],
+          "a": 0,
+          "w": "Devices inside a LAN normally use private addresses; the router holds the public one."
+        },
+        {
+          "q": "Are IPv4 and IPv6 directly compatible?",
+          "o": [
+            "Yes, fully",
+            "No, so networks often run both",
+            "Only on Wi-Fi"
+          ],
+          "a": 1,
+          "w": "They are not backwards compatible, so running both (dual stack) is the easiest path."
+        }
+      ]
+    },
+    {
+      "id": "nb-2-1",
+      "lvl": 2,
+      "title": "DHCP and DNS",
+      "src": [
+        {
+          "l": "Wikipedia: DHCP",
+          "u": "https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol"
+        },
+        {
+          "l": "Wikipedia: Domain Name System",
+          "u": "https://en.wikipedia.org/wiki/Domain_Name_System"
+        }
       ],
-      [
-       "HTTPS",
-       "The secure version of web traffic."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What does NAT let an office do?",
-     "o": [
-      "Make Wi-Fi faster",
-      "Share one public address among many private devices",
-      "Run cables longer"
-     ],
-     "a": 1,
-     "w": "NAT translates between private addresses and a public one.",
-     "g": [
-      [
-       "NAT",
-       "Network Address Translation."
-      ]
-     ]
-    },
-    {
-     "q": "A customer wants to view their camera from home over the internet. What does a basic router setup need?",
-     "o": [
-      "A bigger switch",
-      "A new SSID",
-      "A port forward to the camera"
-     ],
-     "a": 2,
-     "w": "NAT blocks outside connections by default, so a forward is needed, with care for security."
-    },
-    {
-     "q": "Which port is normally used for secure web pages (HTTPS)?",
-     "o": [
-      "443",
-      "25",
-      "53"
-     ],
-     "a": 0,
-     "w": "HTTPS uses port 443; 53 is DNS and 25 is email between servers."
-    }
-   ]
-  },
-  {
-   "id": "nb-3-2",
-   "lvl": 3,
-   "title": "Bandwidth vs latency",
-   "src": [
-    {
-     "l": "Wikipedia: Latency (engineering)",
-     "u": "https://en.wikipedia.org/wiki/Latency_(engineering)"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Bandwidth is the pipe size",
-     "t": "<b>Bandwidth</b> is how much data a connection can carry per second, like how wide a motorway is. Bigger bandwidth helps with big downloads, many users at once and video streams.",
-     "g": [
-      [
-       "Bandwidth",
-       "The amount of data a link can carry per second."
+      "pages": [
+        {
+          "h": "DHCP hands out addresses",
+          "t": "When a device joins a network, <b>DHCP</b> gives it an IP address automatically, plus other settings like the gateway and DNS server. Nobody has to type numbers into each device. Many routers have a DHCP server built in.",
+          "g": [
+            [
+              "DHCP",
+              "Dynamic Host Configuration Protocol: gives devices their network settings automatically."
+            ],
+            [
+              "Gateway",
+              "The router address a device sends traffic to when the destination is outside the LAN."
+            ]
+          ]
+        },
+        {
+          "h": "Leases",
+          "t": "DHCP addresses are lent for a set time, called a <b>lease</b>. Devices renew it while they stay. If a device leaves, the address returns to the pool. Two DHCP servers on one network can cause confusing conflicts.",
+          "g": [
+            [
+              "Lease",
+              "The time a device may keep an address given by DHCP."
+            ]
+          ]
+        },
+        {
+          "h": "DNS is the phone book",
+          "t": "People type names like a website address, computers need IP numbers. <b>DNS</b> translates one into the other, like a phone book. When websites fail but pinging a raw IP number still works, a DNS problem is a common suspect.",
+          "g": [
+            [
+              "DNS",
+              "Domain Name System: turns names into IP addresses."
+            ]
+          ]
+        }
       ],
-      [
-       "Mbit/s",
-       "Megabits per second, the usual unit for internet speed."
+      "quiz": [
+        {
+          "q": "What does DHCP do?",
+          "o": [
+            "Translates names to IP addresses",
+            "Gives devices IP addresses automatically",
+            "Encrypts traffic"
+          ],
+          "a": 1,
+          "w": "DHCP automatically assigns IP addresses and settings to devices.",
+          "g": [
+            [
+              "DHCP",
+              "Gives devices their network settings automatically."
+            ]
+          ]
+        },
+        {
+          "q": "What does DNS do?",
+          "o": [
+            "Blocks viruses",
+            "Powers cameras",
+            "Turns names into IP addresses"
+          ],
+          "a": 2,
+          "w": "DNS works like a phone book: names in, IP addresses out.",
+          "g": [
+            [
+              "DNS",
+              "Domain Name System."
+            ]
+          ]
+        },
+        {
+          "q": "Where does a small office usually get DHCP from?",
+          "o": [
+            "The router",
+            "Every laptop",
+            "The printer cable"
+          ],
+          "a": 0,
+          "w": "Many routers include a DHCP server that hands out private addresses to the LAN."
+        }
       ]
-     ]
     },
     {
-     "h": "Latency is the delay",
-     "t": "<b>Latency</b> is the time delay before data arrives, like how long the drive takes. A wide road does not make the trip shorter. Video calls, remote desktop and gaming feel bad when latency is high.",
-     "g": [
-      [
-       "Latency",
-       "Time delay between sending something and it arriving."
-      ]
-     ]
-    },
-    {
-     "h": "Why a seller cares",
-     "t": "A customer saying \"it is slow\" could mean low bandwidth, high latency, or a Wi-Fi problem. Ask <b>what</b> feels slow: downloads, or calls and remote work. The answer points to different fixes.",
-     "g": []
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which analogy fits latency?",
-     "o": [
-      "Width of the motorway",
-      "Number of cars",
-      "How long the drive takes"
-     ],
-     "a": 2,
-     "w": "Latency is the delay, like travel time, not the capacity.",
-     "g": [
-      [
-       "Latency",
-       "Delay."
-      ]
-     ]
-    },
-    {
-     "q": "A customer's video calls stutter although the speed test shows plenty of bandwidth. What might be an issue?",
-     "o": [
-      "High latency",
-      "Too many switch ports",
-      "A private IP address"
-     ],
-     "a": 0,
-     "w": "Real-time traffic suffers from delay even when there is a lot of capacity."
-    },
-    {
-     "q": "Bigger bandwidth most clearly helps with...",
-     "o": [
-      "Shortening the delay of a single click",
-      "Many users and big downloads at once",
-      "Hiding the SSID"
-     ],
-     "a": 1,
-     "w": "Bandwidth is capacity, so it helps when lots of data or users share the link."
-    }
-   ]
-  },
-  {
-   "id": "nb-3-3",
-   "lvl": 3,
-   "title": "Cables: copper and fibre",
-   "src": [
-    {
-     "l": "Wikipedia: Category 6 cable",
-     "u": "https://en.wikipedia.org/wiki/Category_6_cable"
-    },
-    {
-     "l": "Wikipedia: Small Form-factor Pluggable",
-     "u": "https://en.wikipedia.org/wiki/Small_Form-factor_Pluggable"
-    },
-    {
-     "l": "Wikipedia: Optical fiber",
-     "u": "https://en.wikipedia.org/wiki/Optical_fiber"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Copper: Cat5e, Cat6, Cat6a",
-     "t": "Office cables are <b>twisted-pair copper</b> with RJ45 plugs, normally good for <b>100 metres</b>. Cat6 is backward compatible with Cat5e. For 10 Gbit/s over the full 100 m, you need <b>Cat6a</b>; Cat6 only manages about 55 m.",
-     "g": [
-      [
-       "Cat5e/Cat6/Cat6a",
-       "Grades of copper network cable. Higher grades cope with higher speeds over distance."
+      "id": "nb-2-2",
+      "lvl": 2,
+      "title": "Router, switch, access point",
+      "src": [
+        {
+          "l": "Wikipedia: Router (computing)",
+          "u": "https://en.wikipedia.org/wiki/Router_(computing)"
+        },
+        {
+          "l": "Wikipedia: Wireless access point",
+          "u": "https://en.wikipedia.org/wiki/Wireless_access_point"
+        },
+        {
+          "l": "Wikipedia: Network switch",
+          "u": "https://en.wikipedia.org/wiki/Network_switch"
+        }
       ],
-      [
-       "RJ45",
-       "The plug on a normal network cable."
-      ]
-     ]
-    },
-    {
-     "h": "Fibre: far and clean",
-     "t": "<b>Fibre</b> carries light, loses little signal and ignores electrical interference. <b>Multi-mode</b> suits short runs inside buildings. <b>Single-mode</b> is for longer links, typically beyond about a kilometre, and between buildings or sites.",
-     "g": [
-      [
-       "Single-mode",
-       "Fibre with a thin core for long distances."
+      "pages": [
+        {
+          "h": "Router: the doorway",
+          "t": "A <b>router</b> connects different networks and forwards traffic between them, for example your LAN and the internet. The default route (default gateway) handles everything that is not local. It is the doorway out of the building.",
+          "g": [
+            [
+              "Router",
+              "Device that forwards data between networks."
+            ]
+          ]
+        },
+        {
+          "h": "Switch: the local junction",
+          "t": "A <b>switch</b> connects devices inside one LAN with cables. It learns which device sits on which port and sends data only where needed. More ports mean more wired devices, like PCs, phones and cameras.",
+          "g": [
+            [
+              "Switch",
+              "Device with many ports that connects wired devices in a LAN."
+            ]
+          ]
+        },
+        {
+          "h": "Access point: the wireless bridge",
+          "t": "An <b>access point</b> (AP) gives Wi-Fi to a wired network. A home <b>wireless router</b> combines router, switch and AP in one box. Businesses often split them up so each part can be chosen and placed right.",
+          "g": [
+            [
+              "Access point",
+              "Device that connects Wi-Fi devices to the wired network."
+            ],
+            [
+              "Residential gateway",
+              "A home box combining router, switch, Wi-Fi and sometimes modem."
+            ]
+          ]
+        }
       ],
-      [
-       "Multi-mode",
-       "Fibre with a wider core for short distances."
+      "quiz": [
+        {
+          "q": "Which device connects your LAN to the internet?",
+          "o": [
+            "Switch",
+            "Access point",
+            "Router"
+          ],
+          "a": 2,
+          "w": "The router forwards traffic between networks, such as LAN and internet."
+        },
+        {
+          "q": "A shop wants ten wired cash registers and printers on one network. What is the key device?",
+          "o": [
+            "A switch",
+            "A router only",
+            "An antenna"
+          ],
+          "a": 0,
+          "w": "A switch connects many wired devices in the same LAN."
+        },
+        {
+          "q": "What is a home wireless router?",
+          "o": [
+            "Only an access point",
+            "Router, switch and AP in one box",
+            "A fibre cable"
+          ],
+          "a": 1,
+          "w": "Home units combine routing, switching and Wi-Fi in a single device.",
+          "g": [
+            [
+              "AP",
+              "Access point."
+            ]
+          ]
+        }
       ]
-     ]
     },
     {
-     "h": "SFP: swap-in connectors",
-     "t": "An <b>SFP</b> is a small plug-in module that fits a switch port and matches the cable: fibre or copper. <b>SFP+</b> is the faster version, known for 10 Gbit/s. Customers can pick the right module for the distance.",
-     "g": [
-      [
-       "SFP / SFP+",
-       "Hot-swappable transceiver modules; SFP is typically 1 Gbit/s, SFP+ 10 Gbit/s."
+      "id": "nb-3-1",
+      "lvl": 3,
+      "title": "NAT, ports and protocols",
+      "src": [
+        {
+          "l": "Wikipedia: Network address translation",
+          "u": "https://en.wikipedia.org/wiki/Network_address_translation"
+        },
+        {
+          "l": "Wikipedia: Port (computer networking)",
+          "u": "https://en.wikipedia.org/wiki/Port_(computer_networking)"
+        },
+        {
+          "l": "Wikipedia: List of TCP and UDP port numbers",
+          "u": "https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers"
+        }
       ],
-      [
-       "Uplink",
-       "A faster port that links a switch to the rest of the network."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which copper cable is needed for 10 Gbit/s over a full 100 m run?",
-     "o": [
-      "Cat5e",
-      "Cat6a",
-      "Cat3"
-     ],
-     "a": 1,
-     "w": "Cat6a allows 10GBASE-T over 100 m; Cat6 only about 55 m.",
-     "g": [
-      [
-       "Cat6a",
-       "A higher grade copper cable for 10 Gbit/s over 100 m."
-      ]
-     ]
-    },
-    {
-     "q": "A customer needs a link between two buildings 5 km apart. What fits best?",
-     "o": [
-      "Cat6 copper",
-      "Multi-mode over copper",
-      "Single-mode fibre"
-     ],
-     "a": 2,
-     "w": "Single-mode fibre is used for longer links, far beyond what copper can do."
-    },
-    {
-     "q": "What is an SFP?",
-     "o": [
-      "A swappable transceiver module for a switch port",
-      "A type of Wi-Fi",
-      "A router password"
-     ],
-     "a": 0,
-     "w": "SFPs are hot-swappable modules matched to fibre or copper cabling.",
-     "g": [
-      [
-       "SFP",
-       "Small Form-factor Pluggable module."
-      ]
-     ]
-    },
-    {
-     "q": "Why choose fibre over copper between floors with heavy electrical machinery?",
-     "o": [
-      "It needs no switch",
-      "It is always shorter",
-      "It is immune to electromagnetic interference"
-     ],
-     "a": 2,
-     "w": "Fibre is immune to electromagnetic interference and loses less signal."
-    }
-   ]
-  },
-  {
-   "id": "nb-4-1",
-   "lvl": 4,
-   "title": "VLANs in plain words",
-   "src": [
-    {
-     "l": "Wikipedia: Virtual LAN",
-     "u": "https://en.wikipedia.org/wiki/Virtual_LAN"
-    }
-   ],
-   "pages": [
-    {
-     "h": "One switch, several networks",
-     "t": "A <b>VLAN</b> splits one physical network into separate logical ones. Staff, guests and cameras can share the same cables and switches but stay apart. Membership is set in software, so no rewiring.",
-     "g": [
-      [
-       "VLAN",
-       "Virtual LAN: a logical network inside shared physical equipment."
-      ]
-     ]
-    },
-    {
-     "h": "Why customers use them",
-     "t": "VLANs cut unnecessary broadcast traffic and limit who can reach what. A guest on the Wi-Fi should not see the finance server. Careful setup matters: VLANs are not a complete security solution and can be defeated if badly set up.",
-     "g": [
-      [
-       "Segmentation",
-       "Dividing a network into smaller separated parts."
-      ]
-     ]
-    },
-    {
-     "h": "Crossing between VLANs",
-     "t": "Switches do not pass traffic between VLANs by themselves. A <b>router</b> or Layer 3 switch moves it, and that is also where rules can allow or block. VLAN-capable gear means <b>managed or smart switches</b>.",
-     "g": [
-      [
-       "Layer 3",
-       "The level where IP addresses and routing work."
+      "pages": [
+        {
+          "h": "NAT shares one public address",
+          "t": "<b>NAT</b> rewrites addresses as traffic leaves the router, so a whole office of private addresses can share <b>one public address</b>. It helped IPv4 last longer. By default, connections can only be started from inside.",
+          "g": [
+            [
+              "NAT",
+              "Network Address Translation: lets many private devices share one public address."
+            ]
+          ]
+        },
+        {
+          "h": "Port forwarding",
+          "t": "Because outside connections are blocked by default, a camera or server inside needs a <b>port forward</b> to be reachable from the internet. It sends traffic arriving at a chosen port to one inside device. Use it carefully, since it opens a door.",
+          "g": [
+            [
+              "Port forwarding",
+              "A rule that sends incoming traffic on a given port to a chosen inside device."
+            ]
+          ]
+        },
+        {
+          "h": "Ports and protocols",
+          "t": "A <b>protocol</b> is an agreed way of talking. A <b>port</b> is a numbered door for a service. Web pages use port <b>443</b> (HTTPS), plain web 80, email between servers 25, and DNS 53. Firewalls often allow or block by port.",
+          "g": [
+            [
+              "Protocol",
+              "A set of agreed rules for how devices exchange data."
+            ],
+            [
+              "Port",
+              "A number that tells a device which service should receive the data."
+            ],
+            [
+              "HTTPS",
+              "The secure version of web traffic."
+            ]
+          ]
+        }
       ],
-      [
-       "Trunk",
-       "One link that carries several VLANs at once."
+      "quiz": [
+        {
+          "q": "What does NAT let an office do?",
+          "o": [
+            "Make Wi-Fi faster",
+            "Share one public address among many private devices",
+            "Run cables longer"
+          ],
+          "a": 1,
+          "w": "NAT translates between private addresses and a public one.",
+          "g": [
+            [
+              "NAT",
+              "Network Address Translation."
+            ]
+          ]
+        },
+        {
+          "q": "A customer wants to view their camera from home over the internet. What does a basic router setup need?",
+          "o": [
+            "A bigger switch",
+            "A new SSID",
+            "A port forward to the camera"
+          ],
+          "a": 2,
+          "w": "NAT blocks outside connections by default, so a forward is needed, with care for security."
+        },
+        {
+          "q": "Which port is normally used for secure web pages (HTTPS)?",
+          "o": [
+            "443",
+            "25",
+            "53"
+          ],
+          "a": 0,
+          "w": "HTTPS uses port 443; 53 is DNS and 25 is email between servers."
+        }
       ]
-     ]
-    }
-   ],
-   "quiz": [
+    },
     {
-     "q": "What is the main idea of a VLAN?",
-     "o": [
-      "Separate logical networks on shared hardware",
-      "Faster cables",
-      "Free internet"
-     ],
-     "a": 0,
-     "w": "VLANs keep groups of devices logically isolated on the same cabling.",
-     "g": [
-      [
-       "VLAN",
-       "Virtual LAN."
+      "id": "nb-3-2",
+      "lvl": 3,
+      "title": "Bandwidth vs latency",
+      "src": [
+        {
+          "l": "Wikipedia: Latency (engineering)",
+          "u": "https://en.wikipedia.org/wiki/Latency_(engineering)"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Bandwidth is the pipe size",
+          "t": "<b>Bandwidth</b> is how much data a connection can carry per second, like how wide a motorway is. Bigger bandwidth helps with big downloads, many users at once and video streams.",
+          "g": [
+            [
+              "Bandwidth",
+              "The amount of data a link can carry per second."
+            ],
+            [
+              "Mbit/s",
+              "Megabits per second, the usual unit for internet speed."
+            ]
+          ]
+        },
+        {
+          "h": "Latency is the delay",
+          "t": "<b>Latency</b> is the time delay before data arrives, like how long the drive takes. A wide road does not make the trip shorter. Video calls, remote desktop and gaming feel bad when latency is high.",
+          "g": [
+            [
+              "Latency",
+              "Time delay between sending something and it arriving."
+            ]
+          ]
+        },
+        {
+          "h": "Why a seller cares",
+          "t": "A customer saying \"it is slow\" could mean low bandwidth, high latency, or a Wi-Fi problem. Ask <b>what</b> feels slow: downloads, or calls and remote work. The answer points to different fixes.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which analogy fits latency?",
+          "o": [
+            "Width of the motorway",
+            "Number of cars",
+            "How long the drive takes"
+          ],
+          "a": 2,
+          "w": "Latency is the delay, like travel time, not the capacity.",
+          "g": [
+            [
+              "Latency",
+              "Delay."
+            ]
+          ]
+        },
+        {
+          "q": "A customer's video calls stutter although the speed test shows plenty of bandwidth. What might be an issue?",
+          "o": [
+            "High latency",
+            "Too many switch ports",
+            "A private IP address"
+          ],
+          "a": 0,
+          "w": "Real-time traffic suffers from delay even when there is a lot of capacity."
+        },
+        {
+          "q": "Bigger bandwidth most clearly helps with...",
+          "o": [
+            "Shortening the delay of a single click",
+            "Many users and big downloads at once",
+            "Hiding the SSID"
+          ],
+          "a": 1,
+          "w": "Bandwidth is capacity, so it helps when lots of data or users share the link."
+        }
       ]
-     ]
     },
     {
-     "q": "A hotel wants guest Wi-Fi apart from its booking system on the same switches. What is the concept to use?",
-     "o": [
-      "Port forwarding",
-      "VLANs",
-      "Larger bandwidth"
-     ],
-     "a": 1,
-     "w": "VLANs separate guest and internal traffic without extra cabling."
-    },
-    {
-     "q": "How does traffic get from one VLAN to another?",
-     "o": [
-      "Automatically through any switch",
-      "Through a router or Layer 3 device",
-      "Through DNS"
-     ],
-     "a": 1,
-     "w": "Switches do not bridge VLANs; a Layer 3 device moves the traffic between them."
-    }
-   ]
-  },
-  {
-   "id": "nb-4-2",
-   "lvl": 4,
-   "title": "Scenario: a new small office",
-   "src": [
-    {
-     "l": "Wikipedia: Router (computing)",
-     "u": "https://en.wikipedia.org/wiki/Router_(computing)"
-    },
-    {
-     "l": "Wikipedia: Network switch",
-     "u": "https://en.wikipedia.org/wiki/Network_switch"
-    },
-    {
-     "l": "Wikipedia: Virtual LAN",
-     "u": "https://en.wikipedia.org/wiki/Virtual_LAN"
-    }
-   ],
-   "pages": [
-    {
-     "h": "The building blocks",
-     "t": "A small office needs an internet link, a <b>router or firewall</b> at the door, a <b>switch</b> for wired devices and phones, and <b>access points</b> for Wi-Fi. DHCP and DNS usually come from the router.",
-     "g": [
-      [
-       "Firewall",
-       "A device that filters traffic between networks by rules."
+      "id": "nb-3-3",
+      "lvl": 3,
+      "title": "Cables: copper and fibre",
+      "src": [
+        {
+          "l": "Wikipedia: Category 6 cable",
+          "u": "https://en.wikipedia.org/wiki/Category_6_cable"
+        },
+        {
+          "l": "Wikipedia: Small Form-factor Pluggable",
+          "u": "https://en.wikipedia.org/wiki/Small_Form-factor_Pluggable"
+        },
+        {
+          "l": "Wikipedia: Optical fiber",
+          "u": "https://en.wikipedia.org/wiki/Optical_fiber"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Copper: Cat5e, Cat6, Cat6a",
+          "t": "Office cables are <b>twisted-pair copper</b> with RJ45 plugs, normally good for <b>100 metres</b>. Cat6 is backward compatible with Cat5e. For 10 Gbit/s over the full 100 m, you need <b>Cat6a</b>; Cat6 only manages about 55 m.",
+          "g": [
+            [
+              "Cat5e/Cat6/Cat6a",
+              "Grades of copper network cable. Higher grades cope with higher speeds over distance."
+            ],
+            [
+              "RJ45",
+              "The plug on a normal network cable."
+            ]
+          ]
+        },
+        {
+          "h": "Fibre: far and clean",
+          "t": "<b>Fibre</b> carries light, loses little signal and ignores electrical interference. <b>Multi-mode</b> suits short runs inside buildings. <b>Single-mode</b> is for longer links, typically beyond about a kilometre, and between buildings or sites.",
+          "g": [
+            [
+              "Single-mode",
+              "Fibre with a thin core for long distances."
+            ],
+            [
+              "Multi-mode",
+              "Fibre with a wider core for short distances."
+            ]
+          ]
+        },
+        {
+          "h": "SFP: swap-in connectors",
+          "t": "An <b>SFP</b> is a small plug-in module that fits a switch port and matches the cable: fibre or copper. <b>SFP+</b> is the faster version, known for 10 Gbit/s. Customers can pick the right module for the distance.",
+          "g": [
+            [
+              "SFP / SFP+",
+              "Hot-swappable transceiver modules; SFP is typically 1 Gbit/s, SFP+ 10 Gbit/s."
+            ],
+            [
+              "Uplink",
+              "A faster port that links a switch to the rest of the network."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which copper cable is needed for 10 Gbit/s over a full 100 m run?",
+          "o": [
+            "Cat5e",
+            "Cat6a",
+            "Cat3"
+          ],
+          "a": 1,
+          "w": "Cat6a allows 10GBASE-T over 100 m; Cat6 only about 55 m.",
+          "g": [
+            [
+              "Cat6a",
+              "A higher grade copper cable for 10 Gbit/s over 100 m."
+            ]
+          ]
+        },
+        {
+          "q": "A customer needs a link between two buildings 5 km apart. What fits best?",
+          "o": [
+            "Cat6 copper",
+            "Multi-mode over copper",
+            "Single-mode fibre"
+          ],
+          "a": 2,
+          "w": "Single-mode fibre is used for longer links, far beyond what copper can do."
+        },
+        {
+          "q": "What is an SFP?",
+          "o": [
+            "A swappable transceiver module for a switch port",
+            "A type of Wi-Fi",
+            "A router password"
+          ],
+          "a": 0,
+          "w": "SFPs are hot-swappable modules matched to fibre or copper cabling.",
+          "g": [
+            [
+              "SFP",
+              "Small Form-factor Pluggable module."
+            ]
+          ]
+        },
+        {
+          "q": "Why choose fibre over copper between floors with heavy electrical machinery?",
+          "o": [
+            "It needs no switch",
+            "It is always shorter",
+            "It is immune to electromagnetic interference"
+          ],
+          "a": 2,
+          "w": "Fibre is immune to electromagnetic interference and loses less signal."
+        }
       ]
-     ]
     },
     {
-     "h": "Questions to ask the reseller",
-     "t": "How many users and devices? Any <b>cameras or phones</b> that need PoE? Guest Wi-Fi? Offices to link or remote workers? Fibre or copper in the walls? Answers decide the gear.",
-     "g": [
-      [
-       "PoE",
-       "Power over Ethernet: power through the network cable."
+      "id": "nb-4-1",
+      "lvl": 4,
+      "title": "VLANs in plain words",
+      "src": [
+        {
+          "l": "Wikipedia: Virtual LAN",
+          "u": "https://en.wikipedia.org/wiki/Virtual_LAN"
+        }
+      ],
+      "pages": [
+        {
+          "h": "One switch, several networks",
+          "t": "A <b>VLAN</b> splits one physical network into separate logical ones. Staff, guests and cameras can share the same cables and switches but stay apart. Membership is set in software, so no rewiring.",
+          "g": [
+            [
+              "VLAN",
+              "Virtual LAN: a logical network inside shared physical equipment."
+            ]
+          ]
+        },
+        {
+          "h": "Why customers use them",
+          "t": "VLANs cut unnecessary broadcast traffic and limit who can reach what. A guest on the Wi-Fi should not see the finance server. Careful setup matters: VLANs are not a complete security solution and can be defeated if badly set up.",
+          "g": [
+            [
+              "Segmentation",
+              "Dividing a network into smaller separated parts."
+            ]
+          ]
+        },
+        {
+          "h": "Crossing between VLANs",
+          "t": "Switches do not pass traffic between VLANs by themselves. A <b>router</b> or Layer 3 switch moves it, and that is also where rules can allow or block. VLAN-capable gear means <b>managed or smart switches</b>.",
+          "g": [
+            [
+              "Layer 3",
+              "The level where IP addresses and routing work."
+            ],
+            [
+              "Trunk",
+              "One link that carries several VLANs at once."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the main idea of a VLAN?",
+          "o": [
+            "Separate logical networks on shared hardware",
+            "Faster cables",
+            "Free internet"
+          ],
+          "a": 0,
+          "w": "VLANs keep groups of devices logically isolated on the same cabling.",
+          "g": [
+            [
+              "VLAN",
+              "Virtual LAN."
+            ]
+          ]
+        },
+        {
+          "q": "A hotel wants guest Wi-Fi apart from its booking system on the same switches. What is the concept to use?",
+          "o": [
+            "Port forwarding",
+            "VLANs",
+            "Larger bandwidth"
+          ],
+          "a": 1,
+          "w": "VLANs separate guest and internal traffic without extra cabling."
+        },
+        {
+          "q": "How does traffic get from one VLAN to another?",
+          "o": [
+            "Automatically through any switch",
+            "Through a router or Layer 3 device",
+            "Through DNS"
+          ],
+          "a": 1,
+          "w": "Switches do not bridge VLANs; a Layer 3 device moves the traffic between them."
+        }
       ]
-     ]
     },
     {
-     "h": "Common mistakes",
-     "t": "Reselling a single home router to a company with guests, cameras and calls. Forgetting <b>PoE budget</b>, or <b>uplink</b> ports for fibre. Not planning VLANs for guests. A short checklist avoids returns and angry customers.",
-     "g": []
+      "id": "nb-4-2",
+      "lvl": 4,
+      "title": "Scenario: a new small office",
+      "src": [
+        {
+          "l": "Wikipedia: Router (computing)",
+          "u": "https://en.wikipedia.org/wiki/Router_(computing)"
+        },
+        {
+          "l": "Wikipedia: Network switch",
+          "u": "https://en.wikipedia.org/wiki/Network_switch"
+        },
+        {
+          "l": "Wikipedia: Virtual LAN",
+          "u": "https://en.wikipedia.org/wiki/Virtual_LAN"
+        }
+      ],
+      "pages": [
+        {
+          "h": "The building blocks",
+          "t": "A small office needs an internet link, a <b>router or firewall</b> at the door, a <b>switch</b> for wired devices and phones, and <b>access points</b> for Wi-Fi. DHCP and DNS usually come from the router.",
+          "g": [
+            [
+              "Firewall",
+              "A device that filters traffic between networks by rules."
+            ]
+          ]
+        },
+        {
+          "h": "Questions to ask the reseller",
+          "t": "How many users and devices? Any <b>cameras or phones</b> that need PoE? Guest Wi-Fi? Offices to link or remote workers? Fibre or copper in the walls? Answers decide the gear.",
+          "g": [
+            [
+              "PoE",
+              "Power over Ethernet: power through the network cable."
+            ]
+          ]
+        },
+        {
+          "h": "Common mistakes",
+          "t": "Reselling a single home router to a company with guests, cameras and calls. Forgetting <b>PoE budget</b>, or <b>uplink</b> ports for fibre. Not planning VLANs for guests. A short checklist avoids returns and angry customers.",
+          "g": []
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A dentist office has 12 PCs, 6 IP phones and 3 Wi-Fi access points. Which wired device is certainly needed?",
+          "o": [
+            "A satellite dish",
+            "A hub for each PC",
+            "A switch"
+          ],
+          "a": 2,
+          "w": "A switch connects the wired devices and access points inside the LAN."
+        },
+        {
+          "q": "Which of these is a key question when choosing the switch?",
+          "o": [
+            "Which devices need PoE?",
+            "What colour is the rack?",
+            "What is the company logo?"
+          ],
+          "a": 0,
+          "w": "Phones and access points are often powered over the cable, which sets the PoE need."
+        },
+        {
+          "q": "A company wants guests kept apart from staff. What do you mention?",
+          "o": [
+            "Buy more cables",
+            "Use IPv6 only",
+            "Plan VLANs and a separate guest Wi-Fi"
+          ],
+          "a": 2,
+          "w": "VLANs plus a guest network separate guests from internal systems."
+        }
+      ]
     }
-   ],
-   "quiz": [
-    {
-     "q": "A dentist office has 12 PCs, 6 IP phones and 3 Wi-Fi access points. Which wired device is certainly needed?",
-     "o": [
-      "A satellite dish",
-      "A hub for each PC",
-      "A switch"
-     ],
-     "a": 2,
-     "w": "A switch connects the wired devices and access points inside the LAN."
-    },
-    {
-     "q": "Which of these is a key question when choosing the switch?",
-     "o": [
-      "Which devices need PoE?",
-      "What colour is the rack?",
-      "What is the company logo?"
-     ],
-     "a": 0,
-     "w": "Phones and access points are often powered over the cable, which sets the PoE need."
-    },
-    {
-     "q": "A company wants guests kept apart from staff. What do you mention?",
-     "o": [
-      "Buy more cables",
-      "Use IPv6 only",
-      "Plan VLANs and a separate guest Wi-Fi"
-     ],
-     "a": 2,
-     "w": "VLANs plus a guest network separate guests from internal systems."
-    }
-   ]
-  }
- ]
+  ]
 }

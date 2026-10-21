@@ -21,7 +21,7 @@ h1{font-size:26px;margin:0}h2{font-size:21px;margin:0 0 8px}
 .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
 .chips{display:flex;gap:8px;align-items:center}
 .chip{background:var(--card);border-radius:999px;padding:7px 12px;font-size:14px;font-weight:600}
-.gear{background:var(--card);border:0;color:var(--text);border-radius:999px;width:34px;height:34px;font-size:16px;cursor:pointer}
+.gear{background:var(--card);border:0;color:var(--text);border-radius:999px;width:34px;height:34px;display:grid;place-items:center;cursor:pointer}
 .sub{color:var(--mute);font-size:14px;margin:2px 0 14px}
 .sec{color:var(--mute);font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin:18px 0 8px}
 .card{background:var(--card);border-radius:18px;padding:16px;margin-bottom:12px}
@@ -102,7 +102,7 @@ async function load(){
 const focusOf=d=>S.focus[d.id]==null?d.deffocus:S.focus[d.id];
 
 /* ---------- VIEWS ---------- */
-function topbar(){return `<div class="top"><h1>Learn</h1><div class="chips"><span class="chip">🔥 ${streakNow()}</span><span class="chip">⭐ ${S.xp}</span><button class="gear" id="gear" aria-label="Settings">⚙</button></div></div>`}
+function topbar(){return `<div class="top"><h1>Learn</h1><div class="chips"><span class="chip">🔥 ${streakNow()}</span><span class="chip">⭐ ${S.xp}</span><button class="gear" id="gear" aria-label="Settings"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button></div></div>`}
 function pool(){const out=[];DECKS.forEach(d=>{const f=focusOf(d);if(!f)return;d.lessons.forEach(l=>{if(S.seen[l.id])l.quiz.forEach(q=>out.push({q,f,due:srDue(q.id)}))})});return out}
 function pickQuick(n){
   const p=pool(),w=x=>Math.random()/x.f;
@@ -119,12 +119,12 @@ function home(){
   let h=topbar();
   h+=p.length?`<div class="big"><h2>Quick quiz</h2><p>${dueN?dueN+" question"+(dueN>1?"s":"")+" due for review.":"Nothing due. Practice anyway."} About 2 minutes.</p><button class="btn" id="quick">Start</button></div>`
     :`<div class="big"><h2>Welcome</h2><p>Read a short lesson, then get quizzed. Finish one lesson to unlock Quick quiz.</p></div>`;
-  if(nx)h+=`<div class="big alt"><h2>Next lesson</h2><p>${nx.d.emoji} ${nx.d.title}: ${nx.l.title}</p><button class="btn" id="nextl">Read now</button></div>`;
+  if(nx)h+=`<div class="big alt"><h2>Next lesson</h2><p>${nx.d.title}: ${nx.l.title}</p><button class="btn" id="nextl">Read now</button></div>`;
   Object.keys(GROUPS).forEach(g=>{
     const ds=DECKS.filter(d=>d.group===g&&focusOf(d)>0).sort((a,b)=>focusOf(b)-focusOf(a));
     if(!ds.length)return;
     h+=`<div class="sec">${GROUPS[g]}</div>`+ds.map(d=>{const n=d.lessons.length,k=d.lessons.filter(l=>S.done[l.id]).length;
-      return `<button class="card deck" data-d="${d.id}"><div class="emoji">${d.emoji||"📘"}</div><div style="flex:1"><b>${d.title}</b><small>${d.desc||""} • ${k}/${n}</small><div class="bar"><i style="width:${k/n*100}%"></i></div></div></button>`}).join("");
+      return `<button class="card deck" data-d="${d.id}"><div style="flex:1"><b>${d.title}</b><small>${d.desc||""} • ${k}/${n}</small><div class="bar"><i style="width:${k/n*100}%"></i></div></div></button>`}).join("");
   });
   $.innerHTML=h;
   document.getElementById("gear").onclick=settings;
@@ -133,10 +133,10 @@ function home(){
   const n=document.getElementById("nextl");if(n)n.onclick=()=>read(nx.d,nx.l,0);
 }
 function deck(id){
-  const d=DECKS.find(x=>x.id===id);let lastLvl=0,h=`<button class="back" id="b">‹ Back</button><div class="top"><h1>${d.emoji||""} ${d.title}</h1></div>`;
+  const d=DECKS.find(x=>x.id===id);let lastLvl=0,h=`<button class="back" id="b">‹ Back</button><div class="top"><h1>${d.title}</h1></div>`;
   d.lessons.forEach(l=>{
     if(l.lvl!==lastLvl){h+=`<div class="lvlh">Level ${l.lvl}</div>`;lastLvl=l.lvl}
-    h+=`<div class="card"><b>${l.title}</b><div class="sub" style="margin-bottom:0">${S.done[l.id]?"✅ Completed":"About 2 min"}</div>
+    h+=`<div class="card"><b>${l.title}</b><div class="sub" style="margin-bottom:0">${S.done[l.id]?"Completed":"About 2 min"}</div>
     <div class="row"><button class="btn sm" data-r="${l.id}">Read &amp; learn</button><button class="btn sm ghost" data-t="${l.id}" ${S.seen[l.id]?"":"disabled"}>Quiz only</button></div></div>`});
   if(d.src&&d.src.length)h+=`<div class="src">Sources: ${d.src.map(s=>`<a href="${s.u}" target="_blank" rel="noopener">${s.l}</a>`).join(" · ")}</div>`;
   $.innerHTML=h;
@@ -168,14 +168,14 @@ function runQuiz(qs,title,onExit,lessonId){
       $.querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(+x.dataset.k===q.a)x.classList.add("ok")});
       if(!ok)b.classList.add("bad");
       if(navigator.vibrate)try{navigator.vibrate(ok?15:[30,40,30])}catch(e){}
-      document.getElementById("fb").innerHTML=`<div class="why">${ok?"✅ Correct. ":"❌ Not quite. "}${q.w}</div><button class="btn" id="n">${i===qs.length-1?"Finish":"Next"}</button>`;
+      document.getElementById("fb").innerHTML=`<div class="why">${ok?"Correct. ":"Not quite. "}${q.w}</div><button class="btn" id="n">${i===qs.length-1?"Finish":"Next"}</button>`;
       document.getElementById("n").onclick=()=>{i++;i<qs.length?show():finish()};
     });
   };
   const finish=()=>{
     const gain=right*10+(right===qs.length?10:0);
     S.xp+=gain;bumpStreak();if(lessonId&&right>=Math.ceil(qs.length*.67))S.done[lessonId]=1;save();
-    $.innerHTML=`<div class="spacer"></div><div class="center"><div style="font-size:48px">${right===qs.length?"🎉":right?"👍":"💪"}</div><div class="score">${right}/${qs.length}</div>
+    $.innerHTML=`<div class="spacer"></div><div class="center"><div class="score">${right}/${qs.length}</div>
      <div class="sub">${title}</div><div class="chips" style="justify-content:center"><span class="chip">+${gain} XP</span><span class="chip">🔥 ${S.streak} day streak</span></div></div><div class="spacer"></div>
      <button class="btn" id="a">Again</button><button class="btn ghost" id="d">Done</button>`;
     document.getElementById("a").onclick=()=>runQuiz(shuffle(qs),title,onExit,lessonId);
@@ -186,7 +186,7 @@ function runQuiz(qs,title,onExit,lessonId){
 function settings(){
   let h=`<button class="back" id="b">‹ Back</button><div class="top"><h1>Focus</h1></div><div class="sub">0 hides a topic. 5 means more questions from it in Quick quiz and it comes first in Next lesson.</div>`;
   Object.keys(GROUPS).forEach(g=>{const ds=DECKS.filter(d=>d.group===g);if(!ds.length)return;h+=`<div class="sec">${GROUPS[g]}</div>`+ds.map(d=>{const f=focusOf(d);
-    return `<div class="set"><b>${d.emoji||""} ${d.title}</b><div class="p" data-d="${d.id}">${[0,1,2,3,4,5].map(i=>`<button class="${i===0?"z ":""}${i===f?"on":""}" data-v="${i}">${i}</button>`).join("")}</div></div>`}).join("")});
+    return `<div class="set"><b>${d.title}</b><div class="p" data-d="${d.id}">${[0,1,2,3,4,5].map(i=>`<button class="${i===0?"z ":""}${i===f?"on":""}" data-v="${i}">${i}</button>`).join("")}</div></div>`}).join("")});
   h+=`<button class="btn ghost" id="reset" style="margin-top:20px">Reset all progress</button><div class="note">${DECKS.reduce((n,d)=>n+d.lessons.length,0)} lessons loaded</div>`;
   $.innerHTML=h;
   document.getElementById("b").onclick=home;
