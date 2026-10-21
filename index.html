@@ -55,6 +55,7 @@ body.m-map{position:fixed;inset:0;overflow:hidden}
 #sheet .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
 #sheet .rows{display:flex;gap:22px;font-size:14px;font-variant-numeric:tabular-nums}
 #sheet .rows span{color:var(--mute);display:block;font-size:12px}
+#sheet .rel{color:var(--mute);font-size:13px;line-height:1.4;margin:-4px 0 12px}
 #sheet .pb{height:3px;background:var(--line);margin:12px 0 14px}#sheet .pb i{display:block;height:100%}
 #sheet .x{position:absolute;right:8px;top:8px;border:0;background:none;color:var(--mute);width:30px;height:30px;font-size:20px;cursor:pointer}
 /* shared controls */
@@ -121,6 +122,7 @@ body.m-map{position:fixed;inset:0;overflow:hidden}
   <div class="g"><span class="dot" id="sd"></span><span id="sg"></span></div>
   <div class="rows"><div><span>Lessons done</span><b id="sl"></b></div><div><span>Due for review</span><b id="su"></b></div><div><span>Levels</span><b id="sv"></b></div></div>
   <div class="pb"><i id="sb"></i></div>
+  <div class="rel" id="sr"></div>
   <button class="btn" id="go">Open lessons</button>
 </aside>
 <nav id="tabs" aria-label="Main">
@@ -308,7 +310,7 @@ function settings(){
 /* ======================= MAP ======================= */
 const cv=document.getElementById("map"),ctx=cv.getContext("2d");
 const sheet=document.getElementById("sheet"),hintEl=document.getElementById("hint");
-let clusters=[],nodes=[],edges=[],B={x0:-1,x1:1,y0:-1,y1:1},mapSig="";
+let clusters=[],nodes=[],byId={},B={x0:-1,x1:1,y0:-1,y1:1},mapSig="";
 let W=0,H=0,dpr=1;const cam={x:0,y:0,s:.3};let fitS=.3,zt=null,vel=null,fly=null,sel=null,raf=0,reqT=0,last=0,mapOn=false,camReady=false;
 const MAXS=5.5,minS=()=>fitS*.75;
 const rng=a=>()=>{a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
@@ -321,7 +323,7 @@ function trace(pts){const n=pts.length;ctx.beginPath();ctx.moveTo((pts[n-1][0]+p
 
 /* layout is generated from the data: no hand-placed coordinates */
 function buildMap(){
-  clusters=[];nodes=[];edges=[];const byId={};
+  clusters=[];nodes=[];byId={};
   groupKeys().forEach((gk,gi)=>{
     const ds=DECKS.filter(d=>d.group===gk&&focusOf(d)>0);if(!ds.length)return;
     const R=rng(100+gi*17),sp=118,color=GROUPS[gk].color;
@@ -347,10 +349,7 @@ function buildMap(){
       n.lessons=n.d.lessons.map(l=>{const k2=idx[l.lvl]=(idx[l.lvl]||0)+1;const ring=l.lvl-1,a=(k2-1)/per[l.lvl]*Math.PI*2+ring*.7,rr=n.r+13+ring*9.5;
         const done=!!S.done[l.id];let due=false;if(S.seen[l.id])l.quiz.forEach(q=>{if(srDue(q.id))due=true});
         return{x:n.x+Math.cos(a)*rr,y:n.y+Math.sin(a)*rr,done,due:done&&due}})});
-    c.items.forEach((n,k)=>{if(!k)return;let best=null,bd=1e9;for(let j=0;j<k;j++){const m=c.items[j],dd=Math.hypot(m.x-n.x,m.y-n.y);if(dd<bd){bd=dd;best=m}}edges.push({a:n,b:best,cross:false})});
   });
-  DECKS.forEach(d=>{(d.related||[]).forEach(r=>{const a=byId[d.id],b=byId[r];if(a&&b&&a.c!==b.c&&!edges.some(e=>e.cross&&((e.a===a&&e.b===b)||(e.a===b&&e.b===a))))edges.push({a,b,cross:true})})});
-  edges.forEach((e,i)=>{const R=rng(900+i),dx=e.b.x-e.a.x,dy=e.b.y-e.a.y,dd=Math.hypot(dx,dy)||1,o=(R()-.5)*.28*dd;e.cx=(e.a.x+e.b.x)/2-dy/dd*o;e.cy=(e.a.y+e.b.y)/2+dx/dd*o});
   B={x0:Math.min(...clusters.map(c=>c.x-c.rad*1.05)),x1:Math.max(...clusters.map(c=>c.x+c.rad*1.05)),y0:Math.min(...clusters.map(c=>c.y-c.rad*1.05)),y1:Math.max(...clusters.map(c=>c.y+c.rad*1.05))};
 }
 function splitName(t){const w=t.split(' ');if(t.length<=13||w.length<2)return[t];let best=1,bd=1e9;for(let i=1;i<w.length;i++){const d=Math.abs(w.slice(0,i).join(' ').length-w.slice(i).join(' ').length);if(d<bd){bd=d;best=i}}return[w.slice(0,best).join(' '),w.slice(best).join(' ')]}
@@ -388,11 +387,12 @@ function draw(){
   clusters.forEach(c=>{const col=c.color,hot=sel&&sel.c===c;
     trace(c.shape);ctx.fillStyle=rgba(col,.055);ctx.fill();ctx.lineWidth=1.2/s;ctx.strokeStyle=rgba(col,hot?.7:.42);ctx.stroke();
     trace(c.inner);ctx.lineWidth=1/s;ctx.strokeStyle=rgba(col,.15);ctx.stroke()});
-  const ea=ramp(s,.16,.3);if(ea>0){ctx.lineWidth=1/s;edges.forEach(e=>{ctx.globalAlpha=ea*(e.cross?.5:.8);ctx.strokeStyle=e.cross?"rgba(235,233,228,.3)":rgba(e.a.color,.45);if(e.cross)ctx.setLineDash([5/s,5/s]);ctx.beginPath();ctx.moveTo(e.a.x,e.a.y);ctx.quadraticCurveTo(e.cx,e.cy,e.b.x,e.b.y);ctx.stroke();if(e.cross)ctx.setLineDash([])});ctx.globalAlpha=1}
-  nodes.forEach(n=>{if(n.x+n.r*2<x0||n.x-n.r*2>x1||n.y+n.r*2<y0||n.y-n.r*2>y1)return;const col=n.color,isSel=sel===n;
-    if(n.p>0){trace(n.glow);ctx.fillStyle=rgba(col,.05+.1*n.p);ctx.fill()}
-    trace(n.shape);ctx.fillStyle="#0d0e10";ctx.fill();ctx.fillStyle=rgba(col,.1+.5*n.p);ctx.fill();ctx.lineWidth=(isSel?2.4:1.4)/s;ctx.strokeStyle=rgba(col,isSel?1:.55+.4*n.p);ctx.stroke();
-    if(n.due){ctx.beginPath();ctx.arc(n.x+n.r*.78,n.y-n.r*.78,4.2/s,0,6.283);ctx.fillStyle="#ebe9e4";ctx.fill();ctx.lineWidth=2/s;ctx.strokeStyle="#0d0e10";ctx.stroke()}});
+  const lit=sel?new Set([sel,...(sel.links||[])]):null;
+  if(sel&&sel.links&&sel.links.length){ctx.lineWidth=1.8/s;ctx.setLineDash([7/s,5/s]);ctx.strokeStyle="rgba(255,255,255,.85)";sel.links.forEach((m,i)=>{const dx=m.x-sel.x,dy=m.y-sel.y,dd=Math.hypot(dx,dy)||1,o=(i%2?1:-1)*.12*dd,qx=(sel.x+m.x)/2-dy/dd*o,qy=(sel.y+m.y)/2+dx/dd*o;ctx.beginPath();ctx.moveTo(sel.x,sel.y);ctx.quadraticCurveTo(qx,qy,m.x,m.y);ctx.stroke()});ctx.setLineDash([])}
+  nodes.forEach(n=>{if(n.x+n.r*2<x0||n.x-n.r*2>x1||n.y+n.r*2<y0||n.y-n.r*2>y1)return;const col=n.color,isSel=sel===n,isRel=!!lit&&!isSel&&lit.has(n),dim=!!lit&&!isSel&&!isRel;ctx.globalAlpha=dim?.5:1;
+    if(n.p>0||isRel){trace(n.glow);ctx.fillStyle=isRel?"rgba(255,255,255,.12)":rgba(col,.05+.1*n.p);ctx.fill()}
+    trace(n.shape);ctx.fillStyle="#0d0e10";ctx.fill();ctx.fillStyle=rgba(col,(isRel?.3:.1)+.5*n.p);ctx.fill();ctx.lineWidth=(isSel?2.4:isRel?2.2:1.4)/s;ctx.strokeStyle=isRel?"rgba(255,255,255,.95)":rgba(col,isSel?1:.55+.4*n.p);ctx.stroke();
+    if(n.due){ctx.beginPath();ctx.arc(n.x+n.r*.78,n.y-n.r*.78,4.2/s,0,6.283);ctx.fillStyle="#ebe9e4";ctx.fill();ctx.lineWidth=2/s;ctx.strokeStyle="#0d0e10";ctx.stroke()}ctx.globalAlpha=1});
   const la=ramp(s,.85,1.35);if(la>0){ctx.globalAlpha=la;nodes.forEach(n=>{if(n.x+n.r*3<x0||n.x-n.r*3>x1||n.y+n.r*3<y0||n.y-n.r*3>y1)return;const col=n.color;
     ctx.lineWidth=.8/s;ctx.strokeStyle=rgba(col,.14);for(let l=0;l<n.levels;l++){ctx.beginPath();ctx.arc(n.x,n.y,n.r+13+l*9.5,0,6.283);ctx.stroke()}
     n.lessons.forEach(ls=>{ctx.beginPath();ctx.arc(ls.x,ls.y,3.1,0,6.283);if(ls.done){ctx.fillStyle=col;ctx.fill();if(ls.due){ctx.lineWidth=1.6/s;ctx.strokeStyle="#ebe9e4";ctx.stroke()}}else{ctx.fillStyle="#0d0e10";ctx.fill();ctx.lineWidth=1/s;ctx.strokeStyle=rgba(col,.5);ctx.stroke()}})});ctx.globalAlpha=1}
@@ -400,9 +400,9 @@ function draw(){
   const dl=ramp(s,.38,.62);
   nodes.forEach(n=>{if(n.x+n.r*3<x0||n.x-n.r*3>x1||n.y+n.r*3<y0||n.y-n.r*3>y1)return;
     const lines=n.lines||(n.lines=splitName(n.name)),two=s>.9,tot=lines.length,blockH=tot*15+(two?15:0),top=n.y-blockH/2/s;
-    lines.forEach((ln,i)=>label(ln,n.x,top+(7.5+i*15)/s,13,"#fff",dl,600));
+    lines.forEach((ln,i)=>label(ln,n.x,top+(7.5+i*15)/s,13,"#fff",(lit&&lit.has(n))?1:dl,600));
     if(two)label(n.doneN+" of "+n.L,n.x,top+(tot*15+8)/s,11,"#c8cad0",ramp(s,.9,1.2),400)});
-  const cn=1-ramp(s,.55,.95);
+  const cn=sel?0:1-ramp(s,.55,.95);
   clusters.forEach(c=>boxLabel(c.name,c.x,c.y,clamp(W/22,15,19),shade(c.color,.78),cn));
   ctx.setTransform(dpr,0,0,dpr,0,0)}
 
@@ -440,10 +440,16 @@ function tap(x,y){const[wx,wy]=toWorld(x,y);
   let cl=null;clusters.forEach(c=>{if(Math.hypot(c.x-wx,c.y-wy)<c.rad*.95)cl=c});
   if(cl&&cam.s<.9){sheetOff();const f=fitRect(cl.x-cl.rad,cl.y-cl.rad,cl.x+cl.rad,cl.y+cl.rad,10);flyTo(cl.x,cl.y,f.s,f.sy);return}
   sheetOff()}
-function select(n){sel=n;document.getElementById("sn").textContent=n.name;document.getElementById("sg").textContent=n.label;document.getElementById("sd").style.background=n.color;
+function relatedOf(n){const out=(n.d.related||[]).map(id=>byId[id]).filter(Boolean),inc=nodes.filter(m=>m!==n&&(m.d.related||[]).includes(n.id)),all=[];[...out,...inc].forEach(m=>{if(m!==n&&!all.includes(m))all.push(m)});return all.slice(0,3)}
+function select(n){sel=n;n.links=relatedOf(n);document.getElementById("sn").textContent=n.name;document.getElementById("sg").textContent=n.label;document.getElementById("sd").style.background=n.color;
   document.getElementById("sl").textContent=n.doneN+" of "+n.L;document.getElementById("su").textContent=n.due;document.getElementById("sv").textContent=n.levels;
   const b=document.getElementById("sb");b.style.width=Math.round(n.p*100)+"%";b.style.background=n.color;sheet.hidden=false;
-  const sh=sheet.getBoundingClientRect().height||170;const target=Math.max(cam.s,1.5);const sy=Math.max(110,(H-sh-70)/2+20);flyTo(n.x,n.y,target,sy,600);request()}
+  document.getElementById("sr").textContent=n.links.length?"Related: "+n.links.map(m=>m.name).join(", "):"";
+  const sh=sheet.getBoundingClientRect().height||190;
+  if(n.links.length){const pts=[n,...n.links],bx0=Math.min(...pts.map(q=>q.x-q.r)),bx1=Math.max(...pts.map(q=>q.x+q.r)),by0=Math.min(...pts.map(q=>q.y-q.r)),by1=Math.max(...pts.map(q=>q.y+q.r));
+    const top=100,bot=sh+78,pad=34,sFit=Math.min((W-2*pad)/(bx1-bx0),(H-top-bot-2*pad)/(by1-by0)),ts=clamp(sFit,minS(),1.5);flyTo((bx0+bx1)/2,(by0+by1)/2,ts,top+(H-top-bot)/2,650)}
+  else{const target=Math.max(cam.s,1.5),sy=Math.max(110,(H-sh-70)/2+20);flyTo(n.x,n.y,target,sy,600)}
+  request()}
 function sheetOff(){sel=null;sheet.hidden=true;if(mapOn)request()}
 document.getElementById("sx").onclick=sheetOff;
 document.getElementById("go").onclick=()=>{if(sel)deck(sel.id)};
