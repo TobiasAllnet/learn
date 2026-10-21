@@ -59,6 +59,18 @@ for m in idx["decks"]:
     for r in d.get("related", []):
         if r not in listed:
             p("related id '%s' is not a deck in index.json" % r)
+        elif m.get("group") == next((x["group"] for x in idx["decks"] if x["id"] == r), None):
+            p("related '%s' is in the same group (links go between a brand and IT topics only)" % r)
+    if len(d.get("related", [])) > 3 and m.get("group") == "brand":
+        p("a brand lists more than 3 related topics")
+    if "about" in d:
+        ab = d["about"]
+        if not (isinstance(ab, list) and 3 <= len(ab) <= 5):
+            p("about must be a list of 3 to 5 short lines")
+        else:
+            for ln in ab:
+                if len(str(ln).split()) > 32:
+                    p("about line is too long (max 32 words)")
     lv = {}
     for l in d.get("lessons", []):
         lid = l.get("id")

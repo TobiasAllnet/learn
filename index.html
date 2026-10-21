@@ -55,6 +55,7 @@ body.m-map{position:fixed;inset:0;overflow:hidden}
 #sheet .dot{width:9px;height:9px;border-radius:50%;display:inline-block}
 #sheet .rows{display:flex;gap:22px;font-size:14px;font-variant-numeric:tabular-nums}
 #sheet .rows span{color:var(--mute);display:block;font-size:12px}
+#sheet .abt{color:#b9b7b2;font-size:13px;line-height:1.4;margin:-2px 0 10px}#sheet .abt:empty{display:none}
 #sheet .rel{color:var(--mute);font-size:13px;line-height:1.4;margin:-4px 0 12px}
 #sheet .pb{height:3px;background:var(--line);margin:12px 0 14px}#sheet .pb i{display:block;height:100%}
 #sheet .x{position:absolute;right:8px;top:8px;border:0;background:none;color:var(--mute);width:30px;height:30px;font-size:20px;cursor:pointer}
@@ -80,6 +81,7 @@ body.m-map{position:fixed;inset:0;overflow:hidden}
 .hero h2{margin:0}.hero p{margin:4px 0 0;color:var(--mute);font-size:14px}
 .back{background:none;border:0;color:var(--mute);font:inherit;font-size:16px;padding:6px 0;cursor:pointer;text-align:left}
 .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.about{margin:-6px 0 18px}.about p{margin:0 0 7px;color:var(--mute);font-size:14.5px;line-height:1.45}.about p:first-child{color:#c9c7c2}
 .read{font-size:18px;line-height:1.55}
 .read b{color:#fff}.read .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.08em;color:var(--mute);text-transform:uppercase;margin-bottom:6px}
 .read ul{padding-left:20px}.read li{margin:6px 0}
@@ -120,6 +122,7 @@ body.m-map{position:fixed;inset:0;overflow:hidden}
   <button class="x" id="sx" aria-label="Close">×</button>
   <h2 id="sn"></h2>
   <div class="g"><span class="dot" id="sd"></span><span id="sg"></span></div>
+  <div class="abt" id="sa"></div>
   <div class="rows"><div><span>Lessons done</span><b id="sl"></b></div><div><span>Due for review</span><b id="su"></b></div><div><span>Levels</span><b id="sv"></b></div></div>
   <div class="pb"><i id="sb"></i></div>
   <div class="rel" id="sr"></div>
@@ -228,7 +231,7 @@ function today(){
 /* ---------- DECK, READER, QUIZ ---------- */
 function deck(id){
   show("sub");
-  const d=DECKS.find(x=>x.id===id);let lastLvl=0,h=`<button class="back" id="b">‹ Back</button><div class="top"><h1>${d.title}</h1></div>`;
+  const d=DECKS.find(x=>x.id===id);let lastLvl=0,h=`<button class="back" id="b">‹ Back</button><div class="top"><h1>${d.title}</h1></div>${d.about&&d.about.length?`<div class="about">${d.about.map(x=>`<p>${x}</p>`).join("")}</div>`:""}`;
   d.lessons.forEach(l=>{
     if(l.lvl!==lastLvl){h+=`<div class="lvlh">Level ${l.lvl}</div>`;lastLvl=l.lvl}
     h+=`<div class="card"><b>${l.title}</b><div class="sub" style="margin-bottom:0">${S.done[l.id]?"Completed":"About 2 min"}</div>
@@ -440,10 +443,11 @@ function tap(x,y){const[wx,wy]=toWorld(x,y);
   let cl=null;clusters.forEach(c=>{if(Math.hypot(c.x-wx,c.y-wy)<c.rad*.95)cl=c});
   if(cl&&cam.s<.9){sheetOff();const f=fitRect(cl.x-cl.rad,cl.y-cl.rad,cl.x+cl.rad,cl.y+cl.rad,10);flyTo(cl.x,cl.y,f.s,f.sy);return}
   sheetOff()}
-function relatedOf(n){const out=(n.d.related||[]).map(id=>byId[id]).filter(Boolean),inc=nodes.filter(m=>m!==n&&(m.d.related||[]).includes(n.id)),all=[];[...out,...inc].forEach(m=>{if(m!==n&&!all.includes(m))all.push(m)});return all.slice(0,3)}
+function relatedOf(n){const out=(n.d.related||[]).map(id=>byId[id]).filter(m=>m&&m.d.group!==n.d.group),inc=nodes.filter(m=>m!==n&&m.d.group!==n.d.group&&(m.d.related||[]).includes(n.id)),all=[];[...out,...inc].forEach(m=>{if(!all.includes(m))all.push(m)});return all.slice(0,8)}
 function select(n){sel=n;n.links=relatedOf(n);document.getElementById("sn").textContent=n.name;document.getElementById("sg").textContent=n.label;document.getElementById("sd").style.background=n.color;
   document.getElementById("sl").textContent=n.doneN+" of "+n.L;document.getElementById("su").textContent=n.due;document.getElementById("sv").textContent=n.levels;
   const b=document.getElementById("sb");b.style.width=Math.round(n.p*100)+"%";b.style.background=n.color;sheet.hidden=false;
+  document.getElementById("sa").textContent=(n.d.about&&n.d.about[0])||"";
   document.getElementById("sr").textContent=n.links.length?"Related: "+n.links.map(m=>m.name).join(", "):"";
   const sh=sheet.getBoundingClientRect().height||190;
   if(n.links.length){const pts=[n,...n.links],bx0=Math.min(...pts.map(q=>q.x-q.r)),bx1=Math.max(...pts.map(q=>q.x+q.r)),by0=Math.min(...pts.map(q=>q.y-q.r)),by1=Math.max(...pts.map(q=>q.y+q.r));

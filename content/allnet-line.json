@@ -1,1126 +1,1130 @@
 {
- "title": "ALLNET own line",
- "desc": "Own-brand switches, racks, cabling and more",
- "src": [
-  {
-   "l": "ALLNET GmbH Computersysteme",
-   "u": "https://www.allnet.de"
-  },
-  {
-   "l": "ALLNET Brand product navigation",
-   "u": "https://www.allnet.de/en/allnet-brand/"
-  },
-  {
-   "l": "ALLNET shop: copper patch cables",
-   "u": "https://shop.allnet.de/Produkte/Kabel-Verkabelung/Verkabelung-Kupfer/Patchkabel-FTP-U-FTP-CAT6-6A-7-8.1/"
-  },
-  {
-   "l": "ALLNET network equipment catalogue (2016)",
-   "u": "https://www.allnet.de/fileadmin/marketing/kataloge/2016/ALLNET_Netzwerk_Equipment_web.pdf"
-  }
- ],
- "lessons": [
-  {
-   "id": "al-1-1",
-   "lvl": 1,
-   "title": "What is the ALLNET brand?",
-   "src": [
+  "title": "ALLNET own line",
+  "desc": "Own-brand switches, racks, cabling and more",
+  "src": [
     {
-     "l": "ALLNET GmbH Computersysteme",
-     "u": "https://www.allnet.de"
+      "l": "ALLNET GmbH Computersysteme",
+      "u": "https://www.allnet.de"
     },
     {
-     "l": "ALLNET Brand product navigation",
-     "u": "https://www.allnet.de/en/allnet-brand/"
+      "l": "ALLNET Brand product navigation",
+      "u": "https://www.allnet.de/en/allnet-brand/"
     },
     {
-     "l": "Viprinet distributor listing (address)",
-     "u": "https://www.viprinet.com/en/node/286"
+      "l": "ALLNET shop: copper patch cables",
+      "u": "https://shop.allnet.de/Produkte/Kabel-Verkabelung/Verkabelung-Kupfer/Patchkabel-FTP-U-FTP-CAT6-6A-7-8.1/"
     },
     {
-     "l": "Allnet Nordic Finland",
-     "u": "https://www.allnet.fi"
+      "l": "ALLNET network equipment catalogue (2016)",
+      "u": "https://www.allnet.de/fileadmin/marketing/kataloge/2016/ALLNET_Netzwerk_Equipment_web.pdf"
     }
-   ],
-   "pages": [
+  ],
+  "lessons": [
     {
-     "h": "A German developer and maker",
-     "t": "<b>ALLNET GmbH Computersysteme</b> describes itself as a developer and manufacturer of modern network and communication technology. It is based in <b>Germering near Munich</b> and says many products are developed in its own labs.",
-     "g": [
-      [
-       "Developer and manufacturer",
-       "A company that designs products itself, not only resells other companies' products."
+      "id": "al-1-1",
+      "lvl": 1,
+      "title": "What is the ALLNET brand?",
+      "src": [
+        {
+          "l": "ALLNET GmbH Computersysteme",
+          "u": "https://www.allnet.de"
+        },
+        {
+          "l": "ALLNET Brand product navigation",
+          "u": "https://www.allnet.de/en/allnet-brand/"
+        },
+        {
+          "l": "Viprinet distributor listing (address)",
+          "u": "https://www.viprinet.com/en/node/286"
+        },
+        {
+          "l": "Allnet Nordic Finland",
+          "u": "https://www.allnet.fi"
+        }
       ],
-      [
-       "House brand",
-       "A company's own label, sold next to or instead of other makers' brands. German: Hausmarke."
-      ]
-     ]
-    },
-    {
-     "h": "The ALLNET Brand",
-     "t": "ALLNET presents <b>ALLNET Brand</b> as its house brand. Its main areas are <b>networking</b>, digital signage, video surveillance and building automation. For you the most important part is networking: switches, racks, media converters, PoE and wireless.",
-     "g": [
-      [
-       "Digital signage",
-       "Screens that show changing content such as menus, ads or information in shops and lobbies."
+      "pages": [
+        {
+          "h": "A German developer and maker",
+          "t": "<b>ALLNET GmbH Computersysteme</b> describes itself as a developer and manufacturer of modern network and communication technology. It is based in <b>Germering near Munich</b> and says many products are developed in its own labs.",
+          "g": [
+            [
+              "Developer and manufacturer",
+              "A company that designs products itself, not only resells other companies' products."
+            ],
+            [
+              "House brand",
+              "A company's own label, sold next to or instead of other makers' brands. German: Hausmarke."
+            ]
+          ]
+        },
+        {
+          "h": "The ALLNET Brand",
+          "t": "ALLNET presents <b>ALLNET Brand</b> as its house brand. Its main areas are <b>networking</b>, digital signage, video surveillance and building automation. For you the most important part is networking: switches, racks, media converters, PoE and wireless.",
+          "g": [
+            [
+              "Digital signage",
+              "Screens that show changing content such as menus, ads or information in shops and lobbies."
+            ],
+            [
+              "Building automation",
+              "Controlling lights, heating, sensors and sockets in a building over the network."
+            ]
+          ]
+        },
+        {
+          "h": "Where we come in",
+          "t": "Allnet Nordic describes itself as part of the <b>Allnet group</b> and acts as <b>distributor</b>. Your customers are resellers and installers, who sell to companies, schools and hotels. A reseller who knows the ALLNET Brand can say what it covers and where it fits.",
+          "g": [
+            [
+              "Distributor",
+              "A company that buys from the maker and sells to resellers, not to end users."
+            ],
+            [
+              "Reseller",
+              "A company that sells IT products and services on to end customers."
+            ]
+          ]
+        }
       ],
-      [
-       "Building automation",
-       "Controlling lights, heating, sensors and sockets in a building over the network."
+      "quiz": [
+        {
+          "q": "How does ALLNET GmbH describe itself?",
+          "o": [
+            "A pure online retailer of consumer gadgets",
+            "A developer and manufacturer of network and communication technology",
+            "A telecom operator selling mobile contracts"
+          ],
+          "a": 1,
+          "w": "ALLNET calls itself a developer and manufacturer of modern network and communication technology, with many products developed in its own labs."
+        },
+        {
+          "q": "What is the ALLNET Brand?",
+          "o": [
+            "ALLNET's house brand (Hausmarke) with networking as one main area",
+            "A certification given to other vendors",
+            "The name of a fibre standard"
+          ],
+          "a": 0,
+          "w": "ALLNET Brand is ALLNET's own house brand. Networking is one of its main areas, next to signage, video surveillance and building automation.",
+          "g": [
+            [
+              "Hausmarke",
+              "German for house brand."
+            ]
+          ]
+        },
+        {
+          "q": "Who is Allnet Nordic's customer in this setup?",
+          "o": [
+            "Home users buying online",
+            "Resellers and installers",
+            "Chip manufacturers"
+          ],
+          "a": 1,
+          "w": "A distributor supplies resellers and installers, who then serve the end customer."
+        }
       ]
-     ]
     },
     {
-     "h": "Where we come in",
-     "t": "Allnet Nordic describes itself as part of the <b>Allnet group</b> and acts as <b>distributor</b>. Your customers are resellers and installers, who sell to companies, schools and hotels. A reseller who knows the ALLNET Brand can say what it covers and where it fits.",
-     "g": [
-      [
-       "Distributor",
-       "A company that buys from the maker and sells to resellers, not to end users."
+      "id": "al-1-2",
+      "lvl": 1,
+      "title": "The range and the Synergy 21 label",
+      "src": [
+        {
+          "l": "ALLNET Brand product navigation",
+          "u": "https://www.allnet.de/en/allnet-brand/"
+        },
+        {
+          "l": "ALLNET shop: copper patch cables",
+          "u": "https://shop.allnet.de/Produkte/Kabel-Verkabelung/Verkabelung-Kupfer/Patchkabel-FTP-U-FTP-CAT6-6A-7-8.1/"
+        },
+        {
+          "l": "ALLNET network equipment catalogue (2016)",
+          "u": "https://www.allnet.de/fileadmin/marketing/kataloge/2016/ALLNET_Netzwerk_Equipment_web.pdf"
+        }
       ],
-      [
-       "Reseller",
-       "A company that sells IT products and services on to end customers."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "How does ALLNET GmbH describe itself?",
-     "o": [
-      "A pure online retailer of consumer gadgets",
-      "A developer and manufacturer of network and communication technology",
-      "A telecom operator selling mobile contracts"
-     ],
-     "a": 1,
-     "w": "ALLNET calls itself a developer and manufacturer of modern network and communication technology, with many products developed in its own labs."
-    },
-    {
-     "q": "What is the ALLNET Brand?",
-     "o": [
-      "ALLNET's house brand (Hausmarke) with networking as one main area",
-      "A certification given to other vendors",
-      "The name of a fibre standard"
-     ],
-     "a": 0,
-     "w": "ALLNET Brand is ALLNET's own house brand. Networking is one of its main areas, next to signage, video surveillance and building automation.",
-     "g": [
-      [
-       "Hausmarke",
-       "German for house brand."
-      ]
-     ]
-    },
-    {
-     "q": "Who is Allnet Nordic's customer in this setup?",
-     "o": [
-      "Home users buying online",
-      "Resellers and installers",
-      "Chip manufacturers"
-     ],
-     "a": 1,
-     "w": "A distributor supplies resellers and installers, who then serve the end customer."
-    }
-   ]
-  },
-  {
-   "id": "al-1-2",
-   "lvl": 1,
-   "title": "The range and the Synergy 21 label",
-   "src": [
-    {
-     "l": "ALLNET Brand product navigation",
-     "u": "https://www.allnet.de/en/allnet-brand/"
-    },
-    {
-     "l": "ALLNET shop: copper patch cables",
-     "u": "https://shop.allnet.de/Produkte/Kabel-Verkabelung/Verkabelung-Kupfer/Patchkabel-FTP-U-FTP-CAT6-6A-7-8.1/"
-    },
-    {
-     "l": "ALLNET network equipment catalogue (2016)",
-     "u": "https://www.allnet.de/fileadmin/marketing/kataloge/2016/ALLNET_Netzwerk_Equipment_web.pdf"
-    }
-   ],
-   "pages": [
-    {
-     "h": "What ALLNET Brand covers",
-     "t": "The product tree is wide: <b>19 inch cabinets and racks</b>, switches, PoE products, media converters and SFP modules, WLAN, xDSL modems and routers, Powerline, UPS and power supplies, video cameras, serial device servers and sensors for IP building automation.",
-     "g": [
-      [
-       "SFP",
-       "A small plug-in module that gives a switch a fibre or copper port."
+      "pages": [
+        {
+          "h": "What ALLNET Brand covers",
+          "t": "The product tree is wide: <b>19 inch cabinets and racks</b>, switches, PoE products, media converters and SFP modules, WLAN, xDSL modems and routers, Powerline, UPS and power supplies, video cameras, serial device servers and sensors for IP building automation.",
+          "g": [
+            [
+              "SFP",
+              "A small plug-in module that gives a switch a fibre or copper port."
+            ],
+            [
+              "UPS",
+              "Battery backup that keeps equipment running during a power cut."
+            ]
+          ]
+        },
+        {
+          "h": "Cables are a different label",
+          "t": "ALLNET's shop and catalogue sell <b>structured cabling</b>: patch cables, patch panels and keystone modules. These carry the <b>Synergy 21</b> label, a separate cable label sold through ALLNET, not the ALLNET Brand name itself. Be exact when you speak to customers.",
+          "g": [
+            [
+              "Structured cabling",
+              "The organised, permanent cabling of a building: wall sockets, patch panels and cables."
+            ],
+            [
+              "Keystone",
+              "A small snap-in socket module that fits into patch panels and wall plates."
+            ]
+          ]
+        },
+        {
+          "h": "Racks are ALLNET Brand",
+          "t": "<b>Cabinets, base frames and wall housings</b> are listed under ALLNET Brand and carry the ALLNET name. In the older catalogue the same book also lists patch panels, patch cables, fibre patch cables and power strips, so one supplier can cover a whole network room.",
+          "g": [
+            [
+              "Patch panel",
+              "A rack-mounted board of sockets where building cables end and short patch cables connect to switches."
+            ]
+          ]
+        }
       ],
-      [
-       "UPS",
-       "Battery backup that keeps equipment running during a power cut."
+      "quiz": [
+        {
+          "q": "Which label do ALLNET's copper patch cables in the shop carry?",
+          "o": [
+            "ALLNET Brand",
+            "Synergy 21",
+            "Cat Pro"
+          ],
+          "a": 1,
+          "w": "The patch cable listing in ALLNET's shop shows Synergy 21 as the only brand."
+        },
+        {
+          "q": "Which of these is listed under the ALLNET Brand product tree?",
+          "o": [
+            "19 inch cabinets and racks",
+            "Laptops",
+            "Smartphones"
+          ],
+          "a": 0,
+          "w": "The tree includes 19 inch cabinets and racks, switches, media converters, WLAN, Powerline, UPS, video surveillance and more."
+        },
+        {
+          "q": "A customer asks for 'the ALLNET patch cable'. What is the most accurate reply?",
+          "o": [
+            "There is no cabling in the group at all",
+            "The cables are sold through ALLNET under the Synergy 21 label",
+            "ALLNET only makes fibre cables"
+          ],
+          "a": 1,
+          "w": "Be exact: ALLNET's shop sells the cables under the separate Synergy 21 label."
+        },
+        {
+          "q": "Why does a wide range matter to an installer?",
+          "o": [
+            "It lets him buy racks, switches and cabling for one project from one supplier",
+            "It guarantees the lowest price",
+            "It removes the need for planning"
+          ],
+          "a": 0,
+          "w": "One supplier for cabinet, switch and cabling simplifies ordering and support. It says nothing about price."
+        }
       ]
-     ]
     },
     {
-     "h": "Cables are a different label",
-     "t": "ALLNET's shop and catalogue sell <b>structured cabling</b>: patch cables, patch panels and keystone modules. These carry the <b>Synergy 21</b> label, a separate cable label sold through ALLNET, not the ALLNET Brand name itself. Be exact when you speak to customers.",
-     "g": [
-      [
-       "Structured cabling",
-       "The organised, permanent cabling of a building: wall sockets, patch panels and cables."
+      "id": "al-2-1",
+      "lvl": 2,
+      "title": "ALLNET switch lines",
+      "src": [
+        {
+          "l": "ALLNET Brand switches",
+          "u": "https://www.allnet.de/en/allnet-brand/produkte/switches/"
+        },
+        {
+          "l": "ALLNET ALL-SG9312M-10G",
+          "u": "https://www.allnet.de/en/allnet-brand/produkte/neuheiten/p/allnet-switch-smart-managed-12-port-10gigabit-12x-sfp-all-sg9312m-10g-core"
+        },
+        {
+          "l": "ALLNET ALL-SG8245PM",
+          "u": "https://www.allnet.de/en/allnet-brand/produkte/switches/soho-line-layer2-smart-managed-unamanged/switches-desktop-gigabit/p/allnet-all-sg8245pm-managed-5-port-gigabit-switch-4x-poe"
+        }
       ],
-      [
-       "Keystone",
-       "A small snap-in socket module that fits into patch panels and wall plates."
-      ]
-     ]
-    },
-    {
-     "h": "Racks are ALLNET Brand",
-     "t": "<b>Cabinets, base frames and wall housings</b> are listed under ALLNET Brand and carry the ALLNET name. In the older catalogue the same book also lists patch panels, patch cables, fibre patch cables and power strips, so one supplier can cover a whole network room.",
-     "g": [
-      [
-       "Patch panel",
-       "A rack-mounted board of sockets where building cables end and short patch cables connect to switches."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which label do ALLNET's copper patch cables in the shop carry?",
-     "o": [
-      "ALLNET Brand",
-      "Synergy 21",
-      "Cat Pro"
-     ],
-     "a": 1,
-     "w": "The patch cable listing in ALLNET's shop shows Synergy 21 as the only brand."
-    },
-    {
-     "q": "Which of these is listed under the ALLNET Brand product tree?",
-     "o": [
-      "19 inch cabinets and racks",
-      "Laptops",
-      "Smartphones"
-     ],
-     "a": 0,
-     "w": "The tree includes 19 inch cabinets and racks, switches, media converters, WLAN, Powerline, UPS, video surveillance and more."
-    },
-    {
-     "q": "A customer asks for 'the ALLNET patch cable'. What is the most accurate reply?",
-     "o": [
-      "There is no cabling in the group at all",
-      "The cables are sold through ALLNET under the Synergy 21 label",
-      "ALLNET only makes fibre cables"
-     ],
-     "a": 1,
-     "w": "Be exact: ALLNET's shop sells the cables under the separate Synergy 21 label."
-    },
-    {
-     "q": "Why does a wide range matter to an installer?",
-     "o": [
-      "It lets him buy racks, switches and cabling for one project from one supplier",
-      "It guarantees the lowest price",
-      "It removes the need for planning"
-     ],
-     "a": 0,
-     "w": "One supplier for cabinet, switch and cabling simplifies ordering and support. It says nothing about price."
-    }
-   ]
-  },
-  {
-   "id": "al-2-1",
-   "lvl": 2,
-   "title": "ALLNET switch lines",
-   "src": [
-    {
-     "l": "ALLNET Brand switches",
-     "u": "https://www.allnet.de/en/allnet-brand/produkte/switches/"
-    },
-    {
-     "l": "ALLNET ALL-SG9312M-10G",
-     "u": "https://www.allnet.de/en/allnet-brand/produkte/neuheiten/p/allnet-switch-smart-managed-12-port-10gigabit-12x-sfp-all-sg9312m-10g-core"
-    },
-    {
-     "l": "ALLNET ALL-SG8245PM",
-     "u": "https://www.allnet.de/en/allnet-brand/produkte/switches/soho-line-layer2-smart-managed-unamanged/switches-desktop-gigabit/p/allnet-all-sg8245pm-managed-5-port-gigabit-switch-4x-poe"
-    }
-   ],
-   "pages": [
-    {
-     "h": "SoHo Line",
-     "t": "The <b>SoHo Line</b> covers unmanaged and smart managed Layer 2 switches. Example: <b>ALL-SG8245PM</b>, five gigabit ports, four with PoE, fanless and set up from a web page. Suits small offices and workplaces with printers, PCs and access points.",
-     "g": [
-      [
-       "SoHo",
-       "Small office, home office."
+      "pages": [
+        {
+          "h": "SoHo Line",
+          "t": "The <b>SoHo Line</b> covers unmanaged and smart managed Layer 2 switches. Example: <b>ALL-SG8245PM</b>, five gigabit ports, four with PoE, fanless and set up from a web page. Suits small offices and workplaces with printers, PCs and access points.",
+          "g": [
+            [
+              "SoHo",
+              "Small office, home office."
+            ],
+            [
+              "Fanless",
+              "Cooled without a fan, so silent and one less part to fail."
+            ],
+            [
+              "Layer 2",
+              "Basic switching of traffic between devices on the same network."
+            ]
+          ]
+        },
+        {
+          "h": "Professional Line",
+          "t": "<b>Professional Line</b> comes in two flavours: smart managed 19 inch rack switches, and <b>Layer2+ full managed</b> switches. Example: ALL-SG9312M-10G with <b>12 SFP+ 10G ports</b>, web and command-line management, aimed at medium or large networks as a core switch.",
+          "g": [
+            [
+              "Core switch",
+              "The central switch that all other switches connect to."
+            ],
+            [
+              "SFP+",
+              "The 10 gigabit version of an SFP slot."
+            ]
+          ]
+        },
+        {
+          "h": "Special switches",
+          "t": "ALLNET also lists <b>industrial</b> switches, <b>outdoor</b> switches, <b>PD switches</b> that are powered through PoE themselves, and a switch for smart home use in the electrical cabinet. On the page ALLNET gives a <b>24 month</b> warranty for its switches.",
+          "g": [
+            [
+              "PD switch",
+              "A switch that receives its power over a PoE cable instead of a power plug."
+            ]
+          ]
+        }
       ],
-      [
-       "Fanless",
-       "Cooled without a fan, so silent and one less part to fail."
+      "quiz": [
+        {
+          "q": "Which line fits a small office with a few PCs, a printer and one access point?",
+          "o": [
+            "Professional Line core switch with 12 SFP+ ports",
+            "SoHo Line",
+            "Outdoor switches"
+          ],
+          "a": 1,
+          "w": "The SoHo Line is meant for small offices and workplaces. A 10G core switch would be oversized."
+        },
+        {
+          "q": "What is ALL-SG9312M-10G?",
+          "o": [
+            "A 5-port desktop switch with PoE",
+            "A 12-port SFP+ 10G rackmount switch for larger networks",
+            "A media converter"
+          ],
+          "a": 1,
+          "w": "It is in the Professional Line smart managed rackmount category, with twelve 10G SFP+ ports."
+        },
+        {
+          "q": "What is a PD switch?",
+          "o": [
+            "A switch that is powered over PoE",
+            "A switch for printers only",
+            "A switch with a display"
+          ],
+          "a": 0,
+          "w": "PD means powered device: the switch gets its power from a PoE cable.",
+          "g": [
+            [
+              "PoE",
+              "Power over Ethernet: power and data in one network cable."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "al-2-2",
+      "lvl": 2,
+      "title": "ALLNET racks and cabinets",
+      "src": [
+        {
+          "l": "ALLNET Brand product navigation",
+          "u": "https://www.allnet.de/en/allnet-brand/"
+        },
+        {
+          "l": "ALLNET network equipment catalogue (2016)",
+          "u": "https://www.allnet.de/fileadmin/marketing/kataloge/2016/ALLNET_Netzwerk_Equipment_web.pdf"
+        }
       ],
-      [
-       "Layer 2",
-       "Basic switching of traffic between devices on the same network."
-      ]
-     ]
-    },
-    {
-     "h": "Professional Line",
-     "t": "<b>Professional Line</b> comes in two flavours: smart managed 19 inch rack switches, and <b>Layer2+ full managed</b> switches. Example: ALL-SG9312M-10G with <b>12 SFP+ 10G ports</b>, web and command-line management, aimed at medium or large networks as a core switch.",
-     "g": [
-      [
-       "Core switch",
-       "The central switch that all other switches connect to."
+      "pages": [
+        {
+          "h": "Floor-standing",
+          "t": "ALLNET lists <b>19 inch standing cabinets</b> in 12, 22, 32 and 42 U, plus <b>base frames</b> (open racks without doors). In the catalogue the SNB cabinets are lockable, come with fans and a thermostat, and have cable entries at top and bottom.",
+          "g": [
+            [
+              "19 inch rack",
+              "The standard width for rack equipment: 19 inches between the mounting rails."
+            ],
+            [
+              "Base frame",
+              "An open rack frame with no doors or side panels."
+            ]
+          ]
+        },
+        {
+          "h": "Wall-mounted",
+          "t": "Wall housings run from <b>small 10 inch cases of up to 9 U</b> up to 19 inch housings of 3 to 27 U. The small 10 inch case in the catalogue is a welded steel case with a lockable glass door and passive ventilation slits.",
+          "g": [
+            [
+              "U (rack unit)",
+              "Height unit in a rack. One U is 44.45 mm. A 12 U cabinet holds twelve units of equipment."
+            ]
+          ]
+        },
+        {
+          "h": "Doors and airflow",
+          "t": "SNB cabinets exist with <b>glass doors</b> or <b>perforated doors</b>. The catalogue says the perforated type gives clearly better airflow. Accessories include shelves, cable guide plates, blank panels, fan units, power strips and drawers.",
+          "g": [
+            [
+              "Perforated",
+              "Full of small holes so air can pass through."
+            ]
+          ]
+        }
       ],
-      [
-       "SFP+",
-       "The 10 gigabit version of an SFP slot."
+      "quiz": [
+        {
+          "q": "Which size range do ALLNET standing cabinets cover in the product list?",
+          "o": [
+            "12 to 42 U",
+            "1 to 3 U",
+            "60 to 100 U"
+          ],
+          "a": 0,
+          "w": "Standing cabinets are listed in 12, 22, 32 and 42 U."
+        },
+        {
+          "q": "The catalogue says one SNB door type gives clearly better air flow. Which?",
+          "o": [
+            "Glass doors",
+            "Perforated doors",
+            "Doors without locks"
+          ],
+          "a": 1,
+          "w": "Perforated sheet doors let air pass through, which helps cooling."
+        },
+        {
+          "q": "A shop wants a very small box for one switch and a patch panel on the wall. What fits best?",
+          "o": [
+            "A 42 U standing cabinet",
+            "A 10 inch wall housing",
+            "A base frame"
+          ],
+          "a": 1,
+          "w": "The 10 inch wall housing is a small case of up to 9 U, meant for small wall installations."
+        }
       ]
-     ]
     },
     {
-     "h": "Special switches",
-     "t": "ALLNET also lists <b>industrial</b> switches, <b>outdoor</b> switches, <b>PD switches</b> that are powered through PoE themselves, and a switch for smart home use in the electrical cabinet. On the page ALLNET gives a <b>24 month</b> warranty for its switches.",
-     "g": [
-      [
-       "PD switch",
-       "A switch that receives its power over a PoE cable instead of a power plug."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which line fits a small office with a few PCs, a printer and one access point?",
-     "o": [
-      "Professional Line core switch with 12 SFP+ ports",
-      "SoHo Line",
-      "Outdoor switches"
-     ],
-     "a": 1,
-     "w": "The SoHo Line is meant for small offices and workplaces. A 10G core switch would be oversized."
-    },
-    {
-     "q": "What is ALL-SG9312M-10G?",
-     "o": [
-      "A 5-port desktop switch with PoE",
-      "A 12-port SFP+ 10G rackmount switch for larger networks",
-      "A media converter"
-     ],
-     "a": 1,
-     "w": "It is in the Professional Line smart managed rackmount category, with twelve 10G SFP+ ports."
-    },
-    {
-     "q": "What is a PD switch?",
-     "o": [
-      "A switch that is powered over PoE",
-      "A switch for printers only",
-      "A switch with a display"
-     ],
-     "a": 0,
-     "w": "PD means powered device: the switch gets its power from a PoE cable.",
-     "g": [
-      [
-       "PoE",
-       "Power over Ethernet: power and data in one network cable."
-      ]
-     ]
-    }
-   ]
-  },
-  {
-   "id": "al-2-2",
-   "lvl": 2,
-   "title": "ALLNET racks and cabinets",
-   "src": [
-    {
-     "l": "ALLNET Brand product navigation",
-     "u": "https://www.allnet.de/en/allnet-brand/"
-    },
-    {
-     "l": "ALLNET network equipment catalogue (2016)",
-     "u": "https://www.allnet.de/fileadmin/marketing/kataloge/2016/ALLNET_Netzwerk_Equipment_web.pdf"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Floor-standing",
-     "t": "ALLNET lists <b>19 inch standing cabinets</b> in 12, 22, 32 and 42 U, plus <b>base frames</b> (open racks without doors). In the catalogue the SNB cabinets are lockable, come with fans and a thermostat, and have cable entries at top and bottom.",
-     "g": [
-      [
-       "19 inch rack",
-       "The standard width for rack equipment: 19 inches between the mounting rails."
+      "id": "al-2-3",
+      "lvl": 2,
+      "title": "Cabling products in the group range",
+      "src": [
+        {
+          "l": "ALLNET shop: copper patch cables",
+          "u": "https://shop.allnet.de/Produkte/Kabel-Verkabelung/Verkabelung-Kupfer/Patchkabel-FTP-U-FTP-CAT6-6A-7-8.1/"
+        },
+        {
+          "l": "ALLNET network equipment catalogue (2016)",
+          "u": "https://www.allnet.de/fileadmin/marketing/kataloge/2016/ALLNET_Netzwerk_Equipment_web.pdf"
+        }
       ],
-      [
-       "Base frame",
-       "An open rack frame with no doors or side panels."
-      ]
-     ]
-    },
-    {
-     "h": "Wall-mounted",
-     "t": "Wall housings run from <b>small 10 inch cases of up to 9 U</b> up to 19 inch housings of 3 to 27 U. The small 10 inch case in the catalogue is a welded steel case with a lockable glass door and passive ventilation slits.",
-     "g": [
-      [
-       "U (rack unit)",
-       "Height unit in a rack. One U is 44.45 mm. A 12 U cabinet holds twelve units of equipment."
-      ]
-     ]
-    },
-    {
-     "h": "Doors and airflow",
-     "t": "SNB cabinets exist with <b>glass doors</b> or <b>perforated doors</b>. The catalogue says the perforated type gives clearly better airflow. Accessories include shelves, cable guide plates, blank panels, fan units, power strips and drawers.",
-     "g": [
-      [
-       "Perforated",
-       "Full of small holes so air can pass through."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which size range do ALLNET standing cabinets cover in the product list?",
-     "o": [
-      "12 to 42 U",
-      "1 to 3 U",
-      "60 to 100 U"
-     ],
-     "a": 0,
-     "w": "Standing cabinets are listed in 12, 22, 32 and 42 U."
-    },
-    {
-     "q": "The catalogue says one SNB door type gives clearly better air flow. Which?",
-     "o": [
-      "Glass doors",
-      "Perforated doors",
-      "Doors without locks"
-     ],
-     "a": 1,
-     "w": "Perforated sheet doors let air pass through, which helps cooling."
-    },
-    {
-     "q": "A shop wants a very small box for one switch and a patch panel on the wall. What fits best?",
-     "o": [
-      "A 42 U standing cabinet",
-      "A 10 inch wall housing",
-      "A base frame"
-     ],
-     "a": 1,
-     "w": "The 10 inch wall housing is a small case of up to 9 U, meant for small wall installations."
-    }
-   ]
-  },
-  {
-   "id": "al-2-3",
-   "lvl": 2,
-   "title": "Cabling products in the group range",
-   "src": [
-    {
-     "l": "ALLNET shop: copper patch cables",
-     "u": "https://shop.allnet.de/Produkte/Kabel-Verkabelung/Verkabelung-Kupfer/Patchkabel-FTP-U-FTP-CAT6-6A-7-8.1/"
-    },
-    {
-     "l": "ALLNET network equipment catalogue (2016)",
-     "u": "https://www.allnet.de/fileadmin/marketing/kataloge/2016/ALLNET_Netzwerk_Equipment_web.pdf"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Patch cables",
-     "t": "The shop lists <b>RJ45 patch cables</b> under Synergy 21 in CAT6 and CAT6A. Examples: round <b>slimline U/FTP</b> cables, flat <b>TPE Superflex</b> cables, and in the old catalogue cables with a lock and key. Many lengths and colours exist.",
-     "g": [
-      [
-       "RJ45",
-       "The standard plug on network cables."
+      "pages": [
+        {
+          "h": "Patch cables",
+          "t": "The shop lists <b>RJ45 patch cables</b> under Synergy 21 in CAT6 and CAT6A. Examples: round <b>slimline U/FTP</b> cables, flat <b>TPE Superflex</b> cables, and in the old catalogue cables with a lock and key. Many lengths and colours exist.",
+          "g": [
+            [
+              "RJ45",
+              "The standard plug on network cables."
+            ],
+            [
+              "Slimline",
+              "A thinner cable, easier to route in crowded racks."
+            ]
+          ]
+        },
+        {
+          "h": "Panels and sockets",
+          "t": "The catalogue lists <b>19 inch patch panels</b> with 16 or 24 ports in CAT6 and CAT6A, <b>keystone</b> panels, half-height 0.5 U panels, surface-mount wall boxes and RJ45 wall sockets. This is the fixed part of a network, between the cable in the wall and the switch.",
+          "g": [
+            [
+              "Half-height",
+              "A 0.5 U panel, useful where rack space is tight."
+            ]
+          ]
+        },
+        {
+          "h": "Fibre and tools",
+          "t": "The shop has a fibre category called <b>Verkabelung LWL</b>, and the catalogue lists fibre patch cables and fibre patch panels. It also lists cable testers. Check the live shop for what is in stock, as ranges and availability change.",
+          "g": [
+            [
+              "LWL",
+              "German for fibre optic cable (Lichtwellenleiter)."
+            ]
+          ]
+        }
       ],
-      [
-       "Slimline",
-       "A thinner cable, easier to route in crowded racks."
+      "quiz": [
+        {
+          "q": "Which patch panel sizes does the catalogue list for CAT6 and CAT6A?",
+          "o": [
+            "16 and 24 ports",
+            "Only 2 ports",
+            "Only 96 ports"
+          ],
+          "a": 0,
+          "w": "The catalogue lists 16 and 24 port panels, plus keystone and half-height versions."
+        },
+        {
+          "q": "What does slimline mean for a patch cable?",
+          "o": [
+            "It is shielded twice",
+            "It is thinner and easier to route",
+            "It only works at 100 meters"
+          ],
+          "a": 1,
+          "w": "Slimline cables are thin and round, which helps in dense racks."
+        },
+        {
+          "q": "What is a keystone panel?",
+          "o": [
+            "A panel where each port is a snap-in module",
+            "A panel made of stone",
+            "A panel with built-in switch"
+          ],
+          "a": 0,
+          "w": "Keystone modules snap into a carrier, so you choose the socket type per port."
+        }
       ]
-     ]
     },
     {
-     "h": "Panels and sockets",
-     "t": "The catalogue lists <b>19 inch patch panels</b> with 16 or 24 ports in CAT6 and CAT6A, <b>keystone</b> panels, half-height 0.5 U panels, surface-mount wall boxes and RJ45 wall sockets. This is the fixed part of a network, between the cable in the wall and the switch.",
-     "g": [
-      [
-       "Half-height",
-       "A 0.5 U panel, useful where rack space is tight."
-      ]
-     ]
-    },
-    {
-     "h": "Fibre and tools",
-     "t": "The shop has a fibre category called <b>Verkabelung LWL</b>, and the catalogue lists fibre patch cables and fibre patch panels. It also lists cable testers. Check the live shop for what is in stock, as ranges and availability change.",
-     "g": [
-      [
-       "LWL",
-       "German for fibre optic cable (Lichtwellenleiter)."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which patch panel sizes does the catalogue list for CAT6 and CAT6A?",
-     "o": [
-      "16 and 24 ports",
-      "Only 2 ports",
-      "Only 96 ports"
-     ],
-     "a": 0,
-     "w": "The catalogue lists 16 and 24 port panels, plus keystone and half-height versions."
-    },
-    {
-     "q": "What does slimline mean for a patch cable?",
-     "o": [
-      "It is shielded twice",
-      "It is thinner and easier to route",
-      "It only works at 100 meters"
-     ],
-     "a": 1,
-     "w": "Slimline cables are thin and round, which helps in dense racks."
-    },
-    {
-     "q": "What is a keystone panel?",
-     "o": [
-      "A panel where each port is a snap-in module",
-      "A panel made of stone",
-      "A panel with built-in switch"
-     ],
-     "a": 0,
-     "w": "Keystone modules snap into a carrier, so you choose the socket type per port."
-    }
-   ]
-  },
-  {
-   "id": "al-3-1",
-   "lvl": 3,
-   "title": "Choosing copper: Cat5e to Cat8",
-   "src": [
-    {
-     "l": "Black Box: Cat6A and beyond",
-     "u": "https://www.blackbox.com/en-us/insights/blogs/tps/2022/01/11/cat6a-and-beyond-cabling-explained"
-    },
-    {
-     "l": "ICC: Cat6 and 10GBASE-T",
-     "u": "https://icc.com/help/can-icc-cat6-solution-support-10gbase-t/"
-    },
-    {
-     "l": "Wikipedia: Category 7 cable",
-     "u": "https://en.wikipedia.org/wiki/Category_7_cable"
-    }
-   ],
-   "pages": [
-    {
-     "h": "The ladder",
-     "t": "Each category supports a higher <b>frequency</b>: Cat5e 100 MHz, Cat6 up to 250 MHz, <b>Cat6A 500 MHz</b>, Cat7 600 MHz, Cat8 2000 MHz. More frequency means room for faster Ethernet. The maximum length of a normal link is <b>100 m</b>.",
-     "g": [
-      [
-       "MHz",
-       "Megahertz, how fast the signal in the cable swings. Higher means more capacity."
+      "id": "al-3-1",
+      "lvl": 3,
+      "title": "Choosing copper: Cat5e to Cat8",
+      "src": [
+        {
+          "l": "Black Box: Cat6A and beyond",
+          "u": "https://www.blackbox.com/en-us/insights/blogs/tps/2022/01/11/cat6a-and-beyond-cabling-explained"
+        },
+        {
+          "l": "ICC: Cat6 and 10GBASE-T",
+          "u": "https://icc.com/help/can-icc-cat6-solution-support-10gbase-t/"
+        },
+        {
+          "l": "Wikipedia: Category 7 cable",
+          "u": "https://en.wikipedia.org/wiki/Category_7_cable"
+        }
       ],
-      [
-       "Category (Cat)",
-       "A grade for twisted-pair cable. A higher number is a higher grade."
-      ]
-     ]
-    },
-    {
-     "h": "Cat6 versus Cat6A",
-     "t": "Both run gigabit over 100 m. Cat6 can carry 10 gigabit only to about <b>55 m</b>, while <b>Cat6A</b> reaches the full 100 m at 10 gigabit. Cat6A is usually the choice for new buildings and backbone runs. Cat5e is fine for simple gigabit.",
-     "g": [
-      [
-       "10GBASE-T",
-       "10 gigabit Ethernet over twisted pair copper."
-      ]
-     ]
-    },
-    {
-     "h": "Cat7 and Cat8 are special",
-     "t": "<b>Cat7</b> is not recognised by TIA, and it is often sold with ordinary RJ45 plugs. <b>Cat8</b> supports 25 and 40 gigabit but only up to <b>30 m</b> (TIA), so it is a data room short-link product. Most office jobs are served by Cat6A.",
-     "g": [
-      [
-       "TIA",
-       "Telecommunications Industry Association, a US body that writes cabling standards."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "A new office building needs 10 gigabit copper runs of 80 m. Which is the standard choice?",
-     "o": [
-      "Cat5e",
-      "Cat6",
-      "Cat6A"
-     ],
-     "a": 2,
-     "w": "Cat6A is specified for 10 gigabit over the full 100 m. Cat6 only reaches about 55 m at 10 gigabit."
-    },
-    {
-     "q": "What is the typical maximum length of a standard copper Ethernet link?",
-     "o": [
-      "30 m",
-      "100 m",
-      "1 km"
-     ],
-     "a": 1,
-     "w": "100 m is the normal limit for gigabit over twisted pair."
-    },
-    {
-     "q": "Where does Cat8 make sense?",
-     "o": [
-      "Long runs of 100 m in offices",
-      "Short links of up to 30 m in data rooms",
-      "Home Wi-Fi extension"
-     ],
-     "a": 1,
-     "w": "Cat8 supports 25 and 40 gigabit but only on short links, TIA specifies up to 30 m."
-    },
-    {
-     "q": "What is true about Cat7?",
-     "o": [
-      "It is the official TIA successor of Cat6A",
-      "TIA does not recognise it",
-      "It only works with fibre"
-     ],
-     "a": 1,
-     "w": "Cat7 comes from the ISO world. TIA does not recognise it, and it is often fitted with RJ45 plugs."
-    }
-   ]
-  },
-  {
-   "id": "al-3-2",
-   "lvl": 3,
-   "title": "Shielding, jackets and cable type",
-   "src": [
-    {
-     "l": "Wikipedia: Twisted pair",
-     "u": "https://en.wikipedia.org/wiki/Twisted_pair"
-    },
-    {
-     "l": "Wikipedia: Low smoke zero halogen",
-     "u": "https://en.wikipedia.org/wiki/Low_smoke_zero_halogen"
-    },
-    {
-     "l": "Cables and Kits: PVC vs LSZH jackets",
-     "u": "https://www.cablesandkits.com/learning-center/pvc-vs-lszh-vs-ofnp-vs-ofnr-cable-jackets"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Reading U/UTP, F/UTP, S/FTP",
-     "t": "The first letter is the shield around <b>the whole cable</b>, the second the shield around <b>each pair</b>. U is none, F is foil, S is braid. So U/UTP has no shield, F/UTP has foil overall, <b>S/FTP</b> has braid overall plus foil per pair.",
-     "g": [
-      [
-       "Shield",
-       "A metal layer that keeps outside electrical noise out of the signal."
+      "pages": [
+        {
+          "h": "The ladder",
+          "t": "Each category supports a higher <b>frequency</b>: Cat5e 100 MHz, Cat6 up to 250 MHz, <b>Cat6A 500 MHz</b>, Cat7 600 MHz, Cat8 2000 MHz. More frequency means room for faster Ethernet. The maximum length of a normal link is <b>100 m</b>.",
+          "g": [
+            [
+              "MHz",
+              "Megahertz, how fast the signal in the cable swings. Higher means more capacity."
+            ],
+            [
+              "Category (Cat)",
+              "A grade for twisted-pair cable. A higher number is a higher grade."
+            ]
+          ]
+        },
+        {
+          "h": "Cat6 versus Cat6A",
+          "t": "Both run gigabit over 100 m. Cat6 can carry 10 gigabit only to about <b>55 m</b>, while <b>Cat6A</b> reaches the full 100 m at 10 gigabit. Cat6A is usually the choice for new buildings and backbone runs. Cat5e is fine for simple gigabit.",
+          "g": [
+            [
+              "10GBASE-T",
+              "10 gigabit Ethernet over twisted pair copper."
+            ]
+          ]
+        },
+        {
+          "h": "Cat7 and Cat8 are special",
+          "t": "<b>Cat7</b> is not recognised by TIA, and it is often sold with ordinary RJ45 plugs. <b>Cat8</b> supports 25 and 40 gigabit but only up to <b>30 m</b> (TIA), so it is a data room short-link product. Most office jobs are served by Cat6A.",
+          "g": [
+            [
+              "TIA",
+              "Telecommunications Industry Association, a US body that writes cabling standards."
+            ]
+          ]
+        }
       ],
-      [
-       "Braid",
-       "A woven mesh of thin copper wires."
+      "quiz": [
+        {
+          "q": "A new office building needs 10 gigabit copper runs of 80 m. Which is the standard choice?",
+          "o": [
+            "Cat5e",
+            "Cat6",
+            "Cat6A"
+          ],
+          "a": 2,
+          "w": "Cat6A is specified for 10 gigabit over the full 100 m. Cat6 only reaches about 55 m at 10 gigabit."
+        },
+        {
+          "q": "What is the typical maximum length of a standard copper Ethernet link?",
+          "o": [
+            "30 m",
+            "100 m",
+            "1 km"
+          ],
+          "a": 1,
+          "w": "100 m is the normal limit for gigabit over twisted pair."
+        },
+        {
+          "q": "Where does Cat8 make sense?",
+          "o": [
+            "Long runs of 100 m in offices",
+            "Short links of up to 30 m in data rooms",
+            "Home Wi-Fi extension"
+          ],
+          "a": 1,
+          "w": "Cat8 supports 25 and 40 gigabit but only on short links, TIA specifies up to 30 m."
+        },
+        {
+          "q": "What is true about Cat7?",
+          "o": [
+            "It is the official TIA successor of Cat6A",
+            "TIA does not recognise it",
+            "It only works with fibre"
+          ],
+          "a": 1,
+          "w": "Cat7 comes from the ISO world. TIA does not recognise it, and it is often fitted with RJ45 plugs."
+        }
       ]
-     ]
     },
     {
-     "h": "LSZH versus PVC",
-     "t": "<b>LSZH</b> jackets give little smoke and no halogens in a fire, so less toxic and corrosive gas. They are used where people or poor ventilation matter, for example tunnels or ships. <b>PVC</b> is the common standard jacket and gives off more smoke and corrosive gas when it burns.",
-     "g": [
-      [
-       "LSZH",
-       "Low smoke, zero halogen: a cable jacket that gives off little smoke and no halogen gases when burning."
-      ]
-     ]
-    },
-    {
-     "h": "Patch versus installation cable",
-     "t": "<b>Solid</b> cable has one thick wire per conductor and is for <b>permanent runs</b> in walls. <b>Stranded</b> cable is many fine wires, flexible, and used for <b>patch cords</b>. Mixing them up can give unreliable connections.",
-     "g": [
-      [
-       "Patch cord",
-       "A short, flexible cable between a socket or panel and a device."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "What does S/FTP mean?",
-     "o": [
-      "No shield at all",
-      "Braid over the whole cable and foil on each pair",
-      "Foil over the whole cable only"
-     ],
-     "a": 1,
-     "w": "S is braid for the overall shield, F is foil on each pair."
-    },
-    {
-     "q": "Which cable goes inside the wall for a permanent link?",
-     "o": [
-      "Stranded patch cable",
-      "Solid core installation cable",
-      "A flat superflex cable"
-     ],
-     "a": 1,
-     "w": "Solid core is for permanent installation. Stranded cable is for flexible patch cords."
-    },
-    {
-     "q": "Why would a customer ask for LSZH?",
-     "o": [
-      "Fire safety: little smoke and no halogen gas",
-      "Faster Ethernet",
-      "Longer reach"
-     ],
-     "a": 0,
-     "w": "LSZH jackets limit smoke and toxic gas in a fire. They do not change the speed."
-    },
-    {
-     "q": "What is the first letter in F/UTP about?",
-     "o": [
-      "Foil around the whole cable",
-      "Foil around each pair",
-      "Fibre"
-     ],
-     "a": 0,
-     "w": "The first letter is the overall shield: here foil. The pairs themselves are unshielded."
-    }
-   ]
-  },
-  {
-   "id": "al-3-3",
-   "lvl": 3,
-   "title": "Fibre, SFP and media converters",
-   "src": [
-    {
-     "l": "Wikipedia: Multi-mode optical fiber",
-     "u": "https://en.wikipedia.org/wiki/Multi-mode_optical_fiber"
-    },
-    {
-     "l": "ALLNET industrial SFP module",
-     "u": "https://www.allnet.de/de/allnet-brand/produkte/neuheiten/p/allnet-switch-modul-all4794-indu-sfpmini-gbic-100mbit-fxlc-10km-industrial-40-85-grad"
-    },
-    {
-     "l": "ALLNET media converter ALL-MC202P-SFP1-PoE",
-     "u": "https://shop-en.allnet.de/ALLNET-Media-Converter-PoE-15.4W-30W-to-1000BASE-SX-LX-Single-Multimode-SFP-Mini-GBIC-Connector-ALL-MC202P-SFP1-PoE-./185070"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Multimode or single-mode",
-     "t": "<b>Multimode</b> fibre has a wide core where light takes many paths. It suits <b>buildings and campuses</b>; OM3 carries 10 gigabit to about 300 m. <b>Single-mode</b> has one light path and goes much further, for example between sites.",
-     "g": [
-      [
-       "OM3 / OM4",
-       "Grades of multimode fibre, often with aqua jackets."
+      "id": "al-3-2",
+      "lvl": 3,
+      "title": "Shielding, jackets and cable type",
+      "src": [
+        {
+          "l": "Wikipedia: Twisted pair",
+          "u": "https://en.wikipedia.org/wiki/Twisted_pair"
+        },
+        {
+          "l": "Wikipedia: Low smoke zero halogen",
+          "u": "https://en.wikipedia.org/wiki/Low_smoke_zero_halogen"
+        },
+        {
+          "l": "Cables and Kits: PVC vs LSZH jackets",
+          "u": "https://www.cablesandkits.com/learning-center/pvc-vs-lszh-vs-ofnp-vs-ofnr-cable-jackets"
+        }
       ],
-      [
-       "Single-mode",
-       "Fibre with a thin core and one light path, for long distances."
+      "pages": [
+        {
+          "h": "Reading U/UTP, F/UTP, S/FTP",
+          "t": "The first letter is the shield around <b>the whole cable</b>, the second the shield around <b>each pair</b>. U is none, F is foil, S is braid. So U/UTP has no shield, F/UTP has foil overall, <b>S/FTP</b> has braid overall plus foil per pair.",
+          "g": [
+            [
+              "Shield",
+              "A metal layer that keeps outside electrical noise out of the signal."
+            ],
+            [
+              "Braid",
+              "A woven mesh of thin copper wires."
+            ]
+          ]
+        },
+        {
+          "h": "LSZH versus PVC",
+          "t": "<b>LSZH</b> jackets give little smoke and no halogens in a fire, so less toxic and corrosive gas. They are used where people or poor ventilation matter, for example tunnels or ships. <b>PVC</b> is the common standard jacket and gives off more smoke and corrosive gas when it burns.",
+          "g": [
+            [
+              "LSZH",
+              "Low smoke, zero halogen: a cable jacket that gives off little smoke and no halogen gases when burning."
+            ]
+          ]
+        },
+        {
+          "h": "Patch versus installation cable",
+          "t": "<b>Solid</b> cable has one thick wire per conductor and is for <b>permanent runs</b> in walls. <b>Stranded</b> cable is many fine wires, flexible, and used for <b>patch cords</b>. Mixing them up can give unreliable connections.",
+          "g": [
+            [
+              "Patch cord",
+              "A short, flexible cable between a socket or panel and a device."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does S/FTP mean?",
+          "o": [
+            "No shield at all",
+            "Braid over the whole cable and foil on each pair",
+            "Foil over the whole cable only"
+          ],
+          "a": 1,
+          "w": "S is braid for the overall shield, F is foil on each pair."
+        },
+        {
+          "q": "Which cable goes inside the wall for a permanent link?",
+          "o": [
+            "Stranded patch cable",
+            "Solid core installation cable",
+            "A flat superflex cable"
+          ],
+          "a": 1,
+          "w": "Solid core is for permanent installation. Stranded cable is for flexible patch cords."
+        },
+        {
+          "q": "Why would a customer ask for LSZH?",
+          "o": [
+            "Fire safety: little smoke and no halogen gas",
+            "Faster Ethernet",
+            "Longer reach"
+          ],
+          "a": 0,
+          "w": "LSZH jackets limit smoke and toxic gas in a fire. They do not change the speed."
+        },
+        {
+          "q": "What is the first letter in F/UTP about?",
+          "o": [
+            "Foil around the whole cable",
+            "Foil around each pair",
+            "Fibre"
+          ],
+          "a": 0,
+          "w": "The first letter is the overall shield: here foil. The pairs themselves are unshielded."
+        }
       ]
-     ]
     },
     {
-     "h": "SFP modules",
-     "t": "An <b>SFP</b> is a small plug-in module that decides what fibre a port takes. ALLNET lists SFP modules, for example an industrial <b>single-mode LC</b> module for up to <b>10 km</b> at 100 Mbit, rated for -40 to +85 degrees. Modules often come separately from the switch.",
-     "g": [
-      [
-       "LC",
-       "A small fibre connector, common on SFP modules."
+      "id": "al-3-3",
+      "lvl": 3,
+      "title": "Fibre, SFP and media converters",
+      "src": [
+        {
+          "l": "Wikipedia: Multi-mode optical fiber",
+          "u": "https://en.wikipedia.org/wiki/Multi-mode_optical_fiber"
+        },
+        {
+          "l": "ALLNET industrial SFP module",
+          "u": "https://www.allnet.de/de/allnet-brand/produkte/neuheiten/p/allnet-switch-modul-all4794-indu-sfpmini-gbic-100mbit-fxlc-10km-industrial-40-85-grad"
+        },
+        {
+          "l": "ALLNET media converter ALL-MC202P-SFP1-PoE",
+          "u": "https://shop-en.allnet.de/ALLNET-Media-Converter-PoE-15.4W-30W-to-1000BASE-SX-LX-Single-Multimode-SFP-Mini-GBIC-Connector-ALL-MC202P-SFP1-PoE-./185070"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Multimode or single-mode",
+          "t": "<b>Multimode</b> fibre has a wide core where light takes many paths. It suits <b>buildings and campuses</b>; OM3 carries 10 gigabit to about 300 m. <b>Single-mode</b> has one light path and goes much further, for example between sites.",
+          "g": [
+            [
+              "OM3 / OM4",
+              "Grades of multimode fibre, often with aqua jackets."
+            ],
+            [
+              "Single-mode",
+              "Fibre with a thin core and one light path, for long distances."
+            ]
+          ]
+        },
+        {
+          "h": "SFP modules",
+          "t": "An <b>SFP</b> is a small plug-in module that decides what fibre a port takes. ALLNET lists SFP modules, for example an industrial <b>single-mode LC</b> module for up to <b>10 km</b> at 100 Mbit, rated for -40 to +85 degrees. Modules often come separately from the switch.",
+          "g": [
+            [
+              "LC",
+              "A small fibre connector, common on SFP modules."
+            ]
+          ]
+        },
+        {
+          "h": "Media converters",
+          "t": "A <b>media converter</b> links copper and fibre. ALLNET lists gigabit models from copper to an SFP slot, including one with a built-in <b>PoE injector</b>. Use it when a fibre run meets a device that only has an RJ45 port.",
+          "g": [
+            [
+              "PoE injector",
+              "A device that adds power to a network cable for a PoE device."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Two buildings on a campus are 10 km apart. Which fibre type?",
+          "o": [
+            "Multimode",
+            "Single-mode",
+            "Cat6A copper"
+          ],
+          "a": 1,
+          "w": "Single-mode goes much further than multimode. Copper is limited to 100 m."
+        },
+        {
+          "q": "What is an SFP?",
+          "o": [
+            "A plug-in module that gives a switch port its fibre or copper type",
+            "A shielding code",
+            "A type of wall box"
+          ],
+          "a": 0,
+          "w": "SFP modules are plugged into switches and converters to choose the link type."
+        },
+        {
+          "q": "A fibre line ends at an IP camera that only has RJ45 and needs power. What helps?",
+          "o": [
+            "A rack cabinet",
+            "A media converter with a PoE injector",
+            "A patch panel"
+          ],
+          "a": 1,
+          "w": "A media converter links fibre to copper, and the model with a PoE injector also supplies power."
+        }
       ]
-     ]
     },
     {
-     "h": "Media converters",
-     "t": "A <b>media converter</b> links copper and fibre. ALLNET lists gigabit models from copper to an SFP slot, including one with a built-in <b>PoE injector</b>. Use it when a fibre run meets a device that only has an RJ45 port.",
-     "g": [
-      [
-       "PoE injector",
-       "A device that adds power to a network cable for a PoE device."
+      "id": "al-4-1",
+      "lvl": 4,
+      "title": "Choosing a switch: managed, PoE, uplinks",
+      "src": [
+        {
+          "l": "TechTarget: managed vs unmanaged switches",
+          "u": "https://www.techtarget.com/it-infrastructure/answer/Managed-vs-unmanaged-switches-What-are-the-differences"
+        },
+        {
+          "l": "Wikipedia: Power over Ethernet",
+          "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
+        },
+        {
+          "l": "ALLNET ALL-SG8245PM",
+          "u": "https://www.allnet.de/en/allnet-brand/produkte/switches/soho-line-layer2-smart-managed-unamanged/switches-desktop-gigabit/p/allnet-all-sg8245pm-managed-5-port-gigabit-switch-4x-poe"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Three levels of control",
+          "t": "<b>Unmanaged</b> switches are plug and play and cannot create VLANs. <b>Smart managed</b> adds a web page with basic settings. <b>Managed</b> gives full control and monitoring but needs skilled staff. Choose by what the customer must separate or monitor.",
+          "g": [
+            [
+              "VLAN",
+              "A way to split one physical network into separate virtual ones, for example guests and staff."
+            ]
+          ]
+        },
+        {
+          "h": "PoE and the budget",
+          "t": "PoE standards differ: about <b>13 W</b> at the device for 802.3af, <b>25 W</b> for 802.3at, up to <b>51 or 71 W</b> for 802.3bt. A switch has a <b>total budget</b>: ALL-SG8245PM has four PoE ports up to 30 W each, but only about 50 to 60 W in total (the vendor page gives both figures).",
+          "g": [
+            [
+              "PoE budget",
+              "The total power a switch can hand out over all its PoE ports together."
+            ]
+          ]
+        },
+        {
+          "h": "Uplinks and ports",
+          "t": "Add up the devices first: cameras, phones, access points. Then check <b>PoE watts</b> and <b>port count</b>. For links between switches, pick a model with <b>SFP</b> slots so fibre can be used. Industrial and core models show SFP slots clearly.",
+          "g": [
+            [
+              "Uplink",
+              "The link from one switch to the next switch or core."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A hotel wants guests and staff on separate virtual networks. What do you need?",
+          "o": [
+            "An unmanaged switch",
+            "A smart managed or managed switch with VLAN support",
+            "A fibre patch cable"
+          ],
+          "a": 1,
+          "w": "Unmanaged switches cannot create VLANs. Smart managed or managed switches can."
+        },
+        {
+          "q": "A switch has four PoE ports at 30 W each and a total budget of about 60 W. What does that mean?",
+          "o": [
+            "All four ports can deliver 30 W at once",
+            "The ports share the 60 W total",
+            "It cannot power anything"
+          ],
+          "a": 1,
+          "w": "The budget is the total. Four devices at 30 W would need 120 W."
+        },
+        {
+          "q": "Which gives the most control but needs skilled staff?",
+          "o": [
+            "Unmanaged",
+            "Smart managed",
+            "Fully managed"
+          ],
+          "a": 2,
+          "w": "Fully managed switches give full control and monitoring but need experienced administrators."
+        },
+        {
+          "q": "Which standard gives the most power at the device?",
+          "o": [
+            "802.3af",
+            "802.3at",
+            "802.3bt"
+          ],
+          "a": 2,
+          "w": "802.3bt gives up to 51 or 71 W at the device, af about 13 W, at about 25 W."
+        }
       ]
-     ]
+    },
+    {
+      "id": "al-4-2",
+      "lvl": 4,
+      "title": "Sizing a rack or cabinet",
+      "src": [
+        {
+          "l": "Wikipedia: 19-inch rack",
+          "u": "https://en.wikipedia.org/wiki/19-inch_rack"
+        },
+        {
+          "l": "Cables and Kits: server rack guide",
+          "u": "https://www.cablesandkits.com/learning-center/data-center-server-rack-guide"
+        },
+        {
+          "l": "ALLNET network equipment catalogue (2016)",
+          "u": "https://www.allnet.de/fileadmin/marketing/kataloge/2016/ALLNET_Netzwerk_Equipment_web.pdf"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Count the units",
+          "t": "Add the height of every device in <b>U</b>, then add spare. Count switches, patch panels, shelves and the UPS. A <b>42 U</b> cabinet is one of the most common full heights. Leave room for growth: a full cabinet is a problem the day you add one switch.",
+          "g": [
+            [
+              "U",
+              "One rack unit is 44.45 mm of height."
+            ]
+          ]
+        },
+        {
+          "h": "Depth and width",
+          "t": "Depth has no standard: racks often come in <b>600, 800 or about 1000 mm</b>. Servers and long switches need depth, and cables need room behind them. ALLNET's 800 mm wide cabinets in the catalogue have <b>side cable ducts</b>, which keeps larger installations tidy.",
+          "g": [
+            [
+              "Cable duct",
+              "A channel that guides cables vertically inside a cabinet."
+            ]
+          ]
+        },
+        {
+          "h": "Air, wall or floor",
+          "t": "Equipment mostly takes air in at the front and blows it out the back, so a closed cabinet needs <b>fans or perforated doors</b>. Small jobs use a <b>wall housing</b>, larger ones a floor cabinet. A wall housing has a weight limit: the 10 inch ALLNET case takes up to 30 kg.",
+          "g": [
+            [
+              "Front-to-back cooling",
+              "Cool air enters the front of equipment and warm air leaves at the back."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which is the most common full height of a cabinet?",
+          "o": [
+            "12 U",
+            "42 U",
+            "100 U"
+          ],
+          "a": 1,
+          "w": "42 U is one of the most common full cabinet heights."
+        },
+        {
+          "q": "Why would an installer choose a deeper cabinet?",
+          "o": [
+            "For servers, long devices and cable room",
+            "To reduce weight",
+            "To make cabinets cheaper"
+          ],
+          "a": 0,
+          "w": "Depth is not standardised. Servers and cables need space behind the front rails."
+        },
+        {
+          "q": "A closed cabinet will hold a heating switch stack. What helps?",
+          "o": [
+            "Fans or perforated doors",
+            "More patch cables",
+            "Frosted glass doors"
+          ],
+          "a": 0,
+          "w": "Airflow is key: fans in the cabinet or perforated doors help heat escape."
+        }
+      ]
+    },
+    {
+      "id": "al-5-1",
+      "lvl": 5,
+      "title": "Which setup for which customer?",
+      "src": [
+        {
+          "l": "ALLNET Brand switches",
+          "u": "https://www.allnet.de/en/allnet-brand/produkte/switches/"
+        },
+        {
+          "l": "ALLNET industrial switch ALL-SGI8016PM",
+          "u": "https://www.allnet.de/en/allnet-brand/produkte/industrial-switches/switches/p/allnet-switch-managed-l2-l3-industrial-12-port-gigabit-12/"
+        },
+        {
+          "l": "ALLNET industrial switch ALL-SGI8104v3",
+          "u": "https://shop-en.allnet.de/ALLNET-Switch-industrial-unmanaged-Layer2-6-Port-GbE-4x-GbE-2x-SFP-Fanless-IP40-ALL-SGI8104v3/238016"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Office and school",
+          "t": "A small office: SoHo smart managed PoE switch, Cat6 patch cables, 10 inch or small wall housing. A school: managed rack switches with <b>VLANs</b> for staff, pupils and guests, <b>Cat6A</b> in the walls and a 22 or 32 U cabinet. This is a judgement, not an ALLNET rule.",
+          "g": [
+            [
+              "Guest network",
+              "A separate network for visitors that cannot reach internal systems."
+            ]
+          ]
+        },
+        {
+          "h": "Hotel and data room",
+          "t": "A hotel needs PoE for access points, <b>VLANs</b> to separate guests and back office, and often fibre between floors. A data room needs a standing cabinet with airflow, <b>SFP+ uplinks</b> such as the ALL-SG9312M-10G, and tidy cable ducts.",
+          "g": [
+            [
+              "Back office",
+              "Internal systems such as reception and booking, kept apart from guests."
+            ]
+          ]
+        },
+        {
+          "h": "Industrial site",
+          "t": "Factories need <b>DIN rail</b> switches with wide temperature range. ALL-SGI8016PM is managed, <b>fanless</b>, -40 to +75 degrees, with 12 PoE ports and SFP uplinks. ALL-SGI8104v3 is the unmanaged option, 4 copper ports and 2 SFP slots.",
+          "g": [
+            [
+              "DIN rail",
+              "A standard metal rail inside control cabinets that devices clip onto."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A factory wants a switch for a control cabinet with wide temperature range. Which fits?",
+          "o": [
+            "SoHo desktop switch",
+            "Industrial DIN rail switch such as ALL-SGI8016PM",
+            "Hotel patch panel"
+          ],
+          "a": 1,
+          "w": "ALL-SGI8016PM is a fanless DIN rail switch rated -40 to +75 degrees."
+        },
+        {
+          "q": "A school wants staff, pupils and guests on separate networks. What is needed?",
+          "o": [
+            "An unmanaged switch",
+            "A managed switch with VLANs",
+            "A fibre converter"
+          ],
+          "a": 1,
+          "w": "VLAN support requires a smart managed or managed switch."
+        },
+        {
+          "q": "A data room needs 10 gigabit links between racks. Which fits?",
+          "o": [
+            "A switch with SFP+ ports such as ALL-SG9312M-10G",
+            "A 5-port desktop switch",
+            "Cat5e patch cables"
+          ],
+          "a": 0,
+          "w": "ALL-SG9312M-10G has twelve 10G SFP+ ports and is aimed at larger networks."
+        },
+        {
+          "q": "A small office has four PoE devices. What is the first check?",
+          "o": [
+            "The total PoE budget",
+            "The cabinet colour",
+            "The fibre type"
+          ],
+          "a": 0,
+          "w": "Add up device watts and compare to the switch total budget."
+        }
+      ]
+    },
+    {
+      "id": "al-5-2",
+      "lvl": 5,
+      "title": "Objections and good questions",
+      "src": [
+        {
+          "l": "Hackaday: CCA Ethernet cables",
+          "u": "https://hackaday.com/2026/04/07/cca-ethernet-cables-not-up-to-scratch-but-are-they-dangerous/"
+        },
+        {
+          "l": "Wikipedia: Twisted pair",
+          "u": "https://en.wikipedia.org/wiki/Twisted_pair"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Cheap no-name cable",
+          "t": "Some cheap cable uses <b>CCA</b>, copper-clad aluminium. It has roughly 55 percent higher resistance, is more brittle, and cannot carry a Cat rating under TIA or ISO. With PoE it can give too little power. The article finds no widely reported fires.",
+          "g": [
+            [
+              "CCA",
+              "Copper-clad aluminium: an aluminium wire with a thin copper coat."
+            ]
+          ]
+        },
+        {
+          "h": "What to answer",
+          "t": "Do not claim danger you cannot prove. Say: standards require <b>copper</b>, CCA fails them, and a failing link costs the installer a call-out. Ask to check jacket markings. Cabling stays in the walls for years.",
+          "g": [
+            [
+              "Call-out",
+              "A visit to fix a fault, usually at the installer's cost."
+            ]
+          ]
+        },
+        {
+          "h": "Questions to ask",
+          "t": "Ask: how many devices, and how many <b>PoE watts</b> needed? Which <b>speed</b> in 5 years? Distances over 100 m? Shielded or fire-safe (<b>LSZH</b>) needed? Wall or floor rack? Room for spare U? Managed features? Good questions beat product lists.",
+          "g": [
+            [
+              "Spare U",
+              "Empty rack space kept free for future equipment."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A customer offers a cheap cable that might be CCA. What is the best response?",
+          "o": [
+            "Say it will start a fire",
+            "Explain that standards require copper and ask to check the markings",
+            "Ignore it"
+          ],
+          "a": 1,
+          "w": "Stay factual: CCA does not meet the standards, and PoE can suffer, but fires are not widely reported."
+        },
+        {
+          "q": "Which question helps choose a switch?",
+          "o": [
+            "How many PoE watts do the devices need?",
+            "What colour is the rack?",
+            "Who made the wall?"
+          ],
+          "a": 0,
+          "w": "PoE watts decide whether the budget is enough."
+        },
+        {
+          "q": "Why ask about LSZH?",
+          "o": [
+            "Fire safety needs in the building",
+            "Faster speed",
+            "Longer distance"
+          ],
+          "a": 0,
+          "w": "LSZH reduces smoke and halogen gas in a fire, it does not change speed."
+        }
+      ]
     }
-   ],
-   "quiz": [
-    {
-     "q": "Two buildings on a campus are 10 km apart. Which fibre type?",
-     "o": [
-      "Multimode",
-      "Single-mode",
-      "Cat6A copper"
-     ],
-     "a": 1,
-     "w": "Single-mode goes much further than multimode. Copper is limited to 100 m."
-    },
-    {
-     "q": "What is an SFP?",
-     "o": [
-      "A plug-in module that gives a switch port its fibre or copper type",
-      "A shielding code",
-      "A type of wall box"
-     ],
-     "a": 0,
-     "w": "SFP modules are plugged into switches and converters to choose the link type."
-    },
-    {
-     "q": "A fibre line ends at an IP camera that only has RJ45 and needs power. What helps?",
-     "o": [
-      "A rack cabinet",
-      "A media converter with a PoE injector",
-      "A patch panel"
-     ],
-     "a": 1,
-     "w": "A media converter links fibre to copper, and the model with a PoE injector also supplies power."
-    }
-   ]
-  },
-  {
-   "id": "al-4-1",
-   "lvl": 4,
-   "title": "Choosing a switch: managed, PoE, uplinks",
-   "src": [
-    {
-     "l": "TechTarget: managed vs unmanaged switches",
-     "u": "https://www.techtarget.com/it-infrastructure/answer/Managed-vs-unmanaged-switches-What-are-the-differences"
-    },
-    {
-     "l": "Wikipedia: Power over Ethernet",
-     "u": "https://en.wikipedia.org/wiki/Power_over_Ethernet"
-    },
-    {
-     "l": "ALLNET ALL-SG8245PM",
-     "u": "https://www.allnet.de/en/allnet-brand/produkte/switches/soho-line-layer2-smart-managed-unamanged/switches-desktop-gigabit/p/allnet-all-sg8245pm-managed-5-port-gigabit-switch-4x-poe"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Three levels of control",
-     "t": "<b>Unmanaged</b> switches are plug and play and cannot create VLANs. <b>Smart managed</b> adds a web page with basic settings. <b>Managed</b> gives full control and monitoring but needs skilled staff. Choose by what the customer must separate or monitor.",
-     "g": [
-      [
-       "VLAN",
-       "A way to split one physical network into separate virtual ones, for example guests and staff."
-      ]
-     ]
-    },
-    {
-     "h": "PoE and the budget",
-     "t": "PoE standards differ: about <b>13 W</b> at the device for 802.3af, <b>25 W</b> for 802.3at, up to <b>51 or 71 W</b> for 802.3bt. A switch has a <b>total budget</b>: ALL-SG8245PM has four PoE ports up to 30 W each, but only about 50 to 60 W in total (the vendor page gives both figures).",
-     "g": [
-      [
-       "PoE budget",
-       "The total power a switch can hand out over all its PoE ports together."
-      ]
-     ]
-    },
-    {
-     "h": "Uplinks and ports",
-     "t": "Add up the devices first: cameras, phones, access points. Then check <b>PoE watts</b> and <b>port count</b>. For links between switches, pick a model with <b>SFP</b> slots so fibre can be used. Industrial and core models show SFP slots clearly.",
-     "g": [
-      [
-       "Uplink",
-       "The link from one switch to the next switch or core."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "A hotel wants guests and staff on separate virtual networks. What do you need?",
-     "o": [
-      "An unmanaged switch",
-      "A smart managed or managed switch with VLAN support",
-      "A fibre patch cable"
-     ],
-     "a": 1,
-     "w": "Unmanaged switches cannot create VLANs. Smart managed or managed switches can."
-    },
-    {
-     "q": "A switch has four PoE ports at 30 W each and a total budget of about 60 W. What does that mean?",
-     "o": [
-      "All four ports can deliver 30 W at once",
-      "The ports share the 60 W total",
-      "It cannot power anything"
-     ],
-     "a": 1,
-     "w": "The budget is the total. Four devices at 30 W would need 120 W."
-    },
-    {
-     "q": "Which gives the most control but needs skilled staff?",
-     "o": [
-      "Unmanaged",
-      "Smart managed",
-      "Fully managed"
-     ],
-     "a": 2,
-     "w": "Fully managed switches give full control and monitoring but need experienced administrators."
-    },
-    {
-     "q": "Which standard gives the most power at the device?",
-     "o": [
-      "802.3af",
-      "802.3at",
-      "802.3bt"
-     ],
-     "a": 2,
-     "w": "802.3bt gives up to 51 or 71 W at the device, af about 13 W, at about 25 W."
-    }
-   ]
-  },
-  {
-   "id": "al-4-2",
-   "lvl": 4,
-   "title": "Sizing a rack or cabinet",
-   "src": [
-    {
-     "l": "Wikipedia: 19-inch rack",
-     "u": "https://en.wikipedia.org/wiki/19-inch_rack"
-    },
-    {
-     "l": "Cables and Kits: server rack guide",
-     "u": "https://www.cablesandkits.com/learning-center/data-center-server-rack-guide"
-    },
-    {
-     "l": "ALLNET network equipment catalogue (2016)",
-     "u": "https://www.allnet.de/fileadmin/marketing/kataloge/2016/ALLNET_Netzwerk_Equipment_web.pdf"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Count the units",
-     "t": "Add the height of every device in <b>U</b>, then add spare. Count switches, patch panels, shelves and the UPS. A <b>42 U</b> cabinet is one of the most common full heights. Leave room for growth: a full cabinet is a problem the day you add one switch.",
-     "g": [
-      [
-       "U",
-       "One rack unit is 44.45 mm of height."
-      ]
-     ]
-    },
-    {
-     "h": "Depth and width",
-     "t": "Depth has no standard: racks often come in <b>600, 800 or about 1000 mm</b>. Servers and long switches need depth, and cables need room behind them. ALLNET's 800 mm wide cabinets in the catalogue have <b>side cable ducts</b>, which keeps larger installations tidy.",
-     "g": [
-      [
-       "Cable duct",
-       "A channel that guides cables vertically inside a cabinet."
-      ]
-     ]
-    },
-    {
-     "h": "Air, wall or floor",
-     "t": "Equipment mostly takes air in at the front and blows it out the back, so a closed cabinet needs <b>fans or perforated doors</b>. Small jobs use a <b>wall housing</b>, larger ones a floor cabinet. A wall housing has a weight limit: the 10 inch ALLNET case takes up to 30 kg.",
-     "g": [
-      [
-       "Front-to-back cooling",
-       "Cool air enters the front of equipment and warm air leaves at the back."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "Which is the most common full height of a cabinet?",
-     "o": [
-      "12 U",
-      "42 U",
-      "100 U"
-     ],
-     "a": 1,
-     "w": "42 U is one of the most common full cabinet heights."
-    },
-    {
-     "q": "Why would an installer choose a deeper cabinet?",
-     "o": [
-      "For servers, long devices and cable room",
-      "To reduce weight",
-      "To make cabinets cheaper"
-     ],
-     "a": 0,
-     "w": "Depth is not standardised. Servers and cables need space behind the front rails."
-    },
-    {
-     "q": "A closed cabinet will hold a heating switch stack. What helps?",
-     "o": [
-      "Fans or perforated doors",
-      "More patch cables",
-      "Frosted glass doors"
-     ],
-     "a": 0,
-     "w": "Airflow is key: fans in the cabinet or perforated doors help heat escape."
-    }
-   ]
-  },
-  {
-   "id": "al-5-1",
-   "lvl": 5,
-   "title": "Which setup for which customer?",
-   "src": [
-    {
-     "l": "ALLNET Brand switches",
-     "u": "https://www.allnet.de/en/allnet-brand/produkte/switches/"
-    },
-    {
-     "l": "ALLNET industrial switch ALL-SGI8016PM",
-     "u": "https://www.allnet.de/en/allnet-brand/produkte/industrial-switches/switches/p/allnet-switch-managed-l2-l3-industrial-12-port-gigabit-12/"
-    },
-    {
-     "l": "ALLNET industrial switch ALL-SGI8104v3",
-     "u": "https://shop-en.allnet.de/ALLNET-Switch-industrial-unmanaged-Layer2-6-Port-GbE-4x-GbE-2x-SFP-Fanless-IP40-ALL-SGI8104v3/238016"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Office and school",
-     "t": "A small office: SoHo smart managed PoE switch, Cat6 patch cables, 10 inch or small wall housing. A school: managed rack switches with <b>VLANs</b> for staff, pupils and guests, <b>Cat6A</b> in the walls and a 22 or 32 U cabinet. This is a judgement, not an ALLNET rule.",
-     "g": [
-      [
-       "Guest network",
-       "A separate network for visitors that cannot reach internal systems."
-      ]
-     ]
-    },
-    {
-     "h": "Hotel and data room",
-     "t": "A hotel needs PoE for access points, <b>VLANs</b> to separate guests and back office, and often fibre between floors. A data room needs a standing cabinet with airflow, <b>SFP+ uplinks</b> such as the ALL-SG9312M-10G, and tidy cable ducts.",
-     "g": [
-      [
-       "Back office",
-       "Internal systems such as reception and booking, kept apart from guests."
-      ]
-     ]
-    },
-    {
-     "h": "Industrial site",
-     "t": "Factories need <b>DIN rail</b> switches with wide temperature range. ALL-SGI8016PM is managed, <b>fanless</b>, -40 to +75 degrees, with 12 PoE ports and SFP uplinks. ALL-SGI8104v3 is the unmanaged option, 4 copper ports and 2 SFP slots.",
-     "g": [
-      [
-       "DIN rail",
-       "A standard metal rail inside control cabinets that devices clip onto."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "A factory wants a switch for a control cabinet with wide temperature range. Which fits?",
-     "o": [
-      "SoHo desktop switch",
-      "Industrial DIN rail switch such as ALL-SGI8016PM",
-      "Hotel patch panel"
-     ],
-     "a": 1,
-     "w": "ALL-SGI8016PM is a fanless DIN rail switch rated -40 to +75 degrees."
-    },
-    {
-     "q": "A school wants staff, pupils and guests on separate networks. What is needed?",
-     "o": [
-      "An unmanaged switch",
-      "A managed switch with VLANs",
-      "A fibre converter"
-     ],
-     "a": 1,
-     "w": "VLAN support requires a smart managed or managed switch."
-    },
-    {
-     "q": "A data room needs 10 gigabit links between racks. Which fits?",
-     "o": [
-      "A switch with SFP+ ports such as ALL-SG9312M-10G",
-      "A 5-port desktop switch",
-      "Cat5e patch cables"
-     ],
-     "a": 0,
-     "w": "ALL-SG9312M-10G has twelve 10G SFP+ ports and is aimed at larger networks."
-    },
-    {
-     "q": "A small office has four PoE devices. What is the first check?",
-     "o": [
-      "The total PoE budget",
-      "The cabinet colour",
-      "The fibre type"
-     ],
-     "a": 0,
-     "w": "Add up device watts and compare to the switch total budget."
-    }
-   ]
-  },
-  {
-   "id": "al-5-2",
-   "lvl": 5,
-   "title": "Objections and good questions",
-   "src": [
-    {
-     "l": "Hackaday: CCA Ethernet cables",
-     "u": "https://hackaday.com/2026/04/07/cca-ethernet-cables-not-up-to-scratch-but-are-they-dangerous/"
-    },
-    {
-     "l": "Wikipedia: Twisted pair",
-     "u": "https://en.wikipedia.org/wiki/Twisted_pair"
-    }
-   ],
-   "pages": [
-    {
-     "h": "Cheap no-name cable",
-     "t": "Some cheap cable uses <b>CCA</b>, copper-clad aluminium. It has roughly 55 percent higher resistance, is more brittle, and cannot carry a Cat rating under TIA or ISO. With PoE it can give too little power. The article finds no widely reported fires.",
-     "g": [
-      [
-       "CCA",
-       "Copper-clad aluminium: an aluminium wire with a thin copper coat."
-      ]
-     ]
-    },
-    {
-     "h": "What to answer",
-     "t": "Do not claim danger you cannot prove. Say: standards require <b>copper</b>, CCA fails them, and a failing link costs the installer a call-out. Ask to check jacket markings. Cabling stays in the walls for years.",
-     "g": [
-      [
-       "Call-out",
-       "A visit to fix a fault, usually at the installer's cost."
-      ]
-     ]
-    },
-    {
-     "h": "Questions to ask",
-     "t": "Ask: how many devices, and how many <b>PoE watts</b> needed? Which <b>speed</b> in 5 years? Distances over 100 m? Shielded or fire-safe (<b>LSZH</b>) needed? Wall or floor rack? Room for spare U? Managed features? Good questions beat product lists.",
-     "g": [
-      [
-       "Spare U",
-       "Empty rack space kept free for future equipment."
-      ]
-     ]
-    }
-   ],
-   "quiz": [
-    {
-     "q": "A customer offers a cheap cable that might be CCA. What is the best response?",
-     "o": [
-      "Say it will start a fire",
-      "Explain that standards require copper and ask to check the markings",
-      "Ignore it"
-     ],
-     "a": 1,
-     "w": "Stay factual: CCA does not meet the standards, and PoE can suffer, but fires are not widely reported."
-    },
-    {
-     "q": "Which question helps choose a switch?",
-     "o": [
-      "How many PoE watts do the devices need?",
-      "What colour is the rack?",
-      "Who made the wall?"
-     ],
-     "a": 0,
-     "w": "PoE watts decide whether the budget is enough."
-    },
-    {
-     "q": "Why ask about LSZH?",
-     "o": [
-      "Fire safety needs in the building",
-      "Faster speed",
-      "Longer distance"
-     ],
-     "a": 0,
-     "w": "LSZH reduces smoke and halogen gas in a fire, it does not change speed."
-    }
-   ]
-  }
- ]
+  ],
+  "related": [
+    "network-basics",
+    "switching-poe"
+  ]
 }
