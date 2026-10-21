@@ -80,13 +80,15 @@ function srDue(id){const r=S.sr[id];return !r||r.d<=dayNum()}
 function srUpdate(id,ok){const r=S.sr[id]||{b:0};r.b=ok?Math.min(r.b+1,5):0;r.d=dayNum()+INTERVALS[r.b];S.sr[id]=r}
 const $=document.getElementById("app");
 const shuffle=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(p=>p[1]);
-const GROUPS={brand:"Brands",base:"Base topics",life:"Life skills"};
+let GROUPS={brand:"Brands",base:"Base topics",life:"Life skills"};
 let DECKS=[];
 
 /* ---------- LOAD CONTENT ---------- */
 async function load(){
   let idx;
   try{idx=await (await fetch("content/index.json",{cache:"no-store"})).json()}catch(e){$.innerHTML='<div class="note">Could not load content. Check your internet and reopen.</div>';return}
+  if(idx.groups)GROUPS=idx.groups;
+  idx.decks.forEach(m=>{if(m.group&&!GROUPS[m.group])GROUPS[m.group]=m.group});
   const res=await Promise.all(idx.decks.map(async m=>{
     try{const d=await (await fetch("content/"+m.id+".json",{cache:"no-store"})).json();
       d.id=m.id;d.group=m.group||d.group||"base";d.deffocus=m.focus==null?3:m.focus;

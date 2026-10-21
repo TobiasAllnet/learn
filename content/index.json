@@ -1,14 +1,15 @@
-{"decks":[
-{"id":"stormshield","group":"brand","focus":5},
-{"id":"ubiquiti","group":"brand","focus":5},
-{"id":"shelly","group":"brand","focus":5},
-{"id":"aginet","group":"brand","focus":5},
-{"id":"network-basics","group":"base","focus":5},
-{"id":"firewalls","group":"base","focus":5},
-{"id":"switching-poe","group":"base","focus":5},
-{"id":"wifi","group":"base","focus":5},
-{"id":"surveillance","group":"base","focus":5},
-{"id":"mobile-broadband","group":"base","focus":5},
-{"id":"it-vs-ot","group":"base","focus":5},
-{"id":"licensing","group":"base","focus":5}
+{"groups":{"brand": "Brands", "base": "Base topics", "life": "Life skills"},
+"decks":[
+{"id": "stormshield", "group": "brand", "focus": 5},
+{"id": "ubiquiti", "group": "brand", "focus": 5},
+{"id": "shelly", "group": "brand", "focus": 5},
+{"id": "aginet", "group": "brand", "focus": 5},
+{"id": "network-basics", "group": "base", "focus": 5},
+{"id": "firewalls", "group": "base", "focus": 5},
+{"id": "switching-poe", "group": "base", "focus": 5},
+{"id": "wifi", "group": "base", "focus": 5},
+{"id": "surveillance", "group": "base", "focus": 5},
+{"id": "mobile-broadband", "group": "base", "focus": 5},
+{"id": "it-vs-ot", "group": "base", "focus": 5},
+{"id": "licensing", "group": "base", "focus": 5}
 ]}
