@@ -66,6 +66,8 @@ body.m-map{position:fixed;inset:0;overflow:hidden}
 .deck:active{background:var(--panel2)}
 .deck b{display:block;font-size:16px;font-weight:600}.deck small{color:var(--mute);font-size:13px}
 .deck::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--gc,var(--fg))}
+.prog{border:1px solid var(--line);background:var(--panel);padding:14px;margin-bottom:14px}.prog .pr{display:flex;justify-content:space-between;align-items:baseline;font-size:14px}.prog .pr b{font-size:16px;font-weight:600}.prog .pr span{color:var(--mute,#999);font-variant-numeric:tabular-nums}
+.xpn{white-space:nowrap}.lvup{margin-top:18px;display:inline-block;border:1px solid var(--fg);padding:8px 18px;font-size:15px;letter-spacing:.14em;text-transform:uppercase;animation:lvin .6s ease-out}@keyframes lvin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .bar{height:3px;background:var(--line);margin-top:9px}
 .bar i{display:block;height:100%;background:var(--gc,var(--fg));transition:width .3s}
 .btn{display:block;width:100%;border:1px solid var(--fg);border-radius:8px;padding:14px;font:inherit;font-size:16px;font-weight:600;color:var(--bg);background:var(--fg);cursor:pointer;margin-top:10px}
@@ -129,8 +131,12 @@ body.m-map{position:fixed;inset:0;overflow:hidden}
 <script>
 /* ---------- STATE ---------- */
 const KEY="learn.v1";
-let S={xp:0,streak:0,last:"",done:{},seen:{},focus:{},sr:{}};
-try{S=Object.assign(S,JSON.parse(localStorage.getItem(KEY)||"{}"))}catch(e){}
+const FRESH=()=>({xp:0,streak:0,last:"",done:{},seen:{},focus:{},sr:{},learned:{},weekly:{ws:0,n:0},goal:20,bonusDeck:{},ver:2});
+let S=FRESH();
+let OLD=false;
+try{const o=JSON.parse(localStorage.getItem(KEY)||"{}");OLD=o.ver!==2;S=Object.assign(S,o)}catch(e){}
+/* ver 2 (21 Oct 2026): XP only for first-time-correct questions. Old XP was test data, so it restarts at zero once. */
+if(OLD){S.xp=0;S.ver=2;S.learned={};S.bonusDeck={};S.weekly={ws:0,n:0}}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
 const dayNum=()=>{const d=new Date();return Math.floor((d.getTime()-d.getTimezoneOffset()*6e4)/864e5)};
 const dstr=n=>new Date(n*864e5).toISOString().slice(0,10);
@@ -140,7 +146,12 @@ const INTERVALS=[0,1,3,7,16,35];
 function srDue(id){const r=S.sr[id];return !r||r.d<=dayNum()}
 function srUpdate(id,ok){const r=S.sr[id]||{b:0};r.b=ok?Math.min(r.b+1,5):0;r.d=dayNum()+INTERVALS[r.b];S.sr[id]=r}
 /* level from XP: level n+1 costs 50*n+50 more than level n (100, 150, 200, ...). See docs/SPEC-XP-LEVELS-AND-MAP.md */
-function levelInfo(xp){let lv=1,floor=0,step=100;while(xp>=floor+step){floor+=step;lv++;step=50*lv+50}return{lv,pct:Math.round((xp-floor)/step*100)}}
+function levelInfo(xp){let lv=1,floor=0,step=100;while(xp>=floor+step){floor+=step;lv++;step=50*lv+50}return{lv,pct:Math.round((xp-floor)/step*100),into:xp-floor,step}}
+/* weekly goal: first-time-correct answers since Monday (local time) */
+const weekStart=()=>{const d=dayNum();return d-((d+3)%7)};
+function weekly(){if(!S.weekly||S.weekly.ws!==weekStart())S.weekly={ws:weekStart(),n:0};return S.weekly}
+/* XP for one answer: only the first time a question is answered correctly */
+function award(q,ok){if(!ok||!q.id||S.learned[q.id])return 0;S.learned[q.id]=1;S.xp+=10;weekly().n++;return 10}
 const $=document.getElementById("app");
 const shuffle=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(p=>p[1]);
 const PALETTE=["#ee6a4f","#5aa2ff","#43c59e","#e2b04a","#b58cf0","#4fd0d9","#f08cb4"];
@@ -194,7 +205,9 @@ function nextLesson(){
 }
 function today(){
   const p=pool(),dueN=p.filter(x=>x.due).length,nx=nextLesson();
-  let h="";
+  const li=levelInfo(S.xp),wk=weekly(),goal=S.goal||20;
+  let h=`<div class="prog"><div class="pr"><b>Level ${li.lv}</b><span>${li.into} / ${li.step} XP</span></div><div class="bar"><i style="width:${li.pct}%"></i></div>
+    <div class="pr" style="margin-top:14px"><b>This week</b><span>${wk.n>=goal?"Goal reached: ":""}${wk.n} / ${goal} questions learned</span></div><div class="bar"><i style="width:${Math.min(100,wk.n/goal*100)}%"></i></div></div>`;
   h+=p.length?`<div class="hero"><h2>Quick quiz</h2><p>${dueN?dueN+" question"+(dueN>1?"s":"")+" due for review.":"Nothing due. Practice anyway."} About 2 minutes.</p><button class="btn" id="quick">Start</button></div>`
     :`<div class="hero"><h2>Welcome</h2><p>Read a short lesson, then get quizzed. Finish one lesson to unlock Quick quiz.</p></div>`;
   if(nx)h+=`<div class="hero"><h2>Next lesson</h2><p>${nx.d.title}: ${nx.l.title}</p><button class="btn ghost" id="nextl">Read now</button></div>`;
@@ -237,8 +250,9 @@ function read(d,l,i){
 }
 function runQuiz(qs,title,onExit,lessonId){
   show("sub");
-  let i=0,right=0;
+  let i=0,right=0,earned=0;
   if(!qs.length){onExit();return}
+  const lv0=levelInfo(S.xp).lv;
   const showQ=()=>{
     const q=qs[i];
     $.innerHTML=`<button class="back" id="b">‹ Exit</button><div class="dots">${qs.map((_,k)=>`<i class="${k<=i?"on":""}"></i>`).join("")}</div>
@@ -246,19 +260,31 @@ function runQuiz(qs,title,onExit,lessonId){
     document.getElementById("b").onclick=onExit;
     $.querySelectorAll(".opt").forEach(b=>b.onclick=()=>{
       const k=+b.dataset.k,ok=k===q.a;if(ok)right++;
+      const g=award(q,ok);earned+=g;
       if(q.id)srUpdate(q.id,ok);save();
       $.querySelectorAll(".opt").forEach(x=>{x.disabled=true;if(+x.dataset.k===q.a)x.classList.add("ok")});
       if(!ok)b.classList.add("bad");
       if(navigator.vibrate)try{navigator.vibrate(ok?15:[30,40,30])}catch(e){}
-      document.getElementById("fb").innerHTML=`<div class="why">${ok?"Correct. ":"Not quite. "}${q.w}</div><button class="btn" id="n">${i===qs.length-1?"Finish":"Next"}</button>`;
+      document.getElementById("fb").innerHTML=`<div class="why">${ok?"Correct. ":"Not quite. "}${q.w}${g?` <b class="xpn">+${g} XP</b>`:""}</div><button class="btn" id="n">${i===qs.length-1?"Finish":"Next"}</button>`;
       document.getElementById("n").onclick=()=>{i++;i<qs.length?showQ():finish()};
     });
   };
   const finish=()=>{
-    const gain=right*10+(right===qs.length?10:0);
-    S.xp+=gain;bumpStreak();if(lessonId&&right>=Math.ceil(qs.length*.67))S.done[lessonId]=1;save();
+    let gain=earned,note="";
+    const passed=lessonId&&right>=Math.ceil(qs.length*.67);
+    if(passed&&!S.done[lessonId]){
+      S.done[lessonId]=1;gain+=25;S.xp+=25;note="Lesson completed +25 XP";
+      const dk=DECKS.find(x=>x.lessons.some(l=>l.id===lessonId));
+      if(dk&&!S.bonusDeck[dk.id]&&dk.lessons.every(l=>S.done[l.id])){S.bonusDeck[dk.id]=1;gain+=100;S.xp+=100;note+=`<br>${dk.title} deck completed +100 XP`}
+    }
+    bumpStreak();save();
+    const lv1=levelInfo(S.xp).lv,wk=weekly(),goal=S.goal||20;
+    if(!gain)note="Already learned, so no new XP. Review still keeps it fresh.";
     $.innerHTML=`<div class="spacer"></div><div class="center"><div class="score">${right}/${qs.length}</div>
-     <div class="sub">${title}</div><div class="stats" style="justify-content:center"><span class="chip">+${gain} XP</span><span class="chip">🔥 ${S.streak} day streak</span></div></div><div class="spacer"></div>
+     <div class="sub">${title}</div><div class="stats" style="justify-content:center"><span class="chip">+${gain} XP</span><span class="chip">🔥 ${S.streak} day streak</span></div>
+     ${note?`<div class="sub" style="margin-top:14px">${note}</div>`:""}
+     <div class="sub" style="margin-top:6px">${wk.n} / ${goal} learned this week</div>
+     ${lv1>lv0?`<div class="lvup">Level ${lv1}</div>`:""}</div><div class="spacer"></div>
      <button class="btn" id="a">Again</button><button class="btn ghost" id="d">Done</button>`;
     document.getElementById("a").onclick=()=>runQuiz(shuffle(qs),title,onExit,lessonId);
     document.getElementById("d").onclick=onExit;
@@ -268,13 +294,15 @@ function runQuiz(qs,title,onExit,lessonId){
 
 /* ---------- SETTINGS ---------- */
 function settings(){
-  let h=`<h1 style="margin-bottom:6px">Focus</h1><div class="sub">0 hides a topic. 5 means more questions from it in Quick quiz and it comes first in Next lesson.</div>`;
+  let h=`<h1 style="margin-bottom:6px">Weekly goal</h1><div class="sub">Questions you learn for the first time each week (Monday to Sunday).</div><div class="set"><div class="p" id="goal">${[5,10,20,30,40,50].map(v=>`<button class="${v===(S.goal||20)?"on":""}" data-v="${v}">${v}</button>`).join("")}</div></div>
+  <h1 style="margin:22px 0 6px">Focus</h1><div class="sub">0 hides a topic. 5 means more questions from it in Quick quiz and it comes first in Next lesson.</div>`;
   groupKeys().forEach(g=>{const ds=DECKS.filter(d=>d.group===g);if(!ds.length)return;h+=`<div class="sec"><i style="background:${GROUPS[g].color}"></i>${GROUPS[g].label}</div>`+ds.map(d=>{const f=focusOf(d);
     return `<div class="set"><b>${d.title}</b><div class="p" data-d="${d.id}">${[0,1,2,3,4,5].map(i=>`<button class="${i===0?"z ":""}${i===f?"on":""}" data-v="${i}">${i}</button>`).join("")}</div></div>`}).join("")});
   h+=`<button class="btn ghost" id="reset" style="margin-top:20px">Reset all progress</button><div class="note">${DECKS.reduce((n,d)=>n+d.lessons.length,0)} lessons loaded</div>`;
   $.innerHTML=h;window.scrollTo(0,0);
-  $.querySelectorAll(".p").forEach(p=>p.querySelectorAll("button").forEach(b=>b.onclick=()=>{S.focus[p.dataset.d]=+b.dataset.v;save();p.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b))}));
-  document.getElementById("reset").onclick=()=>{if(confirm("Reset streak, XP and all progress?")){const f=S.focus;S={xp:0,streak:0,last:"",done:{},seen:{},focus:f,sr:{}};save();updateHeader();settings()}};
+  $.querySelectorAll("#goal button").forEach(b=>b.onclick=()=>{S.goal=+b.dataset.v;save();$.querySelectorAll("#goal button").forEach(x=>x.classList.toggle("on",x===b))});
+  $.querySelectorAll(".p[data-d]").forEach(p=>p.querySelectorAll("button").forEach(b=>b.onclick=()=>{S.focus[p.dataset.d]=+b.dataset.v;save();p.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x===b))}));
+  document.getElementById("reset").onclick=()=>{if(confirm("Reset streak, XP and all progress?")){const f=S.focus,gl=S.goal;S=FRESH();S.focus=f;S.goal=gl;save();updateHeader();settings()}};
 }
 
 /* ======================= MAP ======================= */
