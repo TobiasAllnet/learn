@@ -1,29 +1,68 @@
-import zlib, struct, sys
-def png(path, size):
-    # gradient square with a white lightning-bolt-ish "spark" made of a polygon test
-    def inside(px, py, poly):
-        n=len(poly); c=False; j=n-1
-        for i in range(n):
-            xi,yi=poly[i]; xj,yj=poly[j]
-            if (yi>py)!=(yj>py) and px < (xj-xi)*(py-yi)/(yj-yi)+xi: c=not c
-            j=i
-        return c
-    s=size
-    bolt=[(.56,.14),(.30,.54),(.47,.54),(.40,.86),(.70,.44),(.52,.44)]
-    bolt=[(x*s,y*s) for x,y in bolt]
-    rows=[]
-    for y in range(s):
-        row=bytearray([0])
+"""Crimson app icon: one smooth white light bulb with grey detail lines and a small name watermark.
+Needs Pillow (pip install pillow). Usage: python make_icon.py [output_folder] [watermark_text]
+"""
+import sys, os, math
+from PIL import Image, ImageDraw, ImageFont
+
+FONT = r'C:\Windows\Fonts\segoeuib.ttf'
+SS = 4  # draw 4x bigger then shrink, for smooth edges
+
+def bezier(p0, p1, p2, p3, n=24):
+    pts = []
+    for i in range(n + 1):
+        t = i / n; u = 1 - t
+        pts.append((u**3*p0[0] + 3*u*u*t*p1[0] + 3*u*t*t*p2[0] + t**3*p3[0],
+                    u**3*p0[1] + 3*u*u*t*p1[1] + 3*u*t*t*p2[1] + t**3*p3[1]))
+    return pts
+
+def bulb_outline():
+    cx, cy, r = .5, .385, .215
+    a0 = math.radians(48)                       # where the globe starts to taper
+    p0 = (cx + r*math.cos(a0), cy + r*math.sin(a0))
+    d = (-math.sin(a0), math.cos(a0))           # direction of the circle there
+    p3 = (.575, .685)                           # bottom of the neck
+    right = bezier(p0, (p0[0] + .09*d[0], p0[1] + .09*d[1]), (.575, .625), p3)
+    # globe arc from the left tangent point over the top to the right tangent point
+    arc = []
+    start, end = math.pi - a0, 2*math.pi + a0   # left side, over the top, right side
+    for i in range(61):
+        a = start + (end - start) * i / 60
+        arc.append((cx + r*math.cos(a), cy + r*math.sin(a)))
+    left = [(1 - x, y) for x, y in reversed(right)]
+    return left + arc + right
+
+def make(size, text):
+    s = size * SS
+    img = Image.new('RGB', (s, s))
+    px = img.load()
+    for y in range(s):                          # crimson gradient
         for x in range(s):
-            t=(x+y)/(2*s)
-            r=int(79+(139-79)*t); g=int(70+(92-70)*t); b=int(229+(246-229)*t)
-            if inside(x+.5,y+.5,bolt): r=g=b=255
-            row+=bytes((r,g,b))
-        rows.append(bytes(row))
-    raw=b''.join(rows)
-    def chunk(t,d):
-        c=struct.pack('>I',len(d))+t+d
-        return c+struct.pack('>I',zlib.crc32(t+d)&0xffffffff)
-    data=b'\x89PNG\r\n\x1a\n'+chunk(b'IHDR',struct.pack('>IIBBBBB',s,s,8,2,0,0,0))+chunk(b'IDAT',zlib.compress(raw,9))+chunk(b'IEND',b'')
-    open(path,'wb').write(data)
-png('icon-180.png',180); png('icon-192.png',192); png('icon-512.png',512)
+            t = (x + y) / (2 * s)
+            px[x, y] = (int(200 - 45*t), int(24 - 12*t), int(58 - 18*t))
+    d = ImageDraw.Draw(img, 'RGBA')
+    P = lambda pts: [(x*s, y*s) for x, y in pts]
+    white = (255, 255, 255, 255)
+    d.polygon(P(bulb_outline()), fill=white)
+    d.rounded_rectangle(P([(.405, .66), (.595, .83)]), radius=.05*s, fill=white)   # base, one piece
+    # small round tip at the bottom of the base
+    grey = (70, 72, 82, 255)
+    lw = max(2, int(.011*s))
+    for yy in (.715, .755):                     # thread lines on the base
+        d.line(P([(.415, yy), (.585, yy)]), fill=grey, width=lw)
+    # curved glass highlight inside the globe (upper left)
+    box = [(.5 - .155)*s, (.385 - .155)*s, (.5 + .155)*s, (.385 + .155)*s]
+    d.arc(box, start=195, end=255, fill=(150, 152, 165, 255), width=int(.014*s))
+    # watermark, bottom right
+    font = ImageFont.truetype(FONT, int(.085*s))
+    layer = Image.new('RGBA', (s, s), (0, 0, 0, 0))
+    ld = ImageDraw.Draw(layer)
+    tw = ld.textlength(text, font=font)
+    ld.text((.93*s - tw, .965*s), text, font=font, fill=(255, 255, 255, 170), anchor='ls')
+    img = Image.alpha_composite(img.convert('RGBA'), layer).convert('RGB')
+    return img.resize((size, size), Image.LANCZOS)
+
+out = sys.argv[1] if len(sys.argv) > 1 else '.'
+text = sys.argv[2] if len(sys.argv) > 2 else 'Tobias'
+os.makedirs(out, exist_ok=True)
+for n in (180, 192, 512):
+    make(n, text).save(os.path.join(out, 'icon-%d.png' % n))
