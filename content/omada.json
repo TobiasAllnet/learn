@@ -507,5 +507,10 @@
     "wifi",
     "switching-poe",
     "firewalls"
+  ],
+  "about": [
+    "TP-Link's business networking brand. Covers gateways, switches and Wi-Fi access points, and with sister brand VIGI also security cameras, all managed centrally.",
+    "Aimed at offices, hotels, apartment buildings, chain stores and restaurants, warehouses and outdoor sites, with 4G for remote locations.",
+    "Different through choice of controller: cloud, a hardware box or your own server. Many sites can be seen and configured from one place."
   ]
 }

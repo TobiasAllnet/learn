@@ -857,5 +857,10 @@
     "network-basics",
     "wifi",
     "mobile-broadband"
+  ],
+  "about": [
+    "TP-Link's offer for internet providers, not a separate company. Combines devices such as routers, mesh units and 5G routers with cloud tools to manage them.",
+    "Aimed at internet providers, including smaller wireless ones, who give or rent a box to every subscriber.",
+    "Different from a retail router because the provider sets up and manages the device remotely. That platform is what TP-Link itself stresses."
   ]
 }

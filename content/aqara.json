@@ -554,5 +554,10 @@
         }
       ]
     }
+  ],
+  "about": [
+    "Smart home brand of Lumi United Technology from Shenzhen, launched in 2016. Makes hubs, sensors, switches, cameras, door locks, lighting and curtain controllers.",
+    "Sold to home owners through resellers and installers, and also has a business platform called Aqara Studio.",
+    "Different through a wide range and support for Zigbee, Thread, Wi-Fi and Matter, which Aqara says lets it work with Apple Home, Google Home, Alexa and SmartThings."
   ]
 }

@@ -1126,5 +1126,10 @@
   "related": [
     "wifi",
     "network-basics"
+  ],
+  "about": [
+    "Bulgarian smart home brand from Shelly Group, earlier called Allterco, present in over 100 markets. Makes small relays, plugs, sensors, energy meters and a professional line.",
+    "Sold through resellers and verified installers, who add smart control to existing homes and buildings.",
+    "Different because it fits behind existing wall switches, needs no hub, can run locally without the internet and works with Home Assistant, Alexa and Google Home."
   ]
 }

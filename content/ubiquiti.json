@@ -1029,5 +1029,10 @@
     "switching-poe",
     "wifi",
     "surveillance"
+  ],
+  "about": [
+    "American networking company founded in 2003 and listed on the New York Stock Exchange. Best known for UniFi: network gear, cameras, door access and phones.",
+    "Sells to homes, prosumers and businesses, and to internet providers through its airMAX, airFiber and UFiber lines.",
+    "Different because a whole site is managed from one UniFi console, with apps for network, cameras and door access, so one vendor can cover all three."
   ]
 }

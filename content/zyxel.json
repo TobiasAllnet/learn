@@ -509,5 +509,10 @@
     "firewalls",
     "wifi",
     "switching-poe"
+  ],
+  "about": [
+    "Broad business networking vendor that says it has 35 years of experience and serves 150 markets. Sells firewalls, switches, Wi-Fi, 4G/5G and operator access gear.",
+    "Sold through resellers and distributors, often to customers with several sites, little on-site IT, or an MSP running the network.",
+    "Zyxel pitches one vendor for the whole small business network, managed from the Nebula cloud tool, which has a free tier."
   ]
 }

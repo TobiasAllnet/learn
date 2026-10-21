@@ -668,5 +668,10 @@
   "related": [
     "mobile-broadband",
     "it-vs-ot"
+  ],
+  "about": [
+    "Lithuanian maker of industrial cellular routers, gateways and switches, with a cloud tool called RMS to manage them remotely.",
+    "Targets industrial and automation, energy and utilities, smart city, transport, enterprise and retail: vehicles, pumps, kiosks and remote cabinets with no fixed internet.",
+    "Different because it is built for places without cable: mobile networks with dual SIM and automatic failover, and on some models serial ports for old meters and machines."
   ]
 }
