@@ -76,6 +76,11 @@ body.m-map{position:fixed;inset:0;overflow:hidden}
 .btn.ghost{background:var(--panel);color:var(--fg);border-color:var(--line)}
 .btn.sm{padding:10px;font-size:14px}
 .btn:disabled{opacity:.35}
+.btn.done{background:var(--panel);color:var(--ok);border-color:rgba(95,207,154,.4)}
+.btn .ck{margin-left:7px;vertical-align:-1px}
+.card.lessondone{border-left:3px solid var(--ok)}
+.card.lessondone>b{color:#9fb8ab}
+.sub.okc{color:var(--ok)}
 .btn:active{filter:brightness(.88)}
 .hero{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:10px}
 .hero h2{margin:0}.hero p{margin:4px 0 0;color:var(--mute);font-size:14px}
@@ -234,8 +239,9 @@ function deck(id){
   const d=DECKS.find(x=>x.id===id);let lastLvl=0,h=`<button class="back" id="b">‹ Back</button><div class="top"><h1>${d.title}</h1></div>${d.about&&d.about.length?`<div class="about">${d.about.map(x=>`<p>${x}</p>`).join("")}</div>`:""}`;
   d.lessons.forEach(l=>{
     if(l.lvl!==lastLvl){h+=`<div class="lvlh">Level ${l.lvl}</div>`;lastLvl=l.lvl}
-    h+=`<div class="card"><b>${l.title}</b><div class="sub" style="margin-bottom:0">${S.done[l.id]?"Completed":"About 2 min"}</div>
-    <div class="row"><button class="btn sm" data-r="${l.id}">Read &amp; learn</button><button class="btn sm ghost" data-t="${l.id}" ${S.seen[l.id]?"":"disabled"}>Quiz only</button></div></div>`});
+    const rd=!!S.seen[l.id],qd=!!S.done[l.id],ck='<svg class="ck" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>';
+    h+=`<div class="card${qd?" lessondone":""}"><b>${l.title}</b><div class="sub${qd?" okc":""}" style="margin-bottom:0">${qd?"Completed":rd?"Read. Quiz not passed yet":"About 2 min"}</div>
+    <div class="row"><button class="btn sm${rd?" done":""}" data-r="${l.id}">Read &amp; learn${rd?ck:""}</button><button class="btn sm ghost${qd?" done":""}" data-t="${l.id}" ${rd?"":"disabled"}>Quiz only${qd?ck:""}</button></div></div>`});
   if(d.src&&d.src.length)h+=`<div class="src">Sources: ${d.src.map(s=>`<a href="${s.u}" target="_blank" rel="noopener">${s.l}</a>`).join(" · ")}</div>`;
   $.innerHTML=h;window.scrollTo(0,0);
   document.getElementById("b").onclick=()=>goTab(tab);
