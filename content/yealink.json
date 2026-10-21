@@ -1,0 +1,910 @@
+{
+ "title": "Yealink",
+ "desc": "Phones, headsets and meeting rooms",
+ "src": [
+  {
+   "l": "Yealink home",
+   "u": "https://www.yealink.com/en"
+  },
+  {
+   "l": "Yealink on Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Yealink"
+  },
+  {
+   "l": "Yealink IP phone list",
+   "u": "https://www.yealink.com/en/product-list/ip-phone"
+  },
+  {
+   "l": "Yealink MeetingBar",
+   "u": "https://www.yealink.com/en/onepage/yealink-room-bar-meetingbar-all-in-one-video-conferencing-solution"
+  },
+  {
+   "l": "Yealink YMCS",
+   "u": "https://www.yealink.com/en/product-detail/management-cloud-service"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "yl-1-1",
+   "lvl": 1,
+   "title": "Who is Yealink?",
+   "src": [
+    {
+     "l": "Yealink home",
+     "u": "https://www.yealink.com/en"
+    },
+    {
+     "l": "Yealink on Wikipedia",
+     "u": "https://en.wikipedia.org/wiki/Yealink"
+    }
+   ],
+   "pages": [
+    {
+     "h": "A phone maker that grew up",
+     "t": "Yealink was founded in <b>2001</b> and is headquartered in <b>Xiamen, China</b>. It started with SIP phones and grew into a big name in business desk phones. The company is listed on the Shenzhen Stock Exchange.",
+     "g": [
+      [
+       "SIP phone",
+       "A desk phone that makes calls over the internet or a company network instead of an old phone line"
+      ]
+     ]
+    },
+    {
+     "h": "More than phones now",
+     "t": "Today Yealink calls itself a leader in <b>Unified Communications and Collaboration</b>. The range covers <b>IP phones, headsets, meeting room systems and cameras</b>, plus <b>management platforms</b> for looking after all those devices.",
+     "g": [
+      [
+       "UC",
+       "Unified Communications: calls, meetings and messaging brought together on one platform"
+      ]
+     ]
+    },
+    {
+     "h": "Big claims, and whose they are",
+     "t": "Yealink says it is <b>number 1 in global IP phone shipments</b> and a top 5 video conferencing provider (it cites Frost and Sullivan, 2021). Those are Yealink's own claims on its website, so say \"according to Yealink\" when you repeat them to a reseller."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which product areas does Yealink cover?",
+     "o": [
+      "Only desk phones",
+      "Phones, headsets, meeting room systems and management platforms",
+      "Only network switches and firewalls"
+     ],
+     "a": 1,
+     "w": "Yealink goes well beyond desk phones into headsets, rooms and management."
+    },
+    {
+     "q": "What did Yealink start with?",
+     "o": [
+      "Video walls",
+      "Security cameras",
+      "SIP phones"
+     ],
+     "a": 2,
+     "w": "SIP phones were the early core of the company."
+    },
+    {
+     "q": "A reseller asks if Yealink really is number 1 in IP phones. Best answer?",
+     "o": [
+      "Yes, it is an official fact",
+      "Yealink states this itself, based on unit shipments",
+      "No, that is untrue"
+     ],
+     "a": 1,
+     "w": "The claim comes from Yealink's own site, so attribute it to them."
+    }
+   ]
+  },
+  {
+   "id": "yl-1-2",
+   "lvl": 1,
+   "title": "What is unified communications?",
+   "src": [
+    {
+     "l": "Voice over IP (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Voice_over_IP"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Calls as data",
+     "t": "<b>VoIP</b> sends voice as data packets over an IP network such as the internet, so no old phone network is needed. Think of a call travelling the same way an email does, in small pieces that are put back together.",
+     "g": [
+      [
+       "VoIP",
+       "Voice over IP: phone calls carried over a data network"
+      ]
+     ]
+    },
+    {
+     "h": "SIP and the phone itself",
+     "t": "<b>SIP</b> is the common language phones use to register, dial, hold and transfer calls. An <b>IP phone</b> is a real desk phone that plugs into the network. A <b>softphone</b> is an app on a PC or mobile that does the same job.",
+     "g": [
+      [
+       "SIP",
+       "Session Initiation Protocol: the common standard for setting up and ending VoIP calls"
+      ],
+      [
+       "Softphone",
+       "A calling app on a computer or phone"
+      ]
+     ]
+    },
+    {
+     "h": "Who runs the phone system",
+     "t": "The phone system, called a PBX, can run in the customer's own office, which is <b>on-premises</b>, or in a provider's data centre, which is <b>cloud or hosted</b>. UC then adds video meetings and messaging on top of plain calls.",
+     "g": [
+      [
+       "PBX",
+       "The system that connects and routes a company's calls"
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is a softphone?",
+     "o": [
+      "A rubber-cased desk phone",
+      "A calling app on a computer or phone",
+      "A cordless handset"
+     ],
+     "a": 1,
+     "w": "A softphone is software that replaces the physical phone."
+    },
+    {
+     "q": "What does SIP do?",
+     "o": [
+      "It encrypts Wi-Fi",
+      "It charges the headset",
+      "It sets up and controls VoIP calls"
+     ],
+     "a": 2,
+     "w": "SIP handles registering, dialling and call control."
+    },
+    {
+     "q": "A customer has no phone system in the building and uses a provider's service over the internet. This is:",
+     "o": [
+      "On-premises PBX",
+      "Cloud or hosted telephony",
+      "An analog line"
+     ],
+     "a": 1,
+     "w": "When the provider runs the system in its data centre, it is hosted or cloud."
+    }
+   ]
+  },
+  {
+   "id": "yl-2-1",
+   "lvl": 2,
+   "title": "SIP desk phones by series",
+   "src": [
+    {
+     "l": "Yealink IP phone list",
+     "u": "https://www.yealink.com/en/product-list/ip-phone"
+    },
+    {
+     "l": "Yealink T54W",
+     "u": "https://www.yealink.com/en/product-detail/ip-phone-t54w"
+    }
+   ],
+   "pages": [
+    {
+     "h": "The ladder from T3 to T8",
+     "t": "Yealink sorts desk phones into series. <b>T3</b> is entry-level and cost-effective, <b>T4</b> is mid-range office phones, <b>T5</b> is the prime business range, and <b>T7 and T8</b> aim at managers, executives and professionals.",
+     "g": [
+      [
+       "Series",
+       "A family of phones with the same look and feature level"
+      ]
+     ]
+    },
+    {
+     "h": "Example: the T54W",
+     "t": "The <b>T54W</b> is described as a mid-level phone for professionals and managers. It has <b>Bluetooth and Wi-Fi</b> built in, takes <b>expansion modules</b> for more line keys, and can link to a few DECT handsets through a dongle.",
+     "g": [
+      [
+       "Expansion module",
+       "An add-on key panel that gives a phone more speed-dial and line buttons"
+      ]
+     ]
+    },
+    {
+     "h": "Video phone and others",
+     "t": "The T5 range also includes the <b>VP59</b>, called a flagship smart video phone. Yealink also lists a <b>Wi-Fi phone</b>, a <b>4G phone</b> and conference phones for meeting tables, such as the <b>CP965</b> for medium to large rooms."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which series is Yealink's entry-level line?",
+     "o": [
+      "T8",
+      "T3",
+      "T7"
+     ],
+     "a": 1,
+     "w": "T3 is listed as entry-level and cost-effective."
+    },
+    {
+     "q": "A busy executive wants a premium desk phone. Which end of the range?",
+     "o": [
+      "T3",
+      "T4 only",
+      "T7 or T8"
+     ],
+     "a": 2,
+     "w": "T7 and T8 are aimed at executives and professionals."
+    },
+    {
+     "q": "What does an expansion module add?",
+     "o": [
+      "More line keys",
+      "More battery",
+      "A camera"
+     ],
+     "a": 0,
+     "w": "It adds extra buttons for lines and shortcuts."
+    }
+   ]
+  },
+  {
+   "id": "yl-2-2",
+   "lvl": 2,
+   "title": "DECT cordless phones",
+   "src": [
+    {
+     "l": "Yealink DECT phone list",
+     "u": "https://www.yealink.com/en/product-list/ip-phone?filter=dect-phone"
+    },
+    {
+     "l": "DECT (Wikipedia)",
+     "u": "https://en.wikipedia.org/wiki/Digital_enhanced_cordless_telecommunications"
+    }
+   ],
+   "pages": [
+    {
+     "h": "What DECT means",
+     "t": "<b>DECT</b> is a cordless phone standard that began in Europe. It is used mainly for voice, with fast hand-over between base stations, and is generally not disturbed by Wi-Fi. Staff can walk around the building and keep talking.",
+     "g": [
+      [
+       "DECT",
+       "Digital Enhanced Cordless Telecommunications, the standard for business cordless phones"
+      ],
+      [
+       "Base station",
+       "The unit the handsets connect to"
+      ]
+     ]
+    },
+    {
+     "h": "Single site and big site",
+     "t": "<b>W70B</b> is an IP base station for small and medium businesses. For larger sites there are <b>multi-cell systems</b> called W90, W80 and W75 Mini MC, which join many base stations into one coverage area.",
+     "g": [
+      [
+       "Multi-cell",
+       "Several base stations working as one network so calls roam across a large area"
+      ]
+     ]
+    },
+    {
+     "h": "Handsets for different jobs",
+     "t": "Handsets run from <b>basic</b> (W71H, W73H) to <b>premium</b> (W74H, W78H). <b>Ruggedized</b> models, such as the W57R handset and the W77P and W79P phone systems, suit tougher places like workshops."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Why choose DECT over a Wi-Fi phone for walking staff?",
+     "o": [
+      "It carries video",
+      "It is voice-focused and roams between base stations",
+      "It needs no power"
+     ],
+     "a": 1,
+     "w": "DECT is built for voice and moves calls between base stations smoothly."
+    },
+    {
+     "q": "A large site needs coverage over a big area. Which fits?",
+     "o": [
+      "A single W70B only",
+      "A multi-cell system such as W80",
+      "A USB headset"
+     ],
+     "a": 1,
+     "w": "Multi-cell systems combine base stations for wide coverage."
+    },
+    {
+     "q": "Which handset type is for rough environments?",
+     "o": [
+      "Ruggedized",
+      "Basic",
+      "Premium"
+     ],
+     "a": 0,
+     "w": "Ruggedized handsets are built for tougher use."
+    }
+   ]
+  },
+  {
+   "id": "yl-2-3",
+   "lvl": 2,
+   "title": "Headsets and speakerphones",
+   "src": [
+    {
+     "l": "Yealink headset comparison",
+     "u": "https://www.yealink.com/en/product-campare/headset-wh62_headset-wh67_headset-bh71"
+    },
+    {
+     "l": "Yealink UH38",
+     "u": "https://www.yealink.com/en/product-detail/headset-uh38"
+    },
+    {
+     "l": "Yealink CP900",
+     "u": "https://www.yealink.com/en/product-detail/speakerphone-cp900"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Three ways to connect",
+     "t": "Headsets differ by link. <b>Wired USB</b> plugs straight into a PC, <b>Bluetooth</b> pairs with phones and laptops, and <b>DECT</b> gives wireless roaming from a base. The WH62 and WH67 are DECT models, the BH71 is Bluetooth.",
+     "g": [
+      [
+       "Bluetooth",
+       "Short-range wireless between a headset and a device"
+      ]
+     ]
+    },
+    {
+     "h": "Picking by user",
+     "t": "<b>WH62</b> is an entry-level DECT headset. <b>WH67</b> is a convertible DECT headset with a touch-screen base that can also act as a desktop workstation. <b>BH71</b> suits people on the move. <b>UH38</b> is a premium USB headset with dual noise-cancelling microphones."
+    },
+    {
+     "h": "Speakerphones and lifecycle",
+     "t": "The <b>CP900</b> was a premium portable USB and Bluetooth speakerphone for huddle rooms and on-the-go use. It reached <b>end of sale on 22 December 2025</b>. Always check that a model is still sold before you quote it.",
+     "g": [
+      [
+       "End of sale",
+       "The date a product can no longer be ordered from the vendor"
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which Yealink headset is a premium USB model?",
+     "o": [
+      "WH62",
+      "UH38",
+      "BH71"
+     ],
+     "a": 1,
+     "w": "The UH38 is described as a premium USB headset."
+    },
+    {
+     "q": "A sales rep travels by train and wants one headset for phone and laptop. Which fits best?",
+     "o": [
+      "BH71 Bluetooth",
+      "UH38 only",
+      "A conference phone"
+     ],
+     "a": 0,
+     "w": "The BH71 is aimed at on-the-go users who also work in the office."
+    },
+    {
+     "q": "What should you check before quoting the CP900?",
+     "o": [
+      "Its colour",
+      "Whether it is still on sale",
+      "Its weight"
+     ],
+     "a": 1,
+     "w": "It reached end of sale, so confirm availability first."
+    }
+   ]
+  },
+  {
+   "id": "yl-3-1",
+   "lvl": 3,
+   "title": "Meeting rooms: bars and systems",
+   "src": [
+    {
+     "l": "Yealink MeetingBar",
+     "u": "https://www.yealink.com/en/onepage/yealink-room-bar-meetingbar-all-in-one-video-conferencing-solution"
+    },
+    {
+     "l": "Yealink MVC640",
+     "u": "https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvc640"
+    },
+    {
+     "l": "Yealink MVC960",
+     "u": "https://www.yealink.com/en/product-detail/microsoft-teams-rooms-mvc960"
+    }
+   ],
+   "pages": [
+    {
+     "h": "All-in-one bars",
+     "t": "A <b>video bar</b> puts camera, microphones and speaker in one unit. Yealink's <b>MeetingBar</b> range runs from the <b>A10</b> (focus rooms, 1 to 4 people) and <b>A25</b> to the <b>A40</b> and <b>A50</b>, which reaches medium to large rooms.",
+     "g": [
+      [
+       "Video bar",
+       "One device with camera, mic and speaker built in"
+      ]
+     ]
+    },
+    {
+     "h": "Room systems for bigger rooms",
+     "t": "The <b>MVC series</b> is a kit: a mini-PC, a camera system, audio gear and a touch panel. The <b>MVC640</b> targets medium rooms. The <b>MVC960</b> is for extra-large rooms and uses a dual 4K camera system.",
+     "g": [
+      [
+       "MVC",
+       "Yealink's Microsoft Teams Rooms kits that run on Windows"
+      ]
+     ]
+    },
+    {
+     "h": "Match the room",
+     "t": "Small room: a bar. Medium room: a stronger bar or an MVC kit. Large or extra-large: MVC with extra microphones and cameras. Yealink's size ranges are rough guides, so ask about layout, ceiling and acoustics too."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which device suits a small focus room for 1 to 4 people?",
+     "o": [
+      "MeetingBar A10",
+      "MVC960",
+      "A DECT base"
+     ],
+     "a": 0,
+     "w": "Yealink places the A10 in focus rooms and huddle spaces."
+    },
+    {
+     "q": "What is in an MVC kit?",
+     "o": [
+      "Only a camera",
+      "Mini-PC, camera, audio gear and touch panel",
+      "A desk phone"
+     ],
+     "a": 1,
+     "w": "MVC kits bundle the computer and room hardware."
+    },
+    {
+     "q": "A customer has an extra-large boardroom. Which fits?",
+     "o": [
+      "MeetingBar A10",
+      "MVC960",
+      "WH62 headset"
+     ],
+     "a": 1,
+     "w": "The MVC960 is designed for extra-large rooms."
+    }
+   ]
+  },
+  {
+   "id": "yl-3-2",
+   "lvl": 3,
+   "title": "Teams, Zoom and open SIP",
+   "src": [
+    {
+     "l": "Microsoft: Teams certified devices",
+     "u": "https://learn.microsoft.com/en-us/microsoftteams/devices/certified-devices-overview"
+    },
+    {
+     "l": "Yealink Teams Rooms compatibility",
+     "u": "https://www.yealink.com/en/onepage/a-full-breakdown-of-microsoft-teams-rooms-compatibility"
+    },
+    {
+     "l": "Yealink Zoom Rooms devices",
+     "u": "https://www.yealink.com/en/onepage/yealink-zoom-rooms-appliances-and-systems"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Certified for Teams",
+     "t": "Microsoft tests devices and gives passing ones the label <b>Certified for Microsoft Teams</b>. The tests cover audio and video quality, management and security. A device without the label has not passed that testing.",
+     "g": [
+      [
+       "Certified",
+       "Tested and approved by the platform owner, here Microsoft"
+      ]
+     ]
+    },
+    {
+     "h": "Windows or Android rooms",
+     "t": "Teams Rooms on <b>Windows</b> (Yealink MVC) suits medium to large rooms and allows more peripherals. Teams Rooms on <b>Android</b> (MeetingBar, DeskVision A24) is a simpler appliance for small to medium rooms.",
+     "g": [
+      [
+       "Appliance",
+       "A ready-made device with fixed parts, simple to roll out"
+      ]
+     ]
+    },
+    {
+     "h": "Open SIP is different",
+     "t": "Many Yealink desk phones are <b>open SIP</b> devices that work with many phone systems. Teams or Zoom rooms use devices built for that platform. Yealink also lists Zoom Rooms models, including the <b>A40</b> bar and the <b>MeetingBoard</b>."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does \"Certified for Microsoft Teams\" mean?",
+     "o": [
+      "It passed Microsoft's testing program",
+      "It is sold by Microsoft",
+      "It works only with Windows"
+     ],
+     "a": 0,
+     "w": "Microsoft's program tests quality, reliability and compatibility."
+    },
+    {
+     "q": "A small room wants a simple appliance with easy rollout on Teams. Which fits?",
+     "o": [
+      "Teams Rooms on Android",
+      "A custom AV rack",
+      "A DECT system"
+     ],
+     "a": 0,
+     "w": "The Android model is the standardised, simple option."
+    },
+    {
+     "q": "What is the risk of mixing non-certified devices in a Teams room?",
+     "o": [
+      "The screen turns pink",
+      "Missing features such as remote management",
+      "Higher electricity use"
+     ],
+     "a": 1,
+     "w": "Non-certified devices may lack auto-recognition and remote management."
+    }
+   ]
+  },
+  {
+   "id": "yl-3-3",
+   "lvl": 3,
+   "title": "Cloud PBX or on-prem",
+   "src": [
+    {
+     "l": "Yealink on-premise or hosted",
+     "u": "https://www.yealink.com/en/on-premise-or-hosted-service"
+    },
+    {
+     "l": "Yealink and 3CX",
+     "u": "https://www.yealink.com/en/onepage/3cx"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Two ways to run the phone system",
+     "t": "<b>On-premise</b> runs on a server the customer owns: more control, but hardware and IT staff are needed. <b>Cloud-hosted</b> runs at a provider: quick to start and updates are included, but it is a subscription with less customisation."
+    },
+    {
+     "h": "Yealink fits both",
+     "t": "Yealink says its IP phones work with <b>more than 60 IP-PBX providers</b>, including Asterisk, 3CX and Starface for on-premise. For hosted setups it names platforms like BroadSoft and Metaswitch, and Genband."
+    },
+    {
+     "h": "Which questions to ask",
+     "t": "Ask which platform the customer runs or wants, then check Yealink's compatibility information for that exact platform and phone model. Compatibility lists are dated, so confirm against current firmware before you promise anything.",
+     "g": [
+      [
+       "Firmware",
+       "The built-in software of a device, updated over time"
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which describes a cloud-hosted phone system?",
+     "o": [
+      "Runs on the customer's own server",
+      "Runs in a provider's infrastructure",
+      "Needs no internet"
+     ],
+     "a": 1,
+     "w": "Cloud-hosted means the provider runs it."
+    },
+    {
+     "q": "Roughly how many IP-PBX providers does Yealink say its phones work with?",
+     "o": [
+      "About 6",
+      "Only one",
+      "More than 60"
+     ],
+     "a": 2,
+     "w": "Yealink states more than 60 providers."
+    },
+    {
+     "q": "A customer runs 3CX. What is the best first step?",
+     "o": [
+      "Assume every phone works",
+      "Check the compatibility info for that phone model",
+      "Sell a Teams phone"
+     ],
+     "a": 1,
+     "w": "Always verify the exact model against the platform."
+    }
+   ]
+  },
+  {
+   "id": "yl-4-1",
+   "lvl": 4,
+   "title": "Managing the devices",
+   "src": [
+    {
+     "l": "Yealink YMCS",
+     "u": "https://www.yealink.com/en/product-detail/management-cloud-service"
+    },
+    {
+     "l": "Yealink management platforms",
+     "u": "https://www.yealink.com/en/product-list/management-platform"
+    },
+    {
+     "l": "Yealink on-premise or hosted",
+     "u": "https://www.yealink.com/en/on-premise-or-hosted-service"
+    }
+   ],
+   "pages": [
+    {
+     "h": "The management platforms",
+     "t": "Yealink lists three: <b>YMCS</b>, its cloud service; <b>YDMP</b>, its on-premise platform; and <b>USB Connect</b> for USB devices. They help a reseller keep many devices updated and monitored.",
+     "g": [
+      [
+       "YMCS",
+       "Yealink Management Cloud Service"
+      ],
+      [
+       "YDMP",
+       "Yealink Device Management Platform, on-premise"
+      ]
+     ]
+    },
+    {
+     "h": "What YMCS does",
+     "t": "YMCS lets admins <b>deploy, upgrade, monitor and troubleshoot</b> devices from one cloud portal. It sends alarms by email, supports bulk firmware upgrades and scheduled tasks, and is built on Microsoft Azure."
+    },
+    {
+     "h": "Zero-touch setup",
+     "t": "<b>RPS</b> is a free Yealink service. After a phone is unpacked and powered on, it is redirected to its assigned server for configuration. That saves a technician from visiting each desk.",
+     "g": [
+      [
+       "RPS",
+       "Redirection and Provisioning Service: sends a new phone to its settings server automatically"
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which platform is Yealink's cloud management service?",
+     "o": [
+      "YDMP",
+      "YMCS",
+      "RPS"
+     ],
+     "a": 1,
+     "w": "YMCS is the cloud service."
+    },
+    {
+     "q": "What does RPS save?",
+     "o": [
+      "Electricity",
+      "Manual setup of each phone",
+      "Headset batteries"
+     ],
+     "a": 1,
+     "w": "RPS redirects a new phone to its server automatically."
+    },
+    {
+     "q": "A customer has 200 phones across offices and wants bulk updates. What do you point to?",
+     "o": [
+      "A management platform",
+      "A bigger desk phone",
+      "A softphone"
+     ],
+     "a": 0,
+     "w": "Bulk firmware upgrades are what management platforms are for."
+    }
+   ]
+  },
+  {
+   "id": "yl-4-2",
+   "lvl": 4,
+   "title": "Which Yealink for which customer?",
+   "src": [
+    {
+     "l": "Yealink IP phone list",
+     "u": "https://www.yealink.com/en/product-list/ip-phone"
+    },
+    {
+     "l": "Yealink MeetingBar",
+     "u": "https://www.yealink.com/en/onepage/yealink-room-bar-meetingbar-all-in-one-video-conferencing-solution"
+    },
+    {
+     "l": "Yealink DECT phone list",
+     "u": "https://www.yealink.com/en/product-list/ip-phone?filter=dect-phone"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Small office and reception",
+     "t": "A small office on a hosted phone service: <b>T3 or T4</b> phones plus simple headsets. A reception desk handling many calls: a mid-range phone like the <b>T54W</b> with expansion modules and a wireless headset."
+    },
+    {
+     "h": "Hybrid work and meeting rooms",
+     "t": "Hybrid teams need a <b>USB headset</b> such as the UH38 at home and in the office, and a <b>MeetingBar</b> in small rooms. Add an <b>MVC</b> kit for bigger rooms on Teams. Match the platform first, the room size second."
+    },
+    {
+     "h": "Warehouse and big sites",
+     "t": "Staff who walk around need <b>DECT</b>: a W70B for a small site, a multi-cell system for large ones, and a <b>ruggedized handset</b> where it is rough. Call centres usually start from comfortable headsets, so ask what the agents wear all day."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A small office needs basic desk phones. Which series first?",
+     "o": [
+      "T3",
+      "VP59",
+      "MVC960"
+     ],
+     "a": 0,
+     "w": "T3 is entry-level and cost-effective."
+    },
+    {
+     "q": "A warehouse team walks around all day. Which fits?",
+     "o": [
+      "T8 desk phones",
+      "DECT with ruggedized handsets",
+      "A MeetingBar A10"
+     ],
+     "a": 1,
+     "w": "Cordless rugged DECT suits walking staff."
+    },
+    {
+     "q": "A hybrid firm on Teams wants a small meeting room set up. Which fits?",
+     "o": [
+      "MeetingBar",
+      "W70B base",
+      "T31 phone"
+     ],
+     "a": 0,
+     "w": "A video bar is the simple all-in-one choice for small rooms."
+    }
+   ]
+  },
+  {
+   "id": "yl-5-1",
+   "lvl": 5,
+   "title": "Objections and good questions",
+   "src": [
+    {
+     "l": "Microsoft: plan Teams Rooms",
+     "u": "https://learn.microsoft.com/en-us/microsoftteams/rooms/rooms-plan"
+    },
+    {
+     "l": "Yealink MP54",
+     "u": "https://www.yealink.com/en/product-detail/microsoft-teams-phone-mp54"
+    },
+    {
+     "l": "Yealink Teams Rooms compatibility",
+     "u": "https://www.yealink.com/en/onepage/a-full-breakdown-of-microsoft-teams-rooms-compatibility"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Which platform?",
+     "t": "Always ask first: <b>Teams, Zoom, 3CX or another platform?</b> The answer decides whether you quote open SIP phones or Teams or Zoom devices. A wrong platform guess can be an expensive mistake, so ask before you quote."
+    },
+    {
+     "h": "Licences and lifecycle",
+     "t": "Microsoft requires a <b>Teams Rooms licence</b> (Pro or Basic) for each room device, separate from the hardware. Also check lifecycle: the MP54 Teams phone was discontinued on <b>30 September 2024</b>.",
+     "g": [
+      [
+       "Licence",
+       "The right to use software, often paid per device or user"
+      ]
+     ]
+    },
+    {
+     "h": "Objection: it is just a phone",
+     "t": "If a customer says cheaper phones exist, widen the picture: <b>one vendor</b> for phones, headsets, rooms and management. Ask where their time goes today: setup, support calls, or meeting rooms that fail."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What must each Teams room device have, apart from hardware?",
+     "o": [
+      "A Teams Rooms licence",
+      "A Yealink phone",
+      "A DECT base"
+     ],
+     "a": 0,
+     "w": "Microsoft requires a Teams Rooms licence per room device."
+    },
+    {
+     "q": "What is the first question to ask a new customer?",
+     "o": [
+      "Which platform do you use?",
+      "What colour do you like?",
+      "How many windows?"
+     ],
+     "a": 0,
+     "w": "The platform decides which devices fit."
+    },
+    {
+     "q": "A customer wants an MP54 Teams phone. What do you do?",
+     "o": [
+      "Quote it anyway",
+      "Check status first, since it is discontinued",
+      "Order 100 units"
+     ],
+     "a": 1,
+     "w": "Discontinued products need checking and often an alternative."
+    }
+   ]
+  },
+  {
+   "id": "yl-5-2",
+   "lvl": 5,
+   "title": "Yealink against the alternatives",
+   "src": [
+    {
+     "l": "Microsoft: Teams certified devices",
+     "u": "https://learn.microsoft.com/en-us/microsoftteams/devices/certified-devices-overview"
+    },
+    {
+     "l": "Yealink home",
+     "u": "https://www.yealink.com/en"
+    },
+    {
+     "l": "Yealink YMCS",
+     "u": "https://www.yealink.com/en/product-detail/management-cloud-service"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Not the only certified vendor",
+     "t": "Microsoft publishes <b>lists of certified devices</b>, covering Teams Rooms, phones, panels and personal devices. Certification is not something only Yealink can offer, so check the current list for each model instead of assuming."
+    },
+    {
+     "h": "Where Yealink argues its case",
+     "t": "Yealink's pitch is <b>breadth</b>: phones, DECT, headsets, room systems and management from one maker, with <b>Teams and Zoom</b> devices alongside open SIP phones. Its management cloud also links to tools like Microsoft Entra ID."
+    },
+    {
+     "h": "Be honest in comparisons",
+     "t": "Do not claim a feature you have not verified, and do not run down rivals. Say what Yealink offers, point to the datasheet and check how it fits the customer's platform, room and needs."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which statement about certification is right?",
+     "o": [
+      "Only Yealink has Teams-certified devices",
+      "Microsoft keeps certified lists for many device types",
+      "Certification is optional marketing"
+     ],
+     "a": 1,
+     "w": "Microsoft's certified lists cover several device categories."
+    },
+    {
+     "q": "What is Yealink's main argument for a reseller?",
+     "o": [
+      "Breadth from one vendor",
+      "Lowest cost always",
+      "Fastest laptops"
+     ],
+     "a": 0,
+     "w": "One maker covering phones, headsets, rooms and management."
+    },
+    {
+     "q": "A customer asks about a feature you are unsure of. What do you do?",
+     "o": [
+      "Guess",
+      "Check the datasheet first",
+      "Say rivals lack it"
+     ],
+     "a": 1,
+     "w": "Never claim what you have not verified."
+    }
+   ]
+  }
+ ]
+}

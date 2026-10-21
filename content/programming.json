@@ -1,0 +1,1062 @@
+{
+  "title": "Programming basics",
+  "desc": "How developers think: Python, web basics, APIs, git and real projects",
+  "src": [
+    {
+      "l": "Python tutorial: an informal introduction",
+      "u": "https://docs.python.org/3/tutorial/introduction.html"
+    },
+    {
+      "l": "MDN: What is JavaScript?",
+      "u": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript"
+    },
+    {
+      "l": "Pro Git: About version control",
+      "u": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"
+    },
+    {
+      "l": "Microsoft Learn: What is DevOps?",
+      "u": "https://learn.microsoft.com/en-us/devops/what-is-devops"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "pg-1-1",
+      "lvl": 1,
+      "title": "What is a program, and what is code?",
+      "src": [
+        {
+          "l": "About Python",
+          "u": "https://www.python.org/about/"
+        },
+        {
+          "l": "Python tutorial: an informal introduction",
+          "u": "https://docs.python.org/3/tutorial/introduction.html"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A program is a list of instructions",
+          "t": "A <b>program</b> is a set of instructions that tells a computer what to do, step by step. Your phone apps, the webshop and the CRM are all programs. The computer follows the steps exactly, with no common sense and no guessing.",
+          "g": [
+            [
+              "Program",
+              "A set of instructions a computer follows."
+            ],
+            [
+              "CRM",
+              "Customer relationship management: software that stores customers and deals."
+            ]
+          ]
+        },
+        {
+          "h": "Code is how people write the instructions",
+          "t": "<b>Code</b> (or source code) is the text a developer writes to describe those steps. It is plain text in a <b>programming language</b>, with strict spelling and punctuation. A missing colon can stop a program from running at all.",
+          "g": [
+            [
+              "Source code",
+              "The human-readable text of a program."
+            ],
+            [
+              "Programming language",
+              "A strict, structured way of writing instructions for a computer."
+            ]
+          ]
+        },
+        {
+          "h": "Why are there so many languages?",
+          "t": "Languages differ in style and purpose. <b>Python</b> is known as approachable and is used for web development, databases, scientific computing and education. <b>JavaScript</b> is best known for running in web browsers. No single language is best at everything, so teams pick what fits the job.",
+          "g": [
+            [
+              "Python",
+              "A popular, beginner-friendly programming language."
+            ],
+            [
+              "JavaScript",
+              "The language that makes web pages interactive in a browser."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is a program?",
+          "o": [
+            "A type of cable that connects computers",
+            "A list of instructions a computer follows",
+            "A set of passwords for an app"
+          ],
+          "a": 1,
+          "w": "A program is a set of instructions the computer carries out step by step."
+        },
+        {
+          "q": "A developer writes a missing colon in Python code and the program will not run. What does this show?",
+          "o": [
+            "Code needs strict spelling and punctuation",
+            "The computer will guess what was meant",
+            "Python only works on Fridays"
+          ],
+          "a": 0,
+          "w": "Languages are strict. The computer does not guess, so a small slip can stop the whole program."
+        },
+        {
+          "q": "A customer asks why their team uses both Python and JavaScript. What is a fair answer?",
+          "o": [
+            "One of them is a mistake",
+            "Only JavaScript can store data",
+            "Languages suit different jobs, for example Python for many general tasks and JavaScript in the browser"
+          ],
+          "a": 2,
+          "w": "Different languages fit different jobs, so teams often use more than one."
+        }
+      ]
+    },
+    {
+      "id": "pg-1-2",
+      "lvl": 1,
+      "title": "What does a developer actually do?",
+      "src": [
+        {
+          "l": "Microsoft Learn: What is DevOps?",
+          "u": "https://learn.microsoft.com/en-us/devops/what-is-devops"
+        },
+        {
+          "l": "Python tutorial: errors and exceptions",
+          "u": "https://docs.python.org/3/tutorial/errors.html"
+        },
+        {
+          "l": "Xia et al., Measuring program comprehension (field study)",
+          "u": "https://research.monash.edu/en/publications/measuring-program-comprehension-a-large-scale-field-study-with-pr/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Mostly thinking, then typing",
+          "t": "A developer turns a business need into precise steps a computer can follow. A large field study found developers spend over half their time <b>understanding existing code</b>, besides planning, asking questions and fixing problems. Typing new code is only part of the job.",
+          "g": [
+            [
+              "Developer",
+              "A person who writes, changes and maintains software."
+            ]
+          ]
+        },
+        {
+          "h": "The loop: write, test, review, release",
+          "t": "In the development phase, teams <b>write, test, review and integrate</b> code, then build it for release. Another developer usually looks over a change before it goes in. The work repeats in small steps rather than one giant delivery.",
+          "g": [
+            [
+              "Integrate",
+              "Combine one developer's changes with the team's shared code."
+            ]
+          ]
+        },
+        {
+          "h": "Errors are normal",
+          "t": "Python separates <b>syntax errors</b>, found before the program runs, from <b>exceptions</b>, which appear while it runs on valid code. Hitting errors is part of the daily routine, not a sign of a bad developer.",
+          "g": [
+            [
+              "Syntax error",
+              "Code written wrongly, caught before it runs."
+            ],
+            [
+              "Exception",
+              "An error that happens while a valid program is running."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which describes a developer's day best?",
+          "o": [
+            "Typing code non-stop for eight hours",
+            "Only answering support calls",
+            "Planning, reading code, testing and fixing, plus writing"
+          ],
+          "a": 2,
+          "w": "A lot of the work is reading, planning and fixing, not only typing."
+        },
+        {
+          "q": "What usually happens to a code change before it is released?",
+          "o": [
+            "It goes live straight away, untouched",
+            "It is tested and reviewed",
+            "It is printed and signed"
+          ],
+          "a": 1,
+          "w": "Teams write, test, review and integrate code before releasing it."
+        },
+        {
+          "q": "A developer says the program hit an exception. What does that mean?",
+          "o": [
+            "An error happened while valid code was running",
+            "The code could not be read at all",
+            "The customer cancelled"
+          ],
+          "a": 0,
+          "w": "Exceptions are errors that happen during a run. Syntax errors are caught before the program runs."
+        }
+      ]
+    },
+    {
+      "id": "pg-2-1",
+      "lvl": 2,
+      "title": "Variables, types, lists and dictionaries",
+      "src": [
+        {
+          "l": "Python tutorial: an informal introduction",
+          "u": "https://docs.python.org/3/tutorial/introduction.html"
+        },
+        {
+          "l": "Python tutorial: data structures",
+          "u": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Variables are labelled boxes",
+          "t": "A <b>variable</b> stores a value under a name: <b>age = 30</b>. Values have types: whole numbers (<b>int</b>), decimals (<b>float</b>) and text (<b>str</b>, short for string, written in quotes like <b>\"Helsinki\"</b>). The type decides what you can do with the value.",
+          "g": [
+            [
+              "Variable",
+              "A name that holds a value."
+            ],
+            [
+              "Data type",
+              "The kind of value: number, text and so on."
+            ]
+          ]
+        },
+        {
+          "h": "A list keeps things in order",
+          "t": "A <b>list</b> holds several items in order: <b>cities = [\"Oslo\", \"Turku\", \"Aarhus\"]</b>. You can add items, change them and look at them by position. Counting starts at <b>0</b>, so the first item is number zero.",
+          "g": [
+            [
+              "List",
+              "An ordered, changeable collection of items."
+            ]
+          ]
+        },
+        {
+          "h": "A dictionary looks things up by name",
+          "t": "A <b>dictionary</b> stores <b>key: value</b> pairs, like <b>customer = {\"name\": \"Mika\", \"city\": \"Turku\"}</b>. You ask for a key and get its value. Keys must be unique inside one dictionary. It works like a contact card.",
+          "g": [
+            [
+              "Dictionary",
+              "A collection of key and value pairs, looked up by key."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "In <b>age = 30</b>, what is <b>age</b>?",
+          "o": [
+            "A variable holding the value 30",
+            "A programming language",
+            "An error"
+          ],
+          "a": 0,
+          "w": "A variable is a name that stores a value."
+        },
+        {
+          "q": "Which structure fits 'the name, city and phone number of one customer'?",
+          "o": [
+            "A single number",
+            "A syntax error",
+            "A dictionary with keys like name and city"
+          ],
+          "a": 2,
+          "w": "A dictionary looks up values by key, like fields on a contact card."
+        },
+        {
+          "q": "What is the position number of the first item in a Python list?",
+          "o": [
+            "1",
+            "0",
+            "-1"
+          ],
+          "a": 1,
+          "w": "Python counts from zero, so the first item is position 0."
+        },
+        {
+          "q": "Which is a text value in Python?",
+          "o": [
+            "\"Helsinki\"",
+            "30",
+            "5.0"
+          ],
+          "a": 0,
+          "w": "Text, called a string, is written in quotes. 30 is an int and 5.0 is a float."
+        }
+      ]
+    },
+    {
+      "id": "pg-2-2",
+      "lvl": 2,
+      "title": "Decisions, loops and functions",
+      "src": [
+        {
+          "l": "Python tutorial: more control flow tools",
+          "u": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Conditions: if this, then that",
+          "t": "An <b>if</b> statement runs a block only when a test is true. <b>elif</b> means 'else if' and <b>else</b> catches the rest: <b>if stock &lt; 5:</b> order more. Almost every business rule in software, like a discount threshold, is a condition.",
+          "g": [
+            [
+              "Condition",
+              "A test that is either true or false."
+            ]
+          ]
+        },
+        {
+          "h": "Loops: repeat without retyping",
+          "t": "A <b>for</b> loop repeats steps for every item in a list: <b>for c in cities:</b> do something with <b>c</b>. A loop lets one short piece of code handle ten customers or ten thousand. It is the reason computers are good at boring jobs.",
+          "g": [
+            [
+              "Loop",
+              "Code that repeats for each item or until a test changes."
+            ]
+          ]
+        },
+        {
+          "h": "Functions: named, reusable steps",
+          "t": "A <b>function</b> packages steps under a name, defined with <b>def</b>. You call it whenever needed instead of copying code. A function may send back a result with <b>return</b>. Reuse means a fix in one place helps everywhere it is used.",
+          "g": [
+            [
+              "Function",
+              "A named block of code you can run again and again."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A developer writes 'if the order is over a set value, add free delivery'. What is this?",
+          "o": [
+            "A loop",
+            "A condition",
+            "A dictionary"
+          ],
+          "a": 1,
+          "w": "A rule that depends on a true or false test is a condition."
+        },
+        {
+          "q": "You need to send the same reminder to every customer in a list. Which idea fits?",
+          "o": [
+            "A loop over the list",
+            "One variable",
+            "A syntax error"
+          ],
+          "a": 0,
+          "w": "A for loop repeats the same steps for each item."
+        },
+        {
+          "q": "Why do developers use functions?",
+          "o": [
+            "To make the code run slower",
+            "To avoid using variables",
+            "To reuse named steps instead of copying code"
+          ],
+          "a": 2,
+          "w": "Functions let you write steps once and reuse them, so a fix applies everywhere."
+        }
+      ]
+    },
+    {
+      "id": "pg-3-1",
+      "lvl": 3,
+      "title": "How a website talks to a server",
+      "src": [
+        {
+          "l": "MDN: What is JavaScript?",
+          "u": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/What_is_JavaScript"
+        },
+        {
+          "l": "MDN: How the web works",
+          "u": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"
+        },
+        {
+          "l": "MDN: 500 Internal Server Error",
+          "u": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status/500"
+        },
+        {
+          "l": "MDN: Server-side first steps",
+          "u": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/First_steps/Introduction"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Three layers on every page",
+          "t": "<ul><li><b>HTML</b>: structure and meaning, such as headings and buttons</li><li><b>CSS</b>: appearance, such as colours, fonts and layout</li><li><b>JavaScript</b>: behaviour, such as reacting to clicks</li></ul>All three run in the browser. This is the <b>front end</b>.",
+          "g": [
+            [
+              "Front end",
+              "The part of an app the user sees and clicks, running in the browser."
+            ]
+          ]
+        },
+        {
+          "h": "Request and response",
+          "t": "A <b>client</b>, usually your browser, sends an HTTP <b>request</b> to a <b>server</b>, a computer that stores the site. The server answers with a status code and the page. <b>200</b> means success, <b>404</b> not found, <b>500</b> a server error.",
+          "g": [
+            [
+              "HTTP",
+              "The set of rules browsers and servers use to exchange pages and data."
+            ],
+            [
+              "Server",
+              "A computer that stores sites or apps and answers requests."
+            ]
+          ]
+        },
+        {
+          "h": "The back end does the real work",
+          "t": "The <b>back end</b> is code running on the server. It checks who you are, reads and writes data and decides what to send back. When a customer says 'the site is slow', the cause may be front end, back end or the network between.",
+          "g": [
+            [
+              "Back end",
+              "Code on the server that handles logic and data."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which layer controls colours and fonts of a web page?",
+          "o": [
+            "HTML",
+            "JavaScript",
+            "CSS"
+          ],
+          "a": 2,
+          "w": "CSS handles appearance. HTML gives structure and JavaScript gives behaviour."
+        },
+        {
+          "q": "A browser asks a server for a page and gets status 404. What happened?",
+          "o": [
+            "The page was found and sent",
+            "The page was not found",
+            "The server crashed"
+          ],
+          "a": 1,
+          "w": "404 means not found. 200 is success and 500 is a server error."
+        },
+        {
+          "q": "Where does back end code run?",
+          "o": [
+            "On the server",
+            "Only on the user's phone screen",
+            "Inside the printer"
+          ],
+          "a": 0,
+          "w": "The back end runs on a server and handles logic and data."
+        }
+      ]
+    },
+    {
+      "id": "pg-3-2",
+      "lvl": 3,
+      "title": "Databases and the cloud, in plain words",
+      "src": [
+        {
+          "l": "Microsoft Learn: Understand data models",
+          "u": "https://learn.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/understand-data-store-models"
+        },
+        {
+          "l": "Microsoft Learn: Choose a compute service",
+          "u": "https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A database is organised storage",
+          "t": "A <b>relational database</b> organises data in <b>tables</b>, like linked spreadsheets, and is queried with <b>SQL</b>. It suits things like orders, inventory and billing, where consistency matters. Other kinds, such as document stores, suit data whose shape changes.",
+          "g": [
+            [
+              "SQL",
+              "A language for asking a relational database for data."
+            ],
+            [
+              "Relational database",
+              "A database that stores data in linked tables."
+            ]
+          ]
+        },
+        {
+          "h": "The cloud is someone else's servers",
+          "t": "In the cloud, a provider runs the machines and you rent what you need. With <b>IaaS</b> you get virtual machines and manage them yourself. With <b>PaaS</b> the provider also runs the platform, so developers just deploy their app.",
+          "g": [
+            [
+              "IaaS",
+              "Infrastructure as a service: you rent virtual machines and manage them."
+            ],
+            [
+              "PaaS",
+              "Platform as a service: you deploy code, the provider runs the platform."
+            ]
+          ]
+        },
+        {
+          "h": "The trade-off: control versus effort",
+          "t": "More control means more work. IaaS gives the most control and flexibility but you set up and manage the machines. Managed services take work off the team. This trade-off is behind many 'where do we host it?' conversations.",
+          "g": [
+            [
+              "Hosting",
+              "Running an app on a server so users can reach it."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which fits a relational database best?",
+          "o": [
+            "Orders and inventory that must stay consistent",
+            "Storing a holiday photo",
+            "Writing CSS colours"
+          ],
+          "a": 0,
+          "w": "Relational databases suit consistent, structured data like orders, inventory and billing."
+        },
+        {
+          "q": "A team wants to deploy code without managing virtual machines. Which model fits?",
+          "o": [
+            "IaaS",
+            "A paper archive",
+            "PaaS"
+          ],
+          "a": 2,
+          "w": "With PaaS the provider runs the platform, so the team only deploys the app."
+        },
+        {
+          "q": "What does choosing IaaS mean for the customer's team?",
+          "o": [
+            "No control and no work",
+            "More control, but they manage the machines",
+            "The provider writes their code"
+          ],
+          "a": 1,
+          "w": "IaaS gives the most control, and the customer manages the virtual machines and networking."
+        }
+      ]
+    },
+    {
+      "id": "pg-3-3",
+      "lvl": 3,
+      "title": "APIs and JSON",
+      "src": [
+        {
+          "l": "MDN: Client-side web APIs introduction",
+          "u": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Introduction"
+        },
+        {
+          "l": "MDN: Working with JSON",
+          "u": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/JSON"
+        },
+        {
+          "l": "Microsoft Learn: Web API design",
+          "u": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design"
+        },
+        {
+          "l": "MDN: API (glossary)",
+          "u": "https://developer.mozilla.org/en-US/docs/Glossary/API"
+        }
+      ],
+      "pages": [
+        {
+          "h": "An API is a socket in the wall",
+          "t": "An <b>API</b> is a simple, agreed way for one piece of software to ask another to do something. MDN compares it to a power socket: you plug in without wiring the power plant. Many online services offer APIs for other software to use.",
+          "g": [
+            [
+              "API",
+              "Application Programming Interface: an agreed way for software to talk to other software."
+            ]
+          ]
+        },
+        {
+          "h": "Web APIs use HTTP verbs",
+          "t": "Many web APIs use <b>HTTP</b> verbs on addresses for things: <b>GET</b> reads, <b>POST</b> creates, <b>PUT</b> and <b>PATCH</b> update, <b>DELETE</b> removes. An address like <b>/orders/1</b> points to one order. These are called <b>REST</b> APIs.",
+          "g": [
+            [
+              "REST",
+              "A common style of web API built on HTTP verbs and addresses for resources."
+            ]
+          ]
+        },
+        {
+          "h": "JSON is the shared language",
+          "t": "<b>JSON</b> is plain text for structured data that many programming languages can read. It uses <b>{ }</b> for objects with <b>\"key\": value</b> pairs and <b>[ ]</b> for lists. Example: <b>{\"name\": \"Mika\", \"active\": true}</b>. Notice it looks like a Python dictionary.",
+          "g": [
+            [
+              "JSON",
+              "A text format for sending structured data between systems."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is an API?",
+          "o": [
+            "A type of database",
+            "An agreed way for software to talk to other software",
+            "A web page colour scheme"
+          ],
+          "a": 1,
+          "w": "An API is a simple, agreed interface between pieces of software."
+        },
+        {
+          "q": "Which HTTP verb is normally used to read an order from a REST API?",
+          "o": [
+            "GET",
+            "DELETE",
+            "POST"
+          ],
+          "a": 0,
+          "w": "GET reads, POST creates, PUT and PATCH update and DELETE removes."
+        },
+        {
+          "q": "A partner says their system can send you the data as JSON. What does that mean?",
+          "o": [
+            "A paper form",
+            "A video file",
+            "Structured data as plain text that many languages can read"
+          ],
+          "a": 2,
+          "w": "JSON is a plain text format for structured data, readable by many programming languages."
+        }
+      ]
+    },
+    {
+      "id": "pg-4-1",
+      "lvl": 4,
+      "title": "Git, version control and open source",
+      "src": [
+        {
+          "l": "Pro Git: About version control",
+          "u": "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control"
+        },
+        {
+          "l": "GitHub Docs: About GitHub and Git",
+          "u": "https://docs.github.com/en/get-started/start-your-journey/about-github-and-git"
+        },
+        {
+          "l": "Open Source Definition",
+          "u": "https://opensource.org/osd"
+        },
+        {
+          "l": "Open Source Initiative: licenses",
+          "u": "https://opensource.org/licenses"
+        },
+        {
+          "l": "Microsoft Learn: What is DevOps? (version control)",
+          "u": "https://learn.microsoft.com/en-us/devops/what-is-devops"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Version control remembers every change",
+          "t": "<b>Version control</b> records changes to files over time so you can go back, compare versions and see who changed what. <b>Git</b> is the tool teams usually use. Every developer holds a full copy of the history, so each copy is also a backup.",
+          "g": [
+            [
+              "Version control",
+              "A system that records every change to a project's files."
+            ],
+            [
+              "Git",
+              "A widely used distributed version control tool."
+            ]
+          ]
+        },
+        {
+          "h": "GitHub is not Git",
+          "t": "<b>Git</b> tracks changes. <b>GitHub</b> is a platform that hosts Git projects, called <b>repositories</b>, in the cloud and adds teamwork tools. A <b>pull request</b> proposes a change so others can review and discuss it before it is merged.",
+          "g": [
+            [
+              "Repository",
+              "A project and its full change history."
+            ],
+            [
+              "Pull request",
+              "A proposed change, open for review before merging."
+            ]
+          ]
+        },
+        {
+          "h": "Open source and licences",
+          "t": "<b>Open source</b> means more than visible code. Its licence allows free use, modification and sharing. Well-known licences include <b>MIT</b>, <b>Apache 2.0</b> and <b>GPL 3.0</b>. Python itself is open source. Always check the licence before a customer builds on a component.",
+          "g": [
+            [
+              "Licence",
+              "The legal terms that say how software may be used and shared."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the main benefit of version control?",
+          "o": [
+            "It makes code run faster",
+            "It replaces testing",
+            "It records changes so you can compare and go back"
+          ],
+          "a": 2,
+          "w": "Version control records changes over time so you can revert, compare and see who changed what."
+        },
+        {
+          "q": "Which statement is correct?",
+          "o": [
+            "Git and GitHub are the same thing",
+            "GitHub hosts Git projects and adds collaboration tools",
+            "Git only works in the cloud"
+          ],
+          "a": 1,
+          "w": "Git tracks changes, GitHub hosts Git repositories and adds teamwork features."
+        },
+        {
+          "q": "What does 'open source' require beyond showing the code?",
+          "o": [
+            "A licence that allows use, changes and sharing",
+            "Nothing, seeing it is enough",
+            "That it must be free of bugs"
+          ],
+          "a": 0,
+          "w": "Open source means the licence allows free use, modification and sharing."
+        }
+      ]
+    },
+    {
+      "id": "pg-4-2",
+      "lvl": 4,
+      "title": "Bugs, tests and automation",
+      "src": [
+        {
+          "l": "Microsoft Learn: Testing in .NET",
+          "u": "https://learn.microsoft.com/en-us/dotnet/core/testing/"
+        },
+        {
+          "l": "Microsoft Learn: What is DevOps?",
+          "u": "https://learn.microsoft.com/en-us/devops/what-is-devops"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A bug is a mistake in the code",
+          "t": "A <b>bug</b> is a mistake that makes software do something unintended. Bugs are normal, so teams look for them early. Finding and fixing one before release costs less than fixing it after customers hit it. That is why testing matters.",
+          "g": [
+            [
+              "Bug",
+              "A mistake in software that causes wrong behaviour."
+            ]
+          ]
+        },
+        {
+          "h": "Automated tests check the code for you",
+          "t": "A <b>unit test</b> checks one small piece of code. An <b>integration test</b> checks that several pieces work together. A <b>load test</b> checks the system can cope with many users. Tests are code too, so they can run automatically.",
+          "g": [
+            [
+              "Unit test",
+              "A test of one small piece of code."
+            ],
+            [
+              "Integration test",
+              "A test that parts of a system work together."
+            ]
+          ]
+        },
+        {
+          "h": "CI/CD and DevOps",
+          "t": "<b>Continuous integration (CI)</b> automatically merges and tests code to catch bugs early. <b>Continuous delivery (CD)</b> builds, tests and deploys it. <b>DevOps</b> joins development and operations so teams release in short cycles.",
+          "g": [
+            [
+              "CI/CD",
+              "Automatic building, testing and delivery of software."
+            ],
+            [
+              "DevOps",
+              "Working practices that combine development and operations."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A developer says the bug was caught by the automated tests before release. Why is this good?",
+          "o": [
+            "Bugs are cheaper to fix early",
+            "It means no more testing is needed",
+            "It means the code was never changed"
+          ],
+          "a": 0,
+          "w": "CI catches bugs early, which makes them less expensive to fix."
+        },
+        {
+          "q": "Which test checks whether the system copes with many users at once?",
+          "o": [
+            "Unit test",
+            "Syntax check",
+            "Load test"
+          ],
+          "a": 2,
+          "w": "Load tests check whether a system can handle a given number of users or interactions."
+        },
+        {
+          "q": "What does continuous integration do?",
+          "o": [
+            "Replaces the developers",
+            "Automatically merges and tests code changes",
+            "Sends invoices"
+          ],
+          "a": 1,
+          "w": "CI automates merging and testing code so problems show up early."
+        }
+      ]
+    },
+    {
+      "id": "pg-4-3",
+      "lvl": 4,
+      "title": "Security basics every salesperson can use",
+      "src": [
+        {
+          "l": "OWASP Secrets Management Cheat Sheet",
+          "u": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+        },
+        {
+          "l": "Microsoft Learn: What is DevOps?",
+          "u": "https://learn.microsoft.com/en-us/devops/what-is-devops"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Secrets do not belong in code",
+          "t": "<b>Secrets</b> are passwords, API keys and tokens. If they are hard-coded, anyone who can read the code can read them. Good teams keep secrets in a protected place and inject them when the software runs.",
+          "g": [
+            [
+              "Secret",
+              "A password, key or token that grants access."
+            ],
+            [
+              "API key",
+              "A secret code that identifies and authorises a program calling an API."
+            ]
+          ]
+        },
+        {
+          "h": "Leaks happen: revoke and rotate",
+          "t": "If a secret leaks, it must be <b>revoked</b>, <b>rotated</b> (replaced with a new one) and removed from the exposed code or logs. OWASP also advises regular rotation, so a stolen credential only works for a short time.",
+          "g": [
+            [
+              "Rotation",
+              "Replacing a secret with a new one on a schedule or after a leak."
+            ]
+          ]
+        },
+        {
+          "h": "Watch live systems",
+          "t": "Teams automate delivery and watch live systems through <b>monitoring</b> and alerts, so problems show up fast. Keeping the systems healthy is part of the job. A useful question for a customer: who owns updates and key rotation here?",
+          "g": [
+            [
+              "Monitoring",
+              "Watching a running system's health and sending alerts."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Why is a password typed directly into source code risky?",
+          "o": [
+            "It makes the program slower",
+            "Anyone with access to the code can read it",
+            "Passwords are not allowed in Python"
+          ],
+          "a": 1,
+          "w": "Hard-coded secrets sit in plain text in the code and any reader can see them."
+        },
+        {
+          "q": "An API key was accidentally published. What should happen first?",
+          "o": [
+            "Revoke and replace it",
+            "Wait and see",
+            "Ignore it if few people saw it"
+          ],
+          "a": 0,
+          "w": "A leaked secret must be revoked, rotated and removed from the exposed code."
+        },
+        {
+          "q": "What does rotating a secret mean?",
+          "o": [
+            "Hiding it in a folder",
+            "Sharing it with more people",
+            "Replacing it with a new one"
+          ],
+          "a": 2,
+          "w": "Rotation replaces a secret, so a stolen one stops working."
+        }
+      ]
+    },
+    {
+      "id": "pg-5-1",
+      "lvl": 5,
+      "title": "Low-code and AI assistants",
+      "src": [
+        {
+          "l": "Microsoft Learn: Power Apps canvas apps",
+          "u": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/getting-started"
+        },
+        {
+          "l": "GitHub Docs: What is GitHub Copilot?",
+          "u": "https://docs.github.com/en/copilot/get-started/what-is-github-copilot"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Low-code: build with blocks, not code",
+          "t": "<b>Low-code</b> tools let people build business apps by dragging and connecting components. Microsoft Power Apps canvas apps are built without writing code and can connect to data in Excel, SharePoint and Dataverse. Microsoft describes uses from simple data entry forms to business workflows.",
+          "g": [
+            [
+              "Low-code or no-code",
+              "Tools for building apps with visual blocks instead of writing code."
+            ]
+          ]
+        },
+        {
+          "h": "AI coding assistants",
+          "t": "Tools like <b>GitHub Copilot</b> suggest code, answer questions, explain code and can work through multi-step tasks. GitHub's own guidance says you stay responsible for reviewing and approving the result, so AI changes who types, not who is accountable.",
+          "g": [
+            [
+              "AI coding assistant",
+              "Software that suggests or writes code from a description."
+            ]
+          ]
+        },
+        {
+          "h": "Build or buy?",
+          "t": "A customer with a need has three broad routes: <b>buy</b> a ready product, <b>configure</b> a low-code tool, or <b>build</b> custom code. Buying is usually quicker to start, custom code fits exactly but must be maintained for years. Ask what is special about the need.",
+          "g": [
+            [
+              "Build vs buy",
+              "The choice between custom software and a ready-made product."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A department wants a simple internal request form on top of SharePoint data, built by an office worker. Which fits?",
+          "o": [
+            "A new programming language",
+            "A custom database engine",
+            "Low-code tool such as Power Apps"
+          ],
+          "a": 2,
+          "w": "Power Apps canvas apps are built without writing code and connect to sources like SharePoint."
+        },
+        {
+          "q": "A customer says AI now writes their code, so they dropped reviews. What is a good response?",
+          "o": [
+            "That is smart, reviews are old-fashioned",
+            "Humans stay responsible and should still review",
+            "AI code never has bugs"
+          ],
+          "a": 1,
+          "w": "GitHub says you remain responsible for reviewing and approving what the assistant produces."
+        },
+        {
+          "q": "A customer needs a standard function that many ready products already offer. What is a sensible first question?",
+          "o": [
+            "Why not buy or configure a ready product before building?",
+            "Which language is coolest?",
+            "Can we build everything from scratch?"
+          ],
+          "a": 0,
+          "w": "Custom code must be maintained for years, so ask what is special about the need before building."
+        }
+      ]
+    },
+    {
+      "id": "pg-5-2",
+      "lvl": 5,
+      "title": "Technical debt, estimates and integrations",
+      "src": [
+        {
+          "l": "Martin Fowler: Technical debt",
+          "u": "https://martinfowler.com/bliki/TechnicalDebt.html"
+        },
+        {
+          "l": "Microsoft Learn: Web API design",
+          "u": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Technical debt is a loan on the code",
+          "t": "Ward Cunningham's metaphor: messy code, called <b>cruft</b>, is like a debt. The <b>interest</b> is the extra effort every future change costs. Cleaning up is paying the principal. Fowler warns that taking debt to ship faster often backfires.",
+          "g": [
+            [
+              "Technical debt",
+              "The future cost of shortcuts and poor code quality."
+            ]
+          ]
+        },
+        {
+          "h": "Why estimates are hard",
+          "t": "New work often involves things nobody has done before, in code a developer has not fully read, so a 'two day job' can reveal surprises. Messy code makes each change slower. A fair question for a technician is 'what are you least sure about?'.",
+          "g": [
+            [
+              "Estimate",
+              "A guess of how long or how large a piece of work will be."
+            ]
+          ]
+        },
+        {
+          "h": "Integrations are fragile joins",
+          "t": "Connecting two systems through an API means agreeing on addresses, data formats like JSON and rules for each side. If one side changes its API, the other must follow. Microsoft advises keeping APIs simple, so clients stay isolated from internal changes.",
+          "g": [
+            [
+              "Integration",
+              "A connection that lets two systems exchange data or actions."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "In the technical debt metaphor, what is the 'interest'?",
+          "o": [
+            "The extra effort each future change costs",
+            "The licence fee",
+            "The price of cloud servers"
+          ],
+          "a": 0,
+          "w": "Cruft slows future changes. That extra effort is the interest."
+        },
+        {
+          "q": "A technician gives a very confident estimate for a new, unclear task. What is a good question?",
+          "o": [
+            "Can you make it twice as fast?",
+            "Why do you not write less code?",
+            "What are you least sure about?"
+          ],
+          "a": 2,
+          "w": "Estimates for unfamiliar work hide uncertainty. Asking about the unknowns shows the real risk."
+        },
+        {
+          "q": "Why can an integration between two systems break later?",
+          "o": [
+            "JSON stops working on Mondays",
+            "One system changes its API or data format",
+            "Cables wear out in the code"
+          ],
+          "a": 1,
+          "w": "Both sides must follow the agreed address, format and rules, so a change on one side can break the join."
+        }
+      ]
+    }
+  ]
+}

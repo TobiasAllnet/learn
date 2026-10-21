@@ -1,0 +1,930 @@
+{
+  "title": "Insta360",
+  "desc": "360 cameras, action cameras, gimbals and webcams",
+  "src": [
+    {
+      "l": "Insta360 official site",
+      "u": "https://www.insta360.com/"
+    },
+    {
+      "l": "Insta360 about us",
+      "u": "https://www.insta360.com/about"
+    },
+    {
+      "l": "Insta360 X6",
+      "u": "https://www.insta360.com/product/insta360-x6"
+    },
+    {
+      "l": "Insta360 Ace Pro 2",
+      "u": "https://www.insta360.com/product/insta360-ace-pro2"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "in-1-1",
+      "lvl": 1,
+      "title": "Who is Insta360?",
+      "src": [
+        {
+          "l": "Insta360 about us",
+          "u": "https://www.insta360.com/about"
+        },
+        {
+          "l": "Insta360 homepage",
+          "u": "https://www.insta360.com/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A 360 camera pioneer",
+          "t": "Insta360 was founded in <b>2015</b> and calls itself the <b>world's leading 360 camera brand</b>, citing a Frost and Sullivan report on 2023 market share. Its founder is <b>JK Liu</b>. Offices include Los Angeles, Tokyo, Berlin, Shenzhen and Hong Kong.",
+          "g": [
+            [
+              "360 camera",
+              "A camera that records the whole sphere around it, not just one direction."
+            ]
+          ]
+        },
+        {
+          "h": "More than 360 cameras",
+          "t": "Today the range covers <b>360 cameras</b>, <b>action cameras</b>, tiny hands-free cameras, <b>gimbal cameras</b>, phone gimbals, webcams, microphones and accessories. The brand is built around people who want to capture and share moments, from riders to creators.",
+          "g": [
+            [
+              "Gimbal",
+              "A motorised holder that keeps a camera or phone steady while you move."
+            ]
+          ]
+        },
+        {
+          "h": "Where Allnet fits",
+          "t": "Insta360 also sells through its own online store, and through resellers. Allnet Nordic is a <b>distributor</b>: we supply resellers, and they sell to the end customer. So you need to know the lines and which customer buys each one.",
+          "g": [
+            [
+              "Distributor",
+              "Buys from the vendor and sells to resellers, not to end users."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which description fits Insta360 best?",
+          "o": [
+            "A security camera maker for offices",
+            "A brand best known for 360 cameras, now with a wider range of cameras and gear",
+            "A phone maker that also sells cameras"
+          ],
+          "a": 1,
+          "w": "Insta360 started with 360 cameras in 2015 and now also makes action cameras, gimbals and webcams."
+        },
+        {
+          "q": "Who is Allnet's direct customer for Insta360?",
+          "o": [
+            "The person who films their ride",
+            "Insta360's own online store",
+            "The reseller who sells to end customers"
+          ],
+          "a": 2,
+          "w": "A distributor sells to resellers. Resellers sell on to the end customer."
+        },
+        {
+          "q": "What does Insta360 itself say about its position?",
+          "o": [
+            "It is the world's leading 360 camera brand, based on a market share report",
+            "It is the biggest action camera brand overall",
+            "It only makes cameras for professionals"
+          ],
+          "a": 0,
+          "w": "The about page cites a Frost and Sullivan report on panoramic (360) cameras. It makes no claim about all action cameras."
+        }
+      ]
+    },
+    {
+      "id": "in-1-2",
+      "lvl": 1,
+      "title": "What is a 360 camera?",
+      "src": [
+        {
+          "l": "Insta360 X5",
+          "u": "https://www.insta360.com/product/insta360-x5"
+        },
+        {
+          "l": "Insta360 X6",
+          "u": "https://www.insta360.com/product/insta360-x6"
+        }
+      ],
+      "pages": [
+        {
+          "h": "It films everything",
+          "t": "A 360 camera has lenses facing opposite ways and joins the pictures into one sphere. You press record and capture <b>everything around you</b> at once. The camera does the joining for you.",
+          "g": [
+            [
+              "Stitching",
+              "Joining the pictures from several lenses into one seamless image."
+            ]
+          ]
+        },
+        {
+          "h": "Frame it afterwards",
+          "t": "The big idea is <b>shoot first, frame later</b>. Record without aiming, then pick the best angles in the Insta360 app. This is called <b>reframing</b>. Nobody misses the moment because the camera was pointing the wrong way.",
+          "g": [
+            [
+              "Reframing",
+              "Choosing the viewing angle and crop after the footage has been recorded."
+            ]
+          ]
+        },
+        {
+          "h": "The invisible selfie stick",
+          "t": "The camera sees in every direction, so a selfie stick held below it can be <b>hidden in the result</b>. The footage looks like a drone or a second cameraman filmed it. Insta360 shows this trick prominently on its product pages."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does 'shoot first, frame later' mean?",
+          "o": [
+            "You record everything around you and choose the angle afterwards",
+            "You take photos first and video later",
+            "You edit on the camera before recording"
+          ],
+          "a": 0,
+          "w": "A 360 camera captures every direction, so the framing happens in the app after recording."
+        },
+        {
+          "q": "Why does the selfie stick seem to disappear?",
+          "o": [
+            "It is made of clear plastic",
+            "The camera sees all around and the stick is hidden in the result",
+            "The camera blurs anything near it"
+          ],
+          "a": 1,
+          "w": "Insta360 says the stick is not in sight in the final footage, which gives third-person, drone-like angles."
+        },
+        {
+          "q": "A customer keeps missing shots because they point the camera the wrong way. Which idea helps?",
+          "o": [
+            "A longer cable",
+            "A 360 camera and reframing later",
+            "A bigger memory card"
+          ],
+          "a": 1,
+          "w": "Because a 360 camera records every direction, nothing is missed and the angle is chosen later."
+        }
+      ]
+    },
+    {
+      "id": "in-2-1",
+      "lvl": 2,
+      "title": "The X series: 360 cameras",
+      "src": [
+        {
+          "l": "Insta360 X6",
+          "u": "https://www.insta360.com/product/insta360-x6"
+        },
+        {
+          "l": "Insta360 X5",
+          "u": "https://www.insta360.com/product/insta360-x5"
+        },
+        {
+          "l": "Insta360 homepage",
+          "u": "https://www.insta360.com/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Current X models",
+          "t": "The X series is the core <b>360 camera</b> line. On the homepage (checked 21 Oct 2026) <b>X6</b> is called the flagship 8K 360 camera and <b>X5</b> the best value 8K 360 camera.",
+          "g": [
+            [
+              "8K",
+              "Very high video resolution: 8K has about 16 times the pixels of Full HD, and four times 4K."
+            ]
+          ]
+        },
+        {
+          "h": "What makes it special",
+          "t": "X5 and X6 both have <b>replaceable lenses</b>, so a scratched lens can be swapped instead of replacing the camera. They also offer the invisible selfie stick effect, <b>FlowState</b> stabilisation and a <b>horizon lock</b> that keeps videos level.",
+          "g": [
+            [
+              "FlowState",
+              "Insta360's software stabilisation that smooths out shake without a gimbal."
+            ]
+          ]
+        },
+        {
+          "h": "Flat video too",
+          "t": "The X series can also record normal flat video, so it can act like an action camera. X5 is <b>waterproof to 15 m</b>, and the Invisible Dive Case is made for deeper underwater 360 shots. Best fit: riders, travellers and creators who want every angle."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which X model does Insta360 call its flagship?",
+          "o": [
+            "X5",
+            "X6",
+            "X4 Air"
+          ],
+          "a": 1,
+          "w": "On the homepage checked 21 Oct 2026, X6 is the flagship 8K 360 camera."
+        },
+        {
+          "q": "A customer is worried about scratching the lens. What is a good point about X5 and X6?",
+          "o": [
+            "The lenses can be replaced",
+            "They have no lenses",
+            "They can only be used indoors"
+          ],
+          "a": 0,
+          "w": "Replaceable lenses mean a damaged lens can be swapped without replacing the whole camera."
+        },
+        {
+          "q": "What does the horizon lock do?",
+          "o": [
+            "Keeps the video level even when the camera tilts",
+            "Locks the camera to one phone",
+            "Stops the camera being stolen"
+          ],
+          "a": 0,
+          "w": "The horizon lock keeps footage anchored to the skyline, useful for bikes and tight turns."
+        }
+      ]
+    },
+    {
+      "id": "in-2-2",
+      "lvl": 2,
+      "title": "Ace Pro 2: the action camera",
+      "src": [
+        {
+          "l": "Insta360 Ace Pro 2",
+          "u": "https://www.insta360.com/product/insta360-ace-pro2"
+        },
+        {
+          "l": "Wikipedia: action camera (body camera article)",
+          "u": "https://en.wikipedia.org/wiki/Action_camera"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A classic action camera",
+          "t": "Ace Pro 2 is the <b>traditional action camera</b>: one lens facing forward, small, rugged and waterproof. An action camera is usually mounted on a helmet, chest or handlebar and left to record.",
+          "g": [
+            [
+              "Action camera",
+              "A small rugged camera for filming sport and adventure, mounted on a helmet, bike or body."
+            ]
+          ]
+        },
+        {
+          "h": "What Insta360 highlights",
+          "t": "The lens is co-engineered with <b>Leica</b> and the sensor is a 1/1.3 inch <b>8K</b> one. Other points: a flip screen, a built-in wind guard for clearer sound, and a wide-angle lens made for POV shots, for example on two wheels.",
+          "g": [
+            [
+              "POV",
+              "Point of view: footage that shows what you see."
+            ]
+          ]
+        },
+        {
+          "h": "Rugged by design",
+          "t": "It is <b>waterproof to 12 m</b> out of the box, and to 60 m with the Dive Case. A removable lens guard protects the lens. Best fit: riders, divers and sports customers who want one robust camera, not a 360 one."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which company co-engineered the Ace Pro 2 lens?",
+          "o": [
+            "Sony",
+            "Leica",
+            "Samsung"
+          ],
+          "a": 1,
+          "w": "The Ace Pro 2 page names a Leica Summarit lens co-engineered with Leica."
+        },
+        {
+          "q": "A customer wants a small rugged camera that points forward and is simple to use. Which line fits?",
+          "o": [
+            "Ace Pro 2",
+            "Link 2 Pro",
+            "Flow 2 Pro"
+          ],
+          "a": 0,
+          "w": "Ace Pro 2 is the single-lens action camera. Link is a webcam and Flow is a phone gimbal."
+        },
+        {
+          "q": "How does the Ace Pro 2 handle water out of the box?",
+          "o": [
+            "It cannot get wet",
+            "It is waterproof to 12 m",
+            "Only a screen cover makes it waterproof"
+          ],
+          "a": 1,
+          "w": "The product page states waterproof to 39 ft (12 m), deeper with the Dive Case."
+        }
+      ]
+    },
+    {
+      "id": "in-2-3",
+      "lvl": 2,
+      "title": "GO Ultra and GO 3S: tiny cameras",
+      "src": [
+        {
+          "l": "Insta360 GO Ultra",
+          "u": "https://www.insta360.com/product/insta360-go-ultra"
+        },
+        {
+          "l": "Insta360 GO 3S",
+          "u": "https://www.insta360.com/product/insta360-go3s"
+        },
+        {
+          "l": "Insta360 homepage",
+          "u": "https://www.insta360.com/"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Tiny and hands-free",
+          "t": "The <b>GO line</b> is Insta360's ultra-small camera family. GO Ultra weighs just <b>53 g</b> and shoots 4K. It attaches with <b>magnets</b>, a pendant, a clip or sticky tabs, so it films from your point of view without holding it.",
+          "g": [
+            [
+              "Magnetic mount",
+              "A mount that holds the camera with magnets, so it clicks on and off in seconds."
+            ]
+          ]
+        },
+        {
+          "h": "Camera plus Action Pod",
+          "t": "The small camera of the GO Ultra can sit in the <b>Action Pod</b>. The pod adds a flip touchscreen and a much longer battery life. The camera also works alone, for example stuck to a helmet or a stroller.",
+          "g": [
+            [
+              "Action Pod",
+              "The pocket-sized holder that adds a screen and battery to the small GO camera."
+            ]
+          ]
+        },
+        {
+          "h": "Which one is which",
+          "t": "On the homepage (21 Oct 2026) <b>GO Ultra</b> is the tiny hands-free 4K camera, and <b>GO 3S</b> is a tiny 4K camera that is still listed beside it. GO suits vlogs, cycling, running and travel, when a bigger camera feels like too much."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the main idea of the GO line?",
+          "o": [
+            "The smallest cameras for hands-free POV shooting",
+            "The highest resolution cameras",
+            "Webcams for meetings"
+          ],
+          "a": 0,
+          "w": "GO cameras are tiny and mount anywhere, for hands-free POV video."
+        },
+        {
+          "q": "What does the Action Pod add?",
+          "o": [
+            "A selfie stick",
+            "A flip screen and extra battery for the small camera",
+            "A 360 lens"
+          ],
+          "a": 1,
+          "w": "The pod gives the small GO camera a touchscreen and longer battery life."
+        },
+        {
+          "q": "A customer wants a camera to stick on a bike helmet and forget. Which fits best?",
+          "o": [
+            "A phone gimbal",
+            "A webcam",
+            "A tiny GO camera"
+          ],
+          "a": 2,
+          "w": "GO is built for hands-free mounting, including on helmets and handlebars."
+        }
+      ]
+    },
+    {
+      "id": "in-3-1",
+      "lvl": 3,
+      "title": "Gimbals: Flow 2 and Luna",
+      "src": [
+        {
+          "l": "Insta360 Flow 2 series",
+          "u": "https://www.insta360.com/product/insta360-flow2-pro"
+        },
+        {
+          "l": "Insta360 Luna Ultra",
+          "u": "https://www.insta360.com/product/insta360-luna-ultra"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Flow 2: a gimbal for phones",
+          "t": "The <b>Flow 2 series</b> (Flow 2, Flow 2 Plus, Flow 2 Pro) holds a smartphone and keeps it steady and pointed at you. Flow 2 Pro uses Apple's tracking, so it can follow a person in the iPhone camera app and many other iOS apps.",
+          "g": [
+            [
+              "3-axis stabilisation",
+              "The gimbal steadies the phone on three directions of movement."
+            ],
+            [
+              "Tracking",
+              "The gimbal turns on its own to keep a person in the frame."
+            ]
+          ]
+        },
+        {
+          "h": "Built-in extras",
+          "t": "Flow 2 has a <b>built-in tripod</b> and <b>selfie stick</b>, works as a power bank and has a teleprompter function. The separate <b>AI Tracker</b> that tracks in any app, iOS or Android, is included in Flow 2 Plus, not in Flow 2 or Flow 2 Pro.",
+          "g": [
+            [
+              "Teleprompter",
+              "A scrolling script on screen so you can read while looking at the camera."
+            ]
+          ]
+        },
+        {
+          "h": "Luna: a gimbal camera",
+          "t": "<b>Luna Ultra</b> is a different thing: a camera with the gimbal built in, no phone needed. It has a Leica Summicron lens with a 1 inch 8K sensor, a telephoto lens and a detachable 2 inch touchscreen. The Luna series is listed as new."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is the key difference between Flow 2 and Luna Ultra?",
+          "o": [
+            "Flow 2 holds your phone, Luna Ultra is a camera with a built-in gimbal",
+            "Flow 2 is a webcam, Luna Ultra a drone",
+            "They are the same product in two colours"
+          ],
+          "a": 0,
+          "w": "Flow 2 is a phone gimbal. Luna Ultra is a standalone gimbal camera."
+        },
+        {
+          "q": "A customer wants a gimbal that follows them in any iOS or Android app. Which Flow 2 model includes the AI Tracker?",
+          "o": [
+            "Flow 2 Pro",
+            "Flow 2 Plus",
+            "Flow 2"
+          ],
+          "a": 1,
+          "w": "The page says the AI Tracker is part of Flow 2 Plus and not included with Flow 2 or Flow 2 Pro."
+        },
+        {
+          "q": "Which customer fits Flow 2 Pro best?",
+          "o": [
+            "A diver who needs a waterproof camera",
+            "A rider who wants a helmet camera",
+            "An iPhone user who vlogs and wants steady, tracked footage"
+          ],
+          "a": 2,
+          "w": "Flow 2 Pro tracks in the iPhone camera and iOS apps, which suits phone vloggers."
+        }
+      ]
+    },
+    {
+      "id": "in-3-2",
+      "lvl": 3,
+      "title": "Which Insta360 for which customer?",
+      "src": [
+        {
+          "l": "Insta360 homepage",
+          "u": "https://www.insta360.com/"
+        },
+        {
+          "l": "Insta360 X5",
+          "u": "https://www.insta360.com/product/insta360-x5"
+        },
+        {
+          "l": "Insta360 Ace Pro 2",
+          "u": "https://www.insta360.com/product/insta360-ace-pro2"
+        },
+        {
+          "l": "Insta360 GO Ultra",
+          "u": "https://www.insta360.com/product/insta360-go-ultra"
+        },
+        {
+          "l": "Insta360 Flow 2 series",
+          "u": "https://www.insta360.com/product/insta360-flow2-pro"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Riders and cyclists",
+          "t": "For a <b>motorcyclist or cyclist</b> who wants every angle and a level horizon, an X series 360 camera fits. If they only want a forward view, Ace Pro 2 is the action camera. For a light helmet camera, GO Ultra is the tiny option.",
+          "g": [
+            [
+              "Horizon lock",
+              "Keeps the video level even if the camera tilts."
+            ]
+          ]
+        },
+        {
+          "h": "Creators and travellers",
+          "t": "A <b>travel creator</b> who wants drone-like shots and does not want to aim should get a 360 camera. A <b>phone vlogger</b> who films mostly with an iPhone suits Flow 2 Pro. A <b>diver</b> needs Ace Pro 2 or an X camera, each with its Dive Case."
+        },
+        {
+          "h": "Ask before you pick",
+          "t": "Good first question: <b>what do you film and where is the camera?</b> Always forward, mounted and rugged leads to Ace Pro 2. Tiny and hands-free leads to GO. Every angle, chosen later, leads to X. Phone-based leads to Flow."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A cyclist wants to film every angle around the bike and choose later. Which line?",
+          "o": [
+            "Flow 2 Pro",
+            "X series 360 camera",
+            "Link 2 Pro"
+          ],
+          "a": 1,
+          "w": "A 360 camera records all directions and lets you reframe afterwards."
+        },
+        {
+          "q": "A runner wants the smallest possible hands-free camera. Which line?",
+          "o": [
+            "GO Ultra",
+            "Luna Ultra",
+            "Ace Pro 2"
+          ],
+          "a": 0,
+          "w": "GO Ultra is the tiny hands-free camera."
+        },
+        {
+          "q": "An iPhone vlogger wants tracked, steady shots using the phone's own camera. Which line?",
+          "o": [
+            "GO 3S",
+            "Flow 2 Pro",
+            "X5"
+          ],
+          "a": 1,
+          "w": "Flow 2 Pro is the phone gimbal with Apple tracking."
+        },
+        {
+          "q": "Which customer is best matched with Ace Pro 2?",
+          "o": [
+            "Someone who wants a webcam for calls",
+            "Someone who wants to film all directions",
+            "Someone who wants a single forward-facing rugged camera"
+          ],
+          "a": 2,
+          "w": "Ace Pro 2 is a classic single-lens rugged action camera."
+        }
+      ]
+    },
+    {
+      "id": "in-4-1",
+      "lvl": 4,
+      "title": "Accessories and attach sales",
+      "src": [
+        {
+          "l": "Insta360 X5",
+          "u": "https://www.insta360.com/product/insta360-x5"
+        },
+        {
+          "l": "Insta360 GO Ultra",
+          "u": "https://www.insta360.com/product/insta360-go-ultra"
+        },
+        {
+          "l": "Insta360 X6",
+          "u": "https://www.insta360.com/product/insta360-x6"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Accessories are half the story",
+          "t": "Insta360 sells a lot beyond the camera. For the X series the pages list <b>selfie sticks</b> (including an extended one up to 3 m), a <b>Mic Air</b> wireless microphone, a quick release mount, a fast-charge case and the Invisible Dive Case.",
+          "g": [
+            [
+              "Attach sale",
+              "An extra product sold together with the main product."
+            ]
+          ]
+        },
+        {
+          "h": "For GO and for riding",
+          "t": "GO accessories include a <b>Flexi Strap mount</b> for helmets and handlebars, an <b>Easy Clip headband</b> for running, a <b>Ring Remote</b> and sticky tabs. These can be bought on their own, so each camera sale can carry an accessory sale."
+        },
+        {
+          "h": "Why the stick matters",
+          "t": "The <b>invisible selfie stick</b> effect only works with a stick, so the stick is close to a must-have for 360 customers. A mount for the activity and a spare battery are other natural add-ons. Ask: how will the camera be carried or held?"
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which accessory does the invisible selfie stick effect depend on?",
+          "o": [
+            "A wireless microphone",
+            "A selfie stick",
+            "A dive case"
+          ],
+          "a": 1,
+          "w": "The effect hides the stick, so customers need a stick to use it."
+        },
+        {
+          "q": "A reseller sells a GO Ultra to a cyclist. Which accessory is a natural add-on?",
+          "o": [
+            "A Flexi Strap mount",
+            "A webcam",
+            "A teleprompter"
+          ],
+          "a": 0,
+          "w": "The Flexi Strap mounts the camera to helmet or handlebars."
+        },
+        {
+          "q": "Why are accessories useful to a reseller?",
+          "o": [
+            "Insta360 only sells them in stores",
+            "They replace the camera",
+            "They can be sold together with each camera"
+          ],
+          "a": 2,
+          "w": "Accessories can be bought separately, so each camera sale can carry an extra sale."
+        }
+      ]
+    },
+    {
+      "id": "in-4-2",
+      "lvl": 4,
+      "title": "App, Studio, cloud and care",
+      "src": [
+        {
+          "l": "Insta360 X5",
+          "u": "https://www.insta360.com/product/insta360-x5"
+        },
+        {
+          "l": "Insta360+ cloud service",
+          "u": "https://store.insta360.com/product/insta360plus"
+        },
+        {
+          "l": "Insta360 coverage plans",
+          "u": "https://www.insta360.com/support/care-warranty"
+        }
+      ],
+      "pages": [
+        {
+          "h": "App and Studio",
+          "t": "Footage is edited in the <b>Insta360 app</b> on the phone, with AI tools such as <b>AI Director</b>, which picks the best moments and builds a clip, and AI Frame, which suggests angles. <b>Insta360 Studio</b> is the editor for Mac and Windows computers.",
+          "g": [
+            [
+              "AI Director",
+              "A feature that picks the best moments from footage and makes a finished clip."
+            ]
+          ]
+        },
+        {
+          "h": "Insta360+ cloud",
+          "t": "<b>Insta360+</b> is a paid subscription. It offers cloud auto-backup (it can free space on the SD card), cloud editing, easy 360 sharing and online playback. It supports files from the 360 cameras, Ace Pro 2 and GO Ultra. Plans differ by storage.",
+          "g": [
+            [
+              "Subscription",
+              "A service you pay for monthly or yearly."
+            ]
+          ]
+        },
+        {
+          "h": "Care and warranty",
+          "t": "<b>FlexiCare</b> is bought separately for supported models and covers accidental damage such as cracked screens, lens damage and water damage, with low-cost replacements. The <b>standard warranty</b> only covers product defects. This matters for riders and divers, who are hard on cameras."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does the standard warranty cover?",
+          "o": [
+            "Accidental damage",
+            "Lost cameras",
+            "Only product defects"
+          ],
+          "a": 2,
+          "w": "The coverage page says the standard warranty only covers product defects."
+        },
+        {
+          "q": "A customer shoots a lot and is worried the SD card fills up. Which service helps?",
+          "o": [
+            "Insta360+ cloud auto-backup",
+            "FlexiCare",
+            "A selfie stick"
+          ],
+          "a": 0,
+          "w": "Cloud auto-backup can also delete files from the SD card to free space."
+        },
+        {
+          "q": "A diver worries about water damage by accident. What do you mention?",
+          "o": [
+            "The teleprompter",
+            "The Mic Air",
+            "FlexiCare accidental damage cover"
+          ],
+          "a": 2,
+          "w": "FlexiCare covers accidental damage including water damage, which the standard warranty does not."
+        }
+      ]
+    },
+    {
+      "id": "in-5-1",
+      "lvl": 5,
+      "title": "Business: virtual tours and webcams",
+      "src": [
+        {
+          "l": "Insta360 Enterprise real estate",
+          "u": "https://www.insta360.com/enterprise/industries/real_estate"
+        },
+        {
+          "l": "Insta360 Link 2 Pro and Link 2C Pro",
+          "u": "https://www.insta360.com/product/insta360-link2-pro"
+        },
+        {
+          "l": "Insta360 Enterprise",
+          "u": "https://www.insta360.com/enterprise"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Virtual tours",
+          "t": "Insta360 has an <b>Enterprise</b> side for businesses. For <b>real estate</b>, it promotes virtual tours: shoot 360 photos room by room, upload to a tour platform and share a link. The page lists X4 and X3 as tour cameras, plus a Virtual Tour Kit.",
+          "g": [
+            [
+              "Virtual tour",
+              "An online walk-through of a place made from 360 photos."
+            ]
+          ]
+        },
+        {
+          "h": "Partners and software",
+          "t": "The page names tour partners such as <b>Floorfy, Realsee and Avatour</b>, and a free SDK so companies can control the cameras from their own app. Other industries listed are construction, live streaming, Google Street View, media and education.",
+          "g": [
+            [
+              "SDK",
+              "A toolkit that lets other companies build software that works with a product."
+            ]
+          ]
+        },
+        {
+          "h": "Link webcams",
+          "t": "<b>Link 2 Pro</b> and <b>Link 2C Pro</b> are AI 4K webcams for meetings and streams. Link 2 Pro physically pans and tilts to follow you, while Link 2C Pro keeps people in frame by zooming. They are a different buyer from a camera shopper."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A real estate agent wants virtual tours. Which approach fits?",
+          "o": [
+            "A webcam on a stand",
+            "A tiny hands-free camera",
+            "360 photos of each room shared as a tour"
+          ],
+          "a": 2,
+          "w": "The Enterprise real estate page describes 360 photos turned into virtual tours."
+        },
+        {
+          "q": "What is the difference between Link 2 Pro and Link 2C Pro?",
+          "o": [
+            "Link 2 Pro pans and tilts, Link 2C Pro keeps people in frame by zooming",
+            "Link 2 Pro is underwater, 2C is not",
+            "They are 360 cameras"
+          ],
+          "a": 0,
+          "w": "The page says Link 2 Pro moves physically, while Link 2C Pro adjusts the frame itself."
+        },
+        {
+          "q": "Who buys a Link webcam?",
+          "o": [
+            "A diver",
+            "Someone doing meetings or streams who wants better video",
+            "A cyclist"
+          ],
+          "a": 1,
+          "w": "Link is for conferencing and streaming, not for sport."
+        }
+      ]
+    },
+    {
+      "id": "in-5-2",
+      "lvl": 5,
+      "title": "Insta360 versus GoPro and DJI",
+      "src": [
+        {
+          "l": "Wikipedia: body camera (action camera article)",
+          "u": "https://en.wikipedia.org/wiki/Action_camera"
+        },
+        {
+          "l": "Insta360 Ace Pro 2",
+          "u": "https://www.insta360.com/product/insta360-ace-pro2"
+        },
+        {
+          "l": "Insta360 X5",
+          "u": "https://www.insta360.com/product/insta360-x5"
+        }
+      ],
+      "pages": [
+        {
+          "h": "The category",
+          "t": "Action cameras are small, rugged, often waterproof cameras for mounting on helmets, bikes and bodies. <b>GoPro</b> is a well known name in the category, and <b>DJI</b>, with its Osmo Action line, is another well known name. Expect customers to compare.",
+          "g": [
+            [
+              "Category",
+              "The group of similar products that customers compare."
+            ]
+          ]
+        },
+        {
+          "h": "Where Insta360 differs",
+          "t": "With a single-lens action camera, customers compare image quality, stabilisation and size. Insta360's own difference is <b>360 capture</b>: reframing later, the invisible selfie stick and one camera for many angles. X5 and X6 add replaceable lenses."
+        },
+        {
+          "h": "Be honest and ask",
+          "t": "Do not claim who is better on specs: you cannot check them here. Ask what the customer films. If they want <b>every angle and no aiming</b>, lead with 360. If they want one forward view, show Ace Pro 2 and let them compare it."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is Insta360's clearest difference from a classic action camera?",
+          "o": [
+            "It is the only waterproof camera",
+            "360 capture and reframing afterwards",
+            "It has no screen"
+          ],
+          "a": 1,
+          "w": "Insta360's own point of difference is shooting in every direction and framing later."
+        },
+        {
+          "q": "A customer says they only want a forward-facing camera. What do you do?",
+          "o": [
+            "Show Ace Pro 2 and let them compare",
+            "Refuse to sell",
+            "Offer only a webcam"
+          ],
+          "a": 0,
+          "w": "For a single forward view, Ace Pro 2 is the right line."
+        },
+        {
+          "q": "Which statement is safest to say in a sales talk?",
+          "o": [
+            "We beat every competitor on specs",
+            "Everyone prefers Insta360",
+            "Insta360's 360 capture lets you choose the angle after filming"
+          ],
+          "a": 2,
+          "w": "This is a verified feature. Claims about winning on specs cannot be backed up here."
+        }
+      ]
+    },
+    {
+      "id": "in-5-3",
+      "lvl": 5,
+      "title": "Objections and good questions",
+      "src": [
+        {
+          "l": "Insta360 X5",
+          "u": "https://www.insta360.com/product/insta360-x5"
+        },
+        {
+          "l": "Insta360 X6",
+          "u": "https://www.insta360.com/product/insta360-x6"
+        },
+        {
+          "l": "Insta360 Ace Pro 2",
+          "u": "https://www.insta360.com/product/insta360-ace-pro2"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Common objections",
+          "t": "<b>Editing is hard:</b> AI Director and AI Frame in the app build clips for you. <b>Lens will scratch:</b> X5 and X6 have replaceable lenses, and X5 advises lens protection outdoors. <b>Wind noise:</b> X5 and Ace Pro 2 have a wind guard."
+        },
+        {
+          "h": "More objections",
+          "t": "<b>My phone is enough:</b> a phone is awkward to mount on a helmet, handlebar or stick, and risky to take into water or rough use. <b>What about battery?</b> Insta360 quotes lab tests, so ask how long the customer films."
+        },
+        {
+          "h": "Good questions",
+          "t": "Ask the reseller's customer: <b>What do you film? Where is the camera mounted? Phone or computer for editing? Underwater? Do you want cloud backup?</b> The answers point to the line, the accessories and whether FlexiCare is worth mentioning."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A customer says editing 360 video sounds hard. What is a good reply?",
+          "o": [
+            "Just learn video editing",
+            "The app has AI tools such as AI Director that build a clip for you",
+            "Buy a bigger phone"
+          ],
+          "a": 1,
+          "w": "The X pages list AI Director and AI Frame to simplify editing."
+        },
+        {
+          "q": "A customer worries the lens will scratch on a bike. What do you mention for X5 or X6?",
+          "o": [
+            "Replaceable lenses",
+            "A webcam",
+            "Nothing, it cannot scratch"
+          ],
+          "a": 0,
+          "w": "Replaceable lenses let you swap a damaged lens, and lens protection is advised outdoors."
+        },
+        {
+          "q": "Which is the best first question for a new customer?",
+          "o": [
+            "What is your budget?",
+            "Do you like green?",
+            "What do you film and where is the camera?"
+          ],
+          "a": 2,
+          "w": "What and where leads to the right line and the right accessories."
+        }
+      ]
+    }
+  ]
+}

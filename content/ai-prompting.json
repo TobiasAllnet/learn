@@ -1,0 +1,873 @@
+{
+  "title": "AI and prompting at work",
+  "desc": "What AI chatbots are, how to prompt them, and how to use them safely in sales work",
+  "src": [
+    {
+      "l": "Wikipedia: Large language model",
+      "u": "https://en.wikipedia.org/wiki/Large_language_model"
+    },
+    {
+      "l": "Anthropic: Prompting best practices",
+      "u": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+    },
+    {
+      "l": "OpenAI: Prompt engineering guide",
+      "u": "https://developers.openai.com/api/docs/guides/prompt-engineering"
+    },
+    {
+      "l": "Anthropic: Reduce hallucinations",
+      "u": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+    },
+    {
+      "l": "Microsoft Learn: What is Microsoft Copilot",
+      "u": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-overview"
+    },
+    {
+      "l": "Microsoft Learn: Copilot data, privacy and security",
+      "u": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy"
+    },
+    {
+      "l": "European Commission: AI Act",
+      "u": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+    },
+    {
+      "l": "European Commission: Data protection explained",
+      "u": "https://commission.europa.eu/law/law-topic/data-protection/data-protection-explained_en"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "ap-1-1",
+      "lvl": 1,
+      "title": "What an AI chatbot really is",
+      "src": [
+        {
+          "l": "Wikipedia: Large language model",
+          "u": "https://en.wikipedia.org/wiki/Large_language_model"
+        },
+        {
+          "l": "Anthropic: Reduce hallucinations",
+          "u": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+        }
+      ],
+      "pages": [
+        {
+          "h": "A chatbot built on a language model",
+          "t": "Tools like Claude, ChatGPT and Copilot are built on a <b>large language model</b>. It is trained on a huge amount of text to generate language. It can write, summarise, translate and analyse text.",
+          "g": [
+            [
+              "LLM",
+              "Large language model: software trained on lots of text to understand and generate language."
+            ],
+            [
+              "Chatbot",
+              "A chat window where you type to an LLM and it answers."
+            ]
+          ]
+        },
+        {
+          "h": "It predicts, it does not look up",
+          "t": "At its core, a language model learns to <b>predict the next word</b>. It is then tuned to follow instructions. So it is not a database of verified facts. It produces fluent text that fits your request.",
+          "g": [
+            [
+              "Token",
+              "A small chunk of text, often part of a word, that the model reads and writes."
+            ]
+          ]
+        },
+        {
+          "h": "Good at language, weaker at facts",
+          "t": "It is strong at drafting, rewriting, summarising and brainstorming. It is weaker at exact facts and precise numbers, and at fresh news unless it can search the web. Treat it like a fast, eager <b>junior colleague</b> whose work you still check."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is a large language model mainly trained to do?",
+          "o": [
+            "Store a verified fact for every question",
+            "Process and generate language, starting from predicting the next word",
+            "Search the live internet for every answer"
+          ],
+          "a": 1,
+          "w": "Language models are trained on lots of text to generate language, and basic training is next-word prediction."
+        },
+        {
+          "q": "Which task is a typical STRENGTH of a chatbot?",
+          "o": [
+            "Giving an exact current stock level",
+            "Rewriting a rough email into a clear one",
+            "Guaranteeing a legal answer is correct"
+          ],
+          "a": 1,
+          "w": "Drafting and rewriting are core language strengths. Exact and current facts are weaker spots."
+        },
+        {
+          "q": "A good mental picture for working with AI is:",
+          "o": [
+            "An all-knowing expert you never need to check",
+            "A calculator that is always exact",
+            "A fast, eager junior colleague whose work you review"
+          ],
+          "a": 2,
+          "w": "It is helpful and quick, but it can be wrong, so you review the result."
+        }
+      ]
+    },
+    {
+      "id": "ap-1-2",
+      "lvl": 1,
+      "title": "Hallucinations and privacy basics",
+      "src": [
+        {
+          "l": "Anthropic: Reduce hallucinations",
+          "u": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+        },
+        {
+          "l": "Microsoft Learn: Copilot data, privacy and security",
+          "u": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy"
+        },
+        {
+          "l": "Anthropic: Updates to consumer terms",
+          "u": "https://www.anthropic.com/news/updates-to-our-consumer-terms"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Confident and wrong",
+          "t": "A <b>hallucination</b> is text that sounds fluent and sure but is false or unsupported. It can invent a product spec, a quote or a source. Even good tools do this sometimes, so check anything that matters before you use it.",
+          "g": [
+            [
+              "Hallucination",
+              "When an AI states something false or made up as if it were true."
+            ]
+          ]
+        },
+        {
+          "h": "Make it admit doubt",
+          "t": "You can lower the risk. Give it the source text to work from. Tell it to say <b>I don't know</b> when unsure. Ask it to quote the passage that backs each claim. These help a lot, but they do not remove the risk fully."
+        },
+        {
+          "h": "Privacy: think before you paste",
+          "t": "Anything you paste goes to a service run by someone else. Never paste <b>customer data, prices, contracts or passwords</b> into a public tool. Use only tools your company approves, and check the policy. Work accounts and personal accounts can have different terms.",
+          "g": [
+            [
+              "Public tool",
+              "A free or personal AI account, outside your company's agreements."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What is a hallucination?",
+          "o": [
+            "A slow reply from the tool",
+            "Fluent text that is false or made up",
+            "A message the tool refuses to answer"
+          ],
+          "a": 1,
+          "w": "Hallucinations sound convincing but are wrong or unsupported."
+        },
+        {
+          "q": "Which prompt habit helps reduce hallucinations?",
+          "o": [
+            "Telling it to always sound certain",
+            "Asking for longer answers",
+            "Allowing it to say it does not know and giving it source text"
+          ],
+          "a": 2,
+          "w": "Permission to admit uncertainty plus real source text reduces invented facts."
+        },
+        {
+          "q": "A colleague wants to paste a customer's price list into a free chatbot. What do you say?",
+          "o": [
+            "Fine, if the chat is deleted afterwards",
+            "Do not, unless the company has approved that tool and use",
+            "Fine, if you remove the logo"
+          ],
+          "a": 1,
+          "w": "Confidential data should only go into company-approved tools. Check the policy first."
+        },
+        {
+          "q": "Do hallucination-reducing tricks remove the problem completely?",
+          "o": [
+            "Yes, always",
+            "Only for short answers",
+            "No, they reduce it, so important facts still need checking"
+          ],
+          "a": 2,
+          "w": "Anthropic's own guidance says these techniques reduce, not eliminate, hallucinations."
+        }
+      ]
+    },
+    {
+      "id": "ap-2-1",
+      "lvl": 2,
+      "title": "A good prompt: task, context, format",
+      "src": [
+        {
+          "l": "Anthropic: Prompting best practices",
+          "u": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+        },
+        {
+          "l": "OpenAI: Prompt engineering guide",
+          "u": "https://developers.openai.com/api/docs/guides/prompt-engineering"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Be clear and direct",
+          "t": "A <b>prompt</b> is what you type. Anthropic suggests imagining a brilliant but new employee who lacks context about your work. The clearer you explain the task, the better the result. Vague in, vague out.",
+          "g": [
+            [
+              "Prompt",
+              "The instruction or question you give the AI."
+            ]
+          ]
+        },
+        {
+          "h": "Add context and a format",
+          "t": "Say <b>why</b> you need it and who it is for. Then say the shape you want: three bullets, a 100 word email, a table. Example: <i>Summarise this thread for my manager in three bullets, plain language.</i>"
+        },
+        {
+          "h": "The colleague test",
+          "t": "Anthropic's tip: show your prompt to a colleague with little background. If they would be confused, the AI will be too. OpenAI's guide agrees that explicit instructions help the model."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which prompt is better?",
+          "o": [
+            "Write about our meeting",
+            "Do something useful with this",
+            "Summarise these notes in three bullets for my manager, plain language, no jargon"
+          ],
+          "a": 2,
+          "w": "It names the task, audience, format and style."
+        },
+        {
+          "q": "What does adding context do?",
+          "o": [
+            "It makes the answer longer",
+            "It helps the AI aim at your real goal",
+            "It stops mistakes completely"
+          ],
+          "a": 1,
+          "w": "Knowing why and for whom helps the AI give a more targeted answer."
+        },
+        {
+          "q": "What is the colleague test?",
+          "o": [
+            "Ask a colleague to write the prompt",
+            "Send the answer to a colleague",
+            "Would a person with little background understand the prompt?"
+          ],
+          "a": 2,
+          "w": "If a newcomer would be confused, the AI probably will be too."
+        }
+      ]
+    },
+    {
+      "id": "ap-2-2",
+      "lvl": 2,
+      "title": "Examples and roles",
+      "src": [
+        {
+          "l": "Anthropic: Prompting best practices",
+          "u": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+        },
+        {
+          "l": "OpenAI: Prompt engineering guide",
+          "u": "https://developers.openai.com/api/docs/guides/prompt-engineering"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Show, do not only tell",
+          "t": "Examples are one of the most reliable ways to steer tone and format. Paste a <b>sample</b> of what good looks like, such as one of your own emails, and say: write the new one in this style. A few examples improve consistency.",
+          "g": [
+            [
+              "Few-shot",
+              "Giving the AI a few example inputs and outputs so it copies the pattern."
+            ]
+          ]
+        },
+        {
+          "h": "Give it a role",
+          "t": "One sentence can focus the answer: <i>You are an experienced sales coach.</i> A role shapes tone and viewpoint. It does not give the AI real experience, so it does not make facts more correct."
+        },
+        {
+          "h": "Separate your material",
+          "t": "When you paste notes, mark them clearly: <i>Here are my notes: ... Here is the email I received: ...</i> Anthropic and OpenAI both advise structure, such as labelled sections, so the AI does not mix instructions with content."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "You want emails that sound like you. What helps most?",
+          "o": [
+            "Telling it to be creative",
+            "Pasting one or two of your own emails as examples",
+            "Asking for a longer reply"
+          ],
+          "a": 1,
+          "w": "Examples steer tone and structure reliably."
+        },
+        {
+          "q": "What does giving a role such as sales coach do?",
+          "o": [
+            "Makes sure every fact is true",
+            "Unlocks hidden data",
+            "Focuses tone and viewpoint"
+          ],
+          "a": 2,
+          "w": "A role shapes how it answers, but it does not guarantee correctness."
+        },
+        {
+          "q": "Why label the parts of a long prompt?",
+          "o": [
+            "So instructions and pasted content do not get mixed up",
+            "It makes the AI faster",
+            "It is required by every tool"
+          ],
+          "a": 0,
+          "w": "Clear structure helps the AI tell your instructions from your material."
+        }
+      ]
+    },
+    {
+      "id": "ap-2-3",
+      "lvl": 2,
+      "title": "Iterate and ask for questions back",
+      "src": [
+        {
+          "l": "Anthropic: Prompting best practices",
+          "u": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+        },
+        {
+          "l": "OpenAI: Prompt engineering guide",
+          "u": "https://developers.openai.com/api/docs/guides/prompt-engineering"
+        }
+      ],
+      "pages": [
+        {
+          "h": "The first answer is a draft",
+          "t": "Prompting is a conversation. If the answer misses, do not start over. Say what to change: <i>shorter, warmer, remove the second paragraph, add a clear next step.</i> OpenAI also notes that output varies between runs."
+        },
+        {
+          "h": "Let it ask you",
+          "t": "For bigger tasks, end with: <i>Before you start, ask me up to five questions you need answered.</i> This stops the AI guessing about audience, goal and details. This can give a better first draft with less back and forth."
+        },
+        {
+          "h": "Ask it to check itself",
+          "t": "A useful pattern is draft, then review, then improve. Ask: <i>Check this against my requirements and list anything missing or unsupported.</i> It is a helper to catch slips, not a replacement for your own read."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "The answer is close but too long. What next?",
+          "o": [
+            "Start a new chat from scratch",
+            "Reply asking for it shorter and say what to cut",
+            "Give up on AI"
+          ],
+          "a": 1,
+          "w": "Iterating in the same chat is the normal way to refine."
+        },
+        {
+          "q": "Why tell the AI to ask you questions first?",
+          "o": [
+            "It avoids guessing about missing details",
+            "It uses fewer words",
+            "It hides mistakes"
+          ],
+          "a": 0,
+          "w": "Questions fill gaps in your brief before it writes."
+        },
+        {
+          "q": "Draft, review, improve is an example of:",
+          "o": [
+            "A privacy setting",
+            "A paid feature",
+            "Asking for a self-check step"
+          ],
+          "a": 2,
+          "w": "Asking it to review its own draft against criteria can catch slips, but you still read it too."
+        }
+      ]
+    },
+    {
+      "id": "ap-3-1",
+      "lvl": 3,
+      "title": "Everyday sales work with AI",
+      "src": [
+        {
+          "l": "Anthropic: Prompting best practices",
+          "u": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+        },
+        {
+          "l": "Microsoft Learn: What is Microsoft Copilot",
+          "u": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-overview"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Emails, rewrites and tone",
+          "t": "Paste your rough text and ask for a <b>clearer, shorter or friendlier</b> version. Ask for three subject lines. Ask it to make a reply polite but firm. Always read the result and keep your own voice before sending."
+        },
+        {
+          "h": "Translate and tidy notes",
+          "t": "AI can translate between languages you work in and turn <b>messy call notes</b> into a structure: summary, open questions, next steps. Have a native speaker check important customer translations, since tone and idioms can slip."
+        },
+        {
+          "h": "Brainstorm and prepare",
+          "t": "Use it for ideas: questions to ask a customer, objections to expect, ways to open a call. It is a thinking partner. Give it public information only, never confidential customer details unless your company's approved tool allows it."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "You have messy call notes. A good use of AI is to:",
+          "o": [
+            "Send the raw notes to the customer",
+            "Ask for a summary, open questions and next steps",
+            "Let it decide the price"
+          ],
+          "a": 1,
+          "w": "Turning notes into structure is a strength of language models."
+        },
+        {
+          "q": "Before sending an AI-written email you should:",
+          "o": [
+            "Send it straight away to save time",
+            "Add more adjectives",
+            "Read it, fix facts and tone, then send"
+          ],
+          "a": 2,
+          "w": "You are responsible for what goes out under your name."
+        },
+        {
+          "q": "An important Finnish or Danish customer mail was translated by AI. Smart step?",
+          "o": [
+            "Trust it fully",
+            "Have a fluent speaker check key wording",
+            "Translate it back and forth twice"
+          ],
+          "a": 1,
+          "w": "Tone and idiom errors are easy to miss, so check what matters."
+        },
+        {
+          "q": "Which input is safest to give a public chatbot when brainstorming?",
+          "o": [
+            "A customer's internal order history",
+            "Your company's price list",
+            "Public product facts and a general customer type"
+          ],
+          "a": 2,
+          "w": "Stick to public, non-confidential information in public tools."
+        }
+      ]
+    },
+    {
+      "id": "ap-3-2",
+      "lvl": 3,
+      "title": "Research, call prep and spotting errors",
+      "src": [
+        {
+          "l": "Anthropic: Reduce hallucinations",
+          "u": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+        },
+        {
+          "l": "Wikipedia: Large language model",
+          "u": "https://en.wikipedia.org/wiki/Large_language_model"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Prep a call with public info",
+          "t": "Ask for a plan: <i>I call a small IT reseller next week. List ten good opening questions and likely concerns.</i> It speeds up thinking. For facts about a real company, use their own website and treat AI as a starting point."
+        },
+        {
+          "h": "Red flags in an answer",
+          "t": "Be careful with: exact numbers, dates, product names and model numbers, <b>quotes and links</b>, and anything that sounds too neat. Made-up sources can look real. A confident tone is not evidence of truth."
+        },
+        {
+          "h": "How to verify",
+          "t": "Ask which source backs each claim, then <b>open that source yourself</b>. Ask the same question twice or in another way and compare. For anything customer-facing, confirm with the vendor or an official page."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which part of an AI answer deserves the closest check?",
+          "o": [
+            "Greetings",
+            "Exact numbers, product names and quoted sources",
+            "The word count"
+          ],
+          "a": 1,
+          "w": "Specific facts and sources are where invented details hide."
+        },
+        {
+          "q": "The AI cites a web article. What do you do?",
+          "o": [
+            "Trust it, it sounds real",
+            "Ask the AI if it is sure",
+            "Open the link or source and confirm it says that"
+          ],
+          "a": 2,
+          "w": "Check the source yourself. Citations can be invented."
+        },
+        {
+          "q": "Comparing answers from several runs helps because:",
+          "o": [
+            "Inconsistencies can point to a made-up detail",
+            "It is cheaper",
+            "The longest answer is correct"
+          ],
+          "a": 0,
+          "w": "Anthropic lists comparing multiple outputs as a way to spot hallucinations."
+        }
+      ]
+    },
+    {
+      "id": "ap-4-1",
+      "lvl": 4,
+      "title": "Claude: projects, files, artifacts, memory",
+      "src": [
+        {
+          "l": "Claude Help: What are projects",
+          "u": "https://support.claude.com/en/articles/9517075-what-are-projects"
+        },
+        {
+          "l": "Claude Help: What are artifacts",
+          "u": "https://support.claude.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them"
+        },
+        {
+          "l": "Claude Help: Chat search and memory",
+          "u": "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Projects keep your context",
+          "t": "A Claude <b>project</b> is a workspace with its own chats, uploaded files and written instructions. Claude uses that material in every chat inside the project. Good for one topic you return to, like a call-prep routine.",
+          "g": [
+            [
+              "Project",
+              "A workspace in Claude holding files, instructions and chats for one topic."
+            ]
+          ]
+        },
+        {
+          "h": "Artifacts are the finished piece",
+          "t": "When Claude makes something substantial, such as a document, slide deck, dashboard or small tool, it can open it beside the chat as an <b>artifact</b>. You can edit it, find it later in the Artifacts tab, export it, and share it when ready.",
+          "g": [
+            [
+              "Artifact",
+              "A standalone piece of work Claude creates, shown next to the chat."
+            ]
+          ]
+        },
+        {
+          "h": "Memory is controllable",
+          "t": "Claude can carry context across chats through <b>memory</b>, and can search past chats on paid plans. You can view, edit or delete what it saved, pause it, or use an incognito chat. On work plans, an owner decides if memory is on. Features differ by plan.",
+          "g": [
+            [
+              "Memory",
+              "Facts Claude saves from chats to use in later ones."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does a Claude project hold?",
+          "o": [
+            "Only your last message",
+            "Chats, files and instructions for one topic",
+            "Your company's CRM"
+          ],
+          "a": 1,
+          "w": "Projects bundle files, instructions and chat history."
+        },
+        {
+          "q": "What is an artifact?",
+          "o": [
+            "A bug in the answer",
+            "A privacy setting",
+            "A standalone piece of work like a document or slide deck beside the chat"
+          ],
+          "a": 2,
+          "w": "Artifacts are substantial outputs you can edit, export and share."
+        },
+        {
+          "q": "You do not want a chat saved to memory. Which option exists?",
+          "o": [
+            "Incognito chat or pausing memory",
+            "Nothing, it is impossible",
+            "Asking the customer"
+          ],
+          "a": 0,
+          "w": "Claude's memory help page describes pausing memory and incognito chats, which are not saved to memory."
+        },
+        {
+          "q": "Why say features differ by plan?",
+          "o": [
+            "All plans are identical",
+            "Availability and settings vary, so check your own account and company rules",
+            "Only free accounts get memory"
+          ],
+          "a": 1,
+          "w": "Limits and who controls memory differ between plans, such as team and enterprise."
+        }
+      ]
+    },
+    {
+      "id": "ap-4-2",
+      "lvl": 4,
+      "title": "Microsoft Copilot in Outlook, Teams, Word, Excel",
+      "src": [
+        {
+          "l": "Microsoft Learn: What is Microsoft Copilot",
+          "u": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-overview"
+        },
+        {
+          "l": "Microsoft Learn: Copilot data, privacy and security",
+          "u": "https://learn.microsoft.com/en-us/microsoft-365/copilot/microsoft-365-copilot-privacy"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Copilot inside your Office apps",
+          "t": "Microsoft's overview lists in-app help: <b>Outlook</b> drafts emails, summarises threads and gives tone coaching. <b>Teams</b> summarises and transcribes meetings and captures action items. <b>Word</b> drafts, rewrites and summarises. <b>Excel</b> analyses data and suggests formulas."
+        },
+        {
+          "h": "Licence and setup decide what you get",
+          "t": "Microsoft now calls it simply Microsoft Copilot, and says experiences vary by licence and tenant setup. Some versions only use the web and what you paste in. The fuller add-on version can use your work emails, files and meetings. Ask IT which version your company has.",
+          "g": [
+            [
+              "Tenant",
+              "Your company's own Microsoft 365 environment."
+            ]
+          ]
+        },
+        {
+          "h": "Data protection at work",
+          "t": "Microsoft states Copilot only shows work data you already have permission to see, and that prompts, responses and work data are <b>not used to train</b> the underlying models. It still can be wrong, so Microsoft tells users to review output before sharing."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which is listed as a Copilot function in Teams?",
+          "o": [
+            "Setting prices",
+            "Sending mail by itself",
+            "Summarising and transcribing meetings and capturing action items"
+          ],
+          "a": 2,
+          "w": "Microsoft's overview names meeting summaries, transcripts and action items."
+        },
+        {
+          "q": "Why might your Copilot differ from a colleague's?",
+          "o": [
+            "Licence and company setup differ",
+            "Random luck",
+            "Only managers get it"
+          ],
+          "a": 0,
+          "w": "Experience depends on licence and tenant configuration."
+        },
+        {
+          "q": "What does Microsoft say about permissions?",
+          "o": [
+            "Copilot ignores them",
+            "It only surfaces data you already have access to",
+            "It shows everyone's mail"
+          ],
+          "a": 1,
+          "w": "Copilot respects the user's existing permissions."
+        },
+        {
+          "q": "Copilot drafts a customer reply in Outlook. You should:",
+          "o": [
+            "Send immediately",
+            "Delete the draft",
+            "Review and edit before sending"
+          ],
+          "a": 2,
+          "w": "Microsoft says output is not guaranteed factual and should be reviewed."
+        }
+      ]
+    },
+    {
+      "id": "ap-5-1",
+      "lvl": 5,
+      "title": "Multi-step prompts, templates and agents",
+      "src": [
+        {
+          "l": "Anthropic: Prompting best practices",
+          "u": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+        },
+        {
+          "l": "Anthropic: Building effective agents",
+          "u": "https://www.anthropic.com/engineering/building-effective-agents"
+        },
+        {
+          "l": "OpenAI: Prompt engineering guide",
+          "u": "https://developers.openai.com/api/docs/guides/prompt-engineering"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Break big jobs into steps",
+          "t": "Instead of one giant request, chain small ones: <b>1</b> summarise the notes, <b>2</b> list the risks, <b>3</b> draft the follow-up email, <b>4</b> check it against the notes. You can inspect each step and fix problems early."
+        },
+        {
+          "h": "Save prompts as templates",
+          "t": "When a prompt works, keep it. Write a reusable version with blanks: <i>Customer type: [..]. Goal: [..]. Tone: [..].</i> Store it in your notes or a Claude project. OpenAI also stresses testing and iterating prompts, since outputs vary."
+        },
+        {
+          "h": "Agents in plain words",
+          "t": "A <b>workflow</b> follows steps someone fixed in advance. An <b>agent</b> chooses its own next steps and tools. Anthropic notes agents are more flexible but cost more, are slower and can compound errors. Start with the simplest thing that works.",
+          "g": [
+            [
+              "Agent",
+              "An AI that decides its own steps and uses tools, such as search or files, to reach a goal."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Why split a big task into steps?",
+          "o": [
+            "AI cannot read long text",
+            "You can check each step and catch problems early",
+            "It is always free"
+          ],
+          "a": 1,
+          "w": "Chaining lets you review intermediate results."
+        },
+        {
+          "q": "What is a good reusable prompt template?",
+          "o": [
+            "A prompt that says do your best",
+            "Only the AI's answer",
+            "A saved prompt with blanks for customer type, goal and tone"
+          ],
+          "a": 2,
+          "w": "Templates keep a working structure and fill in the variable parts."
+        },
+        {
+          "q": "Difference between a workflow and an agent?",
+          "o": [
+            "Workflow follows fixed steps, agent picks its own steps",
+            "They are identical",
+            "Agents never use tools"
+          ],
+          "a": 0,
+          "w": "Anthropic defines workflows as predefined paths and agents as self-directing."
+        },
+        {
+          "q": "Anthropic's advice on complexity:",
+          "o": [
+            "Always start with an agent",
+            "Use the simplest solution that works",
+            "Never use more than one prompt"
+          ],
+          "a": 1,
+          "w": "Add complexity only when simpler options fall short."
+        }
+      ]
+    },
+    {
+      "id": "ap-5-2",
+      "lvl": 5,
+      "title": "When not to use AI: bias, limits and GDPR",
+      "src": [
+        {
+          "l": "European Commission: Data protection explained",
+          "u": "https://commission.europa.eu/law/law-topic/data-protection/data-protection-explained_en"
+        },
+        {
+          "l": "European Commission: AI Act",
+          "u": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+        },
+        {
+          "l": "NIST: AI Risk Management Framework",
+          "u": "https://www.nist.gov/itl/ai-risk-management-framework"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Skip AI when stakes and secrecy are high",
+          "t": "Do not use it as the final word on contracts, legal or financial advice, or exact specs. Do not feed it secrets or personal data without approval. And do not use it to <b>judge people</b>, like a colleague's performance or a candidate."
+        },
+        {
+          "h": "Bias and limits",
+          "t": "Models learn from human text, so output can reflect <b>bias</b> in that data and may be less reliable for some groups or topics. It has no real understanding of your customer. NIST's AI risk framework is a voluntary guide for managing such risks.",
+          "g": [
+            [
+              "Bias",
+              "Output that unfairly favours or ignores some people or views, often learned from the training text."
+            ]
+          ]
+        },
+        {
+          "h": "GDPR at sales level",
+          "t": "<b>Personal data</b> is anything about an identifiable person, like a name with an email. GDPR principles include data minimisation and purpose limitation. So share the least data needed, and ask your company before using AI on contact details. The EU AI Act also expects people to be told when they talk to a chatbot.",
+          "g": [
+            [
+              "GDPR",
+              "EU law on how organisations may handle personal data."
+            ],
+            [
+              "Data minimisation",
+              "Use only the data you really need."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which use is the riskiest?",
+          "o": [
+            "Brainstorming call openers",
+            "Pasting a customer list with names and emails into an unapproved tool",
+            "Rewriting your own public blog post"
+          ],
+          "a": 1,
+          "w": "Personal data in an unapproved tool raises privacy and GDPR problems."
+        },
+        {
+          "q": "Which is personal data under GDPR?",
+          "o": [
+            "Only passwords",
+            "Only company names",
+            "Any information about an identifiable living person"
+          ],
+          "a": 2,
+          "w": "The Commission defines it as information about an identified or identifiable person."
+        },
+        {
+          "q": "What does data minimisation mean in practice?",
+          "o": [
+            "Share only what is needed for the task",
+            "Delete all chats",
+            "Use shorter prompts only"
+          ],
+          "a": 0,
+          "w": "It is one of the seven GDPR principles."
+        },
+        {
+          "q": "Why can AI output be biased?",
+          "o": [
+            "It is deliberately unfair",
+            "It learns from human-written text that can contain bias",
+            "It reads your mind"
+          ],
+          "a": 1,
+          "w": "Training data shapes output, including its flaws."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,883 @@
+{
+  "title": "Shokz",
+  "desc": "Bone conduction and open-ear headphones and headsets",
+  "src": [
+    {
+      "l": "Shokz website (products, technology)",
+      "u": "https://shokz.com"
+    },
+    {
+      "l": "Shokz our story",
+      "u": "https://shokz.com/pages/our-story"
+    },
+    {
+      "l": "Shokz bone conduction technology",
+      "u": "https://shokz.com/pages/bone-conduction-technology"
+    },
+    {
+      "l": "Shokz open-ear audio technology",
+      "u": "https://shokz.com/pages/open-ear-audio-technology"
+    },
+    {
+      "l": "Shokz all products",
+      "u": "https://shokz.com/collections/all"
+    },
+    {
+      "l": "Shokz Pro OpenMeet 2",
+      "u": "https://pro.shokz.com/products/openmeet-2"
+    },
+    {
+      "l": "Shokz OpenComm2 UC 2025 Upgrade",
+      "u": "https://shokz.com/pages/opencomm2uc-2025-upgrade"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "sk-1-1",
+      "lvl": 1,
+      "title": "Who is Shokz?",
+      "src": [
+        {
+          "l": "Shokz our story",
+          "u": "https://shokz.com/pages/our-story"
+        },
+        {
+          "l": "Shokz website (products, technology)",
+          "u": "https://shokz.com"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Open-ear audio specialist",
+          "t": "Shokz makes headphones that leave your ears open, so you hear music or calls <b>and</b> the world around you. The company dates from <b>2004</b>, launched its first headphones in <b>2011</b> as <b>AfterShokz</b>, and renamed itself <b>Shokz</b> in <b>2021</b>.",
+          "g": [
+            [
+              "Open-ear",
+              "Headphones that do not seal or plug the ear canal, so outside sound still reaches you."
+            ]
+          ]
+        },
+        {
+          "h": "A big, established brand",
+          "t": "Shokz says it sells in <b>more than 60 countries and regions</b>, including through retailers such as Costco, Best Buy and MediaMarkt. It also claims over <b>20 million units sold</b>. These are the company's own numbers, but they point to a real, mature brand."
+        },
+        {
+          "h": "Three product groups",
+          "t": "The range has three groups: <b>sports headphones</b>, <b>workout and lifestyle earbuds</b> and <b>communication headsets</b> for calls and the office. There are also accessories such as charging cables. One idea ties it all together: stay aware of your surroundings."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What was Shokz called before 2021?",
+          "o": [
+            "OpenSound",
+            "AfterShokz",
+            "BoneTone"
+          ],
+          "a": 1,
+          "w": "The brand started as AfterShokz and adopted the Shokz name in 2021."
+        },
+        {
+          "q": "What idea ties the Shokz range together?",
+          "o": [
+            "Blocking all outside noise",
+            "Underwater use only",
+            "Hearing music while staying aware of your surroundings"
+          ],
+          "a": 2,
+          "w": "Every Shokz line leaves the ear open so you can still hear what is around you."
+        },
+        {
+          "q": "Which is one of the three main Shokz product groups?",
+          "o": [
+            "Hearing aids",
+            "Communication headsets",
+            "Gaming consoles"
+          ],
+          "a": 1,
+          "w": "Communication headsets for calls and offices sit beside sports headphones and lifestyle earbuds."
+        }
+      ]
+    },
+    {
+      "id": "sk-1-2",
+      "lvl": 1,
+      "title": "Bone conduction in plain words",
+      "src": [
+        {
+          "l": "Shokz bone conduction technology",
+          "u": "https://shokz.com/pages/bone-conduction-technology"
+        },
+        {
+          "l": "Shokz open-ear audio technology",
+          "u": "https://shokz.com/pages/open-ear-audio-technology"
+        },
+        {
+          "l": "Shokz: how bone conduction headphones work",
+          "u": "https://uk.shokz.com/blogs/news/how-does-bone-conduction-headphones-work"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Sound through bone",
+          "t": "Normal headphones push sound down the ear canal to the eardrum. <b>Bone conduction</b> turns sound into tiny vibrations that travel through the skin and skull bone straight to the inner ear. The ear canal stays completely open.",
+          "g": [
+            [
+              "Cochlea",
+              "The snail-shaped part of the inner ear that turns vibrations into signals for the brain."
+            ],
+            [
+              "Transducer",
+              "The small part that turns the electrical audio signal into vibrations."
+            ]
+          ]
+        },
+        {
+          "h": "Two ways to stay open",
+          "t": "Shokz uses two methods. Bone conduction headphones rest on the cheekbone. <b>Open-ear earbuds</b> instead send sound through the air from a small speaker near the ear canal, with no seal or ear tip. Both leave your ears free.",
+          "g": [
+            [
+              "Air conduction",
+              "Normal hearing: sound travels through the air into the ear."
+            ]
+          ]
+        },
+        {
+          "h": "Mixing both",
+          "t": "Shokz's <b>DualPitch</b> combines the two: a bone conduction driver handles mids and highs, and a separate air conduction driver handles bass with minimal vibration. Shokz presents this as the reason newer models sound fuller.",
+          "g": [
+            [
+              "Driver",
+              "The speaker unit inside a headphone."
+            ],
+            [
+              "Mids and highs",
+              "Voices and instruments, as opposed to deep bass."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "How does bone conduction deliver sound?",
+          "o": [
+            "Through vibrations in the skull to the inner ear",
+            "Through a sealed ear tip",
+            "Through radio waves to the brain"
+          ],
+          "a": 0,
+          "w": "The transducer vibrates, and the vibrations travel through the bone to the cochlea."
+        },
+        {
+          "q": "How do open-ear earbuds like OpenFit deliver sound?",
+          "o": [
+            "Through the cheekbone",
+            "Through the air from a speaker near the ear canal",
+            "Through a cable"
+          ],
+          "a": 1,
+          "w": "They use air conduction without sealing the ear, so they are not bone conduction."
+        },
+        {
+          "q": "What does DualPitch do?",
+          "o": [
+            "Adds a second microphone",
+            "Splits audio between two Bluetooth devices",
+            "Uses a bone conduction driver for mids and highs plus an air driver for bass"
+          ],
+          "a": 2,
+          "w": "DualPitch pairs two drivers so bass comes from air, with less buzzing vibration."
+        }
+      ]
+    },
+    {
+      "id": "sk-2-1",
+      "lvl": 2,
+      "title": "Sports headphones",
+      "src": [
+        {
+          "l": "Shokz OpenRun Pro 2",
+          "u": "https://shokz.com/pages/openrunpro2"
+        },
+        {
+          "l": "Shokz OpenSwim Pro",
+          "u": "https://shokz.com/pages/openswimpro"
+        },
+        {
+          "l": "Shokz all products",
+          "u": "https://shokz.com/collections/all"
+        }
+      ],
+      "pages": [
+        {
+          "h": "OpenRun: the running line",
+          "t": "<b>OpenRun Pro 2</b> is the flagship sports model: DualPitch sound, up to <b>12 hours</b> of playback, USB-C charging and <b>IP55</b> for sweat and splashes. It comes in standard and mini sizes. <b>OpenRun Air 2</b> is a lightweight option, and <b>OpenMove</b> is described by Shokz as budget-friendly.",
+          "g": [
+            [
+              "IP55",
+              "A rating for dust and water protection. IP55 handles sweat and splashes, not swimming."
+            ]
+          ]
+        },
+        {
+          "h": "OpenSwim Pro: the swimmer",
+          "t": "<b>OpenSwim Pro</b> is rated <b>IP68</b> and can go 2 metres deep in fresh water. It has <b>32 GB</b> of built-in MP3 storage. Bluetooth works on land, but water blocks Bluetooth, so it switches to MP3 mode underwater."
+        },
+        {
+          "h": "Be honest about limits",
+          "t": "OpenRun Pro 2 is <b>not</b> meant for swimming or showering. Shokz also advises keeping volume low enough to hear traffic, and warns that headphones while cycling or driving can seriously impair hearing it. Open ears help, but they are not a safety guarantee."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which Shokz model has built-in MP3 storage for swimming?",
+          "o": [
+            "OpenRun Pro 2",
+            "OpenSwim Pro",
+            "OpenMove"
+          ],
+          "a": 1,
+          "w": "OpenSwim Pro switches to MP3 mode underwater because Bluetooth does not work well in water."
+        },
+        {
+          "q": "A customer wants to wear OpenRun Pro 2 in the pool. What do you say?",
+          "o": [
+            "Fine, it is waterproof",
+            "Only in salt water",
+            "No, it is IP55 and not meant for swimming; suggest OpenSwim Pro"
+          ],
+          "a": 2,
+          "w": "IP55 covers sweat and splashes only."
+        },
+        {
+          "q": "Which line is the Shokz flagship for running?",
+          "o": [
+            "OpenRun Pro 2",
+            "OpenComm2",
+            "OpenDots Air"
+          ],
+          "a": 0,
+          "w": "OpenRun Pro 2 is listed as the flagship sports model with DualPitch sound."
+        }
+      ]
+    },
+    {
+      "id": "sk-2-2",
+      "lvl": 2,
+      "title": "Open-ear earbuds",
+      "src": [
+        {
+          "l": "Shokz OpenFit 2 series",
+          "u": "https://shokz.com/pages/openfit2"
+        },
+        {
+          "l": "Shokz OpenDots 2",
+          "u": "https://shokz.com/pages/opendots-2"
+        },
+        {
+          "l": "Shokz all products",
+          "u": "https://shokz.com/collections/all"
+        }
+      ],
+      "pages": [
+        {
+          "h": "OpenFit: ear hook design",
+          "t": "The <b>OpenFit 2</b> series are earbuds that rest outside the ear canal, held by a flexible ear hook. Each weighs 9.4 g. Battery is up to <b>11 hours</b>, or <b>48 hours</b> with the case, and the rating is <b>IP55</b>. The <b>OpenFit 2+</b> adds Qi wireless charging and Dolby Audio.",
+          "g": [
+            [
+              "Qi",
+              "The common standard for wireless charging pads."
+            ]
+          ]
+        },
+        {
+          "h": "OpenDots: clip-on design",
+          "t": "<b>OpenDots 2</b> clip onto the ear instead of hooking over it. Each earbud weighs 6.4 g, battery is up to <b>10 hours</b> (40 with the case) and the rating is <b>IP57</b>. Either earbud works on either ear. Siblings include the very light OpenFit Air 2 and the clip-on OpenDots Air."
+        },
+        {
+          "h": "What they are not",
+          "t": "These are air conduction, not bone conduction. DirectPitch aims sound at the ear and limits leakage. Dual microphones with AI help voices on calls, but there is <b>no active noise cancellation</b>, and outside sound is never blocked.",
+          "g": [
+            [
+              "ANC",
+              "Active noise cancelling: electronics that cancel outside noise."
+            ],
+            [
+              "Beamforming",
+              "Microphones focusing on your voice and ignoring other directions."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which design clips onto the ear?",
+          "o": [
+            "OpenFit 2",
+            "OpenDots 2",
+            "OpenRun Pro 2"
+          ],
+          "a": 1,
+          "w": "OpenDots 2 uses a clip-on design; OpenFit uses an ear hook."
+        },
+        {
+          "q": "Do OpenFit 2 earbuds have active noise cancellation?",
+          "o": [
+            "Yes, strong ANC",
+            "Only with the case",
+            "No, they are open-ear and do not block outside sound"
+          ],
+          "a": 2,
+          "w": "Their dual microphones clean up your voice on calls, but they do not cancel outside noise."
+        },
+        {
+          "q": "What extra does OpenFit 2+ add over the base OpenFit 2?",
+          "o": [
+            "Qi wireless charging and Dolby Audio",
+            "Swimming mode",
+            "A boom microphone"
+          ],
+          "a": 0,
+          "w": "Shokz lists Qi wireless charging and Dolby Audio for the 2+ model only."
+        }
+      ]
+    },
+    {
+      "id": "sk-2-3",
+      "lvl": 2,
+      "title": "Office headsets",
+      "src": [
+        {
+          "l": "Shokz Pro OpenMeet 2",
+          "u": "https://pro.shokz.com/products/openmeet-2"
+        },
+        {
+          "l": "Shokz OpenComm2 UC 2025 Upgrade",
+          "u": "https://shokz.com/pages/opencomm2uc-2025-upgrade"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Two families",
+          "t": "<b>OpenMeet2</b> is a bone conduction headset for all-day office comfort: 77.9 g, flip-to-mute boom mic, red busy light and up to <b>12 hours</b> of talk time. <b>OpenComm2</b> is lighter at 35 g, with a rotatable boom mic and up to <b>16 hours</b> of talk time. Both are open-ear."
+        },
+        {
+          "h": "What UC means",
+          "t": "<b>UC</b> versions come bundled with the <b>Loop120</b> wireless adapter for a PC or Mac. Shokz says the adapter gives a more stable connection than Bluetooth. Standard OpenMeet2 has no adapter and connects by Bluetooth only, though the adapter is sold as an accessory.",
+          "g": [
+            [
+              "UC",
+              "Unified communications: calls, chat and video meetings in one set of apps."
+            ],
+            [
+              "Dongle",
+              "A small USB adapter that links a wireless headset to a computer."
+            ]
+          ]
+        },
+        {
+          "h": "Noise cancelling means the mic",
+          "t": "On OpenComm2 the noise cancelling is for the <b>microphone</b>, so callers hear you more clearly. It does not silence the room for you. OpenMeet2 uses dual AI microphones; Shokz claims up to 99.4% background noise reduction, but real results vary."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "What does the UC version add?",
+          "o": [
+            "Water resistance",
+            "A Loop120 wireless adapter",
+            "A second battery"
+          ],
+          "a": 1,
+          "w": "UC bundles the headset with the Loop120 adapter."
+        },
+        {
+          "q": "Which headset weighs about 35 g with a rotatable boom mic?",
+          "o": [
+            "OpenMeet2",
+            "OpenSwim Pro",
+            "OpenComm2"
+          ],
+          "a": 2,
+          "w": "OpenComm2 is the lighter headset with a boom mic."
+        },
+        {
+          "q": "A customer asks if OpenComm2 cancels the noise around the wearer. Best answer?",
+          "o": [
+            "Its noise cancelling is for the microphone so callers hear you clearly",
+            "Yes, full active noise cancelling for the listener",
+            "No microphone filtering at all"
+          ],
+          "a": 0,
+          "w": "Shokz describes microphone noise filtering, not noise cancelling for what you hear."
+        }
+      ]
+    },
+    {
+      "id": "sk-3-1",
+      "lvl": 3,
+      "title": "Which Shokz for which customer?",
+      "src": [
+        {
+          "l": "Shokz OpenRun Pro 2",
+          "u": "https://shokz.com/pages/openrunpro2"
+        },
+        {
+          "l": "Shokz OpenSwim Pro",
+          "u": "https://shokz.com/pages/openswimpro"
+        },
+        {
+          "l": "Shokz OpenDots 2",
+          "u": "https://shokz.com/pages/opendots-2"
+        },
+        {
+          "l": "Shokz Pro OpenMeet 2",
+          "u": "https://pro.shokz.com/products/openmeet-2"
+        },
+        {
+          "l": "Shokz OpenComm2 UC 2025 Upgrade",
+          "u": "https://shokz.com/pages/opencomm2uc-2025-upgrade"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Active customers",
+          "t": "<b>Runner or outdoor athlete:</b> OpenRun Pro 2, or OpenRun Air 2 for lighter weight. <b>Swimmer:</b> OpenSwim Pro. <b>Gym-goer who prefers earbuds:</b> OpenFit 2 series. <b>Commuter or traveller who wants something small:</b> OpenDots 2, clipped on and light."
+        },
+        {
+          "h": "Desk and hybrid workers",
+          "t": "<b>Long calls at a desk:</b> OpenMeet2 UC for all-day comfort. <b>Mobile or hybrid worker, light and on the move:</b> OpenComm2 UC with its boom mic. If the customer connects to a PC, usually choose the <b>UC</b> version with the adapter, not the Bluetooth-only one."
+        },
+        {
+          "h": "Match need to product",
+          "t": "Ask what matters first: <b>awareness</b>, <b>comfort</b>, <b>call clarity</b> or <b>water</b>. Awareness and comfort point to the whole range. Call clarity points to a boom mic or dual AI mics. Water points to OpenSwim Pro. Loud, noisy places point away from open-ear."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A swimmer wants music in the pool. Which?",
+          "o": [
+            "OpenSwim Pro",
+            "OpenFit 2",
+            "OpenMeet2"
+          ],
+          "a": 0,
+          "w": "OpenSwim Pro has IP68 and MP3 mode for underwater use."
+        },
+        {
+          "q": "A hybrid worker on a PC wants all-day comfort for long meetings. Which fits?",
+          "o": [
+            "OpenRun Pro 2",
+            "OpenMeet2 UC",
+            "OpenDots 2"
+          ],
+          "a": 1,
+          "w": "OpenMeet2 UC is built for all-day office comfort and comes with the Loop120 adapter."
+        },
+        {
+          "q": "A customer takes calls on the move and wants a very light headset with a boom mic. Which?",
+          "o": [
+            "OpenFit 2+",
+            "OpenMeet2 standard",
+            "OpenComm2"
+          ],
+          "a": 2,
+          "w": "OpenComm2 is 35 g with a rotatable boom mic."
+        },
+        {
+          "q": "Which need should make you think twice about open-ear?",
+          "o": [
+            "Comfort for glasses wearers",
+            "Staying aware of traffic",
+            "Blocking noise in a very loud workplace"
+          ],
+          "a": 2,
+          "w": "Open-ear cannot isolate the wearer from loud surroundings the way sealed ANC headphones can."
+        }
+      ]
+    },
+    {
+      "id": "sk-3-2",
+      "lvl": 3,
+      "title": "Open-ear versus in-ear and ANC",
+      "src": [
+        {
+          "l": "Shokz guide: open-ear for Zoom and Teams",
+          "u": "https://uk.shokz.com/blogs/guides/best-all-rounder-earbuds"
+        },
+        {
+          "l": "Shokz open-ear audio technology",
+          "u": "https://shokz.com/pages/open-ear-audio-technology"
+        },
+        {
+          "l": "Wikipedia: Bone conduction",
+          "u": "https://en.wikipedia.org/wiki/Bone_conduction"
+        }
+      ],
+      "pages": [
+        {
+          "h": "What sealed headphones do well",
+          "t": "In-ear earbuds and ANC headphones seal or cancel the world out. Shokz itself says sealed noise-cancelling headphones <b>block more</b> in very loud settings. If a customer wants isolation on a plane or a noisy factory floor, those are the better tool.",
+          "g": [
+            [
+              "In-ear",
+              "Earbuds with tips that sit inside the ear canal."
+            ],
+            [
+              "Isolation",
+              "How much outside noise is kept out."
+            ]
+          ]
+        },
+        {
+          "h": "What open-ear does well",
+          "t": "Open-ear keeps you <b>aware</b> of your surroundings. Shokz says it also reduces ear fatigue and makes your own voice sound more natural on calls. It suits home offices, kitchen tables and open-plan floors, where hearing colleagues matters."
+        },
+        {
+          "h": "Different, not better",
+          "t": "Usually treat Shokz as a different category, not a rival to sealed in-ear products. Trade-offs: less isolation and possible sound leakage at high volume. Wikipedia notes bone conduction users can still be less aware than with no headphones at all."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "When do sealed ANC headphones beat open-ear?",
+          "o": [
+            "Staying aware of traffic",
+            "Very loud places where isolation matters",
+            "Long comfortable calls"
+          ],
+          "a": 1,
+          "w": "Shokz admits sealed noise-cancelling headphones block more in very loud settings."
+        },
+        {
+          "q": "Which is a benefit Shokz claims for open-ear?",
+          "o": [
+            "Reduced ear fatigue",
+            "Total silence",
+            "No sound leakage ever"
+          ],
+          "a": 0,
+          "w": "Shokz says open ears reduce ear fatigue and make your own voice sound natural."
+        },
+        {
+          "q": "A customer works on an open-plan floor and wants to hear colleagues while on calls. Pitch?",
+          "o": [
+            "Sealed ANC over-ears",
+            "Open-ear headset such as OpenMeet2",
+            "A speaker only"
+          ],
+          "a": 1,
+          "w": "Open-ear lets them hear the room, which suits open-plan work."
+        }
+      ]
+    },
+    {
+      "id": "sk-4-1",
+      "lvl": 4,
+      "title": "Certifications and UC apps",
+      "src": [
+        {
+          "l": "Shokz Pro OpenMeet 2",
+          "u": "https://pro.shokz.com/products/openmeet-2"
+        },
+        {
+          "l": "Shokz OpenComm2 UC 2025 Upgrade",
+          "u": "https://shokz.com/pages/opencomm2uc-2025-upgrade"
+        },
+        {
+          "l": "Shokz guide: open-ear for Zoom and Teams",
+          "u": "https://uk.shokz.com/blogs/guides/best-all-rounder-earbuds"
+        }
+      ],
+      "pages": [
+        {
+          "h": "What certified means",
+          "t": "A <b>certified</b> headset has been tested by a meeting-app provider such as Zoom, Webex or Microsoft, so it should work with that app's buttons and features out of the box. Customers with IT rules often ask for it, so know the exact status before you promise.",
+          "g": [
+            [
+              "Certified",
+              "Tested and approved by the app provider for that headset model."
+            ]
+          ]
+        },
+        {
+          "h": "What Shokz's pages say",
+          "t": "Shokz's own pages say <b>OpenMeet2 UC</b> is certified for <b>Zoom</b> and <b>Webex</b>, and <b>OpenComm2 UC</b> is Zoom certified. We did not find a Microsoft Teams certification claim on those pages. Some resellers list Teams, so verify per model and version."
+        },
+        {
+          "h": "Works with is not certified",
+          "t": "Shokz setup guidance names Microsoft Teams as an app you can use with its adapter. That is a different claim from certification. Never say <b>Teams certified</b> unless the current Shokz or Microsoft listing for that exact model says so. When unsure, ask your distributor contact."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which meeting apps does Shokz list for OpenMeet2 UC certification?",
+          "o": [
+            "Teams and Slack",
+            "Zoom and Webex",
+            "Only Google Meet"
+          ],
+          "a": 1,
+          "w": "Shokz lists Zoom and Webex for OpenMeet2 UC."
+        },
+        {
+          "q": "A buyer needs Microsoft Teams certification. What is the right move?",
+          "o": [
+            "Confirm the status for that exact model first",
+            "Say yes, it works with Teams",
+            "Offer a sports model"
+          ],
+          "a": 0,
+          "w": "Works with Teams is not the same as certified, and the Shokz pages did not claim it."
+        },
+        {
+          "q": "What does certification mean?",
+          "o": [
+            "The headset is waterproof",
+            "The app provider tested it for that headset",
+            "It has a 2-year warranty"
+          ],
+          "a": 1,
+          "w": "Certification means the app provider tested and approved the model."
+        }
+      ]
+    },
+    {
+      "id": "sk-4-2",
+      "lvl": 4,
+      "title": "Business tools, warranty and extras",
+      "src": [
+        {
+          "l": "Shokz Pro OpenMeet 2",
+          "u": "https://pro.shokz.com/products/openmeet-2"
+        },
+        {
+          "l": "Shokz Command Center",
+          "u": "https://pro.shokz.com/pages/shokz-commandcenter"
+        },
+        {
+          "l": "Shokz OpenMeet2 shop page (warranty)",
+          "u": "https://shokz.com/products/openmeet-2"
+        },
+        {
+          "l": "Shokz OpenRun Pro 2",
+          "u": "https://shokz.com/pages/openrunpro2"
+        },
+        {
+          "l": "Shokz all products",
+          "u": "https://shokz.com/collections/all"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Managing headsets at scale",
+          "t": "Shokz offers <b>Shokz Connect</b> (PC software), the <b>Shokz App</b> for phones, and <b>Command Center</b>, a portal for managing devices across an organisation and rolling out settings and updates. The business page also lists Contact Sales, Find a Reseller and a Partner Portal.",
+          "g": [
+            [
+              "Deployment",
+              "Rolling a product out to many users at once."
+            ]
+          ]
+        },
+        {
+          "h": "Warranty, wear and care",
+          "t": "Shokz.com says every order comes with a <b>2-year warranty</b>. Reseller terms may differ, so check with your distributor contact. Shokz also says water resistance can fade with normal wear, and OpenMeet2 is <b>not</b> water-resistant at all."
+        },
+        {
+          "h": "Accessories and sizes",
+          "t": "Accessories include charging cables (a magnetic cable for OpenRun, a data cable for OpenSwim Pro), a drawstring carry bag, a gift bag and the Roadwave Lens. OpenRun Pro 2 comes in standard and mini, which helps smaller heads fit comfortably."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which tool lets IT manage many Shokz headsets centrally?",
+          "o": [
+            "Command Center",
+            "Qi charging",
+            "DualPitch"
+          ],
+          "a": 0,
+          "w": "Shokz lists Command Center for centralised management of deployments."
+        },
+        {
+          "q": "Which Shokz headset is not water-resistant?",
+          "o": [
+            "OpenMeet2",
+            "OpenRun Pro 2",
+            "OpenSwim Pro"
+          ],
+          "a": 0,
+          "w": "Shokz states OpenMeet2 is not water-resistant."
+        },
+        {
+          "q": "What can help a customer with a small head fit OpenRun Pro 2?",
+          "o": [
+            "A boom mic",
+            "The mini size",
+            "The Loop120"
+          ],
+          "a": 1,
+          "w": "OpenRun Pro 2 comes in standard and mini sizes."
+        }
+      ]
+    },
+    {
+      "id": "sk-5-1",
+      "lvl": 5,
+      "title": "Handling objections",
+      "src": [
+        {
+          "l": "Shokz guide: open-ear for Zoom and Teams",
+          "u": "https://uk.shokz.com/blogs/guides/best-all-rounder-earbuds"
+        },
+        {
+          "l": "Shokz bone conduction technology",
+          "u": "https://shokz.com/pages/bone-conduction-technology"
+        },
+        {
+          "l": "Shokz OpenFit 2 series",
+          "u": "https://shokz.com/pages/openfit2"
+        },
+        {
+          "l": "Shokz OpenRun Pro 2",
+          "u": "https://shokz.com/pages/openrunpro2"
+        },
+        {
+          "l": "Shokz OpenDots 2",
+          "u": "https://shokz.com/pages/opendots-2"
+        },
+        {
+          "l": "Shokz Pro OpenMeet 2",
+          "u": "https://pro.shokz.com/products/openmeet-2"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Sound quality",
+          "t": "Customers used to sealed headphones may find open-ear less rich. Be honest: you trade some isolation for awareness and comfort. Shokz's answer is <b>DualPitch</b>, with an air driver for bass. Position it as a lifestyle and safety choice, not as studio sound."
+        },
+        {
+          "h": "Sound leakage",
+          "t": "Shokz says bone conduction reduces sound spreading through the air, and it names <b>LeakSlayer 3.0</b> on OpenMeet2 and <b>DirectPitch</b> on earbuds. It publishes no measured figures here, and its own guide notes leakage is possible at high volume. Suggest a demo in a quiet office.",
+          "g": [
+            [
+              "Leakage",
+              "Sound escaping so people nearby can hear it."
+            ]
+          ]
+        },
+        {
+          "h": "Bass",
+          "t": "Bass is the classic worry. DualPitch routes bass through an air driver. OpenRun Pro 2 has a <b>Bass Boost</b> EQ mode and OpenDots 2 has a <b>Bass</b> preset. Set expectations: tuned bass is possible, but do not promise the thump of sealed over-ear headphones.",
+          "g": [
+            [
+              "EQ",
+              "Equaliser: settings that boost or cut parts of the sound, like bass or voices."
+            ]
+          ]
+        }
+      ],
+      "quiz": [
+        {
+          "q": "A customer says Shokz will annoy colleagues with leakage. Best reply?",
+          "o": [
+            "Leakage is impossible",
+            "Shokz works to limit it, but it can occur at high volume, so try a demo",
+            "Switch to a sports model"
+          ],
+          "a": 1,
+          "w": "Shokz makes leakage claims without published figures and admits leakage at high volume."
+        },
+        {
+          "q": "What is Shokz's answer to the bass worry on newer models?",
+          "o": [
+            "A bigger battery",
+            "A separate air driver for bass",
+            "A longer cable"
+          ],
+          "a": 1,
+          "w": "DualPitch sends bass through an air conduction driver."
+        },
+        {
+          "q": "How should you position Shokz against audiophile headphones?",
+          "o": [
+            "As lifestyle and awareness, not studio sound",
+            "As the best sound at any price",
+            "As cheaper clones"
+          ],
+          "a": 0,
+          "w": "Honest positioning builds trust: the draw is awareness and comfort."
+        }
+      ]
+    },
+    {
+      "id": "sk-5-2",
+      "lvl": 5,
+      "title": "Questions to ask and traps to avoid",
+      "src": [
+        {
+          "l": "Shokz guide: open-ear for Zoom and Teams",
+          "u": "https://uk.shokz.com/blogs/guides/best-all-rounder-earbuds"
+        },
+        {
+          "l": "Shokz OpenRun Pro 2",
+          "u": "https://shokz.com/pages/openrunpro2"
+        },
+        {
+          "l": "Shokz Pro OpenMeet 2",
+          "u": "https://pro.shokz.com/products/openmeet-2"
+        },
+        {
+          "l": "Wikipedia: Bone conduction",
+          "u": "https://en.wikipedia.org/wiki/Bone_conduction"
+        }
+      ],
+      "pages": [
+        {
+          "h": "Good questions",
+          "t": "Ask: <b>where</b> will it be used, <b>how many hours</b> of calls a day, <b>which meeting app</b>, PC or phone, how many users, and does IT need central management. The answers separate sports, office and everyday customers quickly."
+        },
+        {
+          "h": "Common traps",
+          "t": "Do not promise <b>Teams certified</b> without checking. Do not sell OpenRun Pro 2 for swimming. Do not offer OpenMeet2 where water is a risk. Do not pitch open-ear for a very loud factory floor. Check that PC users get a <b>UC</b> or adapter version."
+        },
+        {
+          "h": "The safety-conscious user",
+          "t": "Open ears help people hear traffic, but Shokz advises keeping volume low and warns that headphones while cycling or driving can seriously impair hearing it. Wikipedia does not claim bone conduction protects hearing. Never promise hearing protection or safety."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Which is a good first discovery question?",
+          "o": [
+            "What colour do you like?",
+            "Which meeting app do you use and how long are your calls?",
+            "How many units can you take?"
+          ],
+          "a": 1,
+          "w": "Meeting app and call length quickly point to the right model."
+        },
+        {
+          "q": "A customer asks if Shokz protects their hearing. Best answer?",
+          "o": [
+            "Yes, bone conduction protects hearing",
+            "No claim: keep volume low and stay aware",
+            "Only with ANC"
+          ],
+          "a": 1,
+          "w": "The sources do not claim hearing protection, so never promise it."
+        },
+        {
+          "q": "A customer needs headphones for a very loud workshop. Best advice?",
+          "o": [
+            "Open-ear, because it is safest",
+            "OpenSwim Pro",
+            "Warn that open-ear gives little isolation and consider sealed protection"
+          ],
+          "a": 2,
+          "w": "Open-ear leaves noise in by design."
+        }
+      ]
+    }
+  ]
+}

@@ -11,5 +11,11 @@
 {"id": "surveillance", "group": "base", "focus": 5},
 {"id": "mobile-broadband", "group": "base", "focus": 5},
 {"id": "it-vs-ot", "group": "base", "focus": 5},
-{"id": "licensing", "group": "base", "focus": 5}
+{"id": "licensing", "group": "base", "focus": 5},
+{"id": "ai-prompting", "group": "ai", "focus": 5},
+{"id": "programming", "group": "ai", "focus": 5},
+{"id": "productivity-excel", "group": "ai", "focus": 5},
+{"id": "shokz", "group": "brand", "focus": 5},
+{"id": "yealink", "group": "brand", "focus": 5},
+{"id": "insta360", "group": "brand", "focus": 5}
 ]}

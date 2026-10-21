@@ -20,7 +20,7 @@ def p(msg):
 
 # words that must never appear in the public app (extend freely)
 PRIVACY = re.compile(
-    r"€|\$[1-9]|\b\d+ ?(eur|dkk|usd|nok|sek)\b|\bonninen\b|\bkesko\b|\bgigantti\b|\bverkkokauppa\b|"
+    r"€|(?<![A-Za-z])\$[1-9]|\b\d+ ?(eur|dkk|usd|nok|sek)\b|\bonninen\b|\bkesko\b|\bgigantti\b|\bverkkokauppa\b|"
     r"\bmultitronic\b|\bvalmet\b|s-ryhm|\btobias\b|pricefile|our own sales|local sales|"
     r"deal reg form", re.I)
 

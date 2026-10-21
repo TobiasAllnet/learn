@@ -1,0 +1,1000 @@
+{
+ "title": "Excel and productivity",
+ "desc": "Formulas, shortcuts and clean-data habits for everyday sales admin",
+ "src": [
+  {
+   "l": "Microsoft Support: Excel",
+   "u": "https://support.microsoft.com/en-us/excel"
+  },
+  {
+   "l": "Microsoft: Keyboard shortcuts in Excel",
+   "u": "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f"
+  },
+  {
+   "l": "Microsoft: XLOOKUP function",
+   "u": "https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "ex-1-1",
+   "lvl": 1,
+   "title": "How a sheet works",
+   "src": [
+    {
+     "l": "Microsoft: Overview of Excel tables",
+     "u": "https://support.microsoft.com/en-us/office/overview-of-excel-tables-7ab0bb7d-3a9e-4b56-a3c9-6c94334e492c"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Cells, ranges and formulas",
+     "t": "A sheet is a grid of <b>cells</b>. Each has an address like <b>B2</b> (column B, row 2). A group of cells is a <b>range</b>, written <b>B2:B10</b>. Type <b>=</b> first and Excel treats what follows as a formula, such as <b>=B2*C2</b>.",
+     "g": [
+      [
+       "Range",
+       "A block of cells, written first cell:last cell, like B2:B10."
+      ],
+      [
+       "Formula",
+       "A cell entry that starts with = and calculates a result."
+      ]
+     ]
+    },
+    {
+     "h": "What you see is not what is stored",
+     "t": "A cell can <i>show</i> 12% while holding 0.12, or show a date while holding a number. <b>Formatting</b> changes only the look. The <b>value</b> underneath is what formulas use. Clicking a cell shows its real content in the formula bar above the grid.",
+     "g": [
+      [
+       "Formula bar",
+       "The bar above the grid showing what a cell really contains."
+      ]
+     ]
+    },
+    {
+     "h": "Tables: a list that behaves",
+     "t": "Select a price list and choose Home, Format as Table. You get a <b>header row</b> with filter buttons on every column, and a formula typed in one cell is applied down the whole column. Formulas can then use column names instead of cell addresses.",
+     "g": [
+      [
+       "Table",
+       "An Excel feature that turns a range into one managed unit with headers and filters."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A cell shows 12% but a formula treats it as 0.12. Why?",
+     "o": [
+      "The formula is wrong",
+      "Formatting changes how a value looks, not the stored value",
+      "Excel always divides percentages by ten"
+     ],
+     "a": 1,
+     "w": "Formatting is only the look. The value underneath is what formulas use, and the formula bar shows it."
+    },
+    {
+     "q": "What does the range B2:B10 mean?",
+     "o": [
+      "Only cells B2 and B10",
+      "The cells from B2 down to B10 in column B",
+      "Row 2 to row 10 in every column"
+     ],
+     "a": 1,
+     "w": "A range is written first cell, colon, last cell. B2:B10 is the block of cells in column B from row 2 to row 10."
+    },
+    {
+     "q": "You format a price list as a table. What do you get on every column?",
+     "o": [
+      "A header row with filter buttons",
+      "A locked password",
+      "An automatic total at the bottom of the screen"
+     ],
+     "a": 0,
+     "w": "A table has a header row by default, with filter and sort controls on each column."
+    }
+   ]
+  },
+  {
+   "id": "ex-1-2",
+   "lvl": 1,
+   "title": "Relative and absolute references",
+   "src": [
+    {
+     "l": "Microsoft: Switch between relative, absolute and mixed references",
+     "u": "https://support.microsoft.com/en-us/excel/switch-between-relative-absolute-and-mixed-references"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Copying changes references",
+     "t": "Write <b>=B4*C4</b> in D4 (price times quantity) and copy it to D5. Excel gives <b>=B5*C5</b>. That is a <b>relative reference</b>: it moves with the formula. This is usually what you want when copying a formula down a list.",
+     "g": [
+      [
+       "Relative reference",
+       "A reference like B4 that shifts when the formula is copied."
+      ]
+     ]
+    },
+    {
+     "h": "Dollar signs lock a cell",
+     "t": "Say a discount sits in cell F1 and every row must use it. Write <b>$F$1</b>. The dollar signs lock column and row, so the reference stays put when copied. This is an <b>absolute reference</b>. <b>$F1</b> locks only the column, <b>F$1</b> only the row.",
+     "g": [
+      [
+       "Absolute reference",
+       "A reference like $F$1 that does not change when copied."
+      ],
+      [
+       "Mixed reference",
+       "Locks only the column ($F1) or only the row (F$1)."
+      ]
+     ]
+    },
+    {
+     "h": "F4 types the dollars for you",
+     "t": "On Windows, click into a formula, select the reference with the cursor and press <b>F4</b>. Each press cycles through the reference types, so you do not type the dollar signs by hand. If copied formulas give odd results down a list, a missing dollar sign is the first suspect."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "You copy =B4*C4 from D4 to D5. What does D5 contain?",
+     "o": [
+      "=B4*C4",
+      "=B5*C5",
+      "=B5*C4"
+     ],
+     "a": 1,
+     "w": "Relative references shift with the formula, so row 4 becomes row 5."
+    },
+    {
+     "q": "A discount in F1 must apply to every row. Which reference do you use for it?",
+     "o": [
+      "F1",
+      "$F$1",
+      "$F1 and nothing else"
+     ],
+     "a": 1,
+     "w": "$F$1 locks both column and row, so every copy still points at F1."
+    },
+    {
+     "q": "Which key cycles a reference between relative, absolute and mixed?",
+     "o": [
+      "F2",
+      "F4",
+      "Ctrl+Z"
+     ],
+     "a": 1,
+     "w": "Select the reference in the formula and press F4 to cycle the types."
+    },
+    {
+     "q": "Copied formulas down a list give odd results. What do you check first?",
+     "o": [
+      "A missing dollar sign on a fixed cell",
+      "Whether the file is saved",
+      "The column width"
+     ],
+     "a": 0,
+     "w": "A reference that should be locked but is not will drift when the formula is copied."
+    }
+   ]
+  },
+  {
+   "id": "ex-2-1",
+   "lvl": 2,
+   "title": "SUM, AVERAGE, COUNT and IF",
+   "src": [
+    {
+     "l": "Microsoft: SUM function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/sum-function"
+    },
+    {
+     "l": "Microsoft: AVERAGE function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/average-function"
+    },
+    {
+     "l": "Microsoft: COUNT function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/count-function"
+    },
+    {
+     "l": "Microsoft: COUNTA function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/counta-function"
+    },
+    {
+     "l": "Microsoft: IF function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/if-function"
+    },
+    {
+     "l": "Microsoft: Keyboard shortcuts in Excel",
+     "u": "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Totals and averages",
+     "t": "<b>=SUM(B2:B10)</b> adds the numbers, and it ignores text. <b>=AVERAGE(B2:B10)</b> gives the mean: text and empty cells are ignored, but <b>zeros are included</b>. On Windows, <b>Alt+=</b> inserts a SUM for you.",
+     "g": [
+      [
+       "AVERAGE",
+       "The arithmetic mean of the numbers in a range."
+      ]
+     ]
+    },
+    {
+     "h": "Counting rows",
+     "t": "<b>=COUNT(B2:B10)</b> counts only cells holding <b>numbers</b>. <b>=COUNTA(A2:A10)</b> counts every <b>non-empty</b> cell, including text. Use COUNTA to find out how many customers are on a list, and COUNT to count how many have an order value.",
+     "g": [
+      [
+       "COUNTA",
+       "Counts all cells that are not empty."
+      ]
+     ]
+    },
+    {
+     "h": "IF makes a decision",
+     "t": "<b>=IF(logical_test, value_if_true, value_if_false)</b> returns one of two results. For example <b>=IF(C2>=10,\"In stock\",\"Check\")</b> labels a stock list row by row. Text in a formula goes inside double quotes.",
+     "g": [
+      [
+       "Logical test",
+       "A comparison like C2>=10 that is either true or false."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A list of 50 customer names is in A2:A51. Which formula counts them?",
+     "o": [
+      "=COUNT(A2:A51)",
+      "=COUNTA(A2:A51)",
+      "=SUM(A2:A51)"
+     ],
+     "a": 1,
+     "w": "COUNTA counts non-empty cells including text. COUNT only counts numbers, so it would return 0 for names."
+    },
+    {
+     "q": "How does AVERAGE treat a cell containing 0?",
+     "o": [
+      "Ignores it",
+      "Includes it",
+      "Turns it into an error"
+     ],
+     "a": 1,
+     "w": "Cells with the value zero are included. Empty cells and text are ignored."
+    },
+    {
+     "q": "Which formula labels stock of 10 or more as In stock?",
+     "o": [
+      "=IF(C2>=10,\"In stock\",\"Check\")",
+      "=SUM(C2>=10)",
+      "=COUNT(C2,\"In stock\")"
+     ],
+     "a": 0,
+     "w": "IF takes the test first, then the result if true, then the result if false."
+    }
+   ]
+  },
+  {
+   "id": "ex-2-2",
+   "lvl": 2,
+   "title": "Errors and what they mean",
+   "src": [
+    {
+     "l": "Microsoft: Detect formula errors in Excel",
+     "u": "https://support.microsoft.com/en-us/excel/detect-formula-errors-in-excel"
+    },
+    {
+     "l": "Microsoft: IFERROR function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/iferror-function"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Errors are clues, not disasters",
+     "t": "Excel errors start with # and tell you what went wrong. <b>#DIV/0!</b> means dividing by zero or an empty cell. <b>#NAME?</b> means Excel does not recognise text in the formula, often a misspelt function. <b>####</b> usually means the column is too narrow."
+    },
+    {
+     "h": "Three more to know",
+     "t": "<b>#N/A</b>: a value is not available, typically a lookup found no match. <b>#REF!</b>: a referenced cell was deleted or pasted over, and Undo can help. <b>#VALUE!</b>: the formula mixes data types, for example doing maths on text."
+    },
+    {
+     "h": "IFERROR: use with care",
+     "t": "<b>=IFERROR(value, value_if_error)</b> replaces an error with a result you choose, such as <b>=IFERROR(A2/B2,0)</b>. It catches <b>every</b> error type, even real mistakes, so use it only when you are sure the formula works as intended.",
+     "g": [
+      [
+       "IFERROR",
+       "A wrapper that shows your own result instead of any formula error."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A lookup shows #N/A. What does that most likely mean?",
+     "o": [
+      "The column is too narrow",
+      "No match was found",
+      "A function name is misspelt"
+     ],
+     "a": 1,
+     "w": "#N/A means a value is not available to the formula. For lookups it usually means there is no match."
+    },
+    {
+     "q": "You see #### in a cell. What is the usual cause?",
+     "o": [
+      "Division by zero",
+      "A deleted cell",
+      "The column is too narrow to show the content"
+     ],
+     "a": 2,
+     "w": "#### means the column is too narrow (or a negative date). Widening the column fixes it."
+    },
+    {
+     "q": "Why should you be careful with IFERROR?",
+     "o": [
+      "It hides every kind of error, including real mistakes",
+      "It only works on text",
+      "It deletes the original formula"
+     ],
+     "a": 0,
+     "w": "IFERROR covers all error types, so a genuine problem can be masked."
+    }
+   ]
+  },
+  {
+   "id": "ex-3-1",
+   "lvl": 3,
+   "title": "XLOOKUP vs VLOOKUP",
+   "src": [
+    {
+     "l": "Microsoft: XLOOKUP function",
+     "u": "https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929"
+    },
+    {
+     "l": "Microsoft: VLOOKUP function",
+     "u": "https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Lookups fetch a value by key",
+     "t": "You have an order list with item numbers and a stock list with names. A <b>lookup</b> finds each item number in the stock list and brings back the name. It is among the most useful formulas in sales admin and saves hours of copy and paste.",
+     "g": [
+      [
+       "Lookup",
+       "A formula that finds a key in one list and returns related data from the same row."
+      ]
+     ]
+    },
+    {
+     "h": "The old way: VLOOKUP",
+     "t": "<b>=VLOOKUP(lookup_value, table_array, col_index_num, FALSE)</b>. You count columns by hand, and the key must sit in the <b>leftmost</b> column, with the answer to its right. Leave out the last argument and it defaults to <b>approximate</b> match, which can return wrong results.",
+     "g": [
+      [
+       "Approximate match",
+       "Finds the closest value and assumes a sorted list. Use FALSE for an exact match."
+      ]
+     ]
+    },
+    {
+     "h": "The newer way: XLOOKUP",
+     "t": "<b>=XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found])</b>. It defaults to <b>exact</b> match, can look to the left, and lets you write your own not-found text. It is in Microsoft 365, Excel 2021 and 2024, but <b>not</b> Excel 2016 or 2019."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is a VLOOKUP restriction?",
+     "o": [
+      "The key must be in the leftmost column of the range",
+      "It can only return numbers",
+      "It cannot find text"
+     ],
+     "a": 0,
+     "w": "VLOOKUP searches the first column of the table array and returns from columns to its right."
+    },
+    {
+     "q": "You omit the last VLOOKUP argument. What happens?",
+     "o": [
+      "Exact match is used",
+      "Approximate match is used",
+      "The formula returns #REF! immediately"
+     ],
+     "a": 1,
+     "w": "The default is approximate match, which assumes a sorted first column. Use FALSE for exact."
+    },
+    {
+     "q": "A colleague has Excel 2019 and opens your sheet with XLOOKUP. What is the issue?",
+     "o": [
+      "XLOOKUP is not available in Excel 2016 or 2019",
+      "XLOOKUP only works for names",
+      "Dollar signs are missing"
+     ],
+     "a": 0,
+     "w": "XLOOKUP is available in Microsoft 365, Excel 2021 and 2024, but not in Excel 2016 or 2019."
+    },
+    {
+     "q": "Which feature does XLOOKUP have that VLOOKUP lacks?",
+     "o": [
+      "A built-in not-found text option",
+      "Counting columns by hand",
+      "Searching only the first column"
+     ],
+     "a": 0,
+     "w": "XLOOKUP has an if_not_found argument, and it uses separate lookup and return ranges instead of a column number."
+    }
+   ]
+  },
+  {
+   "id": "ex-3-2",
+   "lvl": 3,
+   "title": "SUMIFS and COUNTIFS",
+   "src": [
+    {
+     "l": "Microsoft: SUMIFS function",
+     "u": "https://support.microsoft.com/en-us/office/sumifs-function-c9e748f5-7ea7-455d-9406-611cebce642b"
+    },
+    {
+     "l": "Microsoft: SUMIF function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/sumif-function"
+    },
+    {
+     "l": "Microsoft: COUNTIFS function",
+     "u": "https://support.microsoft.com/en-us/office/countifs-function-dda3dc6e-f74e-4aee-88bc-aa8c2a866842"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Add up only what matches",
+     "t": "<b>SUMIF</b> adds values that meet one condition: <b>=SUMIF(B2:B5,\"John\",C2:C5)</b> totals column C where column B says John. The order is range to test, condition, then range to add.",
+     "g": [
+      [
+       "Criteria",
+       "The condition a cell must meet to be counted or added."
+      ]
+     ]
+    },
+    {
+     "h": "SUMIFS: several conditions",
+     "t": "<b>=SUMIFS(sum_range, criteria_range1, criteria1, criteria_range2, criteria2)</b>. The sum range comes <b>first</b>, unlike SUMIF. Example: total quantity for one product and one salesperson. All ranges must be the same size, and <b>*</b> works as a wildcard, as in \"A*\".",
+     "g": [
+      [
+       "Wildcard",
+       "* stands for any characters, ? for any single character."
+      ]
+     ]
+    },
+    {
+     "h": "COUNTIFS: how many rows",
+     "t": "<b>=COUNTIFS(criteria_range1, criteria1, ...)</b> counts the rows where <b>every</b> condition is true, for example open quotes from one salesperson. Criteria can use comparisons like <b>\"&lt;5\"</b> or <b>\"&gt;1\"</b>. It gives a quick answer without building anything bigger."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "In SUMIFS, which argument comes first?",
+     "o": [
+      "The sum range",
+      "The first criteria range",
+      "The criteria text"
+     ],
+     "a": 0,
+     "w": "SUMIFS starts with the range to add. SUMIF puts its optional sum range last."
+    },
+    {
+     "q": "You want how many rows are both Finland and above a limit. Which function?",
+     "o": [
+      "COUNTIFS",
+      "AVERAGE",
+      "SUMIF"
+     ],
+     "a": 0,
+     "w": "COUNTIFS counts rows where all listed conditions are met."
+    },
+    {
+     "q": "What does \"A*\" match as a criterion?",
+     "o": [
+      "Only the text A*",
+      "Any text starting with A",
+      "Any text containing exactly one letter"
+     ],
+     "a": 1,
+     "w": "The * wildcard stands for any sequence of characters, so \"A*\" matches text starting with A."
+    }
+   ]
+  },
+  {
+   "id": "ex-3-3",
+   "lvl": 3,
+   "title": "UNIQUE, FILTER and SORT",
+   "src": [
+    {
+     "l": "Microsoft: UNIQUE function",
+     "u": "https://support.microsoft.com/en-us/office/unique-function-c5ab87fd-30a3-4ce9-9d1a-40204fb85e1e"
+    },
+    {
+     "l": "Microsoft: FILTER function",
+     "u": "https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759"
+    },
+    {
+     "l": "Microsoft: SORT function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/sort-function"
+    }
+   ],
+   "pages": [
+    {
+     "h": "One formula, many results",
+     "t": "Newer Excel has <b>dynamic array</b> functions. One formula can return a whole list, and the result <b>spills</b> into the cells below. You type it once, in the top cell, and Excel sizes the output itself.",
+     "g": [
+      [
+       "Spill",
+       "A formula result that flows across several neighbouring cells."
+      ]
+     ]
+    },
+    {
+     "h": "UNIQUE and SORT",
+     "t": "<b>=UNIQUE(A2:A500)</b> returns each distinct value once, handy for a clean list of resellers from a long order export. <b>=SORT(array)</b> orders a range, with <b>-1</b> as the third argument for descending. Combine them: <b>=SORT(UNIQUE(A2:A500))</b>."
+    },
+    {
+     "h": "FILTER pulls matching rows",
+     "t": "<b>=FILTER(array, include, [if_empty])</b> returns the rows that meet a condition, such as <b>=FILTER(A5:D20,C5:C20=H2,\"\")</b>. The third argument is what shows when nothing matches. These functions exist in Microsoft 365, Excel 2021 and 2024.",
+     "g": [
+      [
+       "Dynamic array",
+       "A formula that returns several values at once, spilling into neighbouring cells."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What do you get from =UNIQUE(A2:A500)?",
+     "o": [
+      "Each distinct value once",
+      "The number of duplicates",
+      "The largest value"
+     ],
+     "a": 0,
+     "w": "UNIQUE returns a list of the distinct values."
+    },
+    {
+     "q": "Why give FILTER a third argument?",
+     "o": [
+      "To sort the result",
+      "To lock the range",
+      "To choose what shows when nothing matches"
+     ],
+     "a": 2,
+     "w": "The if_empty argument sets the result when no rows pass. Otherwise you get an error."
+    },
+    {
+     "q": "Which formula gives a sorted list of distinct resellers?",
+     "o": [
+      "=SORT(UNIQUE(A2:A500))",
+      "=COUNT(UNIQUE(A2:A500))",
+      "=FILTER(A2:A500)"
+     ],
+     "a": 0,
+     "w": "Wrapping UNIQUE in SORT sorts the distinct list."
+    }
+   ]
+  },
+  {
+   "id": "ex-4-1",
+   "lvl": 4,
+   "title": "Move and select fast",
+   "src": [
+    {
+     "l": "Microsoft: Keyboard shortcuts in Excel",
+     "u": "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Jump around big sheets",
+     "t": "On Windows, <b>Ctrl+Arrow</b> jumps to the edge of the current data region. <b>Ctrl+Home</b> goes to the start of the sheet and <b>Ctrl+End</b> to the last used cell. <b>Ctrl+Page Down</b> moves to the next sheet.",
+     "g": [
+      [
+       "Data region",
+       "A block of filled cells with no blank rows or columns."
+      ]
+     ]
+    },
+    {
+     "h": "Select without the mouse",
+     "t": "<b>Ctrl+Shift+Arrow</b> extends the selection to the last non-blank cell. <b>Ctrl+Space</b> selects the whole column and <b>Shift+Space</b> the whole row. Combine: Ctrl+Home, then Ctrl+Shift+Arrow down, selects a column of data in two moves."
+    },
+    {
+     "h": "Edit and undo habits",
+     "t": "<b>F2</b> edits the active cell. <b>Ctrl+Z</b> undoes and <b>Ctrl+Y</b> repeats the last action. Make Ctrl+Z a reflex before you panic about a big paste or delete. And <b>Ctrl+;</b> enters the current date."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which shortcut jumps to the last used cell on a sheet?",
+     "o": [
+      "Ctrl+End",
+      "Ctrl+Home",
+      "Ctrl+Space"
+     ],
+     "a": 0,
+     "w": "Ctrl+End moves to the last used cell. Ctrl+Home goes to the start."
+    },
+    {
+     "q": "How do you select a whole column quickly on Windows?",
+     "o": [
+      "Shift+Space",
+      "Ctrl+Space",
+      "F2"
+     ],
+     "a": 1,
+     "w": "Ctrl+Space selects an entire column, Shift+Space an entire row."
+    },
+    {
+     "q": "What does F2 do?",
+     "o": [
+      "Edits the active cell",
+      "Freezes panes",
+      "Starts Flash Fill"
+     ],
+     "a": 0,
+     "w": "F2 edits the active cell with the cursor at the end of its content."
+    },
+    {
+     "q": "What does Ctrl+Arrow do?",
+     "o": [
+      "Jumps to the edge of the data region",
+      "Selects the whole sheet",
+      "Undoes the last action"
+     ],
+     "a": 0,
+     "w": "It moves to the edge of the current data region."
+    }
+   ]
+  },
+  {
+   "id": "ex-4-2",
+   "lvl": 4,
+   "title": "Fill, freeze and paste smartly",
+   "src": [
+    {
+     "l": "Microsoft: Using Flash Fill in Excel",
+     "u": "https://support.microsoft.com/en-us/excel/using-flash-fill-in-excel"
+    },
+    {
+     "l": "Microsoft: Freeze panes",
+     "u": "https://support.microsoft.com/en-us/office/freeze-panes-to-lock-rows-and-columns-dab2ffc9-020d-4026-8121-67dd25f2508f"
+    },
+    {
+     "l": "Microsoft: Keyboard shortcuts in Excel",
+     "u": "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Fill instead of typing",
+     "t": "<b>Ctrl+D</b> fills the top cell's content down through the selection. <b>Flash Fill</b> (<b>Ctrl+E</b>) spots a pattern: type the first surname by hand next to a full-name column, press Ctrl+E, and Excel completes the rest.",
+     "g": [
+      [
+       "Flash Fill",
+       "Excel recognises your pattern and fills the rest of the column."
+      ]
+     ]
+    },
+    {
+     "h": "Keep headers in view",
+     "t": "On a long price list, the headers scroll away. Use <b>View, Freeze Panes</b>. Excel freezes the rows above and the columns left of the selected cell. Select <b>A2</b> first to freeze just the top row. <b>Unfreeze Panes</b> reverses it.",
+     "g": [
+      [
+       "Freeze panes",
+       "Keeps chosen rows and columns visible while you scroll."
+      ]
+     ]
+    },
+    {
+     "h": "Paste only what you need",
+     "t": "<b>Ctrl+Alt+V</b> opens <b>Paste Special</b>. Press <b>V</b> to paste <b>only the values</b>, not the formulas. This is how you turn a calculated column into fixed numbers, or share figures without dragging formulas along.",
+     "g": [
+      [
+       "Paste Special",
+       "Paste menu that lets you choose values, formats or formulas separately."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "You want to paste figures without their formulas. What do you use?",
+     "o": [
+      "Paste Special, values",
+      "Ctrl+Z",
+      "Freeze Panes"
+     ],
+     "a": 0,
+     "w": "Paste Special with Values pastes only the numbers, not the formulas."
+    },
+    {
+     "q": "Which cell do you select to freeze only the top row?",
+     "o": [
+      "A1",
+      "A2",
+      "The last row"
+     ],
+     "a": 1,
+     "w": "Freeze Panes freezes the rows above the selected cell, so select A2."
+    },
+    {
+     "q": "What does Ctrl+E trigger?",
+     "o": [
+      "Flash Fill",
+      "Paste Special",
+      "Fill Down"
+     ],
+     "a": 0,
+     "w": "Ctrl+E invokes Flash Fill, which fills the current column based on a pattern."
+    }
+   ]
+  },
+  {
+   "id": "ex-4-3",
+   "lvl": 4,
+   "title": "Clean-data habits",
+   "src": [
+    {
+     "l": "Microsoft: Top ten ways to clean your data",
+     "u": "https://support.microsoft.com/en-us/excel/top-ten-ways-to-clean-your-data"
+    },
+    {
+     "l": "Microsoft: Overview of Excel tables",
+     "u": "https://support.microsoft.com/en-us/office/overview-of-excel-tables-7ab0bb7d-3a9e-4b56-a3c9-6c94334e492c"
+    },
+    {
+     "l": "Microsoft: Apply data validation to cells",
+     "u": "https://support.microsoft.com/en-us/office/apply-data-validation-to-cells-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249"
+    },
+    {
+     "l": "Microsoft: TRIM function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/trim-function"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Shape your list well",
+     "t": "A list works best with <b>one header row</b>, similar data in each column, no blank rows and all rows visible. An <b>Excel table</b> helps with this. Keep one list per sheet, so filters and formulas always know where the data starts and stops."
+    },
+    {
+     "h": "Stop bad entries early",
+     "t": "<b>Data, Data Validation</b> restricts what can be typed into a cell: whole numbers, dates, or a <b>drop-down list</b> of allowed choices such as country names. That prevents Finland, finland and FI all appearing in one column.",
+     "g": [
+      [
+       "Data validation",
+       "A rule limiting what a cell accepts, such as a drop-down list."
+      ]
+     ]
+    },
+    {
+     "h": "Tidy imported data",
+     "t": "Before analysing an export, keep an untouched backup copy. <b>=TRIM(A2)</b> removes extra spaces, but not the web-style nonbreaking space. <b>Remove Duplicates</b> deletes repeated rows. Name files clearly, for example with a date, so versions never get mixed up.",
+     "g": [
+      [
+       "TRIM",
+       "Removes extra spaces from text, leaving single spaces between words."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A drop-down list of allowed countries is made with which feature?",
+     "o": [
+      "Data Validation",
+      "Paste Special",
+      "Freeze Panes"
+     ],
+     "a": 0,
+     "w": "Data Validation with the List type creates a drop-down."
+    },
+    {
+     "q": "Why keep a backup copy before cleaning an export?",
+     "o": [
+      "Excel requires it",
+      "So formulas run faster",
+      "To be able to return to the original data"
+     ],
+     "a": 2,
+     "w": "Microsoft's cleaning guide recommends keeping a backup of the original."
+    },
+    {
+     "q": "Which setup works best for a customer list?",
+     "o": [
+      "One header row, no blank rows, one list per sheet",
+      "Several lists side by side",
+      "Blank rows between customers"
+     ],
+     "a": 0,
+     "w": "Tabular data with a header row and no blank rows works best with filters and formulas."
+    }
+   ]
+  },
+  {
+   "id": "ex-5-1",
+   "lvl": 5,
+   "title": "Classic mistakes to avoid",
+   "src": [
+    {
+     "l": "Microsoft: Fix text-formatted numbers",
+     "u": "https://support.microsoft.com/en-us/excel/fix-text-formatted-numbers-by-applying-a-number-format"
+    },
+    {
+     "l": "Microsoft: SUBTOTAL function",
+     "u": "https://support.microsoft.com/en-us/office/subtotal-function-7b027003-f060-4ade-9040-e478765b9939"
+    },
+    {
+     "l": "Microsoft: ROUND function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/round-function"
+    },
+    {
+     "l": "Microsoft: TODAY function",
+     "u": "https://support.microsoft.com/en-us/excel/functions/today-function"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Numbers stored as text",
+     "t": "If numbers sit left-aligned, often with a green triangle, they may be <b>text</b>. Calculations can skip them. Select the cells and use the warning button to <b>Convert to Number</b>. SUM ignores text values, so a total that looks too low is a reason to check.",
+     "g": [
+      [
+       "Text-formatted number",
+       "A number Excel treats as text, so calculations skip it."
+      ]
+     ]
+    },
+    {
+     "h": "Hidden and filtered rows",
+     "t": "For visible cells only, use <b>SUBTOTAL</b>. <b>=SUBTOTAL(109,B2:B10)</b> sums while ignoring manually hidden rows, while <b>9</b> includes them. Rows filtered out are always left out of SUBTOTAL.",
+     "g": [
+      [
+       "SUBTOTAL",
+       "A summing function that can ignore hidden or filtered rows."
+      ]
+     ]
+    },
+    {
+     "h": "Rounding and dates",
+     "t": "Formatting to two decimals only <i>shows</i> two, the full number is still stored. <b>=ROUND(A1,2)</b> actually rounds the value. <b>=TODAY()</b> updates every day, so it is wrong for a date you want to keep, like a quote date."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Numbers are left-aligned with a green triangle. What is likely?",
+     "o": [
+      "They are stored as text",
+      "They are hidden rows",
+      "They are negative"
+     ],
+     "a": 0,
+     "w": "Left alignment and the indicator often mean numbers formatted as text."
+    },
+    {
+     "q": "Which formula sums only visible rows, ignoring manually hidden ones?",
+     "o": [
+      "=SUBTOTAL(9,B2:B10)",
+      "=COUNTA(B2:B10)",
+      "=SUBTOTAL(109,B2:B10)"
+     ],
+     "a": 2,
+     "w": "Function number 109 ignores manually hidden rows, 9 includes them."
+    },
+    {
+     "q": "What does formatting a cell to two decimals do?",
+     "o": [
+      "Changes only the display",
+      "Rounds the stored value",
+      "Converts it to text"
+     ],
+     "a": 0,
+     "w": "Formatting changes the look. Use ROUND to change the value itself."
+    },
+    {
+     "q": "Why is =TODAY() a bad choice for a quote date you want to keep?",
+     "o": [
+      "It returns text",
+      "It needs a lookup",
+      "It changes every day"
+     ],
+     "a": 2,
+     "w": "TODAY returns the current date and updates daily, so the saved date would drift."
+    }
+   ]
+  },
+  {
+   "id": "ex-5-2",
+   "lvl": 5,
+   "title": "Audit, tools and Copilot",
+   "src": [
+    {
+     "l": "Microsoft: Get started with Copilot in Excel",
+     "u": "https://support.microsoft.com/en-us/excel/copilot/get-started-with-copilot-in-excel"
+    },
+    {
+     "l": "Microsoft: Overview of PivotTables and PivotCharts",
+     "u": "https://support.microsoft.com/en-us/excel/overview-of-pivottables-and-pivotcharts"
+    },
+    {
+     "l": "Microsoft: About Power Query in Excel",
+     "u": "https://support.microsoft.com/en-us/excel/about-power-query-in-excel"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Checking someone else's sheet",
+     "t": "Click key result cells and read the formula bar. Look for <b>hard-typed numbers</b> inside formulas, error values and totals that look off. Test with a simple case you can calculate by hand. If a sheet feeds a customer decision, ask the author how it works."
+    },
+    {
+     "h": "What else exists",
+     "t": "<b>PivotTables</b> condense large data sets for interactive analysis. <b>Power Query</b> connects to outside data and reshapes it. Both are worth learning later, and this app does not teach them. Keep records that many people update at once in a shared system, not in one Excel file.",
+     "g": [
+      [
+       "PivotTable",
+       "An interactive summary table of a large data set."
+      ],
+      [
+       "Power Query",
+       "A built-in tool to connect to and reshape data."
+      ]
+     ]
+    },
+    {
+     "h": "Copilot in Excel",
+     "t": "With a Microsoft 365 subscription that includes Copilot, and your organisation allowing it, Copilot can help with your data. It has edit, plan and chat-only modes. <b>Plan</b> shows steps first, and chat-only changes nothing. Always check its results yourself.",
+     "g": [
+      [
+       "Copilot",
+       "Microsoft's AI assistant built into Microsoft 365 apps."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is a good first step when auditing a colleague's sheet?",
+     "o": [
+      "Click result cells and read the formulas",
+      "Delete all formulas",
+      "Sort every column"
+     ],
+     "a": 0,
+     "w": "Reading the formula in the formula bar shows how a result was built."
+    },
+    {
+     "q": "What does Power Query do?",
+     "o": [
+      "Shows keyboard shortcuts",
+      "Freezes rows",
+      "Connects to outside data and reshapes it"
+     ],
+     "a": 2,
+     "w": "Power Query imports or connects to data, then transforms it."
+    },
+    {
+     "q": "Which Copilot mode proposes steps before changing anything?",
+     "o": [
+      "Plan",
+      "Edit",
+      "Chat only"
+     ],
+     "a": 0,
+     "w": "Plan mode proposes a plan for you to confirm before changes are made."
+    },
+    {
+     "q": "What is required to use Copilot in Excel?",
+     "o": [
+      "Nothing, it is free in all versions",
+      "Excel 2016",
+      "A Microsoft 365 subscription that includes Copilot, allowed by your organisation"
+     ],
+     "a": 2,
+     "w": "Copilot must be included in your Microsoft 365 subscription and allowed by your organisation."
+    }
+   ]
+  }
+ ]
+}
