@@ -311,7 +311,7 @@ function settings(){
     return `<div class="set"><b>${d.title}</b><div class="p" data-d="${d.id}">${[0,1,2,3,4,5].map(i=>`<button class="${i===0?"z ":""}${i===f?"on":""}" data-v="${i}">${i}</button>`).join("")}</div></div>`}).join("")});
   h+=`<button class="btn ghost" id="reset" style="margin-top:20px">Reset all progress</button><div class="note">${DECKS.reduce((n,d)=>n+d.lessons.length,0)} lessons loaded</div>
   <div style="height:8px"></div><h1 style="margin:22px 0 6px">Backup</h1><div class="sub">Progress lives only on this phone. Copy a backup into Notes before deleting the app icon, then paste it back here afterwards.</div>
-  <button class="btn ghost" id="bk">Copy backup</button><textarea id="bkbox" rows="3" placeholder="Paste a backup here to restore" style="width:100%;margin-top:10px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--fg);font:inherit;font-size:14px;box-sizing:border-box"></textarea>
+  <button class="btn ghost" id="bk">Copy backup</button><textarea id="bkbox" rows="3" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Paste a backup here to restore" style="width:100%;margin-top:10px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--fg);font:inherit;font-size:14px;box-sizing:border-box"></textarea>
   <button class="btn ghost" id="rs">Restore from pasted backup</button><div class="note" id="bkmsg" style="margin-top:8px"></div>`;
   $.innerHTML=h;window.scrollTo(0,0);
   $.querySelectorAll("#goal button").forEach(b=>b.onclick=()=>{S.goal=+b.dataset.v;save();$.querySelectorAll("#goal button").forEach(x=>x.classList.toggle("on",x===b))});
@@ -321,7 +321,7 @@ function settings(){
     (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>msg("Backup copied. Paste it into Notes."),()=>{box.value=t;box.select();msg("Could not copy automatically. Select the text above and copy it.")})};
   document.getElementById("rs").onclick=()=>{let o;
     try{
-      const m=/LEARNBACKUP1:([A-Za-z0-9+\/=\s]+)/.exec(box.value.replace(/[​-‍⁠﻿]/g,""));
+      const m=/LEARNBACKUP1:([A-Za-z0-9+\/=\s]+)/i.exec(box.value.replace(/[​-‍⁠﻿]/g,""));
       if(!m){msg("No backup found in the box. It should start with LEARNBACKUP1:");return}
       const w=m[1].trim().split(/\s+/);
       for(let n=w.length;n>0&&!o;n--){try{o=JSON.parse(decodeURIComponent(escape(atob(w.slice(0,n).join("")))))}catch(e){}}
