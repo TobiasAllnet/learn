@@ -1,4 +1,4 @@
-"""Crimson app icon: one smooth white light bulb with grey detail lines and a small name watermark.
+"""App icon: one smooth white light bulb with grey detail lines and a small name watermark.
 Needs Pillow (pip install pillow). Usage: python make_icon.py [output_folder] [watermark_text]
 """
 import sys, os, math
@@ -31,14 +31,22 @@ def bulb_outline():
     left = [(1 - x, y) for x, y in reversed(right)]
     return left + arc + right
 
+ORANGE = (255, 112, 50); TEAL = (0, 190, 185); PEACH = (255, 190, 130)
+def mix(a, b, t): return tuple(int(a[i] + (b[i] - a[i]) * t) for i in range(3))
+def smooth(t, a, b):
+    t = max(0, min(1, (t - a) / (b - a))); return t * t * (3 - 2 * t)
+def field(u, v):
+    t = (u + v) / 2 + .07 * math.sin(v * 9 + 1) + .05 * math.sin(u * 7)   # wavy diagonal
+    k = smooth(t, .30, .80)                                                # wide soft fade, centre at 0.55 = 60/40
+    return mix(mix(ORANGE, TEAL, k), PEACH, .22 * math.sin(math.pi * k))   # light touch keeps the fade clean
+
 def make(size, text):
     s = size * SS
-    img = Image.new('RGB', (s, s))
-    px = img.load()
-    for y in range(s):                          # crimson gradient
-        for x in range(s):
-            t = (x + y) / (2 * s)
-            px[x, y] = (int(200 - 45*t), int(24 - 12*t), int(58 - 18*t))
+    g = Image.new('RGB', (size, size)); gp = g.load()   # orange and teal, wavy fade, about 60% orange
+    for y in range(size):
+        for x in range(size):
+            gp[x, y] = field((x + .5) / size, (y + .5) / size)
+    img = g.resize((s, s), Image.BICUBIC)
     d = ImageDraw.Draw(img, 'RGBA')
     P = lambda pts: [(x*s, y*s) for x, y in pts]
     white = (255, 255, 255, 255)
