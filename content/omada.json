@@ -1,0 +1,506 @@
+{
+ "title": "TP-Link Omada",
+ "desc": "Business Wi-Fi, switches, gateways and cloud management from TP-Link",
+ "src": [
+  {
+   "l": "Omada Networks home",
+   "u": "https://www.omadanetworks.com/en/"
+  },
+  {
+   "l": "Omada controllers",
+   "u": "https://www.omadanetworks.com/en/business-networking/all-omada-controller/"
+  },
+  {
+   "l": "Omada controller comparison",
+   "u": "https://support.omadanetworks.com/en/document/13150/"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "om-1-1",
+   "lvl": 1,
+   "title": "What is Omada?",
+   "src": [
+    {
+     "l": "Omada Networks home",
+     "u": "https://www.omadanetworks.com/en/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "TP-Link's business line",
+     "t": "<b>Omada</b> is TP-Link's business networking brand. Its site tagline is \"Networks Empower Business\". It covers gateways, switches, Wi-Fi access points and security cameras, all managed centrally.",
+     "g": [
+      [
+       "Access point (AP)",
+       "A device that gives Wi-Fi coverage and connects by cable to the network."
+      ],
+      [
+       "Gateway",
+       "The device that connects the local network to the internet and enforces rules."
+      ]
+     ]
+    },
+    {
+     "h": "Who it is for",
+     "t": "Omada names these settings: <b>offices</b>, <b>hotels</b>, <b>multi-dwelling units</b> (apartment buildings), chain restaurants and stores, warehouses, and outdoor sites such as farms and parking lots. It also pitches 4G for remote locations."
+    },
+    {
+     "h": "One system, many sites",
+     "t": "The pitch is <b>centralised management</b>: see and configure all devices from one place, even across many sites. Omada also promotes a unified network and surveillance solution together with its sister brand <b>VIGI</b> (cameras).",
+     "g": [
+      [
+       "Centralised management",
+       "Controlling many devices from one screen instead of logging into each one."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is Omada?",
+     "o": [
+      "TP-Link's business networking brand",
+      "A consumer Wi-Fi router for homes only",
+      "A cloud storage service"
+     ],
+     "a": 0,
+     "w": "Omada is TP-Link's business networking line: gateways, switches, access points and cameras."
+    },
+    {
+     "q": "Which customer is named as a typical Omada setting?",
+     "o": [
+      "A mobile phone operator's core network",
+      "A hotel",
+      "A data centre with thousands of servers"
+     ],
+     "a": 1,
+     "w": "Omada lists hotels, offices, apartment buildings, chain restaurants and stores, warehouses and outdoor sites."
+    },
+    {
+     "q": "What is the main idea behind Omada's design?",
+     "o": [
+      "Every device is set up separately",
+      "Only cameras are managed centrally",
+      "Devices are managed centrally, even across many sites"
+     ],
+     "a": 2,
+     "w": "Centralised management across sites is the core pitch."
+    }
+   ]
+  },
+  {
+   "id": "om-1-2",
+   "lvl": 1,
+   "title": "The main product categories",
+   "src": [
+    {
+     "l": "Omada Networks home",
+     "u": "https://www.omadanetworks.com/en/"
+    },
+    {
+     "l": "Omada gateways",
+     "u": "https://www.omadanetworks.com/en/business-networking/all-omada-gateways/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Gateways and switches",
+     "t": "<b>Gateways</b> connect the site to the internet: wired, Wi-Fi, 4G/5G, integrated and DSL types, plus the Fusion and Fusion Pro series. <b>Switches</b> link the wired devices and range from easy-managed Agile models up to stackable Layer 3 campus switches, plus industrial ones.",
+     "g": [
+      [
+       "Switch",
+       "A box that connects many wired devices in one network."
+      ],
+      [
+       "PoE",
+       "Power over Ethernet: power and data over one network cable."
+      ]
+     ]
+    },
+    {
+     "h": "Wi-Fi and cameras",
+     "t": "<b>Access points</b> come as ceiling, wall plate, desktop, outdoor and campus types, including <b>Wi-Fi 7</b> models, plus wireless bridges. <b>Cameras, video recorders</b> and camera systems sit under the VIGI surveillance side.",
+     "g": [
+      [
+       "Wireless bridge",
+       "A pair of radios linking two buildings or networks without a cable."
+      ]
+     ]
+    },
+    {
+     "h": "Plus accessories",
+     "t": "Omada also sells <b>accessories</b>: power and PoE parts, media converters, modules and cables, and mounting brackets. Omada also lists a <b>Design Hub</b> among its software tools, and offers a unified networking and surveillance solution."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does a gateway do?",
+     "o": [
+      "Gives Wi-Fi coverage in a room",
+      "Connects the site to the internet",
+      "Stores camera video"
+     ],
+     "a": 1,
+     "w": "A gateway connects the local network to the internet and enforces rules."
+    },
+    {
+     "q": "Which is a listed Omada access point type?",
+     "o": [
+      "Outdoor",
+      "Hard disk",
+      "Desktop printer"
+     ],
+     "a": 0,
+     "w": "Omada lists ceiling, wall plate, desktop, outdoor, campus and Wi-Fi 7 access points."
+    },
+    {
+     "q": "Where do Omada's cameras and recorders sit?",
+     "o": [
+      "Under the switch range",
+      "Under accessories only",
+      "In the surveillance range alongside networking"
+     ],
+     "a": 2,
+     "w": "Cameras, video recorders and camera systems are a category of their own, tied to VIGI."
+    }
+   ]
+  },
+  {
+   "id": "om-2-1",
+   "lvl": 2,
+   "title": "Three ways to run the controller",
+   "src": [
+    {
+     "l": "Omada controllers",
+     "u": "https://www.omadanetworks.com/en/business-networking/all-omada-controller/"
+    },
+    {
+     "l": "Omada controller comparison",
+     "u": "https://support.omadanetworks.com/en/document/13150/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "What a controller does",
+     "t": "A <b>controller</b> is the software brain that manages all Omada devices together. Omada offers three kinds: <b>cloud-based</b>, <b>hardware</b> and <b>software</b>. Choosing one is often the first decision in a project.",
+     "g": [
+      [
+       "Controller",
+       "Software that configures and monitors many network devices from one place."
+      ]
+     ]
+    },
+    {
+     "h": "Hardware and software",
+     "t": "A <b>hardware controller</b> is a small box on site: OC200, OC220, OC300 or OC400, in growing sizes. The <b>software controller</b> is free, runs on the customer's own server or VM and needs someone to keep it running and updated.",
+     "g": [
+      [
+       "VM",
+       "Virtual machine: a computer simulated inside another computer."
+      ]
+     ]
+    },
+    {
+     "h": "Cloud-based",
+     "t": "The <b>cloud-based</b> controller is hosted by Omada, so no box or server is needed on site. The trade-off: management depends on internet access. Hardware and software controllers can also add optional <b>cloud access</b> for remote management."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A customer has no IT staff and no server. Which controller option removes the need for any on-site controller?",
+     "o": [
+      "Software controller",
+      "Cloud-based controller",
+      "Hardware controller"
+     ],
+     "a": 1,
+     "w": "The cloud-based controller is hosted by Omada, so nothing is installed on site."
+    },
+    {
+     "q": "Which statement about the software controller is right?",
+     "o": [
+      "It runs on the customer's own server or VM and must be maintained",
+      "It is a small box powered by PoE",
+      "It is hosted by Omada"
+     ],
+     "a": 0,
+     "w": "The customer provides and maintains the host, including uptime, updates and backups."
+    },
+    {
+     "q": "Which is an Omada hardware controller?",
+     "o": [
+      "ER7206",
+      "OC300",
+      "VIGI NVR"
+     ],
+     "a": 1,
+     "w": "OC200, OC220, OC300 and OC400 are hardware controllers. ER7206 is a gateway."
+    },
+    {
+     "q": "What is the trade-off of cloud management?",
+     "o": [
+      "It cannot manage Wi-Fi",
+      "You must buy a server",
+      "Management depends on internet access"
+     ],
+     "a": 2,
+     "w": "Cloud management needs a reliable internet connection, but Omada looks after the platform."
+    }
+   ]
+  },
+  {
+   "id": "om-2-2",
+   "lvl": 2,
+   "title": "Cloud: Essentials and Standard",
+   "src": [
+    {
+     "l": "Omada Central Essentials",
+     "u": "https://www.omadanetworks.com/business-networking/omada-controller-cloud-based/omada-central-essentials/"
+    },
+    {
+     "l": "Omada controller comparison",
+     "u": "https://support.omadanetworks.com/en/document/13150/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Free Essentials",
+     "t": "<b>Omada Central Essentials</b> is a free, simplified cloud tier for Omada and VIGI devices. Omada describes lifetime free cloud management for small businesses such as hostels, small offices and restaurants.",
+     "g": [
+      [
+       "Tier",
+       "A level of a service, for example a free basic one and a paid fuller one."
+      ]
+     ]
+    },
+    {
+     "h": "Standard adds more",
+     "t": "The <b>Standard</b> tier adds features Essentials lacks, such as <b>MSP mode</b>, PPSK, SD-WAN, more VPN types, 802.1X and IDS/IPS. Omada states that Standard carries a <b>device licence fee</b>, and lists Essentials as free.",
+     "g": [
+      [
+       "MSP mode",
+       "A view for service providers managing many separate customers."
+      ],
+      [
+       "Licence fee",
+       "A charge to use a feature, here per device."
+      ]
+     ]
+    },
+    {
+     "h": "What it means for you",
+     "t": "Small, simple sites can start on <b>Essentials</b>. Larger, spread-out or multi-customer networks point to <b>Standard</b>. Always check the current licence terms with the vendor before quoting, and never promise features from memory."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A small restaurant wants easy, free cloud management of its Wi-Fi. Which fits?",
+     "o": [
+      "Omada Central Essentials",
+      "A hardware OC400",
+      "A DSL gateway only"
+     ],
+     "a": 0,
+     "w": "Essentials is the free cloud tier aimed at small sites such as restaurants and hostels."
+    },
+    {
+     "q": "An MSP wants one view of many separate customer networks. What is needed?",
+     "o": [
+      "Essentials",
+      "A Standard tier with MSP mode",
+      "No controller"
+     ],
+     "a": 1,
+     "w": "MSP mode is a Standard feature and is not in Essentials."
+    },
+    {
+     "q": "What does Omada say about licence fees?",
+     "o": [
+      "Both tiers charge per camera",
+      "Neither tier has any fee",
+      "Standard has a device licence fee, Essentials is free"
+     ],
+     "a": 2,
+     "w": "Standard is subject to a device licence fee. Essentials is listed as free."
+    }
+   ]
+  },
+  {
+   "id": "om-2-3",
+   "lvl": 2,
+   "title": "Gateways, VPN and hotel Wi-Fi",
+   "src": [
+    {
+     "l": "Omada ER7206 gateway",
+     "u": "https://www.omadanetworks.com/in/business-networking/omada-router-wired-router/er7206/"
+    },
+    {
+     "l": "Omada multi-dwelling solution",
+     "u": "https://omadanetworks.com/en/solution/mdu"
+    },
+    {
+     "l": "Omada hotel solution",
+     "u": "https://www.omadanetworks.com/nordic/business-networking/solution/hotel/"
+    },
+    {
+     "l": "Omada Central Essentials",
+     "u": "https://www.omadanetworks.com/business-networking/omada-controller-cloud-based/omada-central-essentials/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "A gateway with VPN",
+     "t": "The wired <b>ER7206</b> is an Omada VPN gateway. It lists <b>load balancing</b> across up to five internet lines, failover, and support for several VPN types. It runs under a controller, or standalone through its own web page.",
+     "g": [
+      [
+       "Load balancing",
+       "Spreading traffic over several internet lines."
+      ],
+      [
+       "VPN",
+       "A secure tunnel between sites or to a remote user."
+      ]
+     ]
+    },
+    {
+     "h": "One password per room",
+     "t": "<b>PPSK</b> gives every unit its own Wi-Fi password and its own <b>VLAN</b>, so tenants stay separated on one network. Omada's PPSK pitch is apartments, student housing and assisted living. Its hotel page does not describe PPSK, so check before promising it for hotels.",
+     "g": [
+      [
+       "PPSK",
+       "Private Pre-Shared Key: a unique Wi-Fi password per user or room."
+      ],
+      [
+       "VLAN",
+       "A virtual split of one network into separate private parts."
+      ]
+     ]
+    },
+    {
+     "h": "Big or small property",
+     "t": "Large properties can add an external <b>RADIUS server</b> to handle very many PPSK entries. Smaller ones can host PPSKs on the APs through the software controller. In the cloud, PPSK is a Standard feature, not in free Essentials.",
+     "g": [
+      [
+       "RADIUS",
+       "A server that checks who is allowed onto the network."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does PPSK give an apartment building?",
+     "o": [
+      "Free cameras",
+      "A unique Wi-Fi password and VLAN per unit",
+      "Faster internet lines"
+     ],
+     "a": 1,
+     "w": "PPSK means each unit has its own password and its own separated VLAN."
+    },
+    {
+     "q": "A customer has two internet lines and wants them used together. Which gateway feature matters?",
+     "o": [
+      "PPSK",
+      "Wireless bridge",
+      "Load balancing"
+     ],
+     "a": 2,
+     "w": "Load balancing spreads traffic across several internet lines. The ER7206 lists up to five."
+    },
+    {
+     "q": "Which cloud tier includes PPSK?",
+     "o": [
+      "Standard, not Essentials",
+      "Essentials only",
+      "Neither"
+     ],
+     "a": 0,
+     "w": "Omada's tier comparison lists PPSK as missing in Essentials."
+    }
+   ]
+  },
+  {
+   "id": "om-3-1",
+   "lvl": 3,
+   "title": "Which Omada setup for which customer?",
+   "src": [
+    {
+     "l": "Omada Networks home",
+     "u": "https://www.omadanetworks.com/en/"
+    },
+    {
+     "l": "Omada controller comparison",
+     "u": "https://support.omadanetworks.com/en/document/13150/"
+    },
+    {
+     "l": "UniFi home",
+     "u": "https://www.ui.com/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Match the controller",
+     "t": "Omada's own guide: <b>Essentials</b> for small simple sites, a <b>hardware controller</b> for sites wanting local control and offline management, the <b>software controller</b> for medium to large networks, and <b>Standard cloud</b> for large or multi-customer setups."
+    },
+    {
+     "h": "How it compares",
+     "t": "Rivals such as <b>UniFi</b> also offer on-site consoles and a cloud view. A point to stress for Omada is <b>choice</b>: cloud, box or your own server. UniFi markets itself as licence free. Check current terms on both sides before comparing.",
+     "g": [
+      [
+       "UniFi",
+       "Ubiquiti's networking line, a common alternative for small business."
+      ]
+     ]
+    },
+    {
+     "h": "Questions to ask",
+     "t": "How many sites? Is there <b>IT staff</b> and a server? Is internet always reliable? Does the site need hotel or tenant Wi-Fi with <b>PPSK</b>? Are cameras part of the project? The answers decide controller type and tier."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A chain of 30 small shops wants remote, multi-store management. What should you start with?",
+     "o": [
+      "Cloud management, checking Essentials against Standard",
+      "A single hardware OC200 per store with no remote access",
+      "Standalone mode on every device"
+     ],
+     "a": 0,
+     "w": "Omada lists chain stores as a target setting and pitches central management across sites. The tier depends on the features needed."
+    },
+    {
+     "q": "A factory site often loses internet but wants local control. Which controller fits best?",
+     "o": [
+      "Cloud only",
+      "A hardware controller",
+      "No controller"
+     ],
+     "a": 1,
+     "w": "Omada lists the hardware controller for sites wanting local control and offline management."
+    },
+    {
+     "q": "An IT-capable customer wants full control on its own server. Which?",
+     "o": [
+      "Essentials",
+      "OC200",
+      "Software controller"
+     ],
+     "a": 2,
+     "w": "The software controller runs on the customer's own server or VM, with the most control and most IT work."
+    },
+    {
+     "q": "What is a fair way to describe Omada versus UniFi?",
+     "o": [
+      "Omada offers a choice of cloud, hardware or software control",
+      "Omada is always cheaper",
+      "They are identical"
+     ],
+     "a": 0,
+     "w": "Controller choice is a real difference. Never claim price or feature superiority without checking."
+    }
+   ]
+  }
+ ]
+}

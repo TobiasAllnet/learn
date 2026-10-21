@@ -1,0 +1,581 @@
+{
+ "title": "Cudy",
+ "desc": "Home, business and mobile broadband networking",
+ "src": [
+  {
+   "l": "Cudy home page",
+   "u": "https://www.cudy.com/en-us"
+  },
+  {
+   "l": "About Cudy",
+   "u": "https://www.cudy.com/pages/about-cudy"
+  },
+  {
+   "l": "Business Wi-Fi",
+   "u": "https://www.cudy.com/en-us/collections/business-wi-fi-solutions"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "cd-1-1",
+   "lvl": 1,
+   "title": "Who is Cudy?",
+   "src": [
+    {
+     "l": "Cudy home page",
+     "u": "https://www.cudy.com/en-us"
+    },
+    {
+     "l": "About Cudy",
+     "u": "https://www.cudy.com/pages/about-cudy"
+    }
+   ],
+   "pages": [
+    {
+     "h": "A networking brand from Shenzhen",
+     "t": "Cudy is run by <b>Shenzhen Cudy Technology Co., Ltd.</b> and says it was established in <b>2018</b>. Its home page tagline is \"Your Home and Business Networking Solutions Provider\". It says it has served customers in more than <b>90 countries and regions</b>."
+    },
+    {
+     "h": "Four areas, not one",
+     "t": "Cudy sorts its range into <b>Home Network</b>, <b>Business Network</b>, <b>ISP Network</b> and <b>PC Accessories</b> (mice, keyboards, hubs). So it is not only routers, though networking is the core.",
+     "g": [
+      [
+       "ISP",
+       "Internet service provider: the company that sells people their internet connection."
+      ]
+     ]
+    },
+    {
+     "h": "What that means for us",
+     "t": "One vendor can cover a customer's home router, a small shop's Wi-Fi and a mobile broadband backup. Cudy also says it puts <b>15% of revenue into R&amp;D</b> and holds 60+ patents. Those are its own figures, so treat them as claims."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "When does Cudy say it was established?",
+     "o": [
+      "2018",
+      "2003",
+      "2010"
+     ],
+     "a": 0,
+     "w": "The About page gives 2018."
+    },
+    {
+     "q": "Which of these is one of Cudy's four product areas?",
+     "o": [
+      "Cloud accounting software",
+      "Business Network",
+      "Security cameras"
+     ],
+     "a": 1,
+     "w": "Cudy lists Home, Business, ISP and PC Accessories. Cameras and accounting software are not among them."
+    },
+    {
+     "q": "How should you treat Cudy's numbers about R&D spend and patents?",
+     "o": [
+      "As independently audited facts",
+      "As the vendor's own claims",
+      "As irrelevant to everything"
+     ],
+     "a": 1,
+     "w": "They come from Cudy's own About page, so call them claims."
+    }
+   ]
+  },
+  {
+   "id": "cd-1-2",
+   "lvl": 1,
+   "title": "The main product categories",
+   "src": [
+    {
+     "l": "Cudy home page",
+     "u": "https://www.cudy.com/en-us"
+    },
+    {
+     "l": "Business Wi-Fi",
+     "u": "https://www.cudy.com/en-us/collections/business-wi-fi-solutions"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Home Network",
+     "t": "This covers <b>Wi-Fi routers</b>, <b>mesh Wi-Fi systems</b>, <b>4G/5G routers</b>, <b>Wi-Fi extenders</b>, network adapters and switches. It is the family people picture first when they hear Cudy.",
+     "g": [
+      [
+       "Mesh",
+       "Several Wi-Fi units that work together as one network, so coverage reaches the whole home."
+      ],
+      [
+       "Extender",
+       "A unit that repeats an existing Wi-Fi signal to reach further."
+      ]
+     ]
+    },
+    {
+     "h": "Business Network",
+     "t": "Here are <b>access points</b> (ceiling, wall-plate, desktop and outdoor), <b>PoE switches</b>, VPN and industrial routers, gateways and an <b>AP controller</b> to manage the access points together.",
+     "g": [
+      [
+       "Access point",
+       "A box that gives Wi-Fi to devices, usually wired back to a router or switch."
+      ],
+      [
+       "PoE",
+       "Power over Ethernet: power and data on the same cable, so no power socket is needed at the device."
+      ]
+     ]
+    },
+    {
+     "h": "ISP Network",
+     "t": "For internet providers, Cudy lists <b>xPON terminals</b> (fibre), Wi-Fi routers and <b>4G/5G CPE</b>, plus EasyMesh. The EasyMesh page is marked <b>ISP only</b>. Retail Cudy Mesh is a separate feature.",
+     "g": [
+      [
+       "CPE",
+       "Customer premises equipment: the router or modem placed at the customer's site."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which Cudy category contains PoE switches and access points?",
+     "o": [
+      "Home Network",
+      "Business Network",
+      "PC Accessories"
+     ],
+     "a": 1,
+     "w": "PoE switches, access points and the AP controller sit under Business Network."
+    },
+    {
+     "q": "What is a 4G/5G CPE?",
+     "o": [
+      "A cloud login for resellers",
+      "A router or modem at the customer's site that uses mobile broadband",
+      "A type of network cable"
+     ],
+     "a": 1,
+     "w": "CPE is the equipment placed at the customer, here with a mobile data connection."
+    },
+    {
+     "q": "Cudy's EasyMesh collection is marked as for whom?",
+     "o": [
+      "ISPs only",
+      "Gamers",
+      "Home buyers in retail"
+     ],
+     "a": 0,
+     "w": "The collection is labelled \"ISP Only\"; ordinary home mesh is Cudy Mesh."
+    }
+   ]
+  },
+  {
+   "id": "cd-2-1",
+   "lvl": 2,
+   "title": "Home routers and mesh",
+   "src": [
+    {
+     "l": "WR3000S 1.0",
+     "u": "https://www.cudy.com/en-us/products/wr3000s-1-0"
+    },
+    {
+     "l": "M3000 2.0",
+     "u": "https://www.cudy.com/en-us/products/m3000-2-0"
+    },
+    {
+     "l": "OpenWrt compatible products",
+     "u": "https://www.cudy.com/en-us/collections/openwrt"
+    },
+    {
+     "l": "Wi-Fi routers",
+     "u": "https://www.cudy.com/en-us/collections/wi-fi-routers"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Wi-Fi routers: the WR line",
+     "t": "Cudy's home routers carry names like <b>WR3000S</b>, WR3600H and WR1200. The WR3000S is a <b>Wi-Fi 6</b> router with five Gigabit ports, aimed at home internet up to <b>1000 Mbps</b> with many devices. It also offers VPN server and client.",
+     "g": [
+      [
+       "Wi-Fi 6",
+       "A Wi-Fi generation that handles many devices better than older ones."
+      ],
+      [
+       "VPN",
+       "A secure tunnel over the internet, for example to reach the office network from home."
+      ]
+     ]
+    },
+    {
+     "h": "Mesh: when one box is not enough",
+     "t": "<b>Cudy Mesh</b> links compatible Cudy units into one network, over wire or wireless. Mesh systems like <b>M3000</b> suit larger homes. Several routers also say they support Cudy Mesh, so a customer can start with one and add more."
+    },
+    {
+     "h": "OpenWrt for the tinkerers",
+     "t": "Cudy lists <b>28 OpenWrt-compatible products</b>. <b>OpenWrt</b> is open-source router software for advanced users. Cudy warns that support varies by model and version, so check the exact model first.",
+     "g": [
+      [
+       "OpenWrt",
+       "Free, open-source firmware that tech-savvy users install on routers for extra control."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does Cudy Mesh let a customer do?",
+     "o": [
+      "Link compatible Cudy units into one network",
+      "Pay for a cloud subscription",
+      "Turn a router into a switch"
+     ],
+     "a": 0,
+     "w": "Cudy Mesh joins compatible units into one network, wired or wireless."
+    },
+    {
+     "q": "A customer asks if every Cudy router works with OpenWrt. What is the right answer?",
+     "o": [
+      "Yes, all of them",
+      "No, support varies by model and version",
+      "Only the business switches do"
+     ],
+     "a": 1,
+     "w": "Cudy itself says OpenWrt support status varies by version."
+    },
+    {
+     "q": "Which is a Cudy mesh system named in this lesson?",
+     "o": [
+      "M3000",
+      "LT700",
+      "GS1016"
+     ],
+     "a": 0,
+     "w": "M3000 is a mesh system. LT700 is a 4G router and GS1016 a switch."
+    }
+   ]
+  },
+  {
+   "id": "cd-2-2",
+   "lvl": 2,
+   "title": "4G and 5G routers",
+   "src": [
+    {
+     "l": "4G/5G Wi-Fi routers",
+     "u": "https://www.cudy.com/en-us/collections/4g-5g-wi-fi-routers"
+    },
+    {
+     "l": "LT700 Outdoor 1.0",
+     "u": "https://www.cudy.com/en-us/products/lt700-outdoor-1-0"
+    },
+    {
+     "l": "P5 1.0",
+     "u": "https://www.cudy.com/en-us/products/p5-1-0"
+    },
+    {
+     "l": "LT700 1.0",
+     "u": "https://www.cudy.com/en-us/products/lt700-1-0"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Internet over a SIM card",
+     "t": "These routers take a <b>SIM card</b> and share mobile broadband as Wi-Fi and cable. Cudy's <b>P series</b> (P2, P4, P5, P6) is <b>5G</b>, and the <b>LT series</b> is <b>4G</b>. The P6 is Wi-Fi 7, the P5 is Wi-Fi 6 and has dual SIM slots.",
+     "g": [
+      [
+       "4G/5G",
+       "Mobile network generations. 5G can be faster, but needs coverage at the site."
+      ]
+     ]
+    },
+    {
+     "h": "Indoor and outdoor",
+     "t": "The <b>LT700 Outdoor</b> is a pole or wall mounted 4G unit with an <b>IP65</b> case, powered through PoE. Put it outside where the signal is better, then run one cable in. Cudy also sells desktop 4G models for indoor use, such as the LT700.",
+     "g": [
+      [
+       "IP65",
+       "A rating meaning the housing is dust-tight and protected from water jets."
+      ]
+     ]
+    },
+    {
+     "h": "Two classic uses",
+     "t": "One is a <b>main connection</b> where there is no fixed line, such as a cabin or a temporary site. The other is <b>backup</b> for a shop or office. The P5 and the LT700 both have two SIM slots, and Cudy's 4G/5G range has a dual-SIM backup filter."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which Cudy series is the 5G router line?",
+     "o": [
+      "P series",
+      "LT series",
+      "WR series"
+     ],
+     "a": 0,
+     "w": "P2, P4, P5 and P6 are 5G. LT is 4G and WR is Wi-Fi routers."
+    },
+    {
+     "q": "A customer has poor signal indoors but good signal on the roof. What fits?",
+     "o": [
+      "An outdoor unit like the LT700 Outdoor",
+      "A desktop mouse hub",
+      "An ISP-only EasyMesh unit"
+     ],
+     "a": 0,
+     "w": "An IP65 outdoor unit sits where the signal is best and needs only one PoE cable."
+    },
+    {
+     "q": "Which feature helps a 4G/5G router act as a backup?",
+     "o": [
+      "Dual-SIM support",
+      "A wall plate",
+      "A captive portal"
+     ],
+     "a": 0,
+     "w": "Cudy lists dual-SIM backup as a filter in its 4G/5G range, and models such as the P5 have two SIM slots."
+    },
+    {
+     "q": "What does IP65 mean in plain words?",
+     "o": [
+      "Faster than 5G",
+      "Dust-tight and protected from water jets",
+      "Works without power"
+     ],
+     "a": 1,
+     "w": "IP65 is a protection rating for dust and water."
+    }
+   ]
+  },
+  {
+   "id": "cd-2-3",
+   "lvl": 2,
+   "title": "Business Wi-Fi and switches",
+   "src": [
+    {
+     "l": "Business Wi-Fi",
+     "u": "https://www.cudy.com/en-us/collections/business-wi-fi-solutions"
+    },
+    {
+     "l": "AP Controller cloud management",
+     "u": "https://www.cudy.com/en-us/blogs/news/cudy-ap-controller-now-supports-cloud-management"
+    },
+    {
+     "l": "Easy-Managed switches and Cudy Cloud",
+     "u": "https://www.cudy.com/en-us/blogs/news/cudy-upgrades-easy-managed-switches-with-cudy-cloud"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Access points managed together",
+     "t": "Cudy's tagline here is \"Always On. Always in Control.\" Its <b>access points</b> are managed from one <b>AP controller</b>, with a captive portal for guests, <b>multi-SSID</b> to split staff, guest and IoT, and band steering.",
+     "g": [
+      [
+       "SSID",
+       "The name of a Wi-Fi network."
+      ],
+      [
+       "Captive portal",
+       "The login page a guest sees before getting Wi-Fi."
+      ]
+     ]
+    },
+    {
+     "h": "Cloud, with no subscription",
+     "t": "Cudy added <b>cloud management</b> for the AP Controller at cloud.cudy.com. It says this works <b>without subscription or recurring license fees</b>. The rollout is new, in 2026, and availability varies by model, so check before promising it.",
+     "g": [
+      [
+       "Cloud management",
+       "Managing devices from a web dashboard over the internet instead of on site."
+      ]
+     ]
+    },
+    {
+     "h": "Switches that match",
+     "t": "Cudy's <b>Easy-Managed</b> switches sit between simple unmanaged and full managed ones. They offer VLANs and QoS and suit small businesses, retail, schools and hospitality. Cloud support covers some models now, with others to follow.",
+     "g": [
+      [
+       "Unmanaged switch",
+       "A plug-and-play switch with nothing to configure."
+      ],
+      [
+       "VLAN",
+       "A way to split one physical network into separate virtual ones."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does Cudy say about fees for its AP Controller cloud management?",
+     "o": [
+      "A monthly license per access point",
+      "No subscription or recurring license fees",
+      "A yearly fee for the first year only"
+     ],
+     "a": 1,
+     "w": "Cudy's announcement says it works without subscription or recurring license fees."
+    },
+    {
+     "q": "A cafe wants staff, guests and card terminals on separate Wi-Fi networks. Which feature helps?",
+     "o": [
+      "Multi-SSID",
+      "Dual SIM",
+      "OpenWrt"
+     ],
+     "a": 0,
+     "w": "Multi-SSID creates separate wireless networks for staff, guests and IoT."
+    },
+    {
+     "q": "How should you describe Cudy's cloud management rollout to a reseller?",
+     "o": [
+      "Finished and identical on every model",
+      "New in 2026, with availability varying by model",
+      "Not available at all"
+     ],
+     "a": 1,
+     "w": "Cudy says rollout is staged and firmware availability varies by model."
+    }
+   ]
+  },
+  {
+   "id": "cd-3-1",
+   "lvl": 3,
+   "title": "Which Cudy for which customer?",
+   "src": [
+    {
+     "l": "Cudy home page",
+     "u": "https://www.cudy.com/en-us"
+    },
+    {
+     "l": "4G/5G Wi-Fi routers",
+     "u": "https://www.cudy.com/en-us/collections/4g-5g-wi-fi-routers"
+    },
+    {
+     "l": "Business Wi-Fi",
+     "u": "https://www.cudy.com/en-us/collections/business-wi-fi-solutions"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Home and value buyers",
+     "t": "A family wanting solid Wi-Fi for a home internet connection fits a <b>WR router</b>. A bigger house points to <b>mesh</b>. A tinkerer may want a model on the <b>OpenWrt</b> list. Match the product to the home, not to the biggest number on the box."
+    },
+    {
+     "h": "Small shop or office",
+     "t": "A shop with staff and guest Wi-Fi fits <b>access points</b> with an AP controller, plus an <b>Easy-Managed or PoE switch</b> to power them. If cameras or IoT devices share the network, multi-SSID or VLANs keep them separate."
+    },
+    {
+     "h": "Where there is no cable",
+     "t": "No fixed line, or a need for backup? Use a <b>4G/5G router</b>. Indoors with good signal: an indoor P or LT model. Weak signal indoors: an <b>outdoor unit</b> like the LT700 Outdoor. Ask first which mobile networks cover the site."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A four-room cafe needs staff Wi-Fi, guest Wi-Fi with a login page, and PoE power for the access points. What do you suggest?",
+     "o": [
+      "One 4G router",
+      "Access points with an AP controller and a PoE switch",
+      "A mouse and keyboard combo"
+     ],
+     "a": 1,
+     "w": "Access points managed by a controller, plus a PoE switch, cover guest login, separate networks and cable power."
+    },
+    {
+     "q": "A farm shop has no fixed line and weak mobile signal indoors. What fits best?",
+     "o": [
+      "An outdoor 4G/5G unit placed where the signal is good",
+      "A powerline kit",
+      "A Wi-Fi extender"
+     ],
+     "a": 0,
+     "w": "A weatherproof outdoor unit goes where the signal is, with a single cable inside. An extender needs an internet source first."
+    },
+    {
+     "q": "A family in a large house wants Wi-Fi in every room. What is the natural Cudy answer?",
+     "o": [
+      "A mesh system such as M3000",
+      "An industrial router",
+      "A PoE switch alone"
+     ],
+     "a": 0,
+     "w": "Mesh systems are built to spread Wi-Fi across a larger home."
+    },
+    {
+     "q": "What should you ask before recommending a 4G or 5G router?",
+     "o": [
+      "Which colour they like",
+      "Which mobile networks cover the site",
+      "How many mice they own"
+     ],
+     "a": 1,
+     "w": "Mobile coverage at the site decides whether a SIM-based router works well."
+    }
+   ]
+  },
+  {
+   "id": "cd-3-2",
+   "lvl": 3,
+   "title": "Talking Cudy with resellers",
+   "src": [
+    {
+     "l": "Cudy home page",
+     "u": "https://www.cudy.com/en-us"
+    },
+    {
+     "l": "OpenWrt compatible products",
+     "u": "https://www.cudy.com/en-us/collections/openwrt"
+    },
+    {
+     "l": "About Cudy",
+     "u": "https://www.cudy.com/pages/about-cudy"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Position it honestly",
+     "t": "Cudy offers a <b>broad range</b> across home, business and ISP at once. Compared with brands built around one big managed ecosystem, Cudy's selling points are usually breadth and a <b>no-subscription cloud</b> story. Its cloud features are newer, so do not oversell them."
+    },
+    {
+     "h": "Retail versus project",
+     "t": "The same brand can be a <b>home router</b> in a customer's basket or part of a <b>small business project</b>. For projects, steer the reseller to the business range: access points, controller and PoE switches. Home routers usually suit homes better."
+    },
+    {
+     "h": "Likely objections",
+     "t": "\"Is it a known brand?\" Cudy says it serves <b>90+ countries</b> and is R&amp;D-driven, which are its own claims. \"Is feature X on this model?\" Always check the exact model and <b>version</b> number, since OpenWrt, cloud and mesh support vary."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A reseller asks if a model supports cloud management or OpenWrt. What is the safest answer?",
+     "o": [
+      "Check that exact model and version, since support varies",
+      "Yes, all Cudy models do",
+      "No, Cudy has neither"
+     ],
+     "a": 0,
+     "w": "Cudy says support varies by model and version for OpenWrt, and cloud rollout varies by model."
+    },
+    {
+     "q": "What is a fair strength to mention for Cudy's business cloud?",
+     "o": [
+      "It needs a monthly license",
+      "Cudy says it has no subscription or recurring license fees",
+      "It is only for ISPs"
+     ],
+     "a": 1,
+     "w": "No subscription is Cudy's own statement, and worth mentioning with the caveat that it is new."
+    },
+    {
+     "q": "A reseller wants gear for a 20-person office. Which range do you point to?",
+     "o": [
+      "PC accessories",
+      "Business Network products",
+      "Only home routers"
+     ],
+     "a": 1,
+     "w": "Offices belong with the business range: access points, controller and PoE switches."
+    }
+   ]
+  }
+ ]
+}

@@ -17,5 +17,12 @@
 {"id": "productivity-excel", "group": "ai", "focus": 5},
 {"id": "shokz", "group": "brand", "focus": 5},
 {"id": "yealink", "group": "brand", "focus": 5},
-{"id": "insta360", "group": "brand", "focus": 5}
+{"id": "insta360", "group": "brand", "focus": 5},
+{"id": "allnet-line", "group": "brand", "focus": 5},
+{"id": "omada", "group": "brand", "focus": 3},
+{"id": "zyxel", "group": "brand", "focus": 3},
+{"id": "teltonika", "group": "brand", "focus": 3},
+{"id": "cudy", "group": "brand", "focus": 3},
+{"id": "aqara", "group": "brand", "focus": 3},
+{"id": "webmercs-netset", "group": "brand", "focus": 1}
 ]}

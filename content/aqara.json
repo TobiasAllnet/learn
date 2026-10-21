@@ -1,0 +1,558 @@
+{
+ "title": "Aqara",
+ "desc": "Smart home hubs, sensors and Matter devices",
+ "src": [
+  {
+   "l": "Aqara Europe",
+   "u": "https://www.aqara.com/eu/"
+  },
+  {
+   "l": "Aqara brand story",
+   "u": "https://aqara.cn/us/about-us/brand-story"
+  },
+  {
+   "l": "Aqara Studio guide",
+   "u": "https://opendoc.aqara.cn/en/docs/Studio/Aqara-Studio-Guide.html"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "aq-1-1",
+   "lvl": 1,
+   "title": "Who is Aqara?",
+   "src": [
+    {
+     "l": "Aqara brand story",
+     "u": "https://aqara.cn/us/about-us/brand-story"
+    },
+    {
+     "l": "Aqara Europe",
+     "u": "https://www.aqara.com/eu/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "A big smart home brand from Shenzhen",
+     "t": "Aqara is a smart home brand of <b>Lumi United Technology</b>. Lumi was founded in <b>2009</b> in Shenzhen, and the Aqara brand launched in China in <b>2016</b>. It later expanded into global markets through overseas subsidiaries.",
+     "g": [
+      [
+       "Smart home",
+       "Home devices you control from a phone or automate: lights, locks, blinds, sensors."
+      ]
+     ]
+    },
+    {
+     "h": "A very wide range",
+     "t": "As of the end of 2025 Aqara reports <b>over 56 million activated devices</b> and <b>over 2,200 SKUs</b> in more than 50 categories. The range covers hubs, sensors, switches, cameras, door locks, lighting and curtain controllers.",
+     "g": [
+      [
+       "SKU",
+       "One specific product variant with its own item number."
+      ],
+      [
+       "Activated device",
+       "A device that has been set up and connected, not just sold."
+      ]
+     ]
+    },
+    {
+     "h": "Where Allnet fits",
+     "t": "Allnet Nordic is a distributor. Our customers are <b>resellers and installers</b>, who sell to home owners and businesses. Aqara also has a business platform called <b>Aqara Studio</b>, a recent launch, so the brand reaches beyond private homes.",
+     "g": [
+      [
+       "Distributor",
+       "A company that buys from the vendor and sells to resellers, not to end users."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "When did the Aqara brand launch in China?",
+     "o": [
+      "2016",
+      "2009",
+      "2025"
+     ],
+     "a": 0,
+     "w": "The company Lumi was founded in 2009, but the Aqara brand launched in China in 2016."
+    },
+    {
+     "q": "Which description fits Aqara best?",
+     "o": [
+      "A firewall vendor",
+      "A broad smart home brand with many device types",
+      "A maker of only smart plugs"
+     ],
+     "a": 1,
+     "w": "Aqara covers hubs, sensors, switches, cameras, locks, lighting and curtain controllers."
+    },
+    {
+     "q": "Who is Allnet Nordic's typical Aqara customer?",
+     "o": [
+      "A home owner",
+      "A reseller or installer",
+      "The Aqara factory"
+     ],
+     "a": 1,
+     "w": "Allnet is a distributor. Resellers and installers buy from us and sell on to end customers."
+    }
+   ]
+  },
+  {
+   "id": "aq-1-2",
+   "lvl": 1,
+   "title": "Zigbee, Thread, Matter, Wi-Fi",
+   "src": [
+    {
+     "l": "Matter (Connectivity Standards Alliance)",
+     "u": "https://csa-iot.org/all-solutions/matter/"
+    },
+    {
+     "l": "Zigbee (Connectivity Standards Alliance)",
+     "u": "https://csa-iot.org/all-solutions/zigbee/"
+    },
+    {
+     "l": "Aqara Door and Window Sensor P2",
+     "u": "https://www.aqara.com/eu/product/door-and-window-sensor-p2/"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Radio languages for small devices",
+     "t": "<b>Zigbee</b> and <b>Thread</b> are low-power wireless networks made for small battery devices like sensors. <b>Wi-Fi</b> is the normal home network, used by devices with a power cable, such as cameras. Zigbee is a mesh, which means the network can reroute around failures.",
+     "g": [
+      [
+       "Mesh",
+       "A network where devices pass messages along, so there is more than one path."
+      ],
+      [
+       "Zigbee / Thread",
+       "Low-power wireless standards used by small smart home devices."
+      ]
+     ]
+    },
+    {
+     "h": "Matter is the common language",
+     "t": "<b>Matter</b> is a standard from the Connectivity Standards Alliance. It lets devices from different brands work together, with local connectivity. It mainly runs over <b>Wi-Fi and Thread</b>. Aqara says its devices work with Apple Home, Google Home, Alexa and SmartThings through Matter.",
+     "g": [
+      [
+       "Matter",
+       "A shared smart home standard so different brands work together."
+      ]
+     ]
+    },
+    {
+     "h": "Why a hub matters",
+     "t": "Zigbee devices need an Aqara Zigbee hub. Thread devices need a <b>Thread border router</b> and a <b>Matter controller</b>. One 2-in-1 device, such as a HomePod mini or an Echo (4th gen), can be both. The hub is the bridge between devices and the app.",
+     "g": [
+      [
+       "Hub",
+       "A central box that links devices to the network and runs automations."
+      ],
+      [
+       "Border router",
+       "A device that connects the Thread network to the home Wi-Fi network."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is Matter?",
+     "o": [
+      "A shared standard so brands work together",
+      "An Aqara-only wireless network",
+      "A type of battery"
+     ],
+     "a": 0,
+     "w": "Matter is an open standard that lets devices from different brands work in the same smart home."
+    },
+    {
+     "q": "A customer wants Thread-based Aqara sensors with Apple Home. What is needed?",
+     "o": [
+      "Nothing, they connect directly to the phone",
+      "A Thread border router and Matter controller, for example a HomePod mini",
+      "A wired Ethernet camera"
+     ],
+     "a": 1,
+     "w": "Thread devices need a border router and a Matter controller. A 2-in-1 device such as a HomePod mini can do both."
+    },
+    {
+     "q": "Which devices does Zigbee mainly suit?",
+     "o": [
+      "Large screens",
+      "Small low-power sensors and switches",
+      "Laptops"
+     ],
+     "a": 1,
+     "w": "Zigbee is a low-power network, made for small devices such as sensors."
+    }
+   ]
+  },
+  {
+   "id": "aq-2-1",
+   "lvl": 2,
+   "title": "Hubs and the Aqara app",
+   "src": [
+    {
+     "l": "Aqara controllers and hubs",
+     "u": "https://www.aqara.com/en/product/controller/"
+    },
+    {
+     "l": "Aqara Camera Hub G3",
+     "u": "https://www.aqara.com/eu/product/camera-hub-g3/"
+    },
+    {
+     "l": "Aqara Hub M3 (CEPro)",
+     "u": "https://www.cepro.com/control/aqara-m3-hub-support-matter-zigbee-thread-bluetooth"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Hubs: the heart of the system",
+     "t": "Aqara has <b>several hubs</b>. The <b>S1 Plus</b> is a Zigbee hub. The <b>Hub M3</b> is a Matter controller and, according to trade press, also a Thread border router. All are set up in the <b>Aqara Home</b> app.",
+     "g": [
+      [
+       "Aqara Home",
+       "Aqara's own app for setting up devices, scenes and automations."
+      ]
+     ]
+    },
+    {
+     "h": "A camera that is also a hub",
+     "t": "The <b>Camera Hub G3</b> is an indoor 2K camera with a built-in <b>Zigbee 3.0 hub</b> for up to <b>128 Aqara devices</b>. It also has an infrared controller and works with Apple HomeKit, Alexa and Google Home. One box can be both camera and hub.",
+     "g": [
+      [
+       "Infrared (IR) controller",
+       "Sends remote control signals, so old air conditioners can be controlled."
+      ]
+     ]
+    },
+    {
+     "h": "Local, but check the details",
+     "t": "Aqara says some automations <b>keep running without internet</b>, but this depends on the product and setup. Do not promise it for everything. Ask which devices and hub the customer has, then check the product page for that exact model.",
+     "g": [
+      [
+       "Automation",
+       "A rule such as: when the door opens, turn on the light."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which Aqara product is both a camera and a Zigbee hub?",
+     "o": [
+      "Camera Hub G3",
+      "Door and Window Sensor P2",
+      "Roller Shade Driver E1"
+     ],
+     "a": 0,
+     "w": "The Camera Hub G3 has a built-in Zigbee 3.0 hub for up to 128 Aqara devices."
+    },
+    {
+     "q": "Which app sets up Aqara hubs and devices?",
+     "o": [
+      "Aqara Home",
+      "Aqara Builder",
+      "Shelly app"
+     ],
+     "a": 0,
+     "w": "Aqara Home is the app. Hub M3 must be set up in it before Matter accessories are added."
+    },
+    {
+     "q": "A customer asks if everything works offline. Best answer?",
+     "o": [
+      "Yes, always, for every device",
+      "No, nothing does",
+      "Some automations do, so check the exact model and setup"
+     ],
+     "a": 2,
+     "w": "Aqara notes local automations for some products, with conditions. Check the product page."
+    }
+   ]
+  },
+  {
+   "id": "aq-2-2",
+   "lvl": 2,
+   "title": "Sensors, curtains and locks",
+   "src": [
+    {
+     "l": "Aqara Presence Sensor FP2",
+     "u": "https://www.aqara.com/eu/product/presence-sensor-fp2/"
+    },
+    {
+     "l": "Aqara Door and Window Sensor P2",
+     "u": "https://www.aqara.com/eu/product/door-and-window-sensor-p2/"
+    },
+    {
+     "l": "Aqara Roller Shade Driver E1",
+     "u": "https://www.aqara.com/eu/product/roller-shade-driver-e1/"
+    },
+    {
+     "l": "Aqara EU product catalogue",
+     "u": "https://eu.aqara.com/collections/all-products"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Sensors that trigger things",
+     "t": "The <b>Door and Window Sensor P2</b> uses <b>Matter over Thread</b> and runs on a CR123A battery. The <b>Presence Sensor FP2</b> uses <b>mmWave radar</b> to detect people even when still, covers up to 40 m² and works over <b>Wi-Fi</b>, powered by USB-C.",
+     "g": [
+      [
+       "mmWave radar",
+       "Radio waves that sense a person's presence, even sitting still, without a camera."
+      ]
+     ]
+    },
+    {
+     "h": "Curtains and blinds",
+     "t": "The <b>Roller Shade Driver E1</b> is a small motor you fit to a roller shade's bead cord. It uses <b>Zigbee 3.0</b>, runs wired by USB-C or on a rechargeable battery, and needs a compatible Aqara hub for automations. It works with HomeKit, Alexa and Google Assistant.",
+     "g": [
+      [
+       "Bead cord",
+       "The looped chain with small beads used to pull a roller shade by hand."
+      ]
+     ]
+    },
+    {
+     "h": "Door locks, switches and more",
+     "t": "Aqara also sells <b>door locks, smart plugs, thermostats, wall switches and doorbells</b>, for example the Smart Lock U200 and the Radiator Thermostat W600. Details such as unlock methods and protocols differ per model, so open the product page before you recommend a specific one.",
+     "g": [
+      [
+       "Thermostat",
+       "A device that controls heating or cooling to reach a set temperature."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A customer wants lights to stay on while someone sits still in a room. Which sensor?",
+     "o": [
+      "Door and Window Sensor P2",
+      "Presence Sensor FP2",
+      "Roller Shade Driver E1"
+     ],
+     "a": 1,
+     "w": "The FP2 uses mmWave radar to detect presence, even when a person is not moving."
+    },
+    {
+     "q": "What does the Roller Shade Driver E1 do?",
+     "o": [
+      "Adds a motor to a roller shade",
+      "Measures energy use",
+      "Records video"
+     ],
+     "a": 0,
+     "w": "It is a motorised driver that fits the bead cord of a roller shade."
+    },
+    {
+     "q": "Which protocol does the Door and Window Sensor P2 use?",
+     "o": [
+      "Matter over Thread",
+      "Wired Ethernet",
+      "Zigbee 3.0 only"
+     ],
+     "a": 0,
+     "w": "The P2 page lists Matter over Thread, which needs a Thread border router."
+    },
+    {
+     "q": "Before recommending a specific Aqara door lock, what should you do?",
+     "o": [
+      "Assume all locks work the same",
+      "Check the exact model's product page",
+      "Recommend a camera instead"
+     ],
+     "a": 1,
+     "w": "Protocols and features differ per model, so verify on the product page."
+    }
+   ]
+  },
+  {
+   "id": "aq-3-1",
+   "lvl": 3,
+   "title": "Aqara or Shelly?",
+   "src": [
+    {
+     "l": "Aqara Europe",
+     "u": "https://www.aqara.com/eu/"
+    },
+    {
+     "l": "Aqara Presence Sensor FP2",
+     "u": "https://www.aqara.com/eu/product/presence-sensor-fp2/"
+    },
+    {
+     "l": "Shelly Europe shop",
+     "u": "https://www.shelly.com/"
+    },
+    {
+     "l": "Shelly Pro 3EM (knowledge base)",
+     "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-3em"
+    },
+    {
+     "l": "Shelly Pro 4PM (knowledge base)",
+     "u": "https://kb.shelly.cloud/knowledge-base/shelly-pro-4pm"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Different starting points",
+     "t": "<b>Shelly</b> is best known for <b>relays</b> that sit behind existing switches or in the cabinet, plus energy meters. <b>Aqara</b> is a wider ecosystem of hubs, battery sensors, presence sensors, curtain motors, locks and cameras that work together in the Aqara Home app.",
+     "g": [
+      [
+       "Ecosystem",
+       "A family of products that work together, usually through one app."
+      ]
+     ]
+    },
+    {
+     "h": "When Aqara fits",
+     "t": "Aqara fits a customer who wants <b>sensors, scenes and one app</b> with Apple Home, Google Home or Alexa, mostly with battery or plug-in devices. Think walls and doors, curtains, presence detection and cameras, built around a <b>hub</b>.",
+     "g": [
+      [
+       "Scene",
+       "A saved set of actions, such as all lights off, triggered at once."
+      ]
+     ]
+    },
+    {
+     "h": "When Shelly fits better",
+     "t": "Shelly fits when the job is <b>switching circuits</b>, adding smart control behind existing switches, DIN-rail installs or <b>energy metering</b>. Many projects can use both. Ask which job matters most: switching and energy, or sensing and automation.",
+     "g": [
+      [
+       "DIN rail",
+       "A standard metal rail in electrical cabinets that devices clip onto."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Customer: a flat owner wants presence sensors, blind motors and a simple app. Which brand leads?",
+     "o": [
+      "Aqara",
+      "Shelly Pro 3EM",
+      "A firewall"
+     ],
+     "a": 0,
+     "w": "Aqara has presence sensors, curtain motors and a unified app with hubs."
+    },
+    {
+     "q": "Customer: an electrician needs to meter three phases in a fuse cabinet. Which brand leads?",
+     "o": [
+      "Aqara Hub M3",
+      "Shelly Pro line",
+      "Aqara Presence Sensor FP2"
+     ],
+     "a": 1,
+     "w": "Shelly's Pro line is made for DIN-rail cabinets and has energy meters, such as the Pro 3EM."
+    },
+    {
+     "q": "Which statement is most accurate?",
+     "o": [
+      "Aqara and Shelly can never be used together",
+      "They focus on different jobs and can complement each other",
+      "Shelly sells only cameras"
+     ],
+     "a": 1,
+     "w": "Shelly is strong in relays and metering, Aqara in a wider hub-based ecosystem, and projects can mix them."
+    },
+    {
+     "q": "Which question separates the two best?",
+     "o": [
+      "What colour is the house?",
+      "Is the main job switching circuits or sensing and automating?",
+      "How old is the customer?"
+     ],
+     "a": 1,
+     "w": "Switching and energy point to Shelly, sensing and scenes point to Aqara."
+    }
+   ]
+  },
+  {
+   "id": "aq-3-2",
+   "lvl": 3,
+   "title": "Aqara for business, and what to ask",
+   "src": [
+    {
+     "l": "Aqara Studio guide",
+     "u": "https://opendoc.aqara.cn/en/docs/Studio/Aqara-Studio-Guide.html"
+    },
+    {
+     "l": "Aqara Builder announcement",
+     "u": "https://forum.aqara.com/t/aqara-studio-builder-community-seamless-cloud-control-for-your-smart-devices/158258"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Aqara Studio",
+     "t": "<b>Aqara Studio</b> is Aqara's IoT platform for <b>homes, smart buildings and campuses</b>. It connects several protocols, among them <b>KNX, BACnet, Modbus, MQTT and Matter</b>. <b>Aqara Builder</b>, a cloud tool, manages Studio sites. Studio is a recent launch.",
+     "g": [
+      [
+       "KNX / BACnet",
+       "Wired professional building automation standards."
+      ],
+      [
+       "Platform",
+       "Software that connects and manages many devices in one place."
+      ]
+     ]
+    },
+    {
+     "h": "Who it is for",
+     "t": "Studio suits <b>integrators and property projects</b> such as larger buildings, where many devices and rooms need central control and logs. For a single flat, normal Aqara hubs and the Aqara Home app are usually enough.",
+     "g": [
+      [
+       "Integrator",
+       "A company that combines products from different brands into one working system."
+      ]
+     ]
+    },
+    {
+     "h": "Good questions to ask",
+     "t": "<ul><li>New build or existing home?</li><li>Which platform: Apple Home, Google, Alexa or Home Assistant?</li><li>Do you already have a Matter hub or Apple TV?</li><li>One home or a larger building project?</li></ul>",
+     "g": [
+      [
+       "Home Assistant",
+       "A popular free smart home platform that people run themselves."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is Aqara Studio?",
+     "o": [
+      "A camera model",
+      "An IoT platform for buildings and larger projects",
+      "A smart plug"
+     ],
+     "a": 1,
+     "w": "Studio is Aqara's IoT operating system for homes, buildings and campuses."
+    },
+    {
+     "q": "An installer plans a large office with KNX and BACnet. Which Aqara part may be relevant?",
+     "o": [
+      "Aqara Studio",
+      "Roller Shade Driver E1",
+      "Door and Window Sensor P2"
+     ],
+     "a": 0,
+     "w": "Studio lists KNX and BACnet among its supported protocols."
+    },
+    {
+     "q": "Best first question to a new Aqara customer?",
+     "o": [
+      "Which smart home platform do your end customers use?",
+      "How much do you pay for power?",
+      "What is your favourite colour?"
+     ],
+     "a": 0,
+     "w": "Apple Home, Google, Alexa or Home Assistant decide how to set up hubs and Matter."
+    }
+   ]
+  }
+ ]
+}

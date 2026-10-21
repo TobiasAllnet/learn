@@ -1,0 +1,208 @@
+{
+ "title": "Webmercs and Netset",
+ "desc": "B2B ordering platforms resellers use with distributors",
+ "src": [
+  {
+   "l": "Webmercs",
+   "u": "https://www.webmercs.com"
+  },
+  {
+   "l": "Webmercs integration",
+   "u": "https://www.webmercs.com/solution/feature/integration"
+  },
+  {
+   "l": "Netset products",
+   "u": "https://netset.com/products/"
+  },
+  {
+   "l": "Netset: new Nettailer solutions",
+   "u": "https://netset.com/news/netset-launches-new-nettailer-solutions-for-it-resellers/"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "wn-1-1",
+   "lvl": 1,
+   "title": "What is a reseller ordering platform?",
+   "src": [
+    {
+     "l": "Netset products",
+     "u": "https://netset.com/products/"
+    },
+    {
+     "l": "Netset: new Nettailer solutions",
+     "u": "https://netset.com/news/netset-launches-new-nettailer-solutions-for-it-resellers/"
+    },
+    {
+     "l": "Webmercs",
+     "u": "https://www.webmercs.com"
+    },
+    {
+     "l": "Webmercs integration",
+     "u": "https://www.webmercs.com/solution/feature/integration"
+    }
+   ],
+   "pages": [
+    {
+     "h": "A shop front for the reseller",
+     "t": "Webmercs and Netset make <b>e-commerce platforms</b>: software a reseller uses for its own webshop and purchasing. Both are built around <b>integration</b>, so the shop can connect to distributors and vendors, instead of staff typing everything by hand.",
+     "g": [
+      [
+       "E-commerce platform",
+       "Software that runs a webshop: catalogue, prices, basket and orders."
+      ]
+     ]
+    },
+    {
+     "h": "Why resellers like it",
+     "t": "Netset says direct distributor integration gives <b>real-time pricing and stock updates</b> and highly reduced transaction costs. Webmercs lists stock updates from vendors, order processing, and links to <b>ERP</b> and accounting systems. One place to check, order and hand data on.",
+     "g": [
+      [
+       "ERP",
+       "The system a company uses to run finance, stock and orders."
+      ],
+      [
+       "Integration",
+       "A live link between two systems so data moves automatically."
+      ]
+     ]
+    },
+    {
+     "h": "Two different companies",
+     "t": "<b>Webmercs</b> is made by Data Design AS in Oslo, Norway, with customers in Norway, Sweden, Denmark and Finland. <b>Netset</b>, based in Malmö, Sweden, sells its <b>Nettailer</b> platform to IT and telecom resellers. They are competing platforms, not one product. Allnet is not the platform, it is a distributor that can be connected."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is Webmercs or Netset in this context?",
+     "o": [
+      "A distributor that ships IT products",
+      "A webshop platform a reseller uses, connectable to distributors",
+      "A vendor that makes firewalls"
+     ],
+     "a": 1,
+     "w": "They are software platforms for webshops and purchasing. They do not hold stock themselves in this picture.",
+     "g": [
+      [
+       "Vendor",
+       "The manufacturer of a product."
+      ]
+     ]
+    },
+    {
+     "q": "Which benefit does Netset state for direct distributor integration?",
+     "o": [
+      "Free shipping",
+      "Real-time pricing and stock updates",
+      "Automatic discounts from every vendor"
+     ],
+     "a": 1,
+     "w": "Netset says direct integration gives real-time pricing and stock updates and reduces transaction costs."
+    },
+    {
+     "q": "Which company is behind Webmercs?",
+     "o": [
+      "Data Design AS in Norway",
+      "Netset in Denmark",
+      "A Finnish distributor"
+     ],
+     "a": 0,
+     "w": "Webmercs is made by Data Design AS, based in Oslo."
+    },
+    {
+     "q": "Where does Allnet fit in?",
+     "o": [
+      "Allnet owns Netset",
+      "Allnet is a distributor whose products and stock a reseller's platform can show",
+      "Allnet is a reseller using Webmercs"
+     ],
+     "a": 1,
+     "w": "Allnet is a distributor. A reseller's platform can be connected to a distributor so that distributor's range shows there."
+    }
+   ]
+  },
+  {
+   "id": "wn-2-1",
+   "lvl": 2,
+   "title": "Platforms in practice and what to tell a reseller",
+   "src": [
+    {
+     "l": "Netset: new Nettailer solutions",
+     "u": "https://netset.com/news/netset-launches-new-nettailer-solutions-for-it-resellers/"
+    },
+    {
+     "l": "Netset products",
+     "u": "https://netset.com/products/"
+    },
+    {
+     "l": "Webmercs integration",
+     "u": "https://www.webmercs.com/solution/feature/integration"
+    }
+   ],
+   "pages": [
+    {
+     "h": "How Netset is packaged",
+     "t": "<b>Nettailer</b> comes in tiers for different reseller sizes. The main difference is <b>how many distributors</b> can be connected: Essential one, Business up to three, Professional five or more. Netset says onboarding takes about <b>10 days</b> to a first order. <b>Distbox</b> is the separate product for distributors and manufacturers.",
+     "g": [
+      [
+       "Tier",
+       "A package level, from basic to advanced."
+      ]
+     ]
+    },
+    {
+     "h": "How Webmercs gets data in",
+     "t": "Webmercs says it aims to automate any exchange that can be done electronically. <b>Structured product and price files</b> from vendors can be imported, with vendor requirements in separate guidelines. Webshops can also hand orders to an ERP or accounting system and send product files to price-comparison sites. Exact set-up per distributor is a technical job.",
+     "g": [
+      [
+       "Product file",
+       "A data file listing products, prices and stock, sent in a fixed format."
+      ]
+     ]
+    },
+    {
+     "h": "What to say to a reseller",
+     "t": "Keep it simple: if you already use Webmercs or Netset, <b>ask which platform</b> and offer to be <b>connected</b> so they see our range and stock in their shop. Do not promise a date or features. The set-up details are agreed with the platform and your manager.",
+     "g": [
+      [
+       "Connected",
+       "Linked so the distributor's data shows in the reseller's platform."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What mainly separates Netset's Nettailer tiers for resellers?",
+     "o": [
+      "The number of distributors that can be integrated",
+      "The colour of the webshop",
+      "Which vendors are allowed"
+     ],
+     "a": 0,
+     "w": "Netset states Essential supports one distributor, Business up to three, Professional five or more."
+    },
+    {
+     "q": "A reseller says they use Webmercs. What is a good first step?",
+     "o": [
+      "Tell them to switch to Netset",
+      "Ask which platform they use and offer to be connected so our range shows there",
+      "Quote a go-live date"
+     ],
+     "a": 1,
+     "w": "Ask and offer the connection. The lessons do not support promising dates or features."
+    },
+    {
+     "q": "Which is the distributor-side product from Netset?",
+     "o": [
+      "Nettailer Business",
+      "Nettailer Enterprise",
+      "Nettailer Distbox"
+     ],
+     "a": 2,
+     "w": "Distbox is for distributors and manufacturers; the other Nettailer tiers are for resellers."
+    }
+   ]
+  }
+ ]
+}

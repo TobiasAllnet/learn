@@ -1,0 +1,508 @@
+{
+ "title": "Zyxel",
+ "desc": "Business switches, Wi-Fi, firewalls, 4G/5G and Nebula cloud",
+ "src": [
+  {
+   "l": "Zyxel Networks about",
+   "u": "https://www.zyxel.com/global/en/about-zyxel"
+  },
+  {
+   "l": "Zyxel products",
+   "u": "https://www.zyxel.com/global/en/products"
+  },
+  {
+   "l": "Nebula Control Center",
+   "u": "https://www.zyxel.com/global/en/products/nebula-cloud-center"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "zx-1-1",
+   "lvl": 1,
+   "title": "Who is Zyxel?",
+   "src": [
+    {
+     "l": "Zyxel Networks about",
+     "u": "https://www.zyxel.com/global/en/about-zyxel"
+    },
+    {
+     "l": "Zyxel products",
+     "u": "https://www.zyxel.com/global/en/products"
+    }
+   ],
+   "pages": [
+    {
+     "h": "A broad business networking vendor",
+     "t": "Zyxel Networks says it has <b>35 years</b> of networking expertise and serves <b>150 global markets</b>. It claims about <b>1 million businesses</b> use its solutions, from startups and small firms up to large businesses."
+    },
+    {
+     "h": "What it sells",
+     "t": "The main categories are <b>firewalls</b>, <b>security routers</b>, <b>switches</b>, <b>Wi-Fi access points</b>, <b>4G/5G fixed wireless</b>, <b>broadband access</b> gear for operators and in-building mobile coverage. One cloud tool, <b>Nebula</b>, ties much of it together.",
+     "g": [
+      [
+       "Access point",
+       "A device that gives Wi-Fi coverage and connects by cable to the network."
+      ],
+      [
+       "Security router",
+       "A small-office router with built-in protection against threats."
+      ]
+     ]
+    },
+    {
+     "h": "Who buys it",
+     "t": "Zyxel lists <b>resellers, distributors</b>, retail stores and eCommerce partners as ways to buy. A portal called <b>Zyxel Circle</b> handles licence and asset management for partners. For Allnet, the buyer is the reseller or integrator."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which size of customer does Zyxel say its solutions cover?",
+     "o": [
+      "Only large enterprises",
+      "Startups and small business up to large business",
+      "Only home users"
+     ],
+     "a": 1,
+     "w": "Zyxel lists home, startup and small business, medium business and large business."
+    },
+    {
+     "q": "Which of these is NOT one of Zyxel's main business categories?",
+     "o": [
+      "Switches",
+      "Fixed wireless 4G/5G",
+      "Door access control"
+     ],
+     "a": 2,
+     "w": "Zyxel's product pages list firewalls, routers, switches, Wi-Fi, fixed wireless, broadband access and in-building coverage, not door access."
+    },
+    {
+     "q": "What is Zyxel Circle?",
+     "o": [
+      "A Wi-Fi mesh product",
+      "A licence and asset management portal for partners",
+      "A 5G router"
+     ],
+     "a": 1,
+     "w": "Zyxel describes Circle as licence and asset management for partners."
+    }
+   ]
+  },
+  {
+   "id": "zx-2-1",
+   "lvl": 2,
+   "title": "Switches and Wi-Fi",
+   "src": [
+    {
+     "l": "Zyxel switches",
+     "u": "https://www.zyxel.com/global/en/products/switch"
+    },
+    {
+     "l": "Zyxel wireless",
+     "u": "https://www.zyxel.com/global/en/products/wireless"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Switches from simple to smart",
+     "t": "Zyxel's switch range goes from <b>unmanaged</b> plug-and-play boxes, to <b>web-managed</b>, to <b>smart managed</b> (GS1900 is one series), up to <b>Layer 3</b> models for aggregation and access. There are also PoE switches and PoE injectors.",
+     "g": [
+      [
+       "Unmanaged switch",
+       "A switch with nothing to configure: plug in and it works."
+      ],
+      [
+       "Layer 3",
+       "A switch that can also route between networks, used in bigger setups."
+      ],
+      [
+       "PoE",
+       "Power over Ethernet: power and data over one network cable."
+      ]
+     ]
+    },
+    {
+     "h": "Wi-Fi access points",
+     "t": "Access points come in <b>Wi-Fi 7</b> and <b>Wi-Fi 6</b> generations, with indoor and outdoor models. Series names include <b>NWA</b> (Wi-Fi 7 and 6, some PRO models), <b>WBE</b> (Wi-Fi 7) and <b>WAX</b> (Wi-Fi 6), both listed as NebulaFlex Pro. Older <b>WAC</b> models are 802.11ac (Wi-Fi 5)."
+    },
+    {
+     "h": "Pick by need",
+     "t": "A small office needing no setup usually fits an <b>unmanaged or web-managed</b> switch. A site wanting more control and monitoring usually needs a <b>smart managed</b> one. For Wi-Fi, first ask: indoor or outdoor, and how many users."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A tiny office wants a switch that needs no configuration. Which type fits?",
+     "o": [
+      "Layer 3 aggregation switch",
+      "Unmanaged switch",
+      "Smart managed switch"
+     ],
+     "a": 1,
+     "w": "Unmanaged switches are plug-and-play."
+    },
+    {
+     "q": "Which Zyxel access point series name belongs to the older Wi-Fi 5 generation?",
+     "o": [
+      "WBE",
+      "WAC",
+      "NWA"
+     ],
+     "a": 1,
+     "w": "WAC models are 802.11ac (Wi-Fi 5). WBE is Wi-Fi 7 and NWA covers Wi-Fi 7 and 6."
+    },
+    {
+     "q": "A shop wants Wi-Fi for its car park too. What do you ask first?",
+     "o": [
+      "Which colour it prefers",
+      "Whether it has a phone system",
+      "Indoor or outdoor models, and how many users"
+     ],
+     "a": 2,
+     "w": "Zyxel offers outdoor access points as well as indoor ones, so the placement and number of users decide the model."
+    }
+   ]
+  },
+  {
+   "id": "zx-2-2",
+   "lvl": 2,
+   "title": "Firewalls and security routers",
+   "src": [
+    {
+     "l": "Zyxel firewall (NGFW)",
+     "u": "https://www.zyxel.com/global/en/products/firewall"
+    },
+    {
+     "l": "Zyxel security routers",
+     "u": "https://www.zyxel.com/global/en/products/security-router"
+    },
+    {
+     "l": "Zyxel community, Elite Pack (USG LITE 60AX, SCR 50AXE)",
+     "u": "https://community.zyxel.com/en/discussion/22797/new-security-appliance-license-elite-pack"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Protection at the edge",
+     "t": "Zyxel's <b>firewall (NGFW)</b> line is pitched as protection from malware and unauthorized applications. <b>Security routers</b> add built-in threat protection and unified cloud management for <b>small offices and remote deployments</b>. Family names include USG FLEX H, USG FLEX, ATP, USG LITE and SCR; check which are current.",
+     "g": [
+      [
+       "NGFW",
+       "Next-generation firewall: filters traffic by application and threat, not just ports."
+      ],
+      [
+       "Edge",
+       "The point where the customer's network meets the internet."
+      ]
+     ]
+    },
+    {
+     "h": "Features by licence",
+     "t": "Security features such as protection services need <b>licences</b>. Zyxel groups them into security, management and reporting, and connectivity categories. A <b>License Finder</b> tool is linked from the Service and License menu on zyxel.com.",
+     "g": [
+      [
+       "Licence",
+       "A paid right to use a feature, usually for a set period and renewed."
+      ]
+     ]
+    },
+    {
+     "h": "Sizing a firewall",
+     "t": "The security router page filters models by <b>number of users</b> (from 5 up to 800) and by <b>internet bandwidth</b>. Ask the customer how many people and how fast a line they have, then match the model."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which Zyxel product type suits a small branch needing built-in threat protection?",
+     "o": [
+      "Security router",
+      "PoE injector",
+      "Broadband access gear for operators"
+     ],
+     "a": 0,
+     "w": "Security routers are described as built-in protection for small offices and remote sites."
+    },
+    {
+     "q": "Why does a firewall quote often include licences?",
+     "o": [
+      "Licences replace the hardware",
+      "Protection services need licences",
+      "Licences make Wi-Fi faster"
+     ],
+     "a": 1,
+     "w": "Zyxel offers security, management and connectivity licences for its security devices."
+    },
+    {
+     "q": "Which two facts help size a Zyxel security router?",
+     "o": [
+      "Building colour and floor count",
+      "Number of phones and printers",
+      "Number of users and internet bandwidth"
+     ],
+     "a": 2,
+     "w": "The product filters list users (5 to 800) and internet bandwidth."
+    }
+   ]
+  },
+  {
+   "id": "zx-2-3",
+   "lvl": 2,
+   "title": "4G/5G and broadband access",
+   "src": [
+    {
+     "l": "Zyxel fixed wireless access",
+     "u": "https://www.zyxel.com/global/en/products/fixed-wireless-access"
+    },
+    {
+     "l": "Zyxel fixed broadband access",
+     "u": "https://www.zyxel.com/global/en/products/fixed-broadband-access"
+    },
+    {
+     "l": "Zyxel in-building coverage",
+     "u": "https://www.zyxel.com/global/en/products/in-building-coverage"
+    },
+    {
+     "l": "Nebula Control Center",
+     "u": "https://www.zyxel.com/global/en/products/nebula-cloud-center"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Fixed wireless access",
+     "t": "<b>Fixed wireless access</b> (FWA) gives broadband over mobile networks where cables are limited. Zyxel offers <b>4G LTE and 5G</b> routers, both <b>indoor and outdoor</b>, aimed at SMBs, home offices and tech-savvy users.",
+     "g": [
+      [
+       "FWA",
+       "Fixed wireless access: broadband delivered by radio instead of a cable."
+      ],
+      [
+       "LTE",
+       "The technical name for 4G mobile data."
+      ]
+     ]
+    },
+    {
+     "h": "Nebula and FWA",
+     "t": "Several FWA models carry the <b>Nebula</b> name, such as <b>Nebula FWA710</b> (outdoor 5G) and <b>Nebula FWA510</b> (indoor 5G). Nebula describes its 4G/5G routers as cloud-managed, in the same tool as access points and switches."
+    },
+    {
+     "h": "For operators and venues",
+     "t": "Zyxel also lists <b>fixed broadband access</b> gear for WISPs, MSPs and regional operators, and <b>in-building coverage</b> for indoor cellular signal in small and mid-sized venues. These are niche: check the customer is an operator first.",
+     "g": [
+      [
+       "WISP",
+       "Wireless Internet Service Provider: sells internet over radio links."
+      ],
+      [
+       "MSP",
+       "Managed service provider: a firm that runs IT for customers."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A pop-up store has no cable internet. What type of Zyxel product is the starting point?",
+     "o": [
+      "A 4G/5G fixed wireless router",
+      "A Layer 3 switch",
+      "An unmanaged switch"
+     ],
+     "a": 0,
+     "w": "FWA devices bring broadband over mobile networks where wired links are limited."
+    },
+    {
+     "q": "Which Zyxel line is aimed at WISPs and regional operators?",
+     "o": [
+      "Security routers",
+      "Fixed broadband access",
+      "Desktop switches"
+     ],
+     "a": 1,
+     "w": "Zyxel lists fixed broadband access for WISPs, MSPs and regional operators."
+    },
+    {
+     "q": "What does the 'Nebula' in a model name like Nebula FWA510 tell you?",
+     "o": [
+      "It is a cheap model",
+      "It can be managed in Zyxel's Nebula cloud",
+      "It only works outdoors"
+     ],
+     "a": 1,
+     "w": "Nebula-named models are meant to be managed through the Nebula cloud platform."
+    }
+   ]
+  },
+  {
+   "id": "zx-3-1",
+   "lvl": 3,
+   "title": "Nebula and licences",
+   "src": [
+    {
+     "l": "Nebula Control Center",
+     "u": "https://www.zyxel.com/global/en/products/nebula-cloud-center"
+    },
+    {
+     "l": "Nebula license reform notification (2021)",
+     "u": "https://www.zyxel.com/global/en/nebula-license-reform-notification"
+    },
+    {
+     "l": "Nebula plans page",
+     "u": "https://www.zyxel.com/global/en/products/nebula-cloud-center/cloud-networking-management-nebula-control-center/plans-and-pricing"
+    },
+    {
+     "l": "Zyxel community, Elite Pack and Nebula Pro grace period",
+     "u": "https://community.zyxel.com/en/discussion/33913/understanding-zyxel-elite-pack-license-operation-priorities"
+    }
+   ],
+   "pages": [
+    {
+     "h": "One cloud for many sites",
+     "t": "<b>Nebula</b> manages access points, switches, firewalls and 4G/5G routers from one cloud screen, with a mobile app and <b>Zero Touch Provisioning</b>. Multi-site and multi-customer views make it handy for MSPs.",
+     "g": [
+      [
+       "Zero Touch Provisioning",
+       "A new device finds the cloud and configures itself, so no one needs to set it up on site."
+      ]
+     ]
+    },
+    {
+     "h": "Licence packs in plain words",
+     "t": "Nebula has a <b>free</b> tier (called Base in Zyxel's 2021 licence notice) plus paid packs, such as <b>Pro</b>, with more control and visibility. Licences are <b>per device</b>, and an organisation only runs a pack level if all its devices have it. A separate <b>MSP Pack</b> is counted per user account.",
+     "g": [
+      [
+       "Organisation",
+       "One customer's network inside Nebula, with its own devices and admins."
+      ]
+     ]
+    },
+    {
+     "h": "What to tell a reseller",
+     "t": "Most devices work either <b>cloud-managed or standalone</b>. If licences lapse or a device is added without one, Nebula gives a <b>15-day grace period</b>, then usually falls back to Base. Zyxel also offers <b>pay as you go</b> through Circle. Packs change over time: check current terms and prices with Allnet.",
+     "g": [
+      [
+       "Standalone",
+       "The device is managed locally, without the cloud."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A reseller asks if Nebula costs anything to start. What is a correct answer?",
+     "o": [
+      "Nebula has a free tier and paid packs with more features",
+      "Everything in Nebula is paid from day one",
+      "Only MSPs can use Nebula"
+     ],
+     "a": 0,
+     "w": "Zyxel describes a complimentary plan (called Base in its licence notice) and paid plans for more control."
+    },
+    {
+     "q": "How are paid Nebula licences counted?",
+     "o": [
+      "One licence for any number of customers",
+      "Per device, and the whole organisation needs the same pack",
+      "Per building"
+     ],
+     "a": 1,
+     "w": "Licensing is per device, and an organisation only runs a pack level when every device has a licence for it."
+    },
+    {
+     "q": "A customer's Pro licences expire. What happens first?",
+     "o": [
+      "Devices stop working at once",
+      "A 15-day grace period, then usually a drop to Base",
+      "Nothing, ever"
+     ],
+     "a": 1,
+     "w": "Zyxel describes a 15-day grace period before the organisation falls back to the least compatible pack, typically Base."
+    },
+    {
+     "q": "An MSP wants to look after many customers. Which part is relevant?",
+     "o": [
+      "Multi-customer MSP tools and the MSP Pack",
+      "Unmanaged switches",
+      "In-building coverage"
+     ],
+     "a": 0,
+     "w": "Nebula has built-in multi-tenant tools for MSPs, plus a separate MSP Pack licence counted per user account."
+    }
+   ]
+  },
+  {
+   "id": "zx-3-2",
+   "lvl": 3,
+   "title": "When Zyxel fits which customer",
+   "src": [
+    {
+     "l": "Zyxel products",
+     "u": "https://www.zyxel.com/global/en/products"
+    },
+    {
+     "l": "Nebula Control Center",
+     "u": "https://www.zyxel.com/global/en/products/nebula-cloud-center"
+    },
+    {
+     "l": "Zyxel security routers",
+     "u": "https://www.zyxel.com/global/en/products/security-router"
+    }
+   ],
+   "pages": [
+    {
+     "h": "The sweet spot",
+     "t": "Zyxel's pitch is <b>one vendor for the whole SMB network</b>: firewall, switches, Wi-Fi and 4G/5G, managed from <b>Nebula</b>. It often suits customers with several sites, little on-site IT, or an MSP running things for them."
+    },
+    {
+     "h": "Compared with typical alternatives",
+     "t": "A <b>single-category</b> vendor, say Wi-Fi only, leaves the customer mixing tools. A <b>full enterprise</b> platform may bring more depth and cost. Zyxel often sits in between: broad range, a free cloud tier, and security from the same vendor."
+    },
+    {
+     "h": "Questions to ask",
+     "t": "How many <b>sites and users</b>? Is there a cable line or <b>mobile only</b>? Indoors or outdoors? Does an MSP manage it? Is a <b>firewall</b> needed? Answers pick the products. For very large or regulated projects, involve a colleague."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A retailer has 12 small shops, no IT staff and wants one remote view. Best Zyxel angle?",
+     "o": [
+      "Operator broadband access gear",
+      "Firewall, switch and Wi-Fi managed together in Nebula",
+      "Only a desktop unmanaged switch per shop"
+     ],
+     "a": 1,
+     "w": "Multi-site, one cloud view and one vendor is Zyxel's main pitch."
+    },
+    {
+     "q": "A farm shed has no cable internet and needs a connection. Which area?",
+     "o": [
+      "Layer 3 aggregation switch",
+      "Wi-Fi 5 desk access point",
+      "Outdoor 4G/5G fixed wireless router"
+     ],
+     "a": 2,
+     "w": "Outdoor FWA routers bring broadband where wired links are limited."
+    },
+    {
+     "q": "What is a sensible reply to 'is Zyxel enough for a huge regulated bank?'",
+     "o": [
+      "Yes, always",
+      "Collect requirements and involve a colleague",
+      "No, never sell it"
+     ],
+     "a": 1,
+     "w": "Large regulated projects need verified answers, so escalate."
+    },
+    {
+     "q": "Which statement about Zyxel versus a Wi-Fi-only vendor is fair?",
+     "o": [
+      "Zyxel has no cloud management",
+      "Zyxel covers many categories under one cloud tool",
+      "Zyxel only sells Wi-Fi"
+     ],
+     "a": 1,
+     "w": "Zyxel spans firewalls, switches, Wi-Fi and 4G/5G with Nebula."
+    }
+   ]
+  }
+ ]
+}

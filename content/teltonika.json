@@ -1,0 +1,668 @@
+{
+ "title": "Teltonika",
+ "desc": "Industrial cellular routers, gateways and remote management",
+ "src": [
+  {
+   "l": "Teltonika wiki, product families",
+   "u": "https://wiki.teltonika-networks.com/view/Main_Page"
+  },
+  {
+   "l": "Teltonika routers page",
+   "u": "https://teltonika-networks.com/products/routers"
+  },
+  {
+   "l": "Teltonika wiki, RMS",
+   "u": "https://wiki.teltonika-networks.com/view/RMS"
+  },
+  {
+   "l": "Teltonika on Wikipedia",
+   "u": "https://en.wikipedia.org/wiki/Teltonika"
+  }
+ ],
+ "lessons": [
+  {
+   "id": "tk-1-1",
+   "lvl": 1,
+   "title": "Who is Teltonika Networks?",
+   "src": [
+    {
+     "l": "Teltonika on Wikipedia",
+     "u": "https://en.wikipedia.org/wiki/Teltonika"
+    },
+    {
+     "l": "Teltonika routers page",
+     "u": "https://teltonika-networks.com/products/routers"
+    }
+   ],
+   "pages": [
+    {
+     "h": "A Lithuanian industrial connectivity maker",
+     "t": "<b>Teltonika Networks</b> is part of the Lithuanian <b>Teltonika</b> group, which is headquartered in Vilnius. It makes industrial <b>cellular routers</b>, gateways, switches and modems, plus a cloud tool called <b>RMS</b> to manage them.",
+     "g": [
+      [
+       "Cellular router",
+       "A router that connects to the internet through a mobile network (4G or 5G) using a SIM card."
+      ],
+      [
+       "Gateway",
+       "A device that connects equipment, such as meters or sensors, to a network or the cloud."
+      ]
+     ]
+    },
+    {
+     "h": "Built for places with no cable",
+     "t": "Many sites have no fixed internet: vehicles, pumps, kiosks, remote cabinets. Teltonika says its routers use <b>2G to 5G</b> mobile networks with <b>dual SIM</b>, <b>eSIM</b> support and automatic failover. Exact features vary by model.",
+     "g": [
+      [
+       "Dual SIM",
+       "Two SIM card slots, so the router can use a second operator if the first one fails."
+      ],
+      [
+       "Failover",
+       "Automatic switch to a backup connection when the main one goes down."
+      ],
+      [
+       "eSIM",
+       "A SIM built into the device, programmed remotely instead of a plastic card."
+      ]
+     ]
+    },
+    {
+     "h": "Six sectors it targets",
+     "t": "Teltonika groups its use cases as <b>industrial and automation</b>, <b>energy and utilities</b>, <b>smart city</b>, <b>transportation</b>, <b>enterprise</b> and <b>retail</b>. Think machines, meters, buses, shops and backup lines."
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What is Teltonika Networks best known for?",
+     "o": [
+      "Firewall software subscriptions",
+      "Home Wi-Fi mesh kits",
+      "Industrial cellular routers and gateways"
+     ],
+     "a": 2,
+     "w": "The company makes industrial cellular routers, gateways, switches and modems, plus the RMS management tool."
+    },
+    {
+     "q": "Which feature lets a router use a second mobile operator if the first fails?",
+     "o": [
+      "Dual SIM with failover",
+      "Wi-Fi mesh",
+      "A DIN rail bracket"
+     ],
+     "a": 0,
+     "w": "Dual SIM means two SIM slots, and failover switches over automatically.",
+     "g": [
+      [
+       "Dual SIM",
+       "Two SIM card slots, so the router can use a second operator if the first one fails."
+      ],
+      [
+       "Failover",
+       "Automatic switch to a backup connection when the main one goes down."
+      ]
+     ]
+    },
+    {
+     "q": "A customer needs internet for a remote pump station with no cable. Which kind of product fits?",
+     "o": [
+      "A cellular router",
+      "A desktop switch",
+      "A wired-only access point"
+     ],
+     "a": 0,
+     "w": "Cellular routers use mobile networks, so no fixed line is needed.",
+     "g": [
+      [
+       "Cellular router",
+       "A router that connects to the internet through a mobile network (4G or 5G) using a SIM card."
+      ]
+     ]
+    },
+    {
+     "q": "Which is NOT one of the sectors Teltonika lists for its use cases?",
+     "o": [
+      "Energy and utilities",
+      "Consumer gaming",
+      "Transportation"
+     ],
+     "a": 1,
+     "w": "The listed sectors are industrial, energy, smart city, transportation, enterprise and retail."
+    }
+   ]
+  },
+  {
+   "id": "tk-2-1",
+   "lvl": 2,
+   "title": "The router series: RUT, RUTX, RUTM, RUTC",
+   "src": [
+    {
+     "l": "Teltonika wiki, router families",
+     "u": "https://wiki.teltonika-networks.com/view/Teltonika_Networks_Routers_Families"
+    },
+    {
+     "l": "Teltonika wiki, RUTX",
+     "u": "https://wiki.teltonika-networks.com/view/RUTX_Routers"
+    },
+    {
+     "l": "Teltonika wiki, RUTM",
+     "u": "https://wiki.teltonika-networks.com/view/RUTM_Routers"
+    }
+   ],
+   "pages": [
+    {
+     "h": "RUT: small and compact",
+     "t": "The <b>RUT</b> range is the compact entry. <b>RUT1</b> has no mobile modem at all, <b>RUT2</b> is small cellular, and <b>RUT9</b> is described as versatile industrial cellular with <b>two SIM slots</b>. Good for simple remote jobs.",
+     "g": [
+      [
+       "Modem",
+       "The part that talks to the mobile network."
+      ]
+     ]
+    },
+    {
+     "h": "RUTX and RUTM: advanced industrial",
+     "t": "<b>RUTX</b> and <b>RUTM</b> are both described by Teltonika as series of routers for advanced industrial solutions. Both have <b>Gigabit Ethernet</b> ports and two SIM slots, and both include 5G models, such as <b>RUTX50</b> and <b>RUTM50</b>. Step up here for more ports and power.",
+     "g": [
+      [
+       "Gigabit Ethernet",
+       "Wired network ports running at up to 1 Gbps, ten times faster than older 100 Mbps ports."
+      ]
+     ]
+    },
+    {
+     "h": "RUTC: the powerful one",
+     "t": "<b>RUTC</b> is the most powerful of these four: more memory, <b>Wi-Fi 6</b>, five Gigabit ports and <b>Docker</b> support for running extra applications on the router itself.",
+     "g": [
+      [
+       "Docker",
+       "A way to run small software packages on a device. Mostly a technician topic."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which RUT model has no mobile modem?",
+     "o": [
+      "RUT9",
+      "RUT1",
+      "RUT2"
+     ],
+     "a": 1,
+     "w": "RUT1 is described as a compact industrial router without a mobile connection.",
+     "g": [
+      [
+       "Modem",
+       "The part that talks to the mobile network."
+      ]
+     ]
+    },
+    {
+     "q": "A customer wants to run extra applications on the router, with Wi-Fi 6. Which series fits?",
+     "o": [
+      "RUT1",
+      "RUTC",
+      "RUT2"
+     ],
+     "a": 1,
+     "w": "RUTC adds Wi-Fi 6, more memory and Docker support.",
+     "g": [
+      [
+       "Docker",
+       "A way to run small software packages on a device."
+      ]
+     ]
+    },
+    {
+     "q": "Which pair is described as routers for advanced industrial solutions?",
+     "o": [
+      "RUT1 and RUT2",
+      "TSW and TAP",
+      "RUTX and RUTM"
+     ],
+     "a": 2,
+     "w": "Teltonika describes both RUTX and RUTM that way."
+    },
+    {
+     "q": "A simple remote kiosk needs a small, basic cellular router. Where do you start?",
+     "o": [
+      "RUT2 or RUT9",
+      "An access point",
+      "RUTC"
+     ],
+     "a": 0,
+     "w": "RUT2 is small cellular, RUT9 is versatile industrial cellular with two SIM slots."
+    }
+   ]
+  },
+  {
+   "id": "tk-2-2",
+   "lvl": 2,
+   "title": "Beyond routers: gateways, switches, Wi-Fi",
+   "src": [
+    {
+     "l": "Teltonika wiki, product families",
+     "u": "https://wiki.teltonika-networks.com/view/Main_Page"
+    },
+    {
+     "l": "Teltonika gateways page",
+     "u": "https://teltonika-networks.com/products/gateways"
+    },
+    {
+     "l": "Teltonika wiki, TAP200",
+     "u": "https://wiki.teltonika-networks.com/view/TAP200"
+    },
+    {
+     "l": "Teltonika wiki, router families",
+     "u": "https://wiki.teltonika-networks.com/view/Teltonika_Networks_Routers_Families"
+    }
+   ],
+   "pages": [
+    {
+     "h": "TRB gateways",
+     "t": "<b>TRB</b> gateways link equipment to the cloud over <b>4G, 5G, LTE-M or NB-IoT</b>. They add industrial interfaces like <b>RS232, RS485 and Modbus</b>, so old machines and meters can be reached.",
+     "g": [
+      [
+       "RS232 / RS485",
+       "Old but common serial cable standards that industrial equipment still uses."
+      ],
+      [
+       "Modbus",
+       "A common language that industrial machines use to share readings."
+      ],
+      [
+       "LTE-M / NB-IoT",
+       "Low-power mobile networks for small devices that send little data."
+      ]
+     ]
+    },
+    {
+     "h": "Specialist routers",
+     "t": "<b>OTD</b> routers are made for outdoor use. <b>ATRM</b> is built for transportation, with M12 connectors and railway certification. <b>Altos</b> are 5G Wi-Fi 7 routers aimed at fixed wireless access.",
+     "g": [
+      [
+       "Fixed wireless access",
+       "Internet to a building over a mobile network instead of a cable."
+      ]
+     ]
+    },
+    {
+     "h": "Switches and access points",
+     "t": "<b>TSW</b> are industrial switches and <b>TSF</b> are flat Ethernet switches. <b>TAP</b> are Wi-Fi access points, for example TAP200, a Wi-Fi 5 model for medium-density spaces such as retail or enterprise sites. <b>DAP</b> are industrial access points.",
+     "g": [
+      [
+       "Switch",
+       "Connects wired devices in a local network."
+      ],
+      [
+       "Access point",
+       "Adds Wi-Fi to a wired network."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "Which family connects serial industrial equipment to the cloud over mobile networks?",
+     "o": [
+      "TAP access points",
+      "TSF switches",
+      "TRB gateways"
+     ],
+     "a": 2,
+     "w": "TRB gateways support RS232, RS485 and Modbus with 4G or 5G.",
+     "g": [
+      [
+       "RS232 / RS485",
+       "Old but common serial cable standards that industrial equipment still uses."
+      ]
+     ]
+    },
+    {
+     "q": "A customer needs a router outside in the weather. Which series is made for it?",
+     "o": [
+      "TAP",
+      "TSW",
+      "OTD"
+     ],
+     "a": 2,
+     "w": "OTD routers are designed for outdoor use."
+    },
+    {
+     "q": "Which product would you offer a shop that needs more Wi-Fi coverage?",
+     "o": [
+      "TRB140 gateway",
+      "TAP200 access point",
+      "A RUT1"
+     ],
+     "a": 1,
+     "w": "TAP200 is a Wi-Fi 5 access point for medium-density spaces such as retail.",
+     "g": [
+      [
+       "Access point",
+       "Adds Wi-Fi to a wired network."
+      ]
+     ]
+    },
+    {
+     "q": "Which series is built for trains and vehicles, with M12 connectors?",
+     "o": [
+      "ATRM",
+      "TSF",
+      "OTD"
+     ],
+     "a": 0,
+     "w": "ATRM is built for transportation with M12 Ethernet and power connectors."
+    }
+   ]
+  },
+  {
+   "id": "tk-2-3",
+   "lvl": 2,
+   "title": "RMS: managing devices remotely",
+   "src": [
+    {
+     "l": "Teltonika wiki, RMS",
+     "u": "https://wiki.teltonika-networks.com/view/RMS"
+    },
+    {
+     "l": "Teltonika wiki, RMS manual",
+     "u": "https://wiki.teltonika-networks.com/view/RMS_Manual"
+    }
+   ],
+   "pages": [
+    {
+     "h": "One dashboard for all devices",
+     "t": "<b>RMS</b> is Teltonika's <b>Remote Management System</b>. It lets you monitor devices and change their settings from the cloud, even when they have no <b>public IP address</b>. No site visit is needed.",
+     "g": [
+      [
+       "Public IP address",
+       "An internet address that can be reached from outside. Many mobile connections do not give one."
+      ]
+     ]
+    },
+    {
+     "h": "What is inside",
+     "t": "The manual lists modules: <b>Management</b> (devices, reports, alerts, tasks), <b>RMS Connect</b> for remote access, <b>RMS VPN</b> for secure links, and <b>Administration</b> for users and companies. There is also an <b>API</b>.",
+     "g": [
+      [
+       "VPN",
+       "A private encrypted tunnel across the internet."
+      ],
+      [
+       "API",
+       "A way for other software to talk to a system automatically."
+      ]
+     ]
+    },
+    {
+     "h": "Why it matters in a deal",
+     "t": "Checking status and changing settings on many routers from one place saves <b>truck rolls</b>. For a reseller it can turn a hardware sale into a managed service. Check the current RMS licence terms with Allnet before quoting.",
+     "g": [
+      [
+       "Truck roll",
+       "A trip by a technician to a site, expensive when repeated."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does RMS do?",
+     "o": [
+      "Monitors and configures Teltonika devices from the cloud",
+      "Sells SIM cards",
+      "Replaces the mobile network"
+     ],
+     "a": 0,
+     "w": "RMS is a cloud tool for monitoring and managing Teltonika devices."
+    },
+    {
+     "q": "Which RMS module gives remote access to a device?",
+     "o": [
+      "Administration",
+      "Reports",
+      "RMS Connect"
+     ],
+     "a": 2,
+     "w": "RMS Connect covers remote access, as the manual lists."
+    },
+    {
+     "q": "A reseller has 200 routers at remote sites. Why pitch RMS?",
+     "o": [
+      "Update and monitor them all without site visits",
+      "It makes the SIM cheaper",
+      "It adds Wi-Fi 6"
+     ],
+     "a": 0,
+     "w": "Central monitoring, alerts and remote access save technician trips.",
+     "g": [
+      [
+       "Truck roll",
+       "A trip by a technician to a site, expensive when repeated."
+      ]
+     ]
+    },
+    {
+     "q": "RMS can reach devices even without what?",
+     "o": [
+      "A power cable",
+      "A public IP address",
+      "A SIM card"
+     ],
+     "a": 1,
+     "w": "The wiki says RMS works even if devices have no public IP.",
+     "g": [
+      [
+       "Public IP address",
+       "An internet address that can be reached from outside. Many mobile connections do not give one."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tk-3-1",
+   "lvl": 3,
+   "title": "Which Teltonika for which customer?",
+   "src": [
+    {
+     "l": "Teltonika wiki, router families",
+     "u": "https://wiki.teltonika-networks.com/view/Teltonika_Networks_Routers_Families"
+    },
+    {
+     "l": "Teltonika gateways page",
+     "u": "https://teltonika-networks.com/products/gateways"
+    },
+    {
+     "l": "Teltonika wiki, OTD500",
+     "u": "https://wiki.teltonika-networks.com/view/OTD500"
+    }
+   ],
+   "pages": [
+    {
+     "h": "Match the site to the series",
+     "t": "Basic remote site or kiosk: <b>RUT2 or RUT9</b>. Need Gigabit ports or 5G: <b>RUTM or RUTX</b>. Heavy workloads and Wi-Fi 6: <b>RUTC</b>. Outdoors: <b>OTD</b>. Vehicles and rail: <b>ATRM</b>. Serial meters and machines: <b>TRB</b> (some RUT9 models too)."
+    },
+    {
+     "h": "Features that point to a series",
+     "t": "The wiki shows <b>RS-232 or RS-485</b> serial ports on most RUT9 models, handy for meters. Many RUTX models add <b>GNSS</b> location, some also Bluetooth LE. <b>OTD</b> routers are weather-rated, with PoE on the Ethernet ports.",
+     "g": [
+      [
+       "GNSS",
+       "Satellite positioning, like GPS, so a device can report where it is."
+      ],
+      [
+       "PoE",
+       "Power over Ethernet: power and data over one network cable."
+      ]
+     ]
+    },
+    {
+     "h": "When it is not the whole answer",
+     "t": "For a full office network or deep security inspection, Teltonika is often only one part, and a firewall vendor may be needed too. If the job is mainly reading old serial equipment, look at <b>TRB</b> gateways before a router.",
+     "g": [
+      [
+       "Firewall",
+       "A security gate that filters traffic between networks."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "A bus operator wants a vehicle router with Wi-Fi and GNSS location. Which series is built for transportation?",
+     "o": [
+      "ATRM",
+      "A TSW switch",
+      "A TAP200"
+     ],
+     "a": 0,
+     "w": "ATRM is Teltonika's transportation series, with GNSS, Wi-Fi and M12 connectors.",
+     "g": [
+      [
+       "GNSS",
+       "Satellite positioning, like GPS, so a device can report where it is."
+      ]
+     ]
+    },
+    {
+     "q": "A utility must read old meters over RS485 and send data by mobile. Best fit?",
+     "o": [
+      "TAP access point",
+      "RUT1",
+      "TRB gateway"
+     ],
+     "a": 2,
+     "w": "TRB gateways add serial interfaces and cellular links.",
+     "g": [
+      [
+       "RS232 / RS485",
+       "Old but common serial cable standards that industrial equipment still uses."
+      ]
+     ]
+    },
+    {
+     "q": "A water company wants a 5G router in an outdoor roadside cabinet. Which do you look at?",
+     "o": [
+      "TSF",
+      "OTD, for example OTD500",
+      "TAP200"
+     ],
+     "a": 1,
+     "w": "OTD is the outdoor series, and OTD500 is the 5G model."
+    },
+    {
+     "q": "A customer wants a router that runs extra apps and has Wi-Fi 6. Which?",
+     "o": [
+      "RUT1",
+      "TRB140",
+      "RUTC"
+     ],
+     "a": 2,
+     "w": "RUTC has Wi-Fi 6 and Docker support."
+    }
+   ]
+  },
+  {
+   "id": "tk-3-2",
+   "lvl": 3,
+   "title": "What a reseller should know",
+   "src": [
+    {
+     "l": "Teltonika routers page",
+     "u": "https://teltonika-networks.com/products/routers"
+    },
+    {
+     "l": "Teltonika wiki, product families",
+     "u": "https://wiki.teltonika-networks.com/view/Main_Page"
+    },
+    {
+     "l": "Teltonika wiki, RMS",
+     "u": "https://wiki.teltonika-networks.com/view/RMS"
+    }
+   ],
+   "pages": [
+    {
+     "h": "It sits next to 4G and 5G",
+     "t": "Teltonika products are the hardware that uses mobile broadband. The customer still needs a <b>SIM and data plan</b> from an operator. Ask early: which operator, how many SIMs, and is a backup SIM wanted?",
+     "g": [
+      [
+       "Mobile broadband",
+       "Internet delivered over the 4G or 5G network."
+      ]
+     ]
+    },
+    {
+     "h": "Good questions to ask",
+     "t": "How many sites? What must it connect: Wi-Fi users, machines or meters? Indoors or outdoors? Is <b>backup connectivity</b> needed? Should it be managed centrally in <b>RMS</b>? The answers point to the right series."
+    },
+    {
+     "h": "Check before you quote",
+     "t": "Model lines change, and the wiki keeps an <b>end-of-life</b> category. Confirm current availability and which series fits with your Allnet contact. Do not promise a feature that is not on the datasheet.",
+     "g": [
+      [
+       "End of life (EOL)",
+       "A product that is being or has been discontinued."
+      ]
+     ]
+    }
+   ],
+   "quiz": [
+    {
+     "q": "What does the customer still need besides a Teltonika cellular router?",
+     "o": [
+      "An RMS account for Wi-Fi",
+      "A SIM and data plan",
+      "A public IP address"
+     ],
+     "a": 1,
+     "w": "The router uses an operator's mobile network, so a SIM and plan are required."
+    },
+    {
+     "q": "Which question helps pick between RUT, TRB and OTD?",
+     "o": [
+      "What must it connect and where is it installed?",
+      "What colour is the case?",
+      "Who owns the building?"
+     ],
+     "a": 0,
+     "w": "Use case and location point to the right series."
+    },
+    {
+     "q": "Where does the wiki list products being discontinued?",
+     "o": [
+      "The EOL category",
+      "The TAP family",
+      "The RMS manual"
+     ],
+     "a": 0,
+     "w": "The wiki has a category for end-of-life products, so check before quoting.",
+     "g": [
+      [
+       "End of life (EOL)",
+       "A product that is being or has been discontinued."
+      ]
+     ]
+    },
+    {
+     "q": "A shop wants a backup internet line for its main fibre. What do you discuss?",
+     "o": [
+      "A TSF switch",
+      "A DAP access point",
+      "A cellular router with failover"
+     ],
+     "a": 2,
+     "w": "A router with a mobile connection can take over when the main line fails.",
+     "g": [
+      [
+       "Failover",
+       "Automatic switch to a backup connection when the main one goes down."
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}
