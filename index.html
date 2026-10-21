@@ -319,8 +319,17 @@ function settings(){
   const msg=t=>{document.getElementById("bkmsg").textContent=t},box=document.getElementById("bkbox");
   document.getElementById("bk").onclick=()=>{const t="LEARNBACKUP1:"+btoa(unescape(encodeURIComponent(JSON.stringify(S))));
     (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>msg("Backup copied. Paste it into Notes."),()=>{box.value=t;box.select();msg("Could not copy automatically. Select the text above and copy it.")})};
-  document.getElementById("rs").onclick=()=>{try{const t=box.value.trim();if(t.indexOf("LEARNBACKUP1:")!==0)throw 0;const o=JSON.parse(decodeURIComponent(escape(atob(t.slice(13)))));if(!o||typeof o!=="object"||o.ver!==2)throw 0;
-    if(!confirm("Replace the progress on this phone with the backup?"))return;S=Object.assign(FRESH(),o);save();updateHeader();settings();document.getElementById("bkmsg").textContent="Progress restored."}catch(e){msg("That does not look like a valid backup.")}};
+  document.getElementById("rs").onclick=()=>{let o;
+    try{
+      const m=/LEARNBACKUP1:([A-Za-z0-9+\/=\s]+)/.exec(box.value.replace(/[​-‍⁠﻿]/g,""));
+      if(!m){msg("No backup found in the box. It should start with LEARNBACKUP1:");return}
+      const w=m[1].trim().split(/\s+/);
+      for(let n=w.length;n>0&&!o;n--){try{o=JSON.parse(decodeURIComponent(escape(atob(w.slice(0,n).join("")))))}catch(e){}}
+      if(!o){msg("The backup text looks cut off or changed ("+w.join("").length+" characters). Copy it again from the original and paste the whole thing.");return}
+      if(!o||typeof o!=="object"||o.ver!==2){msg("The backup is readable but not a valid progress backup.");return}
+    }catch(e){msg("Could not read the backup: "+e.message);return}
+    if(!confirm("Replace the progress on this phone with the backup?"))return;
+    try{S=Object.assign(FRESH(),o);save();updateHeader();settings();document.getElementById("bkmsg").textContent="Progress restored."}catch(e){msg("Restore failed: "+e.message)}};
   document.getElementById("reset").onclick=()=>{if(confirm("Reset streak, XP and all progress?")){const f=S.focus,gl=S.goal;S=FRESH();S.focus=f;S.goal=gl;save();updateHeader();settings()}};
 }
 
