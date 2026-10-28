@@ -35,6 +35,7 @@ body.m-map{position:fixed;inset:0;overflow:hidden}
 #hdr>*{pointer-events:auto}
 .word{font-weight:600;font-size:28px;letter-spacing:-.02em}
 .stats{display:flex;align-items:center;gap:8px}
+.chip.off{opacity:.55;filter:grayscale(1)}
 .chip{border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:15px;font-weight:500;font-variant-numeric:tabular-nums;background:var(--panel);white-space:nowrap}
 .lvl{display:flex;flex-direction:column;gap:5px;min-width:64px}
 .lvl b{font-size:15px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;line-height:1}
@@ -145,12 +146,14 @@ const FRESH=()=>({xp:0,streak:0,last:"",done:{},seen:{},focus:{},sr:{},learned:{
 let S=FRESH();
 let OLD=false;
 try{const o=JSON.parse(localStorage.getItem(KEY)||"{}");OLD=o.ver!==2;S=Object.assign(S,o)}catch(e){}
+if(!(S.goal>=20))S.goal=20; /* weekly goal minimum is 20 (28 Oct 2026) */
 /* ver 2 (21 Oct 2026): XP only for first-time-correct questions. Old XP was test data, so it restarts at zero once. */
 if(OLD){S.xp=0;S.ver=2;S.learned={};S.bonusDeck={};S.weekly={ws:0,n:0}}
 const save=()=>{try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
 const dayNum=()=>{const d=new Date();return Math.floor((d.getTime()-d.getTimezoneOffset()*6e4)/864e5)};
 const dstr=n=>new Date(n*864e5).toISOString().slice(0,10);
 function bumpStreak(){const t=dayNum();if(S.last===dstr(t))return;S.streak=(S.last===dstr(t-1))?S.streak+1:1;S.last=dstr(t)}
+const streakDoneToday=()=>S.last===dstr(dayNum());
 const streakNow=()=>{const t=dayNum();return (S.last===dstr(t)||S.last===dstr(t-1))?S.streak:0};
 const INTERVALS=[0,1,3,7,16,35];
 function srDue(id){const r=S.sr[id];return !r||r.d<=dayNum()}
@@ -194,7 +197,7 @@ const colorOf=d=>GROUPS[d.group].color;
 /* ---------- SHELL: modes and tabs ---------- */
 function show(mode){document.body.className="m-"+mode;if(mode!=="map"){sheetOff();stopMap()}}
 function updateHeader(){const li=levelInfo(S.xp);document.querySelector("#lvl b").textContent="Lv "+li.lv;document.querySelector("#lvl u").style.width=li.pct+"%";
-  document.getElementById("cs").textContent="🔥 "+streakNow();document.getElementById("cx").textContent="⭐ "+S.xp}
+  const cs=document.getElementById("cs");cs.textContent="🔥 "+streakNow();cs.classList.toggle("off",!streakDoneToday());document.getElementById("cx").textContent="⭐ "+S.xp}
 function goTab(t){tab=t;show(t);updateHeader();
   document.querySelectorAll("#tabs .tab").forEach(b=>{if(b.dataset.tab===t)b.setAttribute("aria-current","page");else b.removeAttribute("aria-current")});
   if(t==="today")today();else if(t==="settings")settings();else{enterMap()}}
@@ -288,7 +291,7 @@ function runQuiz(qs,title,onExit,lessonId){
       const dk=DECKS.find(x=>x.lessons.some(l=>l.id===lessonId));
       if(dk&&!S.bonusDeck[dk.id]&&dk.lessons.every(l=>S.done[l.id])){S.bonusDeck[dk.id]=1;gain+=100;S.xp+=100;note+=`<br>${dk.title} deck completed +100 XP`}
     }
-    bumpStreak();save();
+    bumpStreak();save();updateHeader();
     const lv1=levelInfo(S.xp).lv,wk=weekly(),goal=S.goal||20;
     if(!gain)note="Already learned, so no new XP. Review still keeps it fresh.";
     $.innerHTML=`<div class="spacer"></div><div class="center"><div class="score">${right}/${qs.length}</div>
@@ -305,7 +308,7 @@ function runQuiz(qs,title,onExit,lessonId){
 
 /* ---------- SETTINGS ---------- */
 function settings(){
-  let h=`<h1 style="margin-bottom:6px">Weekly goal</h1><div class="sub">Questions you learn for the first time each week (Monday to Sunday).</div><div class="set"><div class="p" id="goal">${[5,10,20,30,40,50].map(v=>`<button class="${v===(S.goal||20)?"on":""}" data-v="${v}">${v}</button>`).join("")}</div></div>
+  let h=`<h1 style="margin-bottom:6px">Weekly goal</h1><div class="sub">Questions you learn for the first time each week (Monday to Sunday).</div><div class="set"><div class="p" id="goal" style="grid-template-columns:repeat(7,1fr)">${[20,30,40,50,60,70,80].map(v=>`<button class="${v===(S.goal||20)?"on":""}" data-v="${v}">${v}</button>`).join("")}</div></div>
   <h1 style="margin:22px 0 6px">Focus</h1><div class="sub">0 hides a topic. 5 means more questions from it in Quick quiz and it comes first in Next lesson.</div>`;
   groupKeys().forEach(g=>{const ds=DECKS.filter(d=>d.group===g);if(!ds.length)return;h+=`<div class="sec"><i style="background:${GROUPS[g].color}"></i>${GROUPS[g].label}</div>`+ds.map(d=>{const f=focusOf(d);
     return `<div class="set"><b>${d.title}</b><div class="p" data-d="${d.id}">${[0,1,2,3,4,5].map(i=>`<button class="${i===0?"z ":""}${i===f?"on":""}" data-v="${i}">${i}</button>`).join("")}</div></div>`}).join("")});
